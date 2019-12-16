@@ -904,11 +904,11 @@
     },
     {
       "headings": {
-        "ip-week-6": "iP: Week 6 \n                \n                ",
+        "ip-week-7": "iP: Week 7 \n                ",
         "1-do-any-final-clean-ups": "1 Do any final clean-ups",
         "2-submit-the-final-version-by-monday-2359": "2 Submit the final version  by Monday 2359\n                "
       },
-      "title": "Admin: iP: Week 6",
+      "title": "Admin: iP: Week 7",
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
@@ -919,10 +919,10 @@
     },
     {
       "headings": {
-        "ip-week-6": "iP: Week 6 \n                \n                ",
+        "ip-week-8": "iP: Week 8 \n                ",
         "1-evaluate-two-peer-ips-by-saturday-2359": "1 Evaluate two peer iPs  by Saturday 2359\n                "
       },
-      "title": "Admin: iP: Week 6",
+      "title": "Admin: iP: Week 8",
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
@@ -1123,8 +1123,7 @@
         "tp-scope": "tP: Scope \n                \n                 | project expectations",
         "project-direction": "Project Direction",
         "individual-expectations": " Individual Expectations",
-        "individual-expectations-on-features": "[Individual] Expectations on Features",
-        "individual-expectations-on-code": "[Individual] Expectations on Code",
+        "individual-expectations-on-enhancements": "[Individual] Expectations on Enhancements",
         "individual-expectations-on-documentation": "[Individual] Expectations on Documentation",
         "individual-expectations-on-testing": "[Individual] Expectations on Testing",
         "individual-expectations-on-teamwork": "[Individual] Expectations on Teamwork",

@@ -27,3 +27,340 @@
 2019-12-16T07:34:34.870Z - info: Deployed!
 2019-12-16T07:46:23.067Z - info: Website generation started at 3:46:19 PM
 2019-12-16T07:46:25.719Z - info: Building assets...
+2019-12-16T07:46:27.897Z - info: Assets built
+2019-12-16T07:46:27.897Z - info: Generating pages...
+2019-12-16T07:48:18.293Z - info: Pages built
+2019-12-16T07:48:35.648Z - info: Website generation complete! Total build time: 136.26s
+2019-12-16T07:48:35.648Z - info: Build success!
+2019-12-16T07:48:35.662Z - info: Site data built
+2019-12-16T07:49:23.209Z - info: Deployed!
+2019-12-16T08:05:19.171Z - info: Website generation started at 4:05:15 PM
+2019-12-16T08:05:22.230Z - info: Building assets...
+2019-12-16T08:05:24.861Z - info: Assets built
+2019-12-16T08:05:24.861Z - info: Generating pages...
+2019-12-16T08:07:21.691Z - info: Pages built
+2019-12-16T08:07:37.924Z - info: Website generation complete! Total build time: 142.657s
+2019-12-16T08:07:38.248Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-16T08:07:38.248Z - info: Press CTRL+C to stop ...
+2019-12-16T08:07:38.344Z - info: Site data built
+2019-12-16T08:10:38.741Z - info: [4:10:38 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\_markbind\headers\header.md
+2019-12-16T08:10:39.744Z - info: Rebuilding affected source files
+2019-12-16T08:10:39.772Z - info: Rebuilding 156 pages
+2019-12-16T08:11:00.164Z - info: [4:11:00 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\_markbind\headers\header.md
+2019-12-16T08:11:44.692Z - info: Pages rebuilt
+2019-12-16T08:11:44.706Z - info: Site data built
+2019-12-16T08:11:44.800Z - info: Rebuilding affected source files
+2019-12-16T08:11:44.822Z - info: Rebuilding 156 pages
+2019-12-16T08:12:20.348Z - info: [4:12:20 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\cs2103-website-2020-Jan.iml
+2019-12-16T08:12:22.311Z - info: [4:12:22 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\cs2103-website-2020-Jan.iml
+2019-12-16T08:12:27.981Z - info: [4:12:27 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\cs2103-website-2020-Jan.iml
+2019-12-16T08:12:29.603Z - info: [4:12:29 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\cs2103-website-2020-Jan.iml
+2019-12-16T08:12:34.072Z - info: Assets built
+2019-12-16T08:12:38.695Z - info: Assets built
+2019-12-16T08:12:57.181Z - info: Pages rebuilt
+2019-12-16T08:12:57.206Z - info: Site data built
+2019-12-16T08:13:21.150Z - info: [4:13:21 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\moduleOverview.md
+2019-12-16T08:13:22.152Z - info: Rebuilding affected source files
+2019-12-16T08:13:22.153Z - info: Rebuilding 3 pages
+2019-12-16T08:13:24.305Z - info: Pages rebuilt
+2019-12-16T08:13:24.316Z - info: Site data built
+2019-12-16T08:19:41.168Z - info: [4:19:41 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\lectures.md
+2019-12-16T08:19:42.172Z - info: Rebuilding affected source files
+2019-12-16T08:19:42.173Z - info: Rebuilding 3 pages
+2019-12-16T08:19:44.450Z - info: Pages rebuilt
+2019-12-16T08:19:44.462Z - info: Site data built
+2019-12-16T08:20:16.044Z - info: [4:20:16 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\lectures.md
+2019-12-16T08:20:17.047Z - info: Rebuilding affected source files
+2019-12-16T08:20:17.050Z - info: Rebuilding 3 pages
+2019-12-16T08:20:19.355Z - info: Pages rebuilt
+2019-12-16T08:20:19.369Z - info: Site data built
+2019-12-16T08:20:43.677Z - info: [4:20:43 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\lectures.md
+2019-12-16T08:20:44.679Z - info: Rebuilding affected source files
+2019-12-16T08:20:44.680Z - info: Rebuilding 3 pages
+2019-12-16T08:20:47.008Z - info: Pages rebuilt
+2019-12-16T08:20:47.019Z - info: Site data built
+2019-12-16T08:21:25.201Z - info: [4:21:25 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\lectures.md
+2019-12-16T08:21:26.204Z - info: Rebuilding affected source files
+2019-12-16T08:21:26.206Z - info: Rebuilding 3 pages
+2019-12-16T08:21:28.498Z - info: Pages rebuilt
+2019-12-16T08:21:28.511Z - info: Site data built
+2019-12-16T08:22:02.190Z - info: [4:22:02 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\lectures.md
+2019-12-16T08:22:03.193Z - info: Rebuilding affected source files
+2019-12-16T08:22:03.194Z - info: Rebuilding 3 pages
+2019-12-16T08:22:05.491Z - info: Pages rebuilt
+2019-12-16T08:22:05.507Z - info: Site data built
+2019-12-16T08:24:40.922Z - info: [4:24:40 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\tutorials.md
+2019-12-16T08:24:41.923Z - info: Rebuilding affected source files
+2019-12-16T08:24:41.925Z - info: Rebuilding 6 pages
+2019-12-16T08:24:44.896Z - info: Pages rebuilt
+2019-12-16T08:24:44.907Z - info: Site data built
+2019-12-16T08:26:01.970Z - info: [4:26:01 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\tutorials.md
+2019-12-16T08:26:02.972Z - info: Rebuilding affected source files
+2019-12-16T08:26:02.974Z - info: Rebuilding 6 pages
+2019-12-16T08:26:06.077Z - info: Pages rebuilt
+2019-12-16T08:26:06.090Z - info: Site data built
+2019-12-16T08:28:42.692Z - info: [4:28:42 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\programmingLanguages.md
+2019-12-16T08:28:43.694Z - info: Rebuilding affected source files
+2019-12-16T08:28:43.695Z - info: Rebuilding 2 pages
+2019-12-16T08:28:45.753Z - info: Pages rebuilt
+2019-12-16T08:28:45.768Z - info: Site data built
+2019-12-16T08:30:15.968Z - info: [4:30:15 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\programmingLanguages.md
+2019-12-16T08:30:16.970Z - info: Rebuilding affected source files
+2019-12-16T08:30:16.972Z - info: Rebuilding 2 pages
+2019-12-16T08:30:19.120Z - info: Pages rebuilt
+2019-12-16T08:30:19.134Z - info: Site data built
+2019-12-16T08:30:28.359Z - info: [4:30:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\programmingLanguages.md
+2019-12-16T08:30:29.362Z - info: Rebuilding affected source files
+2019-12-16T08:30:29.363Z - info: Rebuilding 2 pages
+2019-12-16T08:30:31.244Z - info: Pages rebuilt
+2019-12-16T08:30:31.258Z - info: Site data built
+2019-12-16T08:32:03.774Z - info: [4:32:03 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\projectDuke\text.md
+2019-12-16T08:32:04.776Z - info: Rebuilding affected source files
+2019-12-16T08:32:04.777Z - info: Rebuilding 9 pages
+2019-12-16T08:32:09.167Z - info: Pages rebuilt
+2019-12-16T08:32:09.177Z - info: Site data built
+2019-12-16T08:35:25.154Z - info: [4:35:25 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\ip-w02.md
+2019-12-16T08:35:26.158Z - info: Rebuilding affected source files
+2019-12-16T08:35:26.159Z - info: Rebuilding 4 pages
+2019-12-16T08:35:30.568Z - info: Pages rebuilt
+2019-12-16T08:35:30.579Z - info: Site data built
+2019-12-16T08:40:03.067Z - info: [4:40:03 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\ip-w04.md
+2019-12-16T08:40:04.071Z - info: Rebuilding affected source files
+2019-12-16T08:40:04.073Z - info: Rebuilding 4 pages
+2019-12-16T08:40:09.584Z - info: Pages rebuilt
+2019-12-16T08:40:09.598Z - info: Site data built
+2019-12-16T08:44:44.892Z - info: [4:44:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\ip-w08.md
+2019-12-16T08:44:44.901Z - info: [4:44:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\ip-w07.md
+2019-12-16T08:44:45.895Z - info: Rebuilding affected source files
+2019-12-16T08:44:45.897Z - info: Rebuilding 7 pages
+2019-12-16T08:44:52.975Z - info: Pages rebuilt
+2019-12-16T08:44:52.988Z - info: Site data built
+2019-12-16T08:52:57.700Z - info: [4:52:57 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T08:52:57.707Z - info: [4:52:57 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-w07-v11.md
+2019-12-16T08:52:58.703Z - info: Rebuilding affected source files
+2019-12-16T08:52:58.707Z - info: Rebuilding 22 pages
+2019-12-16T08:53:11.435Z - info: Pages rebuilt
+2019-12-16T08:53:11.454Z - info: Site data built
+2019-12-16T09:01:26.581Z - info: [5:01:26 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:01:27.583Z - info: Rebuilding affected source files
+2019-12-16T09:01:27.587Z - info: Rebuilding 19 pages
+2019-12-16T09:01:37.008Z - info: Pages rebuilt
+2019-12-16T09:01:37.041Z - info: Site data built
+2019-12-16T09:02:33.599Z - info: [5:02:33 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:02:34.601Z - info: Rebuilding affected source files
+2019-12-16T09:02:34.604Z - info: Rebuilding 19 pages
+2019-12-16T09:02:43.945Z - info: Pages rebuilt
+2019-12-16T09:02:43.979Z - info: Site data built
+2019-12-16T09:03:48.375Z - info: [5:03:48 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:03:49.377Z - info: Rebuilding affected source files
+2019-12-16T09:03:49.382Z - info: Rebuilding 19 pages
+2019-12-16T09:03:58.756Z - info: Pages rebuilt
+2019-12-16T09:03:58.785Z - info: Site data built
+2019-12-16T09:04:28.975Z - info: [5:04:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:04:29.977Z - info: Rebuilding affected source files
+2019-12-16T09:04:29.980Z - info: Rebuilding 19 pages
+2019-12-16T09:04:39.345Z - info: Pages rebuilt
+2019-12-16T09:04:39.378Z - info: Site data built
+2019-12-16T09:06:18.314Z - info: [5:06:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:06:19.318Z - info: Rebuilding affected source files
+2019-12-16T09:06:19.321Z - info: Rebuilding 19 pages
+2019-12-16T09:06:28.878Z - info: Pages rebuilt
+2019-12-16T09:06:28.893Z - info: Site data built
+2019-12-16T09:16:55.506Z - info: [5:16:55 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:16:56.509Z - info: Rebuilding affected source files
+2019-12-16T09:16:56.512Z - info: Rebuilding 19 pages
+2019-12-16T09:17:05.813Z - info: Pages rebuilt
+2019-12-16T09:17:05.833Z - info: Site data built
+2019-12-16T09:18:16.798Z - info: [5:18:16 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:18:17.799Z - info: Rebuilding affected source files
+2019-12-16T09:18:17.802Z - info: Rebuilding 19 pages
+2019-12-16T09:18:26.988Z - info: Pages rebuilt
+2019-12-16T09:18:27.002Z - info: Site data built
+2019-12-16T09:18:44.670Z - info: [5:18:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:18:45.672Z - info: Rebuilding affected source files
+2019-12-16T09:18:45.675Z - info: Rebuilding 19 pages
+2019-12-16T09:18:54.961Z - info: Pages rebuilt
+2019-12-16T09:18:54.993Z - info: Site data built
+2019-12-16T09:19:36.839Z - info: [5:19:36 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:19:37.842Z - info: Rebuilding affected source files
+2019-12-16T09:19:37.845Z - info: Rebuilding 19 pages
+2019-12-16T09:19:47.293Z - info: Pages rebuilt
+2019-12-16T09:19:47.308Z - info: Site data built
+2019-12-16T09:20:30.183Z - info: [5:20:30 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:20:31.186Z - info: Rebuilding affected source files
+2019-12-16T09:20:31.189Z - info: Rebuilding 19 pages
+2019-12-16T09:20:39.864Z - info: [5:20:39 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:20:40.815Z - info: Pages rebuilt
+2019-12-16T09:20:40.854Z - info: Site data built
+2019-12-16T09:20:40.894Z - info: Rebuilding affected source files
+2019-12-16T09:20:40.897Z - info: Rebuilding 19 pages
+2019-12-16T09:20:50.660Z - info: Pages rebuilt
+2019-12-16T09:20:50.675Z - info: Site data built
+2019-12-16T09:21:13.043Z - info: [5:21:13 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:21:14.045Z - info: Rebuilding affected source files
+2019-12-16T09:21:14.048Z - info: Rebuilding 19 pages
+2019-12-16T09:21:23.354Z - info: Pages rebuilt
+2019-12-16T09:21:23.367Z - info: Site data built
+2019-12-16T09:22:39.336Z - info: [5:22:39 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:22:40.338Z - info: Rebuilding affected source files
+2019-12-16T09:22:40.342Z - info: Rebuilding 19 pages
+2019-12-16T09:22:49.785Z - info: Pages rebuilt
+2019-12-16T09:22:49.802Z - info: Site data built
+2019-12-16T09:23:01.013Z - info: [5:23:01 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:23:02.016Z - info: Rebuilding affected source files
+2019-12-16T09:23:02.020Z - info: Rebuilding 18 pages
+2019-12-16T09:23:11.419Z - info: Pages rebuilt
+2019-12-16T09:23:11.450Z - info: Site data built
+2019-12-16T09:25:50.765Z - info: [5:25:50 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:25:51.768Z - info: Rebuilding affected source files
+2019-12-16T09:25:51.771Z - info: Rebuilding 18 pages
+2019-12-16T09:26:01.222Z - info: Pages rebuilt
+2019-12-16T09:26:01.253Z - info: Site data built
+2019-12-16T09:26:07.919Z - info: [5:26:07 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:26:08.922Z - info: Rebuilding affected source files
+2019-12-16T09:26:08.925Z - info: Rebuilding 17 pages
+2019-12-16T09:26:17.554Z - info: Pages rebuilt
+2019-12-16T09:26:17.573Z - info: Site data built
+2019-12-16T09:26:26.280Z - info: [5:26:26 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:26:27.282Z - info: Rebuilding affected source files
+2019-12-16T09:26:27.284Z - info: Rebuilding 17 pages
+2019-12-16T09:26:35.783Z - info: Pages rebuilt
+2019-12-16T09:26:35.796Z - info: Site data built
+2019-12-16T09:29:23.697Z - info: [5:29:23 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:29:24.701Z - info: Rebuilding affected source files
+2019-12-16T09:29:24.704Z - info: Rebuilding 17 pages
+2019-12-16T09:29:33.489Z - info: Pages rebuilt
+2019-12-16T09:29:33.508Z - info: Site data built
+2019-12-16T09:30:34.094Z - info: [5:30:34 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:30:35.098Z - info: Rebuilding affected source files
+2019-12-16T09:30:35.101Z - info: Rebuilding 17 pages
+2019-12-16T09:30:43.937Z - info: Pages rebuilt
+2019-12-16T09:30:43.952Z - info: Site data built
+2019-12-16T09:30:54.403Z - info: [5:30:54 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:30:55.411Z - info: Rebuilding affected source files
+2019-12-16T09:30:55.413Z - info: Rebuilding 17 pages
+2019-12-16T09:31:04.116Z - info: Pages rebuilt
+2019-12-16T09:31:04.131Z - info: Site data built
+2019-12-16T09:31:15.544Z - info: [5:31:15 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:31:16.549Z - info: Rebuilding affected source files
+2019-12-16T09:31:16.553Z - info: Rebuilding 17 pages
+2019-12-16T09:31:25.729Z - info: Pages rebuilt
+2019-12-16T09:31:25.749Z - info: Site data built
+2019-12-16T09:32:36.701Z - info: [5:32:36 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:32:37.708Z - info: Rebuilding affected source files
+2019-12-16T09:32:37.711Z - info: Rebuilding 17 pages
+2019-12-16T09:32:46.654Z - info: Pages rebuilt
+2019-12-16T09:32:46.671Z - info: Site data built
+2019-12-16T09:32:58.499Z - info: [5:32:58 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:32:59.501Z - info: Rebuilding affected source files
+2019-12-16T09:32:59.504Z - info: Rebuilding 17 pages
+2019-12-16T09:33:08.622Z - info: Pages rebuilt
+2019-12-16T09:33:08.639Z - info: Site data built
+2019-12-16T09:34:07.282Z - info: [5:34:07 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:34:08.284Z - info: Rebuilding affected source files
+2019-12-16T09:34:08.286Z - info: Rebuilding 17 pages
+2019-12-16T09:34:17.213Z - info: Pages rebuilt
+2019-12-16T09:34:17.230Z - info: Site data built
+2019-12-16T09:35:15.716Z - info: [5:35:15 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:35:16.719Z - info: Rebuilding affected source files
+2019-12-16T09:35:16.721Z - info: Rebuilding 17 pages
+2019-12-16T09:35:25.944Z - info: Pages rebuilt
+2019-12-16T09:35:25.964Z - info: Site data built
+2019-12-16T09:36:31.341Z - info: [5:36:31 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:36:32.342Z - info: Rebuilding affected source files
+2019-12-16T09:36:32.345Z - info: Rebuilding 17 pages
+2019-12-16T09:36:41.366Z - info: Pages rebuilt
+2019-12-16T09:36:41.394Z - info: Site data built
+2019-12-16T09:36:51.444Z - info: [5:36:51 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:36:52.444Z - info: Rebuilding affected source files
+2019-12-16T09:36:52.447Z - info: Rebuilding 17 pages
+2019-12-16T09:37:01.507Z - info: Pages rebuilt
+2019-12-16T09:37:01.525Z - info: Site data built
+2019-12-16T09:37:45.506Z - info: [5:37:45 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:37:46.508Z - info: Rebuilding affected source files
+2019-12-16T09:37:46.515Z - info: Rebuilding 17 pages
+2019-12-16T09:37:55.544Z - info: Pages rebuilt
+2019-12-16T09:37:55.560Z - info: Site data built
+2019-12-16T09:42:07.416Z - info: [5:42:07 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:42:08.418Z - info: Rebuilding affected source files
+2019-12-16T09:42:08.422Z - info: Rebuilding 17 pages
+2019-12-16T09:42:18.008Z - info: Pages rebuilt
+2019-12-16T09:42:18.031Z - info: Site data built
+2019-12-16T09:48:44.862Z - info: [5:48:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:48:45.864Z - info: Rebuilding affected source files
+2019-12-16T09:48:45.866Z - info: Rebuilding 17 pages
+2019-12-16T09:48:55.000Z - info: Pages rebuilt
+2019-12-16T09:48:55.018Z - info: Site data built
+2019-12-16T09:51:14.000Z - info: [5:51:14 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:51:15.002Z - info: Rebuilding affected source files
+2019-12-16T09:51:15.005Z - info: Rebuilding 17 pages
+2019-12-16T09:51:24.362Z - info: Pages rebuilt
+2019-12-16T09:51:24.375Z - info: Site data built
+2019-12-16T09:59:16.351Z - info: [5:59:16 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T09:59:17.354Z - info: Rebuilding affected source files
+2019-12-16T09:59:17.357Z - info: Rebuilding 17 pages
+2019-12-16T09:59:26.522Z - info: Pages rebuilt
+2019-12-16T09:59:26.541Z - info: Site data built
+2019-12-16T10:00:12.156Z - info: [6:00:12 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T10:00:13.158Z - info: Rebuilding affected source files
+2019-12-16T10:00:13.161Z - info: Rebuilding 17 pages
+2019-12-16T10:00:22.492Z - info: Pages rebuilt
+2019-12-16T10:00:22.521Z - info: Site data built
+2019-12-16T10:00:50.192Z - info: [6:00:50 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T10:00:51.193Z - info: Rebuilding affected source files
+2019-12-16T10:00:51.196Z - info: Rebuilding 17 pages
+2019-12-16T10:01:00.733Z - info: Pages rebuilt
+2019-12-16T10:01:00.768Z - info: Site data built
+2019-12-16T10:01:15.770Z - info: [6:01:15 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T10:01:16.772Z - info: Rebuilding affected source files
+2019-12-16T10:01:16.776Z - info: Rebuilding 17 pages
+2019-12-16T10:01:25.854Z - info: Pages rebuilt
+2019-12-16T10:01:25.873Z - info: Site data built
+2019-12-16T10:01:50.597Z - info: [6:01:50 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T10:01:51.599Z - info: Rebuilding affected source files
+2019-12-16T10:01:51.604Z - info: Rebuilding 17 pages
+2019-12-16T10:02:00.617Z - info: Pages rebuilt
+2019-12-16T10:02:00.634Z - info: Site data built
+2019-12-16T10:02:58.498Z - info: [6:02:58 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T10:02:59.499Z - info: Rebuilding affected source files
+2019-12-16T10:02:59.501Z - info: Rebuilding 17 pages
+2019-12-16T10:03:08.611Z - info: Pages rebuilt
+2019-12-16T10:03:08.626Z - info: Site data built
+2019-12-16T10:03:23.054Z - info: [6:03:23 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T10:03:24.058Z - info: Rebuilding affected source files
+2019-12-16T10:03:24.061Z - info: Rebuilding 17 pages
+2019-12-16T10:03:33.200Z - info: Pages rebuilt
+2019-12-16T10:03:33.211Z - info: Site data built
+2019-12-16T10:03:38.798Z - info: [6:03:38 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T10:03:39.800Z - info: Rebuilding affected source files
+2019-12-16T10:03:39.803Z - info: Rebuilding 17 pages
+2019-12-16T10:03:48.961Z - info: Pages rebuilt
+2019-12-16T10:03:48.976Z - info: Site data built
+2019-12-16T12:06:40.269Z - info: [8:06:40 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T12:06:41.271Z - info: Rebuilding affected source files
+2019-12-16T12:06:41.274Z - info: Rebuilding 17 pages
+2019-12-16T12:06:50.865Z - info: Pages rebuilt
+2019-12-16T12:06:50.886Z - info: Site data built
+2019-12-16T12:10:09.470Z - info: [8:10:09 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T12:10:10.474Z - info: Rebuilding affected source files
+2019-12-16T12:10:10.478Z - info: Rebuilding 17 pages
+2019-12-16T12:10:19.441Z - info: Pages rebuilt
+2019-12-16T12:10:19.459Z - info: Site data built
+2019-12-16T12:11:22.978Z - info: [8:11:22 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T12:11:23.981Z - info: Rebuilding affected source files
+2019-12-16T12:11:23.983Z - info: Rebuilding 17 pages
+2019-12-16T12:11:32.800Z - info: Pages rebuilt
+2019-12-16T12:11:32.819Z - info: Site data built
+2019-12-16T12:13:21.482Z - info: [8:13:21 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
+2019-12-16T12:13:22.485Z - info: Rebuilding affected source files
+2019-12-16T12:13:22.489Z - info: Rebuilding 17 pages
+2019-12-16T12:13:31.394Z - info: Pages rebuilt
+2019-12-16T12:13:31.410Z - info: Site data built
+2019-12-16T12:16:07.724Z - info: [8:16:07 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\ip-w08.md
+2019-12-16T12:16:07.731Z - info: [8:16:07 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\ip-w07.md
+2019-12-16T12:16:08.726Z - info: Rebuilding affected source files
+2019-12-16T12:16:08.728Z - info: Rebuilding 7 pages
+2019-12-16T12:16:17.027Z - info: Pages rebuilt
+2019-12-16T12:16:17.056Z - info: Site data built
+2019-12-16T12:20:35.450Z - info: Website generation started at 8:20:34 PM
+2019-12-16T12:20:37.869Z - info: Building assets...
