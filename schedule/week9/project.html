@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2103/T Website - Week 9 - Project</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/website/css/main.css">
+  <link rel="stylesheet" href="/website/css/schedule.css">
+  <link rel="icon" href="/website/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+  <div id="app">
+    <header>
+
+      <navbar placement="top" type="dark" class="temp-navbar">
+        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand">CS2103/T <small>2020 Jan-Apr</small></a>
+        <div class="nav-link temp-dropdown-placeholder">Schedule</div>
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Aug 12] </span></a></li>
+          <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Aug 19] </span></a></li>
+          <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Aug 26] </span></a></li>
+          <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Sep 2] </span></a></li>
+          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Sep 9] </span></a></li>
+          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Sep 16] </span></a></li>
+          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Sep 30] </span></a></li>
+          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Oct 7] </span></a></li>
+          <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Oct 14] </span></a></li>
+          <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Oct 21] </span></a></li>
+          <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Oct 28] </span></a></li>
+          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Nov 4] </span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Nov 11]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+        </dropdown>
+        <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+        <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+          <li><a href="https://nus-cs2103-ay1920s2.slack.com" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-slack-hash"></span> Slack</span></a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
+          <li><a href="/website/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
+          <li><a href="/website/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
+          <hr>
+          <span><strong> Individual Project (iP):</strong></span>
+          <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
+          <li><a href="https://nus-cs2103-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
+          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> iP Showcase</span></a></li>
+          <hr>
+          <span><strong> Team Project (tP):</strong></span>
+          <li><a href="/website/admin/project-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team IDs</span></a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
+          <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level 1,2,4</span></a></li>
+          <li><a href="https://nus-cs2103-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
+          <li><a href="/website/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> tP Showcase</span></a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <nav>
+          <ul class="pagination mt-2">
+            <li class="page-item"><a class="page-link" href="/website/schedule/week8"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+            <li class="page-item"><a class="page-link" href="/website/schedule/week9/index.html"><span><span aria-hidden="true" class="fas fa-bell"></span></span> Summary</a></li>
+            <li class="page-item"><a class="page-link" href="/website/schedule/week9/topics.html"><span><span aria-hidden="true" class="fas fa-book"></span></span> Topics</a></li>
+            <li class="page-item active"><a class="page-link" href="/website/schedule/week9/project.html"><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project</a></li>
+            <li class="page-item"><a class="page-link" href="/website/schedule/week9/tutorial-cs2103.html"><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> Tutorial</a></li>
+            <li class="page-item"><a class="page-link" href="/website/schedule/week9/admin.html"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Admin Info</a></li>
+            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+            <li class="page-item"><a class="page-link" href="/website/schedule/week10"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+          </ul>
+        </nav>
+        <p></p>
+        <h1 id="week-9-oct-14-project">Week 9 <small><small><span class="dimmed">[Oct 14]</span> - Project</small></small><a class="fa fa-anchor" href="#week-9-oct-14-project"></a></h1>
+        <div id="summary" class="lead border-bottom border-left ml-3 mb-3 pl-2" style="color: purple;">
+          <p><strong>tP:</strong> <span class="border rounded text-success border-success pr-1 pl-1"><span aria-hidden="true" class="fas fa-tag"></span> <strong>v1.2</strong></span>
+          </p>
+          <div>
+            <ol>
+              <li><span><span aria-hidden="true" class="fas fa-user"></span></span> Deliver an intermediate version of the new features</li>
+              <li><span><span aria-hidden="true" class="fas fa-users"></span></span> Wrap up milestone</li>
+              <li><span><span aria-hidden="true" class="fas fa-user"></span></span> Demo new features</li>
+            </ol>
+          </div>
+        </div>
+        <h1 id="tp-v1-2">tP: v1.2<a class="fa fa-anchor" href="#tp-v1-2"></a></h1>
+        <div>
+          <h4 id="deliver-an-intermediate-version-of-the-new-features"><span><span aria-hidden="true" class="fas fa-user"></span></span> Deliver an intermediate version of the new features<a class="fa fa-anchor" href="#deliver-an-intermediate-version-of-the-new-features"></a></h4>
+          <ul>
+            <li>The feature should be merged and user visible, although simpler than the version you intend to deliver at v1.4.</li>
+          </ul>
+          <h4 id="wrap-up-milestone"><span><span aria-hidden="true" class="fas fa-users"></span></span> Wrap up milestone<a class="fa fa-anchor" href="#wrap-up-milestone"></a></h4>
+          <ul>
+            <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Manage the milestone</strong> v1.2 as explained in
+              <trigger trigger="click" for="modal:v12-projectTracking">[Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E: GitHub: Project Schedule Tracking]</trigger>.</li>
+            <li><strong>Wrap up the milestone</strong> using a git tag <code>v1.2</code>. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish in
+              time, reassign them to a future milestone.</li>
+          </ul>
+          <modal large title="Appendix E: Using GitHub →" id="modal:v12-projectTracking" class="algolia-no-index">
+            <div>
+              <h3 id="project-schedule-tracking">
+                <div class="text-white bg-dark p-1">Project Schedule Tracking</div><a class="fa fa-anchor" href="#project-schedule-tracking"></a></h3>
+              <p>In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking <em>all</em> noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect
+                the current status of the project. You can also use GitHub's <a href="https://www.youtube.com/watch?v=C6MGKHkNtxU">Projects feature</a> to manage the project, but keep it linked to the issue tracker as much as you can.</p>
+              <h4 id="using-issues">Using Issues:<a class="fa fa-anchor" href="#using-issues"></a></h4>
+              <p><big><strong>During the initial stages</strong></big> (latest by the start of v1.2):</p>
+              <ul>
+                <li>
+                  <p><strong>Record each of the user stories you plan to deliver as an issue in the issue tracker.</strong>
+                    <span class="dimmed">e.g.</span> <code>Title: As a user I can add a deadline</code><br>
+                    <code>Description: ... so that I can keep track of my deadlines</code></p>
+                </li>
+                <li>
+                  <p><strong>Assign the <code>type.*</code> and <code>priority.*</code> labels to those issues.</strong></p>
+                </li>
+                <li>
+                  <p><strong>Formalize the project plan</strong> by assigning relevant issues to the corresponding milestone.</p>
+                </li>
+              </ul>
+              <p><big><strong>From milestone v1.2:</strong></big></p>
+              <ul>
+                <li>
+                  <p><strong>Define project tasks as issues</strong>. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonable sized, standalone tasks. <mark>Create issues for each</mark> of
+                    those tasks so that they can be tracked.<span class="dimmed">e.g.</span></p>
+                  <ul>
+                    <li>
+                      <p>A typical task should be able to done by one person, in a few hours.</p>
+                      <ul>
+                        <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad (reasons: not a one-person task, not small enough): <code>Write the Developer Guide</code></span>
+                        </li>
+                        <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good: <code>Update class diagram in the Developer Guide for v1.4</code></span>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p>There is no need to break things into VERY small tasks. Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. <span class="dimmed">eg.,</span></p>
+                      <ul>
+                        <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad:<code>Implementing parser</code> (reason: too big).</span>
+                        </li>
+                        <li><span class="dimmed"><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good:<code>Implementing parser support for adding of floating tasks</code></span>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p>Do not track things taken for granted. <span class="dimmed">e.g., <code>push code to repo</code> should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.</span></p>
+                    </li>
+                    <li>
+                      <p>Write a descriptive title for the issue. <span class="dimmed">e.g. <code>Add support for the 'undo' command to the parser</code></span></p>
+                      <ul>
+                        <li>Omit redundant details. In some cases, the issue title is enough to describe the task. In that case, no need to repeat it in the issue description. There is no need for well-crafted and detailed descriptions for tasks. A minimal
+                          description is enough. Similarly, labels such as <code>priority</code> can be omitted if you think they don't help you.<br><br></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Assign tasks (i.e., issues) to the corresponding team members using the <code>assignees</code> field.</strong> <mark>Normally, there should be some ongoing tasks and some pending tasks against each team member at any point</mark>.</p>
+                </li>
+                <li>
+                  <p>Optionally, you can use <code>status.ongoing</code> label to indicate issues currently ongoing.</p>
+                </li>
+              </ul>
+              <div id="using-milestones">
+                <h4 id="using-milestones">Using Milestones:<a class="fa fa-anchor" href="#using-milestones"></a></h4>
+                <p>We recommend you do proper milestone management starting from v1.2. <mark>Given below are the conditions to satisfy for a milestone to be considered properly managed</mark>:</p>
+                <p><strong>Planning a Milestone</strong>:<br></p>
+                <ul>
+                  <li>
+                    <p><strong>Issues assigned to the milestone, team members assigned to issues</strong>: Used <a href="https://help.github.com/articles/about-milestones/">GitHub milestones</a> to indicate which issues are to be handled for which milestone
+                      by assigning issues to suitable milestones. Also make sure those issues are assigned to team members. <span class="dimmed">Note that you can change the milestone plan along the way as necessary.</span></p>
+                  </li>
+                  <li>
+                    <p><strong>Deadline set for the milestones</strong> (in the GitHub milestone). <span class="dimmed">Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</span></p>
+                  </li>
+                </ul>
+                <p><strong>Wrapping up a Milestone</strong>:<br></p>
+                <ul>
+                  <li>
+                    <p><strong>A working product tagged</strong> with the correct tag (e.g. <code>v1.2</code>) and is pushed to the main repo<br> or a <strong>product <em>release</em> done on GitHub</strong>. A product release is optional for v1.2 but required
+                      from from v1.3. Click <a href="https://github.com/se-edu/addressbook-level3/releases/">here</a> to see an example release.</p>
+                  </li>
+                  <li>
+                    <p><strong>All tests passing</strong> on Travis for the version tagged/released.</p>
+                  </li>
+                  <li>
+                    <p><strong>Milestone updated to match the product</strong> i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone. Incomplete issues/PRs should be moved to a future milestone.<br>
+                      <img src="/website/admin/images/assigningIssuesToMilestones.png" width="700"></p>
+                  </li>
+                  <li>
+                    <p><strong>Milestone closed.</strong><br>
+                      <img src="/website/admin/images/closingMilestones.png" width="700"></p>
+                  </li>
+                  <li>
+                    <p><strong>If necessary, future milestones are revised</strong> based on what you experienced in the current milestone <span class="dimmed">e.g. if you could not finish all issues assigned to the current milestone, it is a sign that you overestimated how much you can do in a week, which means you might want to reduce the issues assigned to future milestones to match that observation</span>.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </modal>
+          <div id="demo">
+            <h4 id="demo-new-features"><span><span aria-hidden="true" class="fas fa-user"></span></span> Demo new features<a class="fa fa-anchor" href="#demo-new-features"></a></h4>
+            <ul>
+              <li><strong>Do an informal demo</strong> of the new features during the tutorial. <mark>To save time, we recommend that one member demos all new features, using the commit tagged as <code>v1.2</code> in the <code>master</code> branch</mark>
+                <span class="dimmed">i.e. only features included in the current release should be demoed</span>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#week-9-oct-14-project">Week 9 [Oct 14] - Project&#x200E;</a>
+            <a class="nav-link py-1" href="#tp-v1-2">tP: v1.2&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#deliver-an-intermediate-version-of-the-new-features"> Deliver an intermediate version of the new features&#x200E;</a>
+              <a class="nav-link py-1" href="#wrap-up-milestone"> Wrap up milestone&#x200E;</a>
+              <a class="nav-link py-1" href="#demo-new-features"> Demo new features&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
+    </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.7.0</a> at Mon, 16 Dec 2019 07:23:47 GMT</small></div>
+    </footer>
+  </div>
+</body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/website'
+  const enableSearch = true
+</script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
+
+</html>

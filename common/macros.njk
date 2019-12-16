@@ -37,7 +37,7 @@
 
 
 {% macro show_stars_in_nav(priority) -%}
-<span class="badge badge-pill badge-light"><span class="font-weight-bold text-{{ show_priority_style(priority) }}">{{ priority }}{{ fas_star }}</span></span>
+<span class="badge badge-pill badge-light"><span class="font-weight-bold text-{{ show_priority_style(priority) }}">{{ priority }}:fas-star:</span></span>
 {%- endmacro %}
 
 
@@ -85,7 +85,8 @@
 
 
 {% macro show_admin_sections_to_read(topics, policies, faqs, sections_to_show, is_flat=false) %}
-<span class="activity-desc">Admin info to read:<span>
+
+#### {{ thumb("+") }} Other admin info you may want to read this week:
 <div class="indented">
 {% for section in sections_to_show %}
 {% if section.topic_id %}
@@ -113,3 +114,10 @@
 <panel src="{{ source }}" header="{{ title | safe }}  {{ stars[level] | safe }}" class="embedding" minimized />
 
 {% endmacro %}
+
+{% macro thumb(text, thumb_style="dark") %}<span class="badge badge-pill badge-{{ thumb_style }} p-2"><big><big>{{ text }}</big></big></span>{% endmacro %}
+
+{% macro timing_badge(text, type="danger") %}<span class="badge badge-{{ type }} font-weight-normal"><md>:far-clock: {{ text }}</md></span>{% endmacro %}
+
+{% macro show_as_tab(text, icon) %}<span class="border">&nbsp;{{ icon }} {{ text }}&nbsp;</span>{% endmacro %}
+
