@@ -1,7 +1,7 @@
 <div class="website-content">
   <p><span class="float-left"><b-btn variant="light" href="exams.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> Exams</span>
     </b-btn>
-    </span><span class="float-right"><b-btn variant="light" href="appendixA-principles.html"><span>A: Module Principles <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
+    </span><span class="float-right"><b-btn variant="light" href="gradeBreakdown.html"><span>Grade Breakdown <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
     </b-btn>
     </span>
   </p>
@@ -37,25 +37,20 @@
     <div class="indented">
       <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> As the lecture on Week <code>N</code> covers topics for Week <code>N+1</code>, the Lecture <code>N</code>'s in-lecture and post-lecture quiz points are counted for Week <code>N+1</code></p>
     </div>
-    <p><strong><span class="badge badge-pill badge-info p-2"><big><big>B</big></big></span> Received <tooltip content="No multiple `Below Average`/`Poor` ratings">good peer evaluations</tooltip></strong></p>
+    <p><strong><span class="badge badge-pill badge-info p-2"><big><big>B</big></big></span> Received good peer evaluations</strong></p>
     <div class="indented">
-      <p>In addition, you can receive a bonus marks in the following ways. Bonus marks can be used to top up your participation marks should your marks from the above falls below 5.</p>
-      <ul>
-        <li>Receiving good ratings for all 10 peer evaluations criteria: 1 mark</li>
-        <li>Being very helpful to classmates <span class="dimmed">e.g., multiple helpful posts in forum</span>: 1 mark</li>
-      </ul>
-      <div class="indented">
-        <div class="flat">
-          <div>
-            <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:participation-peerEvals">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria</trigger> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>]</span>
-            </p>
-          </div>
+      <div class="flat">
+        <div>
+          <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:participation-peerEvals">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria</trigger> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>]</span>
+          </p>
         </div>
-        <modal large title="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → Criteria  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" id="modal:participation-peerEvals">
-        
-          <div>
-            <div data-included-from="C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md">
-              <p><big><strong>Peer evaluation criteria: professional conduct</strong></big></p>
+      </div>
+      <modal large title="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → Criteria  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" id="modal:participation-peerEvals">
+      
+        <div>
+          <div data-included-from="C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md">
+            <box background-color="white" border-color="grey" border-left-color="gold">
+              <h4 id="peer-evaluation-criteria-professional-conduct">Peer Evaluation Criteria: Professional Conduct</h4>
               <ul>
                 <li><strong>Professional Communication</strong> :
                   <ul>
@@ -73,22 +68,36 @@
                     <li>Rarely misses compulsory module activities such as pre-module survey.</li>
                   </ul>
                 </li>
-                <li><strong>Teamwork</strong>: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc. Honors all collectively agreed-upon commitments e.g., weekly project meetings.</li>
+                <li><strong>Teamwork</strong>: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc. Honors all collectively agreed-upon commitments e.g., weekly project meetings.
+                </li>
               </ul>
-              <p><big><strong>Peer evaluation criteria: competency</strong></big></p>
+            </box>
+            <box background-color="white" border-color="grey" border-left-color="gold">
+
+              <h4 id="peer-evaluation-criteria-competency">Peer Evaluation Criteria: Competency</h4>
               <ul>
                 <li><strong>Technical Competency</strong>: Able to gain competency in all the required tools and techniques.</li>
                 <li><strong>Mentoring skills</strong>: Helps others when possible. Able to mentor others well.</li>
-                <li><strong>Communication skills</strong>: Able to communicate (written and spoken) well. Takes initiative in discussions.</li>
+                <li><strong>Communication skills</strong>: Able to communicate (written and spoken) well. Takes initiative in discussions.
+                </li>
               </ul>
-            </div>
+            </box>
           </div>
-        </modal>
-        <p>
-          <panel src="/website/admin/peerEvaluations._include_.html#peerEvaluation-criteria" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → Criteria  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
-            minimized fragment="peerEvaluation-criteria"></panel>
-        </p>
-      </div>
+        </div>
+      </modal>
+      <p>
+        <panel src="/website/admin/peerEvaluations._include_.html#peerEvaluation-criteria" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → Criteria  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+          minimized fragment="peerEvaluation-criteria"></panel>
+      </p>
+      <ul>
+        <li>-1 for each <em>professional conduct</em> criterion in which you score below average (based on the average of ratings received).</li>
+        <li>No penalty for scoring low on <em>competency criteria</em>.</li>
+      </ul>
+      <p>In addition, you can receive a bonus marks in the following ways. Bonus marks can be used to top up your participation marks should your marks from the above falls below 5.</p>
+      <ul>
+        <li>Receiving good ratings for all 10 peer evaluations criteria: 1 mark</li>
+        <li>Being very helpful to classmates <span class="dimmed">e.g., multiple helpful posts in forum</span>: 1 mark</li>
+      </ul>
     </div>
     <p><strong><span class="badge badge-pill badge-info p-2"><big><big>C</big></big></span> Tutorial attendance/participation not too low</strong></p>
     <div class="indented">
@@ -127,7 +136,7 @@
   <br>
   <p><span class="float-left"><b-btn variant="light" href="exams.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> Exams</span>
     </b-btn>
-    </span><span class="float-right"><b-btn variant="light" href="appendixA-principles.html"><span>A: Module Principles <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
+    </span><span class="float-right"><b-btn variant="light" href="gradeBreakdown.html"><span>Grade Breakdown <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
     </b-btn>
     </span>
   </p>

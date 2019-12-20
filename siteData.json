@@ -989,7 +989,10 @@
     },
     {
       "headings": {
-        "peer-evaluations": "Peer Evaluations \n                \n                "
+        "peer-evaluations": "Peer Evaluations \n                \n                ",
+        "peer-evaluation-criteria-professional-conduct": "Peer Evaluation Criteria: Professional Conduct",
+        "peer-evaluation-criteria-competency": "Peer Evaluation Criteria: Competency",
+        "guidelines-for-giving-peer-feedback": "Guidelines for Giving Peer Feedback"
       },
       "title": "Admin: Peer Evaluations",
       "header": "header.md",
@@ -1173,12 +1176,12 @@
     {
       "headings": {
         "tp-grading": "tP: Grading \n                \n                ",
-        "1-project-grading-product-design-5-marks": "1. Project Grading: Product Design [/ 5 marks]",
-        "2-project-grading-implementation-10-marks": "2. Project Grading: Implementation [ 10 marks]",
-        "3-project-grading-qa-10-marks": "3. Project Grading: QA [ 10 marks]",
+        "1-project-grading-product-design-5-marks": "\n                1. Project Grading: Product Design [/ 5 marks]\n                ",
+        "2-project-grading-implementation-10-marks": "\n              2. Project Grading: Implementation [ 10 marks]\n              ",
+        "3-project-grading-qa-10-marks": "\n              3. Project Grading: QA [ 10 marks]\n              ",
         "notes-on-how-marks-are-calculated-based-on-pe-product-testing": "Notes on how marks are calculated based on PE product testing",
-        "4-project-grading-documentation-10-marks": "4. Project Grading: Documentation [ 10 marks]",
-        "5-project-grading-project-management-5-5-10-marks": "5. Project Grading: Project Management [ 5 +  5 = 10 marks]"
+        "4-project-grading-documentation-10-marks": "\n              4. Project Grading: Documentation [ 10 marks]\n              ",
+        "5-project-grading-project-management-5-5-10-marks": "\n              5. Project Grading: Project Management [ 5 +  5 = 10 marks]\n              "
       },
       "title": "Admin: tP: Grading",
       "header": "header.md",
@@ -1218,12 +1221,12 @@
     {
       "headings": {
         "tp-scope": "tP: Scope \n                \n                 | project expectations",
-        "project-direction": "Project Direction",
-        "individual-expectations": " Individual Expectations",
-        "individual-expectations-on-enhancements": "[Individual] Expectations on Enhancements",
-        "individual-expectations-on-documentation": "[Individual] Expectations on Documentation",
-        "individual-expectations-on-testing": "[Individual] Expectations on Testing",
-        "individual-expectations-on-teamwork": "[Individual] Expectations on Teamwork",
+        "project-direction": "\n              Project Direction",
+        "individual-expectations": "\n               Individual Expectations",
+        "individual-expectations-on-enhancements": " Individual Expectations on Enhancements",
+        "individual-expectations-on-documentation": " Individual Expectations on Documentation",
+        "individual-expectations-on-testing": " Individual Expectations on Testing",
+        "individual-expectations-on-teamwork": " Individual Expectations on Teamwork",
         "team-expectations": " Team Expectations"
       },
       "title": "Admin: tP: Scope",
@@ -1286,7 +1289,7 @@
         "tp-inception-week-4": "tP: Inception [week 4] \n                \n                \n                ",
         "1-start-weekly-project-meetings": "1 Start weekly project meetings",
         "2-decide-on-a-overall-project-direction-user-profile-problem-addressed": "2 Decide on a overall project direction (user profile, problem addressed) | project expectations",
-        "3-start-a-collaborative-doc-to-take-project-notes-before-the-tutorial": "3 Start a collaborative doc to take project notes                 before the tutorial\n                "
+        "3-start-a-collaborative-doc-to-take-project-notes-before-the-tutorial": "3 Start a collaborative doc to take project notes               before the tutorial\n              "
       },
       "title": "Admin: tP: Inception [week 4]",
       "header": "header.md",
@@ -1841,12 +1844,6 @@
       "layout": "default"
     },
     {
-      "headings": {},
-      "src": "admin/reposenseCompatibility.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
       "headings": {
         "w10-1": "W10-1",
         "w10-2": "W10-2",
@@ -1921,14 +1918,21 @@
       "layout": "default"
     },
     {
+      "headings": {},
+      "src": "admin/tools-reposense.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
       "headings": {
         "tools": "Tools \n                \n                \n                ",
-        "tools-used-learning-management-system": "\n              Tools Used: Learning Management System",
+        "tool-used-learning-management-system": "\n              Tool Used: Learning Management System",
         "tool-used-github-for-code-hosting": "\n                Tool Used: GitHub (for Code Hosting)",
         "tool-used-git-for-revision-control": "\n                Tool Used: Git (for Revision Control)",
         "tools-used-for-communication": "\n                Tools Used: for Communication",
         "tool-used-intellij-ide": "\n                Tool Used: Intellij IDE",
-        "tool-used-reposense-for-analyzing-code-authorship": "\n                Tool Used: RepoSense (for Analyzing Code Authorship)"
+        "tool-used-reposense-for-analyzing-code-authorship": "\n                Tool Used: RepoSense (for Analyzing Code Authorship)",
+        "tool-used-teammates-for-peer-evaluations-feedback": "\n                Tool Used: TEAMMATES (for Peer Evaluations/Feedback)"
       },
       "title": "Admin: Tools",
       "header": "header.md",
