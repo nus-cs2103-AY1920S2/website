@@ -989,14 +989,41 @@
     },
     {
       "headings": {
+        "session-final-peer-evaluation": "Session: Final Peer Evaluation"
+      },
+      "src": "admin/peerEvaluations-final.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "session-midterm-peer-evaluation": "Session: Midterm Peer Evaluation",
+        "important-questions-included-in-the-evaluation": "Important questions included in the evaluation:",
+        "peer-evaluation-criteria-professional-conduct": "Peer Evaluation Criteria: Professional Conduct",
+        "peer-evaluation-criteria-competency": "Peer Evaluation Criteria: Competency"
+      },
+      "src": "admin/peerEvaluations-midterm.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "session-practice-peer-evaluation": "Session: Practice Peer Evaluation"
+      },
+      "src": "admin/peerEvaluations-practice.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "peer-evaluations": "Peer Evaluations \n                \n                ",
-        "practice-peer-evaluation": "Practice Peer Evaluation",
-        "midterm-peer-evaluation": "Midterm Peer Evaluation",
+        "session-practice-peer-evaluation": "Session: Practice Peer Evaluation",
+        "session-midterm-peer-evaluation": "Session: Midterm Peer Evaluation",
         "important-questions-included-in-the-evaluation": "Important questions included in the evaluation:",
         "peer-evaluation-criteria-professional-conduct": "Peer Evaluation Criteria: Professional Conduct",
         "peer-evaluation-criteria-competency": "Peer Evaluation Criteria: Competency",
-        "final-peer-evaluation": "Final Peer Evaluation",
-        "responses-peer-evaluation": "Responses Peer Evaluation",
+        "session-final-peer-evaluation": "Session: Final Peer Evaluation",
+        "session-responses-peer-evaluation": "Session: Responses Peer Evaluation",
         "guidelines-for-giving-peer-feedback": "Guidelines for Giving Peer Feedback"
       },
       "title": "Admin: Peer Evaluations",
@@ -1174,7 +1201,7 @@
     },
     {
       "headings": {
-        "notes-on-how-marks-are-calculated-based-on-pe-product-testing": "Notes on how marks are calculated based on PE product testing"
+        "grading-bugs-found-in-the-pe": "Grading bugs found in the PE"
       },
       "src": "admin/project-grading-bugs.md",
       "title": "",
@@ -1186,7 +1213,7 @@
         "1-project-grading-product-design-5-marks": "\n                1. Project Grading: Product Design [/ 5 marks]\n                ",
         "2-project-grading-implementation-10-marks": "\n              2. Project Grading: Implementation [ 10 marks]\n              ",
         "3-project-grading-qa-10-marks": "\n              3. Project Grading: QA [ 10 marks]\n              ",
-        "notes-on-how-marks-are-calculated-based-on-pe-product-testing": "Notes on how marks are calculated based on PE product testing",
+        "grading-bugs-found-in-the-pe": "Grading bugs found in the PE",
         "4-project-grading-documentation-10-marks": "\n              4. Project Grading: Documentation [ 10 marks]\n              ",
         "5-project-grading-project-management-5-5-10-marks": "\n              5. Project Grading: Project Management [ 5 +  5 = 10 marks]\n              "
       },

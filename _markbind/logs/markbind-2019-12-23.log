@@ -1,1088 +1,739 @@
-2019-12-23T06:43:01.396Z - info: Website generation started at 2:43:00 PM
-2019-12-23T06:43:03.611Z - info: Building assets...
-2019-12-23T06:43:05.243Z - info: Assets built
-2019-12-23T06:43:05.243Z - info: Generating pages...
-2019-12-23T06:44:37.688Z - info: Pages built
-2019-12-23T06:44:52.568Z - info: Website generation complete! Total build time: 112.296s
-2019-12-23T06:44:52.903Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
-2019-12-23T06:44:52.903Z - info: Press CTRL+C to stop ...
-2019-12-23T06:44:52.997Z - info: Site data built
-2019-12-23T06:52:05.229Z - info: [2:52:05 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T06:52:06.234Z - info: Rebuilding affected source files
-2019-12-23T06:52:06.237Z - info: Rebuilding 13 pages
-2019-12-23T06:52:11.631Z - info: Pages rebuilt
-2019-12-23T06:52:11.650Z - info: Site data built
-2019-12-23T06:56:28.042Z - info: [2:56:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T06:56:29.049Z - info: Rebuilding affected source files
-2019-12-23T06:56:29.053Z - info: Rebuilding 13 pages
-2019-12-23T06:56:34.074Z - info: Pages rebuilt
-2019-12-23T06:56:34.091Z - info: Site data built
-2019-12-23T07:04:11.347Z - info: [3:04:11 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:04:12.351Z - info: Rebuilding affected source files
-2019-12-23T07:04:12.355Z - info: Rebuilding 13 pages
-2019-12-23T07:04:17.356Z - info: Pages rebuilt
-2019-12-23T07:04:17.373Z - info: Site data built
-2019-12-23T07:06:29.105Z - info: [3:06:29 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:06:30.106Z - info: Rebuilding affected source files
-2019-12-23T07:06:30.114Z - info: Rebuilding 13 pages
-2019-12-23T07:06:35.073Z - info: Pages rebuilt
-2019-12-23T07:06:35.086Z - info: Site data built
-2019-12-23T07:08:22.957Z - info: [3:08:22 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:08:23.959Z - info: Rebuilding affected source files
-2019-12-23T07:08:23.962Z - info: Rebuilding 13 pages
-2019-12-23T07:08:28.912Z - info: Pages rebuilt
-2019-12-23T07:08:28.929Z - info: Site data built
-2019-12-23T07:08:52.928Z - info: [3:08:52 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:08:53.931Z - info: Rebuilding affected source files
-2019-12-23T07:08:53.934Z - info: Rebuilding 13 pages
-2019-12-23T07:08:58.913Z - info: Pages rebuilt
-2019-12-23T07:08:58.931Z - info: Site data built
-2019-12-23T07:09:47.368Z - info: [3:09:47 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:09:48.371Z - info: Rebuilding affected source files
-2019-12-23T07:09:48.375Z - info: Rebuilding 13 pages
-2019-12-23T07:09:53.338Z - info: Pages rebuilt
-2019-12-23T07:09:53.356Z - info: Site data built
-2019-12-23T07:11:57.868Z - info: [3:11:57 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:11:58.871Z - info: Rebuilding affected source files
-2019-12-23T07:11:58.874Z - info: Rebuilding 13 pages
-2019-12-23T07:12:03.788Z - info: Pages rebuilt
-2019-12-23T07:12:03.800Z - info: Site data built
-2019-12-23T07:12:17.628Z - info: [3:12:17 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:12:18.631Z - info: Rebuilding affected source files
-2019-12-23T07:12:18.635Z - info: Rebuilding 13 pages
-2019-12-23T07:12:23.501Z - info: Pages rebuilt
-2019-12-23T07:12:23.517Z - info: Site data built
-2019-12-23T07:12:39.515Z - info: [3:12:39 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:12:40.518Z - info: Rebuilding affected source files
-2019-12-23T07:12:40.520Z - info: Rebuilding 13 pages
-2019-12-23T07:12:45.472Z - info: Pages rebuilt
-2019-12-23T07:12:45.484Z - info: Site data built
-2019-12-23T07:14:02.742Z - info: [3:14:02 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:14:03.744Z - info: Rebuilding affected source files
-2019-12-23T07:14:03.747Z - info: Rebuilding 13 pages
-2019-12-23T07:14:08.775Z - info: Pages rebuilt
-2019-12-23T07:14:08.801Z - info: Site data built
-2019-12-23T07:14:29.696Z - info: [3:14:29 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:14:30.702Z - info: Rebuilding affected source files
-2019-12-23T07:14:30.705Z - info: Rebuilding 13 pages
-2019-12-23T07:14:35.613Z - info: Pages rebuilt
-2019-12-23T07:14:35.629Z - info: Site data built
-2019-12-23T07:18:29.632Z - info: [3:18:29 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:18:30.635Z - info: Rebuilding affected source files
-2019-12-23T07:18:30.639Z - info: Rebuilding 13 pages
-2019-12-23T07:18:35.710Z - info: Pages rebuilt
-2019-12-23T07:18:35.725Z - info: Site data built
-2019-12-23T07:20:59.429Z - info: [3:20:59 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:21:00.433Z - info: Rebuilding affected source files
-2019-12-23T07:21:00.436Z - info: Rebuilding 13 pages
-2019-12-23T07:21:05.350Z - info: Pages rebuilt
-2019-12-23T07:21:05.366Z - info: Site data built
-2019-12-23T07:21:46.444Z - info: [3:21:46 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:21:47.447Z - info: Rebuilding affected source files
-2019-12-23T07:21:47.450Z - info: Rebuilding 13 pages
-2019-12-23T07:21:52.339Z - info: Pages rebuilt
-2019-12-23T07:21:52.355Z - info: Site data built
-2019-12-23T07:23:09.471Z - info: [3:23:09 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:23:10.483Z - info: Rebuilding affected source files
-2019-12-23T07:23:10.486Z - info: Rebuilding 13 pages
-2019-12-23T07:23:15.347Z - info: Pages rebuilt
-2019-12-23T07:23:15.361Z - info: Site data built
-2019-12-23T07:27:06.496Z - info: [3:27:06 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:27:07.506Z - info: Rebuilding affected source files
-2019-12-23T07:27:07.509Z - info: Rebuilding 13 pages
-2019-12-23T07:27:12.387Z - info: Pages rebuilt
-2019-12-23T07:27:12.401Z - info: Site data built
-2019-12-23T07:27:21.068Z - info: [3:27:21 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:27:22.071Z - info: Rebuilding affected source files
-2019-12-23T07:27:22.073Z - info: Rebuilding 13 pages
-2019-12-23T07:27:26.751Z - info: Pages rebuilt
-2019-12-23T07:27:26.782Z - info: Site data built
-2019-12-23T07:28:17.828Z - info: [3:28:17 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:28:18.832Z - info: Rebuilding affected source files
-2019-12-23T07:28:18.834Z - info: Rebuilding 13 pages
-2019-12-23T07:28:24.131Z - info: Pages rebuilt
-2019-12-23T07:28:24.145Z - info: Site data built
-2019-12-23T07:28:40.224Z - info: [3:28:40 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:28:41.227Z - info: Rebuilding affected source files
-2019-12-23T07:28:41.230Z - info: Rebuilding 13 pages
-2019-12-23T07:28:46.049Z - info: Pages rebuilt
-2019-12-23T07:28:46.064Z - info: Site data built
-2019-12-23T07:29:21.888Z - info: [3:29:21 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:29:22.889Z - info: Rebuilding affected source files
-2019-12-23T07:29:22.898Z - info: Rebuilding 13 pages
-2019-12-23T07:29:27.853Z - info: Pages rebuilt
-2019-12-23T07:29:27.870Z - info: Site data built
-2019-12-23T07:31:00.061Z - info: [3:31:00 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:31:01.076Z - info: Rebuilding affected source files
-2019-12-23T07:31:01.082Z - info: Rebuilding 13 pages
-2019-12-23T07:31:06.233Z - info: Pages rebuilt
-2019-12-23T07:31:06.245Z - info: Site data built
-2019-12-23T07:34:57.581Z - info: [3:34:57 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:34:58.589Z - info: Rebuilding affected source files
-2019-12-23T07:34:58.596Z - info: Rebuilding 13 pages
-2019-12-23T07:35:03.550Z - info: Pages rebuilt
-2019-12-23T07:35:03.568Z - info: Site data built
-2019-12-23T07:35:18.089Z - info: [3:35:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:35:19.113Z - info: Rebuilding affected source files
-2019-12-23T07:35:19.116Z - info: Rebuilding 13 pages
-2019-12-23T07:35:24.017Z - info: Pages rebuilt
-2019-12-23T07:35:24.034Z - info: Site data built
-2019-12-23T07:37:35.087Z - info: [3:37:35 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:37:36.091Z - info: Rebuilding affected source files
-2019-12-23T07:37:36.095Z - info: Rebuilding 13 pages
-2019-12-23T07:37:40.985Z - info: Pages rebuilt
-2019-12-23T07:37:41.001Z - info: Site data built
-2019-12-23T07:37:50.657Z - info: [3:37:50 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:37:51.660Z - info: Rebuilding affected source files
-2019-12-23T07:37:51.661Z - info: Rebuilding 13 pages
-2019-12-23T07:37:56.279Z - info: Pages rebuilt
-2019-12-23T07:37:56.299Z - info: Site data built
-2019-12-23T07:38:53.193Z - info: [3:38:53 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:38:54.198Z - info: Rebuilding affected source files
-2019-12-23T07:38:54.200Z - info: Rebuilding 13 pages
-2019-12-23T07:38:59.630Z - info: Pages rebuilt
-2019-12-23T07:38:59.651Z - info: Site data built
-2019-12-23T07:39:46.357Z - info: [3:39:46 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:39:47.365Z - info: Rebuilding affected source files
-2019-12-23T07:39:47.367Z - info: Rebuilding 13 pages
-2019-12-23T07:39:52.400Z - info: Pages rebuilt
-2019-12-23T07:39:52.416Z - info: Site data built
-2019-12-23T07:40:41.831Z - info: [3:40:41 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:40:42.835Z - info: Rebuilding affected source files
-2019-12-23T07:40:42.839Z - info: Rebuilding 13 pages
-2019-12-23T07:40:47.720Z - info: Pages rebuilt
-2019-12-23T07:40:47.734Z - info: Site data built
-2019-12-23T07:44:01.703Z - info: [3:44:01 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:44:02.707Z - info: Rebuilding affected source files
-2019-12-23T07:44:02.710Z - info: Rebuilding 13 pages
-2019-12-23T07:44:07.689Z - info: Pages rebuilt
-2019-12-23T07:44:07.702Z - info: Site data built
-2019-12-23T07:44:19.405Z - info: [3:44:19 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:44:20.407Z - info: Rebuilding affected source files
-2019-12-23T07:44:20.409Z - info: Rebuilding 13 pages
-2019-12-23T07:44:25.048Z - info: Pages rebuilt
-2019-12-23T07:44:25.092Z - info: Site data built
-2019-12-23T07:45:35.620Z - info: [3:45:35 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:45:36.636Z - info: Rebuilding affected source files
-2019-12-23T07:45:36.638Z - info: Rebuilding 13 pages
-2019-12-23T07:45:42.032Z - info: Pages rebuilt
-2019-12-23T07:45:42.050Z - info: Site data built
-2019-12-23T07:45:42.072Z - info: [3:45:42 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:45:43.081Z - info: Rebuilding affected source files
-2019-12-23T07:45:43.083Z - info: Rebuilding 13 pages
-2019-12-23T07:45:47.982Z - info: Pages rebuilt
-2019-12-23T07:45:47.996Z - info: Site data built
-2019-12-23T07:48:02.020Z - info: [3:48:02 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:48:03.023Z - info: Rebuilding affected source files
-2019-12-23T07:48:03.026Z - info: Rebuilding 13 pages
-2019-12-23T07:48:07.876Z - info: Pages rebuilt
-2019-12-23T07:48:07.891Z - info: Site data built
-2019-12-23T07:48:42.743Z - info: [3:48:42 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:48:43.745Z - info: Rebuilding affected source files
-2019-12-23T07:48:43.749Z - info: Rebuilding 13 pages
-2019-12-23T07:48:48.698Z - info: Pages rebuilt
-2019-12-23T07:48:48.710Z - info: Site data built
-2019-12-23T07:52:48.998Z - info: [3:52:48 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:52:50.001Z - info: Rebuilding affected source files
-2019-12-23T07:52:50.004Z - info: Rebuilding 13 pages
-2019-12-23T07:52:54.945Z - info: Pages rebuilt
-2019-12-23T07:52:54.964Z - info: Site data built
-2019-12-23T07:53:18.477Z - info: [3:53:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:53:19.480Z - info: Rebuilding affected source files
-2019-12-23T07:53:19.483Z - info: Rebuilding 13 pages
-2019-12-23T07:53:24.289Z - info: Pages rebuilt
-2019-12-23T07:53:24.306Z - info: Site data built
-2019-12-23T07:54:23.343Z - info: [3:54:23 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:54:24.346Z - info: Rebuilding affected source files
-2019-12-23T07:54:24.348Z - info: Rebuilding 13 pages
-2019-12-23T07:54:29.225Z - info: Pages rebuilt
-2019-12-23T07:54:29.235Z - info: Site data built
-2019-12-23T07:55:16.679Z - info: [3:55:16 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:55:17.693Z - info: Rebuilding affected source files
-2019-12-23T07:55:17.695Z - info: Rebuilding 13 pages
-2019-12-23T07:55:22.553Z - info: Pages rebuilt
-2019-12-23T07:55:22.573Z - info: Site data built
-2019-12-23T07:56:40.830Z - info: [3:56:40 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:56:41.846Z - info: Rebuilding affected source files
-2019-12-23T07:56:41.849Z - info: Rebuilding 13 pages
-2019-12-23T07:56:46.812Z - info: Pages rebuilt
-2019-12-23T07:56:46.827Z - info: Site data built
-2019-12-23T07:56:51.150Z - info: [3:56:51 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:56:52.159Z - info: Rebuilding affected source files
-2019-12-23T07:56:52.161Z - info: Rebuilding 13 pages
-2019-12-23T07:56:56.898Z - info: Pages rebuilt
-2019-12-23T07:56:56.918Z - info: Site data built
-2019-12-23T07:58:22.647Z - info: [3:58:22 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T07:58:23.650Z - info: Rebuilding affected source files
-2019-12-23T07:58:23.654Z - info: Rebuilding 13 pages
-2019-12-23T07:58:28.593Z - info: Pages rebuilt
-2019-12-23T07:58:28.607Z - info: Site data built
-2019-12-23T08:00:16.107Z - info: [4:00:16 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:00:17.109Z - info: Rebuilding affected source files
-2019-12-23T08:00:17.111Z - info: Rebuilding 13 pages
-2019-12-23T08:00:21.917Z - info: Pages rebuilt
-2019-12-23T08:00:21.932Z - info: Site data built
-2019-12-23T08:01:30.312Z - info: [4:01:30 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:01:31.314Z - info: Rebuilding affected source files
-2019-12-23T08:01:31.317Z - info: Rebuilding 13 pages
-2019-12-23T08:01:36.226Z - info: Pages rebuilt
-2019-12-23T08:01:36.240Z - info: Site data built
-2019-12-23T08:01:52.630Z - info: [4:01:52 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:01:53.632Z - info: Rebuilding affected source files
-2019-12-23T08:01:53.634Z - info: Rebuilding 13 pages
-2019-12-23T08:01:58.516Z - info: Pages rebuilt
-2019-12-23T08:01:58.531Z - info: Site data built
-2019-12-23T08:03:31.010Z - info: [4:03:31 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:03:32.013Z - info: Rebuilding affected source files
-2019-12-23T08:03:32.015Z - info: Rebuilding 13 pages
-2019-12-23T08:03:36.930Z - info: Pages rebuilt
-2019-12-23T08:03:36.945Z - info: Site data built
-2019-12-23T08:05:12.747Z - info: [4:05:12 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:05:13.750Z - info: Rebuilding affected source files
-2019-12-23T08:05:13.753Z - info: Rebuilding 13 pages
-2019-12-23T08:05:18.609Z - info: Pages rebuilt
-2019-12-23T08:05:18.622Z - info: Site data built
-2019-12-23T08:05:30.538Z - info: [4:05:30 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:05:31.556Z - info: Rebuilding affected source files
-2019-12-23T08:05:31.558Z - info: Rebuilding 13 pages
-2019-12-23T08:05:36.331Z - info: Pages rebuilt
-2019-12-23T08:05:36.346Z - info: Site data built
-2019-12-23T08:06:02.971Z - info: [4:06:02 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:06:03.973Z - info: Rebuilding affected source files
-2019-12-23T08:06:03.976Z - info: Rebuilding 13 pages
-2019-12-23T08:06:08.959Z - info: Pages rebuilt
-2019-12-23T08:06:08.971Z - info: Site data built
-2019-12-23T08:07:39.638Z - info: [4:07:39 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:07:40.649Z - info: Rebuilding affected source files
-2019-12-23T08:07:40.652Z - info: Rebuilding 13 pages
-2019-12-23T08:07:45.498Z - info: Pages rebuilt
-2019-12-23T08:07:45.519Z - info: Site data built
-2019-12-23T08:15:35.431Z - info: [4:15:35 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:15:36.434Z - info: Rebuilding affected source files
-2019-12-23T08:15:36.438Z - info: Rebuilding 13 pages
-2019-12-23T08:15:41.392Z - info: Pages rebuilt
-2019-12-23T08:15:41.407Z - info: Site data built
-2019-12-23T08:15:51.133Z - info: [4:15:51 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:15:52.143Z - info: Rebuilding affected source files
-2019-12-23T08:15:52.146Z - info: Rebuilding 13 pages
-2019-12-23T08:15:56.882Z - info: Pages rebuilt
-2019-12-23T08:15:56.905Z - info: Site data built
-2019-12-23T08:16:36.972Z - info: [4:16:36 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:16:37.989Z - info: Rebuilding affected source files
-2019-12-23T08:16:37.993Z - info: Rebuilding 13 pages
-2019-12-23T08:16:42.834Z - info: Pages rebuilt
-2019-12-23T08:16:42.848Z - info: Site data built
-2019-12-23T08:17:23.518Z - info: [4:17:23 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:17:24.526Z - info: Rebuilding affected source files
-2019-12-23T08:17:24.529Z - info: Rebuilding 13 pages
-2019-12-23T08:17:29.339Z - info: Pages rebuilt
-2019-12-23T08:17:29.354Z - info: Site data built
-2019-12-23T08:18:53.747Z - info: [4:18:53 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:18:54.752Z - info: Rebuilding affected source files
-2019-12-23T08:18:54.755Z - info: Rebuilding 13 pages
-2019-12-23T08:18:59.623Z - info: Pages rebuilt
-2019-12-23T08:18:59.637Z - info: Site data built
-2019-12-23T08:19:36.063Z - info: [4:19:36 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:19:37.065Z - info: Rebuilding affected source files
-2019-12-23T08:19:37.068Z - info: Rebuilding 13 pages
-2019-12-23T08:19:41.951Z - info: Pages rebuilt
-2019-12-23T08:19:41.966Z - info: Site data built
-2019-12-23T08:19:59.699Z - info: [4:19:59 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:20:00.709Z - info: Rebuilding affected source files
-2019-12-23T08:20:00.713Z - info: Rebuilding 13 pages
-2019-12-23T08:20:05.582Z - info: Pages rebuilt
-2019-12-23T08:20:05.595Z - info: Site data built
-2019-12-23T08:22:18.166Z - info: [4:22:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:22:19.169Z - info: Rebuilding affected source files
-2019-12-23T08:22:19.172Z - info: Rebuilding 13 pages
-2019-12-23T08:22:24.026Z - info: Pages rebuilt
-2019-12-23T08:22:24.041Z - info: Site data built
-2019-12-23T08:22:38.701Z - info: [4:22:38 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:22:39.720Z - info: Rebuilding affected source files
-2019-12-23T08:22:39.724Z - info: Rebuilding 13 pages
-2019-12-23T08:22:44.587Z - info: Pages rebuilt
-2019-12-23T08:22:44.605Z - info: Site data built
-2019-12-23T08:23:20.902Z - info: [4:23:20 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:23:21.905Z - info: Rebuilding affected source files
-2019-12-23T08:23:21.908Z - info: Rebuilding 13 pages
-2019-12-23T08:23:26.742Z - info: Pages rebuilt
-2019-12-23T08:23:26.757Z - info: Site data built
-2019-12-23T08:24:19.497Z - info: [4:24:19 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:24:20.500Z - info: Rebuilding affected source files
-2019-12-23T08:24:20.503Z - info: Rebuilding 13 pages
-2019-12-23T08:24:25.386Z - info: Pages rebuilt
-2019-12-23T08:24:25.403Z - info: Site data built
-2019-12-23T08:25:18.993Z - info: [4:25:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:25:20.009Z - info: Rebuilding affected source files
-2019-12-23T08:25:20.012Z - info: Rebuilding 13 pages
-2019-12-23T08:25:24.897Z - info: Pages rebuilt
-2019-12-23T08:25:24.910Z - info: Site data built
-2019-12-23T08:26:21.075Z - info: [4:26:21 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:26:22.078Z - info: Rebuilding affected source files
-2019-12-23T08:26:22.081Z - info: Rebuilding 13 pages
-2019-12-23T08:26:27.030Z - info: Pages rebuilt
-2019-12-23T08:26:27.045Z - info: Site data built
-2019-12-23T08:26:54.044Z - info: [4:26:54 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:26:55.047Z - info: Rebuilding affected source files
-2019-12-23T08:26:55.049Z - info: Rebuilding 13 pages
-2019-12-23T08:26:59.882Z - info: Pages rebuilt
-2019-12-23T08:26:59.898Z - info: Site data built
-2019-12-23T08:27:44.424Z - info: [4:27:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:27:45.440Z - info: Rebuilding affected source files
-2019-12-23T08:27:45.447Z - info: Rebuilding 13 pages
-2019-12-23T08:27:50.261Z - info: Pages rebuilt
-2019-12-23T08:27:50.282Z - info: Site data built
-2019-12-23T08:27:56.659Z - info: [4:27:56 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:27:57.673Z - info: Rebuilding affected source files
-2019-12-23T08:27:57.675Z - info: Rebuilding 13 pages
-2019-12-23T08:28:02.338Z - info: Pages rebuilt
-2019-12-23T08:28:02.350Z - info: Site data built
-2019-12-23T08:42:09.390Z - info: [4:42:09 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-ppp.md
-2019-12-23T08:42:10.397Z - info: Rebuilding affected source files
-2019-12-23T08:42:10.399Z - info: Rebuilding 9 pages
-2019-12-23T08:42:14.478Z - info: Pages rebuilt
-2019-12-23T08:42:14.493Z - info: Site data built
-2019-12-23T08:43:43.564Z - info: [4:43:43 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-ppp.md
-2019-12-23T08:43:44.570Z - info: Rebuilding affected source files
-2019-12-23T08:43:44.573Z - info: Rebuilding 9 pages
-2019-12-23T08:43:48.410Z - info: Pages rebuilt
-2019-12-23T08:43:48.425Z - info: Site data built
-2019-12-23T08:46:49.881Z - info: [4:46:49 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-scope.md
-2019-12-23T08:46:49.892Z - info: [4:46:49 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-ppp.md
-2019-12-23T08:46:50.886Z - info: Rebuilding affected source files
-2019-12-23T08:46:50.890Z - info: Rebuilding 17 pages
-2019-12-23T08:46:57.457Z - info: Pages rebuilt
-2019-12-23T08:46:57.476Z - info: Site data built
-2019-12-23T08:58:52.679Z - info: [4:58:52 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables.md
-2019-12-23T08:58:53.683Z - info: Rebuilding affected source files
-2019-12-23T08:58:53.688Z - info: Rebuilding 15 pages
-2019-12-23T08:58:58.783Z - info: Pages rebuilt
-2019-12-23T08:58:58.798Z - info: Site data built
-2019-12-23T09:31:17.738Z - info: [5:31:17 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-dg.md
-2019-12-23T09:31:18.750Z - info: Rebuilding affected source files
-2019-12-23T09:31:18.751Z - info: Rebuilding 3 pages
-2019-12-23T09:31:20.354Z - info: Pages rebuilt
-2019-12-23T09:31:20.366Z - info: Site data built
-2019-12-23T09:32:03.027Z - info: [5:32:03 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-dg.md
-2019-12-23T09:32:04.030Z - info: Rebuilding affected source files
-2019-12-23T09:32:04.031Z - info: Rebuilding 3 pages
-2019-12-23T09:32:05.654Z - info: Pages rebuilt
-2019-12-23T09:32:05.667Z - info: Site data built
-2019-12-23T09:33:17.871Z - info: [5:33:17 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-dg.md
-2019-12-23T09:33:18.873Z - info: Rebuilding affected source files
-2019-12-23T09:33:18.875Z - info: Rebuilding 3 pages
-2019-12-23T09:33:20.499Z - info: Pages rebuilt
-2019-12-23T09:33:20.512Z - info: Site data built
-2019-12-23T09:39:00.621Z - info: [5:39:00 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T09:39:00.628Z - info: [5:39:00 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week13\admin.md
-2019-12-23T09:39:01.635Z - info: Rebuilding affected source files
-2019-12-23T09:39:01.639Z - info: Rebuilding 15 pages
-2019-12-23T09:39:01.788Z - error:  Error: No such segment 'projectGrading-featureQuality-instructions' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+2019-12-23T14:12:26.399Z - info: Website generation started at 22:12:19
+2019-12-23T14:12:31.021Z - info: Building assets...
+2019-12-23T14:12:34.290Z - info: Assets built
+2019-12-23T14:12:34.290Z - info: Generating pages...
+2019-12-23T14:16:55.582Z - info: Pages built
+2019-12-23T14:17:51.180Z - info: Website generation complete! Total build time: 331.712s
+2019-12-23T14:17:51.644Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-23T14:17:51.644Z - info: Press CTRL+C to stop ...
+2019-12-23T14:17:51.712Z - info: Site data built
+2019-12-23T14:20:49.372Z - info: [22:20:49] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:20:50.376Z - info: Rebuilding affected source files
+2019-12-23T14:20:50.380Z - info: Rebuilding 8 pages
+2019-12-23T14:20:57.453Z - info: Pages rebuilt
+2019-12-23T14:20:57.465Z - info: Site data built
+2019-12-23T14:22:06.063Z - info: [22:22:06] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:22:07.069Z - info: Rebuilding affected source files
+2019-12-23T14:22:07.069Z - info: Rebuilding 8 pages
+2019-12-23T14:22:15.125Z - info: Pages rebuilt
+2019-12-23T14:22:15.137Z - info: Site data built
+2019-12-23T14:22:48.558Z - info: [22:22:48] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:22:49.562Z - info: Rebuilding affected source files
+2019-12-23T14:22:49.566Z - info: Rebuilding 8 pages
+2019-12-23T14:22:57.457Z - info: Pages rebuilt
+2019-12-23T14:22:57.469Z - info: Site data built
+2019-12-23T14:24:05.165Z - info: [22:24:05] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:24:06.169Z - info: Rebuilding affected source files
+2019-12-23T14:24:06.177Z - info: Rebuilding 8 pages
+2019-12-23T14:24:13.536Z - info: Pages rebuilt
+2019-12-23T14:24:13.556Z - info: Site data built
+2019-12-23T14:24:33.488Z - info: [22:24:33] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:24:34.505Z - info: Rebuilding affected source files
+2019-12-23T14:24:34.521Z - info: Rebuilding 8 pages
+2019-12-23T14:24:42.097Z - info: Pages rebuilt
+2019-12-23T14:24:42.109Z - info: Site data built
+2019-12-23T14:25:09.360Z - info: [22:25:09] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:25:10.364Z - info: Rebuilding affected source files
+2019-12-23T14:25:10.368Z - info: Rebuilding 8 pages
+2019-12-23T14:25:19.811Z - info: Pages rebuilt
+2019-12-23T14:25:19.831Z - info: Site data built
+2019-12-23T14:27:05.506Z - info: [22:27:05] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:27:06.536Z - info: Rebuilding affected source files
+2019-12-23T14:27:06.540Z - info: Rebuilding 8 pages
+2019-12-23T14:27:14.315Z - info: Pages rebuilt
+2019-12-23T14:27:14.331Z - info: Site data built
+2019-12-23T14:27:56.140Z - info: [22:27:56] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:27:57.160Z - info: Rebuilding affected source files
+2019-12-23T14:27:57.168Z - info: Rebuilding 8 pages
+2019-12-23T14:28:04.962Z - info: Pages rebuilt
+2019-12-23T14:28:05.006Z - info: Site data built
+2019-12-23T14:29:05.577Z - info: [22:29:05] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:29:06.588Z - info: Rebuilding affected source files
+2019-12-23T14:29:06.588Z - info: Rebuilding 8 pages
+2019-12-23T14:29:14.698Z - info: Pages rebuilt
+2019-12-23T14:29:14.734Z - info: Site data built
+2019-12-23T14:29:56.534Z - info: [22:29:56] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:29:57.542Z - info: Rebuilding affected source files
+2019-12-23T14:29:57.554Z - info: Rebuilding 8 pages
+2019-12-23T14:30:06.070Z - info: Pages rebuilt
+2019-12-23T14:30:06.086Z - info: Site data built
+2019-12-23T14:30:23.611Z - info: [22:30:23] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:30:24.613Z - info: Rebuilding affected source files
+2019-12-23T14:30:24.613Z - info: Rebuilding 8 pages
+2019-12-23T14:30:35.286Z - info: Pages rebuilt
+2019-12-23T14:30:35.302Z - info: Site data built
+2019-12-23T14:30:45.459Z - info: [22:30:45] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:30:46.477Z - info: Rebuilding affected source files
+2019-12-23T14:30:46.481Z - info: Rebuilding 8 pages
+2019-12-23T14:30:46.521Z - error: uncaughtException: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md) [Line 167, Column 125]
+  parseSignature: expected comma after expression date=Mon Dec 23 2019 22:30:46 GMT+0800 (Malay Peninsula Standard Time), pid=8472, uid=null, gid=null, cwd=C:\repos\nus-cs2103-AY1920S2\cs2103-website, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=352223232, heapTotal=293326848, heapUsed=254985984, external=1067003, loadavg=[0, 0, 0], uptime=336996.0637013
+Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md) [Line 167, Column 125]
+  parseSignature: expected comma after expression
+    at Object._prettifyError (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:542:21)
+    at Environment.renderString (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:380:17)
+    at Object.renderString (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:709:34)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2019-12-23T14:30:46.925Z - error:  Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md) [Line 167, Column 125]
+  parseSignature: expected comma after expression
+Error while preprocessing 'C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week5\admin.md'
+    at Object._prettifyError (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:542:21)
+    at Environment.renderString (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:380:17)
+    at Object.renderString (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at Parser._renderIncludeFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:267:28)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:406:14)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at dom.map (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:675:28)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:672:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+2019-12-23T14:30:49.021Z - error: uncaughtException: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md) [Line 167, Column 125]
+  parseSignature: expected comma after expression date=Mon Dec 23 2019 22:30:49 GMT+0800 (Malay Peninsula Standard Time), pid=8472, uid=null, gid=null, cwd=C:\repos\nus-cs2103-AY1920S2\cs2103-website, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=299560960, heapTotal=241422336, heapUsed=179010608, external=386655, loadavg=[0, 0, 0], uptime=336998.5677964
+Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md) [Line 167, Column 125]
+  parseSignature: expected comma after expression
+    at Object._prettifyError (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:542:21)
+    at Environment.renderString (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:380:17)
+    at Object.renderString (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at fs.readFile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:709:34)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2019-12-23T14:31:26.737Z - info: [22:31:26] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:31:46.965Z - info: Website generation started at 22:31:39
+2019-12-23T14:31:51.348Z - info: Building assets...
+2019-12-23T14:31:55.253Z - info: Assets built
+2019-12-23T14:31:55.253Z - info: Generating pages...
+2019-12-23T14:35:16.814Z - info: Pages built
+2019-12-23T14:35:51.743Z - info: Website generation complete! Total build time: 251.745s
+2019-12-23T14:35:52.039Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-23T14:35:52.039Z - info: Press CTRL+C to stop ...
+2019-12-23T14:35:52.086Z - info: Site data built
+2019-12-23T14:37:51.590Z - info: [22:37:51] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-23T14:37:52.593Z - info: Rebuilding affected source files
+2019-12-23T14:37:52.601Z - info: Rebuilding 11 pages
+2019-12-23T14:38:00.854Z - info: Pages rebuilt
+2019-12-23T14:38:00.950Z - info: Site data built
+2019-12-23T14:39:11.430Z - info: [22:39:11] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:39:12.436Z - info: Rebuilding affected source files
+2019-12-23T14:39:12.441Z - info: Rebuilding 8 pages
+2019-12-23T14:39:18.276Z - info: [22:39:18] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:39:20.067Z - info: Pages rebuilt
+2019-12-23T14:39:20.092Z - info: Site data built
+2019-12-23T14:39:20.243Z - info: Rebuilding affected source files
+2019-12-23T14:39:20.245Z - info: Rebuilding 8 pages
+2019-12-23T14:39:26.490Z - info: Pages rebuilt
+2019-12-23T14:39:26.592Z - info: Site data built
+2019-12-23T14:39:50.693Z - info: [22:39:50] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:39:51.695Z - info: Rebuilding affected source files
+2019-12-23T14:39:51.705Z - info: Rebuilding 8 pages
+2019-12-23T14:39:57.448Z - info: Pages rebuilt
+2019-12-23T14:39:57.459Z - info: Site data built
+2019-12-23T14:40:06.830Z - info: [22:40:06] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:40:07.835Z - info: Rebuilding affected source files
+2019-12-23T14:40:07.839Z - info: Rebuilding 8 pages
+2019-12-23T14:40:13.344Z - info: Pages rebuilt
+2019-12-23T14:40:13.432Z - info: Site data built
+2019-12-23T14:40:21.121Z - info: [22:40:21] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:40:22.127Z - info: Rebuilding affected source files
+2019-12-23T14:40:22.128Z - info: Rebuilding 8 pages
+2019-12-23T14:40:27.657Z - info: Pages rebuilt
+2019-12-23T14:40:27.671Z - info: Site data built
+2019-12-23T14:41:38.117Z - info: [22:41:38] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:41:39.119Z - info: Rebuilding affected source files
+2019-12-23T14:41:39.123Z - info: Rebuilding 8 pages
+2019-12-23T14:41:46.192Z - info: Pages rebuilt
+2019-12-23T14:41:46.287Z - info: Site data built
+2019-12-23T14:43:06.482Z - info: [22:43:06] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-23T14:43:07.489Z - info: Rebuilding affected source files
+2019-12-23T14:43:07.492Z - info: Rebuilding 10 pages
+2019-12-23T14:43:14.803Z - info: Pages rebuilt
+2019-12-23T14:43:14.811Z - info: Site data built
+2019-12-23T14:44:57.808Z - info: [22:44:57] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-23T14:44:58.830Z - info: Rebuilding affected source files
+2019-12-23T14:44:58.833Z - info: Rebuilding 10 pages
+2019-12-23T14:45:05.919Z - info: Pages rebuilt
+2019-12-23T14:45:05.927Z - info: Site data built
+2019-12-23T14:46:11.515Z - info: [22:46:11] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-23T14:46:12.516Z - info: Rebuilding affected source files
+2019-12-23T14:46:12.519Z - info: Rebuilding 9 pages
+2019-12-23T14:46:19.343Z - info: Pages rebuilt
+2019-12-23T14:46:19.353Z - info: Site data built
+2019-12-23T14:47:46.220Z - info: [22:47:46] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-23T14:47:47.222Z - info: Rebuilding affected source files
+2019-12-23T14:47:47.226Z - info: Rebuilding 9 pages
+2019-12-23T14:47:53.936Z - info: Pages rebuilt
+2019-12-23T14:47:54.025Z - info: Site data built
+2019-12-23T14:48:55.891Z - info: [22:48:55] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T14:48:56.898Z - info: Rebuilding affected source files
+2019-12-23T14:48:56.902Z - info: Rebuilding 8 pages
+2019-12-23T14:49:04.098Z - info: Pages rebuilt
+2019-12-23T14:49:04.108Z - info: Site data built
+2019-12-23T14:53:34.301Z - info: [22:53:34] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T14:53:35.302Z - info: Rebuilding affected source files
+2019-12-23T14:53:35.305Z - info: Rebuilding 8 pages
+2019-12-23T14:53:40.569Z - info: Pages rebuilt
+2019-12-23T14:53:40.657Z - info: Site data built
+2019-12-23T14:54:12.781Z - info: [22:54:12] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T14:54:13.782Z - info: Rebuilding affected source files
+2019-12-23T14:54:13.789Z - info: Rebuilding 7 pages
+2019-12-23T14:54:18.983Z - info: Pages rebuilt
+2019-12-23T14:54:19.069Z - info: Site data built
+2019-12-23T14:54:57.620Z - info: [22:54:57] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T14:54:58.622Z - info: Rebuilding affected source files
+2019-12-23T14:54:58.625Z - info: Rebuilding 7 pages
+2019-12-23T14:55:04.807Z - info: Pages rebuilt
+2019-12-23T14:55:04.891Z - info: Site data built
+2019-12-23T14:55:23.459Z - info: [22:55:23] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T14:55:24.465Z - info: Rebuilding affected source files
+2019-12-23T14:55:24.467Z - info: Rebuilding 7 pages
+2019-12-23T14:55:31.060Z - info: Pages rebuilt
+2019-12-23T14:55:31.078Z - info: Site data built
+2019-12-23T14:56:28.247Z - info: [22:56:28] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T14:56:29.258Z - info: Rebuilding affected source files
+2019-12-23T14:56:29.263Z - info: Rebuilding 7 pages
+2019-12-23T14:56:35.969Z - info: Pages rebuilt
+2019-12-23T14:56:36.046Z - info: Site data built
+2019-12-23T14:56:45.089Z - info: [22:56:45] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T14:56:46.095Z - info: Rebuilding affected source files
+2019-12-23T14:56:46.096Z - info: Rebuilding 7 pages
+2019-12-23T14:56:52.172Z - info: Pages rebuilt
+2019-12-23T14:56:52.199Z - info: Site data built
+2019-12-23T14:57:18.391Z - info: [22:57:18] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T14:57:19.397Z - info: Rebuilding affected source files
+2019-12-23T14:57:19.399Z - info: Rebuilding 7 pages
+2019-12-23T14:57:25.073Z - info: Pages rebuilt
+2019-12-23T14:57:25.086Z - info: Site data built
+2019-12-23T14:58:02.783Z - info: [22:58:02] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T14:58:03.788Z - info: Rebuilding affected source files
+2019-12-23T14:58:03.790Z - info: Rebuilding 7 pages
+2019-12-23T14:58:09.766Z - info: Pages rebuilt
+2019-12-23T14:58:09.851Z - info: Site data built
+2019-12-23T14:59:08.462Z - info: [22:59:08] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T14:59:09.464Z - info: Rebuilding affected source files
+2019-12-23T14:59:09.468Z - info: Rebuilding 7 pages
+2019-12-23T14:59:14.888Z - info: Pages rebuilt
+2019-12-23T14:59:14.969Z - info: Site data built
+2019-12-23T15:00:11.158Z - info: [23:00:11] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T15:00:12.164Z - info: Rebuilding affected source files
+2019-12-23T15:00:12.166Z - info: Rebuilding 7 pages
+2019-12-23T15:00:17.548Z - info: Pages rebuilt
+2019-12-23T15:00:17.636Z - info: Site data built
+2019-12-23T15:00:33.188Z - info: [23:00:33] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T15:00:34.201Z - info: Rebuilding affected source files
+2019-12-23T15:00:34.204Z - info: Rebuilding 7 pages
+2019-12-23T15:00:39.254Z - info: Pages rebuilt
+2019-12-23T15:00:39.265Z - info: Site data built
+2019-12-23T15:06:12.076Z - info: [23:06:12] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week13\admin.md
+2019-12-23T15:06:12.116Z - info: [23:06:12] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T15:06:13.093Z - info: Rebuilding affected source files
+2019-12-23T15:06:13.098Z - info: Rebuilding 9 pages
+2019-12-23T15:06:24.527Z - info: Pages rebuilt
+2019-12-23T15:06:24.673Z - info: Site data built
+2019-12-23T15:08:50.116Z - info: [23:08:50] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week13\admin.md
+2019-12-23T15:08:51.118Z - info: Rebuilding affected source files
+2019-12-23T15:08:51.119Z - info: Rebuilding 3 pages
+2019-12-23T15:08:57.631Z - warn:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectHeadingsAndKeywordsInContent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:348:19)
+    at Object.$.not.each.each (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:392:16)
+    at initialize.exports.each (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Page.collectHeadingsAndKeywordsInContent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:358:6)
+    at Page.collectHeadingsAndKeywords (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:339:8)
+    at pages.forEach (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:862:12)
+    at Array.forEach (<anonymous>)
+    at Site.updateSiteData (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:860:14)
+    at Promise.all.then (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:844:24)
+    at tryCatcher (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+2019-12-23T15:09:00.533Z - error: Cannot read property 'parent' of null
+2019-12-23T15:09:33.354Z - info: Website generation started at 23:09:33
+2019-12-23T15:09:36.085Z - info: Building assets...
+2019-12-23T15:09:38.594Z - info: Assets built
+2019-12-23T15:09:38.594Z - info: Generating pages...
+2019-12-23T15:12:36.858Z - info: Pages built
+2019-12-23T15:12:42.440Z - warn:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectHeadingsAndKeywordsInContent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:348:19)
+    at Object.$.not.each.each (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:392:16)
+    at initialize.exports.each (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Page.collectHeadingsAndKeywordsInContent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:358:6)
+    at Page.collectHeadingsAndKeywords (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:339:8)
+    at pages.forEach (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:862:12)
+    at Array.forEach (<anonymous>)
+    at Site.updateSiteData (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:860:14)
+    at readSiteConfig.then.then.then.then.then.then.then.then.then.then (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:527:24)
+    at tryCatcher (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+2019-12-23T15:12:44.998Z - error: Cannot read property 'parent' of null
+2019-12-23T15:14:11.050Z - info: Website generation started at 23:14:11
+2019-12-23T15:14:13.651Z - info: Building assets...
+2019-12-23T15:14:16.116Z - info: Assets built
+2019-12-23T15:14:16.117Z - info: Generating pages...
+2019-12-23T15:17:20.077Z - info: Pages built
+2019-12-23T15:17:26.151Z - warn:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectHeadingsAndKeywordsInContent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:348:19)
+    at Object.$.not.each.each (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:392:16)
+    at initialize.exports.each (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Page.collectHeadingsAndKeywordsInContent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:358:6)
+    at Page.collectHeadingsAndKeywords (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:339:8)
+    at pages.forEach (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:862:12)
+    at Array.forEach (<anonymous>)
+    at Site.updateSiteData (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:860:14)
+    at readSiteConfig.then.then.then.then.then.then.then.then.then.then (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:527:24)
+    at tryCatcher (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+2019-12-23T15:17:28.236Z - error: Cannot read property 'parent' of null
+2019-12-23T15:18:11.010Z - info: Website generation started at 23:18:10
+2019-12-23T15:18:14.054Z - info: Building assets...
+2019-12-23T15:18:16.492Z - info: Assets built
+2019-12-23T15:18:16.492Z - info: Generating pages...
+2019-12-23T15:21:08.605Z - info: Pages built
+2019-12-23T15:21:40.381Z - info: Website generation complete! Total build time: 209.385s
+2019-12-23T15:21:40.710Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-23T15:21:40.711Z - info: Press CTRL+C to stop ...
+2019-12-23T15:21:40.764Z - info: Site data built
+2019-12-23T15:23:21.203Z - info: [23:23:21] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week13\admin.md
+2019-12-23T15:23:22.210Z - info: Rebuilding affected source files
+2019-12-23T15:23:22.216Z - info: Rebuilding 3 pages
+2019-12-23T15:23:28.084Z - info: Pages rebuilt
+2019-12-23T15:23:28.097Z - info: Site data built
+2019-12-23T15:23:33.504Z - info: [23:23:33] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week13\admin.md
+2019-12-23T15:23:34.505Z - info: Rebuilding affected source files
+2019-12-23T15:23:34.507Z - info: Rebuilding 3 pages
+2019-12-23T15:23:40.141Z - info: Pages rebuilt
+2019-12-23T15:23:40.167Z - info: Site data built
+2019-12-23T15:27:38.937Z - info: [23:27:38] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week13\admin.md
+2019-12-23T15:27:38.946Z - info: [23:27:38] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T15:27:39.943Z - info: Rebuilding affected source files
+2019-12-23T15:27:39.956Z - info: Rebuilding 9 pages
+2019-12-23T15:27:49.185Z - info: Pages rebuilt
+2019-12-23T15:27:49.271Z - info: Site data built
+2019-12-23T15:30:58.612Z - info: [23:30:58] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\common\macros.njk
+2019-12-23T15:30:58.616Z - info: [23:30:58] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week13\admin.md
+2019-12-23T15:30:59.622Z - info: Rebuilding affected source files
+2019-12-23T15:30:59.628Z - info: Rebuilding 3 pages
+2019-12-23T15:31:02.941Z - info: Assets built
+2019-12-23T15:31:05.303Z - info: Pages rebuilt
+2019-12-23T15:31:05.330Z - info: Site data built
+2019-12-23T15:31:20.643Z - info: Website generation started at 23:31:15
+2019-12-23T15:31:23.717Z - info: Building assets...
+2019-12-23T15:31:26.155Z - info: Assets built
+2019-12-23T15:31:26.156Z - info: Generating pages...
+2019-12-23T15:34:18.426Z - info: Pages built
+2019-12-23T15:34:50.477Z - info: Website generation complete! Total build time: 215.332s
+2019-12-23T15:34:50.770Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-23T15:34:50.771Z - info: Press CTRL+C to stop ...
+2019-12-23T15:34:50.915Z - info: Site data built
+2019-12-23T15:37:55.607Z - info: [23:37:55] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week8\admin.md
+2019-12-23T15:37:56.613Z - info: Rebuilding affected source files
+2019-12-23T15:37:56.616Z - info: Rebuilding 3 pages
+2019-12-23T15:37:58.554Z - error:  Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week8\admin.md)
+  Error: Unable to call `embed_topic`, which is undefined or falsey
+    at Object._prettifyError (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:51:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:11)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:11)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:248:3)
+    at Template.getExported (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:10:5)
+    at Environment.getTemplate (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:8:5)
+    at Template.getExported (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:10:5)
+    at Environment.getTemplate (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+2019-12-23T15:37:59.402Z - error: uncaughtException: Template render error: Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week8\admin.md)
+  Error: Unable to call `embed_topic`, which is undefined or falsey date=Mon Dec 23 2019 23:37:59 GMT+0800 (Malay Peninsula Standard Time), pid=12752, uid=null, gid=null, cwd=C:\repos\nus-cs2103-AY1920S2\cs2103-website, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=312184832, heapTotal=253480960, heapUsed=197120248, external=184815, loadavg=[0, 0, 0], uptime=341028.9450603
+Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week8\admin.md)
+  Error: Unable to call `embed_topic`, which is undefined or falsey
+    at Object._prettifyError (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:51:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:11)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:11)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:248:3)
+    at Template.getExported (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:10:5)
+    at Environment.getTemplate (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:8:5)
+    at Template.getExported (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:10:5)
+    at Environment.getTemplate (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+2019-12-23T15:37:59.576Z - error:  Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week8\admin.md)
+  Error: Unable to call `embed_topic`, which is undefined or falsey
+    at Object._prettifyError (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:51:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:11)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:11)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:248:3)
+    at Template.getExported (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:10:5)
+    at Environment.getTemplate (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:8:5)
+    at Template.getExported (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:10:5)
+    at Environment.getTemplate (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+2019-12-23T15:38:24.793Z - info: [23:38:24] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week8\admin.md
+2019-12-23T15:39:02.746Z - info: [23:39:02] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week8\admin.md
+2019-12-23T15:39:04.669Z - info: [23:39:04] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week8\admin.md
+2019-12-23T15:39:25.319Z - info: Website generation started at 23:39:19
+2019-12-23T15:39:28.358Z - info: Building assets...
+2019-12-23T15:39:30.775Z - info: Assets built
+2019-12-23T15:39:30.775Z - info: Generating pages...
+2019-12-23T15:42:22.097Z - info: Pages built
+2019-12-23T15:42:51.672Z - info: Website generation complete! Total build time: 212.11s
+2019-12-23T15:42:52.046Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-23T15:42:52.047Z - info: Press CTRL+C to stop ...
+2019-12-23T15:42:52.089Z - info: Site data built
+2019-12-23T15:43:02.398Z - info: [23:43:02] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week5\admin.md
+2019-12-23T15:43:03.401Z - info: Rebuilding affected source files
+2019-12-23T15:43:03.408Z - info: Rebuilding 3 pages
+2019-12-23T15:43:09.950Z - info: Pages rebuilt
+2019-12-23T15:43:09.963Z - info: Site data built
+2019-12-23T15:47:39.620Z - info: [23:47:39] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week5\admin.md
+2019-12-23T15:47:39.625Z - info: [23:47:39] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T15:47:40.628Z - info: Rebuilding affected source files
+2019-12-23T15:47:40.640Z - info: Rebuilding 10 pages
+2019-12-23T15:47:50.430Z - info: Pages rebuilt
+2019-12-23T15:47:50.449Z - info: Site data built
+2019-12-23T15:48:08.830Z - info: [23:48:08] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week5\admin.md
+2019-12-23T15:48:09.830Z - info: Rebuilding affected source files
+2019-12-23T15:48:09.833Z - info: Rebuilding 3 pages
+2019-12-23T15:48:15.754Z - info: Pages rebuilt
+2019-12-23T15:48:15.762Z - info: Site data built
+2019-12-23T15:49:20.538Z - info: [23:49:20] Reload for file add: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+2019-12-23T15:49:21.539Z - warn: Rebuilding all source files
+2019-12-23T15:49:23.660Z - info: Assets removed
+2019-12-23T15:49:23.660Z - info: Generating pages...
+2019-12-23T15:52:17.637Z - info: Pages built
+2019-12-23T15:54:44.101Z - info: [23:54:44] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
+2019-12-23T15:54:44.115Z - info: [23:54:44] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\participation.md
+2019-12-23T15:54:44.127Z - info: [23:54:44] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T15:54:44.135Z - info: [23:54:44] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+2019-12-23T15:54:45.107Z - info: Rebuilding affected source files
+2019-12-23T15:54:45.125Z - info: Rebuilding 14 pages
+2019-12-23T15:54:45.267Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
-2019-12-23T09:39:01.909Z - error:  Error: No such segment 'projectGrading-featureQuality-instructions' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
+2019-12-23T15:54:45.303Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
-2019-12-23T09:39:04.324Z - error:  Error: No such segment 'projectGrading-featureQuality-instructions' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at dom.map (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:675:28)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
+2019-12-23T15:54:45.323Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:672:25)
-    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
-    at DomHandler.onend (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
-    at Parser.onend (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:340:36)
-2019-12-23T09:39:04.409Z - error:  Error: No such segment 'projectGrading-featureQuality-instructions' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
+2019-12-23T15:54:45.942Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
-2019-12-23T09:39:07.368Z - error:  Error: No such segment 'projectGrading-featureQuality-instructions' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
+2019-12-23T15:54:45.948Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
-2019-12-23T09:39:07.484Z - error:  Error: No such segment 'projectGrading-featureQuality-instructions' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
+2019-12-23T15:54:45.957Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
-2019-12-23T09:39:07.677Z - error:  Error: No such segment 'projectGrading-featureQuality-instructions' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
+2019-12-23T15:54:46.840Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
     at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
-2019-12-23T09:39:10.938Z - info: Pages rebuilt
-2019-12-23T09:39:10.971Z - info: Site data built
-2019-12-23T09:39:52.547Z - info: [5:39:52 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\cs2103-website-2020-Jan.iml
-2019-12-23T09:39:53.566Z - info: Assets built
-2019-12-23T09:41:51.230Z - info: [5:41:51 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T09:41:52.245Z - info: Rebuilding affected source files
-2019-12-23T09:41:52.247Z - info: Rebuilding 7 pages
-2019-12-23T09:41:55.588Z - info: Pages rebuilt
-2019-12-23T09:41:55.602Z - info: Site data built
-2019-12-23T09:46:20.163Z - info: [5:46:20 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T09:46:20.172Z - info: [5:46:20 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T09:46:21.166Z - info: Rebuilding affected source files
-2019-12-23T09:46:21.169Z - info: Rebuilding 15 pages
-2019-12-23T09:46:26.465Z - info: Pages rebuilt
-2019-12-23T09:46:26.479Z - info: Site data built
-2019-12-23T09:49:12.703Z - info: [5:49:12 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T09:49:13.717Z - info: Rebuilding affected source files
-2019-12-23T09:49:13.723Z - info: Rebuilding 12 pages
-2019-12-23T09:49:18.346Z - info: Pages rebuilt
-2019-12-23T09:49:18.362Z - info: Site data built
-2019-12-23T09:50:09.045Z - info: [5:50:09 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T09:50:10.049Z - info: Rebuilding affected source files
-2019-12-23T09:50:10.053Z - info: Rebuilding 12 pages
-2019-12-23T09:50:14.762Z - info: Pages rebuilt
-2019-12-23T09:50:14.776Z - info: Site data built
-2019-12-23T09:53:52.509Z - info: [5:53:52 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-w04-inception.md
-2019-12-23T09:53:53.512Z - info: Rebuilding affected source files
-2019-12-23T09:53:53.513Z - info: Rebuilding 4 pages
-2019-12-23T09:53:57.633Z - info: Pages rebuilt
-2019-12-23T09:53:57.650Z - info: Site data built
-2019-12-23T09:56:36.060Z - info: [5:56:36 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T09:56:37.062Z - info: Rebuilding affected source files
-2019-12-23T09:56:37.065Z - info: Rebuilding 9 pages
-2019-12-23T09:56:40.988Z - info: Pages rebuilt
-2019-12-23T09:56:41.008Z - info: Site data built
-2019-12-23T10:18:26.843Z - info: [6:18:26 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:18:27.847Z - info: Rebuilding affected source files
-2019-12-23T10:18:27.850Z - info: Rebuilding 8 pages
-2019-12-23T10:18:31.674Z - info: Pages rebuilt
-2019-12-23T10:18:31.694Z - info: Site data built
-2019-12-23T10:20:11.357Z - info: [6:20:11 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:20:12.360Z - info: Rebuilding affected source files
-2019-12-23T10:20:12.362Z - info: Rebuilding 8 pages
-2019-12-23T10:20:16.325Z - info: Pages rebuilt
-2019-12-23T10:20:16.338Z - info: Site data built
-2019-12-23T10:20:45.929Z - info: [6:20:45 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:20:46.933Z - info: Rebuilding affected source files
-2019-12-23T10:20:46.935Z - info: Rebuilding 8 pages
-2019-12-23T10:20:50.662Z - info: Pages rebuilt
-2019-12-23T10:20:50.676Z - info: Site data built
-2019-12-23T10:21:14.910Z - info: [6:21:14 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:21:15.912Z - info: Rebuilding affected source files
-2019-12-23T10:21:15.915Z - info: Rebuilding 8 pages
-2019-12-23T10:21:19.747Z - info: Pages rebuilt
-2019-12-23T10:21:19.764Z - info: Site data built
-2019-12-23T10:21:27.567Z - info: [6:21:27 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:21:28.575Z - info: Rebuilding affected source files
-2019-12-23T10:21:28.576Z - info: Rebuilding 8 pages
-2019-12-23T10:21:32.056Z - info: Pages rebuilt
-2019-12-23T10:21:32.069Z - info: Site data built
-2019-12-23T10:22:08.902Z - info: [6:22:08 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:22:09.906Z - info: Rebuilding affected source files
-2019-12-23T10:22:09.910Z - info: Rebuilding 8 pages
-2019-12-23T10:22:13.776Z - info: Pages rebuilt
-2019-12-23T10:22:13.829Z - info: Site data built
-2019-12-23T10:22:20.278Z - info: [6:22:20 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:22:21.279Z - info: Rebuilding affected source files
-2019-12-23T10:22:21.280Z - info: Rebuilding 8 pages
-2019-12-23T10:22:24.880Z - info: Pages rebuilt
-2019-12-23T10:22:24.906Z - info: Site data built
-2019-12-23T10:22:26.158Z - info: [6:22:26 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:22:27.160Z - info: Rebuilding affected source files
-2019-12-23T10:22:27.161Z - info: Rebuilding 8 pages
-2019-12-23T10:22:30.632Z - info: Pages rebuilt
-2019-12-23T10:22:30.644Z - info: Site data built
-2019-12-23T10:22:37.683Z - info: [6:22:37 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:22:38.685Z - info: Rebuilding affected source files
-2019-12-23T10:22:38.687Z - info: Rebuilding 8 pages
-2019-12-23T10:22:42.383Z - info: Pages rebuilt
-2019-12-23T10:22:42.402Z - info: Site data built
-2019-12-23T10:22:44.818Z - info: [6:22:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:22:45.830Z - info: Rebuilding affected source files
-2019-12-23T10:22:45.832Z - info: Rebuilding 8 pages
-2019-12-23T10:22:49.331Z - info: Pages rebuilt
-2019-12-23T10:22:49.348Z - info: Site data built
-2019-12-23T10:23:12.880Z - info: [6:23:12 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:23:13.883Z - info: Rebuilding affected source files
-2019-12-23T10:23:13.885Z - info: Rebuilding 8 pages
-2019-12-23T10:23:17.633Z - info: Pages rebuilt
-2019-12-23T10:23:17.653Z - info: Site data built
-2019-12-23T10:23:43.290Z - info: [6:23:43 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:23:44.292Z - info: Rebuilding affected source files
-2019-12-23T10:23:44.294Z - info: Rebuilding 8 pages
-2019-12-23T10:23:47.943Z - info: Pages rebuilt
-2019-12-23T10:23:47.964Z - info: Site data built
-2019-12-23T10:23:58.895Z - info: [6:23:58 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:23:59.899Z - info: Rebuilding affected source files
-2019-12-23T10:23:59.901Z - info: Rebuilding 8 pages
-2019-12-23T10:24:03.376Z - info: Pages rebuilt
-2019-12-23T10:24:03.394Z - info: Site data built
-2019-12-23T10:24:47.822Z - info: [6:24:47 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:24:48.825Z - info: Rebuilding affected source files
-2019-12-23T10:24:48.827Z - info: Rebuilding 8 pages
-2019-12-23T10:24:52.534Z - info: Pages rebuilt
-2019-12-23T10:24:52.555Z - info: Site data built
-2019-12-23T10:24:56.613Z - info: [6:24:56 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:24:57.614Z - info: Rebuilding affected source files
-2019-12-23T10:24:57.615Z - info: Rebuilding 8 pages
-2019-12-23T10:25:01.654Z - info: Pages rebuilt
-2019-12-23T10:25:01.669Z - info: Site data built
-2019-12-23T10:25:04.323Z - info: [6:25:04 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:25:05.333Z - info: Rebuilding affected source files
-2019-12-23T10:25:05.336Z - info: Rebuilding 8 pages
-2019-12-23T10:25:08.895Z - info: Pages rebuilt
-2019-12-23T10:25:08.919Z - info: Site data built
-2019-12-23T10:25:14.532Z - info: [6:25:14 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:25:15.534Z - info: Rebuilding affected source files
-2019-12-23T10:25:15.535Z - info: Rebuilding 8 pages
-2019-12-23T10:25:19.003Z - info: Pages rebuilt
-2019-12-23T10:25:19.016Z - info: Site data built
-2019-12-23T10:25:51.755Z - info: [6:25:51 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:25:52.764Z - info: Rebuilding affected source files
-2019-12-23T10:25:52.770Z - info: Rebuilding 8 pages
-2019-12-23T10:25:56.626Z - info: Pages rebuilt
-2019-12-23T10:25:56.645Z - info: Site data built
-2019-12-23T10:27:03.622Z - info: [6:27:03 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:27:04.638Z - info: Rebuilding affected source files
-2019-12-23T10:27:04.642Z - info: Rebuilding 8 pages
-2019-12-23T10:27:08.422Z - info: Pages rebuilt
-2019-12-23T10:27:08.439Z - info: Site data built
-2019-12-23T10:29:52.415Z - info: [6:29:52 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:29:53.417Z - info: Rebuilding affected source files
-2019-12-23T10:29:53.420Z - info: Rebuilding 8 pages
-2019-12-23T10:29:57.078Z - info: Pages rebuilt
-2019-12-23T10:29:57.099Z - info: Site data built
-2019-12-23T10:30:34.438Z - info: [6:30:34 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:30:35.442Z - info: Rebuilding affected source files
-2019-12-23T10:30:35.444Z - info: Rebuilding 8 pages
-2019-12-23T10:30:39.287Z - info: Pages rebuilt
-2019-12-23T10:30:39.305Z - info: Site data built
-2019-12-23T10:30:48.427Z - info: [6:30:48 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:30:49.430Z - info: Rebuilding affected source files
-2019-12-23T10:30:49.431Z - info: Rebuilding 8 pages
-2019-12-23T10:30:53.000Z - info: Pages rebuilt
-2019-12-23T10:30:53.013Z - info: Site data built
-2019-12-23T10:34:13.541Z - info: [6:34:13 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:34:13.551Z - info: [6:34:13 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T10:34:13.560Z - info: [6:34:13 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week13\admin.md
-2019-12-23T10:34:14.545Z - info: Rebuilding affected source files
-2019-12-23T10:34:14.548Z - info: Rebuilding 16 pages
-2019-12-23T10:34:23.179Z - info: Pages rebuilt
-2019-12-23T10:34:23.197Z - info: Site data built
-2019-12-23T10:35:01.435Z - info: [6:35:01 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T10:35:02.438Z - info: Rebuilding affected source files
-2019-12-23T10:35:02.442Z - info: Rebuilding 12 pages
-2019-12-23T10:35:07.343Z - info: Pages rebuilt
-2019-12-23T10:35:07.381Z - info: Site data built
-2019-12-23T10:35:41.217Z - info: [6:35:41 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\common\macros.njk
-2019-12-23T10:35:42.227Z - info: Assets built
-2019-12-23T10:37:27.688Z - info: [6:37:27 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:37:28.693Z - info: Rebuilding affected source files
-2019-12-23T10:37:28.697Z - info: Rebuilding 10 pages
-2019-12-23T10:37:32.567Z - info: Pages rebuilt
-2019-12-23T10:37:32.586Z - info: Site data built
-2019-12-23T10:37:50.461Z - info: [6:37:50 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:37:51.464Z - info: Rebuilding affected source files
-2019-12-23T10:37:51.467Z - info: Rebuilding 9 pages
-2019-12-23T10:37:55.153Z - info: Pages rebuilt
-2019-12-23T10:37:55.167Z - info: Site data built
-2019-12-23T10:38:31.538Z - info: [6:38:31 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:38:32.541Z - info: Rebuilding affected source files
-2019-12-23T10:38:32.544Z - info: Rebuilding 9 pages
-2019-12-23T10:38:36.322Z - info: Pages rebuilt
-2019-12-23T10:38:36.346Z - info: Site data built
-2019-12-23T10:39:00.403Z - info: [6:39:00 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:39:01.406Z - info: Rebuilding affected source files
-2019-12-23T10:39:01.408Z - info: Rebuilding 9 pages
-2019-12-23T10:39:05.260Z - info: Pages rebuilt
-2019-12-23T10:39:05.271Z - info: Site data built
-2019-12-23T10:40:42.717Z - info: [6:40:42 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:40:43.719Z - info: Rebuilding affected source files
-2019-12-23T10:40:43.721Z - info: Rebuilding 9 pages
-2019-12-23T10:40:47.711Z - info: Pages rebuilt
-2019-12-23T10:40:47.726Z - info: Site data built
-2019-12-23T10:41:16.336Z - info: [6:41:16 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:41:17.340Z - info: Rebuilding affected source files
-2019-12-23T10:41:17.342Z - info: Rebuilding 9 pages
-2019-12-23T10:41:21.206Z - info: Pages rebuilt
-2019-12-23T10:41:21.219Z - info: Site data built
-2019-12-23T10:42:51.771Z - info: [6:42:51 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:42:51.779Z - info: [6:42:51 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T10:42:51.792Z - info: [6:42:51 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week13\admin.md
-2019-12-23T10:42:52.773Z - info: Rebuilding affected source files
-2019-12-23T10:42:52.777Z - info: Rebuilding 16 pages
-2019-12-23T10:43:01.312Z - info: Pages rebuilt
-2019-12-23T10:43:01.327Z - info: Site data built
-2019-12-23T10:49:06.999Z - info: [6:49:06 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:49:08.003Z - info: Rebuilding affected source files
-2019-12-23T10:49:08.005Z - info: Rebuilding 9 pages
-2019-12-23T10:49:12.764Z - info: Pages rebuilt
-2019-12-23T10:49:12.795Z - info: Site data built
-2019-12-23T10:49:33.020Z - info: [6:49:33 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:49:34.022Z - info: Rebuilding affected source files
-2019-12-23T10:49:34.025Z - info: Rebuilding 9 pages
-2019-12-23T10:49:37.887Z - info: Pages rebuilt
-2019-12-23T10:49:37.905Z - info: Site data built
-2019-12-23T10:50:47.322Z - info: [6:50:47 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:50:48.325Z - info: Rebuilding affected source files
-2019-12-23T10:50:48.328Z - info: Rebuilding 9 pages
-2019-12-23T10:50:52.135Z - info: Pages rebuilt
-2019-12-23T10:50:52.147Z - info: Site data built
-2019-12-23T10:51:42.112Z - info: [6:51:42 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:51:43.115Z - info: Rebuilding affected source files
-2019-12-23T10:51:43.117Z - info: Rebuilding 9 pages
-2019-12-23T10:51:46.922Z - info: Pages rebuilt
-2019-12-23T10:51:46.944Z - info: Site data built
-2019-12-23T10:53:54.221Z - info: [6:53:54 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:53:55.225Z - info: Rebuilding affected source files
-2019-12-23T10:53:55.227Z - info: Rebuilding 9 pages
-2019-12-23T10:53:58.999Z - info: Pages rebuilt
-2019-12-23T10:53:59.012Z - info: Site data built
-2019-12-23T10:54:18.506Z - info: [6:54:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:54:19.508Z - info: Rebuilding affected source files
-2019-12-23T10:54:19.511Z - info: Rebuilding 9 pages
-2019-12-23T10:54:23.359Z - info: Pages rebuilt
-2019-12-23T10:54:23.377Z - info: Site data built
-2019-12-23T10:54:44.039Z - info: [6:54:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:54:45.056Z - info: Rebuilding affected source files
-2019-12-23T10:54:45.059Z - info: Rebuilding 9 pages
-2019-12-23T10:54:48.940Z - info: Pages rebuilt
-2019-12-23T10:54:48.958Z - info: Site data built
-2019-12-23T10:55:16.138Z - info: [6:55:16 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:55:17.150Z - info: Rebuilding affected source files
-2019-12-23T10:55:17.153Z - info: Rebuilding 9 pages
-2019-12-23T10:55:21.024Z - info: Pages rebuilt
-2019-12-23T10:55:21.036Z - info: Site data built
-2019-12-23T10:55:44.692Z - info: [6:55:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:55:45.694Z - info: Rebuilding affected source files
-2019-12-23T10:55:45.696Z - info: Rebuilding 9 pages
-2019-12-23T10:55:49.288Z - info: Pages rebuilt
-2019-12-23T10:55:49.313Z - info: Site data built
-2019-12-23T10:57:39.036Z - info: [6:57:39 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:57:40.039Z - info: Rebuilding affected source files
-2019-12-23T10:57:40.042Z - info: Rebuilding 9 pages
-2019-12-23T10:57:43.845Z - info: Pages rebuilt
-2019-12-23T10:57:43.859Z - info: Site data built
-2019-12-23T10:59:46.799Z - info: [6:59:46 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T10:59:46.808Z - info: [6:59:46 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T10:59:46.817Z - info: [6:59:46 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week13\admin.md
-2019-12-23T10:59:47.803Z - info: Rebuilding affected source files
-2019-12-23T10:59:47.807Z - info: Rebuilding 16 pages
-2019-12-23T10:59:56.333Z - info: Pages rebuilt
-2019-12-23T10:59:56.350Z - info: Site data built
-2019-12-23T11:01:42.057Z - info: [7:01:42 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:01:43.060Z - info: Rebuilding affected source files
-2019-12-23T11:01:43.062Z - info: Rebuilding 9 pages
-2019-12-23T11:01:46.774Z - info: Pages rebuilt
-2019-12-23T11:01:46.789Z - info: Site data built
-2019-12-23T11:03:47.693Z - info: [7:03:47 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T11:03:48.706Z - info: Rebuilding affected source files
-2019-12-23T11:03:48.709Z - info: Rebuilding 8 pages
-2019-12-23T11:03:52.234Z - info: Pages rebuilt
-2019-12-23T11:03:52.253Z - info: Site data built
-2019-12-23T11:04:04.710Z - info: [7:04:04 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T11:04:05.713Z - info: Rebuilding affected source files
-2019-12-23T11:04:05.715Z - info: Rebuilding 8 pages
-2019-12-23T11:04:08.992Z - info: Pages rebuilt
-2019-12-23T11:04:09.006Z - info: Site data built
-2019-12-23T11:05:39.238Z - info: [7:05:39 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T11:05:40.241Z - info: Rebuilding affected source files
-2019-12-23T11:05:40.243Z - info: Rebuilding 8 pages
-2019-12-23T11:05:43.817Z - info: Pages rebuilt
-2019-12-23T11:05:43.832Z - info: Site data built
-2019-12-23T11:09:34.529Z - info: [7:09:34 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:09:35.543Z - info: Rebuilding affected source files
-2019-12-23T11:09:35.546Z - info: Rebuilding 9 pages
-2019-12-23T11:09:39.350Z - info: Pages rebuilt
-2019-12-23T11:09:39.366Z - info: Site data built
-2019-12-23T11:11:23.965Z - info: [7:11:23 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:11:24.968Z - info: Rebuilding affected source files
-2019-12-23T11:11:24.972Z - info: Rebuilding 9 pages
-2019-12-23T11:11:28.722Z - info: Pages rebuilt
-2019-12-23T11:11:28.739Z - info: Site data built
-2019-12-23T11:12:02.737Z - info: [7:12:02 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:12:03.751Z - info: Rebuilding affected source files
-2019-12-23T11:12:03.755Z - info: Rebuilding 9 pages
-2019-12-23T11:12:07.440Z - info: Pages rebuilt
-2019-12-23T11:12:07.455Z - info: Site data built
-2019-12-23T11:12:24.937Z - info: [7:12:24 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:12:25.938Z - info: Rebuilding affected source files
-2019-12-23T11:12:25.940Z - info: Rebuilding 9 pages
-2019-12-23T11:12:29.671Z - info: Pages rebuilt
-2019-12-23T11:12:29.683Z - info: Site data built
-2019-12-23T11:12:34.840Z - info: [7:12:34 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:12:35.849Z - info: Rebuilding affected source files
-2019-12-23T11:12:35.850Z - info: Rebuilding 9 pages
-2019-12-23T11:12:39.493Z - info: Pages rebuilt
-2019-12-23T11:12:39.511Z - info: Site data built
-2019-12-23T11:13:05.447Z - info: [7:13:05 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:13:06.450Z - info: Rebuilding affected source files
-2019-12-23T11:13:06.453Z - info: Rebuilding 9 pages
-2019-12-23T11:13:10.141Z - info: Pages rebuilt
-2019-12-23T11:13:10.154Z - info: Site data built
-2019-12-23T11:14:23.830Z - info: [7:14:23 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:14:24.832Z - info: Rebuilding affected source files
-2019-12-23T11:14:24.834Z - info: Rebuilding 9 pages
-2019-12-23T11:14:28.594Z - info: Pages rebuilt
-2019-12-23T11:14:28.609Z - info: Site data built
-2019-12-23T11:14:57.585Z - info: [7:14:57 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:14:58.587Z - info: Rebuilding affected source files
-2019-12-23T11:14:58.591Z - info: Rebuilding 9 pages
-2019-12-23T11:15:02.415Z - info: Pages rebuilt
-2019-12-23T11:15:02.430Z - info: Site data built
-2019-12-23T11:15:36.632Z - info: [7:15:36 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:15:37.635Z - info: Rebuilding affected source files
-2019-12-23T11:15:37.638Z - info: Rebuilding 9 pages
-2019-12-23T11:15:41.471Z - info: Pages rebuilt
-2019-12-23T11:15:41.488Z - info: Site data built
-2019-12-23T11:16:56.115Z - info: [7:16:56 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:16:57.118Z - info: Rebuilding affected source files
-2019-12-23T11:16:57.121Z - info: Rebuilding 9 pages
-2019-12-23T11:17:00.973Z - info: Pages rebuilt
-2019-12-23T11:17:00.990Z - info: Site data built
-2019-12-23T11:17:14.634Z - info: [7:17:14 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:17:15.638Z - info: Rebuilding affected source files
-2019-12-23T11:17:15.640Z - info: Rebuilding 9 pages
-2019-12-23T11:17:19.365Z - info: Pages rebuilt
-2019-12-23T11:17:19.376Z - info: Site data built
-2019-12-23T11:19:47.784Z - info: [7:19:47 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:19:48.786Z - info: Rebuilding affected source files
-2019-12-23T11:19:48.788Z - info: Rebuilding 9 pages
-2019-12-23T11:19:52.656Z - info: Pages rebuilt
-2019-12-23T11:19:52.673Z - info: Site data built
-2019-12-23T11:20:21.951Z - info: [7:20:21 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-pe.md
-2019-12-23T11:20:22.953Z - info: Rebuilding affected source files
-2019-12-23T11:20:22.955Z - info: Rebuilding 9 pages
-2019-12-23T11:20:26.883Z - info: Pages rebuilt
-2019-12-23T11:20:26.897Z - info: Site data built
-2019-12-23T11:23:42.630Z - info: [7:23:42 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\common\macros.njk
-2019-12-23T11:23:43.637Z - info: Assets built
-2019-12-23T11:24:01.691Z - info: Website generation started at 7:24:00 PM
-2019-12-23T11:24:03.872Z - info: Building assets...
-2019-12-23T11:24:05.545Z - info: Assets built
-2019-12-23T11:24:05.545Z - info: Generating pages...
-2019-12-23T11:25:42.231Z - info: Pages built
-2019-12-23T11:25:57.250Z - info: Website generation complete! Total build time: 116.69s
-2019-12-23T11:25:57.609Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
-2019-12-23T11:25:57.609Z - info: Press CTRL+C to stop ...
-2019-12-23T11:25:57.714Z - info: Site data built
-2019-12-23T11:28:11.091Z - info: [7:28:11 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T11:28:11.098Z - info: [7:28:11 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\css\main.css
-2019-12-23T11:28:12.098Z - info: Rebuilding affected source files
-2019-12-23T11:28:12.100Z - info: Rebuilding 8 pages
-2019-12-23T11:28:12.700Z - info: Assets built
-2019-12-23T11:28:15.865Z - info: Pages rebuilt
-2019-12-23T11:28:15.879Z - info: Site data built
-2019-12-23T11:28:24.152Z - info: [7:28:24 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T11:28:25.161Z - info: Rebuilding affected source files
-2019-12-23T11:28:25.163Z - info: Rebuilding 8 pages
-2019-12-23T11:28:28.553Z - info: Pages rebuilt
-2019-12-23T11:28:28.570Z - info: Site data built
-2019-12-23T11:29:13.369Z - info: [7:29:13 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T11:29:14.385Z - info: Rebuilding affected source files
-2019-12-23T11:29:14.388Z - info: Rebuilding 8 pages
-2019-12-23T11:29:17.977Z - info: Pages rebuilt
-2019-12-23T11:29:17.993Z - info: Site data built
-2019-12-23T11:30:00.069Z - info: [7:30:00 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\common\macros.njk
-2019-12-23T11:30:00.074Z - info: [7:30:00 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading.md
-2019-12-23T11:30:01.084Z - info: Rebuilding affected source files
-2019-12-23T11:30:01.086Z - info: Rebuilding 8 pages
-2019-12-23T11:30:01.675Z - info: Assets built
-2019-12-23T11:30:04.639Z - info: Pages rebuilt
-2019-12-23T11:30:04.662Z - info: Site data built
-2019-12-23T11:30:20.712Z - info: Website generation started at 7:30:19 PM
-2019-12-23T11:30:22.905Z - info: Building assets...
-2019-12-23T11:30:24.542Z - info: Assets built
-2019-12-23T11:30:24.543Z - info: Generating pages...
-2019-12-23T11:31:58.539Z - info: Pages built
-2019-12-23T11:32:14.178Z - info: Website generation complete! Total build time: 114.608s
-2019-12-23T11:32:14.528Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
-2019-12-23T11:32:14.529Z - info: Press CTRL+C to stop ...
-2019-12-23T11:32:14.640Z - info: Site data built
-2019-12-23T11:44:47.994Z - info: [7:44:47 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T11:44:48.999Z - info: Rebuilding affected source files
-2019-12-23T11:44:49.002Z - info: Rebuilding 6 pages
-2019-12-23T11:44:51.441Z - info: Pages rebuilt
-2019-12-23T11:44:51.452Z - info: Site data built
-2019-12-23T11:46:11.509Z - info: [7:46:11 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T11:46:12.511Z - info: Rebuilding affected source files
-2019-12-23T11:46:12.512Z - info: Rebuilding 6 pages
-2019-12-23T11:46:14.803Z - info: Pages rebuilt
-2019-12-23T11:46:14.820Z - info: Site data built
-2019-12-23T11:46:55.921Z - info: [7:46:55 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T11:46:56.924Z - info: Rebuilding affected source files
-2019-12-23T11:46:56.927Z - info: Rebuilding 6 pages
-2019-12-23T11:46:59.323Z - info: Pages rebuilt
-2019-12-23T11:46:59.339Z - info: Site data built
-2019-12-23T11:48:22.891Z - info: [7:48:22 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T11:48:23.893Z - info: Rebuilding affected source files
-2019-12-23T11:48:23.895Z - info: Rebuilding 6 pages
-2019-12-23T11:48:26.330Z - info: Pages rebuilt
-2019-12-23T11:48:26.345Z - info: Site data built
-2019-12-23T11:49:11.108Z - info: [7:49:11 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T11:49:12.110Z - info: Rebuilding affected source files
-2019-12-23T11:49:12.112Z - info: Rebuilding 6 pages
-2019-12-23T11:49:14.611Z - info: Pages rebuilt
-2019-12-23T11:49:14.624Z - info: Site data built
-2019-12-23T11:50:18.052Z - info: [7:50:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T11:50:19.056Z - info: Rebuilding affected source files
-2019-12-23T11:50:19.058Z - info: Rebuilding 5 pages
-2019-12-23T11:50:21.274Z - info: Pages rebuilt
-2019-12-23T11:50:21.288Z - info: Site data built
-2019-12-23T11:55:18.251Z - info: [7:55:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T11:55:19.254Z - info: Rebuilding affected source files
-2019-12-23T11:55:19.256Z - info: Rebuilding 5 pages
-2019-12-23T11:55:21.557Z - info: Pages rebuilt
-2019-12-23T11:55:21.572Z - info: Site data built
-2019-12-23T11:57:11.344Z - info: [7:57:11 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T11:57:12.348Z - info: Rebuilding affected source files
-2019-12-23T11:57:12.349Z - info: Rebuilding 5 pages
-2019-12-23T11:57:14.711Z - info: Pages rebuilt
-2019-12-23T11:57:14.725Z - info: Site data built
-2019-12-23T11:58:22.535Z - info: [7:58:22 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T11:58:23.539Z - info: Rebuilding affected source files
-2019-12-23T11:58:23.540Z - info: Rebuilding 5 pages
-2019-12-23T11:58:25.733Z - info: Pages rebuilt
-2019-12-23T11:58:25.746Z - info: Site data built
-2019-12-23T11:58:55.334Z - info: [7:58:55 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T11:58:56.337Z - info: Rebuilding affected source files
-2019-12-23T11:58:56.340Z - info: Rebuilding 5 pages
-2019-12-23T11:58:58.558Z - info: Pages rebuilt
-2019-12-23T11:58:58.574Z - info: Site data built
-2019-12-23T12:02:33.278Z - info: [8:02:33 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:02:34.282Z - info: Rebuilding affected source files
-2019-12-23T12:02:34.284Z - info: Rebuilding 5 pages
-2019-12-23T12:02:36.660Z - info: Pages rebuilt
-2019-12-23T12:02:36.672Z - info: Site data built
-2019-12-23T12:04:44.628Z - info: [8:04:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:04:45.630Z - info: Rebuilding affected source files
-2019-12-23T12:04:45.632Z - info: Rebuilding 5 pages
-2019-12-23T12:04:47.838Z - info: Pages rebuilt
-2019-12-23T12:04:47.850Z - info: Site data built
-2019-12-23T12:06:32.400Z - info: [8:06:32 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:06:33.405Z - info: Rebuilding affected source files
-2019-12-23T12:06:33.407Z - info: Rebuilding 5 pages
-2019-12-23T12:06:35.638Z - info: Pages rebuilt
-2019-12-23T12:06:35.651Z - info: Site data built
-2019-12-23T12:07:32.595Z - info: [8:07:32 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:07:33.597Z - info: Rebuilding affected source files
-2019-12-23T12:07:33.600Z - info: Rebuilding 5 pages
-2019-12-23T12:07:35.650Z - info: Pages rebuilt
-2019-12-23T12:07:35.661Z - info: Site data built
-2019-12-23T12:07:55.426Z - info: [8:07:55 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:07:56.432Z - info: Rebuilding affected source files
-2019-12-23T12:07:56.434Z - info: Rebuilding 5 pages
-2019-12-23T12:07:58.557Z - info: Pages rebuilt
-2019-12-23T12:07:58.569Z - info: Site data built
-2019-12-23T12:08:44.192Z - info: [8:08:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:08:45.196Z - info: Rebuilding affected source files
-2019-12-23T12:08:45.198Z - info: Rebuilding 5 pages
-2019-12-23T12:08:47.302Z - info: Pages rebuilt
-2019-12-23T12:08:47.312Z - info: Site data built
-2019-12-23T12:08:55.986Z - info: [8:08:55 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:08:56.992Z - info: Rebuilding affected source files
-2019-12-23T12:08:56.993Z - info: Rebuilding 5 pages
-2019-12-23T12:08:58.993Z - info: Pages rebuilt
-2019-12-23T12:08:59.011Z - info: Site data built
-2019-12-23T12:10:02.796Z - info: [8:10:02 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:10:03.800Z - info: Rebuilding affected source files
-2019-12-23T12:10:03.802Z - info: Rebuilding 5 pages
-2019-12-23T12:10:05.938Z - info: Pages rebuilt
-2019-12-23T12:10:05.953Z - info: Site data built
-2019-12-23T12:10:55.591Z - info: [8:10:55 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:10:56.596Z - info: Rebuilding affected source files
-2019-12-23T12:10:56.598Z - info: Rebuilding 5 pages
-2019-12-23T12:10:58.812Z - info: Pages rebuilt
-2019-12-23T12:10:58.825Z - info: Site data built
-2019-12-23T12:11:07.340Z - info: [8:11:07 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:11:08.344Z - info: Rebuilding affected source files
-2019-12-23T12:11:08.346Z - info: Rebuilding 5 pages
-2019-12-23T12:11:10.378Z - info: Pages rebuilt
-2019-12-23T12:11:10.389Z - info: Site data built
-2019-12-23T12:12:33.179Z - info: [8:12:33 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:12:34.182Z - info: Rebuilding affected source files
-2019-12-23T12:12:34.184Z - info: Rebuilding 5 pages
-2019-12-23T12:12:36.318Z - info: Pages rebuilt
-2019-12-23T12:12:36.332Z - info: Site data built
-2019-12-23T12:13:06.429Z - info: [8:13:06 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:13:07.432Z - info: Rebuilding affected source files
-2019-12-23T12:13:07.434Z - info: Rebuilding 5 pages
-2019-12-23T12:13:09.645Z - info: Pages rebuilt
-2019-12-23T12:13:09.660Z - info: Site data built
-2019-12-23T12:15:30.557Z - info: [8:15:30 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\participation.md
-2019-12-23T12:15:30.568Z - info: [8:15:30 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week13\admin.md
-2019-12-23T12:15:31.561Z - info: Rebuilding affected source files
-2019-12-23T12:15:31.563Z - info: Rebuilding 6 pages
-2019-12-23T12:15:38.075Z - info: Pages rebuilt
-2019-12-23T12:15:38.095Z - info: Site data built
-2019-12-23T12:18:15.194Z - info: [8:18:15 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:18:16.198Z - info: Rebuilding affected source files
-2019-12-23T12:18:16.201Z - info: Rebuilding 6 pages
-2019-12-23T12:18:18.567Z - info: Pages rebuilt
-2019-12-23T12:18:18.582Z - info: Site data built
-2019-12-23T12:19:27.280Z - info: [8:19:27 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\participation.md
-2019-12-23T12:19:27.295Z - info: [8:19:27 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:19:28.284Z - info: Rebuilding affected source files
-2019-12-23T12:19:28.287Z - info: Rebuilding 6 pages
-2019-12-23T12:19:30.703Z - info: Pages rebuilt
-2019-12-23T12:19:30.717Z - info: Site data built
-2019-12-23T12:21:13.074Z - info: [8:21:13 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:21:14.081Z - info: Rebuilding affected source files
-2019-12-23T12:21:14.086Z - info: Rebuilding 6 pages
-2019-12-23T12:21:16.770Z - info: Pages rebuilt
-2019-12-23T12:21:16.786Z - info: Site data built
-2019-12-23T12:22:47.207Z - info: [8:22:47 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:22:48.209Z - info: Rebuilding affected source files
-2019-12-23T12:22:48.212Z - info: Rebuilding 5 pages
-2019-12-23T12:22:50.624Z - info: Pages rebuilt
-2019-12-23T12:22:50.636Z - info: Site data built
-2019-12-23T12:22:59.734Z - info: [8:22:59 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:23:00.739Z - info: Rebuilding affected source files
-2019-12-23T12:23:00.740Z - info: Rebuilding 5 pages
-2019-12-23T12:23:02.856Z - info: Pages rebuilt
-2019-12-23T12:23:02.870Z - info: Site data built
-2019-12-23T12:23:40.047Z - info: [8:23:40 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:23:41.050Z - info: Rebuilding affected source files
-2019-12-23T12:23:41.052Z - info: Rebuilding 5 pages
-2019-12-23T12:23:43.369Z - info: Pages rebuilt
-2019-12-23T12:23:43.385Z - info: Site data built
-2019-12-23T12:23:51.119Z - info: [8:23:51 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:23:52.124Z - info: Rebuilding affected source files
-2019-12-23T12:23:52.125Z - info: Rebuilding 5 pages
-2019-12-23T12:23:54.309Z - info: Pages rebuilt
-2019-12-23T12:23:54.324Z - info: Site data built
-2019-12-23T12:23:59.861Z - info: [8:23:59 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:24:00.863Z - info: Rebuilding affected source files
-2019-12-23T12:24:00.864Z - info: Rebuilding 5 pages
-2019-12-23T12:24:02.727Z - info: Pages rebuilt
-2019-12-23T12:24:02.740Z - info: Site data built
-2019-12-23T12:24:14.834Z - info: [8:24:14 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:24:15.839Z - info: Rebuilding affected source files
-2019-12-23T12:24:15.842Z - info: Rebuilding 5 pages
-2019-12-23T12:24:18.068Z - info: Pages rebuilt
-2019-12-23T12:24:18.084Z - info: Site data built
-2019-12-23T12:26:51.414Z - info: [8:26:51 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:26:52.417Z - info: Rebuilding affected source files
-2019-12-23T12:26:52.419Z - info: Rebuilding 5 pages
-2019-12-23T12:26:54.733Z - info: Pages rebuilt
-2019-12-23T12:26:54.747Z - info: Site data built
-2019-12-23T12:27:34.738Z - info: [8:27:34 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:27:35.741Z - info: Rebuilding affected source files
-2019-12-23T12:27:35.743Z - info: Rebuilding 5 pages
-2019-12-23T12:27:38.000Z - info: Pages rebuilt
-2019-12-23T12:27:38.014Z - info: Site data built
-2019-12-23T12:31:19.926Z - info: [8:31:19 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:31:20.929Z - info: Rebuilding affected source files
-2019-12-23T12:31:20.930Z - info: Rebuilding 5 pages
-2019-12-23T12:31:23.251Z - info: Pages rebuilt
-2019-12-23T12:31:23.265Z - info: Site data built
-2019-12-23T12:35:00.075Z - info: [8:35:00 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:35:01.080Z - info: Rebuilding affected source files
-2019-12-23T12:35:01.081Z - info: Rebuilding 5 pages
-2019-12-23T12:35:03.093Z - info: Pages rebuilt
-2019-12-23T12:35:03.106Z - info: Site data built
-2019-12-23T12:35:34.535Z - info: [8:35:34 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:35:35.538Z - info: Rebuilding affected source files
-2019-12-23T12:35:35.539Z - info: Rebuilding 5 pages
-2019-12-23T12:35:37.648Z - info: Pages rebuilt
-2019-12-23T12:35:37.662Z - info: Site data built
-2019-12-23T12:36:25.431Z - info: [8:36:25 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:36:26.437Z - info: Rebuilding affected source files
-2019-12-23T12:36:26.440Z - info: Rebuilding 5 pages
-2019-12-23T12:36:28.616Z - info: Pages rebuilt
-2019-12-23T12:36:28.628Z - info: Site data built
-2019-12-23T12:37:29.251Z - info: [8:37:29 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\common\macros.njk
-2019-12-23T12:37:29.256Z - info: [8:37:29 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
-2019-12-23T12:37:30.260Z - info: Rebuilding affected source files
-2019-12-23T12:37:30.263Z - info: Rebuilding 5 pages
-2019-12-23T12:37:30.576Z - info: Assets built
-2019-12-23T12:37:32.457Z - info: Pages rebuilt
-2019-12-23T12:37:32.470Z - info: Site data built
-2019-12-23T12:42:59.343Z - info: Website generation started at 8:42:58 PM
-2019-12-23T12:43:01.732Z - info: Building assets...
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at dom.map (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:675:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:672:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+    at Parser.onend (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:340:36)
+2019-12-23T15:54:46.845Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at dom.map (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:675:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:672:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+    at Parser.onend (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:340:36)
+2019-12-23T15:54:46.854Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at dom.map (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:675:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:672:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+    at Parser.onend (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:340:36)
+2019-12-23T15:54:49.876Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at dom.map (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:675:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:672:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+    at Parser.onend (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:340:36)
+2019-12-23T15:54:49.883Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at dom.map (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:675:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:672:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+    at Parser.onend (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:340:36)
+2019-12-23T15:54:49.888Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at dom.map (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:675:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:672:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+    at Parser.onend (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:340:36)
+2019-12-23T15:54:50.177Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
+2019-12-23T15:54:50.188Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
+2019-12-23T15:54:50.193Z - error:  Error: No such segment 'equalShareScale' in file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:441:25)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:490:43)
+2019-12-23T15:54:52.626Z - info: Pages rebuilt
+2019-12-23T15:54:52.636Z - info: Site data built
+2019-12-23T15:55:23.481Z - info: [23:55:23] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-midterm.md
+2019-12-23T15:55:24.498Z - info: Rebuilding affected source files
+2019-12-23T15:55:24.501Z - info: Rebuilding 9 pages
+2019-12-23T15:55:30.469Z - info: Pages rebuilt
+2019-12-23T15:55:30.480Z - info: Site data built
+2019-12-23T15:56:32.618Z - info: [23:56:32] Reload for file add: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-final.md
+2019-12-23T15:56:33.619Z - warn: Rebuilding all source files
+2019-12-23T15:56:36.121Z - info: Assets removed
+2019-12-23T15:56:36.121Z - info: Generating pages...
+2019-12-23T15:58:36.099Z - info: [23:58:36] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-final.md
+2019-12-23T15:59:17.071Z - info: Rebuilding affected source files
+2019-12-23T15:59:17.072Z - info: Rebuilding 1 pages
+2019-12-23T15:59:26.396Z - info: [23:59:26] Reload for file add: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-practice.md
+2019-12-23T15:59:30.054Z - info: [23:59:30] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T15:59:31.901Z - info: [23:59:31] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations.md
+2019-12-23T15:59:31.901Z - info: [23:59:31] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\peerEvaluations-practice.md
+2019-12-23T15:59:37.266Z - info: Pages rebuilt
+2019-12-23T15:59:37.318Z - info: Site data built
+2019-12-23T15:59:38.926Z - info: Pages built
+2019-12-23T15:59:38.926Z - warn: Rebuilding all source files
+2019-12-23T15:59:40.124Z - info: Rebuilding affected source files
+2019-12-23T15:59:40.125Z - info: Rebuilding 5 pages
+2019-12-23T15:59:41.232Z - info: Assets removed
+2019-12-23T15:59:41.232Z - info: Generating pages...
