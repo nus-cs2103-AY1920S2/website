@@ -990,8 +990,13 @@
     {
       "headings": {
         "peer-evaluations": "Peer Evaluations \n                \n                ",
+        "practice-peer-evaluation": "Practice Peer Evaluation",
+        "midterm-peer-evaluation": "Midterm Peer Evaluation",
+        "important-questions-included-in-the-evaluation": "Important questions included in the evaluation:",
         "peer-evaluation-criteria-professional-conduct": "Peer Evaluation Criteria: Professional Conduct",
         "peer-evaluation-criteria-competency": "Peer Evaluation Criteria: Competency",
+        "final-peer-evaluation": "Final Peer Evaluation",
+        "responses-peer-evaluation": "Responses Peer Evaluation",
         "guidelines-for-giving-peer-feedback": "Guidelines for Giving Peer Feedback"
       },
       "title": "Admin: Peer Evaluations",
@@ -1061,9 +1066,10 @@
         "pe-preparation": "PE Preparation",
         "pe-phase-1-bug-reporting": "PE Phase 1: Bug Reporting",
         "pe-phase-1-part-i-product-testing-60-minutes": "PE Phase 1 - Part I Product Testing [60 minutes]",
-        "testing-instructions-for-pe-and-pe-d": "\n          Testing instructions for PE and PE-D",
+        "testing-instructions-for-pe-and-pe-d": "\n                Testing instructions for PE and PE-D",
         "pe-phase-1-part-ii-evaluating-documents-20-minutes": "PE Phase 1 - Part II Evaluating Documents [20 minutes]",
-        "pe-phase-1-part-iii-overall-evaluation-10-minutes": "PE Phase 1 - Part III Overall Evaluation [10 minutes]",
+        "pe-phase-1-part-iii-overall-evaluation-15-minutes": "PE Phase 1 - Part III Overall Evaluation [15 minutes]",
+        "important-questions-included-in-the-evaluation": "Important questions included in the evaluation:",
         "pe-phase-2-developer-response": "PE Phase 2: Developer Response",
         "pe-phase-3-tester-response": "PE Phase 3: Tester Response",
         "pe-phase-4-tutor-moderation": "PE Phase 4: Tutor Moderation"
@@ -1077,7 +1083,7 @@
         "pe-d-overview": "PE-D Overview",
         "pe-d-preparation": "PE-D Preparation",
         "pe-d-during-the-session": "PE-D During the session",
-        "testing-instructions-for-pe-and-pe-d-2": "\n        Testing instructions for PE and PE-D",
+        "testing-instructions-for-pe-and-pe-d-2": "\n              Testing instructions for PE and PE-D",
         "pe-d-after-the-session": "PE-D After the session"
       },
       "src": "admin/project-deliverables-ped.md",
@@ -1142,7 +1148,7 @@
         "pe-d-overview": "PE-D Overview",
         "pe-d-preparation": "PE-D Preparation",
         "pe-d-during-the-session": "PE-D During the session",
-        "testing-instructions-for-pe-and-pe-d-2": "\n        Testing instructions for PE and PE-D",
+        "testing-instructions-for-pe-and-pe-d-2": "\n          Testing instructions for PE and PE-D",
         "pe-d-after-the-session": "PE-D After the session",
         "deliverable-practical-exam-pe": "\n    Deliverable: Practical Exam (PE)",
         "pe-overview-2": "PE Overview",
@@ -1151,7 +1157,8 @@
         "pe-phase-1-part-i-product-testing-60-minutes-2": "PE Phase 1 - Part I Product Testing [60 minutes]",
         "testing-instructions-for-pe-and-pe-d-3": "\n          Testing instructions for PE and PE-D",
         "pe-phase-1-part-ii-evaluating-documents-20-minutes-2": "PE Phase 1 - Part II Evaluating Documents [20 minutes]",
-        "pe-phase-1-part-iii-overall-evaluation-10-minutes-2": "PE Phase 1 - Part III Overall Evaluation [10 minutes]",
+        "pe-phase-1-part-iii-overall-evaluation-15-minutes-2": "PE Phase 1 - Part III Overall Evaluation [15 minutes]",
+        "important-questions-included-in-the-evaluation-2": "Important questions included in the evaluation:",
         "pe-phase-2-developer-response-2": "PE Phase 2: Developer Response",
         "pe-phase-3-tester-response-2": "PE Phase 3: Tester Response",
         "pe-phase-4-tutor-moderation-2": "PE Phase 4: Tutor Moderation"
@@ -1222,8 +1229,10 @@
       "headings": {
         "tp-scope": "tP: Scope \n                \n                 | project expectations",
         "project-direction": "\n              Project Direction",
+        "target-user": "\n              Target User",
+        "value-proposition": "\n              Value Proposition",
         "individual-expectations": "\n               Individual Expectations",
-        "individual-expectations-on-enhancements": " Individual Expectations on Enhancements",
+        "individual-expectations-on-implementation": " Individual Expectations on Implementation",
         "individual-expectations-on-documentation": " Individual Expectations on Documentation",
         "individual-expectations-on-testing": " Individual Expectations on Testing",
         "individual-expectations-on-teamwork": " Individual Expectations on Teamwork",
@@ -1289,7 +1298,7 @@
         "tp-inception-week-4": "tP: Inception [week 4] \n                \n                \n                ",
         "1-start-weekly-project-meetings": "1 Start weekly project meetings",
         "2-decide-on-a-overall-project-direction-user-profile-problem-addressed": "2 Decide on a overall project direction (user profile, problem addressed) | project expectations",
-        "3-start-a-collaborative-doc-to-take-project-notes-before-the-tutorial": "3 Start a collaborative doc to take project notes               before the tutorial\n              "
+        "3-start-a-collaborative-doc-to-take-project-notes-before-the-tutorial": "3 Start a collaborative doc to take project notes                 before the tutorial\n                "
       },
       "title": "Admin: tP: Inception [week 4]",
       "header": "header.md",

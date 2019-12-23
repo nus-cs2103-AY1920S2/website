@@ -117,31 +117,6 @@
             <li>Follow the 'Preparation' instructions of the following tools to get connected with the communication channels used by the module.</li>
           </ul>
           <div class="indented-level2">
-            <div class="flat">
-              <div>
-                <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:-">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - Communication</strong></trigger> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>]</span>
-                </p>
-              </div>
-            </div>
-            <modal large title="Admin <md>:glyphicon-log-in:</md> **Tools - Communication**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" id="modal:-" class="algolia-no-index">
-
-              <div>
-                <h4 id="tools-used-for-communication">
-                  <div class="text-white bg-dark p-1">Tools Used: for Communication</div><a class="fa fa-anchor" href="#tools-used-for-communication"></a></h4>
-                <ul>
-                  <li><strong>The preferred channels for module-related communication is the <code>forum</code> on GitHub</strong> <mark><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues">https://github.com/nus-cs2103-AY1920S2/forum/issues</a></mark>                    (not the LumiNUS forum)</li>
-                  <li>When communicating with instructors, use the forum. Use private channels (e.g., emails, private messages, face-to-face, private chat groups) only when the forum is not suitable. <span class="dimmed">Rationale: 1. More classmates can benefit from the discussions, 2. It is also safer because the prof can monitor information you receive for accuracy</span>.</li>
-                  <li>You are encouraged to help others in the forum (e.g., share tips, help with technical problems). <mark>We consider such sharing when giving out <code>A+</code> grades and when recruiting tutors.</mark></li>
-                </ul>
-                <box>
-                  <p><span style="color:purple"><strong><span aria-hidden="true" class="fas fa-hard-hat"></span> Preparation:</strong>
-                    </span>
-                  </p>
-                  <p>We encourage all to <mark><em>watch</em> <a href="https://github.com/nus-cs2103-AY1920S2/forum/issues">the forum</a></mark> to get alerts when new issues/comments are posted <a href="https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png"
-                      target="_self"><img src="https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png" alt class="img-fluid"></a></p>
-                </box>
-              </div>
-            </modal>
             <p>
               <panel src="/website/admin/tools._include_.html#communication" header="Admin <md>:glyphicon-log-in:</md> **Tools - Communication**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized
                 fragment="communication"></panel>
@@ -386,10 +361,13 @@ method 2 ...
                           <li><strong>Summary of Contributions</strong> --Suggested items to include:
                             <ul>
                               <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-cs2103-ay1920s2.github.io/tp-dashboard">tP Code Dashboard</a>. The link is available in the <a href="/website/admin/projectList.html">Project List Page</a>                                -- linked to the <span aria-hidden="true" class="fas fa-code"></span> icon under your photo.</li>
-                              <li><strong>Features implemented:</strong> A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.</li>
-                              <li><strong>Other contributions:</strong>
+                              <li><strong>Enhancements implemented:</strong> A summary of the enhancements you implemented.</li>
+                              <li><strong>Contributions to documentation:</strong> Which sections did you contribute to the UG?</li>
+                              <li><strong>Contributions to the DG:</strong> Which sections did you contribute to the DG? Which UML diagrams did you add/updated?</li>
+                              <li><strong>Contributions to <trigger trigger="click" for="modal:deliverablesPPP-teamTasks">team-based tasks </trigger>:</strong></li>
+                              <li><strong>Review/mentoring contributions:</strong> Links to PRs reviewed, instances of helping team members in other ways</li>
+                              <li><strong>Contributions beyond the project team:</strong>
                                 <ul>
-                                  <li>Contributions to project management <span class="dimmed">e.g., setting up project tools, managing releases, managing issue tracker etc.</span></li>
                                   <li>Evidence of helping others <span class="dimmed">e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
                                   <li>Evidence of technical leadership <span class="dimmed">e.g. sharing useful information in the forum</span></li>
                                 </ul>
@@ -397,21 +375,46 @@ method 2 ...
                             </ul>
                           </li>
                         </ul>
+                        <modal large title="Team-Based Tasks" id="modal:deliverablesPPP-teamTasks" class="algolia-no-index">
+                          <div>
+                            <box>
+                              <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
+                              <panel type="seamless" header="%%<md>:fas-cube:</md> Examples of team-tasks%%" class="algolia-no-index">
+                                <span id="example-team-tasks">
+<p>Here is a non-exhaustive list of team-tasks:</p>
+<ol>
+<li>Necessary general code enhancements e.g.,
+<ol>
+<li>Work related to renaming the product</li>
+<li>Work related to changing the product icon</li>
+<li>Morphing the product into a different product</li></ol></li>
+<li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+<li>Maintaining the issue tracker</li>
+<li>Release management</li>
+<li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
+                                <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+                                </ol>
+                                </span>
+                              </panel>
+                              <p></p>
+                            </box>
+                          </div>
+                        </modal>
                         <div class="indented-level2">
                           <box border-left-color="darkcyan">
-                            <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Keep in mind that your feature(s) will be evaluated for <strong>depth, completeness, and effort</strong>. Use the
-                              PPP to convince evaluator how good those aspects of your features are.<br> It is fine if you want to directly explain each of those aspects of your features in the PPP <span class="dimmed">i.e., how deep the feature is, why it is complete, how hard it was to implement</span>.
+                            <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Keep in mind that evaluators will use the PPP to estimate your project effort. We recommend that you mention things
+                              that will earn you a fair score <span class="dimmed">e.g., explain how deep the enhancement is, why it is <em>complete</em>, how hard it was to implement etc.</span>.
                             </p>
                           </box>
                         </div>
                         <ul>
                           <li>
-                            <p><strong>[Optional] Contributions to the User Guide</strong>: Reproduce the parts in the User Guide that you wrote. This can include features you implemented as well as features you propose to implement.<br>
+                            <p><strong>[Optional] Contributions to the User Guide (Extracts)</strong>: Reproduce the parts in the User Guide that you wrote. This can include features you implemented as well as features you propose to implement.<br>
                               <span class="dimmed">The purpose of allowing you to include <em>proposed</em> features is to provide you more flexibility to show your documentation skills. e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.</span></p>
                           </li>
                           <li>
-                            <p><strong>[Optional] Contributions to the Developer Guide</strong>: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills and UML modelling skills.
-                              You can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.</p>
+                            <p><strong>[Optional] Contributions to the Developer Guide (Extracts)</strong>: Reproduce the parts in the Developer Guide that you wrote. Ensure there is enough content to evaluate your technical documentation skills and UML
+                              modelling skills. You can include descriptions of your design/implementations, possible alternatives, pros and cons of alternatives, etc.</p>
                           </li>
                           <li>
                             <p>[Optional] If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded).</p>
@@ -714,7 +717,7 @@ method 2 ...
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.7.0</a> at Fri, 20 Dec 2019 12:19:01 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.7.0</a> at Mon, 23 Dec 2019 12:43:03 GMT</small></div>
     </footer>
   </div>
 </body>
