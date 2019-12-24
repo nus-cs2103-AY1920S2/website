@@ -955,3 +955,98 @@ Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\
 2019-12-24T11:05:11.965Z - info: Site data built
 2019-12-24T11:19:29.605Z - info: Website generation started at 7:19:28 PM
 2019-12-24T11:19:32.053Z - info: Building assets...
+2019-12-24T11:19:33.912Z - info: Assets built
+2019-12-24T11:19:33.912Z - info: Generating pages...
+2019-12-24T11:21:18.550Z - info: Pages built
+2019-12-24T11:21:35.478Z - info: Website generation complete! Total build time: 127.125s
+2019-12-24T11:21:35.479Z - info: Build success!
+2019-12-24T11:21:35.490Z - info: Site data built
+2019-12-24T11:22:21.509Z - info: Deployed!
+2019-12-24T11:39:31.823Z - info: Website generation started at 7:39:30 PM
+2019-12-24T11:39:34.284Z - info: Building assets...
+2019-12-24T11:39:36.208Z - info: Assets built
+2019-12-24T11:39:36.209Z - info: Generating pages...
+2019-12-24T11:39:47.405Z - error: uncaughtException: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md) [Line 104, Column 20]
+  parseSignature: expected comma after expression date=Tue Dec 24 2019 19:39:47 GMT+0800 (Singapore Standard Time), pid=8160, uid=null, gid=null, cwd=C:\repos\nus-cs2103-AY1920S2\cs2103-website, execPath=C:\Program Files\nodejs\node.exe, version=v10.14.2, argv=[C:\Program Files\nodejs\node.exe, C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=261332992, heapTotal=237961216, heapUsed=125605944, external=1087225, loadavg=[0, 0, 0], uptime=1064954
+Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md) [Line 104, Column 20]
+  parseSignature: expected comma after expression
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:542:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:380:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at fs.readFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:709:34)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+2019-12-24T11:40:13.543Z - info: Website generation started at 7:40:13 PM
+2019-12-24T11:40:15.901Z - info: Building assets...
+2019-12-24T11:40:17.714Z - info: Assets built
+2019-12-24T11:40:17.715Z - info: Generating pages...
+2019-12-24T11:40:37.389Z - info: Website generation started at 7:40:36 PM
+2019-12-24T11:40:39.809Z - info: Building assets...
+2019-12-24T11:40:41.531Z - info: Assets built
+2019-12-24T11:40:41.532Z - info: Generating pages...
+2019-12-24T11:42:25.665Z - info: Pages built
+2019-12-24T11:42:42.166Z - info: Website generation complete! Total build time: 125.307s
+2019-12-24T11:42:42.532Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-24T11:42:42.532Z - info: Press CTRL+C to stop ...
+2019-12-24T11:42:42.635Z - info: Site data built
+2019-12-24T12:22:16.165Z - info: Website generation started at 8:22:14 PM
+2019-12-24T12:22:18.502Z - info: Building assets...
+2019-12-24T12:22:20.313Z - info: Assets built
+2019-12-24T12:22:20.314Z - info: Generating pages...
+2019-12-24T12:24:06.582Z - info: Pages built
+2019-12-24T12:24:23.161Z - info: Website generation complete! Total build time: 128.221s
+2019-12-24T12:24:23.515Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-24T12:24:23.515Z - info: Press CTRL+C to stop ...
+2019-12-24T12:24:23.627Z - info: Site data built
+2019-12-24T12:24:23.791Z - info: [8:24:23 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\policies.mbdf
+2019-12-24T12:24:24.837Z - info: Rebuilding affected source files
+2019-12-24T12:24:24.839Z - info: Rebuilding 8 pages
+2019-12-24T12:24:30.992Z - info: Pages rebuilt
+2019-12-24T12:24:31.024Z - info: Site data built
+2019-12-24T12:25:18.347Z - info: [8:25:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\policies.mbdf
+2019-12-24T12:25:19.352Z - info: Rebuilding affected source files
+2019-12-24T12:25:19.354Z - info: Rebuilding 8 pages
+2019-12-24T12:25:22.777Z - info: Pages rebuilt
+2019-12-24T12:25:22.796Z - info: Site data built
+2019-12-24T12:26:25.433Z - info: [8:26:25 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\common\admin.njk
+2019-12-24T12:26:26.441Z - info: Assets built
+2019-12-24T12:30:49.093Z - info: [8:30:49 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week5\admin.md
+2019-12-24T12:30:50.103Z - info: Rebuilding affected source files
+2019-12-24T12:30:50.106Z - info: Rebuilding 3 pages
+2019-12-24T12:30:54.578Z - warn:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectHeadingsAndKeywordsInContent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:348:19)
+    at Object.$.not.each.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:392:16)
+    at initialize.exports.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Page.collectHeadingsAndKeywordsInContent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:358:6)
+    at Page.collectHeadingsAndKeywords (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:339:8)
+    at pages.forEach (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:862:12)
+    at Array.forEach (<anonymous>)
+    at Site.updateSiteData (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:860:14)
+    at Promise.all.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:844:24)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+2019-12-24T12:30:55.856Z - error: Cannot read property 'parent' of null
+2019-12-24T12:31:37.469Z - info: [8:31:37 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week5\admin.md
+2019-12-24T12:31:37.470Z - info: Rebuilding affected source files
+2019-12-24T12:31:37.471Z - info: Rebuilding 3 pages
+2019-12-24T12:31:49.479Z - info: Website generation started at 8:31:49 PM
+2019-12-24T12:31:51.888Z - info: Building assets...
+2019-12-24T12:31:53.762Z - info: Assets built
+2019-12-24T12:31:53.763Z - info: Generating pages...
+2019-12-24T12:33:34.402Z - info: Pages built
+2019-12-24T12:33:50.865Z - info: Website generation complete! Total build time: 121.394s
+2019-12-24T12:33:51.262Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-24T12:33:51.262Z - info: Press CTRL+C to stop ...
+2019-12-24T12:33:51.384Z - info: Site data built
+2019-12-24T12:34:36.364Z - info: [8:34:36 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week5\admin.md
+2019-12-24T12:34:37.385Z - info: Rebuilding affected source files
+2019-12-24T12:34:37.389Z - info: Rebuilding 3 pages
+2019-12-24T12:34:41.822Z - info: Pages rebuilt
+2019-12-24T12:34:41.839Z - info: Site data built
+2019-12-24T12:36:48.293Z - info: Website generation started at 8:36:47 PM
+2019-12-24T12:36:50.601Z - info: Building assets...
