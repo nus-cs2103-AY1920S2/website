@@ -3526,6 +3526,8 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                     fragment="main" class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/sequenceDiagrams/optionalPaths/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Optional Paths" alt="<md>:glyphicon-education:</md> UML/SD/Optional"
                     fragment="main" class="algolia-no-index"></panel>
+                  <panel type="seamless" src="/website/book/uml/sequenceDiagrams/staticMethods/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Calls to Static Methods" alt="<md>:glyphicon-education:</md> UML/SD/StaticMethods"
+                    fragment="main" class="algolia-no-index"></panel>
                 </p>
               </div>
             </div>
@@ -6293,6 +6295,8 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                     </div>
                   </div>
                 </blockquote>
+                <p><strong>Software documentation (applies to both user-facing and developer-facing) is best kept in a text format</strong>, for the ease of version tracking. <strong>A writer friendly source format is also desirable</strong> as non-programmers
+                  (e.g., technical writers) may need to author/edit such documents. As a result, formats such as Markdown, Asciidoc, and PlantUML are often used for software documentation.</p>
               </div>
             </div>
           </div>
@@ -12494,6 +12498,26 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
               </div>
             </div>
           </div>
+          <div class="indented-less">
+            <h4 id="calls-to-static-methods">Calls to Static Methods <span class="badge badge-light"><small><small><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true"
+                class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small>
+              </small>
+              </span><a class="fa fa-anchor" href="#calls-to-static-methods"></a></h4>
+            <div class="indented-less">
+              <div>
+                <p>Method calls to <code>static</code> i.e., class-level method are received by the class itself, not an instance of that class. We can use the <code>&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
+                <box>
+                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>m</code> calls the static method <code>Person.getMaxAge()</code> and also the <code>setAge()</code> method of a <code>Person</code> object <code>p</code>.</p>
+                  <p>
+                    <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png"></pic>
+                  </p>
+                  <p></p>
+                  Here is the `Person` class, for reference:<br>
+                  <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></pic>
+                </box>
+              </div>
+            </div>
+          </div>
         </div>
         <p>
           <div>
@@ -13998,7 +14022,7 @@ git pull origin master
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.7.0</a> at Mon, 23 Dec 2019 16:12:41 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.7.0</a> at Tue, 24 Dec 2019 11:19:33 GMT</small></div>
   </footer>
   </div>
 </body>

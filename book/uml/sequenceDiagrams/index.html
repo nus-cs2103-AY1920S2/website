@@ -402,6 +402,36 @@
   </div>
   </panel>
   </div>
+  <div>
+    <panel type="seamless" expanded>
+      <span slot="header" class="card-title"><div><h4 id="calls-to-static-methods"><span>Calls to Static Methods</span><a class="fa fa-anchor" href="#calls-to-static-methods"></a></h4>
+  </div>
+  </span>
+  <div class="indented">
+    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can show calls to static methods</span>
+      </span>
+      </span>
+      </span>
+    </p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div>
+      <p>Method calls to <code>static</code> i.e., class-level method are received by the class itself, not an instance of that class. We can use the <code>&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
+      <box>
+        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>m</code> calls the static method <code>Person.getMaxAge()</code> and also the <code>setAge()</code> method of a <code>Person</code> object <code>p</code>.</p>
+        <p>
+          <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png"></pic>
+        </p>
+        <p></p>
+        Here is the `Person` class, for reference:<br>
+        <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></pic>
+      </box>
+    </div>
+    <div></div>
+  </div>
+  </panel>
+  </div>
   </div>
   </div>
   </div>

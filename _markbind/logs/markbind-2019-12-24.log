@@ -1,5 +1,957 @@
-2019-12-23T16:02:41.553Z - info: Pages rebuilt
-2019-12-23T16:02:42.125Z - info: Site data built
-2019-12-23T16:02:44.280Z - info: Pages built
-2019-12-23T16:12:32.759Z - info: Website generation started at 00:12:26
-2019-12-23T16:12:38.045Z - info: Building assets...
+2019-12-24T03:52:46.689Z - info: Website generation started at 11:52:45 AM
+2019-12-24T03:52:48.947Z - info: Building assets...
+2019-12-24T03:52:50.524Z - info: Assets built
+2019-12-24T03:52:50.525Z - info: Generating pages...
+2019-12-24T03:54:25.459Z - info: Pages built
+2019-12-24T03:54:40.756Z - info: Website generation complete! Total build time: 115.425s
+2019-12-24T03:54:41.093Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-24T03:54:41.094Z - info: Press CTRL+C to stop ...
+2019-12-24T03:54:41.191Z - info: Site data built
+2019-12-24T04:06:29.922Z - info: [12:06:29 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:06:30.925Z - info: Rebuilding affected source files
+2019-12-24T04:06:30.927Z - info: Rebuilding 4 pages
+2019-12-24T04:06:31.021Z - error: uncaughtException: Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md)
+  Error: Unable to call `caller`, which is undefined or falsey date=Tue Dec 24 2019 12:06:31 GMT+0800 (Singapore Standard Time), pid=18488, uid=null, gid=null, cwd=C:\repos\nus-cs2103-AY1920S2\cs2103-website, execPath=C:\Program Files\nodejs\node.exe, version=v10.14.2, argv=[C:\Program Files\nodejs\node.exe, C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=257613824, heapTotal=203550720, heapUsed=150776040, external=165487, loadavg=[0, 0, 0], uptime=1037758
+Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md)
+  Error: Unable to call `caller`, which is undefined or falsey
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:107:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:12:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:12:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:249:3)
+    at Template.getExported (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:5)
+    at Environment.getTemplate (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:9:5)
+    at Template.getExported (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:5)
+    at Environment.getTemplate (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+2019-12-24T04:06:31.507Z - error: uncaughtException: Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md)
+  Error: Unable to call `caller`, which is undefined or falsey date=Tue Dec 24 2019 12:06:31 GMT+0800 (Singapore Standard Time), pid=18488, uid=null, gid=null, cwd=C:\repos\nus-cs2103-AY1920S2\cs2103-website, execPath=C:\Program Files\nodejs\node.exe, version=v10.14.2, argv=[C:\Program Files\nodejs\node.exe, C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=299057152, heapTotal=241299456, heapUsed=159680864, external=233084, loadavg=[0, 0, 0], uptime=1037758
+Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md)
+  Error: Unable to call `caller`, which is undefined or falsey
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:107:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:12:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:12:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:249:3)
+    at Template.getExported (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:5)
+    at Environment.getTemplate (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:9:5)
+    at Template.getExported (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:5)
+    at Environment.getTemplate (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+2019-12-24T04:14:40.319Z - info: Website generation started at 12:14:38 PM
+2019-12-24T04:14:42.453Z - info: Building assets...
+2019-12-24T04:14:44.115Z - info: Assets built
+2019-12-24T04:14:44.115Z - info: Generating pages...
+2019-12-24T04:15:11.603Z - error: uncaughtException: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md) [Line 49, Column 40]
+  expected variable end date=Tue Dec 24 2019 12:15:11 GMT+0800 (Singapore Standard Time), pid=23364, uid=null, gid=null, cwd=C:\repos\nus-cs2103-AY1920S2\cs2103-website, execPath=C:\Program Files\nodejs\node.exe, version=v10.14.2, argv=[C:\Program Files\nodejs\node.exe, C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=558690304, heapTotal=534708224, heapUsed=260749408, external=963250, loadavg=[0, 0, 0], uptime=1038279
+Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md) [Line 49, Column 40]
+  expected variable end
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:542:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:380:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at fs.readFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:709:34)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+2019-12-24T04:15:50.403Z - error: uncaughtException: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md) [Line 49, Column 40]
+  expected variable end date=Tue Dec 24 2019 12:15:50 GMT+0800 (Singapore Standard Time), pid=23364, uid=null, gid=null, cwd=C:\repos\nus-cs2103-AY1920S2\cs2103-website, execPath=C:\Program Files\nodejs\node.exe, version=v10.14.2, argv=[C:\Program Files\nodejs\node.exe, C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=322244608, heapTotal=284999680, heapUsed=185483304, external=9497116, loadavg=[0, 0, 0], uptime=1038317
+Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md) [Line 49, Column 40]
+  expected variable end
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:542:21)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:380:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at fs.readFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:709:34)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+2019-12-24T04:18:37.822Z - info: Website generation started at 12:18:35 PM
+2019-12-24T04:18:40.033Z - info: Building assets...
+2019-12-24T04:18:41.801Z - info: Assets built
+2019-12-24T04:18:41.802Z - info: Generating pages...
+2019-12-24T04:20:20.212Z - info: Pages built
+2019-12-24T04:20:37.115Z - info: Website generation complete! Total build time: 121.711s
+2019-12-24T04:20:37.478Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-24T04:20:37.479Z - info: Press CTRL+C to stop ...
+2019-12-24T04:20:37.584Z - info: Site data built
+2019-12-24T04:24:07.422Z - info: [12:24:07 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:24:08.425Z - info: Rebuilding affected source files
+2019-12-24T04:24:08.427Z - info: Rebuilding 4 pages
+2019-12-24T04:24:10.042Z - info: Pages rebuilt
+2019-12-24T04:24:10.056Z - info: Site data built
+2019-12-24T04:27:27.172Z - info: [12:27:27 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:27:28.173Z - info: Rebuilding affected source files
+2019-12-24T04:27:28.175Z - info: Rebuilding 4 pages
+2019-12-24T04:27:29.442Z - info: Pages rebuilt
+2019-12-24T04:27:29.454Z - info: Site data built
+2019-12-24T04:29:01.758Z - info: [12:29:01 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:29:02.761Z - info: Rebuilding affected source files
+2019-12-24T04:29:02.763Z - info: Rebuilding 4 pages
+2019-12-24T04:29:04.285Z - info: Pages rebuilt
+2019-12-24T04:29:04.300Z - info: Site data built
+2019-12-24T04:30:22.089Z - info: [12:30:22 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:30:23.092Z - info: Rebuilding affected source files
+2019-12-24T04:30:23.093Z - info: Rebuilding 4 pages
+2019-12-24T04:30:24.444Z - info: Pages rebuilt
+2019-12-24T04:30:24.457Z - info: Site data built
+2019-12-24T04:30:42.976Z - info: [12:30:42 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:30:43.978Z - info: Rebuilding affected source files
+2019-12-24T04:30:43.980Z - info: Rebuilding 4 pages
+2019-12-24T04:30:45.403Z - info: Pages rebuilt
+2019-12-24T04:30:45.414Z - info: Site data built
+2019-12-24T04:31:45.776Z - info: [12:31:45 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-product.md
+2019-12-24T04:31:46.785Z - info: Rebuilding affected source files
+2019-12-24T04:31:46.786Z - info: Rebuilding 3 pages
+2019-12-24T04:31:48.014Z - info: Pages rebuilt
+2019-12-24T04:31:48.029Z - info: Site data built
+2019-12-24T04:33:26.813Z - info: [12:33:26 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:33:27.816Z - info: Rebuilding affected source files
+2019-12-24T04:33:27.818Z - info: Rebuilding 4 pages
+2019-12-24T04:33:29.322Z - info: Pages rebuilt
+2019-12-24T04:33:29.334Z - info: Site data built
+2019-12-24T04:48:33.350Z - info: [12:48:33 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:48:34.352Z - info: Rebuilding affected source files
+2019-12-24T04:48:34.353Z - info: Rebuilding 4 pages
+2019-12-24T04:48:35.753Z - info: Pages rebuilt
+2019-12-24T04:48:35.772Z - info: Site data built
+2019-12-24T04:50:12.312Z - info: [12:50:12 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-executable.md
+2019-12-24T04:50:13.313Z - info: Rebuilding affected source files
+2019-12-24T04:50:13.314Z - info: Rebuilding 3 pages
+2019-12-24T04:50:13.335Z - error: uncaughtException: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-executable.md) [Line 4, Column 14]
+  Error: Unable to call `embed_topic`, which is undefined or falsey date=Tue Dec 24 2019 12:50:13 GMT+0800 (Singapore Standard Time), pid=7484, uid=null, gid=null, cwd=C:\repos\nus-cs2103-AY1920S2\cs2103-website, execPath=C:\Program Files\nodejs\node.exe, version=v10.14.2, argv=[C:\Program Files\nodejs\node.exe, C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=233435136, heapTotal=175763456, heapUsed=147993024, external=283317, loadavg=[0, 0, 0], uptime=1040380
+Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-executable.md) [Line 4, Column 14]
+  Error: Unable to call `embed_topic`, which is undefined or falsey
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:19:3)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:556:10)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:380:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at fs.readFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:709:34)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+2019-12-24T04:50:13.353Z - error:  Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-executable.md) [Line 4, Column 14]
+  Error: Unable to call `embed_topic`, which is undefined or falsey
+Error while preprocessing 'C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:19:3)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:556:10)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:380:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at Parser._renderIncludeFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:267:28)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:406:14)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+2019-12-24T04:50:13.683Z - error:  Template render error: (C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-executable.md) [Line 4, Column 14]
+  Error: Unable to call `embed_topic`, which is undefined or falsey
+Error while preprocessing 'C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables.md'
+    at Object._prettifyError (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:567:19
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:19:3)
+    at Template.render (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:556:10)
+    at Environment.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:380:17)
+    at Object.renderString (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\index.js:99:14)
+    at Parser._renderIncludeFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:267:28)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:406:14)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+2019-12-24T04:50:38.568Z - info: [12:50:38 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-executable.md
+2019-12-24T04:51:00.946Z - info: Website generation started at 12:50:59 PM
+2019-12-24T04:51:03.118Z - info: Building assets...
+2019-12-24T04:51:04.844Z - info: Assets built
+2019-12-24T04:51:04.845Z - info: Generating pages...
+2019-12-24T04:52:39.703Z - info: Pages built
+2019-12-24T04:52:54.998Z - info: Website generation complete! Total build time: 115.194s
+2019-12-24T04:52:55.331Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-24T04:52:55.331Z - info: Press CTRL+C to stop ...
+2019-12-24T04:52:55.465Z - info: Site data built
+2019-12-24T04:52:55.585Z - info: [12:52:55 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:52:56.598Z - info: Rebuilding affected source files
+2019-12-24T04:52:56.600Z - info: Rebuilding 7 pages
+2019-12-24T04:53:02.533Z - info: Pages rebuilt
+2019-12-24T04:53:02.572Z - info: Site data built
+2019-12-24T04:53:32.968Z - info: [12:53:32 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:53:33.970Z - info: Rebuilding affected source files
+2019-12-24T04:53:33.972Z - info: Rebuilding 7 pages
+2019-12-24T04:53:36.600Z - info: Pages rebuilt
+2019-12-24T04:53:36.614Z - info: Site data built
+2019-12-24T04:54:18.212Z - info: [12:54:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:54:19.215Z - info: Rebuilding affected source files
+2019-12-24T04:54:19.217Z - info: Rebuilding 7 pages
+2019-12-24T04:54:21.875Z - info: Pages rebuilt
+2019-12-24T04:54:21.887Z - info: Site data built
+2019-12-24T04:57:24.509Z - info: [12:57:24 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:57:25.514Z - info: Rebuilding affected source files
+2019-12-24T04:57:25.516Z - info: Rebuilding 7 pages
+2019-12-24T04:57:28.122Z - info: Pages rebuilt
+2019-12-24T04:57:28.133Z - info: Site data built
+2019-12-24T04:58:18.474Z - info: [12:58:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:58:19.476Z - info: Rebuilding affected source files
+2019-12-24T04:58:19.480Z - info: Rebuilding 7 pages
+2019-12-24T04:58:22.111Z - info: Pages rebuilt
+2019-12-24T04:58:22.125Z - info: Site data built
+2019-12-24T04:58:30.566Z - info: [12:58:30 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:58:31.568Z - info: Rebuilding affected source files
+2019-12-24T04:58:31.570Z - info: Rebuilding 7 pages
+2019-12-24T04:58:33.942Z - info: Pages rebuilt
+2019-12-24T04:58:33.954Z - info: Site data built
+2019-12-24T04:58:42.596Z - info: [12:58:42 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T04:58:43.598Z - info: Rebuilding affected source files
+2019-12-24T04:58:43.599Z - info: Rebuilding 7 pages
+2019-12-24T04:58:45.954Z - info: Pages rebuilt
+2019-12-24T04:58:45.964Z - info: Site data built
+2019-12-24T05:00:59.945Z - info: [1:00:59 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T05:01:00.949Z - info: Rebuilding affected source files
+2019-12-24T05:01:00.952Z - info: Rebuilding 7 pages
+2019-12-24T05:01:03.572Z - info: Pages rebuilt
+2019-12-24T05:01:03.586Z - info: Site data built
+2019-12-24T05:01:48.739Z - info: [1:01:48 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T05:01:49.751Z - info: Rebuilding affected source files
+2019-12-24T05:01:49.754Z - info: Rebuilding 7 pages
+2019-12-24T05:01:52.395Z - info: Pages rebuilt
+2019-12-24T05:01:52.407Z - info: Site data built
+2019-12-24T05:02:24.097Z - info: [1:02:24 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T05:02:25.101Z - info: Rebuilding affected source files
+2019-12-24T05:02:25.103Z - info: Rebuilding 7 pages
+2019-12-24T05:02:27.816Z - info: Pages rebuilt
+2019-12-24T05:02:27.831Z - info: Site data built
+2019-12-24T05:02:49.171Z - info: [1:02:49 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T05:02:50.174Z - info: Rebuilding affected source files
+2019-12-24T05:02:50.176Z - info: Rebuilding 7 pages
+2019-12-24T05:02:52.791Z - info: Pages rebuilt
+2019-12-24T05:02:52.803Z - info: Site data built
+2019-12-24T05:04:00.136Z - info: [1:04:00 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-deliverables-ug.md
+2019-12-24T05:04:01.140Z - info: Rebuilding affected source files
+2019-12-24T05:04:01.141Z - info: Rebuilding 3 pages
+2019-12-24T05:04:02.779Z - info: Pages rebuilt
+2019-12-24T05:04:02.790Z - info: Site data built
+2019-12-24T05:11:37.656Z - info: [1:11:37 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-constraints.md
+2019-12-24T05:11:38.661Z - info: Rebuilding affected source files
+2019-12-24T05:11:38.664Z - info: Rebuilding 8 pages
+2019-12-24T05:11:41.680Z - info: Pages rebuilt
+2019-12-24T05:11:41.696Z - info: Site data built
+2019-12-24T06:10:58.343Z - info: [2:10:58 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:10:58.353Z - info: [2:10:58 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week4\notices-cs2103.md
+2019-12-24T06:10:59.348Z - info: Rebuilding affected source files
+2019-12-24T06:10:59.350Z - info: Rebuilding 8 pages
+2019-12-24T06:11:02.338Z - info: Pages rebuilt
+2019-12-24T06:11:02.360Z - info: Site data built
+2019-12-24T06:14:12.270Z - info: [2:14:12 PM] Reload for file deletion: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\images\how to get help.png
+2019-12-24T06:14:13.290Z - info: Assets removed
+2019-12-24T06:14:21.846Z - info: [2:14:21 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:14:21.858Z - info: [2:14:21 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week4\notices-cs2103.md
+2019-12-24T06:14:22.849Z - info: Rebuilding affected source files
+2019-12-24T06:14:22.852Z - info: Rebuilding 8 pages
+2019-12-24T06:14:26.988Z - info: Pages rebuilt
+2019-12-24T06:14:27.000Z - info: Site data built
+2019-12-24T06:17:34.824Z - info: [2:17:34 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:17:34.831Z - info: [2:17:34 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week4\notices-cs2103.md
+2019-12-24T06:17:35.826Z - info: Rebuilding affected source files
+2019-12-24T06:17:35.831Z - info: Rebuilding 8 pages
+2019-12-24T06:17:38.511Z - info: Pages rebuilt
+2019-12-24T06:17:38.537Z - info: Site data built
+2019-12-24T06:18:18.563Z - info: [2:18:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:18:19.566Z - info: Rebuilding affected source files
+2019-12-24T06:18:19.567Z - info: Rebuilding 8 pages
+2019-12-24T06:18:22.200Z - info: Pages rebuilt
+2019-12-24T06:18:22.214Z - info: Site data built
+2019-12-24T06:18:28.468Z - info: [2:18:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:18:29.471Z - info: Rebuilding affected source files
+2019-12-24T06:18:29.472Z - info: Rebuilding 8 pages
+2019-12-24T06:18:32.117Z - info: Pages rebuilt
+2019-12-24T06:18:32.136Z - info: Site data built
+2019-12-24T06:18:41.593Z - info: [2:18:41 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:18:42.595Z - info: Rebuilding affected source files
+2019-12-24T06:18:42.596Z - info: Rebuilding 8 pages
+2019-12-24T06:18:44.816Z - info: [2:18:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:18:45.575Z - info: Pages rebuilt
+2019-12-24T06:18:45.604Z - info: Site data built
+2019-12-24T06:18:45.827Z - info: Rebuilding affected source files
+2019-12-24T06:18:45.828Z - info: Rebuilding 8 pages
+2019-12-24T06:18:48.396Z - info: Pages rebuilt
+2019-12-24T06:18:48.424Z - info: Site data built
+2019-12-24T06:20:09.711Z - info: [2:20:09 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:20:09.720Z - info: [2:20:09 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week4\notices-cs2103.md
+2019-12-24T06:20:10.714Z - info: Rebuilding affected source files
+2019-12-24T06:20:10.718Z - info: Rebuilding 8 pages
+2019-12-24T06:20:13.352Z - info: Pages rebuilt
+2019-12-24T06:20:13.369Z - info: Site data built
+2019-12-24T06:21:10.466Z - info: [2:21:10 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:21:11.469Z - info: Rebuilding affected source files
+2019-12-24T06:21:11.471Z - info: Rebuilding 8 pages
+2019-12-24T06:21:14.248Z - info: Pages rebuilt
+2019-12-24T06:21:14.265Z - info: Site data built
+2019-12-24T06:21:29.379Z - info: [2:21:29 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:21:30.382Z - info: Rebuilding affected source files
+2019-12-24T06:21:30.383Z - info: Rebuilding 8 pages
+2019-12-24T06:21:33.004Z - info: Pages rebuilt
+2019-12-24T06:21:33.020Z - info: Site data built
+2019-12-24T06:21:49.139Z - info: [2:21:49 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:21:50.141Z - info: Rebuilding affected source files
+2019-12-24T06:21:50.142Z - info: Rebuilding 8 pages
+2019-12-24T06:21:52.845Z - info: Pages rebuilt
+2019-12-24T06:21:52.865Z - info: Site data built
+2019-12-24T06:22:07.354Z - info: [2:22:07 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:22:08.358Z - info: Rebuilding affected source files
+2019-12-24T06:22:08.360Z - info: Rebuilding 8 pages
+2019-12-24T06:22:10.971Z - info: Pages rebuilt
+2019-12-24T06:22:10.984Z - info: Site data built
+2019-12-24T06:22:30.868Z - info: [2:22:30 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:22:31.871Z - info: Rebuilding affected source files
+2019-12-24T06:22:31.873Z - info: Rebuilding 8 pages
+2019-12-24T06:22:34.563Z - info: Pages rebuilt
+2019-12-24T06:22:34.585Z - info: Site data built
+2019-12-24T06:24:30.829Z - info: [2:24:30 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:24:31.837Z - info: Rebuilding affected source files
+2019-12-24T06:24:31.839Z - info: Rebuilding 8 pages
+2019-12-24T06:24:34.522Z - info: Pages rebuilt
+2019-12-24T06:24:34.534Z - info: Site data built
+2019-12-24T06:25:11.099Z - info: [2:25:11 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:25:12.101Z - info: Rebuilding affected source files
+2019-12-24T06:25:12.103Z - info: Rebuilding 8 pages
+2019-12-24T06:25:14.916Z - info: Pages rebuilt
+2019-12-24T06:25:14.932Z - info: Site data built
+2019-12-24T06:26:08.408Z - info: [2:26:08 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:26:09.411Z - info: Rebuilding affected source files
+2019-12-24T06:26:09.412Z - info: Rebuilding 8 pages
+2019-12-24T06:26:12.100Z - info: Pages rebuilt
+2019-12-24T06:26:12.125Z - info: Site data built
+2019-12-24T06:26:45.459Z - info: [2:26:45 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:26:46.462Z - info: Rebuilding affected source files
+2019-12-24T06:26:46.464Z - info: Rebuilding 8 pages
+2019-12-24T06:26:49.241Z - info: Pages rebuilt
+2019-12-24T06:26:49.259Z - info: Site data built
+2019-12-24T06:28:19.965Z - info: [2:28:19 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:28:20.968Z - info: Rebuilding affected source files
+2019-12-24T06:28:20.970Z - info: Rebuilding 8 pages
+2019-12-24T06:28:23.716Z - info: Pages rebuilt
+2019-12-24T06:28:23.737Z - info: Site data built
+2019-12-24T06:30:01.471Z - info: [2:30:01 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:30:02.475Z - info: Rebuilding affected source files
+2019-12-24T06:30:02.477Z - info: Rebuilding 8 pages
+2019-12-24T06:30:05.145Z - info: Pages rebuilt
+2019-12-24T06:30:05.158Z - info: Site data built
+2019-12-24T06:32:18.841Z - info: [2:32:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:32:18.849Z - info: [2:32:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week4\notices-cs2103.md
+2019-12-24T06:32:19.844Z - info: Rebuilding affected source files
+2019-12-24T06:32:19.846Z - info: Rebuilding 8 pages
+2019-12-24T06:32:22.653Z - info: Pages rebuilt
+2019-12-24T06:32:22.670Z - info: Site data built
+2019-12-24T06:34:54.850Z - info: [2:34:54 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:34:55.852Z - info: Rebuilding affected source files
+2019-12-24T06:34:55.854Z - info: Rebuilding 8 pages
+2019-12-24T06:34:58.559Z - info: Pages rebuilt
+2019-12-24T06:34:58.577Z - info: Site data built
+2019-12-24T06:35:33.265Z - info: [2:35:33 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:35:34.268Z - info: Rebuilding affected source files
+2019-12-24T06:35:34.270Z - info: Rebuilding 8 pages
+2019-12-24T06:35:36.989Z - info: Pages rebuilt
+2019-12-24T06:35:37.013Z - info: Site data built
+2019-12-24T06:39:45.222Z - info: [2:39:45 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:39:46.226Z - info: Rebuilding affected source files
+2019-12-24T06:39:46.227Z - info: Rebuilding 8 pages
+2019-12-24T06:39:49.140Z - info: Pages rebuilt
+2019-12-24T06:39:49.159Z - info: Site data built
+2019-12-24T06:41:37.552Z - info: [2:41:37 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:41:38.555Z - info: Rebuilding affected source files
+2019-12-24T06:41:38.556Z - info: Rebuilding 8 pages
+2019-12-24T06:41:41.297Z - info: Pages rebuilt
+2019-12-24T06:41:41.314Z - info: Site data built
+2019-12-24T06:43:48.464Z - info: [2:43:48 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:43:48.476Z - info: [2:43:48 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week4\notices-cs2103.md
+2019-12-24T06:43:49.467Z - info: Rebuilding affected source files
+2019-12-24T06:43:49.469Z - info: Rebuilding 8 pages
+2019-12-24T06:43:52.229Z - info: Pages rebuilt
+2019-12-24T06:43:52.245Z - info: Site data built
+2019-12-24T06:44:20.366Z - info: [2:44:20 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:44:21.376Z - info: Rebuilding affected source files
+2019-12-24T06:44:21.377Z - info: Rebuilding 8 pages
+2019-12-24T06:44:24.053Z - info: Pages rebuilt
+2019-12-24T06:44:24.074Z - info: Site data built
+2019-12-24T06:44:41.261Z - info: [2:44:41 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:44:42.263Z - info: Rebuilding affected source files
+2019-12-24T06:44:42.265Z - info: Rebuilding 8 pages
+2019-12-24T06:44:44.948Z - info: Pages rebuilt
+2019-12-24T06:44:44.967Z - info: Site data built
+2019-12-24T06:45:07.169Z - info: [2:45:07 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:45:08.173Z - info: Rebuilding affected source files
+2019-12-24T06:45:08.174Z - info: Rebuilding 8 pages
+2019-12-24T06:45:10.965Z - info: Pages rebuilt
+2019-12-24T06:45:10.980Z - info: Site data built
+2019-12-24T06:47:13.579Z - info: [2:47:13 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:47:14.581Z - info: Rebuilding affected source files
+2019-12-24T06:47:14.582Z - info: Rebuilding 8 pages
+2019-12-24T06:47:17.263Z - info: Pages rebuilt
+2019-12-24T06:47:17.289Z - info: Site data built
+2019-12-24T06:48:10.471Z - info: [2:48:10 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:48:11.485Z - info: Rebuilding affected source files
+2019-12-24T06:48:11.489Z - info: Rebuilding 8 pages
+2019-12-24T06:48:14.205Z - info: Pages rebuilt
+2019-12-24T06:48:14.231Z - info: Site data built
+2019-12-24T06:48:38.919Z - info: [2:48:38 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:48:39.933Z - info: Rebuilding affected source files
+2019-12-24T06:48:39.934Z - info: Rebuilding 8 pages
+2019-12-24T06:48:42.628Z - info: Pages rebuilt
+2019-12-24T06:48:42.654Z - info: Site data built
+2019-12-24T06:48:58.999Z - info: [2:48:58 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:49:00.004Z - info: Rebuilding affected source files
+2019-12-24T06:49:00.006Z - info: Rebuilding 8 pages
+2019-12-24T06:49:02.812Z - info: Pages rebuilt
+2019-12-24T06:49:02.829Z - info: Site data built
+2019-12-24T06:49:46.617Z - info: [2:49:46 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:49:47.620Z - info: Rebuilding affected source files
+2019-12-24T06:49:47.622Z - info: Rebuilding 8 pages
+2019-12-24T06:49:50.372Z - info: Pages rebuilt
+2019-12-24T06:49:50.403Z - info: Site data built
+2019-12-24T06:49:57.692Z - info: [2:49:57 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:49:58.700Z - info: Rebuilding affected source files
+2019-12-24T06:49:58.702Z - info: Rebuilding 8 pages
+2019-12-24T06:50:01.232Z - info: Pages rebuilt
+2019-12-24T06:50:01.250Z - info: Site data built
+2019-12-24T06:50:18.696Z - info: [2:50:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:50:19.705Z - info: Rebuilding affected source files
+2019-12-24T06:50:19.707Z - info: Rebuilding 8 pages
+2019-12-24T06:50:22.361Z - info: Pages rebuilt
+2019-12-24T06:50:22.386Z - info: Site data built
+2019-12-24T06:51:12.745Z - info: [2:51:12 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:51:13.748Z - info: Rebuilding affected source files
+2019-12-24T06:51:13.752Z - info: Rebuilding 8 pages
+2019-12-24T06:51:16.410Z - info: Pages rebuilt
+2019-12-24T06:51:16.426Z - info: Site data built
+2019-12-24T06:51:22.443Z - info: [2:51:22 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:51:23.446Z - info: Rebuilding affected source files
+2019-12-24T06:51:23.447Z - info: Rebuilding 8 pages
+2019-12-24T06:51:26.062Z - info: Pages rebuilt
+2019-12-24T06:51:26.080Z - info: Site data built
+2019-12-24T06:52:16.740Z - info: [2:52:16 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\appendixD-help.md
+2019-12-24T06:52:17.744Z - info: Rebuilding affected source files
+2019-12-24T06:52:17.746Z - info: Rebuilding 8 pages
+2019-12-24T06:52:20.491Z - info: Pages rebuilt
+2019-12-24T06:52:20.503Z - info: Site data built
+2019-12-24T06:54:05.307Z - info: [2:54:05 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week4\notices-cs2103.md
+2019-12-24T06:54:06.308Z - info: Rebuilding affected source files
+2019-12-24T06:54:06.309Z - info: Rebuilding 1 pages
+2019-12-24T06:54:06.785Z - info: Pages rebuilt
+2019-12-24T06:54:06.795Z - info: Site data built
+2019-12-24T06:54:58.122Z - info: [2:54:58 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week4\notices-cs2103.md
+2019-12-24T06:54:59.133Z - info: Rebuilding affected source files
+2019-12-24T06:54:59.134Z - info: Rebuilding 1 pages
+2019-12-24T06:54:59.445Z - info: Pages rebuilt
+2019-12-24T06:54:59.457Z - info: Site data built
+2019-12-24T07:02:38.119Z - info: [3:02:38 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:02:39.122Z - info: Rebuilding affected source files
+2019-12-24T07:02:39.125Z - info: Rebuilding 11 pages
+2019-12-24T07:02:43.628Z - info: Pages rebuilt
+2019-12-24T07:02:43.639Z - info: Site data built
+2019-12-24T07:08:04.695Z - info: [3:08:04 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:08:05.697Z - info: Rebuilding affected source files
+2019-12-24T07:08:05.699Z - info: Rebuilding 9 pages
+2019-12-24T07:08:09.872Z - info: Pages rebuilt
+2019-12-24T07:08:09.883Z - info: Site data built
+2019-12-24T07:08:28.682Z - info: [3:08:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:08:29.685Z - info: Rebuilding affected source files
+2019-12-24T07:08:29.687Z - info: Rebuilding 9 pages
+2019-12-24T07:08:33.525Z - info: Pages rebuilt
+2019-12-24T07:08:33.537Z - info: Site data built
+2019-12-24T07:08:40.301Z - info: [3:08:40 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:08:41.304Z - info: Rebuilding affected source files
+2019-12-24T07:08:41.306Z - info: Rebuilding 9 pages
+2019-12-24T07:08:44.969Z - info: Pages rebuilt
+2019-12-24T07:08:44.988Z - info: Site data built
+2019-12-24T07:08:49.899Z - info: [3:08:49 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:08:50.901Z - info: Rebuilding affected source files
+2019-12-24T07:08:50.902Z - info: Rebuilding 9 pages
+2019-12-24T07:08:54.554Z - info: Pages rebuilt
+2019-12-24T07:08:54.566Z - info: Site data built
+2019-12-24T07:09:36.173Z - info: [3:09:36 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:09:37.184Z - info: Rebuilding affected source files
+2019-12-24T07:09:37.186Z - info: Rebuilding 9 pages
+2019-12-24T07:09:41.010Z - info: Pages rebuilt
+2019-12-24T07:09:41.023Z - info: Site data built
+2019-12-24T07:10:12.092Z - info: [3:10:12 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:10:13.094Z - info: Rebuilding affected source files
+2019-12-24T07:10:13.096Z - info: Rebuilding 9 pages
+2019-12-24T07:10:17.085Z - info: Pages rebuilt
+2019-12-24T07:10:17.096Z - info: Site data built
+2019-12-24T07:15:13.766Z - info: [3:15:13 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:15:14.770Z - info: Rebuilding affected source files
+2019-12-24T07:15:14.772Z - info: Rebuilding 9 pages
+2019-12-24T07:15:18.574Z - info: Pages rebuilt
+2019-12-24T07:15:18.589Z - info: Site data built
+2019-12-24T07:16:24.500Z - info: [3:16:24 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:16:25.503Z - info: Rebuilding affected source files
+2019-12-24T07:16:25.505Z - info: Rebuilding 9 pages
+2019-12-24T07:16:29.594Z - info: Pages rebuilt
+2019-12-24T07:16:30.481Z - info: Site data built
+2019-12-24T07:18:15.550Z - info: [3:18:15 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:18:16.554Z - info: Rebuilding affected source files
+2019-12-24T07:18:16.556Z - info: Rebuilding 9 pages
+2019-12-24T07:18:20.356Z - info: Pages rebuilt
+2019-12-24T07:18:20.369Z - info: Site data built
+2019-12-24T07:20:27.036Z - info: [3:20:27 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:20:28.051Z - info: Rebuilding affected source files
+2019-12-24T07:20:28.053Z - info: Rebuilding 9 pages
+2019-12-24T07:20:32.000Z - info: Pages rebuilt
+2019-12-24T07:20:32.018Z - info: Site data built
+2019-12-24T07:23:16.877Z - info: [3:23:16 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:23:16.883Z - info: [3:23:16 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:23:17.878Z - info: Rebuilding affected source files
+2019-12-24T07:23:17.880Z - info: Rebuilding 10 pages
+2019-12-24T07:23:18.519Z - error:  Error: No such file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\project-grading-bugs.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:357:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:507:43)
+    at dom.map (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:675:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:672:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+    at Parser.onend (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:340:36)
+2019-12-24T07:23:21.988Z - info: Pages rebuilt
+2019-12-24T07:23:22.003Z - info: Site data built
+2019-12-24T07:23:49.891Z - info: [3:23:49 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:23:50.892Z - info: Rebuilding affected source files
+2019-12-24T07:23:50.893Z - info: Rebuilding 1 pages
+2019-12-24T07:23:51.217Z - warn:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectHeadingsAndKeywordsInContent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:348:19)
+    at Object.$.not.each.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:392:16)
+    at initialize.exports.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Page.collectHeadingsAndKeywordsInContent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:358:6)
+    at Page.collectHeadingsAndKeywords (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:339:8)
+    at pages.forEach (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:862:12)
+    at Array.forEach (<anonymous>)
+    at Site.updateSiteData (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:860:14)
+    at Promise.all.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:844:24)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+2019-12-24T07:23:52.989Z - error: Cannot read property 'parent' of null
+2019-12-24T07:24:24.179Z - info: Website generation started at 3:24:24 PM
+2019-12-24T07:24:26.354Z - info: Building assets...
+2019-12-24T07:24:28.019Z - info: Assets built
+2019-12-24T07:24:28.019Z - info: Generating pages...
+2019-12-24T07:26:00.469Z - info: Pages built
+2019-12-24T07:26:06.750Z - warn:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectHeadingsAndKeywordsInContent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:348:19)
+    at Object.$.not.each.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:392:16)
+    at initialize.exports.each (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\api\traversing.js:300:24)
+    at Page.collectHeadingsAndKeywordsInContent (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:358:6)
+    at Page.collectHeadingsAndKeywords (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:339:8)
+    at pages.forEach (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:862:12)
+    at Array.forEach (<anonymous>)
+    at Site.updateSiteData (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:860:14)
+    at readSiteConfig.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:527:24)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+2019-12-24T07:26:07.117Z - error: Cannot read property 'parent' of null
+2019-12-24T07:30:05.970Z - info: Website generation started at 3:30:05 PM
+2019-12-24T07:30:08.345Z - info: Building assets...
+2019-12-24T07:30:10.123Z - info: Assets built
+2019-12-24T07:30:10.123Z - info: Generating pages...
+2019-12-24T07:31:48.019Z - info: Pages built
+2019-12-24T07:32:04.056Z - info: Website generation complete! Total build time: 118.093s
+2019-12-24T07:32:04.410Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-24T07:32:04.410Z - info: Press CTRL+C to stop ...
+2019-12-24T07:32:04.513Z - info: Site data built
+2019-12-24T07:32:53.695Z - info: [3:32:53 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:32:54.697Z - info: Rebuilding affected source files
+2019-12-24T07:32:54.699Z - info: Rebuilding 1 pages
+2019-12-24T07:32:55.037Z - info: Pages rebuilt
+2019-12-24T07:32:55.047Z - info: Site data built
+2019-12-24T07:33:07.209Z - info: [3:33:07 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:33:08.211Z - info: Rebuilding affected source files
+2019-12-24T07:33:08.211Z - info: Rebuilding 1 pages
+2019-12-24T07:33:08.510Z - info: Pages rebuilt
+2019-12-24T07:33:08.521Z - info: Site data built
+2019-12-24T07:33:33.637Z - info: [3:33:33 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:33:34.637Z - info: Rebuilding affected source files
+2019-12-24T07:33:34.638Z - info: Rebuilding 1 pages
+2019-12-24T07:33:34.959Z - info: Pages rebuilt
+2019-12-24T07:33:34.970Z - info: Site data built
+2019-12-24T07:34:00.316Z - info: [3:34:00 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:34:01.318Z - info: Rebuilding affected source files
+2019-12-24T07:34:01.319Z - info: Rebuilding 1 pages
+2019-12-24T07:34:01.598Z - info: Pages rebuilt
+2019-12-24T07:34:01.609Z - info: Site data built
+2019-12-24T07:34:45.686Z - info: [3:34:45 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:34:46.688Z - info: Rebuilding affected source files
+2019-12-24T07:34:46.689Z - info: Rebuilding 1 pages
+2019-12-24T07:34:46.952Z - info: Pages rebuilt
+2019-12-24T07:34:46.963Z - info: Site data built
+2019-12-24T07:34:56.918Z - info: [3:34:56 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:34:57.920Z - info: Rebuilding affected source files
+2019-12-24T07:34:57.921Z - info: Rebuilding 1 pages
+2019-12-24T07:34:58.251Z - info: Pages rebuilt
+2019-12-24T07:34:58.262Z - info: Site data built
+2019-12-24T07:35:09.675Z - info: [3:35:09 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:35:10.676Z - info: Rebuilding affected source files
+2019-12-24T07:35:10.677Z - info: Rebuilding 1 pages
+2019-12-24T07:35:10.923Z - info: Pages rebuilt
+2019-12-24T07:35:10.935Z - info: Site data built
+2019-12-24T07:37:44.425Z - info: [3:37:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:37:44.443Z - info: [3:37:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:37:45.427Z - info: Rebuilding affected source files
+2019-12-24T07:37:45.429Z - info: Rebuilding 11 pages
+2019-12-24T07:37:49.705Z - info: Pages rebuilt
+2019-12-24T07:37:49.722Z - info: Site data built
+2019-12-24T07:38:04.350Z - info: [3:38:04 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:38:05.350Z - info: Rebuilding affected source files
+2019-12-24T07:38:05.352Z - info: Rebuilding 1 pages
+2019-12-24T07:38:05.718Z - info: Pages rebuilt
+2019-12-24T07:38:05.729Z - info: Site data built
+2019-12-24T07:38:56.517Z - info: [3:38:56 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:38:57.518Z - info: Rebuilding affected source files
+2019-12-24T07:38:57.519Z - info: Rebuilding 1 pages
+2019-12-24T07:38:57.838Z - info: Pages rebuilt
+2019-12-24T07:38:57.849Z - info: Site data built
+2019-12-24T07:39:57.529Z - info: [3:39:57 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:39:58.530Z - info: Rebuilding affected source files
+2019-12-24T07:39:58.531Z - info: Rebuilding 1 pages
+2019-12-24T07:39:58.872Z - info: Pages rebuilt
+2019-12-24T07:39:58.889Z - info: Site data built
+2019-12-24T07:40:18.606Z - info: [3:40:18 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:40:19.605Z - info: Rebuilding affected source files
+2019-12-24T07:40:19.606Z - info: Rebuilding 1 pages
+2019-12-24T07:40:19.957Z - info: Pages rebuilt
+2019-12-24T07:40:19.969Z - info: Site data built
+2019-12-24T07:43:22.859Z - info: [3:43:22 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:43:23.862Z - info: Rebuilding affected source files
+2019-12-24T07:43:23.865Z - info: Rebuilding 11 pages
+2019-12-24T07:43:28.645Z - info: Pages rebuilt
+2019-12-24T07:43:28.660Z - info: Site data built
+2019-12-24T07:44:22.526Z - info: [3:44:22 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:44:23.527Z - info: Rebuilding affected source files
+2019-12-24T07:44:23.529Z - info: Rebuilding 11 pages
+2019-12-24T07:44:28.125Z - info: Pages rebuilt
+2019-12-24T07:44:28.159Z - info: Site data built
+2019-12-24T07:44:51.910Z - info: [3:44:51 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:44:52.912Z - info: Rebuilding affected source files
+2019-12-24T07:44:52.915Z - info: Rebuilding 11 pages
+2019-12-24T07:44:57.539Z - info: Pages rebuilt
+2019-12-24T07:44:57.558Z - info: Site data built
+2019-12-24T07:46:15.934Z - info: [3:46:15 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:46:16.936Z - info: Rebuilding affected source files
+2019-12-24T07:46:16.939Z - info: Rebuilding 11 pages
+2019-12-24T07:46:21.672Z - info: Pages rebuilt
+2019-12-24T07:46:21.692Z - info: Site data built
+2019-12-24T07:46:32.234Z - info: [3:46:32 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:46:33.245Z - info: Rebuilding affected source files
+2019-12-24T07:46:33.247Z - info: Rebuilding 11 pages
+2019-12-24T07:46:37.742Z - info: Pages rebuilt
+2019-12-24T07:46:37.759Z - info: Site data built
+2019-12-24T07:48:51.682Z - info: [3:48:51 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:48:52.692Z - info: Rebuilding affected source files
+2019-12-24T07:48:52.695Z - info: Rebuilding 11 pages
+2019-12-24T07:48:57.320Z - info: Pages rebuilt
+2019-12-24T07:48:57.340Z - info: Site data built
+2019-12-24T07:49:31.930Z - info: [3:49:31 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T07:49:32.951Z - info: Rebuilding affected source files
+2019-12-24T07:49:32.954Z - info: Rebuilding 11 pages
+2019-12-24T07:49:37.601Z - info: Pages rebuilt
+2019-12-24T07:49:37.616Z - info: Site data built
+2019-12-24T07:58:04.243Z - info: [3:58:04 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:58:05.246Z - info: Rebuilding affected source files
+2019-12-24T07:58:05.246Z - info: Rebuilding 1 pages
+2019-12-24T07:58:05.581Z - info: Pages rebuilt
+2019-12-24T07:58:05.593Z - info: Site data built
+2019-12-24T07:58:28.726Z - info: [3:58:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T07:58:29.728Z - info: Rebuilding affected source files
+2019-12-24T07:58:29.729Z - info: Rebuilding 1 pages
+2019-12-24T07:58:29.973Z - info: Pages rebuilt
+2019-12-24T07:58:29.984Z - info: Site data built
+2019-12-24T08:09:24.109Z - info: [4:09:24 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T08:09:25.111Z - info: Rebuilding affected source files
+2019-12-24T08:09:25.112Z - info: Rebuilding 1 pages
+2019-12-24T08:09:25.478Z - info: Pages rebuilt
+2019-12-24T08:09:25.493Z - info: Site data built
+2019-12-24T08:12:24.095Z - info: [4:12:24 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T08:12:25.096Z - info: Rebuilding affected source files
+2019-12-24T08:12:25.097Z - info: Rebuilding 1 pages
+2019-12-24T08:12:25.427Z - info: Pages rebuilt
+2019-12-24T08:12:25.439Z - info: Site data built
+2019-12-24T08:12:44.625Z - info: [4:12:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T08:12:45.640Z - info: Rebuilding affected source files
+2019-12-24T08:12:45.641Z - info: Rebuilding 1 pages
+2019-12-24T08:12:45.886Z - info: Pages rebuilt
+2019-12-24T08:12:45.901Z - info: Site data built
+2019-12-24T08:14:28.017Z - info: [4:14:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week7\tutorial-cs2103.md
+2019-12-24T08:14:29.020Z - info: Rebuilding affected source files
+2019-12-24T08:14:29.021Z - info: Rebuilding 1 pages
+2019-12-24T08:14:29.428Z - info: Pages rebuilt
+2019-12-24T08:14:29.442Z - info: Site data built
+2019-12-24T08:20:55.764Z - info: [4:20:55 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T08:20:56.765Z - info: Rebuilding affected source files
+2019-12-24T08:20:56.766Z - info: Rebuilding 1 pages
+2019-12-24T08:20:57.551Z - info: Pages rebuilt
+2019-12-24T08:20:57.562Z - info: Site data built
+2019-12-24T08:21:40.600Z - info: [4:21:40 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T08:21:41.602Z - info: Rebuilding affected source files
+2019-12-24T08:21:41.603Z - info: Rebuilding 1 pages
+2019-12-24T08:21:42.296Z - info: Pages rebuilt
+2019-12-24T08:21:42.311Z - info: Site data built
+2019-12-24T08:23:07.360Z - info: [4:23:07 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T08:23:08.360Z - info: Rebuilding affected source files
+2019-12-24T08:23:08.361Z - info: Rebuilding 1 pages
+2019-12-24T08:23:08.985Z - info: Pages rebuilt
+2019-12-24T08:23:09.001Z - info: Site data built
+2019-12-24T08:24:02.929Z - info: [4:24:02 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T08:24:03.930Z - info: Rebuilding affected source files
+2019-12-24T08:24:03.931Z - info: Rebuilding 1 pages
+2019-12-24T08:24:04.612Z - info: Pages rebuilt
+2019-12-24T08:24:04.626Z - info: Site data built
+2019-12-24T08:24:45.523Z - info: [4:24:45 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T08:24:46.525Z - info: Rebuilding affected source files
+2019-12-24T08:24:46.526Z - info: Rebuilding 1 pages
+2019-12-24T08:24:47.153Z - info: Pages rebuilt
+2019-12-24T08:24:47.169Z - info: Site data built
+2019-12-24T08:39:12.406Z - info: [4:39:12 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week12\tutorial-cs2103.md
+2019-12-24T08:39:13.407Z - info: Rebuilding affected source files
+2019-12-24T08:39:13.408Z - info: Rebuilding 1 pages
+2019-12-24T08:39:14.249Z - info: Pages rebuilt
+2019-12-24T08:39:14.261Z - info: Site data built
+2019-12-24T08:50:46.995Z - info: [4:50:46 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\documentation\introduction\what\text.md
+2019-12-24T08:50:47.997Z - info: Rebuilding affected source files
+2019-12-24T08:50:48.001Z - info: Rebuilding 9 pages
+2019-12-24T08:51:00.911Z - info: Pages rebuilt
+2019-12-24T08:51:00.934Z - info: Site data built
+2019-12-24T08:57:50.616Z - info: [4:57:50 PM] Reload for file add: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\images\textLogic.png
+2019-12-24T08:57:50.623Z - info: [4:57:50 PM] Reload for file add: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\text.md
+2019-12-24T08:57:50.631Z - info: [4:57:50 PM] Reload for file add: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\index.md
+2019-12-24T08:57:51.624Z - warn: Rebuilding all source files
+2019-12-24T08:57:51.625Z - info: Assets built
+2019-12-24T08:57:53.785Z - info: Assets removed
+2019-12-24T08:57:53.785Z - info: Generating pages...
+2019-12-24T08:58:34.399Z - info: [4:58:34 PM] Reload for file deletion: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\images\textLogic.png
+2019-12-24T08:58:43.798Z - info: Assets removed
+2019-12-24T08:59:39.082Z - info: Pages built
+2019-12-24T09:00:03.468Z - info: [5:00:03 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\text.md
+2019-12-24T09:00:03.471Z - info: [5:00:03 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\text.md
+2019-12-24T09:00:04.469Z - info: Rebuilding affected source files
+2019-12-24T09:00:04.471Z - info: Rebuilding 6 pages
+2019-12-24T09:00:12.049Z - info: Pages rebuilt
+2019-12-24T09:00:12.058Z - info: Site data built
+2019-12-24T09:05:05.980Z - info: [5:05:05 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\se-book-adapted\config.njk
+2019-12-24T09:05:05.989Z - info: [5:05:05 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsIntermediate\text.md
+2019-12-24T09:05:06.989Z - info: Rebuilding affected source files
+2019-12-24T09:05:06.992Z - info: Rebuilding 12 pages
+2019-12-24T09:05:06.994Z - info: Assets built
+2019-12-24T09:05:20.764Z - info: Pages rebuilt
+2019-12-24T09:05:20.773Z - info: Site data built
+2019-12-24T09:10:57.675Z - info: [5:10:57 PM] Reload for file add: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\staticMethodCall.puml
+2019-12-24T09:10:58.677Z - warn: Rebuilding all source files
+2019-12-24T09:11:00.882Z - info: Assets removed
+2019-12-24T09:11:00.882Z - info: Generating pages...
+2019-12-24T09:12:44.886Z - info: Pages built
+2019-12-24T09:16:26.710Z - info: [5:16:26 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\staticMethodCall.puml
+2019-12-24T09:16:27.711Z - info: Rebuilding affected source files
+2019-12-24T09:16:27.712Z - info: Rebuilding 0 pages
+2019-12-24T09:16:27.713Z - info: Pages rebuilt
+2019-12-24T09:16:27.720Z - info: Site data built
+2019-12-24T09:17:17.382Z - info: [5:17:17 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\text.md
+2019-12-24T09:17:18.384Z - info: Rebuilding affected source files
+2019-12-24T09:17:18.385Z - info: Rebuilding 4 pages
+2019-12-24T09:17:19.890Z - info: Pages rebuilt
+2019-12-24T09:17:19.919Z - info: Site data built
+2019-12-24T09:18:25.097Z - info: [5:18:25 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\text.md
+2019-12-24T09:18:26.100Z - info: Rebuilding affected source files
+2019-12-24T09:18:26.102Z - info: Rebuilding 4 pages
+2019-12-24T09:18:27.458Z - info: Pages rebuilt
+2019-12-24T09:18:27.467Z - info: Site data built
+2019-12-24T09:20:40.073Z - info: [5:20:40 PM] Reload for file add: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\images\staticMethodCall.puml
+2019-12-24T09:20:40.169Z - info: [5:20:40 PM] Reload for file deletion: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\staticMethodCall.puml
+2019-12-24T09:20:41.075Z - warn: Rebuilding all source files
+2019-12-24T09:20:43.372Z - info: Assets removed
+2019-12-24T09:20:43.372Z - info: Generating pages...
+2019-12-24T09:21:23.734Z - info: [5:21:23 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\text.md
+2019-12-24T09:21:25.101Z - info: Rebuilding affected source files
+2019-12-24T09:21:25.101Z - info: Rebuilding 0 pages
+2019-12-24T09:21:25.712Z - info: Pages rebuilt
+2019-12-24T09:21:44.452Z - info: Website generation started at 5:21:42 PM
+2019-12-24T09:21:46.786Z - info: Building assets...
+2019-12-24T09:21:48.649Z - info: Assets built
+2019-12-24T09:21:48.649Z - info: Generating pages...
+2019-12-24T09:23:26.003Z - info: Pages built
+2019-12-24T09:23:42.302Z - info: Website generation complete! Total build time: 119.908s
+2019-12-24T09:23:42.683Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-24T09:23:42.683Z - info: Press CTRL+C to stop ...
+2019-12-24T09:23:42.790Z - info: Site data built
+2019-12-24T09:26:16.377Z - info: [5:26:16 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\images\staticMethodCall.puml
+2019-12-24T09:26:17.378Z - info: Rebuilding affected source files
+2019-12-24T09:26:17.378Z - info: Rebuilding 0 pages
+2019-12-24T09:26:17.379Z - info: Pages rebuilt
+2019-12-24T09:26:17.390Z - info: Site data built
+2019-12-24T09:30:44.250Z - info: [5:30:44 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\images\staticMethodCall.puml
+2019-12-24T09:30:45.251Z - info: Rebuilding affected source files
+2019-12-24T09:30:45.252Z - info: Rebuilding 0 pages
+2019-12-24T09:30:45.253Z - info: Pages rebuilt
+2019-12-24T09:30:45.263Z - info: Site data built
+2019-12-24T09:32:07.527Z - info: [5:32:07 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\images\staticMethodCall.puml
+2019-12-24T09:32:08.530Z - info: Rebuilding affected source files
+2019-12-24T09:32:08.531Z - info: Rebuilding 0 pages
+2019-12-24T09:32:08.532Z - info: Pages rebuilt
+2019-12-24T09:32:08.541Z - info: Site data built
+2019-12-24T09:36:28.266Z - info: [5:36:28 PM] Reload for file add: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\images\personClass.puml
+2019-12-24T09:36:29.279Z - warn: Rebuilding all source files
+2019-12-24T09:36:31.588Z - info: Assets removed
+2019-12-24T09:36:31.588Z - info: Generating pages...
+2019-12-24T09:38:13.956Z - info: Pages built
+2019-12-24T09:39:28.750Z - info: [5:39:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\images\staticMethodCall.puml
+2019-12-24T09:39:28.753Z - info: [5:39:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\text.md
+2019-12-24T09:39:28.757Z - info: [5:39:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\images\personClass.puml
+2019-12-24T09:39:29.750Z - info: Rebuilding affected source files
+2019-12-24T09:39:29.753Z - info: Rebuilding 7 pages
+2019-12-24T09:39:38.771Z - info: Pages rebuilt
+2019-12-24T09:39:38.796Z - info: Site data built
+2019-12-24T09:40:37.093Z - info: [5:40:37 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\images\staticMethodCall.puml
+2019-12-24T09:40:38.095Z - info: Rebuilding affected source files
+2019-12-24T09:40:38.096Z - info: Rebuilding 0 pages
+2019-12-24T09:40:38.097Z - info: Pages rebuilt
+2019-12-24T09:40:38.103Z - info: Site data built
+2019-12-24T10:25:40.259Z - info: [6:25:40 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\images\staticMethodCall.puml
+2019-12-24T10:25:40.263Z - info: [6:25:40 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\text.md
+2019-12-24T10:25:41.261Z - info: Rebuilding affected source files
+2019-12-24T10:25:41.265Z - info: Rebuilding 7 pages
+2019-12-24T10:25:50.039Z - info: Pages rebuilt
+2019-12-24T10:25:50.057Z - info: Site data built
+2019-12-24T10:26:41.855Z - info: [6:26:41 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\text.md
+2019-12-24T10:26:42.856Z - info: Rebuilding affected source files
+2019-12-24T10:26:42.858Z - info: Rebuilding 7 pages
+2019-12-24T10:26:53.079Z - info: Website generation started at 6:26:51 PM
+2019-12-24T10:26:55.280Z - info: Building assets...
+2019-12-24T10:26:56.979Z - info: Assets built
+2019-12-24T10:26:56.979Z - info: Generating pages...
+2019-12-24T10:28:32.193Z - info: Pages built
+2019-12-24T10:28:48.030Z - info: Website generation complete! Total build time: 116.127s
+2019-12-24T10:28:48.372Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-24T10:28:48.373Z - info: Press CTRL+C to stop ...
+2019-12-24T10:28:48.469Z - info: Site data built
+2019-12-24T10:39:05.355Z - info: [6:39:05 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T10:39:06.360Z - info: Rebuilding affected source files
+2019-12-24T10:39:06.367Z - info: Rebuilding 11 pages
+2019-12-24T10:39:12.122Z - info: Pages rebuilt
+2019-12-24T10:39:12.138Z - info: Site data built
+2019-12-24T10:45:28.598Z - info: [6:45:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T10:45:28.615Z - info: [6:45:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T10:45:29.612Z - info: Rebuilding affected source files
+2019-12-24T10:45:29.616Z - info: Rebuilding 12 pages
+2019-12-24T10:45:34.145Z - info: Pages rebuilt
+2019-12-24T10:45:34.168Z - info: Site data built
+2019-12-24T10:46:42.401Z - info: [6:46:42 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T10:46:43.423Z - info: Rebuilding affected source files
+2019-12-24T10:46:43.424Z - info: Rebuilding 1 pages
+2019-12-24T10:46:44.153Z - info: Pages rebuilt
+2019-12-24T10:46:44.169Z - info: Site data built
+2019-12-24T10:52:32.218Z - info: [6:52:32 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-grading-bugs.md
+2019-12-24T10:52:32.225Z - info: [6:52:32 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T10:52:33.227Z - info: Rebuilding affected source files
+2019-12-24T10:52:33.230Z - info: Rebuilding 11 pages
+2019-12-24T10:52:37.559Z - info: Pages rebuilt
+2019-12-24T10:52:37.572Z - info: Site data built
+2019-12-24T10:53:41.755Z - info: [6:53:41 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T10:53:42.765Z - info: Rebuilding affected source files
+2019-12-24T10:53:42.766Z - info: Rebuilding 1 pages
+2019-12-24T10:53:43.468Z - info: Pages rebuilt
+2019-12-24T10:53:43.481Z - info: Site data built
+2019-12-24T10:53:52.093Z - info: [6:53:52 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T10:53:53.095Z - info: Rebuilding affected source files
+2019-12-24T10:53:53.096Z - info: Rebuilding 1 pages
+2019-12-24T10:53:53.681Z - info: Pages rebuilt
+2019-12-24T10:53:53.698Z - info: Site data built
+2019-12-24T10:55:06.202Z - info: [6:55:06 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T10:55:07.222Z - info: Rebuilding affected source files
+2019-12-24T10:55:07.223Z - info: Rebuilding 1 pages
+2019-12-24T10:55:08.010Z - info: Pages rebuilt
+2019-12-24T10:55:08.024Z - info: Site data built
+2019-12-24T10:55:58.598Z - info: [6:55:58 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T10:55:59.610Z - info: Rebuilding affected source files
+2019-12-24T10:55:59.611Z - info: Rebuilding 1 pages
+2019-12-24T10:56:00.256Z - info: Pages rebuilt
+2019-12-24T10:56:00.268Z - info: Site data built
+2019-12-24T10:56:30.144Z - info: [6:56:30 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T10:56:31.158Z - info: Rebuilding affected source files
+2019-12-24T10:56:31.159Z - info: Rebuilding 1 pages
+2019-12-24T10:56:31.877Z - info: Pages rebuilt
+2019-12-24T10:56:31.890Z - info: Site data built
+2019-12-24T10:58:52.008Z - info: [6:58:52 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\common\macros.njk
+2019-12-24T10:58:53.020Z - info: Assets built
+2019-12-24T10:59:15.905Z - info: Website generation started at 6:59:14 PM
+2019-12-24T10:59:18.291Z - info: Building assets...
+2019-12-24T10:59:20.115Z - info: Assets built
+2019-12-24T10:59:20.115Z - info: Generating pages...
+2019-12-24T11:00:59.176Z - info: Pages built
+2019-12-24T11:01:15.852Z - info: Website generation complete! Total build time: 121.208s
+2019-12-24T11:01:16.217Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-24T11:01:16.217Z - info: Press CTRL+C to stop ...
+2019-12-24T11:01:16.329Z - info: Site data built
+2019-12-24T11:01:52.051Z - info: [7:01:52 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T11:01:53.055Z - info: Rebuilding affected source files
+2019-12-24T11:01:53.057Z - info: Rebuilding 1 pages
+2019-12-24T11:01:53.911Z - info: Pages rebuilt
+2019-12-24T11:01:53.926Z - info: Site data built
+2019-12-24T11:02:11.823Z - info: [7:02:11 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T11:02:12.825Z - info: Rebuilding affected source files
+2019-12-24T11:02:12.826Z - info: Rebuilding 1 pages
+2019-12-24T11:02:13.521Z - info: Pages rebuilt
+2019-12-24T11:02:13.534Z - info: Site data built
+2019-12-24T11:02:35.444Z - info: [7:02:35 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week10\tutorial-cs2103.md
+2019-12-24T11:02:36.445Z - info: Rebuilding affected source files
+2019-12-24T11:02:36.446Z - info: Rebuilding 1 pages
+2019-12-24T11:02:37.269Z - info: Pages rebuilt
+2019-12-24T11:02:37.286Z - info: Site data built
+2019-12-24T11:04:06.205Z - info: [7:04:06 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\images\staticMethodCall.puml
+2019-12-24T11:04:06.210Z - info: [7:04:06 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\text.md
+2019-12-24T11:04:06.214Z - info: [7:04:06 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\images\personClass.puml
+2019-12-24T11:04:07.218Z - info: Rebuilding affected source files
+2019-12-24T11:04:07.220Z - info: Rebuilding 7 pages
+2019-12-24T11:04:16.571Z - info: Pages rebuilt
+2019-12-24T11:04:16.587Z - info: Site data built
+2019-12-24T11:04:29.551Z - info: [7:04:29 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\staticMethods\index.md
+2019-12-24T11:04:30.558Z - info: Rebuilding affected source files
+2019-12-24T11:04:30.559Z - info: Rebuilding 1 pages
+2019-12-24T11:04:30.605Z - info: Pages rebuilt
+2019-12-24T11:04:30.615Z - info: Site data built
+2019-12-24T11:05:02.186Z - info: [7:05:02 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\uml\sequenceDiagrams\text.md
+2019-12-24T11:05:03.187Z - info: Rebuilding affected source files
+2019-12-24T11:05:03.188Z - info: Rebuilding 5 pages
+2019-12-24T11:05:11.950Z - info: Pages rebuilt
+2019-12-24T11:05:11.965Z - info: Site data built
+2019-12-24T11:19:29.605Z - info: Website generation started at 7:19:28 PM
+2019-12-24T11:19:32.053Z - info: Building assets...

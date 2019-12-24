@@ -1051,7 +1051,23 @@
     },
     {
       "headings": {
-        "tp-constraints": "tP: Constraints \n                \n                "
+        "tp-constraints": "tP: Constraints \n                \n                ",
+        "constraint-brownfield": " Constraint-Brownfield",
+        "constraint-typing-preferred": " Constraint-Typing-Preferred",
+        "constraint-single-user": " Constraint-Single-User",
+        "constraint-incremental": " Constraint-Incremental",
+        "constraint-human-editable-file": " Constraint-Human-Editable-File",
+        "constraint-no-dbms": " Constraint-No-DBMS",
+        "constraint-oo": " Constraint-OO",
+        "constraint-platform-independent": " Constraint-Platform-Independent",
+        "constraint-java-version": " Constraint-Java-Version",
+        "constraint-portable": " Constraint-Portable",
+        "constraint-no-remote-server": " Constraint-No-Remote-Server",
+        "constraint-external-software": " Constraint-External-Software",
+        "constraint-file-size": " Constraint-File-Size",
+        "recommendation-minimal-network": " Recommendation-Minimal-Network",
+        "recommendation-testability": " Recommendation-Testability",
+        "recommendation-cli-first": " Recommendation-CLI-First"
       },
       "title": "Admin: tP: Constraints",
       "header": "header.md",
@@ -3027,6 +3043,7 @@
         "parallel-paths": "Parallel Paths",
         "reference-frames": "Reference Frames",
         "minimal-notation": "Minimal Notation",
+        "calls-to-static-methods": "Calls to Static Methods",
         "sequence-diagrams": "Sequence Diagrams",
         "objects": "Objects",
         "object-diagrams": "Object Diagrams",

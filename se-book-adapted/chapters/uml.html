@@ -1554,6 +1554,34 @@ item2.add_previous_box(box2);
         <div></div>
       </div>
     </panel>
+    <panel type="seamless" header="#### Calls to Static Methods<a class='fa fa-anchor' href='#calls-to-static-methods'></a>" expanded>
+      <div class="indented">
+        <span class="badge badge-light">
+  <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
+        <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+        </span>
+        </span>
+        </span>
+        <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can show calls to static methods</span>
+        </span>
+        </span>
+        </span>
+        <p></p>
+        <div>
+          <p>Method calls to <code>static</code> i.e., class-level method are received by the class itself, not an instance of that class. We can use the <code>&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
+          <box>
+            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>m</code> calls the static method <code>Person.getMaxAge()</code> and also the <code>setAge()</code> method of a <code>Person</code> object <code>p</code>.</p>
+            <p>
+              <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png"></pic>
+            </p>
+            <p></p>
+            Here is the `Person` class, for reference:<br>
+            <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></pic>
+          </box>
+        </div>
+        <div></div>
+      </div>
+    </panel>
   </panel>
   <panel type="seamless" expanded>
     <span slot="header" class="card-title"><div><h2 id="object-diagrams"><span>Object Diagrams</span><a class="fa fa-anchor" href="#object-diagrams"></a></h2>
@@ -2119,6 +2147,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
             <a class="nav-link py-1" href="#parallel-paths">Parallel Paths&#x200E;</a>
             <a class="nav-link py-1" href="#reference-frames">Reference Frames&#x200E;</a>
             <a class="nav-link py-1" href="#minimal-notation">Minimal Notation&#x200E;</a>
+            <a class="nav-link py-1" href="#calls-to-static-methods">Calls to Static Methods&#x200E;</a>
           </nav>
           <a class="nav-link py-1" href="#object-diagrams">Object Diagrams&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
@@ -2148,7 +2177,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.7.0</a> at Mon, 23 Dec 2019 16:12:41 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.7.0</a> at Tue, 24 Dec 2019 11:19:33 GMT</small></div>
   </footer>
   </div>
 </body>
