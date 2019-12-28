@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Coding Best Practices: [Practice] Avoid Magic Numbers</title>
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
@@ -63,10 +63,13 @@
                                     </span>
                                   </font>
                                 </p>
-                                <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
+                                <div class="code-block">
+                                  <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
 </code></pre>
+                                  <div class="code-block-lang"><span>java</span></div>
+                                </div>
                               </td>
                               <td>&nbsp;&nbsp;<br><br></td>
                               <td valign="top">
@@ -75,13 +78,16 @@
                                     </span>
                                   </font>
                                 </p>
-                                <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
+                                <div class="code-block">
+                                  <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
 <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
 ...
 <span class="hljs-keyword">return</span> PI;
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;
 </code></pre>
+                                  <div class="code-block-lang"><span>java</span></div>
+                                </div>
                               </td>
                             </tr>
                           </table>
@@ -98,10 +104,13 @@
                                     </span>
                                   </font>
                                 </p>
-                                <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
+                                <div class="code-block">
+                                  <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
 </code></pre>
+                                  <div class="code-block-lang"><span>python</span></div>
+                                </div>
                               </td>
                               <td>&nbsp;&nbsp;<br><br></td>
                               <td valign="top">
@@ -110,13 +119,16 @@
                                     </span>
                                   </font>
                                 </p>
-                                <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
+                                <div class="code-block">
+                                  <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
 MAX_SIZE = <span class="hljs-number">10</span>
 ...
 <span class="hljs-keyword">return</span> PI
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span>
 </code></pre>
+                                  <div class="code-block-lang"><span>python</span></div>
+                                </div>
                               </td>
                             </tr>
                           </table>
@@ -130,8 +142,11 @@ MAX_SIZE = <span class="hljs-number">10</span>
                           </span>
                         </font>
                       </p>
-                      <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                     </box>
                     <p>In general, try to avoid any magic literals.</p>
                   </div>

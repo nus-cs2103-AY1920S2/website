@@ -121,16 +121,23 @@
                           <p>Consider the code below:</p>
                           <div class="row">
                             <div class="col-sm-6">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{
+                              <div class="code-block">
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;
 }
 </code></pre>
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>
+                                <div class="code-block-lang"><span>java</span></div>
+                              </div>
+                              <div class="code-block">
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>
          <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;
 }
 </code></pre>
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{
+                                <div class="code-block-lang"><span>java</span></div>
+                              </div>
+                              <div class="code-block">
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{
     <span class="hljs-keyword">private</span> Review review;
     <span class="hljs-keyword">private</span> String name;
 
@@ -152,13 +159,19 @@
     }
 }
 </code></pre>
+                                <div class="code-block-lang"><span>java</span></div>
+                              </div>
                             </div>
                             <div class="col-sm-6">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {
+                              <div class="code-block">
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {
     GOOD, OK, POOR
 }
 </code></pre>
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{
+                                <div class="code-block-lang"><span>java</span></div>
+                              </div>
+                              <div class="code-block">
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{
@@ -166,7 +179,10 @@
     }
 }
 </code></pre>
-                              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
+                                <div class="code-block-lang"><span>java</span></div>
+                              </div>
+                              <div class="code-block">
+                                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{
     <span class="hljs-keyword">private</span> List&lt;Item&gt; items;
@@ -184,6 +200,8 @@
     }
 }
 </code></pre>
+                                <div class="code-block-lang"><span>java</span></div>
+                              </div>
                             </div>
                           </div>
                           <p>(a) Draw a class diagram to represent the code. Show all attributes, methods, associations, navigabilities, visibilities, known multiplicities, and association roles. Show associations as lines.<br> (b) Draw an object diagram

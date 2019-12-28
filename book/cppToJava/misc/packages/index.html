@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Miscellaneous Topics: Constants</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -56,7 +56,8 @@
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Formatter</code> class below (in <code>&lt;source folder&gt;/seedu/tojava/util/Formatter.java</code> file) is in the package <code>seedu.tojava.util</code>.
                         When it is compiled, the <code>Formatter.class</code> file will be in the location <code>&lt;compiler output folder&gt;/seedu/tojava/util</code>:</p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;
@@ -66,6 +67,8 @@
     }
 }
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                     </box>
                     <p><strong>Package names are written in all lower case</strong> (not camelCase), using the dot as a separator. Packages in the Java language itself begin with <code>java</code>. or <code>javax</code>. Companies use their reversed Internet
                       domain name to begin their package names.</p>
@@ -83,7 +86,8 @@
                         <li><code>import seedu.tojava.util.StringParser</code>: imports the class <code>StringParser</code> in the <code>seedu.tojava.util</code> package</li>
                         <li><code>import seedu.tojava.frontend.*</code>: imports all the classes in the <code>seedu.tojava.frontend</code> package</li>
                       </ul>
-                      <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava;
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava;
 
 <span class="hljs-keyword">import</span> seedu.tojava.util.StringParser;
 <span class="hljs-keyword">import</span> seedu.tojava.frontend.*;
@@ -105,6 +109,8 @@
     }
 }
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                       <p>Note how the class can still use the <code>Processor</code> without importing it first, by using its fully qualified name <code>seedu.tojava.logic.Processor</code></p>
                     </box>
                     <p><strong>Importing a package does not import its sub-packages</strong>, as packages do not behave as hierarchies despite appearances.</p>
@@ -116,7 +122,8 @@
                     <p><strong>Optionally, a <em>static import</em> can be used to import static members of a type</strong> so that the imported members can be used without specifying the type name.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The class below uses static imports to import the constant <code>PREFIX</code> and the method <code>format()</code> from the <code>seedu.tojava.util.Formatter</code>                        class.</p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.PREFIX;
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.PREFIX;
 <span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.format;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -129,8 +136,11 @@
     }
 }
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                       <panel type="seamless" header="`Formatter` class" class="algolia-no-index">
-                        <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
+                        <div class="code-block">
+                          <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;
@@ -140,6 +150,8 @@
     }
 }
 </code></pre>
+                          <div class="code-block-lang"><span>java</span></div>
+                        </div>
                       </panel>
                       <p>Note how the class can use <code>PREFIX</code> and <code>format()</code> (instead of <code>Formatter.PREFIX</code> and <code>Formatter.format()</code>).</p>
                     </box>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Control Flow: Methods</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -52,7 +52,8 @@
                     <h5 id="defining-methods">Defining methods<a class="fa fa-anchor" href="#defining-methods"></a></h5>
                     <div class="indented">
                       <p>Here’s an example of adding more methods to a class:</p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PrintTwice</span> </span>{
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PrintTwice</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTwice</span><span class="hljs-params">(String s)</span> </span>{
         System.out.println(s);
@@ -67,6 +68,8 @@
 }
 
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                       <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                       </p>
                       <pre><code class="hljs">Polly likes crackers
@@ -104,7 +107,8 @@ Polly likes crackers
                       <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
                         </span>
                         </span> <strong>The <code>return</code> statement allows you to terminate a method before you reach the end of it</strong>:</p>
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printLogarithm</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x)</span> </span>{
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printLogarithm</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x)</span> </span>{
     <span class="hljs-keyword">if</span> (x &lt;= <span class="hljs-number">0.0</span>) {
         System.out.println(<span class="hljs-string">"Error: x must be positive."</span>);
         <span class="hljs-keyword">return</span>;
@@ -113,10 +117,13 @@ Polly likes crackers
     System.out.println(<span class="hljs-string">"The log of x is "</span> + result);
 }
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                       <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
                         </span>
                         </span> <strong>It can be used to return a value from a method too</strong>:</p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AreaCalculator</span></span>{
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AreaCalculator</span></span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
         <span class="hljs-keyword">double</span> result = <span class="hljs-number">3.14</span> * radius * radius;
@@ -129,6 +136,8 @@ Polly likes crackers
     }
 }
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                     </div>
                     <h5 id="overloading">Overloading<a class="fa fa-anchor" href="#overloading"></a></h5>
                     <div class="indented">
@@ -136,7 +145,8 @@ Polly likes crackers
                         </span>
                         </span> <strong>Java methods can be <em>overloaded</em>.</strong> If two methods do the same thing, it is natural to give them the same name. Having more than one method with the same name is called overloading, and it is legal in Java
                         as long as each version takes different parameters.</p>
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
     <span class="hljs-comment">//...</span>
 }
 
@@ -144,19 +154,24 @@ Polly likes crackers
     <span class="hljs-comment">//...</span>
 }
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                     </div>
                     <h5 id="recursion">Recursion<a class="fa fa-anchor" href="#recursion"></a></h5>
                     <div class="indented">
                       <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
                         </span>
                         </span> <strong>Methods can be <em>recursive</em>.</strong> Here is an example in which the <code>nLines</code> method calls itself recursively:</p>
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">nLines</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">nLines</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
     <span class="hljs-keyword">if</span> (n &gt; <span class="hljs-number">0</span>) {
         System.out.println();
         nLines(n - <span class="hljs-number">1</span>);
     }
 }
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                     </div>
                   </div>
                   <div>
@@ -212,7 +227,8 @@ Polly likes crackers
                                     </div>
                                   </div>
                                 </div>
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                                <div class="code-block">
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-comment">// ADD YOUR CODE HERE</span>
 
@@ -222,6 +238,8 @@ Polly likes crackers
     }
 }
 </code></pre>
+                                  <div class="code-block-lang"><span>java</span></div>
+                                </div>
                                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                 </p>
                                 <pre><code class="hljs">A+: 5.0
@@ -229,7 +247,8 @@ B : 3.5
 </code></pre>
                                 <div slot="hint" class="algolia-no-index">
                                   <p>Partial solution:</p>
-                                  <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getGradeCap</span><span class="hljs-params">(String grade)</span> </span>{
+                                  <div class="code-block">
+                                    <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getGradeCap</span><span class="hljs-params">(String grade)</span> </span>{
         <span class="hljs-keyword">double</span> cap = <span class="hljs-number">0</span>;
         <span class="hljs-keyword">switch</span> (grade) {
         <span class="hljs-keyword">case</span> <span class="hljs-string">"A+"</span>:
@@ -253,6 +272,8 @@ B : 3.5
         <span class="hljs-keyword">return</span> cap;
     }
 </code></pre>
+                                    <div class="code-block-lang"><span>java</span></div>
+                                  </div>
                                 </div>
                               </question>
                             </panel>

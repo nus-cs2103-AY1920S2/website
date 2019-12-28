@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Testing: Test Automation: Automated Testing of Text UIs</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -80,8 +80,11 @@ Invalid command format: add
                           <span
                             class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span>
                         </p>
-                        <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
+                        <div class="code-block">
+                          <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
 </code></pre>
+                          <div class="code-block-lang"><span>sh</span></div>
+                        </div>
                         <ul>
                           <li>
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The way to run a CLI program differs based on the language.<br> e.g., In Python, assuming the code is in <code>AddressBook.py</code>                              file, use the command<br>
@@ -97,8 +100,11 @@ Invalid command format: add
                           </span>
                           </span>
                           <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code>                            operators. For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
-                          <pre><code class="hljs sh">java AddressBook &gt; output.txt 
+                          <div class="code-block">
+                            <pre><code class="hljs sh">java AddressBook &gt; output.txt 
 </code></pre>
+                            <div class="code-block-lang"><span>sh</span></div>
+                          </div>
                           <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any
                             other filename) makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
                           <box>

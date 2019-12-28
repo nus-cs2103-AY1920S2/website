@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Textbook Chapter [Printable] : JUnit</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -48,7 +48,8 @@
                   <p>When writing JUnit tests for a class <code>Foo</code>, the common practice is to create a <code>FooTest</code> class, which will contain various test methods.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose we want to write tests for the <code>IntPair</code> class below.</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntPair</span> </span>{
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntPair</span> </span>{
     <span class="hljs-keyword">int</span> first;
     <span class="hljs-keyword">int</span> second;
 
@@ -70,8 +71,11 @@
     }
 }
 </code></pre>
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
                     <p>Here's a <code>IntPairTest</code> class to match (using JUnit 5).</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
 
 <span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.jupiter.api.Assertions.assertEquals;
 <span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.jupiter.api.Assertions.fail;
@@ -102,6 +106,8 @@
     }
 }
 </code></pre>
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
                   </box>
                   <p>Notes:</p>
                   <ul>
@@ -139,7 +145,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.7.0</a> at Tue, 24 Dec 2019 12:36:52 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 04:54:36 GMT</small></div>
     </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Collections : The HashMap Class</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -51,7 +51,8 @@
                   <div>
                     <p><code>HashMap</code> is an implementation of the <code>Map</code> interface. It allows you to store a collection of <em>key-value pairs</em>. The example below illustrates how to use a <code>HashMap&lt;String, Point&gt;</code> to maintain
                       a list of coordinates and their identifiers e.g., the identifier <code>x1</code> is used to identify the point <code>0,0</code> where <code>x1</code> is the <em>key</em> and <code>0,0</code> is the <em>value</em>.</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.awt.Point;
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.awt.Point;
 <span class="hljs-keyword">import</span> java.util.HashMap;
 <span class="hljs-keyword">import</span> java.util.Map;
 
@@ -97,6 +98,8 @@
     }
 }
 </code></pre>
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
                     <pre><code class="hljs">Coordinates of x1: [0,0]
@@ -122,7 +125,8 @@ Number of keys after clearing: 0
                               <question>
                                 <p>The class given below keeps track of how many people signup to attend an event on each day of the week. Add the missing methods so that it produces the output given.</p>
                                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Use an <code>HashMap</code> to store the number of entries for each day.</p>
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                                <div class="code-block">
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> HashMap&lt;String, Integer&gt; roster = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
 
     <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> add your methods here</span>
@@ -138,6 +142,8 @@ Number of keys after clearing: 0
 
 }
 </code></pre>
+                                  <div class="code-block-lang"><span>java</span></div>
+                                </div>
                                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                 </p>
                                 <pre><code class="hljs">Monday =&gt; 2
@@ -146,7 +152,8 @@ Wednesday =&gt; 2
 </code></pre>
                                 <div slot="hint" class="algolia-no-index">
                                   <p>Partial solution:</p>
-                                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.HashMap;
+                                  <div class="code-block">
+                                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.HashMap;
 <span class="hljs-keyword">import</span> java.util.Map;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -164,6 +171,8 @@ Wednesday =&gt; 2
     <span class="hljs-comment">// ...</span>
 }
 </code></pre>
+                                    <div class="code-block-lang"><span>java</span></div>
+                                  </div>
                                 </div>
                               </question>
                             </panel>

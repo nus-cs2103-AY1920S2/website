@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Java Coding Standard</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -51,25 +51,40 @@
           </ul>
           <h2 id="naming"><strong>Naming</strong><a class="fa fa-anchor" href="#naming"></a></h2>
           <p><strong>⭐️ Names representing packages should be in all lower case.</strong></p>
-          <pre><code class="hljs java">com.company.application.ui
+          <div class="code-block">
+            <pre><code class="hljs java">com.company.application.ui
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <a href="https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html">More on package naming</a></span>
           </p>
           <p>For school projects, the root name of the package should be your group name or project name followed by logical group names.<code>e.g. todobuddy.ui, todobuddy.file etc</code>.</p>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: Your code is not officially ‘<em>produced by NUS</em>’, therefore do not use <code>edu.nus.comp.*</code> or anything similar.</span>
           </p>
           <p><strong>⭐️ Class/enum names must be nouns and written in PascalCase.</strong></p>
-          <pre><code class="hljs java">Line, AudioSystem
+          <div class="code-block">
+            <pre><code class="hljs java">Line, AudioSystem
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><strong>⭐️ Variable names must be in camelCase.</strong></p>
-          <pre><code class="hljs java">line, audioSystem
+          <div class="code-block">
+            <pre><code class="hljs java">line, audioSystem
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><strong>⭐️ Constant names must be all uppercase using underscore to separate words.</strong></p>
-          <pre><code class="hljs java">MAX_ITERATIONS, COLOR_RED
+          <div class="code-block">
+            <pre><code class="hljs java">MAX_ITERATIONS, COLOR_RED
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><strong>⭐️ Names representing methods must be verbs and written in camelCase.</strong></p>
-          <pre><code class="hljs java">getName(), computeTotalWidth()
+          <div class="code-block">
+            <pre><code class="hljs java">getName(), computeTotalWidth()
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p>Underscores may be used in test method names using the following three part format <strong><code>featureUnderTest_testScenario_expectedBehavior()</code></strong></p>
           <p>e.g. <code>sortList_emptyList_exceptionThrown()</code> <code>getMember_memberNotFount_nullReturned</code></p>
           <p>Third part or both second and third parts can be omitted depending on what's covered in the test. For example, the test method <code>sortList_emptyList()</code> will test <code>sortList()</code> method for all variations of the 'empty list'
@@ -83,9 +98,12 @@
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java">exportHtmlSource();
+                <div class="code-block">
+                  <pre><code class="hljs java">exportHtmlSource();
 openDvdPlayer();
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
               </div>
               <div class="col">
                 <p>
@@ -93,9 +111,12 @@ openDvdPlayer();
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java">exportHTMLSource();
+                <div class="code-block">
+                  <pre><code class="hljs java">exportHTMLSource();
 openDVDPlayer();
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
               </div>
             </div>
           </div>
@@ -110,7 +131,8 @@ openDVDPlayer();
             </p>
           </div>
           <p><strong>⭐️ Boolean variables/methods should be named to sound like booleans</strong></p>
-          <pre><code class="hljs java"><span class="hljs-comment">//variables</span>
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-comment">//variables</span>
 isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
 
 <span class="hljs-comment">//methods</span>
@@ -118,23 +140,32 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
 <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">canEvaluate</span><span class="hljs-params">()</span></span>;
 <span class="hljs-keyword">boolean</span> shouldAbort = <span class="hljs-keyword">false</span>;
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
 
           <p>Setter methods for boolean variables must be of the form:</p>
-          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setFound</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> isFound)</span></span>;
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setFound</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> isFound)</span></span>;
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: This is the naming convention for boolean methods and variables used by Java core packages. It also makes the code read like</span> normal
             English e.g. <code>if(isOpen) ...</code></p>
           <div tags="level--intermediate">
             <p><strong>⭐️⭐️ Plural form should be used on names representing a collection of objects.</strong></p>
-            <pre><code class="hljs java">Collection&lt;Point&gt; points;
+            <div class="code-block">
+              <pre><code class="hljs java">Collection&lt;Point&gt; points;
 <span class="hljs-keyword">int</span>[] values;
 </code></pre>
+              <div class="code-block-lang"><span>java</span></div>
+            </div>
             <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: Enhances readability since the name gives the user an immediate clue of the type of the variable and the operations that can be</span>
               performed on its elements. One space character after the variable type is enough to obtain clarity.</p>
           </div>
           <p><strong>⭐️ Iterator variables can be called <em>i</em>, <em>j</em>, <em>k</em> etc.</strong></p>
           <p>Variables named <em>j</em>, <em>k</em> etc. should be used for nested loops only.</p>
-          <pre><code class="hljs java"><span class="hljs-keyword">for</span> (Iterator i = points.iterator(); i.hasNext(); ) {
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-keyword">for</span> (Iterator i = points.iterator(); i.hasNext(); ) {
     ...
 }
 
@@ -142,35 +173,46 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
     ...
 }
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: The notation is taken from mathematics where it is an established convention for indicating iterators.</span>
           </p>
           <div tags="level--intermediate">
             <p><strong>⭐️⭐️ Associated constants (final variables) should be prefixed by a common type name.</strong></p>
-            <pre><code class="hljs java"><span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> COLOR_RED   = <span class="hljs-number">1</span>;
+            <div class="code-block">
+              <pre><code class="hljs java"><span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> COLOR_RED   = <span class="hljs-number">1</span>;
 <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> COLOR_GREEN = <span class="hljs-number">2</span>;
 <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> COLOR_BLUE  = <span class="hljs-number">3</span>;
 </code></pre>
+              <div class="code-block-lang"><span>java</span></div>
+            </div>
             <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: This indicates that the constants belong together, and make them appear together when sorted alphabetically.</span>
             </p>
           </div>
           <h2 id="layout"><strong>Layout</strong><a class="fa fa-anchor" href="#layout"></a></h2>
           <p><strong>⭐️ Basic indentation should be 4 spaces (not tabs).</strong></p>
-          <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; nElements; i++) {
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; nElements; i++) {
     a[i] = <span class="hljs-number">0</span>;
 }
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: Just follow it <span aria-hidden="true" class="far fa-grin-tongue-squint"></span></span>
           </p>
           <p><strong>⭐️ Line length should be no longer than 120 chars.</strong></p>
           <p>Try to keep line length shorter than 110 characters (soft limit). But it is OK to exceed the limit slightly (hard limit: 120 chars). If the line exceeds the limit, use line wrapping at appropriate places of the line.</p>
           <p><strong>Indentation for wrapped lines should be 8 spaces</strong> (i.e. twice the normal indentation of 4 spaces) more than the parent line.</p>
-          <pre><code class="hljs java">setText(<span class="hljs-string">"Long line split"</span>
+          <div class="code-block">
+            <pre><code class="hljs java">setText(<span class="hljs-string">"Long line split"</span>
         + <span class="hljs-string">"into two parts."</span>);
 <span class="hljs-keyword">if</span> (isReady) {
     setText(<span class="hljs-string">"Long line split"</span>
         + <span class="hljs-string">"into two parts."</span>);
 }
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <div tags="level--intermediate">
             <p><strong>⭐️⭐️ Place line break to improve readability</strong></p>
             <p>When wrapping lines, the main objective is to improve readability. Do not always accept the auto-formatting suggested by the IDE.</p>
@@ -186,7 +228,8 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
               </li>
             </ul>
             <div class="indented-level2">
-              <pre><code class="hljs java">totalSum = a + b + c
+              <div class="code-block">
+                <pre><code class="hljs java">totalSum = a + b + c
         + d + e;
 setText(<span class="hljs-string">"Long line split"</span>
         + <span class="hljs-string">"into two parts."</span>);
@@ -195,6 +238,8 @@ method(param1,
                 .method2(),
         param3);
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <ul>
               <li>A method or constructor name stays attached to the open parenthesis <code>(</code> that follows it.</li>
@@ -208,9 +253,12 @@ method(param1,
                 </p>
               </div>
               <div class="col">
-                <pre><code class="hljs java">someMethodWithVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongName(
+                <div class="code-block">
+                  <pre><code class="hljs java">someMethodWithVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongName(
         <span class="hljs-keyword">int</span> anArg, Object anotherArg);
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
               </div>
             </div>
             <div class="row indented-level2">
@@ -222,9 +270,12 @@ method(param1,
                 </p>
               </div>
               <div class="col">
-                <pre><code class="hljs java">someMethodWithVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongName
+                <div class="code-block">
+                  <pre><code class="hljs java">someMethodWithVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongName
         (<span class="hljs-keyword">int</span> anArg, Object anotherArg);
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
               </div>
             </div>
             <ul>
@@ -239,9 +290,12 @@ method(param1,
                 </p>
               </div>
               <div class="col">
-                <pre><code class="hljs java">longName1 = longName2 * (longName3 + longName4 - longName5)
+                <div class="code-block">
+                  <pre><code class="hljs java">longName1 = longName2 * (longName3 + longName4 - longName5)
         + <span class="hljs-number">4</span> * longname6
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
               </div>
             </div>
             <div class="row indented-level2">
@@ -253,20 +307,26 @@ method(param1,
                 </p>
               </div>
               <div class="col">
-                <pre><code class="hljs java">longName1 = longName2 * (longName3 + longName4
+                <div class="code-block">
+                  <pre><code class="hljs java">longName1 = longName2 * (longName3 + longName4
         - longName5) + <span class="hljs-number">4</span> * longname6;
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
               </div>
             </div>
             <ul>
               <li>Here are two acceptable ways to format ternary expressions:</li>
             </ul>
             <div class="indented-level2">
-              <pre><code class="hljs java">alpha = (aLongBooleanExpression) ? beta : gamma;
+              <div class="code-block">
+                <pre><code class="hljs java">alpha = (aLongBooleanExpression) ? beta : gamma;
 alpha = (aLongBooleanExpression)
         ? beta
         : gamma;
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
 
@@ -278,12 +338,15 @@ alpha = (aLongBooleanExpression)
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">while</span> (!done) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">while</span> (!done) {
     doSomething();
     done = moreToDo();
 }
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -291,26 +354,33 @@ alpha = (aLongBooleanExpression)
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">while</span> (!done)
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">while</span> (!done)
 {
     doSomething();
     done = moreToDo();
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: Just follow it. <span aria-hidden="true" class="far fa-grin-tongue-squint"></span></span>
           </p>
           <p><strong>⭐️ Method definitions should have the following form:</strong></p>
-          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">someMethod</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> SomeException </span>{
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">someMethod</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> SomeException </span>{
     ...
 }
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
 
           <p><strong>⭐️ The <em>if-else</em> class of statements should have the following form:</strong></p>
           <div class="row">
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">if</span> (condition) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (condition) {
     statements;
 }
 
@@ -318,9 +388,12 @@ alpha = (aLongBooleanExpression)
 
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">if</span> (condition) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (condition) {
     statements;
 } <span class="hljs-keyword">else</span> {
     statements;
@@ -328,9 +401,12 @@ alpha = (aLongBooleanExpression)
 
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">if</span> (condition) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (condition) {
     statements;
 } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (condition) {
     statements;
@@ -338,31 +414,43 @@ alpha = (aLongBooleanExpression)
     statements;
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><strong>⭐️ The <em>for</em> statement should have the following form:</strong></p>
-          <pre><code class="hljs java"><span class="hljs-keyword">for</span> (initialization; condition; update) {
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-keyword">for</span> (initialization; condition; update) {
     statements;
 }
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><strong>⭐️ The <em>while</em> and the <em>do-while</em> statements should have the following form:</strong></p>
           <div class="row">
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">while</span> (condition) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">while</span> (condition) {
     statements;
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">do</span> {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">do</span> {
     statements;
 } <span class="hljs-keyword">while</span> (condition);
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><strong>⭐️ The <em>switch</em> statement should have the following form:</strong> <mark>Note there is no indentation for <code>case</code> clauses.</mark><br>
             <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Configure your IDE to follow this style instead.</p>
-          <pre><code class="hljs java"><span class="hljs-keyword">switch</span> (condition) {
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-keyword">switch</span> (condition) {
 <span class="hljs-keyword">case</span> ABC:
     statements;
     <span class="hljs-comment">// Fallthrough</span>
@@ -377,6 +465,8 @@ alpha = (aLongBooleanExpression)
     <span class="hljs-keyword">break</span>;
 }
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p>The explicit <code>//Fallthrough</code> comment should be included whenever there is a <code>case</code> statement without a break statement.</p>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: Leaving out the <code>break</code> is a common error, and it must be made clear that it is intentional when it is not there.</span>
           </p>
@@ -384,7 +474,8 @@ alpha = (aLongBooleanExpression)
           <p><strong>⭐️ A <em>try-catch</em> statement should have the following form:</strong></p>
           <div class="row">
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">try</span> {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">try</span> {
     statements;
 } <span class="hljs-keyword">catch</span> (Exception exception) {
     statements;
@@ -392,9 +483,12 @@ alpha = (aLongBooleanExpression)
 
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">try</span> {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">try</span> {
     statements;
 } <span class="hljs-keyword">catch</span> (Exception exception) {
     statements;
@@ -402,6 +496,8 @@ alpha = (aLongBooleanExpression)
     statements;
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <div tags="level--intermediate">
@@ -453,7 +549,8 @@ alpha = (aLongBooleanExpression)
           </div>
           <div tags="level--intermediate">
             <p><strong>⭐️⭐️ Logical units within a block should be separated by one blank line.</strong></p>
-            <pre><code class="hljs java"><span class="hljs-comment">// Create a new identity matrix</span>
+            <div class="code-block">
+              <pre><code class="hljs java"><span class="hljs-comment">// Create a new identity matrix</span>
 Matrix4x4 matrix = <span class="hljs-keyword">new</span> Matrix4x4();
 
 <span class="hljs-comment">// Precompute angles for efficiency</span>
@@ -469,6 +566,8 @@ matrix.setElement(<span class="hljs-number">2</span>, <span class="hljs-number">
 <span class="hljs-comment">// Apply rotation</span>
 transformation.multiply(matrix);
 </code></pre>
+              <div class="code-block-lang"><span>java</span></div>
+            </div>
             <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: Enhances readability by introducing white space between logical units. Each block is often introduced by a comment as indicated in the
               example above.
               </span>
@@ -491,7 +590,8 @@ transformation.multiply(matrix);
               imports.</p>
 
             Example:
-            <pre><code class="hljs java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.Assert.assertEquals;
+            <div class="code-block">
+              <pre><code class="hljs java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.Assert.assertEquals;
 <span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.Assert.assertTrue;
 
 <span class="hljs-keyword">import</span> java.io.File;
@@ -509,6 +609,8 @@ transformation.multiply(matrix);
 <span class="hljs-keyword">import</span> javafx.geometry.Point2D;
 <span class="hljs-keyword">import</span> junit.framework.AssertionFailedError;
 </code></pre>
+              <div class="code-block-lang"><span>java</span></div>
+            </div>
             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> IDEs have support for auto-ordering import statements. However, note that the default orderings of different IDEs are not always
               the same. It is recommended that you and your team use the same IDE and stick to a consistent ordering.</p>
           </div>
@@ -520,10 +622,13 @@ transformation.multiply(matrix);
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
 <span class="hljs-keyword">import</span> java.util.ArrayList;
 <span class="hljs-keyword">import</span> java.util.HashSet;
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -531,10 +636,13 @@ transformation.multiply(matrix);
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
 
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: Importing classes explicitly gives an excellent documentation value for the class at hand and makes the class easier to comprehend and maintain.
@@ -562,9 +670,12 @@ transformation.multiply(matrix);
           <div tags="level--advanced">
             <p><strong>⭐️⭐️⭐️ Method modifiers should be given in the following order:</strong></p>
             <p><code>&lt;access&gt; static abstract synchronized &lt;unusual&gt; final native</code></p>
-            <pre><code class="hljs java">&lt;access&gt; = <span class="hljs-keyword">public</span> | <span class="hljs-keyword">protected</span> | <span class="hljs-keyword">private</span>
+            <div class="code-block">
+              <pre><code class="hljs java">&lt;access&gt; = <span class="hljs-keyword">public</span> | <span class="hljs-keyword">protected</span> | <span class="hljs-keyword">private</span>
 &lt;unusual&gt; = <span class="hljs-keyword">volatile</span> | <span class="hljs-keyword">transient</span>
 </code></pre>
+              <div class="code-block-lang"><span>java</span></div>
+            </div>
             <p>The <code>&lt;access&gt;</code> modifier (if present) must be the first modifier.</p>
             <div class="row">
               <div class="col">
@@ -573,8 +684,11 @@ transformation.multiply(matrix);
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">square</span><span class="hljs-params">(<span class="hljs-keyword">double</span> a)</span></span>;
+                <div class="code-block">
+                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">square</span><span class="hljs-params">(<span class="hljs-keyword">double</span> a)</span></span>;
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
               </div>
               <div class="col">
                 <p>
@@ -582,8 +696,11 @@ transformation.multiply(matrix);
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">square</span><span class="hljs-params">(<span class="hljs-keyword">double</span> a)</span></span>;
+                <div class="code-block">
+                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">square</span><span class="hljs-params">(<span class="hljs-keyword">double</span> a)</span></span>;
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
               </div>
             </div>
             <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: The most important point here is to keep the <em>access</em> modifier as the first modifier. The order is less important for the other
@@ -599,8 +716,11 @@ transformation.multiply(matrix);
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] a = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">20</span>];
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] a = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">20</span>];
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -608,8 +728,11 @@ transformation.multiply(matrix);
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">int</span> a[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">20</span>];
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">int</span> a[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">20</span>];
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: The <em>arrayness</em> is a feature of the base type, not the variable. Java allows both forms however.</span>
@@ -626,7 +749,8 @@ transformation.multiply(matrix);
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java"><span class="hljs-keyword">int</span> sum = <span class="hljs-number">0</span>;
+                <div class="code-block">
+                  <pre><code class="hljs java"><span class="hljs-keyword">int</span> sum = <span class="hljs-number">0</span>;
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; <span class="hljs-number">10</span>; j++) {
         sum += i * j;
@@ -634,6 +758,8 @@ transformation.multiply(matrix);
 }
 
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
               </div>
               <div class="col">
                 <p>
@@ -641,7 +767,8 @@ transformation.multiply(matrix);
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java"><span class="hljs-keyword">int</span> i, j, sum;
+                <div class="code-block">
+                  <pre><code class="hljs java"><span class="hljs-keyword">int</span> i, j, sum;
 sum = <span class="hljs-number">0</span>;
 <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
     <span class="hljs-keyword">for</span> (j = <span class="hljs-number">0</span>; j &lt; <span class="hljs-number">10</span>; j++) {
@@ -649,6 +776,8 @@ sum = <span class="hljs-number">0</span>;
     }
 }
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
               </div>
             </div>
             <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: This ensures that variables are valid at any time. Sometimes it is impossible to initialize a variable to a valid value where it is declared.
@@ -663,12 +792,15 @@ sum = <span class="hljs-number">0</span>;
                 </span>
               </font>
             </p>
-            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+            <div class="code-block">
+              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
 
    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> bar;
 
 }
 </code></pre>
+              <div class="code-block-lang"><span>java</span></div>
+            </div>
             <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: The concept of Java information hiding and encapsulation is violated by public variables. Use private variables and access functions instead.
               One exception to this rule is when the class is essentially a data structure, with no behavior. In this case it is appropriate to make the class' instance variables public.</span>
             </p>
@@ -683,12 +815,15 @@ sum = <span class="hljs-number">0</span>;
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">User</span><span class="hljs-params">(String name)</span> </span>{
+                <div class="code-block">
+                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">User</span><span class="hljs-params">(String name)</span> </span>{
     <span class="hljs-keyword">this</span>.name = name;
     ...
 }
 
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
               </div>
               <div class="col">
                 <p>
@@ -696,12 +831,15 @@ sum = <span class="hljs-number">0</span>;
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">User</span><span class="hljs-params">(String name)</span> </span>{
+                <div class="code-block">
+                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">User</span><span class="hljs-params">(String name)</span> </span>{
     <span class="hljs-comment">// 'id' is not shadowed by any method parameters</span>
     <span class="hljs-keyword">this</span>.id = User.getNewId();
     ...
 }
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
               </div>
             </div>
             <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: to reduce unnecessary noise.</span>
@@ -716,10 +854,13 @@ sum = <span class="hljs-number">0</span>;
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
     sum += value[i];
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -727,10 +868,13 @@ sum = <span class="hljs-number">0</span>;
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, sum = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++)
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, sum = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++)
     sum += value[i];
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: When there is only one statement in the loop body, Java allows it to be written without wrapping it between <code>{ }</code>. However that
@@ -745,10 +889,13 @@ sum = <span class="hljs-number">0</span>;
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isDone) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isDone) {
     doCleanup();
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -756,10 +903,13 @@ sum = <span class="hljs-number">0</span>;
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isDone) doCleanup();
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isDone) doCleanup();
 
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: This helps when debugging using an IDE debugger. When writing on a single line, it is not apparent whether the condition is really true
@@ -774,11 +924,14 @@ sum = <span class="hljs-number">0</span>;
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java">InputStream stream = File.open(fileName, <span class="hljs-string">"w"</span>);
+              <div class="code-block">
+                <pre><code class="hljs java">InputStream stream = File.open(fileName, <span class="hljs-string">"w"</span>);
 <span class="hljs-keyword">if</span> (stream != <span class="hljs-keyword">null</span>) {
     readFile(stream);
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -786,11 +939,14 @@ sum = <span class="hljs-number">0</span>;
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java">InputStream stream = File.open(fileName, <span class="hljs-string">"w"</span>);
+              <div class="code-block">
+                <pre><code class="hljs java">InputStream stream = File.open(fileName, <span class="hljs-string">"w"</span>);
 <span class="hljs-keyword">if</span> (stream != <span class="hljs-keyword">null</span>))
     readFile(stream);
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p>The body of the conditional should be wrapped by curly brackets irrespective of how many statements.</p>
@@ -817,7 +973,8 @@ sum = <span class="hljs-number">0</span>;
 
           <div tags="level--intermediate">
             <p><strong>⭐️⭐️ Javadoc comments should have the following form:</strong></p>
-            <pre><code class="hljs java"><span class="hljs-comment">/**
+            <div class="code-block">
+              <pre><code class="hljs java"><span class="hljs-comment">/**
  * Returns lateral location of the specified position.
  * If the position is unset, NaN is returned.
  *
@@ -832,6 +989,8 @@ sum = <span class="hljs-number">0</span>;
   ...
 }
 </code></pre>
+              <div class="code-block-lang"><span>java</span></div>
+            </div>
             <p>Note in particular:</p>
             <ul>
               <li>The opening <code>/**</code> on a separate line</li>
@@ -846,9 +1005,12 @@ sum = <span class="hljs-number">0</span>;
               <li>Punctuation behind each parameter description -No blank line between the documentation block and the method/class</li>
             </ul>
             <p>Javadoc of class members can be specified on a single line as follows:</p>
-            <pre><code class="hljs java"><span class="hljs-comment">/** Number of connections to this database */</span>
+            <div class="code-block">
+              <pre><code class="hljs java"><span class="hljs-comment">/** Number of connections to this database */</span>
 <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> connectionCount;
 </code></pre>
+              <div class="code-block-lang"><span>java</span></div>
+            </div>
           </div>
           <p><strong>⭐️ Comments should be indented relative to their position in the code.</strong></p>
           <div class="row">
@@ -858,11 +1020,14 @@ sum = <span class="hljs-number">0</span>;
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
     <span class="hljs-comment">// Do something</span>
     something();
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -870,11 +1035,14 @@ sum = <span class="hljs-number">0</span>;
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
         <span class="hljs-comment">// Do something</span>
     something();
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -882,11 +1050,14 @@ sum = <span class="hljs-number">0</span>;
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
 <span class="hljs-comment">// Do something</span>
     something();
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: This is to avoid the comments from breaking the logical structure of the program.</span>
@@ -911,7 +1082,7 @@ sum = <span class="hljs-number">0</span>;
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.7.0</a> at Tue, 24 Dec 2019 12:36:52 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 04:54:36 GMT</small></div>
     </footer>
   </div>
 </body>

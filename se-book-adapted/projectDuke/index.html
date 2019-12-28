@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Project Duke</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,14 +25,13 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
-      <div class="w-100 p-1 text-white bg-primary text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
-
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
-        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand">CS2103/T <small>2020 Jan-Apr</small></a>
+        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
         <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
@@ -394,7 +393,8 @@ done 2
                     <p>While it is possible to represent a task list as a multi-dimensional array containing
                       <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
                     <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
-                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> String description;
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
 
@@ -410,9 +410,14 @@ done 2
     <span class="hljs-comment">//...</span>
 }
 </code></pre>
-                      <pre><code class="hljs java">Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
+                      <div class="code-block">
+                        <pre><code class="hljs java">Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);
 t.markAsDone()
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -487,7 +492,8 @@ deadline do homework /by no idea :-p
                     <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
                     <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
                     <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
-                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
 
     <span class="hljs-keyword">protected</span> String by;
 
@@ -502,9 +508,14 @@ deadline do homework /by no idea :-p
     }
 }
 </code></pre>
-                      <pre><code class="hljs java">Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
+                      <div class="code-block">
+                        <pre><code class="hljs java">Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];
 task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Deadline(<span class="hljs-string">"return book"</span>, <span class="hljs-string">"Monday"</span>);
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                     </panel>
                   </div>
                 </panel>
@@ -621,7 +632,8 @@ T | 1 | join sports club
               </ul>
               <panel header="Using dates/times in Java" minimized class="algolia-no-index">
                 <p>A code snippet using the <code>LocalDate</code> class:</p>
-                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.time.LocalDate;
+                <div class="code-block">
+                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.time.LocalDate;
 <span class="hljs-keyword">import</span> java.time.format.DateTimeFormatter;
 <span class="hljs-keyword">import</span> java.time.temporal.ChronoUnit;
 
@@ -649,6 +661,8 @@ T | 1 | join sports club
     }
 }
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
                 <ul>
                   <li><a href="https://www.baeldung.com/java-8-date-time-intro">A tutorial from https://www.baeldung.com/</a></li>
                 </ul>
@@ -709,7 +723,8 @@ T | 1 | join sports club
                 <p>While it is possible to represent a task list as a multi-dimensional array containing
                   <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
                 <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
+                  <div class="code-block">
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> String description;
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
 
@@ -725,9 +740,14 @@ T | 1 | join sports club
     <span class="hljs-comment">//...</span>
 }
 </code></pre>
-                  <pre><code class="hljs java">Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);
+                    <div class="code-block-lang"><span>java</span></div>
+                  </div>
+                  <div class="code-block">
+                    <pre><code class="hljs java">Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);
 t.markAsDone()
 </code></pre>
+                    <div class="code-block-lang"><span>java</span></div>
+                  </div>
                 </panel>
               </div>
               <hr>
@@ -740,7 +760,8 @@ t.markAsDone()
                 <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
                 <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
                 <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
+                  <div class="code-block">
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
 
     <span class="hljs-keyword">protected</span> String by;
 
@@ -755,9 +776,14 @@ t.markAsDone()
     }
 }
 </code></pre>
-                  <pre><code class="hljs java">Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];
+                    <div class="code-block-lang"><span>java</span></div>
+                  </div>
+                  <div class="code-block">
+                    <pre><code class="hljs java">Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];
 task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Deadline(<span class="hljs-string">"return book"</span>, <span class="hljs-string">"Monday"</span>);
 </code></pre>
+                    <div class="code-block-lang"><span>java</span></div>
+                  </div>
                 </panel>
               </div>
               <hr>
@@ -808,7 +834,8 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
                 </ul>
                 <div class="indented-level2">
                   <p>For example, the code of the main class could look like this:</p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Duke</span> </span>{
+                  <div class="code-block">
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Duke</span> </span>{
 
     <span class="hljs-keyword">private</span> Storage storage;
     <span class="hljs-keyword">private</span> TaskList tasks;
@@ -834,10 +861,13 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
     }
 }
 </code></pre>
+                    <div class="code-block-lang"><span>java</span></div>
+                  </div>
                 </div>
                 <ul>
                   <li><strong>Stretch Goal</strong>: Consider extracting more classes. e.g., <code>*Command</code> classes (i.e., <code>AddCommand</code>, <code>DeleteCommand</code>, <code>ExitCommand</code> etc.) that inherits from an abstract <code>Command</code>                    class, so that you can write the main logic of the App as follows:
-                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
     ui.showWelcome();
     <span class="hljs-keyword">boolean</span> isExit = <span class="hljs-keyword">false</span>;
     <span class="hljs-keyword">while</span> (!isExit) {
@@ -855,6 +885,8 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
     }
 }
 </code></pre>
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
                     <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can get some inspiration from how the code of the <a href="https://github.com/se-edu/addressbook-level2">addressbook-level2</a>                    is organized.</li>
                 </ul>
               </div>
@@ -899,17 +931,21 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
                       <li>Now, create a class inside the <code>java</code> folder and type <code>@Test</code> inside it. A code example given below.<br>
                         <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Note: If you are using packages, create this class in a matching package (to test <code>duke.Duke</code> class, create a <code>duke.DukeTest</code> i.e.,
                         in <code>src\test\java\duke\DukeTest.java</code>).
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DukeTest</span> </span>{
+                        <div class="code-block">
+                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DukeTest</span> </span>{
     <span class="hljs-meta">@Test</span>
 }
 </code></pre>
+                          <div class="code-block-lang"><span>java</span></div>
+                        </div>
                       </li>
                       <li>Note how the <code>@Test</code> turn to red because Intellij (not having JUnit support yet) does not understand it. But it will pop up a hint, asking if you want to add support for JUnit. Select <code>Add JUnit 5.* to classpath</code>.</li>
                       <li>In the dialog that pops up, you can optionally tick the <code>Sources</code>, <code>JavaDocs</code> and <code>Annotations</code> boxes. After that, click <code>OK</code> to add the JUnit 5 to the project dependencies.</li>
                       <li>To check if JUnit integration is working as expected,
                         <ol>
                           <li>Add a dummy test method to the class e.g.,
-                            <pre><code class="hljs java"><span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
+                            <div class="code-block">
+                              <pre><code class="hljs java"><span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
 
 <span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -920,6 +956,8 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
     }
 }
 </code></pre>
+                              <div class="code-block-lang"><span>java</span></div>
+                            </div>
                           </li>
                           <li>Run the test (right-click on the class and choose <code>Run DukeTest</code>.</li>
                         </ol>

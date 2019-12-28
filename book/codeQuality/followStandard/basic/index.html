@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Code Quality: [Guideline] Follow a Standard: Basic</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -64,7 +64,8 @@
                             <panel header="<md>:glyphicon-question-sign:</md> Find basic coding standard violations" class="algolia-no-index">
                               <question>
                                 <p>Consider the code given below:</p>
-                                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
+                                <div class="code-block">
+                                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String descriptionPrefix = <span class="hljs-string">"description: "</span>;
@@ -89,6 +90,8 @@
     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> descriptionPrefix + description; }
 }
 </code></pre>
+                                  <div class="code-block-lang"><span>java</span></div>
+                                </div>
                                 <p>In what ways the code violate the coding standard you are expected to follow?</p>
                                 <div slot="hint" class="algolia-no-index">
                                   <p>Here are three:</p>

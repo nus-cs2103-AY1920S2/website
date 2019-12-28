@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -811,7 +811,8 @@ public Photo(String image) {
             <h2 id="solution">Solution<a class="fa fa-anchor" href="#solution"></a></h2>
             <p>Apparently this is due to the extra <code>run-checks.sh</code> script being run on travis. I added the following lines to the <code>build.gradle</code> file so that the <code>check</code> task also runs the travis script. Any suggestions are
               welcome.</p>
-            <pre><code class="hljs gradle">
+            <div class="code-block">
+              <pre><code class="hljs gradle">
 <span class="hljs-keyword">task</span> extrachecks(type: Exec) {
 
     commandLine <span class="hljs-string">'bash'</span>, <span class="hljs-string">'./config/travis/run-checks.sh'</span>
@@ -827,6 +828,8 @@ tasks.check {
 }
 
 </code></pre>
+              <div class="code-block-lang"><span>gradle</span></div>
+            </div>
             <p>This way, you can run the <code>check</code> task on your local repo and fix any issues before submitting to travis.
             </p>
           </panel>
@@ -862,7 +865,8 @@ list
             <p><strong>Additional info</strong>:</p>
             <p>I tried echoing the unicode characters in <code>cmd.exe</code> and <code>bash.exe</code> and both worked fine. However, running jshell tells me that java is somehow not properly converting the unicode character into a string.</p>
             <p>I used the partial solution given:</p>
-            <pre><code class="hljs java">
+            <div class="code-block">
+              <pre><code class="hljs java">
     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getStatusIcon</span><span class="hljs-params">()</span> </span>{
 
         <span class="hljs-keyword">return</span> (isDone ? <span class="hljs-string">"\u2713"</span> : <span class="hljs-string">"\u2718"</span>); <span class="hljs-comment">// return tick or X symbols</span>
@@ -870,6 +874,8 @@ list
     }
 
 </code></pre>
+              <div class="code-block-lang"><span>java</span></div>
+            </div>
             <p>Any help will be appreciated.
             </p>
           </panel>

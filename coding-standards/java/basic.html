@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Java Coding Standard</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -43,25 +43,40 @@
           </ul>
           <h2 id="naming"><strong>Naming</strong><a class="fa fa-anchor" href="#naming"></a></h2>
           <p><strong>⭐️ Names representing packages should be in all lower case.</strong></p>
-          <pre><code class="hljs java">com.company.application.ui
+          <div class="code-block">
+            <pre><code class="hljs java">com.company.application.ui
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> <a href="https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html">More on package naming</a></span>
           </p>
           <p>For school projects, the root name of the package should be your group name or project name followed by logical group names.<code>e.g. todobuddy.ui, todobuddy.file etc</code>.</p>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: Your code is not officially ‘<em>produced by NUS</em>’, therefore do not use <code>edu.nus.comp.*</code> or anything similar.</span>
           </p>
           <p><strong>⭐️ Class/enum names must be nouns and written in PascalCase.</strong></p>
-          <pre><code class="hljs java">Line, AudioSystem
+          <div class="code-block">
+            <pre><code class="hljs java">Line, AudioSystem
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><strong>⭐️ Variable names must be in camelCase.</strong></p>
-          <pre><code class="hljs java">line, audioSystem
+          <div class="code-block">
+            <pre><code class="hljs java">line, audioSystem
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><strong>⭐️ Constant names must be all uppercase using underscore to separate words.</strong></p>
-          <pre><code class="hljs java">MAX_ITERATIONS, COLOR_RED
+          <div class="code-block">
+            <pre><code class="hljs java">MAX_ITERATIONS, COLOR_RED
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><strong>⭐️ Names representing methods must be verbs and written in camelCase.</strong></p>
-          <pre><code class="hljs java">getName(), computeTotalWidth()
+          <div class="code-block">
+            <pre><code class="hljs java">getName(), computeTotalWidth()
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p>Underscores may be used in test method names using the following three part format <strong><code>featureUnderTest_testScenario_expectedBehavior()</code></strong></p>
           <p>e.g. <code>sortList_emptyList_exceptionThrown()</code> <code>getMember_memberNotFount_nullReturned</code></p>
           <p>Third part or both second and third parts can be omitted depending on what's covered in the test. For example, the test method <code>sortList_emptyList()</code> will test <code>sortList()</code> method for all variations of the 'empty list'
@@ -73,7 +88,8 @@
           </p>
 
           <p><strong>⭐️ Boolean variables/methods should be named to sound like booleans</strong></p>
-          <pre><code class="hljs java"><span class="hljs-comment">//variables</span>
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-comment">//variables</span>
 isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
 
 <span class="hljs-comment">//methods</span>
@@ -81,18 +97,24 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
 <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">canEvaluate</span><span class="hljs-params">()</span></span>;
 <span class="hljs-keyword">boolean</span> shouldAbort = <span class="hljs-keyword">false</span>;
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <div tags="level--basic-only">
             <p style="page-break-after: always;">&nbsp;</p>
           </div>
           <p>Setter methods for boolean variables must be of the form:</p>
-          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setFound</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> isFound)</span></span>;
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setFound</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> isFound)</span></span>;
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: This is the naming convention for boolean methods and variables used by Java core packages. It also makes the code read like</span> normal
             English e.g. <code>if(isOpen) ...</code></p>
 
           <p><strong>⭐️ Iterator variables can be called <em>i</em>, <em>j</em>, <em>k</em> etc.</strong></p>
           <p>Variables named <em>j</em>, <em>k</em> etc. should be used for nested loops only.</p>
-          <pre><code class="hljs java"><span class="hljs-keyword">for</span> (Iterator i = points.iterator(); i.hasNext(); ) {
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-keyword">for</span> (Iterator i = points.iterator(); i.hasNext(); ) {
     ...
 }
 
@@ -100,27 +122,35 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
     ...
 }
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: The notation is taken from mathematics where it is an established convention for indicating iterators.</span>
           </p>
 
           <h2 id="layout"><strong>Layout</strong><a class="fa fa-anchor" href="#layout"></a></h2>
           <p><strong>⭐️ Basic indentation should be 4 spaces (not tabs).</strong></p>
-          <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; nElements; i++) {
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; nElements; i++) {
     a[i] = <span class="hljs-number">0</span>;
 }
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: Just follow it <span aria-hidden="true" class="far fa-grin-tongue-squint"></span></span>
           </p>
           <p><strong>⭐️ Line length should be no longer than 120 chars.</strong></p>
           <p>Try to keep line length shorter than 110 characters (soft limit). But it is OK to exceed the limit slightly (hard limit: 120 chars). If the line exceeds the limit, use line wrapping at appropriate places of the line.</p>
           <p><strong>Indentation for wrapped lines should be 8 spaces</strong> (i.e. twice the normal indentation of 4 spaces) more than the parent line.</p>
-          <pre><code class="hljs java">setText(<span class="hljs-string">"Long line split"</span>
+          <div class="code-block">
+            <pre><code class="hljs java">setText(<span class="hljs-string">"Long line split"</span>
         + <span class="hljs-string">"into two parts."</span>);
 <span class="hljs-keyword">if</span> (isReady) {
     setText(<span class="hljs-string">"Long line split"</span>
         + <span class="hljs-string">"into two parts."</span>);
 }
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
 
 
           <p><strong>⭐️ Use K&amp;R style brackets (aka <a href="https://blog.codinghorror.com/new-programming-jargon/">Egyptian style</a>).</strong></p>
@@ -131,12 +161,15 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">while</span> (!done) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">while</span> (!done) {
     doSomething();
     done = moreToDo();
 }
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -144,28 +177,35 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">while</span> (!done)
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">while</span> (!done)
 {
     doSomething();
     done = moreToDo();
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: Just follow it. <span aria-hidden="true" class="far fa-grin-tongue-squint"></span></span>
           </p>
           <p><strong>⭐️ Method definitions should have the following form:</strong></p>
-          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">someMethod</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> SomeException </span>{
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">someMethod</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> SomeException </span>{
     ...
 }
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <div tags="level--basic-only">
             <p style="page-break-after: always;">&nbsp;</p>
           </div>
           <p><strong>⭐️ The <em>if-else</em> class of statements should have the following form:</strong></p>
           <div class="row">
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">if</span> (condition) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (condition) {
     statements;
 }
 
@@ -173,9 +213,12 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
 
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">if</span> (condition) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (condition) {
     statements;
 } <span class="hljs-keyword">else</span> {
     statements;
@@ -183,9 +226,12 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
 
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">if</span> (condition) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (condition) {
     statements;
 } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (condition) {
     statements;
@@ -193,31 +239,43 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
     statements;
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><strong>⭐️ The <em>for</em> statement should have the following form:</strong></p>
-          <pre><code class="hljs java"><span class="hljs-keyword">for</span> (initialization; condition; update) {
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-keyword">for</span> (initialization; condition; update) {
     statements;
 }
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p><strong>⭐️ The <em>while</em> and the <em>do-while</em> statements should have the following form:</strong></p>
           <div class="row">
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">while</span> (condition) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">while</span> (condition) {
     statements;
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">do</span> {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">do</span> {
     statements;
 } <span class="hljs-keyword">while</span> (condition);
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><strong>⭐️ The <em>switch</em> statement should have the following form:</strong> <mark>Note there is no indentation for <code>case</code> clauses.</mark><br>
             <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Configure your IDE to follow this style instead.</p>
-          <pre><code class="hljs java"><span class="hljs-keyword">switch</span> (condition) {
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-keyword">switch</span> (condition) {
 <span class="hljs-keyword">case</span> ABC:
     statements;
     <span class="hljs-comment">// Fallthrough</span>
@@ -232,6 +290,8 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
     <span class="hljs-keyword">break</span>;
 }
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p>The explicit <code>//Fallthrough</code> comment should be included whenever there is a <code>case</code> statement without a break statement.</p>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: Leaving out the <code>break</code> is a common error, and it must be made clear that it is intentional when it is not there.</span>
           </p>
@@ -239,7 +299,8 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
           <p><strong>⭐️ A <em>try-catch</em> statement should have the following form:</strong></p>
           <div class="row">
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">try</span> {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">try</span> {
     statements;
 } <span class="hljs-keyword">catch</span> (Exception exception) {
     statements;
@@ -247,9 +308,12 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
 
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
-              <pre><code class="hljs java"><span class="hljs-keyword">try</span> {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">try</span> {
     statements;
 } <span class="hljs-keyword">catch</span> (Exception exception) {
     statements;
@@ -257,6 +321,8 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
     statements;
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
 
@@ -280,10 +346,13 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
 <span class="hljs-keyword">import</span> java.util.ArrayList;
 <span class="hljs-keyword">import</span> java.util.HashSet;
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -291,10 +360,13 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
 
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: Importing classes explicitly gives an excellent documentation value for the class at hand and makes the class easier to comprehend and maintain.
@@ -313,8 +385,11 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] a = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">20</span>];
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] a = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">20</span>];
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -322,8 +397,11 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">int</span> a[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">20</span>];
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">int</span> a[] = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">20</span>];
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: The <em>arrayness</em> is a feature of the base type, not the variable. Java allows both forms however.</span>
@@ -342,10 +420,13 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
     sum += value[i];
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -353,10 +434,13 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, sum = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++)
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, sum = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++)
     sum += value[i];
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: When there is only one statement in the loop body, Java allows it to be written without wrapping it between <code>{ }</code>. However that
@@ -371,10 +455,13 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isDone) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isDone) {
     doCleanup();
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -382,10 +469,13 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isDone) doCleanup();
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isDone) doCleanup();
 
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: This helps when debugging using an IDE debugger. When writing on a single line, it is not apparent whether the condition is really true
@@ -402,11 +492,14 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java">InputStream stream = File.open(fileName, <span class="hljs-string">"w"</span>);
+              <div class="code-block">
+                <pre><code class="hljs java">InputStream stream = File.open(fileName, <span class="hljs-string">"w"</span>);
 <span class="hljs-keyword">if</span> (stream != <span class="hljs-keyword">null</span>) {
     readFile(stream);
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -414,11 +507,14 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java">InputStream stream = File.open(fileName, <span class="hljs-string">"w"</span>);
+              <div class="code-block">
+                <pre><code class="hljs java">InputStream stream = File.open(fileName, <span class="hljs-string">"w"</span>);
 <span class="hljs-keyword">if</span> (stream != <span class="hljs-keyword">null</span>))
     readFile(stream);
 
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p>The body of the conditional should be wrapped by curly brackets irrespective of how many statements.</p>
@@ -441,11 +537,14 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
     <span class="hljs-comment">// Do something</span>
     something();
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -453,11 +552,14 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
         <span class="hljs-comment">// Do something</span>
     something();
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
             <div class="col">
               <p>
@@ -465,11 +567,14 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
                   </span>
                 </font>
               </p>
-              <pre><code class="hljs java"><span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+              <div class="code-block">
+                <pre><code class="hljs java"><span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
 <span class="hljs-comment">// Do something</span>
     something();
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
             </div>
           </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: This is to avoid the comments from breaking the logical structure of the program.</span>
@@ -494,7 +599,7 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.7.0</a> at Tue, 24 Dec 2019 12:36:52 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 04:54:36 GMT</small></div>
     </footer>
   </div>
 </body>

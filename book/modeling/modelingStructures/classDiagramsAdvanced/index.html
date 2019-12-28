@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Modeling: Modeling Structures: Class Diagrams - Advanced</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -68,7 +68,8 @@
                         <div>
                           <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: draw class diagram: Player, Bot, etc." class="algolia-no-index">
                             <p>(a) Draw a class diagram to represent the following code.</p>
-                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Player</span></span>{
+                            <div class="code-block">
+                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Player</span></span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span></span>;
 }
 
@@ -101,6 +102,8 @@
     }
 }
 </code></pre>
+                              <div class="code-block-lang"><span>java</span></div>
+                            </div>
                             <p>(b) Add these association classes to the diagram:<br> i. A <code>Player</code> can <em>challenge</em> another <code>Player</code> object. <code>Challenge</code> class keeps track that association between the two <code>Player</code>                              objects: the <em>challenger</em> and the <em>target</em> of the challenge.<br> ii. A <code>Human</code> can <em>train</em> a <code>SmartBot</code> object. <code>Lesson</code> class keeps track of that association.</p>
                             <p>(c) Convert the two association classes to normal classes.</p>
                             <panel header=":key: (a)" class="algolia-no-index">

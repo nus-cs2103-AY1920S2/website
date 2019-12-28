@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Getting Started</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -77,7 +77,8 @@
                 <p></p>
                 <div>
                   <p>In Java, the HelloWorld program looks like this:</p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> </span>{
+                  <div class="code-block">
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         <span class="hljs-comment">// generate some simple output</span>
@@ -85,8 +86,11 @@
     }
 }
 </code></pre>
+                    <div class="code-block-lang"><span>java</span></div>
+                  </div>
                   <p>For reference, the equivalent C++ code is given below:</p>
-                  <pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+                  <div class="code-block">
+                    <pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
 <span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
 
 <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
@@ -95,6 +99,8 @@
     <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
 }
 </code></pre>
+                    <div class="code-block-lang"><span>cpp</span></div>
+                  </div>
                   <p>This HelloWorld Java program defines one method named main: <code>public static void main(String[] args)</code></p>
                   <p><code>System.out.println</code> displays results on the screen.</p>
                   <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
@@ -198,12 +204,18 @@
                 explains what happened and where.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, modify the HelloWorld code to include the following line, compile it again, and run it.</p>
-                <pre><code class="hljs java">System.out.println(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>);
+                <div class="code-block">
+                  <pre><code class="hljs java">System.out.println(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>);
 </code></pre>
+                  <div class="code-block-lang"><span>java</span></div>
+                </div>
                 <p>You should get a message like this:</p>
-                <pre><code class="hljs sh">Exception <span class="hljs-keyword">in</span> thread <span class="hljs-string">"main"</span> java.lang.ArithmeticException: / by zero
+                <div class="code-block">
+                  <pre><code class="hljs sh">Exception <span class="hljs-keyword">in</span> thread <span class="hljs-string">"main"</span> java.lang.ArithmeticException: / by zero
     at Hello.main(Hello.java:5)
 </code></pre>
+                  <div class="code-block-lang"><span>sh</span></div>
+                </div>
               </box>
               <p><strong>Integrated Development Environments (IDEs)</strong> can automate the intermediate step of compiling. They usually have a <span style="color:green"><span aria-hidden="true" class="fas fa-play-circle"></span></span> <em>Run</em> button
                 which compiles the code first and then runs it.</p>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 3 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -26,14 +26,13 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
-      <div class="w-100 p-1 text-white bg-primary text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
-
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
-        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand">CS2103/T <small>2020 Jan-Apr</small></a>
+        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
         <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
@@ -83,31 +82,32 @@
     </header>
     <div id="flex-body">
       <div id="content-wrapper">
-        <nav>
-          <ul class="pagination mt-2">
-            <li class="page-item"><a class="page-link" href="/website/schedule/week2"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week3/index.html"><span><span aria-hidden="true" class="fas fa-bell"></span></span> Summary</a></li>
-            <li class="page-item active"><a class="page-link" href="/website/schedule/week3/topics.html"><span><span aria-hidden="true" class="fas fa-book"></span></span> Topics</a></li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week3/project.html"><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project</a></li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week3/tutorial-cs2103.html"><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> Tutorial</a></li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week3/admin.html"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Admin Info</a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week4"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
-          </ul>
-        </nav>
-        <p></p>
-        <h1 id="week-3-jan-27-topics">Week 3 <small><small><span class="dimmed">[Jan 27]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-3-jan-27-topics"></a></h1>
-        <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
-          <span id="toc">
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item"><a class="page-link" href="/website/schedule/week2"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week3/index.html"><span><span aria-hidden="true" class="fas fa-bell"></span></span> Summary</a></li>
+              <li class="page-item active"><a class="page-link" href="/website/schedule/week3/topics.html"><span><span aria-hidden="true" class="fas fa-book"></span></span> Topics</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week3/project.html"><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week3/tutorial-cs2103.html"><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> Tutorial</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week3/admin.html"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Admin Info</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week4"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
+            </ul>
+          </nav>
+          <p></p>
+          <h1 id="week-3-jan-27-topics">Week 3 <small><small><span class="dimmed">[Jan 27]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-3-jan-27-topics"></a></h1>
+          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
+            <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week3/topics.html#W3-1">W3.1</a>] <strong>Java</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></span>
-          </span>
-          </li>
-          </ul>
-          <div class="indented-level2">
-            <small>
+              aria-hidden="true"></span></span>
+            </span>
+            </li>
+            </ul>
+            <div class="indented-level2">
+              <small>
 <ul>
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-1a">W3.1a</a>] <span>Implementation → Documentation → Tools → JavaDoc →
@@ -124,15 +124,15 @@
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-1e">W3.1e</a>] <span>C++ to Java → Miscellaneous Topics →
 </span></span> <span>Using JAR Files</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
-          <ul>
-            <li>[<a href="/website/schedule/week3/topics.html#W3-2">W3.2</a>] <strong>Coding Standards</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              </span>
-              </span>
-            </li>
-          </ul>
-          <div class="indented-level2">
-            <small>
+            <ul>
+              <li>[<a href="/website/schedule/week3/topics.html#W3-2">W3.2</a>] <strong>Coding Standards</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </span>
+                </span>
+              </li>
+            </ul>
+            <div class="indented-level2">
+              <small>
 <ul>
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-2a">W3.2a</a>] <span>Implementation → Code Quality → Introduction →
@@ -140,16 +140,16 @@
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-2b">W3.2b</a>] <span>Implementation → Code Quality → Style →
 </span></span> <span>Introduction</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p></li></ul></small></div>
-          <p></p>
-          <ul>
-            <li>[<a href="/website/schedule/week3/topics.html#W3-3">W3.3</a>] <strong>Developer Testing</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              </span>
-              </span>
-            </li>
-          </ul>
-          <div class="indented-level2">
-            <small>
+            <p></p>
+            <ul>
+              <li>[<a href="/website/schedule/week3/topics.html#W3-3">W3.3</a>] <strong>Developer Testing</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </span>
+                </span>
+              </li>
+            </ul>
+            <div class="indented-level2">
+              <small>
 <ul>
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-3a">W3.3a</a>] <span>Quality Assurance → Testing → Developer Testing →
@@ -157,12 +157,12 @@
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-3b">W3.3b</a>] <span>Quality Assurance → Testing → Developer Testing →
 </span></span> <span>Why</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
-          <ul>
-            <li>[<a href="/website/schedule/week3/topics.html#W3-4">W3.4</a>] <strong>Unit Testing</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </li>
-          </ul>
-          <div class="indented-level2">
-            <small>
+            <ul>
+              <li>[<a href="/website/schedule/week3/topics.html#W3-4">W3.4</a>] <strong>Unit Testing</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </li>
+            </ul>
+            <div class="indented-level2">
+              <small>
 <ul>
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-4a">W3.4a</a>] <span>Quality Assurance → Testing → Test Automation →
@@ -182,15 +182,16 @@
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-4f">W3.4f</a>] <span>Tools → JUnit →
 </span></span> <span>JUnit: Intermediate</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p></li></ul></small></div>
-          <p></p>
-          <ul>
-            <li>[<a href="/website/schedule/week3/topics.html#W3-5">W3.5</a>] <strong>RCS: Branching</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-                aria-hidden="true"></span></span>
-              </span>
-            </li>
-          </ul>
-          <div class="indented-level2">
-            <small>
+            <p></p>
+            <ul>
+              <li>[<a href="/website/schedule/week3/topics.html#W3-5">W3.5</a>] <strong>RCS: Branching</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </span>
+                </span>
+              </li>
+            </ul>
+            <div class="indented-level2">
+              <small>
 <ul>
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-5a">W3.5a</a>] <span>Project Management → Revision Control →
@@ -201,52 +202,53 @@
 <li>
 <p><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-5c">W3.5c</a>] <span>Tools → Git and GitHub →
 </span></span> <span>Merge Conflicts</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p></li></ul></small></div>
-          <ul>
-            <li>[<a href="/website/schedule/week3/topics.html#W3-6">W3.6</a>] <strong>RCS: Creating Pull Requests</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-            </li>
-          </ul>
-          <div class="indented-level2">
-            <small>
+            <ul>
+              <li>[<a href="/website/schedule/week3/topics.html#W3-6">W3.6</a>] <strong>RCS: Creating Pull Requests</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </li>
+            </ul>
+            <div class="indented-level2">
+              <small>
 <ul>
 <li><span class="dimmed">[<a href="/website/schedule/week3/topics.html#W3-6a">W3.6a</a>] <span>Tools → Git and GitHub →
 </span></span> <span>Create PRs</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul></small></div>
-          <p></p>
-          </span>
-        </panel>
-        <hr style="border: 1px dotted #cccccc;">
-        <p><span id="W3-1"></span></p>
-        <panel type="seamless" no-close expandable="true" expanded>
-          <span slot="header" class="card-title"><div><h2 id="w3-1-java"><span class="dimmed">[W3.1]</span> <strong>Java</strong> <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small>
-          <a class="fa fa-anchor" href="#w3-1-java"></a>
-          </h2>
-      </div>
-      </span>
-      <div class="indented-level1">
-        <p><span id="W3-1a"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/what">
-          <span slot="header" class="card-title">
+            <p></p>
+            </span>
+          </panel>
+          <hr style="border: 1px dotted #cccccc;">
+          <p><span id="W3-1"></span></p>
+          <panel type="seamless" no-close expandable="true" expanded>
+            <span slot="header" class="card-title"><div><h2 id="w3-1-java"><span class="dimmed">[W3.1]</span> <strong>Java</strong> <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small>
+            <a class="fa fa-anchor" href="#w3-1-java"></a>
+            </h2>
+        </div>
+        </span>
+        <div class="indented-level1">
+          <p><span id="W3-1a"></span></p>
+          <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/what">
+            <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.1a</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></span>
-          </span>
-          <h4 id="implementation-documentation-tools-javadoc-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → JavaDoc →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-documentation-tools-javadoc-what"></a></h4>
-          </span>
-          <div>
-            <div class="indented">
-              <div></div>
-              <p></p>
-              <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain JavaDoc</span>
-                </span>
-                </span>
-                </span>
-              </p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <div>
-                <p><strong>Javadoc is a tool for generating API documentation in HTML format from doc comments in source.</strong> In addition, modern IDEs use JavaDoc comments to generate explanatory tool tips.</p>
-                <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example method header comment in JavaDoc format (adapted from <a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">Oracle's Java documentation</a>)</p>
-                  <pre><code class="hljs java"><span class="hljs-comment">/**
+              aria-hidden="true"></span></span>
+            </span>
+            <h4 id="implementation-documentation-tools-javadoc-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → JavaDoc →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-documentation-tools-javadoc-what"></a></h4>
+            </span>
+            <div>
+              <div class="indented">
+                <div></div>
+                <p></p>
+                <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain JavaDoc</span>
+                  </span>
+                  </span>
+                  </span>
+                </p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <div>
+                  <p><strong>Javadoc is a tool for generating API documentation in HTML format from doc comments in source.</strong> In addition, modern IDEs use JavaDoc comments to generate explanatory tool tips.</p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example method header comment in JavaDoc format (adapted from <a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">Oracle's Java documentation</a>)</p>
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-comment">/**
  * Returns an Image object that can then be painted on the screen.
  * The url argument must specify an absolute {<span class="hljs-doctag">@link</span> URL}. The name
  * argument is a specifier that is relative to the url argument.
@@ -269,43 +271,46 @@
         }
  }
 </code></pre>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Generated HTML documentation:</p>
-                  <p><a href="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" target="_self"><img src="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" alt class="img-fluid"></a></p>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Tooltip generated by Intellij IDE:</p>
-                  <p><img src="/website/book/documentation/tools/javaDoc/what/images/intellijTooltip.png"></p>
-                  <p></p>
-                  <p></p>
-                </box>
-              </div>
-              <div></div>
-            </div>
-          </div>
-        </panel>
-        <p><span id="W3-1b"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/how">
-          <span slot="header" class="card-title">
-<span class="badge badge-pill badge-light text-mute">W3.1b</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </span>
-            <h4 id="implementation-documentation-tools-javadoc-how"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → JavaDoc →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#implementation-documentation-tools-javadoc-how"></a></h4>
-            </span>
-            <div>
-              <div class="indented">
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Generated HTML documentation:</p>
+                    <p><a href="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" target="_self"><img src="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" alt class="img-fluid"></a></p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Tooltip generated by Intellij IDE:</p>
+                    <p><img src="/website/book/documentation/tools/javaDoc/what/images/intellijTooltip.png"></p>
+                    <p></p>
+                    <p></p>
+                  </box>
+                </div>
                 <div></div>
-                <p></p>
-                <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can write Javadoc comments</span>
-                  </span>
-                  </span>
-                  </span>
-                </p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <div>
-                  <p>In the absence of more extensive guidelines (e.g., given in a coding standard adopted by your project), you can follow the two examples below in your code.</p>
-                  <p><strong>A minimal javadoc comment example for methods:</strong></p>
-                  <pre><code class="hljs java"><span class="hljs-comment">/**
+              </div>
+            </div>
+          </panel>
+          <p><span id="W3-1b"></span></p>
+          <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/how">
+            <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W3.1b</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </span>
+              <h4 id="implementation-documentation-tools-javadoc-how"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → JavaDoc →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#implementation-documentation-tools-javadoc-how"></a></h4>
+              </span>
+              <div>
+                <div class="indented">
+                  <div></div>
+                  <p></p>
+                  <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can write Javadoc comments</span>
+                    </span>
+                    </span>
+                    </span>
+                  </p>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <div>
+                    <p>In the absence of more extensive guidelines (e.g., given in a coding standard adopted by your project), you can follow the two examples below in your code.</p>
+                    <p><strong>A minimal javadoc comment example for methods:</strong></p>
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-comment">/**
  * Returns lateral location of the specified position.
  * If the position is unset, NaN is returned.
  *
@@ -320,8 +325,11 @@
   ...
 }
 </code></pre>
-                  <p><strong>A minimal javadoc comment example for classes:</strong></p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">package</span> ...
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
+                    <p><strong>A minimal javadoc comment example for classes:</strong></p>
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-keyword">package</span> ...
 
 <span class="hljs-keyword">import</span> ...
 
@@ -333,46 +341,49 @@
     <span class="hljs-comment">//...</span>
 }
 </code></pre>
-                </div>
-                <div>
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
+                  </div>
                   <div>
-                    <panel header="<md>:fas-paperclip:</md> Resources" expanded>
-                      <div>
-                        <ul>
-                          <li><a href="https://www.tutorialspoint.com/java/java_documentation.htm">A short tutorial on writing JavaDoc comments</a> <span class="dimmed">-- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></span></li>
-                          <li><a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">A more detailed description</a> <span class="dimmed">--from Oracle</span></li>
-                        </ul>
-                      </div>
-                    </panel>
+                    <div>
+                      <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                        <div>
+                          <ul>
+                            <li><a href="https://www.tutorialspoint.com/java/java_documentation.htm">A short tutorial on writing JavaDoc comments</a> <span class="dimmed">-- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></span></li>
+                            <li><a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">A more detailed description</a> <span class="dimmed">--from Oracle</span></li>
+                          </ul>
+                        </div>
+                      </panel>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-        </panel>
-        <p><span id="W3-1c"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/fileAccess">
-          <span slot="header" class="card-title">
+          </panel>
+          <p><span id="W3-1c"></span></p>
+          <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/fileAccess">
+            <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.1c</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span>
-          : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          <h4 id="c-to-java-miscellaneous-topics-file-access"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>File Access</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-file-access"></a></h4>
-          </span>
-          <div>
-            <div class="indented">
-              <div></div>
-              <p></p>
-              <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can read/write text files using Java</span>
-                </span>
-                </span>
-                </span>
-              </p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <div>
-                <p><strong>You can use the <a href="https://docs.oracle.com/javase/9/docs/api/java/io/File.html"><code>java.io.File</code></a> class to represent a file object</strong>. It can be used to access properties of the file object.</p>
-                <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code creates a <code>File</code> object to represent a file <code>fruits.txt</code> that exists in the <code>data</code> directory <mark>relative to the current working directory</mark>                    and uses that object to print some properties of the file.</p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
+            : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            <h4 id="c-to-java-miscellaneous-topics-file-access"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>File Access</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-file-access"></a></h4>
+            </span>
+            <div>
+              <div class="indented">
+                <div></div>
+                <p></p>
+                <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can read/write text files using Java</span>
+                  </span>
+                  </span>
+                  </span>
+                </p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <div>
+                  <p><strong>You can use the <a href="https://docs.oracle.com/javase/9/docs/api/java/io/File.html"><code>java.io.File</code></a> class to represent a file object</strong>. It can be used to access properties of the file object.</p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code creates a <code>File</code> object to represent a file <code>fruits.txt</code> that exists in the <code>data</code> directory <mark>relative to the current working directory</mark>                      and uses that object to print some properties of the file.</p>
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileClassDemo</span> </span>{
 
@@ -385,22 +396,25 @@
 
 }
 </code></pre>
-                  <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
-                  </p>
-                  <pre><code class="hljs">full path: C:\sample-code\data\fruits.txt
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
+                    <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
+                    </p>
+                    <pre><code class="hljs">full path: C:\sample-code\data\fruits.txt
 file exists?: true
 is Directory?: false
 </code></pre>
-                </box>
-                <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If you use backslash to specify the file path in a Windows computer, you need to use an additional backslash as an escape character because the backslash by itself
-                  has a special meaning. e.g., use <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
-                  </span><code>&quot;data\\fruits.txt&quot;</code>, not <span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span>
-                  </span> <code>&quot;data\fruits.txt&quot;</code>. Alternatively, you can use forward slash <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
-                  </span> <code>&quot;data/fruits.txt&quot;</code> (even on Windows).</p>
-                <p><strong>You can read from a file using a <code>Scanner</code> object that uses a <code>File</code> object as the <em>source</em> of data.</strong></p>
-                <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code uses a <code>Scanner</code> object to read (and print) contents of a text file line-by-line:</p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
+                  </box>
+                  <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If you use backslash to specify the file path in a Windows computer, you need to use an additional backslash as an escape character because the backslash by itself
+                    has a special meaning. e.g., use <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
+                    </span><code>&quot;data\\fruits.txt&quot;</code>, not <span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span>
+                    </span> <code>&quot;data\fruits.txt&quot;</code>. Alternatively, you can use forward slash <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
+                    </span> <code>&quot;data/fruits.txt&quot;</code> (even on Windows).</p>
+                  <p><strong>You can read from a file using a <code>Scanner</code> object that uses a <code>File</code> object as the <em>source</em> of data.</strong></p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code uses a <code>Scanner</code> object to read (and print) contents of a text file line-by-line:</p>
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
 <span class="hljs-keyword">import</span> java.io.FileNotFoundException;
 <span class="hljs-keyword">import</span> java.util.Scanner;
 
@@ -424,16 +438,19 @@ is Directory?: false
 
 }
 </code></pre>
-                  <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> i.e., contents of the <code>data/fruits.txt</code></p>
-                  <pre><code class="hljs">5 Apples
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
+                    <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> i.e., contents of the <code>data/fruits.txt</code></p>
+                    <pre><code class="hljs">5 Apples
 3 Bananas
 6 Cherries
 </code></pre>
-                </box>
-                <p><strong>You can use a <a href="https://docs.oracle.com/javase/9/docs/api/java/io/FileWriter.html"><code>java.io.FileWriter</code></a> object to write to a file.</strong></p>
-                <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>writeToFile</code> method below uses a <code>FileWrite</code> object to write to a file. The method is being used to write two lines to the file <code>temp/lines.txt</code>.</p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.FileWriter;
+                  </box>
+                  <p><strong>You can use a <a href="https://docs.oracle.com/javase/9/docs/api/java/io/FileWriter.html"><code>java.io.FileWriter</code></a> object to write to a file.</strong></p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>writeToFile</code> method below uses a <code>FileWrite</code> object to write to a file. The method is being used to write two lines to the file <code>temp/lines.txt</code>.</p>
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.FileWriter;
 <span class="hljs-keyword">import</span> java.io.IOException;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileWritingDemo</span> </span>{
@@ -455,26 +472,32 @@ is Directory?: false
 
 }
 </code></pre>
-                  <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> Contents of the <code>temp/lines.txt</code>:</p>
-                  <pre><code class="hljs">first line
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
+                    <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> Contents of the <code>temp/lines.txt</code>:</p>
+                    <pre><code class="hljs">first line
 second line
 </code></pre>
-                </box>
-                <p>Note that you <mark>need to call the <code>close()</code> method</mark> of the <code>FileWriter</code> object for the writing operation to be completed.</p>
-                <p><strong>You can create a <code>FileWriter</code> object that appends to the file</strong> (instead of overwriting the current content) by specifying an additional boolean parameter to the constructor.</p>
-                <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The method below appends to the file rather than overwrites.</p>
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">appendToFile</span><span class="hljs-params">(String filePath, String textToAppend)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+                  </box>
+                  <p>Note that you <mark>need to call the <code>close()</code> method</mark> of the <code>FileWriter</code> object for the writing operation to be completed.</p>
+                  <p><strong>You can create a <code>FileWriter</code> object that appends to the file</strong> (instead of overwriting the current content) by specifying an additional boolean parameter to the constructor.</p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The method below appends to the file rather than overwrites.</p>
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">appendToFile</span><span class="hljs-params">(String filePath, String textToAppend)</span> <span class="hljs-keyword">throws</span> IOException </span>{
     FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath, <span class="hljs-keyword">true</span>); <span class="hljs-comment">// create a FileWriter in append mode</span>
     fw.write(textToAppend);
     fw.close();
 }
 </code></pre>
-                </box>
-                <p><strong>The <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html"><code>java.nio.file.Files</code></a> is a utility class that provides several useful file operations.</strong> It relies on the <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Paths.html"><code>java.nio.file.Paths</code></a>                  file to generate <code>Path</code> objects that represent file paths.</p>
-                <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example uses the <code>Files</code> class to copy a file and delete a file.</p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.IOException;
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
+                  </box>
+                  <p><strong>The <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html"><code>java.nio.file.Files</code></a> is a utility class that provides several useful file operations.</strong> It relies on the <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Paths.html"><code>java.nio.file.Paths</code></a>                    file to generate <code>Path</code> objects that represent file paths.</p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example uses the <code>Files</code> class to copy a file and delete a file.</p>
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.IOException;
 <span class="hljs-keyword">import</span> java.nio.file.Files;
 <span class="hljs-keyword">import</span> java.nio.file.Paths;
 
@@ -487,40 +510,44 @@ second line
 
 }
 </code></pre>
-                </box>
-                <p>The techniques above are good enough to manipulate simple text files. Note that <strong>it is also possible to <a href="https://www.tutorialspoint.com/java/java_files_io.htm">perform file I/O operations using other classes</a></strong>.</p>
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
+                  </box>
+                  <p>The techniques above are good enough to manipulate simple text files. Note that <strong>it is also possible to <a href="https://www.tutorialspoint.com/java/java_files_io.htm">perform file I/O operations using other classes</a></strong>.</p>
+                </div>
+                <div></div>
               </div>
-              <div></div>
             </div>
-          </div>
-        </panel>
-        <p><span id="W3-1d"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/packages">
-          <span slot="header" class="card-title">
+          </panel>
+          <p><span id="W3-1d"></span></p>
+          <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/packages">
+            <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.1d</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span>
-          : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          <h4 id="c-to-java-miscellaneous-topics-packages"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Packages</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-packages"></a></h4>
-          </span>
-          <div>
-            <div class="indented">
-              <div></div>
-              <p></p>
-              <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use Java packages</span>
-                </span>
-                </span>
-                </span>
-              </p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <div>
-                <p><strong>You can organize your <em>types</em> (i.e., classes, interfaces, enumerations, etc.) into <em>packages</em></strong> for easier management (among <a href="https://www.tutorialspoint.com/Advantages-of-using-packages-in-Java">other benefits</a>).</p>
-                <p><strong>To create a package, you put a package statement at the very top of every source file in that package.</strong> The package statement must be the first line in the source file and there can be no more than one package statement
-                  in each source file. Furthermore, <strong>the package of a type should match the folder path of the source file.</strong> Similarly, the compiler will put the <code>.class</code> files in a folder structure that matches the package names.</p>
-                <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Formatter</code> class below (in <code>&lt;source folder&gt;/seedu/tojava/util/Formatter.java</code> file) is in the package <code>seedu.tojava.util</code>.
-                    When it is compiled, the <code>Formatter.class</code> file will be in the location <code>&lt;compiler output folder&gt;/seedu/tojava/util</code>:</p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
+            : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            <h4 id="c-to-java-miscellaneous-topics-packages"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Packages</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-packages"></a></h4>
+            </span>
+            <div>
+              <div class="indented">
+                <div></div>
+                <p></p>
+                <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use Java packages</span>
+                  </span>
+                  </span>
+                  </span>
+                </p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <div>
+                  <p><strong>You can organize your <em>types</em> (i.e., classes, interfaces, enumerations, etc.) into <em>packages</em></strong> for easier management (among <a href="https://www.tutorialspoint.com/Advantages-of-using-packages-in-Java">other benefits</a>).</p>
+                  <p><strong>To create a package, you put a package statement at the very top of every source file in that package.</strong> The package statement must be the first line in the source file and there can be no more than one package statement
+                    in each source file. Furthermore, <strong>the package of a type should match the folder path of the source file.</strong> Similarly, the compiler will put the <code>.class</code> files in a folder structure that matches the package
+                    names.</p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Formatter</code> class below (in <code>&lt;source folder&gt;/seedu/tojava/util/Formatter.java</code> file) is in the package <code>seedu.tojava.util</code>.
+                      When it is compiled, the <code>Formatter.class</code> file will be in the location <code>&lt;compiler output folder&gt;/seedu/tojava/util</code>:</p>
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;
@@ -530,24 +557,27 @@ second line
     }
 }
 </code></pre>
-                </box>
-                <p><strong>Package names are written in all lower case</strong> (not camelCase), using the dot as a separator. Packages in the Java language itself begin with <code>java</code>. or <code>javax</code>. Companies use their reversed Internet
-                  domain name to begin their package names.</p>
-                <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, <code>com.foobar.doohickey.util</code> can be the name of a package created by a company with a domain name <code>foobar.com</code></p>
-                </box>
-                <p><strong>To use a public <tooltip content="types contained in the package">package member</tooltip> from outside its package, you must do one of the following:</strong></p>
-                <ol>
-                  <li><strong>Use the <tooltip content="type name prefixed by the package name e.g., `java.io.IOException`">fully qualified name</tooltip></strong> to refer to the member</li>
-                  <li><strong>Import</strong> the package or the specific package member</li>
-                </ol>
-                <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Main</code> class below has two import statements:</p>
-                  <ul>
-                    <li><code>import seedu.tojava.util.StringParser</code>: imports the class <code>StringParser</code> in the <code>seedu.tojava.util</code> package</li>
-                    <li><code>import seedu.tojava.frontend.*</code>: imports all the classes in the <code>seedu.tojava.frontend</code> package</li>
-                  </ul>
-                  <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava;
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
+                  </box>
+                  <p><strong>Package names are written in all lower case</strong> (not camelCase), using the dot as a separator. Packages in the Java language itself begin with <code>java</code>. or <code>javax</code>. Companies use their reversed Internet
+                    domain name to begin their package names.</p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, <code>com.foobar.doohickey.util</code> can be the name of a package created by a company with a domain name <code>foobar.com</code></p>
+                  </box>
+                  <p><strong>To use a public <tooltip content="types contained in the package">package member</tooltip> from outside its package, you must do one of the following:</strong></p>
+                  <ol>
+                    <li><strong>Use the <tooltip content="type name prefixed by the package name e.g., `java.io.IOException`">fully qualified name</tooltip></strong> to refer to the member</li>
+                    <li><strong>Import</strong> the package or the specific package member</li>
+                  </ol>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Main</code> class below has two import statements:</p>
+                    <ul>
+                      <li><code>import seedu.tojava.util.StringParser</code>: imports the class <code>StringParser</code> in the <code>seedu.tojava.util</code> package</li>
+                      <li><code>import seedu.tojava.frontend.*</code>: imports all the classes in the <code>seedu.tojava.frontend</code> package</li>
+                    </ul>
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava;
 
 <span class="hljs-keyword">import</span> seedu.tojava.util.StringParser;
 <span class="hljs-keyword">import</span> seedu.tojava.frontend.*;
@@ -569,17 +599,20 @@ second line
     }
 }
 </code></pre>
-                  <p>Note how the class can still use the <code>Processor</code> without importing it first, by using its fully qualified name <code>seedu.tojava.logic.Processor</code></p>
-                </box>
-                <p><strong>Importing a package does not import its sub-packages</strong>, as packages do not behave as hierarchies despite appearances.</p>
-                <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>import seedu.tojava.frontend.*</code> does not import the classes in the sub-package <code>seedu.tojava.frontend.widget</code>.</p>
-                </box>
-                <p><strong>If you do not use a package statement, your type doesn't have a package</strong> -- a practice not recommended (except for small code examples) as it is not possible for a type in a package to import a type that is not in a package.</p>
-                <p><strong>Optionally, a <em>static import</em> can be used to import static members of a type</strong> so that the imported members can be used without specifying the type name.</p>
-                <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The class below uses static imports to import the constant <code>PREFIX</code> and the method <code>format()</code> from the <code>seedu.tojava.util.Formatter</code> class.</p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.PREFIX;
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
+                    <p>Note how the class can still use the <code>Processor</code> without importing it first, by using its fully qualified name <code>seedu.tojava.logic.Processor</code></p>
+                  </box>
+                  <p><strong>Importing a package does not import its sub-packages</strong>, as packages do not behave as hierarchies despite appearances.</p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>import seedu.tojava.frontend.*</code> does not import the classes in the sub-package <code>seedu.tojava.frontend.widget</code>.</p>
+                  </box>
+                  <p><strong>If you do not use a package statement, your type doesn't have a package</strong> -- a practice not recommended (except for small code examples) as it is not possible for a type in a package to import a type that is not in a package.</p>
+                  <p><strong>Optionally, a <em>static import</em> can be used to import static members of a type</strong> so that the imported members can be used without specifying the type name.</p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The class below uses static imports to import the constant <code>PREFIX</code> and the method <code>format()</code> from the <code>seedu.tojava.util.Formatter</code>                      class.</p>
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.PREFIX;
 <span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.format;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -592,8 +625,11 @@ second line
     }
 }
 </code></pre>
-                  <panel type="seamless" header="`Formatter` class" class="algolia-no-index">
-                    <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
+                    <panel type="seamless" header="`Formatter` class" class="algolia-no-index">
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;
@@ -603,46 +639,139 @@ second line
     }
 }
 </code></pre>
-                  </panel>
-                  <p>Note how the class can use <code>PREFIX</code> and <code>format()</code> (instead of <code>Formatter.PREFIX</code> and <code>Formatter.format()</code>).</p>
-                </box>
-                <p><strong>When using the commandline to compile/run Java, you should take the package into account.</strong></p>
-                <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the <code>seedu.tojava.Main</code> class in defined in the file <code>Main.java</code>,</p>
-                  <ul>
-                    <li>when compiling from the <code>&lt;source folder&gt;</code>, the command is:<br>
-                      <code>javac seedu/tojava/Main.java</code></li>
-                    <li>when running it from the <code>&lt;compiler output folder&gt;</code>, the command is:<br>
-                      <code>java seedu.tojava.Main</code></li>
-                  </ul>
-                </box>
-              </div>
-              <div>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
+                    </panel>
+                    <p>Note how the class can use <code>PREFIX</code> and <code>format()</code> (instead of <code>Formatter.PREFIX</code> and <code>Formatter.format()</code>).</p>
+                  </box>
+                  <p><strong>When using the commandline to compile/run Java, you should take the package into account.</strong></p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the <code>seedu.tojava.Main</code> class in defined in the file <code>Main.java</code>,</p>
+                    <ul>
+                      <li>when compiling from the <code>&lt;source folder&gt;</code>, the command is:<br>
+                        <code>javac seedu/tojava/Main.java</code></li>
+                      <li>when running it from the <code>&lt;compiler output folder&gt;</code>, the command is:<br>
+                        <code>java seedu.tojava.Main</code></li>
+                    </ul>
+                  </box>
+                </div>
                 <div>
-                  <panel header="<md>:fas-paperclip:</md> Resources" expanded>
-                    <div>
-                      <ul>
-                        <li>Oracle's tutorial on packages: [<a href="https://docs.oracle.com/javase/tutorial/java/concepts/package.html">What is a Package?</a>] [<a href="https://docs.oracle.com/javase/tutorial/java/package/index.html">Creating and Using Packages</a>]</li>
-                      </ul>
-                    </div>
-                  </panel>
+                  <div>
+                    <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                      <div>
+                        <ul>
+                          <li>Oracle's tutorial on packages: [<a href="https://docs.oracle.com/javase/tutorial/java/concepts/package.html">What is a Package?</a>] [<a href="https://docs.oracle.com/javase/tutorial/java/package/index.html">Creating and Using Packages</a>]</li>
+                        </ul>
+                      </div>
+                    </panel>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </panel>
-        <p><span id="W3-1e"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/jar">
-          <span slot="header" class="card-title">
+          </panel>
+          <p><span id="W3-1e"></span></p>
+          <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/jar">
+            <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.1e</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span>
-          : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-          <h4 id="c-to-java-miscellaneous-topics-using-jar-files"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Using JAR Files</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-using-jar-files"></a></h4>
+            : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            <h4 id="c-to-java-miscellaneous-topics-using-jar-files"><small><span class="font-weight-bold text-muted"><span>C++ to Java → Miscellaneous Topics →</span></span></small> <strong><span>Using JAR Files</span></strong><a class="fa fa-anchor" href="#c-to-java-miscellaneous-topics-using-jar-files"></a></h4>
+            </span>
+            <div>
+              <div class="indented">
+                <div></div>
+                <p></p>
+                <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use JAR files</span>
+                  </span>
+                  </span>
+                  </span>
+                </p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <div>
+                  <p><strong>Java applications are typically delivered as JAR (short for <em>Java Archive</em>) files.</strong> A JAR contains Java classes and other resources (icons, media files, etc.).</p>
+                  <p>An executable JAR file can be launched using the <code>java -jar</code> command.</p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>java -jar foo.jar</code> launches the <code>foo.jar</code> file.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can download the Collate-GUI.jar from <a href="https://se-edu.github.io/collate/">https://se-edu.github.io/collate/</a> and run it using the command<code>java -jar Collate-GUI.jar</code>                      command.</p>
+                  </box>
+                  <p>The IDE can help you to package your application as a JAR file.</p>
+                </div>
+                <div>
+                  <div>
+                    <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                      <div>
+                        <ul>
+                          <li><a href="https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html">Oracle's tutorial on JAR files</a></li>
+                        </ul>
+                        <p><strong><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Creating a JAR file in Intellij</strong> - A video by Artur Spirin:</p>
+                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/3Xo6zSBgdgk" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </panel>
+        </div>
+        </panel>
+        <p><span id="W3-2"></span></p>
+        <panel type="seamless" no-close expandable="true" expanded>
+          <span slot="header" class="card-title"><div><h2 id="w3-2-coding-standards"><span class="dimmed">[W3.2]</span> <strong>Coding Standards</strong> <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small>
+          <a class="fa fa-anchor" href="#w3-2-coding-standards"></a>
+          </h2>
+      </div>
+      </span>
+      <div class="indented-level1">
+        <p><span id="W3-2a"></span></p>
+        <panel type="seamless" expanded popup-url="/website/book/codeQuality/introduction/basic">
+          <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W3.2a</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </span>
+            <h4 id="implementation-code-quality-introduction-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-introduction-what"></a></h4>
+            </span>
+            <div>
+              <div class="indented">
+                <div></div>
+                <p></p>
+                <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain the importance of code quality</span>
+                  </span>
+                  </span>
+                  </span>
+                </p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <div>
+                  <blockquote>
+                    <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
+                  </blockquote>
+                  <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
+                  <popover id="pop:production-code" title="<md>:glyphicon-eye-open:</md> Production Code" placement="top">
+                    <div slot="content" class="algolia-no-index">
+                      Code being used in an actual product with actual users
+                    </div>
+                  </popover>
+                </div>
+                <div></div>
+              </div>
+            </div>
+        </panel>
+        <p><span id="W3-2b"></span></p>
+        <panel type="seamless" expanded popup-url="/website/book/codeQuality/followStandard/introduction">
+          <span slot="header" class="card-title">
+<span class="badge badge-pill badge-light text-mute">W3.2b</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+            aria-hidden="true"></span></span>
+          </span>
+          <h4 id="implementation-code-quality-style-introduction"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Style →</span></span></small> <strong><span>Introduction</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-style-introduction"></a></h4>
           </span>
           <div>
             <div class="indented">
               <div></div>
               <p></p>
-              <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use JAR files</span>
+              <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain the need for following a standard</span>
                 </span>
                 </span>
                 </span>
@@ -651,23 +780,37 @@ second line
               <p></p>
               <p></p>
               <div>
-                <p><strong>Java applications are typically delivered as JAR (short for <em>Java Archive</em>) files.</strong> A JAR contains Java classes and other resources (icons, media files, etc.).</p>
-                <p>An executable JAR file can be launched using the <code>java -jar</code> command.</p>
-                <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>java -jar foo.jar</code> launches the <code>foo.jar</code> file.</p>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can download the Collate-GUI.jar from <a href="https://se-edu.github.io/collate/">https://se-edu.github.io/collate/</a> and run it using the command<code>java -jar Collate-GUI.jar</code>                    command.</p>
-                </box>
-                <p>The IDE can help you to package your application as a JAR file.</p>
+                <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
+                <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location of opening
+                  and closing braces, indentation styles and naming styles (e.g. whether to use <em>Hungarian style</em>, <em>Pascal casing</em>, <em>Camel casing</em>, etc.). It is important that the whole team/company use the same coding standard and
+                  that standard is not generally inconsistent with typical industry practices. <span class="dimmed">If a company's coding standards is very different from what is used typically in the industry, new recruits will take longer to get used to the company's coding style.</span></p>
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <ul>
-                        <li><a href="https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html">Oracle's tutorial on JAR files</a></li>
-                      </ul>
-                      <p><strong><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Creating a JAR file in Intellij</strong> - A video by Artur Spirin:</p>
-                      <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/3Xo6zSBgdgk" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is the recommended approach regarding coding standards?" class="algolia-no-index">
+                        <question>
+                          <p>What is the recommended approach regarding coding standards?</p>
+                          <ul radio-group="5c5a1" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                          </ul>
+                          <div slot="answer" class="algolia-no-index">
+                            <p>c</p>
+                          </div>
+                        </question>
+                      </panel>
+                    </div>
+                    <div>
+                      <panel header="<md>:glyphicon-question-sign:</md> What is the aim? What is the value?" class="algolia-no-index">
+                        <question has-input>
+                          <p>What is the aim of using a coding standard? How does it help?</p>
+                        </question>
+                      </panel>
                     </div>
                   </panel>
                 </div>
@@ -677,27 +820,27 @@ second line
         </panel>
       </div>
       </panel>
-      <p><span id="W3-2"></span></p>
+      <p></p>
+      <p><span id="W3-3"></span></p>
       <panel type="seamless" no-close expandable="true" expanded>
-        <span slot="header" class="card-title"><div><h2 id="w3-2-coding-standards"><span class="dimmed">[W3.2]</span> <strong>Coding Standards</strong> <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small>
-        <a class="fa fa-anchor" href="#w3-2-coding-standards"></a>
+        <span slot="header" class="card-title"><div><h2 id="w3-3-developer-testing"><span class="dimmed">[W3.3]</span> <strong>Developer Testing</strong> <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small>
+        <a class="fa fa-anchor" href="#w3-3-developer-testing"></a>
         </h2>
     </div>
     </span>
     <div class="indented-level1">
-      <p><span id="W3-2a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/introduction/basic">
+      <p><span id="W3-3a"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/developerTesting/what">
         <span slot="header" class="card-title">
-<span class="badge badge-pill badge-light text-mute">W3.2a</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+<span class="badge badge-pill badge-light text-mute">W3.3a</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         </span>
-        <h4 id="implementation-code-quality-introduction-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-introduction-what"></a></h4>
+        <h4 id="quality-assurance-testing-developer-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Developer Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-developer-testing-what"></a></h4>
         </span>
         <div>
           <div class="indented">
             <div></div>
             <p></p>
-            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain the importance of code quality</span>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain developer testing</span>
               </span>
               </span>
               </span>
@@ -706,32 +849,25 @@ second line
             <p></p>
             <p></p>
             <div>
-              <blockquote>
-                <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
-              </blockquote>
-              <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
-              <popover id="pop:production-code" title="<md>:glyphicon-eye-open:</md> Production Code" placement="top">
-                <div slot="content" class="algolia-no-index">
-                  Code being used in an actual product with actual users
-                </div>
-              </popover>
+              <p><strong><em>Developer testing</em> is the testing done by the developers themselves</strong> as opposed to professional testers or end-users.</p>
             </div>
             <div></div>
           </div>
         </div>
       </panel>
-      <p><span id="W3-2b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/followStandard/introduction">
+      <p><span id="W3-3b"></span></p>
+      <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/developerTesting/why">
         <span slot="header" class="card-title">
-<span class="badge badge-pill badge-light text-mute">W3.2b</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+<span class="badge badge-pill badge-light text-mute">W3.3b</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         </span>
-        <h4 id="implementation-code-quality-style-introduction"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Style →</span></span></small> <strong><span>Introduction</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-style-introduction"></a></h4>
+        <h4 id="quality-assurance-testing-developer-testing-why"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Developer Testing →</span></span></small> <strong><span>Why</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-developer-testing-why"></a></h4>
         </span>
         <div>
           <div class="indented">
             <div></div>
             <p></p>
-            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain the need for following a standard</span>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain the need for early developer testing</span>
               </span>
               </span>
               </span>
@@ -740,35 +876,66 @@ second line
             <p></p>
             <p></p>
             <div>
-              <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
-              <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location of opening
-                and closing braces, indentation styles and naming styles (e.g. whether to use <em>Hungarian style</em>, <em>Pascal casing</em>, <em>Camel casing</em>, etc.). It is important that the whole team/company use the same coding standard and
-                that standard is not generally inconsistent with typical industry practices. <span class="dimmed">If a company's coding standards is very different from what is used typically in the industry, new recruits will take longer to get used to the company's coding style.</span></p>
-              <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
+              <p><strong>Delaying testing until the full product is complete has a number of disadvantages:</strong></p>
+              <ul>
+                <li><strong>Locating the cause of such a test case failure is difficult due to a large search space;</strong> in a large system, the search space could be millions of lines of code, written by hundreds of developers! The failure may also be
+                  due to multiple inter-related bugs.</li>
+                <li><strong>Fixing a bug found during such testing could result in major rework</strong>, especially if the bug originated during the design or during requirements specification <span class="dimmed">i.e. a faulty design or faulty requirements</span>.</li>
+                <li><strong>One bug might 'hide' other bugs</strong>, which could emerge only after the first bug is fixed.</li>
+                <li><strong>The delivery may have to be delayed</strong> if too many bugs were found during testing.</li>
+              </ul>
+              <p><strong>Therefore, it is better to do early testing</strong>, as hinted by the popular rule of thumb given below, also illustrated by the graph below it.</p>
+              <blockquote>
+                <p>The earlier a bug is found, the easier and cheaper to have it fixed.</p>
+              </blockquote>
+              <img src="/website/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
+              <p></p>
+              <p>Such early testing of partially developed software is usually, and by necessity, done by the developers themselves i.e. developer testing.</p>
             </div>
             <div>
               <div>
                 <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is the recommended approach regarding coding standards?" class="algolia-no-index">
-                      <question>
-                        <p>What is the recommended approach regarding coding standards?</p>
-                        <ul radio-group="5c5a1" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
-                        </ul>
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: implications of developers testing their own code" class="algolia-no-index">
+                      <question has-input="true">
+                        <p>Discuss pros and cons of developers testing their own code.</p>
                         <div slot="answer" class="algolia-no-index">
-                          <p>c</p>
+                          <p>Pros:</p>
+                          <ul>
+                            <li>Can be done early (the earlier we find a bug, the cheaper it is to fix).</li>
+                            <li>Can be done at lower levels, for examples, at operation and class level (testers usually test the system at UI level).</li>
+                            <li>It is possible to do more thorough testing because developers know the expected external behavior as well as the internal structure of the component.</li>
+                            <li>It forces developers to take responsibility for their own work (they cannot claim that &quot;testing is the job of the testers&quot;).</li>
+                          </ul>
+                          <p>Cons:</p>
+                          <ul>
+                            <li>A developer may subconsciously test only situations that he knows to work (i.e. test it too 'gently').</li>
+                            <li>A developer may be blind to his own mistakes (if he did not consider a certain combination of input while writing code, it is possible for him to miss it again during testing).</li>
+                            <li>A developer may have misunderstood what the SUT is supposed to do in the first place.</li>
+                            <li>A developer may lack the testing expertise.</li>
+                          </ul>
                         </div>
                       </question>
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> What is the aim? What is the value?" class="algolia-no-index">
-                      <question has-input>
-                        <p>What is the aim of using a coding standard? How does it help?</p>
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Cost of bug fixing over time" class="algolia-no-index">
+                      <question>
+                        <p>The cost of fixing a bug goes down as we reach the product release.</p>
+                        <ul radio-group="37242" class="radio-list">
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> True</label></li>
+                          <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> False</label></li>
+                        </ul>
+                        <div slot="answer" class="algolia-no-index">
+                          <p>False. The cost goes up over time.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                  <div>
+                    <panel header="<md>:glyphicon-question-sign:</md> Why early testing?" class="algolia-no-index">
+                      <question has-input="true">
+                        <p>Explain why early testing by developers is important.</p>
                       </question>
                     </panel>
                   </div>
@@ -780,54 +947,27 @@ second line
       </panel>
     </div>
     </panel>
-    <p></p>
-    <p><span id="W3-3"></span></p>
+    <p><span id="W3-4"></span></p>
     <panel type="seamless" no-close expandable="true" expanded>
-      <span slot="header" class="card-title"><div><h2 id="w3-3-developer-testing"><span class="dimmed">[W3.3]</span> <strong>Developer Testing</strong> <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small>
-      <a class="fa fa-anchor" href="#w3-3-developer-testing"></a>
+      <span slot="header" class="card-title"><div><h2 id="w3-4-unit-testing"><span class="dimmed">[W3.4]</span> <strong>Unit Testing</strong> <small><small><span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
+      <a class="fa fa-anchor" href="#w3-4-unit-testing"></a>
       </h2>
   </div>
   </span>
   <div class="indented-level1">
-    <p><span id="W3-3a"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/developerTesting/what">
+    <p><span id="W3-4a"></span></p>
+    <panel type="seamless" expanded popup-url="/website/book/testing/testAutomation/usingTestDrivers">
       <span slot="header" class="card-title">
-<span class="badge badge-pill badge-light text-mute">W3.3a</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-      </span>
-      <h4 id="quality-assurance-testing-developer-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Developer Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-developer-testing-what"></a></h4>
-      </span>
-      <div>
-        <div class="indented">
-          <div></div>
-          <p></p>
-          <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain developer testing</span>
-            </span>
-            </span>
-            </span>
-          </p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <div>
-            <p><strong><em>Developer testing</em> is the testing done by the developers themselves</strong> as opposed to professional testers or end-users.</p>
-          </div>
-          <div></div>
-        </div>
-      </div>
-    </panel>
-    <p><span id="W3-3b"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/developerTesting/why">
-      <span slot="header" class="card-title">
-<span class="badge badge-pill badge-light text-mute">W3.3b</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+<span class="badge badge-pill badge-light text-mute">W3.4a</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       </span>
-      <h4 id="quality-assurance-testing-developer-testing-why"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Developer Testing →</span></span></small> <strong><span>Why</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-developer-testing-why"></a></h4>
+      <h4 id="quality-assurance-testing-test-automation-test-automation-using-test-drivers"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Test Automation →</span></span></small> <strong><span>Test Automation Using Test Drivers</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-test-automation-test-automation-using-test-drivers"></a></h4>
       </span>
       <div>
         <div class="indented">
           <div></div>
           <p></p>
-          <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain the need for early developer testing</span>
+          <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain test drivers</span>
             </span>
             </span>
             </span>
@@ -836,109 +976,10 @@ second line
           <p></p>
           <p></p>
           <div>
-            <p><strong>Delaying testing until the full product is complete has a number of disadvantages:</strong></p>
-            <ul>
-              <li><strong>Locating the cause of such a test case failure is difficult due to a large search space;</strong> in a large system, the search space could be millions of lines of code, written by hundreds of developers! The failure may also be
-                due to multiple inter-related bugs.</li>
-              <li><strong>Fixing a bug found during such testing could result in major rework</strong>, especially if the bug originated during the design or during requirements specification <span class="dimmed">i.e. a faulty design or faulty requirements</span>.</li>
-              <li><strong>One bug might 'hide' other bugs</strong>, which could emerge only after the first bug is fixed.</li>
-              <li><strong>The delivery may have to be delayed</strong> if too many bugs were found during testing.</li>
-            </ul>
-            <p><strong>Therefore, it is better to do early testing</strong>, as hinted by the popular rule of thumb given below, also illustrated by the graph below it.</p>
-            <blockquote>
-              <p>The earlier a bug is found, the easier and cheaper to have it fixed.</p>
-            </blockquote>
-            <img src="/website/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
-            <p></p>
-            <p>Such early testing of partially developed software is usually, and by necessity, done by the developers themselves i.e. developer testing.</p>
-          </div>
-          <div>
-            <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
-                <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: implications of developers testing their own code" class="algolia-no-index">
-                    <question has-input="true">
-                      <p>Discuss pros and cons of developers testing their own code.</p>
-                      <div slot="answer" class="algolia-no-index">
-                        <p>Pros:</p>
-                        <ul>
-                          <li>Can be done early (the earlier we find a bug, the cheaper it is to fix).</li>
-                          <li>Can be done at lower levels, for examples, at operation and class level (testers usually test the system at UI level).</li>
-                          <li>It is possible to do more thorough testing because developers know the expected external behavior as well as the internal structure of the component.</li>
-                          <li>It forces developers to take responsibility for their own work (they cannot claim that &quot;testing is the job of the testers&quot;).</li>
-                        </ul>
-                        <p>Cons:</p>
-                        <ul>
-                          <li>A developer may subconsciously test only situations that he knows to work (i.e. test it too 'gently').</li>
-                          <li>A developer may be blind to his own mistakes (if he did not consider a certain combination of input while writing code, it is possible for him to miss it again during testing).</li>
-                          <li>A developer may have misunderstood what the SUT is supposed to do in the first place.</li>
-                          <li>A developer may lack the testing expertise.</li>
-                        </ul>
-                      </div>
-                    </question>
-                  </panel>
-                </div>
-                <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Cost of bug fixing over time" class="algolia-no-index">
-                    <question>
-                      <p>The cost of fixing a bug goes down as we reach the product release.</p>
-                      <ul radio-group="37242" class="radio-list">
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> True</label></li>
-                        <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> False</label></li>
-                      </ul>
-                      <div slot="answer" class="algolia-no-index">
-                        <p>False. The cost goes up over time.</p>
-                      </div>
-                    </question>
-                  </panel>
-                </div>
-                <div>
-                  <panel header="<md>:glyphicon-question-sign:</md> Why early testing?" class="algolia-no-index">
-                    <question has-input="true">
-                      <p>Explain why early testing by developers is important.</p>
-                    </question>
-                  </panel>
-                </div>
-              </panel>
-            </div>
-          </div>
-        </div>
-      </div>
-    </panel>
-  </div>
-  </panel>
-  <p><span id="W3-4"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
-    <span slot="header" class="card-title"><div><h2 id="w3-4-unit-testing"><span class="dimmed">[W3.4]</span> <strong>Unit Testing</strong> <small><small><span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
-    <a class="fa fa-anchor" href="#w3-4-unit-testing"></a>
-    </h2>
-    </div>
-    </span>
-    <div class="indented-level1">
-      <p><span id="W3-4a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testing/testAutomation/usingTestDrivers">
-        <span slot="header" class="card-title">
-<span class="badge badge-pill badge-light text-mute">W3.4a</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        </span>
-        <h4 id="quality-assurance-testing-test-automation-test-automation-using-test-drivers"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Test Automation →</span></span></small> <strong><span>Test Automation Using Test Drivers</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-test-automation-test-automation-using-test-drivers"></a></h4>
-        </span>
-        <div>
-          <div class="indented">
-            <div></div>
-            <p></p>
-            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain test drivers</span>
-              </span>
-              </span>
-              </span>
-            </p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <div>
-              <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
-              <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>PayrollTest</code> ‘drives’ the <code>Payroll</code> class by sending it test inputs and verifies if the output is as expected.</p>
+            <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
+            <box>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>PayrollTest</code> ‘drives’ the <code>Payroll</code> class by sending it test inputs and verifies if the output is as expected.</p>
+              <div class="code-block">
                 <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
 
@@ -964,36 +1005,39 @@ second line
     }
 }
 </code></pre>
-              </box>
-            </div>
-            <div></div>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+            </box>
           </div>
+          <div></div>
         </div>
-      </panel>
-      <p><span id="W3-4b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testing/testAutomation/tools">
-        <span slot="header" class="card-title">
+      </div>
+    </panel>
+    <p><span id="W3-4b"></span></p>
+    <panel type="seamless" expanded popup-url="/website/book/testing/testAutomation/tools">
+      <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.4b</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        </span>
-        <h4 id="quality-assurance-testing-test-automation-test-automation-tools"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Test Automation →</span></span></small> <strong><span>Test Automation Tools</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-test-automation-test-automation-tools"></a></h4>
-        </span>
-        <div>
-          <div class="indented">
-            <div></div>
-            <p></p>
-            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain test automation tools</span>
-              </span>
-              </span>
-              </span>
-            </p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <div>
-              <p><strong>JUnit is a tool for automated testing of Java programs.</strong> Similar tools are available for other languages and for automating different types of testing.</p>
-              <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This an automated test for a <code>Payroll</code> class, written using JUnit libraries.</p>
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      </span>
+      <h4 id="quality-assurance-testing-test-automation-test-automation-tools"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Test Automation →</span></span></small> <strong><span>Test Automation Tools</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-test-automation-test-automation-tools"></a></h4>
+      </span>
+      <div>
+        <div class="indented">
+          <div></div>
+          <p></p>
+          <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain test automation tools</span>
+            </span>
+            </span>
+            </span>
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <div>
+            <p><strong>JUnit is a tool for automated testing of Java programs.</strong> Similar tools are available for other languages and for automating different types of testing.</p>
+            <box>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This an automated test for a <code>Payroll</code> class, written using JUnit libraries.</p>
+              <div class="code-block">
                 <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testTotalSalary</span><span class="hljs-params">()</span></span>{
     Payroll p = <span class="hljs-keyword">new</span> Payroll();
@@ -1009,44 +1053,47 @@ second line
     <span class="hljs-comment">//more tests...</span>
 }
 </code></pre>
-              </box>
-              <p>Most modern IDEs has integrated support for testing tools. The figure below shows the JUnit output when running some JUnit tests using the Eclipse IDE.</p>
-              <img src="/website/book/testing/testAutomation/tools/images/junit.png" height="190">
-              <p></p>
-            </div>
-            <div></div>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+            </box>
+            <p>Most modern IDEs has integrated support for testing tools. The figure below shows the JUnit output when running some JUnit tests using the Eclipse IDE.</p>
+            <img src="/website/book/testing/testAutomation/tools/images/junit.png" height="190">
+            <p></p>
           </div>
+          <div></div>
         </div>
-      </panel>
-      <p><span id="W3-4c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/unitTesting/what">
-        <span slot="header" class="card-title">
+      </div>
+    </panel>
+    <p><span id="W3-4c"></span></p>
+    <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/unitTesting/what">
+      <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.4c</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-        <h4 id="quality-assurance-testing-unit-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Unit Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-unit-testing-what"></a></h4>
-        </span>
-        <div>
-          <div class="indented">
-            <div></div>
-            <p></p>
-            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain unit testing</span>
-              </span>
-              </span>
-              </span>
-            </p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <div>
-              <box type="definition">
+      <h4 id="quality-assurance-testing-unit-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Unit Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-unit-testing-what"></a></h4>
+      </span>
+      <div>
+        <div class="indented">
+          <div></div>
+          <p></p>
+          <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain unit testing</span>
+            </span>
+            </span>
+            </span>
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <div>
+            <box type="definition">
+              <div>
+                <p><strong>Unit testing</strong>: testing individual units (methods, classes, subsystems, ...) to ensure each piece works correctly</p>
+              </div>
+            </box>
+            <p>In OOP code, it is common to write one or more unit tests for each public method of a class.</p>
+            <box>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
+              <div class="alt-java">
                 <div>
-                  <p><strong>Unit testing</strong>: testing individual units (methods, classes, subsystems, ...) to ensure each piece works correctly</p>
-                </div>
-              </box>
-              <p>In OOP code, it is common to write one or more unit tests for each public method of a class.</p>
-              <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
-                <div class="alt-java">
-                  <div>
+                  <div class="code-block">
                     <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
         <span class="hljs-comment">//...</span>
@@ -1058,6 +1105,9 @@ second line
     
 }
 </code></pre>
+                    <div class="code-block-lang"><span>java</span></div>
+                  </div>
+                  <div class="code-block">
                     <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{
     
     <span class="hljs-meta">@Test</span>
@@ -1076,10 +1126,13 @@ second line
     }
 }
 </code></pre>
+                    <div class="code-block-lang"><span>java</span></div>
                   </div>
                 </div>
-                <div class="alt-python">
-                  <div>
+              </div>
+              <div class="alt-python">
+                <div>
+                  <div class="code-block">
                     <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
@@ -1101,47 +1154,50 @@ second line
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span>
       <span class="hljs-comment"># another unit tests for write(string) method</span>
 </code></pre>
+                    <div class="code-block-lang"><span>python</span></div>
                   </div>
                 </div>
-              </box>
-            </div>
-            <div>
-              <div>
-                <panel header="<md>:fas-paperclip:</md> Resources" class="algolia-no-index">
-                  <p><strong>Side readings:</strong></p>
-                  <ul>
-                    <li>[Web article] <a href="http://blog.goyello.com/2011/10/06/three-pillars-of-unit-tests">The three pillars of unit testing</a> - A short article about what makes a good unit test.</li>
-                    <li><a href="http://avandeursen.com/2014/02/22/gotofail-security/">Learning from Apple’s #gotofail Security Bug</a> - How unit testing (and other good coding practices) could have prevented a major security bug.</li>
-                  </ul>
-                </panel>
               </div>
+            </box>
+          </div>
+          <div>
+            <div>
+              <panel header="<md>:fas-paperclip:</md> Resources" class="algolia-no-index">
+                <p><strong>Side readings:</strong></p>
+                <ul>
+                  <li>[Web article] <a href="http://blog.goyello.com/2011/10/06/three-pillars-of-unit-tests">The three pillars of unit testing</a> - A short article about what makes a good unit test.</li>
+                  <li><a href="http://avandeursen.com/2014/02/22/gotofail-security/">Learning from Apple’s #gotofail Security Bug</a> - How unit testing (and other good coding practices) could have prevented a major security bug.</li>
+                </ul>
+              </panel>
             </div>
           </div>
         </div>
-      </panel>
-      <p><span id="W3-4d"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/junit/basic">
-        <span slot="header" class="card-title">
+      </div>
+    </panel>
+    <p><span id="W3-4d"></span></p>
+    <panel type="seamless" expanded popup-url="/website/book/junit/basic">
+      <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.4d</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-        </span>
-        <h4 id="tools-junit-junit-basic"><small><span class="font-weight-bold text-muted"><span>Tools → JUnit →</span></span></small> <strong><span>JUnit: Basic</span></strong><a class="fa fa-anchor" href="#tools-junit-junit-basic"></a></h4>
-        </span>
-        <div>
-          <div class="indented">
-            <div></div>
-            <p></p>
-            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use simple JUnit tests</span>
-              </span>
-              </span>
-              </span>
-            </p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <div>
-              <p>When writing JUnit tests for a class <code>Foo</code>, the common practice is to create a <code>FooTest</code> class, which will contain various test methods.</p>
-              <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose we want to write tests for the <code>IntPair</code> class below.</p>
+      </span>
+      <h4 id="tools-junit-junit-basic"><small><span class="font-weight-bold text-muted"><span>Tools → JUnit →</span></span></small> <strong><span>JUnit: Basic</span></strong><a class="fa fa-anchor" href="#tools-junit-junit-basic"></a></h4>
+      </span>
+      <div>
+        <div class="indented">
+          <div></div>
+          <p></p>
+          <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use simple JUnit tests</span>
+            </span>
+            </span>
+            </span>
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <div>
+            <p>When writing JUnit tests for a class <code>Foo</code>, the common practice is to create a <code>FooTest</code> class, which will contain various test methods.</p>
+            <box>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose we want to write tests for the <code>IntPair</code> class below.</p>
+              <div class="code-block">
                 <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntPair</span> </span>{
     <span class="hljs-keyword">int</span> first;
     <span class="hljs-keyword">int</span> second;
@@ -1164,7 +1220,10 @@ second line
     }
 }
 </code></pre>
-                <p>Here's a <code>IntPairTest</code> class to match (using JUnit 5).</p>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+              <p>Here's a <code>IntPairTest</code> class to match (using JUnit 5).</p>
+              <div class="code-block">
                 <pre><code class="hljs java"><span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
 
 <span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.jupiter.api.Assertions.assertEquals;
@@ -1196,79 +1255,82 @@ second line
     }
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+            </box>
+            <p>Notes:</p>
+            <ul>
+              <li>Each test method is marked with a <code>@Test</code> annotation.</li>
+              <li>Tests use <code>Assert.assertEquals(expected, actual)</code> methods to compare the expected output with the actual output. If they do not match, the test will fail. JUnit comes with other similar methods such as <code>Assert.assertNull</code>                and <code>Assert.assertTrue</code>.</li>
+              <li>Java code normally use camelCase for method names e.g., <code>testStringConversion</code> but when writing test methods, sometimes another convention is used: <code>whatIsBeingTested_descriptionOfTestInputs_expectedOutcome</code> e.g.,
+                <code>intDivision_zeroDivisor_exceptionThrown</code></li>
+              <li>There are <a href="https://howtodoinjava.com/junit5/expected-exception-example/">several ways to verify the code throws the correct exception</a>. The third test method in the example above shows one of the simpler methods. If the exception
+                is thrown, it will be caught and further verified inside the <code>catch</code> block. But if it is not thrown as expected, the test will reach <code>Assert.fail()</code> line and will fail as a result.</li>
+              <li>The easiest way to run JUnit tests is to do it via the IDE. For example, in Intellij you can right-click the folder containing test classes and choose 'Run all tests...'</li>
+            </ul>
+            <div v-closeable alt="Junit tutorial video" class="non-printable">
+              <box>
+                <p><strong><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Adding JUnit 5 to your IntelliJ Project</strong> <sub>-- by Kevintroko@YouTube</sub></p>
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Z8V7rnvDeB4" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </box>
-              <p>Notes:</p>
-              <ul>
-                <li>Each test method is marked with a <code>@Test</code> annotation.</li>
-                <li>Tests use <code>Assert.assertEquals(expected, actual)</code> methods to compare the expected output with the actual output. If they do not match, the test will fail. JUnit comes with other similar methods such as <code>Assert.assertNull</code>                  and <code>Assert.assertTrue</code>.</li>
-                <li>Java code normally use camelCase for method names e.g., <code>testStringConversion</code> but when writing test methods, sometimes another convention is used: <code>whatIsBeingTested_descriptionOfTestInputs_expectedOutcome</code> e.g.,
-                  <code>intDivision_zeroDivisor_exceptionThrown</code></li>
-                <li>There are <a href="https://howtodoinjava.com/junit5/expected-exception-example/">several ways to verify the code throws the correct exception</a>. The third test method in the example above shows one of the simpler methods. If the exception
-                  is thrown, it will be caught and further verified inside the <code>catch</code> block. But if it is not thrown as expected, the test will reach <code>Assert.fail()</code> line and will fail as a result.</li>
-                <li>The easiest way to run JUnit tests is to do it via the IDE. For example, in Intellij you can right-click the folder containing test classes and choose 'Run all tests...'</li>
-              </ul>
-              <div v-closeable alt="Junit tutorial video" class="non-printable">
-                <box>
-                  <p><strong><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Adding JUnit 5 to your IntelliJ Project</strong> <sub>-- by Kevintroko@YouTube</sub></p>
-                  <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Z8V7rnvDeB4" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                </box>
-              </div>
             </div>
+          </div>
+          <div>
             <div>
-              <div>
-                <panel header="<md>:fas-paperclip:</md> Resources" expanded>
-                  <ul>
-                    <li><a href="https://junit.org/junit5/docs/current/user-guide/">JUnit Official User Guide</a></li>
-                    <li><a href="https://www.testingexcellence.com/junit-5-annotations/">JUnit 5 Tutorial – Common Annotations With Examples</a> - a short tutorial</li>
-                    <li>How to test private methods in Java? [ <a href="http://stackoverflow.com/questions/34571/whats-the-proper-way-to-test-a-class-with-private-methods-using-junit">short answer</a> ] [ <a href="http://www.artima.com/suiterunner/private.html">long answer</a>                      ]</li>
-                  </ul>
-                </panel>
-              </div>
+              <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                <ul>
+                  <li><a href="https://junit.org/junit5/docs/current/user-guide/">JUnit Official User Guide</a></li>
+                  <li><a href="https://www.testingexcellence.com/junit-5-annotations/">JUnit 5 Tutorial – Common Annotations With Examples</a> - a short tutorial</li>
+                  <li>How to test private methods in Java? [ <a href="http://stackoverflow.com/questions/34571/whats-the-proper-way-to-test-a-class-with-private-methods-using-junit">short answer</a> ] [ <a href="http://www.artima.com/suiterunner/private.html">long answer</a>                    ]</li>
+                </ul>
+              </panel>
             </div>
           </div>
         </div>
-      </panel>
-      <p><span id="W3-4e"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/unitTesting/stubs">
-        <span slot="header" class="card-title">
+      </div>
+    </panel>
+    <p><span id="W3-4e"></span></p>
+    <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/unitTesting/stubs">
+      <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.4e</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        </span>
-        <h4 id="quality-assurance-testing-unit-testing-stubs"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Unit Testing →</span></span></small> <strong><span>Stubs</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-unit-testing-stubs"></a></h4>
-        </span>
-        <div>
-          <div class="indented">
-            <div>
-              <p>
-                <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Quality Assurance → Testing → Unit Testing → What →%%" popup-url="/website/book/testing/testingTypes/unitTesting/what"
-                  class="algolia-no-index"></panel>
-              </p>
-            </div>
-            <p></p>
-            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use stubs to isolate an SUT from its dependencies</span>
-              </span>
-              </span>
-              </span>
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      </span>
+      <h4 id="quality-assurance-testing-unit-testing-stubs"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Unit Testing →</span></span></small> <strong><span>Stubs</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-unit-testing-stubs"></a></h4>
+      </span>
+      <div>
+        <div class="indented">
+          <div>
+            <p>
+              <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Quality Assurance → Testing → Unit Testing → What →%%" popup-url="/website/book/testing/testingTypes/unitTesting/what"
+                class="algolia-no-index"></panel>
             </p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <div>
-              <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
-                <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
-              <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the
-                  <code>Storage</code> class.</p>
-              </box>
-              <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
-              <box type="definition">
-                <div>
-                  <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of
-                    predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
-                </div>
-              </box>
-              <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below:</p>
+          </div>
+          <p></p>
+          <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use stubs to isolate an SUT from its dependencies</span>
+            </span>
+            </span>
+            </span>
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <div>
+            <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
+              <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
+            <box>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the
+                <code>Storage</code> class.</p>
+            </box>
+            <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
+            <box type="definition">
+              <div>
+                <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined
+                  inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
+              </div>
+            </box>
+            <box>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below:</p>
+              <div class="code-block">
                 <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     Storage s;
 
@@ -1281,10 +1343,16 @@ second line
     }
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+              <div class="code-block">
                 <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{
     <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;
 }
 </code></pre>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+              <div class="code-block">
                 <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
 
     <span class="hljs-meta">@Override</span>
@@ -1297,19 +1365,28 @@ second line
     }
 }
 </code></pre>
-                <p>Normally, you would use the <code>Logic</code> class as follows (note how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+              <p>Normally, you would use the <code>Logic</code> class as follows (note how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
+              <div class="code-block">
                 <pre><code class="hljs java">Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
 String name = logic.getName(<span class="hljs-number">23</span>);
 </code></pre>
-                <p>You can test it like this:</p>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+              <p>You can test it like this:</p>
+              <div class="code-block">
                 <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
     Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
     assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));
 }
 </code></pre>
-                <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code>                  <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
-                <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+              <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code>                <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
+              <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
+              <div class="code-block">
                 <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
 
     <span class="hljs-meta">@Override</span>
@@ -1322,76 +1399,81 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     }
 }
 </code></pre>
-                <p>Note how the <code>StorageStub</code> has the same interface as <code>DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response
-                  <code>DatabaseStorage</code> is expected to return for the given test input.</p>
-                <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+              <p>Note how the <code>StorageStub</code> has the same interface as <code>DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response
+                <code>DatabaseStorage</code> is expected to return for the given test input.</p>
+              <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
+              <div class="code-block">
                 <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
     Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());
     assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
 }
 </code></pre>
-              </box>
-              <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
+                <div class="code-block-lang"><span>java</span></div>
+              </div>
+            </box>
+            <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
+          </div>
+          <div>
+            <div>
+              <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                <ul>
+                  <li><a href="https://martinfowler.com/articles/mocksArentStubs.html"><strong>Mocks Aren't Stubs</strong></a> by Martin Fowler -- An in-depth article about how Stubs differ from other types of test helpers.</li>
+                </ul>
+              </panel>
             </div>
             <div>
-              <div>
-                <panel header="<md>:fas-paperclip:</md> Resources" expanded>
-                  <ul>
-                    <li><a href="https://martinfowler.com/articles/mocksArentStubs.html"><strong>Mocks Aren't Stubs</strong></a> by Martin Fowler -- An in-depth article about how Stubs differ from other types of test helpers.</li>
-                  </ul>
-                </panel>
-              </div>
-              <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
-                  <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Purpose of stubs" class="algolia-no-index">
-                      <question>
-                        <p>Stubs help us to test a component in isolation from its dependencies.</p>
-                        <ul radio-group="a0303" class="radio-list">
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> True</label></li>
-                          <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> False</label></li>
-                        </ul>
-                        <div slot="answer" class="algolia-no-index">
-                          <p>True</p>
-                        </div>
-                      </question>
-                    </panel>
-                  </div>
-                </panel>
-              </div>
+              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <div>
+                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Purpose of stubs" class="algolia-no-index">
+                    <question>
+                      <p>Stubs help us to test a component in isolation from its dependencies.</p>
+                      <ul radio-group="a0303" class="radio-list">
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> True</label></li>
+                        <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> False</label></li>
+                      </ul>
+                      <div slot="answer" class="algolia-no-index">
+                        <p>True</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
             </div>
           </div>
         </div>
-      </panel>
-      <p><span id="W3-4f"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/junit/intermediate">
-        <span slot="header" class="card-title">
+      </div>
+    </panel>
+    <p><span id="W3-4f"></span></p>
+    <panel type="seamless" expanded popup-url="/website/book/junit/intermediate">
+      <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.4f</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        </span>
-        <h4 id="tools-junit-junit-intermediate"><small><span class="font-weight-bold text-muted"><span>Tools → JUnit →</span></span></small> <strong><span>JUnit: Intermediate</span></strong><a class="fa fa-anchor" href="#tools-junit-junit-intermediate"></a></h4>
-        </span>
-        <div>
-          <div class="indented">
-            <div></div>
-            <p></p>
-            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use intermediate features of JUnit</span>
-              </span>
-              </span>
-              </span>
-            </p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <div>
-              <p>Skim through the <a href="https://junit.org/junit5/docs/current/user-guide/">JUnit 5 User Guide</a> to see what advanced techniques are available. If applicable, feel free to adopt them.</p>
-            </div>
-            <div></div>
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      </span>
+      <h4 id="tools-junit-junit-intermediate"><small><span class="font-weight-bold text-muted"><span>Tools → JUnit →</span></span></small> <strong><span>JUnit: Intermediate</span></strong><a class="fa fa-anchor" href="#tools-junit-junit-intermediate"></a></h4>
+      </span>
+      <div>
+        <div class="indented">
+          <div></div>
+          <p></p>
+          <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use intermediate features of JUnit</span>
+            </span>
+            </span>
+            </span>
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <div>
+            <p>Skim through the <a href="https://junit.org/junit5/docs/current/user-guide/">JUnit 5 User Guide</a> to see what advanced techniques are available. If applicable, feel free to adopt them.</p>
           </div>
+          <div></div>
         </div>
-      </panel>
-    </div>
+      </div>
+    </panel>
+  </div>
   </panel>
   <p></p>
   <p><span id="W3-5"></span></p>
@@ -1635,7 +1717,8 @@ git checkout feature1
               <img src="/website/book/gitAndGithub/mergeConflicts/images/sourcetree_1.png" height="350">
               <p></p>
               <p><strong>3. Try to merge the <code>fix1</code> branch onto the <code>master</code> branch.</strong> Git will pause mid-way during the merge and report a merge conflict. If you open the conflicted file, you will see something like this:</p>
-              <pre><code class="hljs">COLORS
+              <div class="code-block">
+                <pre><code class="hljs">COLORS
 ------
 blue
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
@@ -1646,24 +1729,33 @@ green
 red
 white
 </code></pre>
+                <div class="code-block-lang"><span>txt</span></div>
+              </div>
               <p><strong>4. Observe how the conflicted part is marked</strong> between a line starting with <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> and a line starting with <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>, separated by another line starting with
                 <code>=======</code>.</p>
               <p>This is the conflicting part that is coming from the <code>master</code> branch:</p>
-              <pre><code class="hljs">
+              <div class="code-block">
+                <pre><code class="hljs">
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 black
 =======
 
 </code></pre>
+                <div class="code-block-lang"><span>txt</span></div>
+              </div>
               <p>This is the conflicting part that is coming from the <code>fix1</code> branch:</p>
-              <pre><code class="hljs">
+              <div class="code-block">
+                <pre><code class="hljs">
 =======
 green
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; fix1
 
 </code></pre>
+                <div class="code-block-lang"><span>txt</span></div>
+              </div>
               <p><strong>5. Resolve the conflict by editing the file</strong>. Let us assume you want to keep both lines in the merged version. You can modify the file to be like this:</p>
-              <pre><code class="hljs">COLORS
+              <div class="code-block">
+                <pre><code class="hljs">COLORS
 ------
 blue
 black
@@ -1671,6 +1763,8 @@ green
 red
 white
 </code></pre>
+                <div class="code-block-lang"><span>txt</span></div>
+              </div>
               <p><strong>6. Stage the changes, and commit.</strong></p>
             </div>
             <div></div>
@@ -1712,12 +1806,15 @@ white
             <div>
               <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
               <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
-              <pre><code class="hljs md">
+              <div class="code-block">
+                <pre><code class="hljs md">
 <span class="hljs-section"># Introduction</span>
 Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
 This repo can be used to practice creating PRs.
 
 </code></pre>
+                <div class="code-block-lang"><span>md</span></div>
+              </div>
               <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
               <tabs>
                 <tab header="SourceTree">
@@ -1777,6 +1874,7 @@ This repo can be used to practice creating PRs.
   </panel>
   <p></p>
   </div>
+  </div>
   <nav id="page-nav" class="navbar navbar-light bg-transparent">
     <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -1784,11 +1882,11 @@ This repo can be used to practice creating PRs.
         <a class="nav-link py-1" href="#week-3-jan-27-topics">Week 3 [Jan 27] - Topics&#x200E;</a>
         <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
           <a class="nav-link py-1" href="#w3-1-java">[W3.1] Java 
+      
+      &#x200E;</a>
+          <a class="nav-link py-1" href="#w3-2-coding-standards">[W3.2] Coding Standards 
     
     &#x200E;</a>
-          <a class="nav-link py-1" href="#w3-2-coding-standards">[W3.2] Coding Standards 
-  
-  &#x200E;</a>
           <a class="nav-link py-1" href="#w3-3-developer-testing">[W3.3] Developer Testing 
   
   &#x200E;</a>
@@ -1809,7 +1907,7 @@ This repo can be used to practice creating PRs.
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.7.0</a> at Tue, 24 Dec 2019 12:36:52 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 04:54:36 GMT</small></div>
   </footer>
   </div>
 </body>

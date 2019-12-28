@@ -58,7 +58,8 @@
                           <p>Consider the code below:</p>
                           <div class="row">
                             <div class="col-sm-7">
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+                              <div class="code-block">
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
     Tag tag;
     String name;
 
@@ -68,9 +69,12 @@
     }
 }
 </code></pre>
+                                <div class="code-block-lang"><span>java</span></div>
+                              </div>
                             </div>
                             <div class="col-sm-5">
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
+                              <div class="code-block">
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
     Tag(String value){
         <span class="hljs-comment">//...</span>
     }
@@ -82,15 +86,20 @@
     }
 }
 </code></pre>
+                                <div class="code-block-lang"><span>java</span></div>
+                              </div>
                             </div>
                           </div>
                           <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                          <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
+                          <div class="code-block">
+                            <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
 <span class="hljs-keyword">while</span> (hasRoom){
     Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
     personList.addPerson(p);
 }
 </code></pre>
+                            <div class="code-block-lang"><span>java</span></div>
+                          </div>
                         </question>
                       </panel>
                     </div>

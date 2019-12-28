@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Error Handling: Assertions: What</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -59,8 +59,11 @@
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the Java code below, suppose we set an assertion that <code>timeout</code> returned by <code>Config.getTimeout()</code> is greater than <code>0</code>. Now, if
                         the <code>Config.getTimeout()</code> returned <code>-1</code> in a specific execution of this line, the runtime can detect it as a <em>assertion failure</em> -- i.e. an assumption about the expected behavior of the code turned
                         out to be wrong which could potentially be the result of a bug -- and take some drastic action such as terminating the execution.</p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">int</span> timeout = Config.getTimeout(); 
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-keyword">int</span> timeout = Config.getTimeout(); 
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                     </box>
                   </div>
                   <div></div>

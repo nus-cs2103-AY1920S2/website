@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Software Design Patterns: Observer: What</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -78,31 +78,41 @@
                       <ol>
                         <li>
                           <p>First, create the relevant objects.</p>
-                          <pre><code class="hljs java">StudentList studentList = <span class="hljs-keyword">new</span> StudentList();
+                          <div class="code-block">
+                            <pre><code class="hljs java">StudentList studentList = <span class="hljs-keyword">new</span> StudentList();
 StudentListUi listUi = <span class="hljs-keyword">new</span> StudentListUi();
 StudentStatusUi statusUi = <span class="hljs-keyword">new</span> StudentStatsUi();
 </code></pre>
+                            <div class="code-block-lang"><span>java</span></div>
+                          </div>
                         </li>
                         <li>
                           <p>Next, the two UIs indicate to the <code>StudentList</code> that they are interested in being updated whenever <code>StudentList</code> changes. This is also known as ‘subscribing for updates’.</p>
-                          <pre><code class="hljs java">studentList.addUi(listUi);
+                          <div class="code-block">
+                            <pre><code class="hljs java">studentList.addUi(listUi);
 studentList.addUi(statusUi);
 </code></pre>
+                            <div class="code-block-lang"><span>java</span></div>
+                          </div>
                         </li>
                         <li>
                           <p>Within the <code>addUi</code> operation of <code>StudentList</code>, all Observer objects subscribers are added to an internal data structure called <code>observerList</code>.</p>
-                          <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
+                          <div class="code-block">
+                            <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addUi</span><span class="hljs-params">(Observer o)</span> </span>{
     observerList.add(o);
 }
 </code></pre>
+                            <div class="code-block-lang"><span>java</span></div>
+                          </div>
                         </li>
                       </ol>
                       <p><strong>Now, whenever the data in <code>StudentList</code> changes</strong> (e.g. when a new student is added to the <code>StudentList</code>),</p>
                       <ol>
                         <li>
                           <p>All interested observers are updated by calling the <code>notifyUIs</code> operation.</p>
-                          <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
+                          <div class="code-block">
+                            <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">notifyUIs</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-comment">//for each observer in the list</span>
     <span class="hljs-keyword">for</span>(Observer o: observerList){
@@ -110,14 +120,19 @@ studentList.addUi(statusUi);
     }
 }
 </code></pre>
+                            <div class="code-block-lang"><span>java</span></div>
+                          </div>
                         </li>
                         <li>
                           <p>UIs can then pull data from the <code>StudentList</code> whenever the <code>update</code> operation is called.</p>
-                          <pre><code class="hljs java"><span class="hljs-comment">//StudentListUI class</span>
+                          <div class="code-block">
+                            <pre><code class="hljs java"><span class="hljs-comment">//StudentListUI class</span>
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-comment">//refresh UI by pulling data from StudentList</span>
 }
 </code></pre>
+                            <div class="code-block-lang"><span>java</span></div>
+                          </div>
                           <p>Note that <code>StudentList</code> is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
                         </li>
                       </ol>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Textbook Chapter : Modeling</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -25,14 +25,13 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
-      <div class="w-100 p-1 text-white bg-primary text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
-
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
-        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand">CS2103/T <small>2020 Jan-Apr</small></a>
+        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
         <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
@@ -615,7 +614,8 @@
                     <panel header="<md>:glyphicon-question-sign:</md> Draw Class Diagram for Box etc." class="algolia-no-index">
                       <question>
                         <p>Draw a class diagram for the code below. Show the attributes, methods, associations, navigabilities, and multiplicities in the class diagram below:</p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
+                        <div class="code-block">
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
     <span class="hljs-keyword">private</span> Item[] parts = <span class="hljs-keyword">new</span> Item[<span class="hljs-number">10</span>];
     <span class="hljs-keyword">private</span> Item spareItem;
     <span class="hljs-keyword">private</span> Lid lid; <span class="hljs-comment">// lid of this box</span>
@@ -626,14 +626,22 @@
     }
 }
 </code></pre>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{
+                          <div class="code-block-lang"><span>java</span></div>
+                        </div>
+                        <div class="code-block">
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> totalItems;
 }
 </code></pre>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{
+                          <div class="code-block-lang"><span>java</span></div>
+                        </div>
+                        <div class="code-block">
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{
     Box box; <span class="hljs-comment">// the box for which this is the lid</span>
 }
 </code></pre>
+                          <div class="code-block-lang"><span>java</span></div>
+                        </div>
                       </question>
                     </panel>
                   </div>
@@ -774,16 +782,23 @@
                         <p>Consider the code below:</p>
                         <div class="row">
                           <div class="col-sm-6">
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{
+                            <div class="code-block">
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;
 }
 </code></pre>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>
+                              <div class="code-block-lang"><span>java</span></div>
+                            </div>
+                            <div class="code-block">
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>
          <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;
 }
 </code></pre>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{
+                              <div class="code-block-lang"><span>java</span></div>
+                            </div>
+                            <div class="code-block">
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{
     <span class="hljs-keyword">private</span> Review review;
     <span class="hljs-keyword">private</span> String name;
 
@@ -805,13 +820,19 @@
     }
 }
 </code></pre>
+                              <div class="code-block-lang"><span>java</span></div>
+                            </div>
                           </div>
                           <div class="col-sm-6">
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {
+                            <div class="code-block">
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {
     GOOD, OK, POOR
 }
 </code></pre>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{
+                              <div class="code-block-lang"><span>java</span></div>
+                            </div>
+                            <div class="code-block">
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{
@@ -819,7 +840,10 @@
     }
 }
 </code></pre>
-                            <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
+                              <div class="code-block-lang"><span>java</span></div>
+                            </div>
+                            <div class="code-block">
+                              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{
     <span class="hljs-keyword">private</span> List&lt;Item&gt; items;
@@ -837,6 +861,8 @@
     }
 }
 </code></pre>
+                              <div class="code-block-lang"><span>java</span></div>
+                            </div>
                           </div>
                         </div>
                         <p>(a) Draw a class diagram to represent the code. Show all attributes, methods, associations, navigabilities, visibilities, known multiplicities, and association roles. Show associations as lines.<br> (b) Draw an object diagram to
@@ -879,7 +905,8 @@
                 <div>
                   <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: draw class diagram: Player, Bot, etc." class="algolia-no-index">
                     <p>(a) Draw a class diagram to represent the following code.</p>
-                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Player</span></span>{
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Player</span></span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">challenge</span><span class="hljs-params">()</span></span>;
 }
 
@@ -912,6 +939,8 @@
     }
 }
 </code></pre>
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
                     <p>(b) Add these association classes to the diagram:<br> i. A <code>Player</code> can <em>challenge</em> another <code>Player</code> object. <code>Challenge</code> class keeps track that association between the two <code>Player</code>                      objects: the <em>challenger</em> and the <em>target</em> of the challenge.<br> ii. A <code>Human</code> can <em>train</em> a <code>SmartBot</code> object. <code>Lesson</code> class keeps track of that association.</p>
                     <p>(c) Convert the two association classes to normal classes.</p>
                     <panel header=":key: (a)" class="algolia-no-index">
@@ -974,7 +1003,8 @@
                           <panel header="<md>:glyphicon-question-sign:</md> Draw Class Diagram for Box etc." class="algolia-no-index">
                             <question>
                               <p>Draw a class diagram for the code below. Show the attributes, methods, associations, navigabilities, and multiplicities in the class diagram below:</p>
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
+                              <div class="code-block">
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
     <span class="hljs-keyword">private</span> Item[] parts = <span class="hljs-keyword">new</span> Item[<span class="hljs-number">10</span>];
     <span class="hljs-keyword">private</span> Item spareItem;
     <span class="hljs-keyword">private</span> Lid lid; <span class="hljs-comment">// lid of this box</span>
@@ -985,14 +1015,22 @@
     }
 }
 </code></pre>
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{
+                                <div class="code-block-lang"><span>java</span></div>
+                              </div>
+                              <div class="code-block">
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> totalItems;
 }
 </code></pre>
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{
+                                <div class="code-block-lang"><span>java</span></div>
+                              </div>
+                              <div class="code-block">
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{
     Box box; <span class="hljs-comment">// the box for which this is the lid</span>
 }
 </code></pre>
+                                <div class="code-block-lang"><span>java</span></div>
+                              </div>
                             </question>
                           </panel>
                         </div>
@@ -1355,7 +1393,8 @@
                       <p>Consider the code below:</p>
                       <div class="row">
                         <div class="col-sm-7">
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+                          <div class="code-block">
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
     Tag tag;
     String name;
 
@@ -1365,9 +1404,12 @@
     }
 }
 </code></pre>
+                            <div class="code-block-lang"><span>java</span></div>
+                          </div>
                         </div>
                         <div class="col-sm-5">
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
+                          <div class="code-block">
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
     Tag(String value){
         <span class="hljs-comment">//...</span>
     }
@@ -1379,15 +1421,20 @@
     }
 }
 </code></pre>
+                            <div class="code-block-lang"><span>java</span></div>
+                          </div>
                         </div>
                       </div>
                       <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                      <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
+                      <div class="code-block">
+                        <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
 <span class="hljs-keyword">while</span> (hasRoom){
     Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
     personList.addPerson(p);
 }
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                     </question>
                   </panel>
                 </div>
@@ -1470,12 +1517,16 @@
                   <panel header="<md>:glyphicon-question-sign:</md> Draw Sequence Diagram for printing a quote" class="algolia-no-index">
                     <question>
                       <p>Draw a sequence diagram to represent this code snippet.</p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isFirstPage) {
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isFirstPage) {
     <span class="hljs-keyword">new</span> Quote().print();
 }
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                       <p>The <code>Quote</code> class:</p>
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{
+                      <div class="code-block">
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{
 
     String q;
 
@@ -1493,6 +1544,8 @@
 
 }
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                       <div slot="hint" class="algolia-no-index">
                         <ul>
                           <li>Show <code>new Quote().print();</code> as two method calls.</li>
@@ -2009,7 +2062,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.7.0</a> at Tue, 24 Dec 2019 12:36:52 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 04:54:36 GMT</small></div>
   </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Java</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -80,13 +80,17 @@
                   <p><strong>You can define an enum type by using the <code>enum</code> keyword.</strong> Because they are constants, the names of an enum type's fields are in uppercase letters e.g., <code>FLAG_SUCCESS</code>.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Defining an enumeration to represent days of a week (code to be put in the <code>Day.java</code> file):</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Day {
+                    <div class="code-block">
+                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Day {
     SUNDAY, MONDAY, TUESDAY, WEDNESDAY,
     THURSDAY, FRIDAY, SATURDAY
 }
 </code></pre>
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
                     <p>Some examples of using the <code>Day</code> enumeration defined above:</p>
-                    <pre><code class="hljs java">Day today = Day.MONDAY;
+                    <div class="code-block">
+                      <pre><code class="hljs java">Day today = Day.MONDAY;
 Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.SUNDAY};
 
 <span class="hljs-keyword">switch</span> (today) {
@@ -98,6 +102,8 @@ Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.S
     System.out.println(<span class="hljs-string">"It's a week day"</span>);
 }
 </code></pre>
+                      <div class="code-block-lang"><span>java</span></div>
+                    </div>
                   </box>
                   <p>Note that while enumerations are usually a simple set of fixed values, <strong>Java enumerations can have behaviors too</strong>, as explained in <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">this tutorial from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small></a></p>
                 </div>
@@ -109,7 +115,8 @@ Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.S
                           <panel header="<md>:glyphicon-question-sign:</md> show priority color" class="algolia-no-index">
                             <question>
                               <p>Define an enumeration named <code>Priority</code>. Add the missing <code>describe</code> method to the code below so that it produces the output given.</p>
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                              <div class="code-block">
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-comment">// Add your method here</span>
 
@@ -121,6 +128,8 @@ Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.S
     }
 }
 </code></pre>
+                                <div class="code-block-lang"><span>java</span></div>
+                              </div>
                               <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                               </p>
                               <pre><code class="hljs">Red indicates high priority
@@ -130,7 +139,8 @@ Green indicates low priority
 </code></pre>
                               <div slot="hint" class="algolia-no-index">
                                 <p>Use a <code>switch</code> statement to select between possible values for <code>Priority</code>.</p>
-                                <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">describe</span><span class="hljs-params">(String color, Priority p)</span> </span>{
+                                <div class="code-block">
+                                  <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">describe</span><span class="hljs-params">(String color, Priority p)</span> </span>{
         <span class="hljs-keyword">switch</span> (p) {
             <span class="hljs-keyword">case</span> LOW:
                 System.out.println(color + <span class="hljs-string">" indicates low priority"</span>);
@@ -139,11 +149,16 @@ Green indicates low priority
         }
     }
 </code></pre>
+                                  <div class="code-block-lang"><span>java</span></div>
+                                </div>
                                 <p>Code for the enumeration is given below:</p>
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Priority {
+                                <div class="code-block">
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Priority {
     HIGH, MEDIUM, LOW
 }
 </code></pre>
+                                  <div class="code-block-lang"><span>java</span></div>
+                                </div>
                               </div>
                             </question>
                           </panel>
@@ -175,10 +190,13 @@ Green indicates low priority
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>search</code> method below can be called as <code>search()</code>, <code>search(&quot;book&quot;)</code>, <code>search(&quot;book&quot;, &quot;paper&quot;)</code>,
                     etc.
                   </p>
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">search</span><span class="hljs-params">(String ... keywords)</span></span>{
+                  <div class="code-block">
+                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">search</span><span class="hljs-params">(String ... keywords)</span></span>{
    <span class="hljs-comment">// method body</span>
 }
 </code></pre>
+                    <div class="code-block-lang"><span>java</span></div>
+                  </div>
                 </box>
                 <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources:</p>
                 <ul>

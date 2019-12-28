@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.7.0">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Error Handling: Assertions: How</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -56,10 +56,13 @@
                     <p>Use the <code>assert</code> keyword to define assertions.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This assertion will fail with the message <code>x should be 0</code> if <code>x</code> is not 0 at this point.</p>
-                      <pre><code class="hljs java">x = getX();
+                      <div class="code-block">
+                        <pre><code class="hljs java">x = getX();
 <span class="hljs-keyword">assert</span> x == <span class="hljs-number">0</span> : <span class="hljs-string">"x should be 0"</span>;
 ...
 </code></pre>
+                        <div class="code-block-lang"><span>java</span></div>
+                      </div>
                     </box>
                     <p><strong>Assertions can be disabled without modifying the code.</strong></p>
                     <box>
