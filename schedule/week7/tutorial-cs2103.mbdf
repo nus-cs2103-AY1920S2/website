@@ -1,0 +1,104 @@
+{% from "common/macros.njk" import embed_topic, thumb, show_as_tab, timing_badge with context %}
+{% from "data-" + (module | lower) + "/studentData.njk" import team_review_allocation with context %}
+
+#### {{ thumb(1) }} Exercise on Requirements: PR Tracker
+
+* **Divide the team into sub-team** A and sub-team B, 2-3 members each.
+* {{ timing_badge("7-8 minutes", "info") }} **Write the answers to the following questions** on the white-board.
+
+<div class="indented-level2">
+<box>
+
+%%{{ icon_info }} Question adapted from a past exam paper.%%
+
+<span class="text-monospace">Pull Request Tracker (PRT) is a desktop application meant to help CS2103 tutors deal with GitHub PRs more efficiently (compared to the GitHub Web interface). For example, it will help tutors find and review PRs from their _mentees_ easily. It will help the _managers_ of the module (e.g., professor, head TA) to easily keep track of how tutors are dealing with mentee PRs. PRT will communicate with GitHub using the GitHub API.</span>
+
+**Sub-team A:**
+* Write 1 must-have and 1 nice-to-have user stories, covering user types `tutor` and `manager`.
+* Write at least 1 <tooltip content="Non-Functional Requirements">NFRs</tooltip>, related to performance/scalability and/or usability.
+* Give at least 1 terms worth recording in the glossary.
+
+**Sub-team B:**
+* Complete the following use case. Give at least one extension. Note that the tutor should give comments in the order of PR size (i.e., give comments to smaller PRs first). Assume the following use cases exists already: `U1. Sort PRs by a criterion`, `U2. Add comments to a PR`
+
+<div class="indented-level2 text-monospace"><blockquote>
+
+
+System: PRT<br>
+Use Case: U3. Add comments to mentee PRs<br>
+Actor: ...<br>
+Precondition: ...<br>
+
+...
+</blockquote>
+</div>
+
+</box>
+</div>
+
+* {{ timing_badge("7-8 minutes", "info") }} **Discuss the answers** with the whole team and the tutor
+
+#### {{ thumb(2) }} Review Requirements of a Peer Team
+
+* **Find the team you have been allocated to discuss** in the panel below and click on the link to locate their team PR.
+
+{% macro get_review_allocation_for_team(reviewing_team) -%}
+{%- set reviewed_team = "" -%}
+{% for allocation in team_review_allocation  -%}
+{% if allocation[0] == reviewing_team %}{% set reviewed_team %}{{ allocation[1] }}{% endset %}{% endif %}
+{%- endfor %}{{ reviewed_team }}
+{%- endmacro %}
+
+{% macro get_pr_link(team_id) -%}
+[PR](https://github.com/nus-{{ module | lower}}-{{ semester }}/addressbook-level3/pulls?q=is%3Aopen+is%3Apr+label%3Atutorial.{{ team_id.slice(0, -2) }}+label%3Ateam.{{ team_id.slice(-1) }})
+{%- endmacro  %}
+
+{% macro get_dg_link(team_id) -%}
+[DG](https://{{ semester }}-{{ team_id | lower}}.github.io/main/DeveloperGuide.html)
+{%- endmacro  %}
+
+<div class="indented-level2">
+
+<panel header="Team allocation for PR discussion" minimized >
+
+Team          | Discuss PR of | Backup team to discuss
+--------------|---------------|-----------------------
+{% for team in team_review_allocation  %}
+{%- set backup_team %}{{ get_review_allocation_for_team(team[1]) }}{% endset -%}
+{{ team[0] }} | {{ team[1] }}: {{ get_pr_link(team[1]) }} {{ get_dg_link(team[1]) }} | {{ backup_team }}: {{ get_pr_link(backup_team) }} {{ get_dg_link(backup_team) }}
+{% endfor %}
+</panel>
+</div>
+
+* **Go to the PR**.
+* **In another Browser tab, open their Developer Guide** page in their website (i.e., the html version, not the adoc version).
+* {{ timing_badge("7-8 minutes", "info") }} **Read the following sections in the DB and add review comments in the PR** of areas to improve and doubts.<br>
+  %%**If the DG does not have enough content for you to review**, you can review the _backup_ team (see the third column in the allocation panel). If even the backup team is not suitable, choose any random teams having tutorials in the same day and not in the same tutorial as you.%%
+
+<div class="indented-level2">
+
+<box>
+
+* To be done collectively with sub-team members.
+* Add the review comment in the correct place of the code.
+* Choose the `Start a review` option rather than `Add single comment`.
+* Each person can do their own review, but coordinate with sub-team members to avoid duplicating the same point.
+* Phrase your comments as question/doubts (e.g., `Is this format correct? Should it be ... instead?`) rather than directives (e.g., `Change this to ...`).
+* Do not finalize the review at this stage. Just keep adding comments.
+</box>
+
+**Sub-team A:** Review use cases, w.r.t. the possible bugs are given below.
+
+{{ embed_topic("../../admin/project-grading-bugs.md#useCaseBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Use Case → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+
+**Sub-team B**: review user stores, NFRs, glossary, w.r.t. the possible bugs are given below.
+
+{{ embed_topic("../../admin/project-grading-bugs.md#userStoryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → User Story → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/project-grading-bugs.md#nfrBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → NFR → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+{{ embed_topic("../../admin/project-grading-bugs.md#glossaryBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → Glossary → Possible Bugs", "3", indent="2", status="expanded", type="danger") }}
+
+</div>
+
+* {{ timing_badge("7-8 minutes", "info") }} **Discuss your comments/observations/doubts with the tutor** and other team members to confirm the comments you entered are correct.
+* {{ timing_badge("5 minutes", "info") }} **Update your review comments if necessary**, based on the discussion you just had. After that, you can submit the review.<br>
+  {{ icon_tip }} After adding comments, you may want to unsubscribe from the PR to avoid getting GitHub alerts from that PR in the future.

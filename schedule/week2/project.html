@@ -82,117 +82,104 @@
     </header>
     <div id="flex-body">
       <div id="content-wrapper">
-        <nav>
-          <ul class="pagination mt-2">
-            <li class="page-item"><a class="page-link" href="/website/schedule/week1"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week2/index.html"><span><span aria-hidden="true" class="fas fa-bell"></span></span> Summary</a></li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week2/topics.html"><span><span aria-hidden="true" class="fas fa-book"></span></span> Topics</a></li>
-            <li class="page-item active"><a class="page-link" href="/website/schedule/week2/project.html"><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project</a></li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week2/tutorial-cs2103.html"><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> Tutorial</a></li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week2/admin.html"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Admin Info</a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week3"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
-          </ul>
-        </nav>
-        <p></p>
-        <h1 id="week-2-jan-20-project">Week 2 <small><small><span class="dimmed">[Jan 20]</span> - Project</small></small><a class="fa fa-anchor" href="#week-2-jan-20-project"></a></h1>
-        <div id="summary" class="lead border-bottom border-left ml-3 mb-3 pl-2" style="color: purple;">
-          <p><strong>iP:</strong></p>
-          <div>
-            <ol>
-              <li>Set up prerequisites</li>
-              <li>Set up the project in your computer</li>
-              <li>Implement increments while committing code frequently: <code>Level-1</code>, <code>Level-2</code>, <code>Level-3</code>, <code>Level-4</code>, <code>A-TextUiTesting</code>, <code>Level-5</code>, <code>Level-6</code>, <code>A-Enums</code>
-                <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Thursday 2359</span>
-                </span>
-              </li>
-            </ol>
-          </div>
-        </div>
-        <p>We'll be starting the individual project (iP) this week.</p>
-        <h4 id="0-learn-about-the-project"><span class="badge badge-pill badge-dark p-2"><big><big>0</big></big></span> Learn about the project<a class="fa fa-anchor" href="#0-learn-about-the-project"></a></h4>
-        <p><strong>Read the following two sections</strong>, if you haven't done so already:</p>
-        <div class="indented">
-          <p>
-            <panel type src="/website/admin/ip-overview._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **iP - Overview**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
-          </p>
-          <p>
-            <panel type src="/website/admin/ip-grading._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **iP - Grading**  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
-          </p>
-        </div>
-        <div>
-          <box type="info">
-            <p>iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing iP/tP, please post in the <a href="https://github.com/nus-cs2103-AY1920S2/forum/issues">forum</a> so
-              that we can take necessary actions.
-            </p>
-          </box>
-          <h4 id="1-set-up-prerequisites"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Set up prerequisites<a class="fa fa-anchor" href="#1-set-up-prerequisites"></a></h4>
-          <p><strong>Ensure you have met the following prerequisites:</strong></p>
-          <box>
-            <p><strong>Prerequisites</strong>:</p>
-            <ul>
-              <li>Install Git in your computer.</li>
-              <li>Have a GitHub account.</li>
-              <li>Recommended: Installed an IDE in your computer.</li>
+        <div class="website-content">
+          <nav>
+            <ul class="pagination mt-2">
+              <li class="page-item"><a class="page-link" href="/website/schedule/week1"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week2/index.html"><span><span aria-hidden="true" class="fas fa-bell"></span></span> Summary</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week2/topics.html"><span><span aria-hidden="true" class="fas fa-book"></span></span> Topics</a></li>
+              <li class="page-item active"><a class="page-link" href="/website/schedule/week2/project.html"><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Project</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week2/tutorial.html"><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span> Tutorial</a></li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week2/admin.html"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Admin Info</a></li>
+              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+              <li class="page-item"><a class="page-link" href="/website/schedule/week3"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
             </ul>
-            <p>
-              <panel type src="/website/admin/tools._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **Tools**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
-            </p>
-          </box>
-          <br>
-          <h4 id="2-set-up-the-project-in-your-computer"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Set up the project in your computer<a class="fa fa-anchor" href="#2-set-up-the-project-in-your-computer"></a></h4>
-          <ol>
-            <li>Fork <a href="https://github.com/nus-cs2103-AY1920S2/duke">https://github.com/nus-cs2103-AY1920S2/duke</a>.</li>
-            <li><mark>Enable the issue tracker of your fork</mark> (Go to <code>Settings</code> of your fork, scroll to the <code>Features</code> section, and tick the <code>Issues</code> checkbox). <span class="dimmed">Reason: our bots will be posting your weekly progress reports on the issue tracker of your fork.</span><br>
-              <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If the issue tracker is enabled, you should be able to visit the following URL <code>https://github.com/{your_user_name}/duke/issues</code>              e.g., <code>https://github.com/johnDoe/duke/issues</code></li>
-            <li>Clone the fork onto your computer.</li>
-            <li>Set up the project in your IDE as explained in <a href="https://github.com/nus-cs2103-AY1920S2/duke/blob/master/README.md">the README file</a>.<br>
-              <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are somewhat familiar with build tools such as Gradle, you are free to go ahead and start using Gradle from the beginning
-              by following
-              <a href="https://github.com/nus-cs2103-AY1920S2/duke/blob/master/tutorials/gradleTutorial.md">the Gradle tutorial</a>.</li>
-          </ol>
-          <h4 id="3-implement-increments-while-committing-code-frequently"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Implement increments while committing code frequently<a class="fa fa-anchor" href="#3-implement-increments-while-committing-code-frequently"></a></h4>
-          <p>Implement the following
-            <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> <mark>in the given order</mark>.</p>
-          <ul>
-            <li>Commit code at important points. <mark>Minimally, commit after completing each increment</mark>.</li>
-            <li>After completing each increment,
-              <ul>
-                <li><strong><code>git tag</code></strong> the commit with the exact increment ID e.g., <code>Level-2</code>, <code>A-TextUiTesting</code></li>
-                <li><strong><code>git push</code></strong> the code to your fork (<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> git doesn't push tags unless you specifically ask it to)</li>
-              </ul>
-            </li>
-          </ul>
-          <box>
-            <p>
-              <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> We discourage you from doing project tasks allocated to future weeks. Reasons:</p>
-            <ol>
-              <li>In order to help you gain
-                <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time"><em>fluency</em></tooltip> (and also to better simulate real projects), <strong>we want the project work to be <tooltip content="done at multiple times with time gaps in between"><em>spaced</em></tooltip> and spread over a longer period</strong>,
-                rather than to be done as a short burst. Reminder: as per iP grading criteria, <em>some</em> increments need to to be done in each week for you to get full marks.</li>
-              <li>As a further incentive to not jump ahead, we have left some future project requirements unspecified, and we might change some requirements along the way too.
-              </li>
-            </ol>
-          </box>
-
+          </nav>
+          <p></p>
+          <h1 id="week-2-jan-20-project">Week 2 <small><small><span class="dimmed">[Jan 20]</span> - Project</small></small><a class="fa fa-anchor" href="#week-2-jan-20-project"></a></h1>
           <div>
+            <p>We'll be starting the individual project (iP) this week.</p>
+            <h4 id="0-learn-about-the-project"><span class="badge badge-pill badge-dark p-2"><big><big>0</big></big></span> Learn about the project<a class="fa fa-anchor" href="#0-learn-about-the-project"></a></h4>
+            <p><strong>Read the following two sections</strong>, if you haven't done so already:</p>
             <div class="indented">
-              <div class="indented border">
-                <panel type="seamless" class="algolia-no-index">
-                  <div></div>
-                  <div slot="header"><span><span class="dimmed"><strong><code>Level-1</code>: Greet, Echo, Exit</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                  </div>
-                  <div></div>
-                  <div>
-                    <p><span><thumbnail text=":fas-comments:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-comments"></span></thumbnail>
-                      </span>
-                    </p>
-                    <h3 id="level-1-greet-echo-exit">Level 1. Greet, Echo, Exit<a class="fa fa-anchor" href="#level-1-greet-echo-exit"></a></h3>
-                    <p>In this initial <em>skeletal</em> version of Duke, it starts by greeting the user, simply echos commands entered by the user, and exits when the user types <code>bye</code>.
-                      <br> Example:
-                    </p>
-                    <pre><code class="hljs">    ____________________________________________________________
+              <p>
+                <panel type src="/website/admin/ip-overview._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **iP - Overview**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
+              </p>
+              <p>
+                <panel type src="/website/admin/ip-grading._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **iP - Grading**  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
+              </p>
+            </div>
+            <div>
+              <box type="info">
+                <p>iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing iP/tP, please post in the <a href="https://github.com/nus-cs2103-AY1920S2/forum/issues">forum</a>                  so that we can take necessary actions.
+                </p>
+              </box>
+              <h4 id="1-set-up-prerequisites"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Set up prerequisites<a class="fa fa-anchor" href="#1-set-up-prerequisites"></a></h4>
+              <p><strong>Ensure you have met the following prerequisites:</strong></p>
+              <box>
+                <p><strong>Prerequisites</strong>:</p>
+                <ul>
+                  <li>Install Git in your computer.</li>
+                  <li>Have a GitHub account.</li>
+                  <li>Recommended: Installed an IDE in your computer.</li>
+                </ul>
+                <p>
+                  <panel type src="/website/admin/tools._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **Tools**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
+                </p>
+              </box>
+              <br>
+              <h4 id="2-set-up-the-project-in-your-computer"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Set up the project in your computer<a class="fa fa-anchor" href="#2-set-up-the-project-in-your-computer"></a></h4>
+              <ol>
+                <li>Fork <a href="https://github.com/nus-cs2103-AY1920S2/duke">https://github.com/nus-cs2103-AY1920S2/duke</a>.</li>
+                <li><mark>Enable the issue tracker of your fork</mark> (Go to <code>Settings</code> of your fork, scroll to the <code>Features</code> section, and tick the <code>Issues</code> checkbox). <span class="dimmed">Reason: our bots will be posting your weekly progress reports on the issue tracker of your fork.</span><br>
+                  <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If the issue tracker is enabled, you should be able to visit the following URL <code>https://github.com/{your_user_name}/duke/issues</code>                  e.g., <code>https://github.com/johnDoe/duke/issues</code></li>
+                <li>Clone the fork onto your computer.</li>
+                <li>Set up the project in your IDE as explained in <a href="https://github.com/nus-cs2103-AY1920S2/duke/blob/master/README.md">the README file</a>.<br>
+                  <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are somewhat familiar with build tools such as Gradle, you are free to go ahead and start using Gradle from the beginning
+                  by following <a href="https://github.com/nus-cs2103-AY1920S2/duke/blob/master/tutorials/gradleTutorial.md">the Gradle tutorial</a>.</li>
+              </ol>
+              <h4 id="3-implement-increments-while-committing-code-frequently"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Implement increments while committing code frequently<a class="fa fa-anchor" href="#3-implement-increments-while-committing-code-frequently"></a></h4>
+              <p>Implement the following
+                <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> <mark>in the given order</mark>.</p>
+              <ul>
+                <li>Commit code at important points. <mark>Minimally, commit after completing each increment</mark>.</li>
+                <li>After completing each increment,
+                  <ul>
+                    <li><strong><code>git tag</code></strong> the commit with the exact increment ID e.g., <code>Level-2</code>, <code>A-TextUiTesting</code></li>
+                    <li><strong><code>git push</code></strong> the code to your fork (<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> git doesn't push tags unless you specifically ask it to)</li>
+                  </ul>
+                </li>
+              </ul>
+              <box>
+                <p>
+                  <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> We discourage you from doing project tasks allocated to future weeks. Reasons:</p>
+                <ol>
+                  <li>In order to help you gain
+                    <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time"><em>fluency</em></tooltip> (and also to better simulate real projects), <strong>we want the project work to be <tooltip content="done at multiple times with time gaps in between"><em>spaced</em></tooltip> and spread over a longer period</strong>,
+                    rather than to be done as a short burst. Reminder: as per iP grading criteria, <em>some</em> increments need to to be done in each week for you to get full marks.</li>
+                  <li>As a further incentive to not jump ahead, we have left some future project requirements unspecified, and we might change some requirements along the way too.
+                  </li>
+                </ol>
+              </box>
+
+              <div>
+                <div class="indented">
+                  <div class="indented border">
+                    <panel type="seamless" class="algolia-no-index">
+                      <div></div>
+                      <div slot="header"><span><span class="dimmed"><strong><code>Level-1</code>: Greet, Echo, Exit</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
+                      </div>
+                      <div></div>
+                      <div>
+                        <p><span><thumbnail text=":fas-comments:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-comments"></span></thumbnail>
+                          </span>
+                        </p>
+                        <h3 id="level-1-greet-echo-exit">Level 1. Greet, Echo, Exit<a class="fa fa-anchor" href="#level-1-greet-echo-exit"></a></h3>
+                        <p>In this initial <em>skeletal</em> version of Duke, it starts by greeting the user, simply echos commands entered by the user, and exits when the user types <code>bye</code>.
+                          <br> Example:
+                        </p>
+                        <pre><code class="hljs">    ____________________________________________________________
      Hello! I'm Duke
      What can I do for you?
     ____________________________________________________________
@@ -213,30 +200,30 @@ bye
     ____________________________________________________________
 
 </code></pre>
-                    <ul>
-                      <li>The indentation and horizontal lines are optional.</li>
-                    </ul>
+                        <ul>
+                          <li>The indentation and horizontal lines are optional.</li>
+                        </ul>
+                      </div>
+                    </panel>
                   </div>
-                </panel>
+                </div>
               </div>
-            </div>
-          </div>
-          <div>
-            <div class="indented">
-              <div class="indented border">
-                <panel type="seamless" class="algolia-no-index">
-                  <div></div>
-                  <div slot="header"><span><span class="dimmed"><strong><code>Level-2</code>: Add, List</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                  </div>
-                  <div></div>
-                  <div>
-                    <p><span><thumbnail text=":fas-list:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-list"></span></thumbnail>
-                      </span>
-                    </p>
-                    <h3 id="level-2-add-list">Level 2. Add, List<a class="fa fa-anchor" href="#level-2-add-list"></a></h3>
-                    <p>Add the ability to store whatever text entered by the user and display them back to the user when requested.</p>
-                    <p>Example:</p>
-                    <pre><code class="hljs">    ____________________________________________________________
+              <div>
+                <div class="indented">
+                  <div class="indented border">
+                    <panel type="seamless" class="algolia-no-index">
+                      <div></div>
+                      <div slot="header"><span><span class="dimmed"><strong><code>Level-2</code>: Add, List</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
+                      </div>
+                      <div></div>
+                      <div>
+                        <p><span><thumbnail text=":fas-list:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-list"></span></thumbnail>
+                          </span>
+                        </p>
+                        <h3 id="level-2-add-list">Level 2. Add, List<a class="fa fa-anchor" href="#level-2-add-list"></a></h3>
+                        <p>Add the ability to store whatever text entered by the user and display them back to the user when requested.</p>
+                        <p>Example:</p>
+                        <pre><code class="hljs">    ____________________________________________________________
      Hello! I'm Duke
      What can I do for you?
     ____________________________________________________________
@@ -262,30 +249,30 @@ bye
     ____________________________________________________________
 
 </code></pre>
-                    <ul>
-                      <li>There is no need to save the data to the hard disk.</li>
-                      <li>Assume there will be no more than 100 tasks. If you wish, you may use a fixed size array (e.g., <code>String[100]</code>) to store the items.</li>
-                    </ul>
+                        <ul>
+                          <li>There is no need to save the data to the hard disk.</li>
+                          <li>Assume there will be no more than 100 tasks. If you wish, you may use a fixed size array (e.g., <code>String[100]</code>) to store the items.</li>
+                        </ul>
+                      </div>
+                    </panel>
                   </div>
-                </panel>
+                </div>
               </div>
-            </div>
-          </div>
-          <div>
-            <div class="indented">
-              <div class="indented border">
-                <panel type="seamless" class="algolia-no-index">
-                  <div></div>
-                  <div slot="header"><span><span class="dimmed"><strong><code>Level-3</code>: Mark as Done</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                  </div>
-                  <div></div>
-                  <div>
-                    <p><span><thumbnail text=":fas-check:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-check"></span></thumbnail>
-                      </span>
-                    </p>
-                    <h3 id="level-3-mark-as-done">Level 3. Mark as Done<a class="fa fa-anchor" href="#level-3-mark-as-done"></a></h3>
-                    <p>Add the ability to mark tasks as <em>done</em>.<br><br></p>
-                    <pre><code class="hljs">list
+              <div>
+                <div class="indented">
+                  <div class="indented border">
+                    <panel type="seamless" class="algolia-no-index">
+                      <div></div>
+                      <div slot="header"><span><span class="dimmed"><strong><code>Level-3</code>: Mark as Done</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
+                      </div>
+                      <div></div>
+                      <div>
+                        <p><span><thumbnail text=":fas-check:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-check"></span></thumbnail>
+                          </span>
+                        </p>
+                        <h3 id="level-3-mark-as-done">Level 3. Mark as Done<a class="fa fa-anchor" href="#level-3-mark-as-done"></a></h3>
+                        <p>Add the ability to mark tasks as <em>done</em>.<br><br></p>
+                        <pre><code class="hljs">list
     ____________________________________________________________
      Here are the tasks in your list:
      1.[✓] read book
@@ -299,21 +286,21 @@ done 2
        [✓] return book
     ____________________________________________________________
 </code></pre>
-                    <div>
-                      <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension as collections classes (e.g.,
-                        <code>ArrayList</code>) have methods to easily delete an item at a specified location:</p>
-                      <panel header="**Extension: `A-Classes`**" class="algolia-no-index">
                         <div>
-                          <div>
-                            <div></div>
-                            <h3 id="a-classes"><span class="badge badge-pill badge-primary">A-Classes</span><a class="fa fa-anchor" href="#a-classes"></a></h3>
-                            <p>     <big>↳</big> <strong>Use a class to represent tasks</strong></p>
-                          </div>
-                          <p>While it is possible to represent a task list as a multi-dimensional array containing
-                            <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
-                          <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
+                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
+                          <div class="indented">
+                            <panel header="**Extension: `A-Classes`**" class="algolia-no-index">
+                              <div>
+                                <div>
+                                  <div></div>
+                                  <h3 id="a-classes"><span class="badge badge-pill badge-primary">A-Classes</span><a class="fa fa-anchor" href="#a-classes"></a></h3>
+                                  <p>     <big>↳</big> <strong>Use a class to represent tasks</strong></p>
+                                </div>
+                                <p>While it is possible to represent a task list as a multi-dimensional array containing
+                                  <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
+                                <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
+                                  <div class="code-block">
+                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> String description;
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
 
@@ -329,46 +316,47 @@ done 2
     <span class="hljs-comment">//...</span>
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
-                            <div class="code-block">
-                              <pre><code class="hljs java">Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);
+                                    <div class="code-block-lang"><span>java</span></div>
+                                  </div>
+                                  <div class="code-block">
+                                    <pre><code class="hljs java">Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);
 t.markAsDone()
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
-                          </panel>
+                                    <div class="code-block-lang"><span>java</span></div>
+                                  </div>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
                         </div>
-                      </panel>
-                    </div>
+                      </div>
+                    </panel>
                   </div>
-                </panel>
+                </div>
               </div>
-            </div>
-          </div>
-          <div>
-            <div class="indented">
-              <div class="indented border">
-                <panel type="seamless" class="algolia-no-index">
-                  <div></div>
-                  <div slot="header"><span><span class="dimmed"><strong><code>Level-4</code>: ToDo, Event, Deadline</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                  </div>
-                  <div></div>
-                  <div>
-                    <p><span><thumbnail text=":fas-business-time:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-business-time"></span></thumbnail>
-                      </span>
-                    </p>
-                    <h3 id="level-4-todos-events-deadlines">Level 4. ToDos, Events, Deadlines<a class="fa fa-anchor" href="#level-4-todos-events-deadlines"></a></h3>
-                    <p>Add support for tracking three types of tasks:
-                      <br>
-                      <br></p>
-                    <ol>
-                      <li><strong>ToDos</strong>: tasks without any date/time attached to it <span class="dimmed">e.g., <em>visit new theme park</em></span></li>
-                      <li><strong>Deadlines</strong>: tasks that need to be done before a specific date/time <span class="dimmed">e.g., <em>submit report by 11/10/2019 5pm</em></span></li>
-                      <li><strong>Events</strong>: tasks that start at a specific time and ends at a specific time <span class="dimmed">e.g., <em>team project meeting on 2/10/2019 2-4pm</em></span></li>
-                    </ol>
-                    <p>Example:</p>
-                    <pre><code class="hljs">todo borrow book
+              <div>
+                <div class="indented">
+                  <div class="indented border">
+                    <panel type="seamless" class="algolia-no-index">
+                      <div></div>
+                      <div slot="header"><span><span class="dimmed"><strong><code>Level-4</code>: ToDo, Event, Deadline</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
+                      </div>
+                      <div></div>
+                      <div>
+                        <p><span><thumbnail text=":fas-business-time:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-business-time"></span></thumbnail>
+                          </span>
+                        </p>
+                        <h3 id="level-4-todos-events-deadlines">Level 4. ToDos, Events, Deadlines<a class="fa fa-anchor" href="#level-4-todos-events-deadlines"></a></h3>
+                        <p>Add support for tracking three types of tasks:
+                          <br>
+                          <br></p>
+                        <ol>
+                          <li><strong>ToDos</strong>: tasks without any date/time attached to it <span class="dimmed">e.g., <em>visit new theme park</em></span></li>
+                          <li><strong>Deadlines</strong>: tasks that need to be done before a specific date/time <span class="dimmed">e.g., <em>submit report by 11/10/2019 5pm</em></span></li>
+                          <li><strong>Events</strong>: tasks that start at a specific time and ends at a specific time <span class="dimmed">e.g., <em>team project meeting on 2/10/2019 2-4pm</em></span></li>
+                        </ol>
+                        <p>Example:</p>
+                        <pre><code class="hljs">todo borrow book
     ____________________________________________________________
      Got it. I've added this task: 
        [T][✗] borrow book
@@ -399,9 +387,9 @@ event project meeting /at Mon 2-4pm
      Now you have 7 tasks in the list.
     ____________________________________________________________
 </code></pre>
-                    <p>At this point, dates/times can be treated as strings; there is no need to convert them to actual dates/times.</p>
-                    <p>Example:</p>
-                    <pre><code class="hljs">
+                        <p>At this point, dates/times can be treated as strings; there is no need to convert them to actual dates/times.</p>
+                        <p>Example:</p>
+                        <pre><code class="hljs">
 deadline do homework /by no idea :-p
     ____________________________________________________________
      Got it. I've added this task: 
@@ -409,21 +397,21 @@ deadline do homework /by no idea :-p
      Now you have 6 tasks in the list.
     ____________________________________________________________
 </code></pre>
-                    <div>
-                      <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension as collections classes (e.g.,
-                        <code>ArrayList</code>) have methods to easily delete an item at a specified location:</p>
-                      <panel header="**Extension: `A-Inheritance`**" class="algolia-no-index">
                         <div>
-                          <div>
-                            <div></div>
-                            <h3 id="a-inheritance"><span class="badge badge-pill badge-primary">A-Inheritance</span><a class="fa fa-anchor" href="#a-inheritance"></a></h3>
-                            <p>     <big>↳</big> <strong>Use Inheritance to support multiple task types</strong></p>
-                          </div>
-                          <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
-                          <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
-                          <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
+                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
+                          <div class="indented">
+                            <panel header="**Extension: `A-Inheritance`**" class="algolia-no-index">
+                              <div>
+                                <div>
+                                  <div></div>
+                                  <h3 id="a-inheritance"><span class="badge badge-pill badge-primary">A-Inheritance</span><a class="fa fa-anchor" href="#a-inheritance"></a></h3>
+                                  <p>     <big>↳</big> <strong>Use Inheritance to support multiple task types</strong></p>
+                                </div>
+                                <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
+                                <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
+                                <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
+                                  <div class="code-block">
+                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
 
     <span class="hljs-keyword">protected</span> String by;
 
@@ -438,62 +426,63 @@ deadline do homework /by no idea :-p
     }
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
-                            <div class="code-block">
-                              <pre><code class="hljs java">Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];
+                                    <div class="code-block-lang"><span>java</span></div>
+                                  </div>
+                                  <div class="code-block">
+                                    <pre><code class="hljs java">Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];
 task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Deadline(<span class="hljs-string">"return book"</span>, <span class="hljs-string">"Monday"</span>);
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
-                          </panel>
+                                    <div class="code-block-lang"><span>java</span></div>
+                                  </div>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
                         </div>
-                      </panel>
-                    </div>
+                      </div>
+                    </panel>
                   </div>
-                </panel>
+                </div>
               </div>
-            </div>
-          </div>
-          <div>
-            <div class="indented">
-              <div class="indented border">
-                <panel type="seamless" class="algolia-no-index">
-                  <div></div>
-                  <div slot="header"><span><span class="dimmed"><strong><code>A-TextUiTesting</code>: Text UI Testing</strong></span> <span class="badge badge-pill badge-secondary">optional</span></span>
-                  </div>
-                  <div></div>
-                  <div>
-                    <div>
+              <div>
+                <div class="indented">
+                  <div class="indented border">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <h3 id="a-textuitesting"><span class="badge badge-pill badge-primary">A-TextUiTesting</span><a class="fa fa-anchor" href="#a-textuitesting"></a></h3>
-                      <p>     <big>↳</big> <strong>Test using the I/O redirection technique</strong></p>
-                    </div>
-                    <p>Use the input/output redirection technique to semi-automate testing of Duke.</p>
-                    <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> A tutorial is provided in the duke repository.</p>
+                      <div slot="header"><span><span class="dimmed"><strong><code>A-TextUiTesting</code>: Text UI Testing</strong></span> <span class="badge badge-pill badge-secondary">optional</span></span>
+                      </div>
+                      <div></div>
+                      <div>
+                        <div>
+                          <div></div>
+                          <h3 id="a-textuitesting"><span class="badge badge-pill badge-primary">A-TextUiTesting</span><a class="fa fa-anchor" href="#a-textuitesting"></a></h3>
+                          <p>     <big>↳</big> <strong>Test using the I/O redirection technique</strong></p>
+                        </div>
+                        <p>Use the input/output redirection technique to semi-automate testing of Duke.</p>
+                        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> A tutorial is provided in the duke repository.</p>
+                      </div>
+                    </panel>
                   </div>
-                </panel>
+                </div>
               </div>
-            </div>
-          </div>
-          <div>
-            <div class="indented">
-              <div class="indented border">
-                <panel type="seamless" class="algolia-no-index">
-                  <div></div>
-                  <div slot="header"><span><span class="dimmed"><strong><code>Level-5</code>: Handle Errors</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                  </div>
-                  <div></div>
-                  <div>
-                    <p><span><thumbnail text=":fas-exclamation-triangle:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-exclamation-triangle"></span></thumbnail>
-                      </span>
-                    </p>
-                    <h3 id="level-5-handle-errors">Level 5. Handle Errors<a class="fa fa-anchor" href="#level-5-handle-errors"></a></h3>
-                    <p>Teach Duke to deal with errors such as incorrect inputs entered by the user.
-                      <br>
-                      <br></p>
-                    <p>Example:</p>
-                    <pre><code class="hljs">todo
+              <div>
+                <div class="indented">
+                  <div class="indented border">
+                    <panel type="seamless" class="algolia-no-index">
+                      <div></div>
+                      <div slot="header"><span><span class="dimmed"><strong><code>Level-5</code>: Handle Errors</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
+                      </div>
+                      <div></div>
+                      <div>
+                        <p><span><thumbnail text=":fas-exclamation-triangle:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-exclamation-triangle"></span></thumbnail>
+                          </span>
+                        </p>
+                        <h3 id="level-5-handle-errors">Level 5. Handle Errors<a class="fa fa-anchor" href="#level-5-handle-errors"></a></h3>
+                        <p>Teach Duke to deal with errors such as incorrect inputs entered by the user.
+                          <br>
+                          <br></p>
+                        <p>Example:</p>
+                        <pre><code class="hljs">todo
     ____________________________________________________________
      ☹ OOPS!!! The description of a todo cannot be empty.
     ____________________________________________________________
@@ -503,47 +492,48 @@ blah
      ☹ OOPS!!! I'm sorry, but I don't know what that means :-(
     ____________________________________________________________
 </code></pre>
-                    <div>
-                      <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension as collections classes (e.g.,
-                        <code>ArrayList</code>) have methods to easily delete an item at a specified location:</p>
-                      <panel header="**Extension: `A-Exceptions`**" class="algolia-no-index">
                         <div>
-                          <div>
-                            <div></div>
-                            <h3 id="a-exceptions"><span class="badge badge-pill badge-primary">A-Exceptions</span><a class="fa fa-anchor" href="#a-exceptions"></a></h3>
-                            <p>     <big>↳</big> <strong>Use Exceptions to handle errors</strong></p>
+                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
+                          <div class="indented">
+                            <panel header="**Extension: `A-Exceptions`**" class="algolia-no-index">
+                              <div>
+                                <div>
+                                  <div></div>
+                                  <h3 id="a-exceptions"><span class="badge badge-pill badge-primary">A-Exceptions</span><a class="fa fa-anchor" href="#a-exceptions"></a></h3>
+                                  <p>     <big>↳</big> <strong>Use Exceptions to handle errors</strong></p>
+                                </div>
+                                <p>Use exceptions to handle errors. For example, define a class <code>DukeException</code> to represent exceptions specific to Duke.</p>
+                              </div>
+                            </panel>
                           </div>
-                          <p>Use exceptions to handle errors. For example, define a class <code>DukeException</code> to represent exceptions specific to Duke.</p>
                         </div>
-                      </panel>
-                    </div>
-                    <ul>
-                      <li><strong>Minimal</strong>: handle at least the two types of errors shown in the example above.</li>
-                      <li><strong>Stretch goal</strong>: handle all possible errors in the current version. As you evolve Duke, continue to handle errors related to the new features added.</li>
-                    </ul>
+                        <ul>
+                          <li><strong>Minimal</strong>: handle at least the two types of errors shown in the example above.</li>
+                          <li><strong>Stretch goal</strong>: handle all possible errors in the current version. As you evolve Duke, continue to handle errors related to the new features added.</li>
+                        </ul>
+                      </div>
+                    </panel>
                   </div>
-                </panel>
+                </div>
               </div>
-            </div>
-          </div>
-          <div>
-            <div class="indented">
-              <div class="indented border">
-                <panel type="seamless" class="algolia-no-index">
-                  <div></div>
-                  <div slot="header"><span><span class="dimmed"><strong><code>Level-6</code>: Delete</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                  </div>
-                  <div></div>
-                  <div>
-                    <p><span><thumbnail text=":fas-trash-alt:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-trash-alt"></span></thumbnail>
-                      </span>
-                    </p>
-                    <h3 id="level-6-delete">Level 6. Delete<a class="fa fa-anchor" href="#level-6-delete"></a></h3>
-                    <p>Add support for deleting tasks from the list.
-                      <br>
-                      <br></p>
-                    <p>Example:</p>
-                    <pre><code class="hljs">list
+              <div>
+                <div class="indented">
+                  <div class="indented border">
+                    <panel type="seamless" class="algolia-no-index">
+                      <div></div>
+                      <div slot="header"><span><span class="dimmed"><strong><code>Level-6</code>: Delete</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
+                      </div>
+                      <div></div>
+                      <div>
+                        <p><span><thumbnail text=":fas-trash-alt:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-trash-alt"></span></thumbnail>
+                          </span>
+                        </p>
+                        <h3 id="level-6-delete">Level 6. Delete<a class="fa fa-anchor" href="#level-6-delete"></a></h3>
+                        <p>Add support for deleting tasks from the list.
+                          <br>
+                          <br></p>
+                        <p>Example:</p>
+                        <pre><code class="hljs">list
     ____________________________________________________________
      Here are the tasks in your list:
      1.[T][✓] read book
@@ -560,46 +550,49 @@ delete 3
      Now you have 4 tasks in the list.
     ____________________________________________________________
 </code></pre>
-                    <div>
-                      <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension as collections classes (e.g.,
-                        <code>ArrayList</code>) have methods to easily delete an item at a specified location:</p>
-                      <panel header="**Extension: `A-Collections`**" class="algolia-no-index">
                         <div>
-                          <div>
-                            <div></div>
-                            <h3 id="a-collections"><span class="badge badge-pill badge-primary">A-Collections</span><a class="fa fa-anchor" href="#a-collections"></a></h3>
-                            <p>     <big>↳</big> <strong>Use Java Collections classes</strong></p>
+                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
+                          <div class="indented">
+                            <panel header="**Extension: `A-Collections`**" class="algolia-no-index">
+                              <div>
+                                <div>
+                                  <div></div>
+                                  <h3 id="a-collections"><span class="badge badge-pill badge-primary">A-Collections</span><a class="fa fa-anchor" href="#a-collections"></a></h3>
+                                  <p>     <big>↳</big> <strong>Use Java Collections classes</strong></p>
+                                </div>
+                                <p>Use Java Collections classes for storing data. For example, you can use an <code>ArrayList&lt;Task&gt;</code> to store the tasks.</p>
+                              </div>
+                            </panel>
                           </div>
-                          <p>Use Java Collections classes for storing data. For example, you can use an <code>ArrayList&lt;Task&gt;</code> to store the tasks.</p>
                         </div>
-                      </panel>
-                    </div>
+                      </div>
+                    </panel>
                   </div>
-                </panel>
+                </div>
               </div>
-            </div>
-          </div>
-          <div>
-            <div class="indented">
-              <div class="indented border">
-                <panel type="seamless" class="algolia-no-index">
-                  <div></div>
-                  <div slot="header"><span><span class="dimmed"><strong><code>A-Enums</code>: Enums</strong></span> <span class="badge badge-pill badge-secondary">if-applicable</span></span>
-                  </div>
-                  <div></div>
-                  <div>
-                    <div>
+              <div>
+                <div class="indented">
+                  <div class="indented border">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <h3 id="a-enums"><span class="badge badge-pill badge-primary">A-Enums</span><a class="fa fa-anchor" href="#a-enums"></a></h3>
-                      <p>     <big>↳</big> <strong>Use Enumerations</strong></p>
-                    </div>
-                    <p>Use Java <code>enum</code>s, if applicable.</p>
+                      <div slot="header"><span><span class="dimmed"><strong><code>A-Enums</code>: Enums</strong></span> <span class="badge badge-pill badge-secondary">if-applicable</span></span>
+                      </div>
+                      <div></div>
+                      <div>
+                        <div>
+                          <div></div>
+                          <h3 id="a-enums"><span class="badge badge-pill badge-primary">A-Enums</span><a class="fa fa-anchor" href="#a-enums"></a></h3>
+                          <p>     <big>↳</big> <strong>Use Enumerations</strong></p>
+                        </div>
+                        <p>Use Java <code>enum</code>s, if applicable.</p>
+                      </div>
+                    </panel>
                   </div>
-                </panel>
+                </div>
               </div>
+              <p></p>
             </div>
           </div>
-          <p></p>
         </div>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
@@ -620,7 +613,7 @@ delete 3
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 04:54:36 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 16:31:03 GMT</small></div>
     </footer>
   </div>
 </body>

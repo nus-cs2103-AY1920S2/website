@@ -394,21 +394,20 @@ done 2
     ____________________________________________________________
 </code></pre>
                         <div>
-                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension as collections classes
-                            (e.g.,
-                            <code>ArrayList</code>) have methods to easily delete an item at a specified location:</p>
-                          <panel header="**Extension: `A-Classes`**" class="algolia-no-index">
-                            <div>
+                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
+                          <div class="indented">
+                            <panel header="**Extension: `A-Classes`**" class="algolia-no-index">
                               <div>
-                                <div></div>
-                                <h3 id="a-classes"><span class="badge badge-pill badge-primary">A-Classes</span><a class="fa fa-anchor" href="#a-classes"></a></h3>
-                                <p>     <big>↳</big> <strong>Use a class to represent tasks</strong></p>
-                              </div>
-                              <p>While it is possible to represent a task list as a multi-dimensional array containing
-                                <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
-                              <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
+                                <div>
+                                  <div></div>
+                                  <h3 id="a-classes"><span class="badge badge-pill badge-primary">A-Classes</span><a class="fa fa-anchor" href="#a-classes"></a></h3>
+                                  <p>     <big>↳</big> <strong>Use a class to represent tasks</strong></p>
+                                </div>
+                                <p>While it is possible to represent a task list as a multi-dimensional array containing
+                                  <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
+                                <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
+                                  <div class="code-block">
+                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> String description;
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
 
@@ -424,17 +423,18 @@ done 2
     <span class="hljs-comment">//...</span>
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
-                                <div class="code-block">
-                                  <pre><code class="hljs java">Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);
+                                    <div class="code-block-lang"><span>java</span></div>
+                                  </div>
+                                  <div class="code-block">
+                                    <pre><code class="hljs java">Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);
 t.markAsDone()
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
-                              </panel>
-                            </div>
-                          </panel>
+                                    <div class="code-block-lang"><span>java</span></div>
+                                  </div>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
                         </div>
                       </div>
                     </panel>
@@ -505,21 +505,20 @@ deadline do homework /by no idea :-p
     ____________________________________________________________
 </code></pre>
                         <div>
-                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension as collections classes
-                            (e.g.,
-                            <code>ArrayList</code>) have methods to easily delete an item at a specified location:</p>
-                          <panel header="**Extension: `A-Inheritance`**" class="algolia-no-index">
-                            <div>
+                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
+                          <div class="indented">
+                            <panel header="**Extension: `A-Inheritance`**" class="algolia-no-index">
                               <div>
-                                <div></div>
-                                <h3 id="a-inheritance"><span class="badge badge-pill badge-primary">A-Inheritance</span><a class="fa fa-anchor" href="#a-inheritance"></a></h3>
-                                <p>     <big>↳</big> <strong>Use Inheritance to support multiple task types</strong></p>
-                              </div>
-                              <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
-                              <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
-                              <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
+                                <div>
+                                  <div></div>
+                                  <h3 id="a-inheritance"><span class="badge badge-pill badge-primary">A-Inheritance</span><a class="fa fa-anchor" href="#a-inheritance"></a></h3>
+                                  <p>     <big>↳</big> <strong>Use Inheritance to support multiple task types</strong></p>
+                                </div>
+                                <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
+                                <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
+                                <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
+                                  <div class="code-block">
+                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
 
     <span class="hljs-keyword">protected</span> String by;
 
@@ -534,17 +533,18 @@ deadline do homework /by no idea :-p
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
-                                <div class="code-block">
-                                  <pre><code class="hljs java">Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];
+                                    <div class="code-block-lang"><span>java</span></div>
+                                  </div>
+                                  <div class="code-block">
+                                    <pre><code class="hljs java">Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];
 task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Deadline(<span class="hljs-string">"return book"</span>, <span class="hljs-string">"Monday"</span>);
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
-                              </panel>
-                            </div>
-                          </panel>
+                                    <div class="code-block-lang"><span>java</span></div>
+                                  </div>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
                         </div>
                       </div>
                     </panel>
@@ -600,19 +600,19 @@ blah
     ____________________________________________________________
 </code></pre>
                         <div>
-                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension as collections classes
-                            (e.g.,
-                            <code>ArrayList</code>) have methods to easily delete an item at a specified location:</p>
-                          <panel header="**Extension: `A-Exceptions`**" class="algolia-no-index">
-                            <div>
+                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
+                          <div class="indented">
+                            <panel header="**Extension: `A-Exceptions`**" class="algolia-no-index">
                               <div>
-                                <div></div>
-                                <h3 id="a-exceptions"><span class="badge badge-pill badge-primary">A-Exceptions</span><a class="fa fa-anchor" href="#a-exceptions"></a></h3>
-                                <p>     <big>↳</big> <strong>Use Exceptions to handle errors</strong></p>
+                                <div>
+                                  <div></div>
+                                  <h3 id="a-exceptions"><span class="badge badge-pill badge-primary">A-Exceptions</span><a class="fa fa-anchor" href="#a-exceptions"></a></h3>
+                                  <p>     <big>↳</big> <strong>Use Exceptions to handle errors</strong></p>
+                                </div>
+                                <p>Use exceptions to handle errors. For example, define a class <code>DukeException</code> to represent exceptions specific to Duke.</p>
                               </div>
-                              <p>Use exceptions to handle errors. For example, define a class <code>DukeException</code> to represent exceptions specific to Duke.</p>
-                            </div>
-                          </panel>
+                            </panel>
+                          </div>
                         </div>
                         <ul>
                           <li><strong>Minimal</strong>: handle at least the two types of errors shown in the example above.</li>
@@ -658,19 +658,19 @@ delete 3
     ____________________________________________________________
 </code></pre>
                         <div>
-                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension as collections classes
-                            (e.g.,
-                            <code>ArrayList</code>) have methods to easily delete an item at a specified location:</p>
-                          <panel header="**Extension: `A-Collections`**" class="algolia-no-index">
-                            <div>
+                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
+                          <div class="indented">
+                            <panel header="**Extension: `A-Collections`**" class="algolia-no-index">
                               <div>
-                                <div></div>
-                                <h3 id="a-collections"><span class="badge badge-pill badge-primary">A-Collections</span><a class="fa fa-anchor" href="#a-collections"></a></h3>
-                                <p>     <big>↳</big> <strong>Use Java Collections classes</strong></p>
+                                <div>
+                                  <div></div>
+                                  <h3 id="a-collections"><span class="badge badge-pill badge-primary">A-Collections</span><a class="fa fa-anchor" href="#a-collections"></a></h3>
+                                  <p>     <big>↳</big> <strong>Use Java Collections classes</strong></p>
+                                </div>
+                                <p>Use Java Collections classes for storing data. For example, you can use an <code>ArrayList&lt;Task&gt;</code> to store the tasks.</p>
                               </div>
-                              <p>Use Java Collections classes for storing data. For example, you can use an <code>ArrayList&lt;Task&gt;</code> to store the tasks.</p>
-                            </div>
-                          </panel>
+                            </panel>
+                          </div>
                         </div>
                       </div>
                     </panel>
@@ -728,7 +728,7 @@ delete 3
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 04:54:36 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sat, 28 Dec 2019 16:31:03 GMT</small></div>
     </footer>
   </div>
 </body>

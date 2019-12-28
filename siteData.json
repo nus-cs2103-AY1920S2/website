@@ -2327,6 +2327,9 @@
         "key-exercise-numbers-list": " [Key Exercise] Numbers list",
         "key-exercise-weekly-roster": " [Key Exercise] weekly roster",
         "collections": "Collections",
+        "junit-basic": "JUnit: Basic",
+        "junit-intermediate": "JUnit: Intermediate",
+        "junit": "JUnit",
         "enums": "Enums",
         "packages": "Packages",
         "file-access": "File Access",
@@ -2334,7 +2337,11 @@
         "constants": "Constants",
         "casting": "Casting",
         "jar-files": "JAR Files",
+        "varargs": "Varargs",
+        "streams": "Streams",
+        "javafx": "JavaFX",
         "key-exercise-show-priority-color": " [Key Exercise] show priority color",
+        "javafx-9-tutorial": "JavaFx 9 tutorial",
         "miscellaneous-topics": "Miscellaneous Topics",
         "c-to-java": "C++ to Java"
       },
@@ -2581,37 +2588,6 @@
       "pageNav": 4,
       "head": "bookHead.md",
       "src": "se-book-adapted/chapters/intellij.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
-        "varargs": "Varargs ",
-        "javafx-basic": "JavaFX: Basic",
-        "streams-basic": "Streams: Basic",
-        "java": "Java"
-      },
-      "title": "Textbook Chapter : Java",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/javaTools.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
-        "junit-basic": "JUnit: Basic",
-        "junit-intermediate": "JUnit: Intermediate",
-        "junit": "JUnit"
-      },
-      "title": "Textbook Chapter : JUnit",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/junit.md",
       "layout": "default"
     },
     {

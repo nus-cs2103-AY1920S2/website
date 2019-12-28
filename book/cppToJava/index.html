@@ -246,15 +246,15 @@
 </code></pre>
             <div class="code-block-lang"><span>cpp</span></div>
           </div>
-          <p>This HelloWorld Java program defines one method named main: <code>public static void main(String[] args)</code></p>
-          <p><code>System.out.println</code> displays results on the screen.</p>
+          <p>This HelloWorld Java program defines one method named main: <code class="hljs inline java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span></code></p>
+          <p><code class="hljs inline java">System.out.println()</code> displays a given text on the screen.</p>
           <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
             </span>
             </span> Some similarities:</p>
           <ul>
-            <li>Java programs are made up of class and method definitions, and
-              <tooltip content="A _method_ is a named sequence of statements">methods</tooltip> are made up of
-              <trigger for="pop:helloWorld-statement">statements</trigger>.</li>
+            <li>Java programs consists of
+              <trigger for="pop:helloWorld-statement">statements</trigger>, grouped
+              <tooltip content="A _method_ is a named sequence of statements">methods</tooltip>, which are then grouped into classes.</li>
             <li>Java is “case-sensitive”, which means <code>SYSTEM</code> is different from <code>System</code>.</li>
             <li><code>public</code> is an <em>access modifier</em> that indicates the method is accessible from outside this class. Similarly, <code>private</code> access modifier indicates that a method/attribute is not accessible outside the class.</li>
             <li><code>static</code> indicates this method is defined as a class-level member. Do not worry if you don’t know what that means. It will be explained later.</li>
@@ -381,7 +381,7 @@
                   <ul>
                     <li>Install Java in your computer, if you haven't done so already.</li>
                     <li>Write, compile and run a small Java program <span class="dimmed">(e.g., a HelloWorld program)</span> in your computer. You can use any code editor to write the program but use the command prompt to compile and run the program.</li>
-                    <li>Modify the code and run the program again.</li>
+                    <li>Modify the code to print something else, save, compile, and run the program again.</li>
                   </ul>
                 </question>
               </panel>
@@ -6778,6 +6778,128 @@ second line
         </panel>
       </div>
     </div>
+  </div>
+  </panel>
+  </div>
+  <div>
+    <panel type="seamless" expanded>
+      <span slot="header" class="card-title"><div><h4 id="varargs"><span>Varargs</span><a class="fa fa-anchor" href="#varargs"></a></h4>
+  </div>
+  </span>
+  <div class="indented">
+    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use Java varargs feature</span>
+      </span>
+      </span>
+      </span>
+    </p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div>
+      <p>Variable Arguments (Varargs) is a <em>syntactic sugar</em> type feature that allows writing a methods that can take a variable number of arguments.</p>
+      <box>
+        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>search</code> method below can be called as <code>search()</code>, <code>search(&quot;book&quot;)</code>, <code>search(&quot;book&quot;, &quot;paper&quot;)</code>, etc.</p>
+        <div class="code-block">
+          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">search</span><span class="hljs-params">(String ... keywords)</span></span>{
+   <span class="hljs-comment">// method body</span>
+}
+</code></pre>
+          <div class="code-block-lang"><span>java</span></div>
+        </div>
+      </box>
+      <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources:</p>
+      <ul>
+        <li><a href="http://docs.oracle.com/javase/1.5.0/docs/guide/language/varargs.html">Java Varargs feature (from Oracle.com)</a></li>
+        <li><a href="https://www.javatpoint.com/varargs">Java Varargs tutorial (for javaTpoint.com)</a></li>
+      </ul>
+    </div>
+    <div></div>
+  </div>
+  </panel>
+  </div>
+  <div>
+    <panel type="seamless" expanded>
+      <span slot="header" class="card-title"><div><h4 id="streams-basic"><span>Streams: Basic</span><a class="fa fa-anchor" href="#streams-basic"></a></h4>
+  </div>
+  </span>
+  <div class="indented">
+    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use Java8 streams</span>
+      </span>
+      </span>
+      </span>
+    </p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div>
+      <p><strong>Java 8 introduced a number of new features (e.g. Lambdas, Streams)</strong> that are not trivial to learn but also extremely useful to know.</p>
+      <p><a href="http://winterbe.com/posts/2014/03/16/java-8-tutorial/">Here</a> is an overview of new Java 8 features .<span class="dimmed">(written by Benjamin Winterberg)</span></p>
+    </div>
+    <div>
+      <div>
+        <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+          <p><strong>Tutorials</strong>:</p>
+          <tabs>
+            <tab header="<md>:far-file-alt:</md>">
+              <ul>
+                <li>
+                  <p><a href="https://www.tutorialspoint.com/java8/"><strong>Java 8 Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a>. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span>
+                    Also provides a way to try out code online</p>
+                </li>
+                <li>
+                  <p><strong>Tutorials from Oracle</strong>: [<a href="http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">Lambdas</a>][<a href="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">Streams</a>]</p>
+                </li>
+              </ul>
+            </tab>
+            <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+
+
+              <p>A video tutorial by well-known Java coach Venkat Subramaniam</p>
+              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Ee5t_EGjv0A" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+              <panel type="seamless" header="A a more detailed version covering similar grounds" class="algolia-no-index">
+                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1OpAgZvYXLQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+              </panel>
+            </tab>
+          </tabs>
+        </panel>
+      </div>
+    </div>
+  </div>
+  </panel>
+  </div>
+  <div>
+    <panel type="seamless" expanded>
+      <span slot="header" class="card-title"><div><h4 id="javafx"><span>JavaFX</span><a class="fa fa-anchor" href="#javafx"></a></h4>
+  </div>
+  </span>
+  <div class="indented">
+    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use JavaFX to build a simple GUI</span>
+      </span>
+      </span>
+      </span>
+    </p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div>
+      <p>JavaFX is a technology for building Java-based GUIs. Previously it was a part Java itself, but has become a third-party dependency since then. It is now being maintained by <a href="https://wiki.openjdk.java.net/display/OpenJFX">OpenJDK</a>.</p>
+      <box>
+        <h5 id="javafx-9-tutorial">JavaFx 9 tutorial<a class="fa fa-anchor" href="#javafx-9-tutorial"></a></h5>
+        <p>Adapted (with permissions) from <a href="http://code.makery.ch/library/javafx-8-tutorial/">Marco Jakob's JavaFX 8 tutorial</a>. Thanks to <a href="https://github.com/marcojakob">Marco Jakob</a> for allowing us to adapt his tutorials for IntelliJ.</p>
+        <p>Table of contents:</p>
+        <ul>
+          <li><a href="/website/book/cppToJava/misc/javaFX/part01">Part 1: Scene Builder</a></li>
+          <li><a href="/website/book/cppToJava/misc/javaFX/part02">Part 2: Model and TableView</a></li>
+        </ul>
+        <p>After going through the two parts, you should be familiar with working with IntelliJ. You can continue with the original tutorial (which is written for Eclipse), with the following links:</p>
+        <ul>
+          <li><a href="http://code.makery.ch/library/javafx-8-tutorial/part3/">Part 3: Interacting with the User</a></li>
+          <li><a href="http://code.makery.ch/library/javafx-8-tutorial/part4/">Part 4: CSS Styling</a></li>
+          <li><a href="http://code.makery.ch/library/javafx-8-tutorial/part5/">Part 5: Storing Data as XML</a></li>
+        </ul>
+      </box>
+    </div>
+    <div></div>
   </div>
   </panel>
   </div>
