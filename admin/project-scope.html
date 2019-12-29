@@ -211,44 +211,80 @@
             <h3 id="project-direction">
               <div class="text-white bg-dark p-1">Project Direction</div><a class="fa fa-anchor" href="#project-direction"></a></h3>
             <div id="project-direction">
+              <p>You can take one of these two directions, <mark>both of which are equally acceptable</mark>:</p>
+              <h4 id="direction-1-optimize"><span class="badge badge-dark">Direction 1</span> <em>Optimize</em><a class="fa fa-anchor" href="#direction-1-optimize"></a></h4>
               <ul>
-                <li>
-                  <p>You can take one of these two directions, <mark>both of which are equally acceptable</mark>:</p>
+                <li>Optimize the AddressBook for a more specific target user group.</li>
+              </ul>
+              <div class="indented-level2">
+                <panel type="seamless" header="<md>:fas-cube:</md> Examples for the _optimize_ direction" minimized class="algolia-no-index">
+                  <p>An AddressBook,</p>
                   <ul>
-                    <li><strong>[Direction 1]  <em>Optimize</em></strong> AddressBook for a more specific target user group:</li>
+                    <li>for users in a specific profession <span class="dimmed">e.g. doctors, salesmen, teachers, etc.</span></li>
+                    <li>based on the nature/scale of contacts <span class="dimmed">e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)</span></li>
+                    <li>based on what users do with the contacts <span class="dimmed">e.g. organize group events, share info, do business, do analytics</span><br></li>
                   </ul>
-                  <panel type="seamless" header="%%<md>:fas-cube:</md> Examples for the _optimize_ direction%%" class="algolia-no-index">
-                    <p>An AddressBook,</p>
-                    <ul>
-                      <li>for users in a specific profession <span class="dimmed">e.g. doctors, salesmen, teachers, etc.</span></li>
-                      <li>based on the nature/scale of contacts <span class="dimmed">e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)</span></li>
-                      <li>based on what users do with the contacts <span class="dimmed">e.g. organize group events, share info, do business, do analytics</span></li>
-                    </ul>
-                    <p></p>
-                  </panel>
-                  <p></p>
+                </panel>
+                <p></p>
+              </div>
+              <ul>
+                <li><strong>The expected level of functionality</strong> from a 5-person team is equivalent to the functionality of the fictional ABX app given below:
                   <ul>
-                    <li><strong>[Direction 2] <em>Morph</em></strong> AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages
-                      something else.</li>
+                    <li>Existing AB3 features are optimized to the new target user group.</li>
+                    <li>Person objects are enhanced to contain more details.</li>
+                    <li>There are a handful of new functionality that are specific to the target user group.</li>
                   </ul>
-                  <panel type="seamless" header="%%<md>:fas-cube:</md> Examples for the _morph_ direction%%" class="algolia-no-index">
-                    <p>An app to manage,</p>
-                    <ul>
-                      <li>Bookmarks of websites</li>
-                      <li>Tasks/Schedule</li>
-                      <li>Location info</li>
-                      <li>Thing to memorize i.e. flash cards, trivia</li>
-                      <li>Forum posts, news feeds, Social media feeds</li>
-                      <li>Online projects or issue trackers that the user is interested in</li>
-                      <li>Emails, possibly from different accounts</li>
-                      <li>Multiple types of related things <span class="dimmed">e.g. Contacts and Tasks (if Tasks are allocated to Contacts)</span></li>
-                    </ul>
-                    <p></p>
-                  </panel>
+                </li>
+              </ul>
+              <h4 id="direction-2-morph"><span class="badge badge-dark">Direction 2</span> <em>Morph</em><a class="fa fa-anchor" href="#direction-2-morph"></a></h4>
+              <ul>
+                <li><strong>Morph the AddressBook into a different product</strong>: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that manages something else.
+                  Examples:</li>
+              </ul>
+              <div class="indented-level2">
+                <panel type="seamless" header="<md>:fas-cube:</md> Examples for the _morph_ direction" minimized class="algolia-no-index">
+                  <p>An app to manage,</p>
+                  <ul>
+                    <li>Bookmarks of websites</li>
+                    <li>Tasks/Schedule</li>
+                    <li>Location info</li>
+                    <li>Thing to memorize i.e. flash cards, trivia</li>
+                    <li>Forum posts, news feeds, Social media feeds</li>
+                    <li>Online projects or issue trackers that the user is interested in</li>
+                    <li>Emails, possibly from different accounts</li>
+                    <li>Multiple types of related things <span class="dimmed">e.g. Contacts and Tasks (if Tasks are allocated to Contacts)</span></li>
+                  </ul>
                   <p></p>
+                </panel>
+                <p></p>
+              </div>
+              <ul>
+                <li><strong>The expected level of functionality</strong> from a 5-person team is equivalent to the functionality of the fictional FooBar app given below:
+                  <ul>
+                    <li>FooBar is similar to AB3, but keeps track of two different types of entities Foo entities and Bar entities.</li>
+                    <li>Foo and Bar entities are tightly-connected e.g., a Foo entity can contain Bar entities. Each type is similar to AB3 Person objects in terms of complexity.</li>
+                    <li>In addition to
+                      <tooltip content="Creat Read Update Delete">CRUD</tooltip> for Foo and Bar entities, there are a handful of FooBar-specific functionality, some of which involves both Foo and Bar entities e.g., link a Foo entity to a Bar entity.</li>
+                  </ul>
                 </li>
               </ul>
             </div>
+            <box>
+              <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>For both directions:</strong></p>
+              <ul>
+                <li>Put in another way, a 5-person team is expected to roughly <mark>double the value provided by AB3</mark>. Adding a lot more features than that is unlikely to increase your marks. Instead, spend that effort on increasing the quality of
+                  your features.</li>
+                <li>If you wish to add the following features to your app, we recommend (but not require) you to follow similar features in AB4 in order to reduce the effort required.
+                  <ul>
+                    <li><a href="https://se-education.org/addressbook-level4/DeveloperGuide.html#undo-redo-feature">Undo/redo</a></li>
+                    <li><a href="https://se-education.org/addressbook-level4/Testing.html#types-of-tests">Automated GUI tests</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </box>
+
+
+
             <h3 id="target-user">
               <div class="text-white bg-dark p-1">Target User</div><a class="fa fa-anchor" href="#target-user"></a></h3>
             <ul>
@@ -276,102 +312,95 @@
               <li><strong>Define a clear <em>value proposition</em></strong> that matches the target user profile i.e., what problem does the product solve? how does it make the the user's life easier?</li>
             </ul>
             <p></p>
-            <h3 id="individual-expectations">
-              <div class="text-white bg-info p-1"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual Expectations</div><a class="fa fa-anchor" href="#individual-expectations"></a></h3>
-            <div id="individualExpectations">
-              <h4 id="individual-expectations-on-implementation"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Implementation</span><a class="fa fa-anchor" href="#individual-expectations-on-implementation"></a></h4>
-              <ul>
-                <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Enhance the product in some way(s).</strong></span>
-                  <ul>
-                    <li>User-visible enhancements are preferred, but it is not a strict requirement.:</li>
-                    <li><strong>The enhancement(s) should fit with the rest of the software</strong> (and the target user profile) and should have the consent of the team members. <span class="dimmed">You will lose marks if you go 'rogue' and add things that don't fit with the product.</span></li>
-                    <li>Given below are some examples:</li>
-                  </ul>
-                </li>
-              </ul>
-              <div class="indented-level4">
-                <panel type="seamless" header="Example enhancements" minimized class="algolia-no-index">
-                  <ul>
-                    <li>Add a new feature <span class="dimmed">e.g. add the ability to view statistics</span></li>
-                    <li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
-                    <li>A redesign of the GUI <span class="dimmed">e.g. make it work like a chat application (note: chat is a form of CLI)</span></li>
-                    <li>A redesign of the code <span class="dimmed">e.g. Improve the design to improve the code quality.</span></li>
-                  </ul>
-                  <p></p>
-                </panel>
-                <p></p>
-              </div>
-              <ul>
-                <li>
-                  <p><strong>Tip: Contribute to all aspects of the project</strong> e.g. write backend code, frontend code, test code, user documentation, and developer documentation. <span class="dimmed">Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.</span></p>
-                </li>
-                <li>
-                  <p><strong>Tip: Do <em>all</em> the work related to your enhancement yourself.</strong> <span class="dimmed">Reason:If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.</span></p>
-                </li>
-                <li>
-                  <p><strong>Tip: Divide the components of the product among team members</strong>. Notwithstanding the above, you are still recommended to divide the components of the product among team members so that each team member is <em>in charge</em>                    of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed">(reason: you are supposed to be the most knowledgeable about that component)</span>                    and protect that component from degrading <span class="dimmed">e.g., you can review others' changes to your component and suggest possible changes</span>.</p>
-                </li>
-              </ul>
-              <box>
-                <p><strong>🤔 How much code to write?</strong> The project grade depends on the value you added, as perceived by evaluators (i.e., team members, peer evaluators, and tutors) as well as other factors such as the quality of the code. As such,
-                  there is no strong correlation between the LoC and the grade. For instance, in a recent semester, a student who wrote 500 LoC of
-                  <tooltip content="i.e., excluding test code and documentation">functional code</tooltip> was able to reach top 20% (in terms of project marks), another who wrote 900 LoC reached the top 10%, while another who wrote more than 5000 LoC ended up in the bottom 10%. Also see the the percentiles of functional
-                  LoC written by that batch of students, given below:</p>
-                <div class="table-responsive">
-                  <table class="markbind-table table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th>Percentile</th>
-                        <th>25</th>
-                        <th>50</th>
-                        <th>75</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>LoC</td>
-                        <td>~1000</td>
-                        <td>~1500</td>
-                        <td>~2500</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </box>
-              <h4 id="individual-expectations-on-documentation"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Documentation</span><a class="fa fa-anchor" href="#individual-expectations-on-documentation"></a></h4>
-              <ul>
-                <li><strong>Objective:</strong> showcase your ability to write both <em>user-facing documentation</em> and <em>developer-facing documentation</em>.</li>
-                <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Update the User Guide (UG) and the Developer Guide (DG) parts</strong></span> that are related to the enhancements you added.The minimum requirement is given
-                  below.
-                  <span class="dimmed">(Reason: Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.)</span>
-                  <ul>
-                    <li>UG: at least 1 page</li>
-                    <li>DG: at least 3 pages</li>
-                  </ul>
-                </li>
-                <li><strong>Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements</strong>, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.</li>
-                <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Use at least 2 types of UML diagrams in your DG updates</strong></span> i.e., diagrams you added yourself or those you modified significantly.</li>
-              </ul>
-              <h4 id="individual-expectations-on-testing"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Testing</span><a class="fa fa-anchor" href="#individual-expectations-on-testing"></a></h4>
-              <div id="testing-expectations">
+            <span id="team-expectations">
+<h3 id="team-expectations"><div class="text-white bg-success p-1"><span><span aria-hidden="true" class="fas fa-users"></span></span> Team Expectations</div><a class="fa fa-anchor" href="#team-expectations"></a></h3>
+          <ul>
+            <li><span class="badge badge-success">Expectation</span> <span class="text-success"><strong>Preserve <em>product integrity</em></strong></span> i.e. ensure,
+              <ol>
+                <li>features fit together to form a cohesive product,</li>
+                <li>documentation follows a consistent style and presents a cohesive picture to the reader, and</li>
+                <li>final project demo presents a cohesive picture to the audience.</li>
+              </ol>
+            </li>
+            <li><span class="badge badge-success">Expectation</span> <span class="text-success"><strong>Maintain product quality</strong></span> i.e. prevent breaking other parts of the product as it evolves. Note that bugs local to a specific feature will
+              be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.</li>
+            <li><span class="badge badge-success">Expectation</span> <span class="text-success"><strong>Manage the project</strong></span> i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
+            </li>
+          </ul>
+          </span>
+
+          <h3 id="individual-expectations">
+            <div class="text-white bg-info p-1"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual Expectations</div><a class="fa fa-anchor" href="#individual-expectations"></a></h3>
+          <div id="individualExpectations">
+            <h4 id="individual-expectations-on-implementation"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Implementation</span><a class="fa fa-anchor" href="#individual-expectations-on-implementation"></a></h4>
+            <ul>
+              <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Enhance the product in some way(s).</strong></span>
                 <ul>
-                  <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li>
+                  <li>User-visible enhancements are preferred, but it is not a strict requirement.:</li>
+                  <li><strong>The enhancement(s) should fit with the rest of the software</strong> (and the target user profile) and should have the consent of the team members. <span class="dimmed">You will lose marks if you go 'rogue' and add things that don't fit with the product.</span></li>
+                  <li>Given below are some examples:</li>
                 </ul>
+              </li>
+            </ul>
+            <div class="indented-level4">
+              <panel type="seamless" header="Example enhancements" minimized class="algolia-no-index">
+                <ul>
+                  <li>Add a new feature <span class="dimmed">e.g. add the ability to view statistics</span></li>
+                  <li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
+                  <li>A redesign of the GUI <span class="dimmed">e.g. make it work like a chat application (note: chat is a form of CLI)</span></li>
+                  <li>A redesign of the code <span class="dimmed">e.g. Improve the design to improve the code quality.</span></li>
+                </ul>
+                <p></p>
+              </panel>
+              <p></p>
+            </div>
+            <ul>
+              <li>
+                <p><strong>Tip: Contribute to all aspects of the project</strong> e.g. write backend code, frontend code, test code, user documentation, and developer documentation. <span class="dimmed">Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.</span></p>
+              </li>
+              <li>
+                <p><strong>Tip: Do <em>all</em> the work related to your enhancement yourself.</strong> <span class="dimmed">Reason:If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.</span></p>
+              </li>
+              <li>
+                <p><strong>Tip: Divide the components of the product among team members</strong>. Notwithstanding the above, you are still recommended to divide the components of the product among team members so that each team member is <em>in charge</em>                  of one or more components. While others will be modifying those components as necessary for the features they are implementing, your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed">(reason: you are supposed to be the most knowledgeable about that component)</span>                  and protect that component from degrading <span class="dimmed">e.g., you can review others' changes to your component and suggest possible changes</span>.</p>
+              </li>
+            </ul>
+            <h4 id="individual-expectations-on-documentation"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Documentation</span><a class="fa fa-anchor" href="#individual-expectations-on-documentation"></a></h4>
+            <ul>
+              <li><strong>Objective:</strong> showcase your ability to write both <em>user-facing documentation</em> and <em>developer-facing documentation</em>.</li>
+              <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Update the User Guide (UG) and the Developer Guide (DG) parts</strong></span> that are related to the enhancements you added.The minimum requirement is given
+                below.
+                <span class="dimmed">(Reason: Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.)</span>
+                <ul>
+                  <li>UG: at least 1 page</li>
+                  <li>DG: at least 3 pages</li>
+                </ul>
+              </li>
+              <li><strong>Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements</strong>, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.</li>
+              <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Use at least 2 types of UML diagrams in your DG updates</strong></span> i.e., diagrams you added yourself or those you modified significantly.</li>
+            </ul>
+            <h4 id="individual-expectations-on-testing"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Testing</span><a class="fa fa-anchor" href="#individual-expectations-on-testing"></a></h4>
+            <div id="testing-expectations">
+              <ul>
+                <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li>
+              </ul>
+              <div class="indented">
                 <box>
                   <p><strong>🤔 How much testings is enough?</strong> We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide
                     to what extent you want to automate tests, depending on the benefits and the effort required.<br> There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90%
                     of the code covered by tests. In this project, it can be less. <mark>The weaker your tests are, the higher the risk of bugs, which will cost marks if not fixed before the final submission.</mark></p>
                 </box>
               </div>
-              <h4 id="individual-expectations-on-teamwork"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Teamwork</span><a class="fa fa-anchor" href="#individual-expectations-on-teamwork"></a></h4>
-              <ul>
-                <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Do a fair share of the <em>team tasks</em></strong>.</span></li>
-              </ul>
-              <div id="team-tasks" class="indented-level2">
-                <box>
-                  <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
-                  <panel type="seamless" header="%%<md>:fas-cube:</md> Examples of team-tasks%%" class="algolia-no-index">
-                    <span id="example-team-tasks">
+            </div>
+            <h4 id="individual-expectations-on-teamwork"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Teamwork</span><a class="fa fa-anchor" href="#individual-expectations-on-teamwork"></a></h4>
+            <ul>
+              <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Do a fair share of the <em>team tasks</em></strong>.</span></li>
+            </ul>
+            <div id="team-tasks" class="indented-level2">
+              <box>
+                <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
+                <panel type="seamless" header="<md>:fas-cube:</md> Examples of team-tasks" class="algolia-no-index">
+                  <span id="example-team-tasks">
 <p>Here is a non-exhaustive list of team-tasks:</p>
 <ol>
 <li>Necessary general code enhancements e.g.,
@@ -383,63 +412,47 @@
 <li>Maintaining the issue tracker</li>
 <li>Release management</li>
 <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
-                    <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
-                    </ol>
-                    </span>
-                  </panel>
-                  <p></p>
-                </box>
-              </div>
-              <ul>
-                <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Assume a fair share of project roles and responsibilities</strong>.</span></li>
-              </ul>
-              <div class="indented-level2">
-                <box>
-                  <span id="roles">
-<p><em>Roles</em> indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
-                  <panel type="seamless" header="<md>:fas-cube:</md> Recommended roles and responsibilities" class="algolia-no-index">
-                    <p>This is a non-exhaustive list; you may define additional roles.</p>
-                    <ul>
-                      <li><em>Team lead</em>: Responsible for overall project coordination.</li>
-                      <li><em>Documentation</em> (short for ‘in charge of documentation’): Responsible for the quality of various project documents.</li>
-                      <li><em>Testing</em>: Ensures the testing of the project is done properly and on time.</li>
-                      <li><em>Code quality</em>: Looks after code quality, ensures adherence to coding standards, etc.</li>
-                      <li><em>Deliverables and deadlines</em>: Ensure project deliverables are done on time and in the right format.</li>
-                      <li><em>Integration</em>: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.</li>
-                      <li><em>Scheduling and tracking</em>: In charge of defining, assigning, and tracking project tasks.</li>
-                      <li><em>[Tool ABC] expert</em>: <span class="dimmed">e.g. Intellij expert, Git expert, etc.</span> Helps other team member with matters related to the specific tool.</li>
-                      <li><em>In charge of[Component XYZ]</em>: <span class="dimmed">e.g. In charge of <code>Model</code>, <code>UI</code>, <code>Storage</code>, etc.</span> If you are in charge of a component, you are expected to know that component well,
-                        and review changes done to that component in v1.3-v1.4.
-                      </li>
-                    </ul>
-                  </panel>
-                  <p></p>
-
-                  <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Ensure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>.
-                    <span class="dimmed">Reason: when <em>everyone is responsible for everything</em>, no one is.</span></p>
+                  <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+                  </ol>
                   </span>
-                </box>
-              </div>
-              <ul>
-                <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Review each others work</strong>.</span> <span class="dimmed">Reason: reviewing skills is a learning outcome, and it is mutually beneficial.</span></li>
-              </ul>
+                </panel>
+                <p></p>
+              </box>
             </div>
-            <span id="team-expectations">
-<h3 id="team-expectations"><div class="text-white bg-success p-1"><span><span aria-hidden="true" class="fas fa-users"></span></span> Team Expectations</div><a class="fa fa-anchor" href="#team-expectations"></a></h3>
-          <ul>
-            <li><span class="badge badge-success">Expectation</span> <span class="text-success"><strong>Preserve <em>product integrity</em></strong></span> i.e. ensure,
-              <ol>
-                <li>features fit together to form a cohesive product,</li>
-                <li>documentation follows a consistent style and presents a cohesive picture to the reader, and</li>
-                <li>final project demo presents a cohesive picture to the audience.</li>
-              </ol>
-            </li>
-            <li><span class="badge badge-success">Expectation</span> <span class="text-success"><strong>Maintain product quality</strong></span>** i.e. prevent breaking other parts of the product as it evolves. Note that bugs local to a specific feature will
-              be counted against the author of that feature. However, if a new enhancement breaks the entire product, the whole team will have to share the penalty.</li>
-            <li><span class="badge badge-success">Expectation</span> <span class="text-success"><strong>Manage the project</strong></span>** i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.
-            </li>
-          </ul>
-          </span>
+            <ul>
+              <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Assume a fair share of project roles and responsibilities</strong>.</span></li>
+            </ul>
+            <div class="indented-level2">
+              <box>
+                <span id="roles">
+<p><em>Roles</em> indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
+                <panel type="seamless" header="<md>:fas-cube:</md> Recommended roles and responsibilities" class="algolia-no-index">
+                  <p>This is a non-exhaustive list; you may define additional roles.</p>
+                  <ul>
+                    <li><em>Team lead</em>: Responsible for overall project coordination.</li>
+                    <li><em>Documentation</em> (short for ‘in charge of documentation’): Responsible for the quality of various project documents.</li>
+                    <li><em>Testing</em>: Ensures the testing of the project is done properly and on time.</li>
+                    <li><em>Code quality</em>: Looks after code quality, ensures adherence to coding standards, etc.</li>
+                    <li><em>Deliverables and deadlines</em>: Ensure project deliverables are done on time and in the right format.</li>
+                    <li><em>Integration</em>: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.</li>
+                    <li><em>Scheduling and tracking</em>: In charge of defining, assigning, and tracking project tasks.</li>
+                    <li><em>[Tool ABC] expert</em>: <span class="dimmed">e.g. Intellij expert, Git expert, etc.</span> Helps other team member with matters related to the specific tool.</li>
+                    <li><em>In charge of[Component XYZ]</em>: <span class="dimmed">e.g. In charge of <code>Model</code>, <code>UI</code>, <code>Storage</code>, etc.</span> If you are in charge of a component, you are expected to know that component well,
+                      and review changes done to that component in v1.3-v1.4.
+                    </li>
+                  </ul>
+                </panel>
+                <p></p>
+
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Ensure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>.
+                  <span class="dimmed">Reason: when <em>everyone is responsible for everything</em>, no one is.</span></p>
+                </span>
+              </box>
+            </div>
+            <ul>
+              <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Review each others work</strong>.</span> <span class="dimmed">Reason: reviewing skills is a learning outcome, and it is mutually beneficial.</span></li>
+            </ul>
+          </div>
         </div>
         <br>
         <p><span class="float-left"><b-btn variant="light" href="project-product.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: The product</span>
@@ -460,19 +473,23 @@
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
             <a class="nav-link py-1" href="#project-direction">
         Project Direction&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#direction-1-optimize">Direction 1 Optimize&#x200E;</a>
+              <a class="nav-link py-1" href="#direction-2-morph">Direction 2 Morph&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#target-user">
         Target User&#x200E;</a>
             <a class="nav-link py-1" href="#value-proposition">
         Value Proposition&#x200E;</a>
+            <a class="nav-link py-1" href="#team-expectations"> Team Expectations&#x200E;</a>
             <a class="nav-link py-1" href="#individual-expectations">
-         Individual Expectations&#x200E;</a>
+       Individual Expectations&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#individual-expectations-on-implementation"> Individual Expectations on Implementation&#x200E;</a>
               <a class="nav-link py-1" href="#individual-expectations-on-documentation"> Individual Expectations on Documentation&#x200E;</a>
               <a class="nav-link py-1" href="#individual-expectations-on-testing"> Individual Expectations on Testing&#x200E;</a>
               <a class="nav-link py-1" href="#individual-expectations-on-teamwork"> Individual Expectations on Teamwork&#x200E;</a>
             </nav>
-            <a class="nav-link py-1" href="#team-expectations"> Team Expectations&#x200E;</a>
           </nav>
 
         </nav>
@@ -481,7 +498,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sun, 29 Dec 2019 05:17:31 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sun, 29 Dec 2019 06:53:30 GMT</small></div>
   </footer>
   </div>
 </body>

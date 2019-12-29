@@ -1273,14 +1273,16 @@
       "headings": {
         "tp-scope": "tP: Scope \n                \n                 | project expectations",
         "project-direction": "\n              Project Direction",
+        "direction-1-optimize": "Direction 1 Optimize",
+        "direction-2-morph": "Direction 2 Morph",
         "target-user": "\n              Target User",
         "value-proposition": "\n              Value Proposition",
-        "individual-expectations": "\n               Individual Expectations",
+        "team-expectations": " Team Expectations",
+        "individual-expectations": "\n             Individual Expectations",
         "individual-expectations-on-implementation": " Individual Expectations on Implementation",
         "individual-expectations-on-documentation": " Individual Expectations on Documentation",
         "individual-expectations-on-testing": " Individual Expectations on Testing",
-        "individual-expectations-on-teamwork": " Individual Expectations on Teamwork",
-        "team-expectations": " Team Expectations"
+        "individual-expectations-on-teamwork": " Individual Expectations on Teamwork"
       },
       "title": "Admin: tP: Scope",
       "header": "header.md",
