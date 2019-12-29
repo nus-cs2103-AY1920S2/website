@@ -110,7 +110,17 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
           </div>
           <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: This is the naming convention for boolean methods and variables used by Java core packages. It also makes the code read like</span> normal
             English e.g. <code>if(isOpen) ...</code></p>
-
+          <div tags="level--basic">
+            <p><strong>⭐️ Plural form should be used on names representing a collection of objects.</strong></p>
+            <div class="code-block">
+              <pre><code class="hljs java">Collection&lt;Point&gt; points;
+<span class="hljs-keyword">int</span>[] values;
+</code></pre>
+              <div class="code-block-lang"><span>java</span></div>
+            </div>
+            <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Rationale: Enhances readability since the name gives the user an immediate clue of the type of the variable and the operations that can be</span>
+              performed on its elements. One space character after the variable type is enough to obtain clarity.</p>
+          </div>
           <p><strong>⭐️ Iterator variables can be called <em>i</em>, <em>j</em>, <em>k</em> etc.</strong></p>
           <p>Variables named <em>j</em>, <em>k</em> etc. should be used for nested loops only.</p>
           <div class="code-block">
@@ -528,7 +538,47 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
 
 
 
-
+          <div tags="level--basic">
+            <p><strong>⭐️ Javadoc comments should have the following form:</strong></p>
+            <div class="code-block">
+              <pre><code class="hljs java"><span class="hljs-comment">/**
+ * Returns lateral location of the specified position.
+ * If the position is unset, NaN is returned.
+ *
+ * <span class="hljs-doctag">@param</span> x  X coordinate of position.
+ * <span class="hljs-doctag">@param</span> y Y coordinate of position.
+ * <span class="hljs-doctag">@param</span> zone Zone of position.
+ * <span class="hljs-doctag">@return</span> Lateral location.
+ * <span class="hljs-doctag">@throws</span> IllegalArgumentException  If zone is &lt;= 0.
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">computeLocation</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y, <span class="hljs-keyword">int</span> zone)</span>
+    <span class="hljs-keyword">throws</span> IllegalArgumentException </span>{
+  ...
+}
+</code></pre>
+              <div class="code-block-lang"><span>java</span></div>
+            </div>
+            <p>Note in particular:</p>
+            <ul>
+              <li>The opening <code>/**</code> on a separate line</li>
+              <li><strong>Write the first sentence as a short summary of the method</strong>, as Javadoc automatically places it in the method summary table (and index).
+                <ul>
+                  <li>In method header comments, the first sentence should start in the form <code>Returns ...</code>, <code>Sends ...</code>, <code>Adds ...</code> (not <code>Return</code> or <code>Returnning</code> etc.)</li>
+                </ul>
+              </li>
+              <li>Subsequent <code>*</code> is aligned with the first one</li>
+              <li>Space after each <code>*</code></li>
+              <li>Empty line between description and parameter section</li>
+              <li>Punctuation behind each parameter description -No blank line between the documentation block and the method/class</li>
+            </ul>
+            <p>Javadoc of class members can be specified on a single line as follows:</p>
+            <div class="code-block">
+              <pre><code class="hljs java"><span class="hljs-comment">/** Number of connections to this database */</span>
+<span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> connectionCount;
+</code></pre>
+              <div class="code-block-lang"><span>java</span></div>
+            </div>
+          </div>
           <p><strong>⭐️ Comments should be indented relative to their position in the code.</strong></p>
           <div class="row">
             <div class="col">
@@ -599,7 +649,7 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sun, 29 Dec 2019 07:28:55 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Sun, 29 Dec 2019 16:41:13 GMT</small></div>
     </footer>
   </div>
 </body>

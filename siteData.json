@@ -3,9 +3,9 @@
   "pages": [
     {
       "headings": {
-        "a-module-principles": "A: Module Principles \n                \n                "
+        "apdx-a-module-principles": "Apdx A: Module Principles \n                \n                "
       },
-      "title": "Admin: A: Module Principles",
+      "title": "Admin: Apdx A: Module Principles",
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
@@ -16,7 +16,7 @@
     },
     {
       "headings": {
-        "b-module-policies": "B: Module Policies \n                ",
+        "apdx-b-module-policies": "Apdx B: Module Policies \n                ",
         "policy-on-following-instructions": "Policy on following instructions \n                \n              ",
         "policy-on-grading-smaller-larger-teams": "Policy on grading smaller/larger teams \n                \n              ",
         "policy-on-project-work-distribution": "Policy on project work distribution \n                \n              ",
@@ -30,7 +30,7 @@
         "policy-on-help-from-outsiders": "Policy on help from outsiders \n                \n              ",
         "policy-on-deadline-extensions": "Policy on deadline extensions \n                \n              "
       },
-      "title": "Admin: B: Module Policies",
+      "title": "Admin: Apdx B: Module Policies",
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
@@ -41,7 +41,7 @@
     },
     {
       "headings": {
-        "c-frequently-asked-questions": "C: Frequently Asked Questions \n                ",
+        "apdx-c-faq": "Apdx C: FAQ \n                ",
         "where-is-everything": "Where is everything? ",
         "what-are-the-differences-between-the-t-and-the-non-t-version-of-the-module": "What are the differences between the T and the non-T version of the module? \n                \n              ",
         "why-the-workload-is-so-high": "Why the workload is so high? \n                \n              ",
@@ -57,7 +57,7 @@
         "why-aren-t-we-allowed-to-build-a-new-product-from-scratch-in-the-tp": "Why aren't we allowed to build a new product from scratch in the tP? \n                \n              ",
         "why-submission-requirements-differ-between-cs2103-t-and-cs2101": "Why submission requirements differ between CS2103/T and CS2101? \n                \n              "
       },
-      "title": "Admin: C: Frequently Asked Questions",
+      "title": "Admin: Apdx C: FAQ",
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
@@ -68,9 +68,9 @@
     },
     {
       "headings": {
-        "d-getting-help-in-this-module": "D: Getting help in this module \n                \n                "
+        "apdx-d-getting-help": "Apdx D: Getting Help \n                \n                "
       },
-      "title": "Admin: D: Getting help in this module",
+      "title": "Admin: Apdx D: Getting Help",
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
@@ -81,7 +81,7 @@
     },
     {
       "headings": {
-        "e-using-github": "E: Using GitHub \n                ",
+        "apdx-e-using-github": "Apdx E: Using GitHub \n                ",
         "creating-a-github-account": "\n              Creating a GitHub Account",
         "organization-setup": "\n                Organization Setup",
         "repo-setup": "\n                Repo Setup",
@@ -91,7 +91,7 @@
         "using-issues": "Using Issues:",
         "using-milestones": "Using Milestones:"
       },
-      "title": "Admin: E: Using GitHub",
+      "title": "Admin: Apdx E: Using GitHub",
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
@@ -102,9 +102,9 @@
     },
     {
       "headings": {
-        "f-handling-teamwork-issues": "F: Handling teamwork issues \n                \n                "
+        "apdx-f-handling-team-issues": "Apdx F: Handling Team Issues \n                \n                "
       },
-      "title": "Admin: F: Handling teamwork issues",
+      "title": "Admin: Apdx F: Handling Team Issues",
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
