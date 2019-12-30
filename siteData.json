@@ -1219,6 +1219,28 @@
     },
     {
       "headings": {
+        "tp-expectations": "tP: Expectations \n                \n                 | project expectations",
+        "direction": "\n              Direction",
+        "target-user-and-value-proposition": "\n              Target User &amp; Value Proposition",
+        "functionality-expectations": "Functionality Expectations",
+        "team-expectations": " Team Expectations",
+        "individual-expectations": " Individual Expectations",
+        "individual-expectations-on-implementation": " Individual Expectations on Implementation",
+        "individual-expectations-on-documentation": " Individual Expectations on Documentation",
+        "individual-expectations-on-testing": " Individual Expectations on Testing",
+        "individual-expectations-on-teamwork": " Individual Expectations on Teamwork"
+      },
+      "title": "Admin: tP: Expectations",
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
+      "pageNav": 4,
+      "src": "admin/project-expectations.md",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "grading-bugs-found-in-the-pe": "Grading bugs found in the PE"
       },
       "src": "admin/project-grading-bugs.md",
@@ -1255,43 +1277,6 @@
       "head": "adminHead.md",
       "pageNav": 4,
       "src": "admin/project-overview.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
-        "tp-the-product": "tP: The product \n                \n                "
-      },
-      "title": "Admin: tP: The product",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
-      "src": "admin/project-product.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
-        "tp-scope": "tP: Scope \n                \n                 | project expectations",
-        "project-direction": "\n              Project Direction",
-        "direction-1-optimize": "Direction 1 Optimize",
-        "direction-2-morph": "Direction 2 Morph",
-        "target-user": "\n              Target User",
-        "value-proposition": "\n              Value Proposition",
-        "team-expectations": " Team Expectations",
-        "individual-expectations": "\n             Individual Expectations",
-        "individual-expectations-on-implementation": " Individual Expectations on Implementation",
-        "individual-expectations-on-documentation": " Individual Expectations on Documentation",
-        "individual-expectations-on-testing": " Individual Expectations on Testing",
-        "individual-expectations-on-teamwork": " Individual Expectations on Teamwork"
-      },
-      "title": "Admin: tP: Scope",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
-      "src": "admin/project-scope.md",
       "layout": "default"
     },
     {

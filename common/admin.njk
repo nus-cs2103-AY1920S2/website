@@ -28,12 +28,12 @@ pageNav: 4
 
 
 {% macro show_previous(topic)-%}
-<span class="float-left"><b-btn variant="light" href="{{ topic.link }}"><md>:far-arrow-alt-circle-left: {{ topic.title }}</md></b-btn></span>
+<span class="float-left algolia-no-index"><b-btn variant="light" href="{{ topic.link }}"><md>:far-arrow-alt-circle-left: {{ topic.title }}</md></b-btn></span>
 {%- endmacro %}
 
 
 {% macro show_next(topic)-%}
-<span class="float-right"><b-btn variant="light" href="{{ topic.link }}"><md>{{ topic.title }} :far-arrow-alt-circle-right:</md></b-btn></span>
+<span class="float-right algolia-no-index"><b-btn variant="light" href="{{ topic.link }}"><md>{{ topic.title }} :far-arrow-alt-circle-right:</md></b-btn></span>
 {%- endmacro %}
 
 
@@ -96,8 +96,7 @@ pageNav: 4
     {level: 2, id: "ip-grading", title: "iP: Grading", link: "ip-grading.html", priority: 2},
   {level: -1, id: "project", title: "Team Project (tP)"},
     {level: 2, id: "project-overview", title: "tP (Team Project): Overview", link: "project-overview.html", priority: 2},
-    {level: 2, id: "project-product", title: "tP: The product", link: "project-product.html", priority: 2},
-    {level: 2, id: "project-scope", title: "tP: Scope", link: "project-scope.html", priority: 2},
+    {level: 2, id: "project-expectations", title: "tP: Expectations", link: "project-expectations.html", priority: 2},
     {level: 2, id: "project-constraints", title: "tP: Constraints", link: "project-constraints.html", priority: 2},
     {level: 2, id: "project-teams", title: "tP: Forming Teams", link: "project-teams.html", priority: 2},
     {level: 2, id: "project-w03-kickoff", title: "tP: Kickoff [week 3]", link: "project-w03-kickoff.html", priority: 2},

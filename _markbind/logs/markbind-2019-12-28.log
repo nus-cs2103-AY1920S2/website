@@ -1,14 +1,85 @@
-2019-12-28T15:58:29.372Z - info: Website generation started at 23:58:23
-2019-12-28T15:58:32.612Z - info: Building assets...
-2019-12-28T15:58:35.280Z - info: Assets built
-2019-12-28T15:58:35.280Z - info: Generating pages...
-2019-12-28T15:59:57.991Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T04:37:40.083Z - info: Website generation started at 12:37:38 PM
+2019-12-28T04:37:42.281Z - info: Building assets...
+2019-12-28T04:37:43.905Z - info: Assets built
+2019-12-28T04:37:43.905Z - info: Generating pages...
+2019-12-28T04:37:44.366Z - info: Pages built
+2019-12-28T04:37:44.528Z - info: Website generation complete! Total build time: 5.644s
+2019-12-28T04:37:44.867Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-28T04:37:44.867Z - info: Press CTRL+C to stop ...
+2019-12-28T04:37:44.963Z - info: Site data built
+2019-12-28T04:39:01.329Z - info: [12:39:01 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\_markbind\headers\header.md
+2019-12-28T04:39:02.331Z - info: Rebuilding affected source files
+2019-12-28T04:39:02.332Z - info: Rebuilding 1 pages
+2019-12-28T04:39:02.641Z - info: Pages rebuilt
+2019-12-28T04:39:02.654Z - info: Site data built
+2019-12-28T04:39:24.083Z - info: [12:39:24 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\_markbind\headers\header.md
+2019-12-28T04:39:25.085Z - info: Rebuilding affected source files
+2019-12-28T04:39:25.085Z - info: Rebuilding 1 pages
+2019-12-28T04:39:25.304Z - info: Pages rebuilt
+2019-12-28T04:39:25.314Z - info: Site data built
+2019-12-28T04:41:34.065Z - info: [12:41:34 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\_markbind\headers\header.md
+2019-12-28T04:41:35.065Z - info: Rebuilding affected source files
+2019-12-28T04:41:35.066Z - info: Rebuilding 1 pages
+2019-12-28T04:41:35.316Z - info: Pages rebuilt
+2019-12-28T04:41:35.340Z - info: Site data built
+2019-12-28T04:43:00.506Z - info: [12:43:00 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\_markbind\headers\header.md
+2019-12-28T04:43:01.506Z - info: Rebuilding affected source files
+2019-12-28T04:43:01.507Z - info: Rebuilding 1 pages
+2019-12-28T04:43:01.764Z - info: Pages rebuilt
+2019-12-28T04:43:01.779Z - info: Site data built
+2019-12-28T04:48:10.451Z - info: Website generation started at 12:48:09 PM
+2019-12-28T04:48:12.836Z - info: Building assets...
+2019-12-28T04:48:14.759Z - info: Assets built
+2019-12-28T04:48:14.760Z - info: Generating pages...
+2019-12-28T04:48:15.256Z - info: Pages built
+2019-12-28T04:48:15.424Z - info: Website generation complete! Total build time: 5.574s
+2019-12-28T04:48:15.785Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-28T04:48:15.785Z - info: Press CTRL+C to stop ...
+2019-12-28T04:48:15.886Z - info: Site data built
+2019-12-28T04:54:31.922Z - info: Website generation started at 12:54:31 PM
+2019-12-28T04:54:34.388Z - info: Building assets...
+2019-12-28T04:54:36.165Z - info: Assets built
+2019-12-28T04:54:36.165Z - info: Generating pages...
+2019-12-28T04:55:16.476Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-28T15:59:57.992Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T04:55:16.484Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-28T15:59:57.992Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T04:55:16.484Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-28T15:59:58.071Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T04:55:16.484Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-28T15:59:58.073Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T04:55:16.484Z - debug: The process cannot access the file because it is being used by another process.
 
+2019-12-28T04:55:16.485Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T04:55:16.485Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T04:55:16.485Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T04:55:16.485Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T04:55:16.485Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T04:55:16.486Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T04:55:16.486Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T04:55:16.486Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T04:55:16.486Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T04:55:16.586Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T04:55:16.588Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T04:55:16.591Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T04:55:20.579Z - debug:  
+2019-12-28T04:55:20.580Z - debug:  
+2019-12-28T04:55:22.265Z - debug:  
+2019-12-28T04:55:22.265Z - debug:  
+2019-12-28T04:56:10.184Z - info: Pages built
+2019-12-28T04:56:26.283Z - info: Website generation complete! Total build time: 115.046s
+2019-12-28T04:56:26.284Z - info: Build success!
+2019-12-28T04:56:26.297Z - info: Site data built
+2019-12-28T04:57:28.741Z - info: Deployed!
