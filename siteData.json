@@ -1219,8 +1219,9 @@
     },
     {
       "headings": {
-        "tp-expectations": "tP: Expectations \n                \n                 | project expectations",
-        "direction": "\n              Direction",
+        "tp-team-project-expectations": "tP (team project): Expectations \n                \n                 | project expectations",
+        "outcomes": "\n              Outcomes",
+        "direction": "Direction",
         "target-user-and-value-proposition": "\n              Target User &amp; Value Proposition",
         "functionality-expectations": "Functionality Expectations",
         "team-expectations": " Team Expectations",
@@ -1230,7 +1231,7 @@
         "individual-expectations-on-testing": " Individual Expectations on Testing",
         "individual-expectations-on-teamwork": " Individual Expectations on Teamwork"
       },
-      "title": "Admin: tP: Expectations",
+      "title": "Admin: tP (team project): Expectations",
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
@@ -1264,19 +1265,6 @@
       "head": "adminHead.md",
       "pageNav": 4,
       "src": "admin/project-grading.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
-        "tp-team-project-overview": "tP (Team Project): Overview \n                \n                "
-      },
-      "title": "Admin: tP (Team Project): Overview",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
-      "src": "admin/project-overview.md",
       "layout": "default"
     },
     {

@@ -1,0 +1,883 @@
+2019-12-31T04:42:25.417Z - info: Website generation started at 12:42:24 PM
+2019-12-31T04:42:27.856Z - info: Building assets...
+2019-12-31T04:42:29.660Z - info: Assets built
+2019-12-31T04:42:29.660Z - info: Generating pages...
+2019-12-31T04:43:14.675Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.676Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.677Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.677Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.678Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.678Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.678Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.678Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.679Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.679Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.679Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.679Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.680Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.681Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.681Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.681Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:14.682Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T04:43:18.371Z - debug:  
+2019-12-31T04:43:18.371Z - debug:  
+2019-12-31T04:43:18.640Z - debug:  
+2019-12-31T04:43:18.640Z - debug:  
+2019-12-31T04:44:15.700Z - info: Pages built
+2019-12-31T04:44:35.515Z - info: Website generation complete! Total build time: 131.511s
+2019-12-31T04:44:35.908Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-31T04:44:35.908Z - info: Press CTRL+C to stop ...
+2019-12-31T04:44:36.031Z - info: Site data built
+2019-12-31T04:46:30.917Z - info: [12:46:30 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-expectations.md
+2019-12-31T04:46:31.921Z - info: Rebuilding affected source files
+2019-12-31T04:46:31.929Z - info: Rebuilding 21 pages
+2019-12-31T04:46:35.962Z - debug:  
+2019-12-31T04:46:40.085Z - info: Pages rebuilt
+2019-12-31T04:46:40.099Z - info: Site data built
+2019-12-31T04:48:22.352Z - info: [12:48:22 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-expectations.md
+2019-12-31T04:48:23.357Z - info: Rebuilding affected source files
+2019-12-31T04:48:23.362Z - info: Rebuilding 17 pages
+2019-12-31T04:48:30.048Z - info: Pages rebuilt
+2019-12-31T04:48:30.067Z - info: Site data built
+2019-12-31T04:50:33.974Z - info: [12:50:33 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-expectations.md
+2019-12-31T04:50:34.978Z - info: Rebuilding affected source files
+2019-12-31T04:50:34.982Z - info: Rebuilding 17 pages
+2019-12-31T04:50:41.973Z - info: Pages rebuilt
+2019-12-31T04:50:41.984Z - info: Site data built
+2019-12-31T04:52:20.467Z - info: [12:52:20 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-expectations.md
+2019-12-31T04:52:21.471Z - info: Rebuilding affected source files
+2019-12-31T04:52:21.477Z - info: Rebuilding 17 pages
+2019-12-31T04:52:28.852Z - info: Pages rebuilt
+2019-12-31T04:52:28.866Z - info: Site data built
+2019-12-31T04:54:15.429Z - info: [12:54:15 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-expectations.md
+2019-12-31T04:54:16.432Z - info: Rebuilding affected source files
+2019-12-31T04:54:16.435Z - info: Rebuilding 17 pages
+2019-12-31T04:54:23.118Z - info: Pages rebuilt
+2019-12-31T04:54:23.131Z - info: Site data built
+2019-12-31T04:54:35.776Z - info: [12:54:35 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-expectations.md
+2019-12-31T04:54:36.792Z - info: Rebuilding affected source files
+2019-12-31T04:54:36.795Z - info: Rebuilding 17 pages
+2019-12-31T04:54:43.477Z - info: Pages rebuilt
+2019-12-31T04:54:43.492Z - info: Site data built
+2019-12-31T04:55:14.776Z - info: [12:55:14 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-expectations.md
+2019-12-31T04:55:15.779Z - info: Rebuilding affected source files
+2019-12-31T04:55:15.781Z - info: Rebuilding 17 pages
+2019-12-31T04:55:22.458Z - info: Pages rebuilt
+2019-12-31T04:55:22.470Z - info: Site data built
+2019-12-31T04:56:32.026Z - info: [12:56:32 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-expectations.md
+2019-12-31T04:56:33.031Z - info: Rebuilding affected source files
+2019-12-31T04:56:33.033Z - info: Rebuilding 17 pages
+2019-12-31T04:56:39.560Z - info: Pages rebuilt
+2019-12-31T04:56:39.573Z - info: Site data built
+2019-12-31T05:00:43.434Z - info: [1:00:43 PM] Reload for file deletion: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-overview.md
+2019-12-31T05:00:44.435Z - warn: Rebuilding all source files
+2019-12-31T05:00:46.535Z - info: Assets removed
+2019-12-31T05:00:46.535Z - info: Generating pages...
+2019-12-31T05:00:47.675Z - error:  Error: No such file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-overview.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-w04-inception.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-31T05:00:53.051Z - error:  Error: No such file: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-overview.md
+Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-w04-inception.md
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+2019-12-31T05:01:28.638Z - info: [1:01:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\common\admin.njk
+2019-12-31T05:01:28.638Z - info: [1:01:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-w04-inception.md
+2019-12-31T05:01:28.638Z - info: [1:01:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\_markbind\headers\header.md
+2019-12-31T05:01:28.720Z - info: [1:01:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\common\admin.njk
+2019-12-31T05:01:28.720Z - info: [1:01:28 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\project-w04-inception.md
+2019-12-31T05:01:29.198Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.201Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.203Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.203Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.203Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.203Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.204Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.204Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.204Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.204Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.204Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.204Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.685Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.687Z - info: Rebuilding affected source files
+2019-12-31T05:01:29.753Z - info: Rebuilding 152 pages
+2019-12-31T05:01:29.754Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.754Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.755Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:29.755Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:01:51.118Z - debug:  
+2019-12-31T05:01:51.120Z - debug:  
+2019-12-31T05:01:51.562Z - debug:  
+2019-12-31T05:01:51.564Z - debug:  
+2019-12-31T05:02:10.137Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.138Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.138Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.138Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.138Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.138Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.139Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.139Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.139Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.139Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.139Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.140Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.140Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.140Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.140Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.140Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.140Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.141Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.141Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.141Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.141Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.141Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.141Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.141Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.142Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.142Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.142Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.145Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.145Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.145Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.145Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.146Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.146Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.146Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.146Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.146Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.147Z - error:  TypeError: Cannot read property 'parent' of null
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Page.collectNavigableHeadings (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:298:21)
+    at Page.buildPageNav (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:689:10)
+    at markbinder.includeFile.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then.then (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Page.js:824:14)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+2019-12-31T05:02:10.147Z - warn:  Error: Error while generating C:\repos\nus-cs2103-AY1920S2\cs2103-website\se-book-adapted\chapters\design.md
+    at processingFiles.push.page.generate.then.catch (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:815:31)
+    at tryCatcher (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:725:18)
+    at _drainQueueStep (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+2019-12-31T05:02:12.474Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:02:12.475Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:02:13.137Z - info: Assets built
+2019-12-31T05:02:14.693Z - debug:  
+2019-12-31T05:02:14.820Z - debug:  
+2019-12-31T05:02:14.822Z - debug:  
+2019-12-31T05:02:17.766Z - debug:  
+2019-12-31T05:02:24.741Z - error: uncaughtException: EPERM: operation not permitted, open 'C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site\admin\project-expectations.html' date=Tue Dec 31 2019 13:02:24 GMT+0800 (Singapore Standard Time), pid=24916, uid=null, gid=null, cwd=C:\repos\nus-cs2103-AY1920S2\cs2103-website, execPath=C:\Program Files\nodejs\node.exe, version=v10.14.2, argv=[C:\Program Files\nodejs\node.exe, C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=434966528, heapTotal=359448576, heapUsed=202632824, external=11368893, loadavg=[0, 0, 0], uptime=1645912
+Error: EPERM: operation not permitted, open 'C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site\admin\project-expectations.html'
+    at Object.openSync (fs.js:439:3)
+    at Object.readFileSync (fs.js:344:35)
+    at SendStream.file (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\live-server\index.js:60:23)
+    at SendStream.emit (events.js:182:13)
+    at onstat (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\send\index.js:728:10)
+    at FSReqWrap.oncomplete (fs.js:155:5)
+2019-12-31T05:02:34.465Z - error:  Error: ENOENT: no such file or directory, open 'C:\repos\nus-cs2103-AY1920S2\cs2103-website\.temp\admin\appendixC-faq.md'
+2019-12-31T05:02:49.152Z - info: Website generation started at 1:02:47 PM
+2019-12-31T05:02:51.423Z - info: Building assets...
+2019-12-31T05:02:53.264Z - info: Assets built
+2019-12-31T05:02:53.265Z - info: Generating pages...
+2019-12-31T05:03:31.220Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.220Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.230Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.230Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.230Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.231Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.231Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.232Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.232Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.233Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.233Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.234Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.234Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.235Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.369Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.369Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:31.369Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-31T05:03:34.366Z - debug:  
+2019-12-31T05:03:34.561Z - debug:  
+2019-12-31T05:03:34.561Z - debug:  
+2019-12-31T05:03:34.561Z - debug:  
+2019-12-31T05:04:22.640Z - info: Pages built
+2019-12-31T05:04:38.599Z - info: Website generation complete! Total build time: 111.09s
+2019-12-31T05:04:38.973Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-31T05:04:38.974Z - info: Press CTRL+C to stop ...
+2019-12-31T05:04:39.079Z - info: Site data built
+2019-12-31T05:09:34.174Z - info: Website generation started at 1:09:32 PM
+2019-12-31T05:09:36.700Z - info: Building assets...
