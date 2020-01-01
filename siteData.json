@@ -3,7 +3,7 @@
   "pages": [
     {
       "headings": {
-        "apdx-a-module-principles": "Apdx A: Module Principles \n                \n                "
+        "apdx-a-module-principles-optional": "Apdx A: Module Principles \n                : OPTIONAL\n                "
       },
       "title": "Admin: Apdx A: Module Principles",
       "header": "header.md",
@@ -18,17 +18,17 @@
       "headings": {
         "apdx-b-module-policies": "Apdx B: Module Policies \n                ",
         "policy-on-following-instructions": "Policy on following instructions \n                \n              ",
-        "policy-on-grading-smaller-larger-teams": "Policy on grading smaller/larger teams \n                \n              ",
+        "policy-on-grading-smaller-larger-teams-optional": "Policy on grading smaller/larger teams : OPTIONAL\n                \n              ",
         "policy-on-project-work-distribution": "Policy on project work distribution \n                \n              ",
-        "policy-on-absence-due-to-valid-reasons-e-g-mc-loa-university-events": "Policy on absence due to valid reasons (e.g. MC, LOA, University events) \n                \n              ",
+        "policy-on-absence-due-to-valid-reasons-e-g-mc-loa-university-events-optional": "Policy on absence due to valid reasons (e.g. MC, LOA, University events) : OPTIONAL\n                \n              ",
         "policy-on-email-response-time": "Policy on email response time \n                \n              ",
         "policy-on-tech-help": "Policy on tech help \n                \n              ",
-        "policy-on-publishing-submissions": "Policy on publishing submissions \n                \n              ",
+        "policy-on-publishing-submissions-optional": "Policy on publishing submissions : OPTIONAL\n                \n              ",
         "policy-on-plagiarism": "Policy on plagiarism ",
         "policy-on-reuse": "Policy on reuse \n                \n              ",
         "giving-credit-for-reused-work": "Giving credit for reused work",
         "policy-on-help-from-outsiders": "Policy on help from outsiders \n                \n              ",
-        "policy-on-deadline-extensions": "Policy on deadline extensions \n                \n              "
+        "policy-on-deadline-extensions-optional": "Policy on deadline extensions : OPTIONAL\n                \n              "
       },
       "title": "Admin: Apdx B: Module Policies",
       "header": "header.md",
@@ -43,19 +43,19 @@
       "headings": {
         "apdx-c-faq": "Apdx C: FAQ \n                ",
         "where-is-everything": "Where is everything? ",
-        "what-are-the-differences-between-the-t-and-the-non-t-version-of-the-module": "What are the differences between the T and the non-T version of the module? \n                \n              ",
-        "why-the-workload-is-so-high": "Why the workload is so high? \n                \n              ",
+        "what-are-the-differences-between-the-t-and-the-non-t-version-of-the-module-optional": "What are the differences between the T and the non-T version of the module? : OPTIONAL\n                \n              ",
+        "why-the-workload-is-so-high-optional": "Why the workload is so high? : OPTIONAL\n                \n              ",
         "what-are-the-extra-requirements-to-get-an-a": "What are the extra requirements to get an A+? \n                \n              ",
-        "why-so-much-bean-counting": "Why so much bean counting? \n                \n              ",
-        "why-you-force-me-to-visit-a-separate-website-instead-of-using-luminus": "Why you force me to visit a separate website instead of using LumiNUS? \n                \n              ",
-        "why-slides-are-not-detailed": "Why slides are not detailed? \n                \n              ",
-        "why-so-much-self-study": "Why so much self-study? \n                \n              ",
-        "what-if-i-don-t-carry-around-a-laptop": "What if I don’t carry around a laptop? \n                \n              ",
-        "why-very-narrow-project-scope": "Why very narrow project scope? \n                \n              ",
-        "why-i-m-not-allowed-to-use-my-favorite-tool-framework-language-etc": "Why I’m not allowed to use my favorite tool/framework/language etc.? \n                \n              ",
-        "why-so-many-submissions": "Why so many submissions? \n                \n              ",
-        "why-aren-t-we-allowed-to-build-a-new-product-from-scratch-in-the-tp": "Why aren't we allowed to build a new product from scratch in the tP? \n                \n              ",
-        "why-submission-requirements-differ-between-cs2103-t-and-cs2101": "Why submission requirements differ between CS2103/T and CS2101? \n                \n              "
+        "why-so-much-bean-counting-optional": "Why so much bean counting? : OPTIONAL\n                \n              ",
+        "why-you-force-me-to-visit-a-separate-website-instead-of-using-luminus-optional": "Why you force me to visit a separate website instead of using LumiNUS? : OPTIONAL\n                \n              ",
+        "why-slides-are-not-detailed-optional": "Why slides are not detailed? : OPTIONAL\n                \n              ",
+        "why-so-much-self-study-optional": "Why so much self-study? : OPTIONAL\n                \n              ",
+        "what-if-i-don-t-carry-around-a-laptop-optional": "What if I don’t carry around a laptop? : OPTIONAL\n                \n              ",
+        "why-very-narrow-project-scope-optional": "Why very narrow project scope? : OPTIONAL\n                \n              ",
+        "why-i-m-not-allowed-to-use-my-favorite-tool-framework-language-etc-optional": "Why I’m not allowed to use my favorite tool/framework/language etc.? : OPTIONAL\n                \n              ",
+        "why-so-many-submissions-optional": "Why so many submissions? : OPTIONAL\n                \n              ",
+        "why-aren-t-we-allowed-to-build-a-new-product-from-scratch-in-the-tp-optional": "Why aren't we allowed to build a new product from scratch in the tP? : OPTIONAL\n                \n              ",
+        "why-submission-requirements-differ-between-cs2103-t-and-cs2101-optional": "Why submission requirements differ between CS2103/T and CS2101? : OPTIONAL\n                \n              "
       },
       "title": "Admin: Apdx C: FAQ",
       "header": "header.md",
@@ -68,7 +68,7 @@
     },
     {
       "headings": {
-        "apdx-d-getting-help": "Apdx D: Getting Help \n                \n                "
+        "apdx-d-getting-help": "Apdx D: Getting Help \n                "
       },
       "title": "Admin: Apdx D: Getting Help",
       "header": "header.md",
@@ -102,7 +102,7 @@
     },
     {
       "headings": {
-        "apdx-f-handling-team-issues": "Apdx F: Handling Team Issues \n                \n                "
+        "apdx-f-handling-team-issues-optional": "Apdx F: Handling Team Issues \n                : OPTIONAL\n                "
       },
       "title": "Admin: Apdx F: Handling Team Issues",
       "header": "header.md",
@@ -115,7 +115,7 @@
     },
     {
       "headings": {
-        "exams": "Exams \n                \n                ",
+        "exams": "Exams \n                ",
         "final-exam-part-1-mcq": "Final Exam: Part 1 (MCQ)",
         "final-exam-part-2-essay": "Final Exam: Part 2 (Essay)"
       },
@@ -328,7 +328,7 @@
     },
     {
       "headings": {
-        "grade-breakdown": "Grade Breakdown \n                \n                "
+        "grade-breakdown": "Grade Breakdown \n                "
       },
       "title": "Admin: Grade Breakdown",
       "header": "header.md",
@@ -341,7 +341,7 @@
     },
     {
       "headings": {
-        "cs2103-t-software-engineering": "CS2103/T Software Engineering \n                \n                "
+        "cs2103-t-software-engineering-optional": "CS2103/T Software Engineering \n                : OPTIONAL\n                "
       },
       "title": "Admin: CS2103/T Software Engineering",
       "header": "header.md",
@@ -354,7 +354,7 @@
     },
     {
       "headings": {
-        "instructors": "Instructors \n                \n                "
+        "instructors-optional": "Instructors \n                : OPTIONAL\n                "
       },
       "title": "Admin: Instructors",
       "header": "header.md",
@@ -367,7 +367,7 @@
     },
     {
       "headings": {
-        "ip-grading": "iP: Grading \n                \n                "
+        "ip-grading": "iP: Grading \n                "
       },
       "title": "Admin: iP: Grading",
       "header": "header.md",
@@ -380,7 +380,7 @@
     },
     {
       "headings": {
-        "ip-individual-project-overview": "iP (Individual Project): Overview \n                \n                "
+        "ip-individual-project-overview": "iP (Individual Project): Overview \n                "
       },
       "title": "Admin: iP (Individual Project): Overview",
       "header": "header.md",
@@ -822,7 +822,7 @@
     },
     {
       "headings": {
-        "ip-week-2": "iP: Week 2 \n                \n                ",
+        "ip-week-2": "iP: Week 2 \n                ",
         "0-learn-about-the-project": "0 Learn about the project",
         "1-set-up-prerequisites": "1 Set up prerequisites",
         "2-set-up-the-project-in-your-computer": "2 Set up the project in your computer",
@@ -839,7 +839,7 @@
     },
     {
       "headings": {
-        "ip-week-3": "iP: Week 3 \n                \n                ",
+        "ip-week-3": "iP: Week 3 \n                ",
         "0-do-any-leftover-ip-increments-from-the-previous-week": "0 Do any leftover iP increments from the previous week",
         "1-create-a-pr-to-the-upstream-repo": "1 Create a PR to the upstream repo",
         "2-do-as-parallel-branches-level-7-and-level-8": "2 Do as parallel branches: Level-7 and Level-8",
@@ -858,7 +858,7 @@
     {
       "headings": {
         "guidelines-for-pr-reviewers-authors": "Guidelines for PR reviewers/authors",
-        "ip-week-4": "iP: Week 4 \n                \n                ",
+        "ip-week-4": "iP: Week 4 \n                ",
         "1-review-some-peer-prs": "1 Review some peer PRs",
         "2-add-increments-a-gradle-a-checkstyle-level-10-a-varargs": "2 Add increments: A-Gradle,A-CheckStyle, Level-10, A-Varargs"
       },
@@ -873,7 +873,7 @@
     },
     {
       "headings": {
-        "ip-week-5": "iP: Week 5 \n                \n                ",
+        "ip-week-5": "iP: Week 5 \n                ",
         "0-generate-a-new-jar-file-extra": "0 Generate a new jar file  extra\n                ",
         "1-add-increments-as-prs-a-assertions-a-codequality-a-lambdas-a-streams": "1 Add increments as PRs: A-Assertions, A-CodeQuality, A-Lambdas, A-Streams",
         "2-set-up-ci": "2 Set up CI",
@@ -890,7 +890,7 @@
     },
     {
       "headings": {
-        "ip-week-6": "iP: Week 6 \n                \n                ",
+        "ip-week-6": "iP: Week 6 \n                ",
         "1-finalize-the-features": "1 Finalize the features",
         "2-set-up-a-product-website": "2 Set up a product website",
         "3-release-the-product": "3 Release the product"
@@ -948,7 +948,7 @@
     },
     {
       "headings": {
-        "module-expectations": "Module Expectations \n                \n                ",
+        "module-expectations": "Module Expectations \n                ",
         "prior-knowledge-java-and-oop": "Prior Knowledge: Java and OOP",
         "workload": "Workload",
         "star-rating-system": "Star Rating System"
@@ -964,7 +964,7 @@
     },
     {
       "headings": {
-        "cs2103-t-software-engineering": "CS2103/T Software Engineering \n                \n                "
+        "cs2103-t-software-engineering-optional": "CS2103/T Software Engineering \n                : OPTIONAL\n                "
       },
       "title": "Admin: CS2103/T Software Engineering",
       "header": "header.md",
@@ -978,7 +978,7 @@
     {
       "headings": {
         "where-to-find-your-participation-marks-progress": "Where to find your participation marks progress",
-        "participation-marks": "Participation Marks \n                \n                "
+        "participation-marks": "Participation Marks \n                "
       },
       "title": "Admin: Participation Marks",
       "header": "header.md",
@@ -1018,7 +1018,7 @@
     },
     {
       "headings": {
-        "peer-evaluations": "Peer Evaluations \n                \n                ",
+        "peer-evaluations": "Peer Evaluations \n                ",
         "session-practice-peer-evaluation": "Session: Practice Peer Evaluation",
         "session-midterm-peer-evaluation": "Session: Midterm Peer Evaluation",
         "important-questions-included-in-the-evaluation": "Important questions included in the evaluation:",
@@ -1039,7 +1039,7 @@
     },
     {
       "headings": {
-        "programming-language": "Programming Language \n                \n                ",
+        "programming-language": "Programming Language \n                ",
         "java-coding-standard": "Java coding standard"
       },
       "title": "Admin: Programming Language",
@@ -1053,7 +1053,7 @@
     },
     {
       "headings": {
-        "tp-constraints": "tP: Constraints \n                \n                ",
+        "tp-constraints": "tP: Constraints \n                ",
         "constraint-brownfield": " Constraint-Brownfield",
         "constraint-typing-preferred": " Constraint-Typing-Preferred",
         "constraint-single-user": " Constraint-Single-User",
@@ -1169,7 +1169,7 @@
     },
     {
       "headings": {
-        "tp-deliverables": "tP: Deliverables \n                \n                ",
+        "tp-deliverables": "tP: Deliverables \n                ",
         "deliverable-executable": "\n              Deliverable: Executable",
         "deliverable-source-code": "\n              Deliverable: Source code",
         "deliverable-user-guide-ug": "\n              Deliverable: User Guide (UG)",
@@ -1219,7 +1219,7 @@
     },
     {
       "headings": {
-        "tp-team-project-expectations": "tP (team project): Expectations \n                \n                 | project expectations",
+        "tp-team-project-expectations": "tP (team project): Expectations \n                 | project expectations",
         "outcomes": "\n              Outcomes",
         "direction": "Direction",
         "target-user-and-value-proposition": "\n              Target User &amp; Value Proposition",
@@ -1250,7 +1250,7 @@
     },
     {
       "headings": {
-        "tp-grading": "tP: Grading \n                \n                ",
+        "tp-grading": "tP: Grading \n                ",
         "1-project-grading-product-design-5-marks": "\n                1. Project Grading: Product Design [/ 5 marks]\n                ",
         "2-project-grading-implementation-10-marks": "\n              2. Project Grading: Implementation [ 10 marks]\n              ",
         "3-project-grading-qa-10-marks": "\n              3. Project Grading: QA [ 10 marks]\n              ",
@@ -1269,7 +1269,7 @@
     },
     {
       "headings": {
-        "tp-supervision": "tP: Supervision \n                \n                "
+        "tp-supervision": "tP: Supervision \n                "
       },
       "title": "Admin: tP: Supervision",
       "header": "header.md",
@@ -1282,7 +1282,7 @@
     },
     {
       "headings": {
-        "tp-forming-teams": "tP: Forming Teams \n                \n                ",
+        "tp-forming-teams": "tP: Forming Teams \n                ",
         "when-to-form-teams": "When to form teams",
         "team-size": "Team size",
         "team-composition": "Team composition",
@@ -1300,7 +1300,7 @@
     },
     {
       "headings": {
-        "tp-kickoff-week-3": "tP: Kickoff [week 3] \n                \n                ",
+        "tp-kickoff-week-3": "tP: Kickoff [week 3] \n                ",
         "1-get-familiar-with-ab3-features": "1 Get familiar with AB3 features",
         "2-set-up-a-project-meeting-time-by-the-end-of-the-tutorial": "2 Set up a project meeting time  by the end of the\n                tutorial\n                "
       },
@@ -1331,7 +1331,7 @@
     },
     {
       "headings": {
-        "tp-v1-0-week-5": "tP: v1.0 [week 5] \n                \n                ",
+        "tp-v1-0-week-5": "tP: v1.0 [week 5] \n                ",
         "1-brainstorm-user-stories-before-the-tutorial": "1 Brainstorm user stories  before the tutorial\n                ",
         "2-prioritize-the-user-stories-before-or-during-the-tutorial": "2 Prioritize the user stories  before or during\n                the tutorial\n                "
       },
@@ -1346,7 +1346,7 @@
     },
     {
       "headings": {
-        "tp-mid-v1-1-week-6": "tP: mid-v1.1 [week 6] \n                \n                ",
+        "tp-mid-v1-1-week-6": "tP: mid-v1.1 [week 6] \n                ",
         "1-set-up-the-project-repo": "1  Set up the project repo",
         "2-get-familiar-with-the-code-base": "2  Get familiar with the code base",
         "3-conceptualize-v2-0": "3  Conceptualize v2.0",
@@ -1364,7 +1364,7 @@
     },
     {
       "headings": {
-        "tp-v1-1-week-7": "tP: v1.1 [week 7] \n                \n                ",
+        "tp-v1-1-week-7": "tP: v1.1 [week 7] \n                ",
         "1-update-project-website-aboutus-contactus-readme": "1  Update project website: AboutUs, ContactUs, README",
         "2-update-the-ug": "2  Update the UG",
         "3-update-the-dg-user-stories-glossary-nfrs-use-cases": "3  Update the DG: user stories, glossary, NFRs, use cases",
@@ -1400,7 +1400,7 @@
     },
     {
       "headings": {
-        "tp-v1-2-week-9": "tP: v1.2 [week 9] \n                \n                ",
+        "tp-v1-2-week-9": "tP: v1.2 [week 9] \n                ",
         "deliver-an-intermediate-version-of-the-new-features": " Deliver an intermediate version of the new features",
         "wrap-up-milestone": " Wrap up milestone",
         "demo-new-features": " Demo new features"
@@ -1417,7 +1417,7 @@
     {
       "headings": {
         "dg-tips": " DG Tips",
-        "tp-mid-v1-3-week-10": "tP: mid-v1.3 [week 10] \n                \n                ",
+        "tp-mid-v1-3-week-10": "tP: mid-v1.3 [week 10] \n                ",
         "1-start-on-the-full-version-of-the-new-features": "1  Start on the full version of the new features",
         "2-update-dg-with-design-details-important": "2  Update DG with design details                 IMPORTANT!\n                ",
         "3-do-a-release": "3  Do a release",
@@ -1434,7 +1434,7 @@
     },
     {
       "headings": {
-        "tp-v1-3-week-11": "tP: v1.3 [week 11] \n                \n                ",
+        "tp-v1-3-week-11": "tP: v1.3 [week 11] \n                ",
         "1-deliver-the-feature": "1  Deliver the feature",
         "2-update-user-docs": "2  Update user docs",
         "3-release-as-a-jar-file": "3  Release as a jar file",
@@ -1469,7 +1469,7 @@
     },
     {
       "headings": {
-        "tp-v1-4-week-13": "tP: v1.4 [week 13] \n                \n                ",
+        "tp-v1-4-week-13": "tP: v1.4 [week 13] \n                ",
         "1-do-final-tweaks-to-the-feature": "1  Do final tweaks to the feature",
         "2-submit-the-deliverables-by-monday-2359": "2  Submit the deliverables                 by Monday 2359\n                ",
         "3-wrap-up-the-milestone-by-wednesday-2359": "3  Wrap up the milestone                 by Wednesday 2359\n                ",
@@ -1935,7 +1935,7 @@
     },
     {
       "headings": {
-        "textbooks": "Textbooks \n                \n                "
+        "textbooks": "Textbooks \n                "
       },
       "title": "Admin: Textbooks",
       "header": "header.md",
@@ -1976,7 +1976,7 @@
       "headings": {
         "tutorial-structure": "Tutorial Structure",
         "tutorial-timetable": "Tutorial Timetable",
-        "tutorials": "Tutorials \n                \n                "
+        "tutorials": "Tutorials \n                "
       },
       "title": "Admin: Tutorials",
       "header": "header.md",

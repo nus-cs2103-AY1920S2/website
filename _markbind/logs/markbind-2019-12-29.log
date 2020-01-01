@@ -1,374 +1,127 @@
-2019-12-29T05:17:26.903Z - info: Website generation started at 1:17:25 PM
-2019-12-29T05:17:29.376Z - info: Building assets...
-2019-12-29T05:17:31.484Z - info: Assets built
-2019-12-29T05:17:31.484Z - info: Generating pages...
-2019-12-29T05:18:10.036Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:00:00.229Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.121Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:00:00.236Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.122Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:00:00.237Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.122Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:00:00.237Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.122Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:00:00.237Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.122Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:00:00.237Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.123Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:00:00.238Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.131Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:00:00.238Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.132Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:00:00.238Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.132Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:00:00.238Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.132Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:00:00.239Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.132Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:00:00.306Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.133Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:00:10.752Z - debug:  
+2019-12-28T16:00:10.753Z - debug:  
+2019-12-28T16:00:10.753Z - debug:  
+2019-12-28T16:00:10.753Z - debug:  
+2019-12-28T16:01:33.870Z - info: Pages built
+2019-12-28T16:02:07.267Z - info: Website generation complete! Total build time: 223.882s
+2019-12-28T16:02:07.596Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-28T16:02:07.596Z - info: Press CTRL+C to stop ...
+2019-12-28T16:02:07.733Z - info: Site data built
+2019-12-28T16:20:22.128Z - info: Website generation started at 00:20:16
+2019-12-28T16:20:25.324Z - info: Building assets...
+2019-12-28T16:20:28.598Z - info: Assets built
+2019-12-28T16:20:28.598Z - info: Generating pages...
+2019-12-28T16:22:44.662Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.133Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:44.666Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.177Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:44.666Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.180Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:44.666Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:10.183Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:44.670Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T05:18:14.270Z - debug:  
-2019-12-29T05:18:14.271Z - debug:  
-2019-12-29T05:18:16.437Z - debug:  
-2019-12-29T05:18:16.437Z - debug:  
-2019-12-29T05:19:02.279Z - info: Pages built
-2019-12-29T05:19:17.482Z - info: Website generation complete! Total build time: 111.869s
-2019-12-29T05:19:17.482Z - info: Build success!
-2019-12-29T05:19:17.490Z - info: Site data built
-2019-12-29T05:19:59.222Z - info: Deployed!
-2019-12-29T06:53:25.697Z - info: Website generation started at 2:53:24 PM
-2019-12-29T06:53:28.307Z - info: Building assets...
-2019-12-29T06:53:30.488Z - info: Assets built
-2019-12-29T06:53:30.489Z - info: Generating pages...
-2019-12-29T06:54:12.821Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:44.670Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.822Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:44.670Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.822Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:44.690Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.822Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:45.442Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.822Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:45.442Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.822Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:45.442Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.822Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:45.442Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.823Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:45.446Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.823Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:45.446Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.823Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:45.446Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.824Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:45.446Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.824Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:22:45.546Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.862Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:23:05.877Z - debug:  
+2019-12-28T16:23:05.877Z - debug:  
+2019-12-28T16:23:05.877Z - debug:  
+2019-12-28T16:23:05.877Z - debug:  
+2019-12-28T16:24:49.541Z - info: Pages built
+2019-12-28T16:25:29.976Z - info: Website generation complete! Total build time: 313.512s
+2019-12-28T16:25:30.308Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
+2019-12-28T16:25:30.308Z - info: Press CTRL+C to stop ...
+2019-12-28T16:25:30.368Z - info: Site data built
+2019-12-28T16:30:54.882Z - info: Website generation started at 00:30:48
+2019-12-28T16:30:59.103Z - info: Building assets...
+2019-12-28T16:31:03.099Z - info: Assets built
+2019-12-28T16:31:03.100Z - info: Generating pages...
+2019-12-28T16:32:45.041Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.862Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:32:45.042Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.862Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:32:45.042Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.866Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:32:45.042Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:12.868Z - debug: The process cannot access the file because it is being used by another process.
+2019-12-28T16:32:45.043Z - debug: The process cannot access the file because it is being used by another process.
 
-2019-12-29T06:54:18.215Z - debug:  
-2019-12-29T06:54:18.215Z - debug:  
-2019-12-29T06:54:21.524Z - debug:  
-2019-12-29T06:54:21.524Z - debug:  
-2019-12-29T06:55:07.083Z - info: Pages built
-2019-12-29T06:55:23.281Z - info: Website generation complete! Total build time: 118.938s
-2019-12-29T06:55:23.281Z - info: Build success!
-2019-12-29T06:55:23.294Z - info: Site data built
-2019-12-29T06:56:03.180Z - info: Deployed!
-2019-12-29T07:01:07.208Z - info: Website generation started at 3:01:05 PM
-2019-12-29T07:01:09.776Z - info: Building assets...
-2019-12-29T07:01:11.655Z - info: Assets built
-2019-12-29T07:01:11.655Z - info: Generating pages...
-2019-12-29T07:01:14.698Z - info: Pages built
-2019-12-29T07:01:15.000Z - info: Website generation complete! Total build time: 9.058s
-2019-12-29T07:01:15.339Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
-2019-12-29T07:01:15.339Z - info: Press CTRL+C to stop ...
-2019-12-29T07:01:15.423Z - info: Site data built
-2019-12-29T07:05:56.527Z - info: [3:05:56 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\index.md
-2019-12-29T07:05:57.534Z - info: Rebuilding affected source files
-2019-12-29T07:05:57.535Z - info: Rebuilding 0 pages
-2019-12-29T07:05:57.535Z - info: Pages rebuilt
-2019-12-29T07:05:57.539Z - info: Site data built
-2019-12-29T07:06:12.463Z - info: Website generation started at 3:06:11 PM
-2019-12-29T07:06:14.753Z - info: Building assets...
-2019-12-29T07:06:16.474Z - info: Assets built
-2019-12-29T07:06:16.475Z - info: Generating pages...
-2019-12-29T07:06:19.213Z - info: Pages built
-2019-12-29T07:06:19.455Z - info: Website generation complete! Total build time: 7.535s
-2019-12-29T07:06:19.790Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
-2019-12-29T07:06:19.791Z - info: Press CTRL+C to stop ...
-2019-12-29T07:06:19.818Z - info: Site data built
-2019-12-29T07:09:19.776Z - info: Website generation started at 3:09:19 PM
-2019-12-29T07:09:22.096Z - info: Building assets...
-2019-12-29T07:09:23.816Z - info: Assets built
-2019-12-29T07:09:23.817Z - info: Generating pages...
-2019-12-29T07:09:24.593Z - info: Pages built
-2019-12-29T07:09:24.711Z - info: Website generation complete! Total build time: 5.455s
-2019-12-29T07:09:25.119Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
-2019-12-29T07:09:25.119Z - info: Press CTRL+C to stop ...
-2019-12-29T07:09:25.156Z - info: Site data built
-2019-12-29T07:12:49.864Z - info: Website generation started at 3:12:49 PM
-2019-12-29T07:12:52.119Z - info: Building assets...
-2019-12-29T07:12:53.784Z - info: Assets built
-2019-12-29T07:12:53.784Z - info: Generating pages...
-2019-12-29T07:13:32.143Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.144Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.154Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.155Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.155Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.155Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.155Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.156Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.156Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.156Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.156Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.156Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.157Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.157Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.219Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.221Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:32.232Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:13:36.010Z - debug:  
-2019-12-29T07:13:36.010Z - debug:  
-2019-12-29T07:13:36.010Z - debug:  
-2019-12-29T07:13:36.011Z - debug:  
-2019-12-29T07:14:24.756Z - info: Pages built
-2019-12-29T07:14:40.238Z - info: Website generation complete! Total build time: 110.906s
-2019-12-29T07:14:40.576Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
-2019-12-29T07:14:40.576Z - info: Press CTRL+C to stop ...
-2019-12-29T07:14:40.680Z - info: Site data built
-2019-12-29T07:18:13.743Z - info: [3:18:13 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week2\project-cs2103.mbdf
-2019-12-29T07:18:14.745Z - info: Rebuilding affected source files
-2019-12-29T07:18:14.746Z - info: Rebuilding 1 pages
-2019-12-29T07:18:15.474Z - info: Pages rebuilt
-2019-12-29T07:18:15.487Z - info: Site data built
-2019-12-29T07:20:24.279Z - info: [3:20:24 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week2\project-cs2103.mbdf
-2019-12-29T07:20:24.282Z - info: [3:20:24 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\ip-w02.md
-2019-12-29T07:20:25.280Z - info: Rebuilding affected source files
-2019-12-29T07:20:25.282Z - info: Rebuilding 2 pages
-2019-12-29T07:20:25.310Z - error:  Error: No such file: C:\repos\nus-cs2103-AY1920S2\admin\ip-overview.md
-Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\ip-w02.md
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:43)
-2019-12-29T07:20:25.310Z - error:  Error: No such file: C:\repos\nus-cs2103-AY1920S2\admin\ip-grading.md
-Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\ip-w02.md
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:488:43)
-2019-12-29T07:20:25.429Z - error:  Error: No such file: C:\repos\nus-cs2103-AY1920S2\admin\ip-overview.md
-Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\ip-w02.md
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-2019-12-29T07:20:25.429Z - error:  Error: No such file: C:\repos\nus-cs2103-AY1920S2\admin\ip-grading.md
-Missing reference in C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\ip-w02.md
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:355:21)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
-    at Array.map (<anonymous>)
-    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
-2019-12-29T07:20:26.186Z - info: Pages rebuilt
-2019-12-29T07:20:26.199Z - info: Site data built
-2019-12-29T07:20:48.166Z - info: [3:20:48 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\ip-w02.md
-2019-12-29T07:20:49.169Z - info: Rebuilding affected source files
-2019-12-29T07:20:49.170Z - info: Rebuilding 2 pages
-2019-12-29T07:20:50.106Z - info: Pages rebuilt
-2019-12-29T07:20:50.124Z - info: Site data built
-2019-12-29T07:21:52.380Z - info: Website generation started at 3:21:51 PM
-2019-12-29T07:21:54.602Z - info: Building assets...
-2019-12-29T07:21:56.410Z - info: Assets built
-2019-12-29T07:21:56.411Z - info: Generating pages...
-2019-12-29T07:22:33.017Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.019Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.020Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.021Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.022Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.023Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.024Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.024Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.024Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.024Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.025Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.025Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.132Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.132Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.135Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.136Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:33.142Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:22:36.072Z - debug:  
-2019-12-29T07:22:36.284Z - debug:  
-2019-12-29T07:22:36.284Z - debug:  
-2019-12-29T07:22:36.285Z - debug:  
-2019-12-29T07:23:23.377Z - info: Pages built
-2019-12-29T07:23:38.521Z - info: Website generation complete! Total build time: 107.325s
-2019-12-29T07:23:38.850Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
-2019-12-29T07:23:38.850Z - info: Press CTRL+C to stop ...
-2019-12-29T07:23:38.951Z - info: Site data built
-2019-12-29T07:25:20.626Z - info: [3:25:20 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\index.md
-2019-12-29T07:25:21.630Z - info: Rebuilding affected source files
-2019-12-29T07:25:21.632Z - info: Rebuilding 1 pages
-2019-12-29T07:25:22.203Z - info: Pages rebuilt
-2019-12-29T07:25:22.212Z - info: Site data built
-2019-12-29T07:25:48.403Z - info: Website generation started at 3:25:47 PM
-2019-12-29T07:25:50.721Z - info: Building assets...
-2019-12-29T07:25:52.494Z - info: Assets built
-2019-12-29T07:25:52.494Z - info: Generating pages...
-2019-12-29T07:25:55.620Z - info: Pages built
-2019-12-29T07:25:55.860Z - info: Website generation complete! Total build time: 8.61s
-2019-12-29T07:25:56.209Z - info: Serving "C:\repos\nus-cs2103-AY1920S2\cs2103-website\_site" at http://127.0.0.1:8080
-2019-12-29T07:25:56.209Z - info: Press CTRL+C to stop ...
-2019-12-29T07:25:56.237Z - info: Site data built
-2019-12-29T07:27:10.055Z - info: [3:27:10 PM] Reload for file change: C:\repos\nus-cs2103-AY1920S2\cs2103-website\schedule\week2\project-cs2103.mbdf
-2019-12-29T07:27:11.057Z - info: Rebuilding affected source files
-2019-12-29T07:27:11.059Z - info: Rebuilding 1 pages
-2019-12-29T07:27:14.112Z - info: Pages rebuilt
-2019-12-29T07:27:14.116Z - info: Site data built
-2019-12-29T07:28:51.565Z - info: Website generation started at 3:28:51 PM
-2019-12-29T07:28:53.857Z - info: Building assets...
-2019-12-29T07:28:55.744Z - info: Assets built
-2019-12-29T07:28:55.744Z - info: Generating pages...
-2019-12-29T07:29:32.836Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.836Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.837Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.837Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.837Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.837Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.838Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.838Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.839Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.839Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.842Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.842Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.920Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.920Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.922Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.927Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:32.927Z - debug: The process cannot access the file because it is being used by another process.
-
-2019-12-29T07:29:36.989Z - debug:  
-2019-12-29T07:29:36.990Z - debug:  
-2019-12-29T07:29:38.910Z - debug:  
-2019-12-29T07:29:38.910Z - debug:  
-2019-12-29T07:30:23.751Z - info: Pages built
-2019-12-29T07:30:39.061Z - info: Website generation complete! Total build time: 108.011s
-2019-12-29T07:30:39.061Z - info: Build success!
-2019-12-29T07:30:39.073Z - info: Site data built
-2019-12-29T07:31:15.867Z - info: Deployed!
+2019-12-28T16:32:47.194Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T16:32:47.194Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T16:32:47.194Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T16:32:47.195Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T16:32:47.195Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T16:32:47.195Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T16:32:47.195Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T16:32:47.196Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T16:32:47.221Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T16:32:47.858Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T16:32:47.859Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T16:32:47.908Z - debug: The process cannot access the file because it is being used by another process.
+
+2019-12-28T16:32:55.230Z - debug:  
+2019-12-28T16:32:55.231Z - debug:  
+2019-12-28T16:32:55.232Z - debug:  
+2019-12-28T16:32:55.232Z - debug:  
+2019-12-28T16:34:30.099Z - info: Pages built
+2019-12-28T16:35:06.959Z - info: Website generation complete! Total build time: 258.132s
+2019-12-28T16:35:06.960Z - info: Build success!
+2019-12-28T16:35:06.976Z - info: Site data built
+2019-12-28T16:35:58.781Z - info: Deployed!
