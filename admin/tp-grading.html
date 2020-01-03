@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2103/T Website - Admin: tP: Grading</title>
+  <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../markbind/css/site-nav.css">
+  <link rel="stylesheet" href="../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="/website/css/main.css">
+  <link rel="stylesheet" href="/website/css/admin.css">
+  <link rel="icon" href="/website/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+  <div id="app">
+    <header>
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
+      <navbar placement="top" type="dark" class="temp-navbar">
+        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
+        <div class="nav-link temp-dropdown-placeholder">Schedule</div>
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
+          <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
+          <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
+          <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
+          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
+          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
+          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
+          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
+          <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
+          <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
+          <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
+          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] </span></a></li>
+        </dropdown>
+        <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+        <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+          <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+          <li><a href="https://luminus.nus.edu.sg/modules/852a7711-54a0-4103-a2f7-3d877f33a454/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> File Submissions</span></a></li>
+          <li><a href="/website/admin/tutorials.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-calendar"></span> Tutorial Schedule</span></a></li>
+          <li><a href="/website/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8YlRUDpFCI2M04Nd_hpt7MXJzc5EnbNIdCZjO3rVhSVHkuLjS03jpL43TGSdILh8HsVshkOX7DFs/pubhtml" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Marks List</span></a></li>
+          <hr>
+          <span><strong> Individual Project (iP):</strong></span>
+          <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1920S2/duke" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Duke Upstream Repo</span></a></li>
+          <li><a href="https://nus-cs2103-ay1920s2.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
+          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> iP Showcase</span></a></li>
+          <hr>
+          <span><strong> Team Project (tP):</strong></span>
+          <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team IDs</span></a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1920S2/addressbook-level3" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level3</span></a></li>
+          <li><a href="https://se-education.org" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> Addressbook-level 1,2,4</span></a></li>
+          <li><a href="https://nus-cs2103-ay1920s2.github.io/tp-dashboard" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
+          <li><a href="/website/admin/projectList.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-th-list"></span> tP Showcase</span></a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <nav id="site-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-right-grey nav-inner position-sticky slim-scroll">
+          <ul class="px-0 site-nav-list">
+            <li class="mt-2"><a href="/website/admin/moduleOverview.html" class="site-nav__a">CS2103/T Software Engineering</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
+              </span>
+            </li>
+            <li class="mt-2"><a href="/website/admin/usingThisWebsite.html" class="site-nav__a"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span>
+              </span>
+            </li>
+            <li class="mt-2"><a href="/website/admin/moduleExpectations.html" class="site-nav__a">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
+              </span>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Module Structure 
+ <i class="dropdown-btn-icon rotate-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container dropdown-container-open">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><small><a href="/website/admin/weeklySchedule.html" class="site-nav__a">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/lectures.html" class="site-nav__a">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tutorials.html" class="site-nav__a">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><a href="/website/admin/instructors.html" class="site-nav__a">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
+              </span>
+            </li>
+            <li class="mt-2"><a href="/website/admin/textbooks.html" class="site-nav__a">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
+              </span>
+            </li>
+            <li class="mt-2"><a href="/website/admin/programmingLanguages.html" class="site-nav__a">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
+              </span>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn">Individual Project (iP)
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><small><a href="/website/admin/ip-overview.html" class="site-nav__a">iP (Individual Project): Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/ip-w02.html" class="site-nav__a">iP: Week 2</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/ip-w03.html" class="site-nav__a">iP: Week 3</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/ip-w04.html" class="site-nav__a">iP: Week 4</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/ip-w05.html" class="site-nav__a">iP: Week 5</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/ip-w06.html" class="site-nav__a">iP: Week 6</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/ip-w07.html" class="site-nav__a">iP: Week 7</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/ip-w08.html" class="site-nav__a">iP: Week 8</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/ip-grading.html" class="site-nav__a">iP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Team Project (tP)
+ <i class="dropdown-btn-icon rotate-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container dropdown-container-open">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><small><a href="/website/admin/tp-expectations.html" class="site-nav__a">tP (team project): Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-constraints.html" class="site-nav__a">tP: Constraints</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-teams.html" class="site-nav__a">tP: Forming Teams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-w03.html" class="site-nav__a">tP: Kickoff [week 3]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-w04.html" class="site-nav__a">tP: Inception [week 4]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-w05.html" class="site-nav__a">tP: v1.0 [week 5]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-w06.html" class="site-nav__a">tP: mid-v1.1 [week 6]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-w07.html" class="site-nav__a">tP: v1.1 [week 7]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-w08.html" class="site-nav__a">tP: mid-v1.2 [week 8]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-w09.html" class="site-nav__a">tP: v1.2 [week 9]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-w10.html" class="site-nav__a">tP: mid-v1.3 [week 10]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-w11.html" class="site-nav__a">tP: v1.3 [week 11]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-w12.html" class="site-nav__a">tP: mid-v1.4 [week 12]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-w13.html" class="site-nav__a">tP: v1.4 [week 13]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-deliverables.html" class="site-nav__a">tP: Deliverables</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-grading.html" class="site-nav__a current">tP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/tp-supervision.html" class="site-nav__a">tP: Supervision</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mt-2"><a href="/website/admin/peerEvaluations.html" class="site-nav__a">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
+              </span>
+            </li>
+            <li class="mt-2"><a href="/website/admin/tools.html" class="site-nav__a">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span>
+              </span>
+            </li>
+            <li class="mt-2"><a href="/website/admin/exams.html" class="site-nav__a">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
+              </span>
+            </li>
+            <li class="mt-2"><a href="/website/admin/participation.html" class="site-nav__a">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
+              </span>
+            </li>
+            <li class="mt-2"><a href="/website/admin/gradeBreakdown.html" class="site-nav__a">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
+              </span>
+            </li>
+            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Appendices 
+ <i class="dropdown-btn-icon rotate-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+              <div class="dropdown-container dropdown-container-open">
+                <ul class="pl-3 site-nav-list">
+                  <li class="mt-2"><small><a href="/website/admin/appendixA-principles.html" class="site-nav__a">Apdx A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/appendixB-policies.html" class="site-nav__a">Apdx B: Module Policies</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/appendixC-faq.html" class="site-nav__a">Apdx C: FAQ</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/appendixD-help.html" class="site-nav__a">Apdx D: Getting Help</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/appendixE-gitHub.html" class="site-nav__a">Apdx E: Using GitHub</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                  <li class="mt-2"><small><a href="/website/admin/appendixF-teamworkIssues.html" class="site-nav__a">Apdx F: Handling Team Issues</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="content-wrapper">
+        <div class="website-content">
+          <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/tp-deliverables.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: Deliverables</span>
+            </b-btn>
+            </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/tp-supervision.html"><span>tP: Supervision <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
+            </b-btn>
+            </span>
+          </p>
+          <br>
+          <p>
+            <div>
+              <h1 id="tp-grading">tP: Grading <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                </span><a class="fa fa-anchor" href="#tp-grading"></a></h1>
+            </div>
+          </p>
+          <div id="main">
+            <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. CS2103T projects will be assessed separately from CS2103 projects. Given below is the marking scheme.</p>
+            <p><strong>Total</strong>: 45 marks (<span><span aria-hidden="true" class="fas fa-user"></span></span> 35 individual marks + <span><span aria-hidden="true" class="fas fa-users"></span></span> 10 team marks)</p>
+            <p>See the sections below for details of how we assess each aspect.</p>
+
+            <div id="criteria-productDesign">
+              <h4 id="1-project-grading-product-design-5-marks">
+                <div class="bg-warning p-1">1. Project Grading: Product Design <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-users"></span></span>/<span><span aria-hidden="true" class="fas fa-user"></span></span> 5 marks]</span>
+                </div><a class="fa fa-anchor" href="#1-project-grading-product-design-5-marks"></a></h4>
+              <p><strong>Evaluates:</strong> how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user</p>
+              <p><strong>Evaluated by:</strong></p>
+              <ul>
+                <li>tutors (based on product demo and user guide)</li>
+                <li>peers from other teams (based on peer testing and user guide)</li>
+              </ul>
+              <p>
+                <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-featureFit-instructions" header="Admin <md>:glyphicon-log-in:</md> tP Deliverables → PE → ==Grading Instructions for Product Design==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
+                  class="embedding algolia-no-index" minimized fragment="projectGrading-featureFit-instructions"></panel>
+              </p>
+              <p>In addition, feature flaws reported in the PE will be considered when grading this aspect.</p>
+              <box>
+                <div>
+                  <p>These are considered <em>feature flaws</em>:<br>
+                    <span aria-hidden="true" class="fas fa-bug"></span> The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'<br>
+                    <span aria-hidden="true" class="fas fa-bug"></span> Hard-to-test features<br>
+                    <span aria-hidden="true" class="fas fa-bug"></span> Features that don't fit well with the product<br>
+                    <span aria-hidden="true" class="fas fa-bug"></span> Features that are not optimized enough for fast-typists or target users</p>
+                </div>
+              </box>
+            </div>
+
+            <h4 id="2-project-grading-implementation-10-marks">
+              <div class="bg-warning p-1">2. Project Grading: Implementation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> 10 marks]</span>
+              </div><a class="fa fa-anchor" href="#2-project-grading-implementation-10-marks"></a></h4>
+            <p><strong><big>2A. Code quality</big></strong></p>
+            <p><strong>Evaluates:</strong> the quality of the parts of the code you claim as written by you</p>
+            <p><strong>Evaluation method:</strong> manual inspection by tutors + automated-analysis by a script</p>
+            <p><strong>Criteria:</strong></p>
+            <span id="projectGrading-codeQuality-criteria">
+<ul>
+<li>
+<p>At least some evidence of these (see <a href="/website/se-book-adapted/chapters/errorHandling.html">here</a> for more info)</p>
+<ul>
+<li>logging</li>
+<li>exceptions</li>
+<li>assertions</li>
+<li>defensive coding</li></ul></li>
+<li>
+<p>No <a href="/website/coding-standards/java/intermediate.html">coding standard</a> violations <span class="dimmed">e.g. all boolean variables/methods sounds like booleans</span>. Checkstyle can prevent only <em>some</em> coding standard
+            violations; others need to be checked manually.</p>
+            </li>
+            <li>
+              <p><a href="/website/se-book-adapted/chapters/codeQuality.html#slap-hard">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP.</p>
+            </li>
+            <li>
+              <p>No noticeable code duplications <span class="dimmed">i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
+            </li>
+            <li>
+              <p>Evidence of applying <a href="/website/book/codeQuality">code quality guidelines covered in the module</a>.</p>
+            </li>
+            </ul>
+            </span>
+            <p><strong><big>2B. Effort</big></strong></p>
+            <p><strong>Evaluates:</strong> how much value you contributed to the product</p>
+            <p><strong>Method:</strong></p>
+            <ul>
+              <li>Step 1: Evaluate the effort for the entire project. This is evaluated by peers who tested your product, and tutors.</li>
+            </ul>
+            <div class="indented-level2">
+              <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-effort-instructions" header="Admin <md>:glyphicon-log-in:</md> tP Deliverables → PE → ==Questions used for Implementation Effort==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
+                class="embedding algolia-no-index" minimized fragment="projectGrading-effort-instructions"></panel>
+            </div>
+            <p></p>
+            <ul>
+              <li>Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.</li>
+            </ul>
+            <div class="indented-level2">
+              <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-implementation" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → ==Questions used for Evaluating Implementation Effort==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
+                class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-implementation"></panel>
+            </div>
+            <p></p>
+
+            <h4 id="3-project-grading-qa-10-marks">
+              <div class="bg-warning p-1">3. Project Grading: QA <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> 10 marks]</span>
+              </div><a class="fa fa-anchor" href="#3-project-grading-qa-10-marks"></a></h4>
+            <p><big><strong>3A. Developer Testing:</strong></big></p>
+            <p><strong>Evaluates:</strong> How well you tested your own feature</p>
+            <p><strong>Based on:</strong></p>
+            <ol>
+              <li>functionality bugs in your work found by others during the <a href="/website/admin/tp-deliverables.html#deliverable-practical-exam">Practical Exam (PE)</a></li>
+              <li>your test code <span class="dimmed">(note <trigger trigger="click" for="modal:projectGradingQA-testingExpectations">our expectations for automated testing</trigger>)</span></li>
+            </ol>
+            <modal large title="Our expectations for automated testing in the project" id="modal:projectGradingQA-testingExpectations" class="algolia-no-index">
+
+              <div>
+                <ul>
+                  <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li>
+                </ul>
+                <div class="indented">
+                  <box>
+                    <p><strong>🤔 How much testings is enough?</strong> We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide
+                      to what extent you want to automate tests, depending on the benefits and the effort required.<br> There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least
+                      90% of the code covered by tests. In this project, it can be less. <mark>The weaker your tests are, the higher the risk of bugs, which will cost marks if not fixed before the final submission.</mark></p>
+                  </box>
+                </div>
+              </div>
+            </modal>
+            <box>
+              <div>
+                <p>These are considered <em>functionality bugs</em>:<br>
+                  <span aria-hidden="true" class="fas fa-bug"></span> Behavior differs from the User Guide<br>
+                  <span aria-hidden="true" class="fas fa-bug"></span> A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span><br>
+                  <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
+              </div>
+            </box>
+            <p><big><strong>3B. System/Acceptance Testing:</strong></big></p>
+            <p><strong>Evaluates:</strong> How well you can system-test/acceptance-test a product</p>
+            <p><strong>Based on:</strong> bugs you found in the PE. In addition to functionality bugs, you get credit for reporting documentation bugs and feature flaws.</p>
+            <box>
+              <div>
+                <h5 id="grading-bugs-found-in-the-pe">Grading bugs found in the PE<a class="fa fa-anchor" href="#grading-bugs-found-in-the-pe"></a></h5>
+                <ul>
+                  <li><mark>Of 3A and 3B above, the one you do better will be given a 70% weight and the other a 30% weight</mark> so that your total score is driven by your strengths rather than weaknesses.</li>
+                  <li>Bugs rejected by the dev team, if the rejection is approved by the teaching team, will not affect marks of the tester or the developer.</li>
+                  <li>The penalty/credit for a bug varies based on,
+                    <ul>
+                      <li>The severity of the bug: <code>severity.High</code> &gt; <code>severity.Medium</code> &gt; <code>severity.Low</code> &gt; <code>severity.VeryLow</code></li>
+                      <li>The type of the bug: <code>type.FunctionalityBug</code> &gt; <code>type.DocumentationBug</code> &gt; <code>type.FeatureFlaw</code></li>
+                    </ul>
+                  </li>
+                  <li>The penalty for a bug is divided equally among assignees.</li>
+                  <li>Developers are not penalized for duplicate bug reports they received but the testers earn credit for duplicate bug reports they submitted as long as the duplicates are not submitted by the same tester.</li>
+                  <li>
+                    <tooltip content="i.e., the same bug reported by many testers"><em>Obvious</em> bugs</tooltip> earn less credit for the tester and slightly more penalty for the developer.</li>
+                  <li>If the team you tested has a low bug count i.e., total bugs found by all testers is low, we will fall back on other means <span class="dimmed">(e.g., performance in PE dry run)</span> to calculate your marks for system/acceptance testing.</li>
+                  <li>Your marks for developer testing depends on the <em>bug density</em> rather than total bug count. Here's an example:
+                    <ul>
+                      <li><code>n</code> bugs found in your feature; it is a difficult feature consisting of lot of code → 4/5 marks</li>
+                      <li><code>n</code> bugs found in your feature; it is a small feature with a small amount of code → 1/5 marks</li>
+                    </ul>
+                  </li>
+                  <li>You don't need to find all bugs in the product to get full marks. For example, finding half of the bugs of that product or 4 bugs, whichever the lower, could earn you full marks.</li>
+                  <li>Excessive incorrect downgrading/rejecting/
+                    <tooltip content="marking as duplicates">duplicate-flagging</tooltip>, if deemed an unethical attempt to <em>game the system</em>, will be penalized.</li>
+                </ul>
+              </div>
+            </box>
+
+            <h4 id="4-project-grading-documentation-10-marks">
+              <div class="bg-warning p-1">4. Project Grading: Documentation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> 10 marks]</span>
+              </div><a class="fa fa-anchor" href="#4-project-grading-documentation-10-marks"></a></h4>
+            <p><strong>Evaluates:</strong> your contribution to project documents</p>
+            <p><strong>Method:</strong> Evaluated in two steps.</p>
+            <ul>
+              <li>Step 1: Evaluate the whole UG and DG. This is evaluated by peers who tested your product, and tutors.</li>
+            </ul>
+            <div class="indented-level2">
+              <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-userGuide-instructions" header="Admin <md>:glyphicon-log-in:</md> tP Deliverables → PE → ==Grading Instructions for User Guide==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
+                class="embedding algolia-no-index" minimized fragment="projectGrading-userGuide-instructions"></panel>
+            </div>
+            <p></p>
+            <div class="indented-level2">
+              <panel type src="/website/admin/tp-deliverables-pe._include_.html#projectGrading-devGuide-instructions" header="Admin <md>:glyphicon-log-in:</md> tP Deliverables → PE → ==Grading Instructions for Developer Guide==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
+                class="embedding algolia-no-index" minimized fragment="projectGrading-devGuide-instructions"></panel>
+            </div>
+            <p></p>
+            <ul>
+              <li>Step 2: Evaluate how much of that effort can be attributed to you. This is evaluated by team members, and tutors.</li>
+            </ul>
+            <div class="indented-level2">
+              <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-ug" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → ==Questions used for Evaluating the Contribution to the UG==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
+                class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-ug"></panel>
+            </div>
+            <p></p>
+            <div class="indented-level2">
+              <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-dg" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → ==Questions used for Evaluating the Contribution to the DG==  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
+                class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-dg"></panel>
+            </div>
+            <p></p>
+            <ul>
+              <li>In addition, UG and DG bugs you received in the PE will be considered for grading this component.</li>
+            </ul>
+            <div class="indented-level2">
+              <box>
+                <div>
+                  <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+                  <div>
+                    <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                    <ul>
+                      <li>Not enough visuals e.g., screenshots/diagrams</li>
+                      <li>The visuals are not well integrated to the explanation</li>
+                      <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                      </li>
+                    </ul>
+                    </span>
+                    <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                    <ul>
+                      <li>Not enough or too many examples e.g., sample inputs/outputs
+                      </li>
+                    </ul>
+                    </span>
+                    <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                    <ul>
+                      <li>The explanation is too brief or unnecessarily long.</li>
+                      <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                      </li>
+                    </ul>
+                    </span>
+                    <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+                    <ul>
+                      <li>looks messy</li>
+                      <li>not well-formatted
+                      </li>
+                    </ul>
+                    </span>
+                  </div>
+                </div>
+              </box>
+              <box>
+                <div>
+                  <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
+                  <panel type="seamless" header="Those given as possible UG bugs ..." class="algolia-no-index">
+                    <div>
+                      <p><strong>These are considered UG bugs (if they hinder the reader):</strong><br></p>
+                      <div>
+                        <span id="visualsBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of visuals</p>
+                        <ul>
+                          <li>Not enough visuals e.g., screenshots/diagrams</li>
+                          <li>The visuals are not well integrated to the explanation</li>
+                          <li>The visuals are unnecessarily repetitive e.g., same visual repeated with minor changes
+                          </li>
+                        </ul>
+                        </span>
+                        <span id="examplesBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Use of examples:</p>
+                        <ul>
+                          <li>Not enough or too many examples e.g., sample inputs/outputs
+                          </li>
+                        </ul>
+                        </span>
+                        <span id="explanationBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Explanations:</p>
+                        <ul>
+                          <li>The explanation is too brief or unnecessarily long.</li>
+                          <li>The information is hard to understand for the target audience. e.g., using terms the reader might not know
+                          </li>
+                        </ul>
+                        </span>
+                        <span id="neatnessBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Neatness:</p>
+                        <ul>
+                          <li>looks messy</li>
+                          <li>not well-formatted
+                          </li>
+                        </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </panel>
+                  <span id="architectureDiagramBugs">
+<p><span aria-hidden="true" class="fas fa-bug"></span> Architecture:</p>
+                  <ul>
+                    <li>Symbols used are not intuitive</li>
+                    <li>Indiscriminate use of double-headed arrows</li>
+                    <li>
+                      <tooltip content="e.g., the sequence diagram showing interactions between main components"><em>architecture-level</em></tooltip> diagrams contain lower-level details</li>
+                    <li>Description given are not usufficiently high-level
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="umlDiagramBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> UML diagrams:</p>
+                  <ul>
+                    <li>notation incorrect or not compliant with the notation covered in the module.</li>
+                    <li>Some other type of diagram used when a UML diagram would have worked just as well.</li>
+                    <li>The diagram used is not suitable for the purpose it is used.</li>
+                    <li>The diagram is too complicated.
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="codeSnippetBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Code snippets:</p>
+                  <ul>
+                    <li>Excessive use of code e.g., a large chunk of code is cited when a smaller extract of would have sufficed.
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="userStoryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in User Stories. Examples:</p>
+                  <ul>
+                    <li>Incorrect format</li>
+                    <li>All three parts are not present</li>
+                    <li>Benefit does not match the function</li>
+                    <li>Important user stories missing
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="useCaseBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in Use Cases. Examples:</p>
+                  <ul>
+                    <li>Incorrect step numbering</li>
+                    <li>Missing extensions</li>
+                    <li>Unnecessary UI details mentioned</li>
+                    <li>Formatting/notational errors
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="nfrBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in NFRs. Examples:</p>
+                  <ul>
+                    <li>Not really a <em>Non-Functional</em> Requirement</li>
+                    <li>Not well-defined (i.e., hard to decide when it has been met)</li>
+                    <li>Not reasonably achievable</li>
+                    <li>Highly relevant NFRs missing
+                    </li>
+                  </ul>
+                  </span>
+                  <span id="glossaryBugs">
+
+<p><span aria-hidden="true" class="fas fa-bug"></span> Problems in Glossary. Examples:</p>
+                  <ul>
+                    <li>Unnecessary terms included</li>
+                    <li>Important terms missing
+                    </li>
+                  </ul>
+                  </span>
+                </div>
+              </box>
+            </div>
+
+            <h4 id="5-project-grading-project-management-5-5-10-marks">
+              <div class="bg-warning p-1">5. Project Grading: Project Management <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-users"></span></span> 5 + <span><span aria-hidden="true" class="fas fa-user"></span></span> 5 = 10 marks]</span>
+              </div><a class="fa fa-anchor" href="#5-project-grading-project-management-5-5-10-marks"></a></h4>
+            <div id="project-management-grading">
+              <p><big><strong>5A. Process:</strong></big></p>
+              <p><strong>Evaluates:</strong> How well you did in project management related aspects of the project, as an individual and as a team</p>
+              <p><strong>Based on:</strong> tutor/bot observations of project milestones and GitHub data</p>
+              <p><strong>Grading criteria:</strong></p>
+              <ul>
+                <li>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. <mark>To get a good grade for this aspect, achieve at least 60% of the recommended milestone progress.</mark></li>
+                <li>Good use of GitHub milestones</li>
+                <li>Good use of GitHub release mechanism</li>
+                <li>Good version control, based on the repo</li>
+                <li>Reasonable attempt to use the forking workflow</li>
+                <li>Good task definition, assignment and tracking, based on the issue tracker</li>
+                <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
+                <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
+              </ul>
+              <p><big><strong>5B. Team-tasks:</strong></big></p>
+              <p><strong>Evaluates:</strong> How much you contributed to team-tasks</p>
+              <div class="indented-level1">
+                <panel type src="/website/admin/tp-expectations._include_.html#example-team-tasks" header="Admin <md>:glyphicon-log-in:</md> tP → Expectations: Examples of team-tasks  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+                  minimized fragment="example-team-tasks"></panel>
+              </div>
+              <p></p>
+              <p><strong>Based on:</strong> peer evaluations, tutor observations</p>
+              <p><strong>Grading criteria:</strong> To earn full marks, you should have done close to a fair share of the team tasks. You can earn bonus marks by doing more than your fair share.</p>
+            </div>
+          </div>
+          <br>
+          <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/tp-deliverables.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: Deliverables</span>
+            </b-btn>
+            </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/tp-supervision.html"><span>tP: Supervision <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
+            </b-btn>
+            </span>
+          </p>
+        </div>
+      </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#tp-grading">tP: Grading 
+          &#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#1-project-grading-product-design-5-marks">
+          1. Project Grading: Product Design [/ 5 marks]
+          &#x200E;</a>
+              <a class="nav-link py-1" href="#2-project-grading-implementation-10-marks">
+        2. Project Grading: Implementation [ 10 marks]
+        &#x200E;</a>
+              <a class="nav-link py-1" href="#3-project-grading-qa-10-marks">
+        3. Project Grading: QA [ 10 marks]
+        &#x200E;</a>
+              <a class="nav-link py-1" href="#4-project-grading-documentation-10-marks">
+        4. Project Grading: Documentation [ 10 marks]
+        &#x200E;</a>
+              <a class="nav-link py-1" href="#5-project-grading-project-management-5-5-10-marks">
+        5. Project Grading: Project Management [ 5 +  5 = 10 marks]
+        &#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
+    </div>
+    <footer>
+      <div class="text-center">
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 03 Jan 2020 09:35:53 GMT</small></div>
+    </footer>
+  </div>
+</body>
+<script src="../markbind/js/vue.min.js"></script>
+<script src="../markbind/js/vue-strap.min.js"></script>
+<script src="../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../markbind/js/polyfill.min.js"></script>
+<script src="../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/website'
+  const enableSearch = true
+</script>
+<script src="../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
+<script src="../markbind/layouts/default/scripts.js"></script>
+
+</html>

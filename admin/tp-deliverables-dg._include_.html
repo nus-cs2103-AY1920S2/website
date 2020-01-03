@@ -1,0 +1,67 @@
+<ul>
+  <li><strong>Should match the v1.4 implementation</strong>.</li>
+  <li><strong>Optionally, can include proposed implementations of future features.</strong></li>
+  <li>
+    <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Include an appendix named <em>Instructions for Manual Testing</em></strong>, to give some guidance to the tester to chart a path through the features,
+    and provide some important test inputs the tester can copy-paste into the app.
+    <ul>
+      <li><strong>Cover all user-testable features</strong> but no need to cover existing AB3 features if you did not touch them.</li>
+      <li><strong>No need to give a long list of test cases</strong> including all possible variations. It is upto the tester to come up with those variations.</li>
+      <li><strong>Inaccurate instructions will be considered bugs</strong>.</li>
+    </ul>
+  </li>
+  <li>
+    <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>We highly recommend adding an appendix named <code>Effort</code></strong> that evaluators can use to estimate the total project effort.
+    <ul>
+      <li>Keep it brief (~1 page)</li>
+      <li>Explain the difficulty level, challenges faced, effort required, and achievements of the project.</li>
+      <li>Use AB3 as a reference point <span class="dimmed">e.g., you can explain that while AB3 deals with only one entity type, your project was harder because it deals with multiple entity types</span>.</li>
+    </ul>
+  </li>
+</ul>
+<h5 id="dg-tips">DG Tips</h5>
+<span id="dg-tips">
+<ul>
+<li><strong>Aim to showcase your documentation skills.</strong> The stated objective of the DG is to explain the implementation to a future developer, but a secondary objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v1.4 (hypothetically).<br>
+For an example, see <a href="https://nus-cs2103-ay1920s2.github.io/addressbook-level3/DeveloperGuide.html#proposed-undo-redo-feature">the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide</a>.</li>
+<li><strong>Use multiple UML diagram types.</strong> Following from the point above, try to include UML diagrams of multiple types to showcase your ability to use different UML diagrams.</li>
+<li><strong>Keep diagrams simple.</strong> The aim is to make diagrams <mark><em>comprehensible</em>, not necessarily <em>comprehensive</em></mark>. Ways to simplify diagrams:
+<ul>
+<li><strong>Omit less important details</strong>. Examples:
+<ul>
+<li>a class diagram can omit minor utility classes, private/unimportant members; some less-important associations can be shown as attributes instead.</li>
+<li>a sequence diagram can omit less important interactions, self-calls.</li></ul></li>
+<li><strong>Omit repetitive details</strong> e.g., a class diagram can show only a few representative ones in place of many similar classes (note how the <trigger trigger="click" for="modal:ipWeek10-logicClassDiagram">AB3 Logic class diagram</trigger> shows concrete <code>*Command</code> classes).</li>
+<li><strong>Limit the scope of a diagram.</strong> Decide the purpose of the diagram (i.e., what does it help to explain?) and omit details not related to it. In particular, avoid showing lower-level details of multiple components in the same diagram unless strictly necessary e.g., note how the <trigger trigger="click" for="modal:ipWeek10-deleteSd">this sequence diagram</trigger> shows only the detailed interactions within the Logic component i.e., does not show detailed interactions within the model component.</li>
+<li><strong>Break diagrams into smaller fragments</strong> when possible.
+<ul>
+<li>If a component has a lot of classes, consider further dividing into sub-components (e.g., a Parser sub-component inside the Logic component). After that, sub-components can be shown as black-boxes in the main diagram and their details can be shown as separate diagrams.</li>
+<li>You can use <code>ref</code> frames to break sequence diagrams to multiple diagrams. Similarly, <code>rake</code>s can be used to divide activity diagrams.</li></ul></li>
+<li><strong>Stay at the highest level of abstraction</strong> possible e.g., note how <trigger trigger="click" for="modal:ipWeek10-archiSd">this sequence diagram</trigger> shows only the interactions between architectural components, abstracting away the interactions that happen inside each component.</li>
+<li>For some more examples, see <trigger trigger="click" for="modal:ipWeek10-umlExamples">here</trigger>.</li></ul></li>
+<li><strong>Integrate diagrams into the description.</strong> Place the diagram close to where it is being described.</li>
+<li><strong>Use code snippets sparingly.</strong> The more you use code snippets in the DG, and longer the code snippet, the higher the risk of it getting outdated quickly. Instead, use code snippets only when necessary and cite only the strictly relevant parts only.</li>
+<li><strong>Resize diagrams</strong> so that the text size in the diagram matches the the text size of the main text of the diagram. See <trigger trigger="click" for="modal:ipWeek10-diagramSizeNegative">example</trigger>.</li></ul>
+<modal large title="UML Diagrams: Negative Examples " id="modal:ipWeek10-umlExamples">
+<p>These class diagrams seem to have lot of member details, which can get outdated pretty quickly:<br>
+<img src="https://cs2103-ay1819s1-w10-3.github.io/main/images/PollClassDiagram.png" width="750"><br>
+<img src="https://cs2103-ay1819s1-w10-4.github.io/main/images/healthPlanClassDiagram.png" width="750"></p>
+  <hr>
+  This class diagram seems to have too many classes:
+  <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/ModelClassDiagram.png" width="750">
+  <hr>
+  These sequence diagrams are bordering on 'too complicated':
+  <img src="https://cs2103-ay1819s1-w13-1.github.io/main/images/TagCommandSequenceDiagram.png" width="750">
+  <p></p>
+  <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/modifyPermissionSequenceDiagram.png" width="750"></modal>
+<modal large title="Diagram resizing: a negative example" id="modal:ipWeek10-diagramSizeNegative">
+<p>In this negative example, the text size in the diagram is much bigger than the text size used by the document:<br>
+<img src="/website/admin/images/diagramSizeNegativeExample.png" width="200"><br>
+It will look more 'polished' if the two text sizes match.
+</p></modal>
+<modal large title="AB3 - Class Diagram of the Logic Component" id="modal:ipWeek10-logicClassDiagram">
+  <img src="https://nus-cs2103-ay1920s2.github.io/addressbook-level3/images/LogicClassDiagram.png" width="900"></modal>
+<modal large title="AB3 - Sequence Diagram for the `delete` command" id="modal:ipWeek10-deleteSd">
+  <img src="https://nus-cs2103-ay1920s2.github.io/addressbook-level3/images/DeleteSequenceDiagram.png" width="900"></modal>
+<modal large title="AB3 - Architecture-Level Sequence Diagram" id="modal:ipWeek10-archiSd">
+  <img src="https://nus-cs2103-ay1920s2.github.io/addressbook-level3/images/ArchitectureSequenceDiagram.png"></modal></span>
