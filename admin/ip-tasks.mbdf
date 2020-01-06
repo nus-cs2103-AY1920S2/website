@@ -1,87 +1,74 @@
 {% from "common/admin.njk" import show_admin_page, show_project_summary_lead with context %}
 {% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
 
-{% set DIs = {
-Level_1: {id: 'Level-1', title: 'Greet, Echo, Exit', tag: ''},
-Level_2: {id: 'Level-2', title: 'Add, List', tag: ''},
-Level_3: {id: 'Level-3', title: 'Mark as Done', tag: ''},
-Level_4: {id: 'Level-4', title: 'ToDo, Event, Deadline', tag: ''},
-Level_5: {id: 'Level-5', title: 'Handle Errors', tag: ''},
-Level_6: {id: 'Level-6', title: 'Delete', tag: ''},
-Level_7: {id: 'Level-7', title: 'Save', tag: ''},
-Level_8: {id: 'Level-8', title: 'Dates and Times', tag: ''},
-Level_9: {id: 'Level-9', title: 'Find', tag: ''},
-Level_10: {id: 'Level-10', title: 'GUI', tag: ''},
-A_TextUiTesting: {id: 'A-TextUiTesting', title: 'Automated Text UI Testing', tag: ''},
-A_Enums: {id: 'A-Enums', title: 'Use Enums', tag: 'if-applicable'},
-A_MoreOOP: {id: 'A-MoreOOP', title: 'Use More OOP', tag: ''},
-A_Packages: {id: 'A-Packages', title: 'Organize into Packages', tag: 'optional'},
-A_JUnit: {id: 'A-JUnit', title: 'Add JUnit Tess', tag: ''},
-A_Jar: {id: 'A-Jar', title: 'Create a JAR File', tag: ''},
-A_JavaDoc: {id: 'A-JavaDoc', title: 'JavaDoc', tag: ''},
-A_CodingStandard: {id: 'A-CodingStandard', title: 'Follow the Coding Standard', tag: ''},
-A_Gradle: {id: 'A-Gradle', title: 'Use Gradle', tag: ''},
-A_CheckStyle: {id: 'A-CheckStyle', title: 'Use CheckStyle', tag: 'optional'},
-A_Varargs: {id: 'A-Varargs', title: 'Use Varargs', tag: 'if-applicable'},
-A_Assertions: {id: 'A-Assertions', title: 'Use Assertions', tag: ''},
-A_CodeQuality: {id: 'A-CodeQuality', title: 'Improve Code Quality', tag: ''},
-A_Lambdas: {id: 'A-Lambdas', title: 'Use Lambdas', tag: 'optional'},
-A_Streams: {id: 'A-Streams', title: 'Use Streams', tag: 'optional'},
-A_Travis: {id: 'A-Travis', title: 'Set up Travis', tag: 'optional'}
-} %}
-
-{% set ip_steps = {
-  learn_about_the_project: {id: 'learn_about_the_project', deadline: false},
-  set_up_prerequisites: {id: 'set_up_prerequisites', deadline: false},
-  set_up_project: {id: 'set_up_project', deadline: false},
-  finish_leftover_tasks: {id: 'finish_leftover_tasks', deadline: false},
-  create_pr_to_upstream: {id: 'create_pr_to_upstream', deadline: false},
-  review_two_prs: {id: 'review_two_prs', deadline: false},
-  generate_new_jar: {id: 'generate_new_jar', deadline: false},
-  add_an_extension: {id: 'add_an_extension', deadline: false},
-  finalize_features: {id: 'finalize_features', deadline: false},
-  set_up_website: {id: 'set_up_website', deadline: false},
-  release_product: {id: 'release_product', deadline: false},
-  do_final_cleanups: {id: 'do_final_cleanups', deadline: false},
-  submit_final_version: {id: 'submit_final_version', deadline: 'by Monday 2359'},
-  evaluate_peer_ips: {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
-} %}
-
 {% set ip_schedule = {
-week02: [
-  ip_steps.learn_about_the_project,
-  ip_steps.set_up_prerequisites,
-  ip_steps.set_up_project,
-  {id: 'add_increments', suffix: ' while committing frequently', increments:  [DIs.Level_1, DIs.Level_2, DIs.Level_3, DIs.Level_4, DIs.A_TextUiTesting, DIs.Level_5, DIs.Level_6, DIs.A_Enums], deadline: 'by Thursday 2359'}
+week2: [
+  {id: 'learn_about_the_project'},
+  {id: 'set_up_prerequisites'},
+  {id: 'set_up_project'},
+  {id: 'add_increments', suffix: ' while committing frequently', deadline: 'by Thursday 2359', increments: [
+    {id: 'Level-1', title: 'Greet, Echo, Exit'},
+    {id: 'Level-2', title: 'Add, List'},
+    {id: 'Level-3', title: 'Mark as Done'},
+    {id: 'Level-4', title: 'ToDo, Event, Deadline'},
+    {id: 'A-TextUiTesting', title: 'Automated Text UI Testing'},
+    {id: 'Level-5', title: 'Handle Errors'},
+    {id: 'Level-6', title: 'Delete'},
+    {id: 'A-Enums', title: 'Use Enums', tag: 'if-applicable'}
+  ]}
 ],
-week03: [
-  ip_steps.finish_leftover_tasks,
-  ip_steps.create_pr_to_upstream,
-  {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.Level_7, DIs.Level_8], deadline: false},
-  {id: 'add_increments', suffix: '', increments:  [DIs.A_MoreOOP, DIs.A_Packages, DIs.A_JUnit, DIs.A_Jar], deadline: false},
-  {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.A_JavaDoc, DIs.A_CodingStandard, DIs.Level_9], deadline: false}
+week3: [
+  {id: 'finish_leftover_tasks'},
+  {id: 'create_pr_to_upstream'},
+  {id: 'add_increments', suffix: ' as parallel branches', increments:  [
+    {id: 'Level-7', title: 'Save'},
+    {id: 'Level-8', title: 'Dates and Times'}
+  ]},
+  {id: 'add_increments', suffix: '', increments:  [
+    {id: 'A-MoreOOP', title: 'Use More OOP'},
+    {id: 'A-Packages', title: 'Organize into Packages', tag: 'optional'},
+    {id: 'A-JUnit', title: 'Add JUnit Tess'},
+    {id: 'A-Jar', title: 'Create a JAR File'}
+  ]},
+  {id: 'add_increments', suffix: ' as parallel branches', increments:  [
+    {id: 'A-JavaDoc', title: 'JavaDoc'},
+    {id: 'A-CodingStandard', title: 'Follow the Coding Standard'},
+    {id: 'Level-9', title: 'Find'}
+  ]}
 ],
-week04: [
-  ip_steps.review_two_prs,
-  {id: 'add_increments', suffix: ' as parallel branches', increments:  [DIs.A_Gradle, DIs.A_CheckStyle, DIs.Level_10, DIs.A_Varargs], deadline: false}
+week4: [
+  {id: 'review_two_prs'},
+  {id: 'add_increments', suffix: ' as parallel branches', increments:  [
+    {id: 'A-Gradle', title: 'Use Gradle'},
+    {id: 'A-CheckStyle', title: 'Use CheckStyle', tag: 'optional'},
+    {id: 'Level-10', title: 'GUI'},
+    {id: 'A-Varargs', title: 'Use Varargs', tag: 'if-applicable'}
+  ]}
 ],
-week05: [
-  ip_steps.generate_new_jar,
-  {id: 'add_increments', suffix: ' as PRs', increments:  [DIs.A_Assertions, DIs.A_CodeQuality, DIs.A_Lambdas, DIs.A_Streams], deadline: false},
-  {id: 'add_increments', suffix: '', increments:  [DIs.A_Travis], deadline: false},
-  ip_steps.add_an_extension
+week5: [
+  {id: 'generate_new_jar'},
+  {id: 'add_increments', suffix: ' as PRs', increments:  [
+    {id: 'A-Assertions', title: 'Use Assertions'},
+    {id: 'A-CodeQuality', title: 'Improve Code Quality'},
+    {id: 'A-Lambdas', title: 'Use Lambdas', tag: 'optional'},
+    {id: 'A-Streams', title: 'Use Streams', tag: 'optional'}
+  ]},
+  {id: 'add_increments', suffix: '', increments:  [
+    {id: 'A-Travis', title: 'Set up Travis', tag: 'optional'}
+  ]},
+  {id: 'add_an_extension'}
 ],
-week06: [
-  ip_steps.finalize_features,
-  ip_steps.set_up_website,
-  ip_steps.release_product
+week6: [
+  {id: 'finalize_features'},
+  {id: 'set_up_website'},
+  {id: 'release_product'}
 ],
-week07: [
-  ip_steps.do_final_cleanups,
-  ip_steps.submit_final_version
+week7: [
+  {id: 'do_final_cleanups'},
+  {id: 'submit_final_version', deadline: 'by Monday 2359'}
 ],
-week08: [
-  ip_steps.evaluate_peer_ips
+week8: [
+  {id: 'evaluate_peer_ips', deadline: 'by Saturday 2359'}
 ]
 } %}
 
@@ -89,42 +76,46 @@ week08: [
  # Common text segments
  #====================================================================================================================#}
 
-<span id="commit-tag-push">
+<span id="order">
 
-Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> ==in the given order==.
-   * Commit code at important points. ==Minimally, commit after completing each increment==.
-   * After completing each increment,
-     * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
-     * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
+* Implement the following <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> ==in the given order==.
 </span>
-<span id="no-jumping-ahead">
+<span id="commit">
 
-<box>
-
-{{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks. Reasons:
-1. In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and spread over a longer period**, rather than to be done as a short burst. Reminder: as per iP grading criteria, _some_ increments need to to be done in each week for you to get full marks.
-1. As a further incentive to not jump ahead, we have left some future project requirements unspecified, and we might change some requirements along the way too.
-</box>
+* From this point onward, commit code at important points. ==Minimally, commit after completing each increment==.
 </span>
+<span id="tag-push">
 
-{#====================================================================================================================
- # CS2103 Weekly Intros
- #====================================================================================================================#}
-<span id="cs2103-week02-intro">
+* From this point onward, after completing each increment,
+  * **`git tag`** the commit with the exact increment ID e.g., `Level-2`, `A-TextUiTesting`
+  * **`git push`** the code to your fork ({{ icon_tip }} git doesn't push tags unless you specifically ask it to)
+</span>
+<span id="volatile-requirements">
 
 <box type="info">
 
 The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the [forum]({{ forum_link }}) so that we can take necessary actions.
 </box>
 </span>
+<span id="no-jumping-ahead">
 
-{#====================================================================================================================#}
-<span id="cs2103-week03-intro">
+<box>
 
-In this week, we try to practice git branching as we do the iP.
+{{ icon_important_big_red }} We discourage you from doing project tasks allocated to future weeks. Reasons: In order to help you gain <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time">_fluency_</tooltip> (and also to better simulate real projects), **we want the project work to be <tooltip content="done at multiple times with time gaps in between">_spaced_</tooltip> and spread over a longer period**, rather than to be done as a short burst. Reminder: as per iP grading criteria, _some_ increments need to to be done in each week for you to get full marks.
+</box>
 </span>
+
+{#====================================================================================================================
+ # CS2103 Weekly Intros
+ #====================================================================================================================#}
+<span id="cs2103-week2-intro">
+
+<include src="ip-tasks.mbdf#volatile-requirements" />
+<include src="ip-tasks.mbdf#no-jumping-ahead" />
+</span>
+
 {#====================================================================================================================#}
-<span id="cs2103-week06-intro">
+<span id="cs2103-week6-intro">
 
 <box type="important">
 
@@ -153,8 +144,9 @@ In this week, we try to practice git branching as we do the iP.
 </span>
 {#====================================================================================================================#}
 <span id="extra_Level-1">
-<include src="ip-tasks.mbdf#commit-tag-push" />
-<include src="ip-tasks.mbdf#no-jumping-ahead" />
+<include src="ip-tasks.mbdf#order" />
+<include src="ip-tasks.mbdf#commit" />
+<include src="ip-tasks.mbdf#tag-push" />
 </span>
 {#====================================================================================================================#}
 <span id="heading_set_up_project">Set up the project in your computer</span>
@@ -201,9 +193,6 @@ In this week, we try to practice git branching as we do the iP.
   * To find the target PR, you can use a filter `author:AuthorUsername` e.g., `author:johnDoe`
   * If the student you have been allocated to review has not created a PR by Monday, you can review another PR of your choice.
 
-<div class="indented-level2">
-
-<box type="success">
 
 We expect the PR peer-review to be mutually beneficial to the reviewer and the author. i.e., you receive suggestions on how to improve your code, and get to learn alternative designs by reading others' code.
 </box>
@@ -376,10 +365,12 @@ On a somewhat related note, you can also **create similar product websites for y
 {%- endmacro %}
 {#====================================================================================================================#}
 
-{% macro get_xp_step_heading(step, tasks_file) -%}
-{% set deadline_badge = timing_badge(step.deadline, 'danger') if step.deadline else ''  %}
+{% macro get_xp_step_heading(step, tasks_file, is_summary=false) -%}
+{% set deadline_type = step.deadline_type if step.deadline_type else 'danger' %}
+{% set deadline_badge = timing_badge(step.deadline, deadline_type if is_summary else 'secondary') if step.deadline else ''  %}
 {% if step.id == 'add_increments' %}
-Add Increments{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ deadline_badge }}
+{% set prefix = "Add Increment" + ("" if (step.increments | length) == 1 else "s") %}
+{{ prefix }}{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ deadline_badge }}
 {% else %}
 <include src="{{ tasks_file }}#heading_{{ step.id }}" trim inline /> {{ deadline_badge }}
 {% endif %}
@@ -396,7 +387,7 @@ Add Increments{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ d
   {% endif %}
   {% for i in step.increments %}
     {% set file = 'text.md' if i.id[0] == 'L' else 'extensions.mbdf' %}
-    {% set tag = ('var-tag=' + i.tag) if i.tag != '' else '' %}
+    {% set tag = ('var-tag=' + i.tag) if i.tag else '' %}
 <include src="dukeFragment.md" boilerplate var-header="**`{{ i.id }}`: {{ i.title }}**" {{ tag }} var-fragment="{{ file }}#{{ i.id }}" />
   {% endfor %}
 {% else %}
@@ -416,7 +407,7 @@ Add Increments{{ step.suffix }}: {{ (get_id_list(step.increments) | trim)}} {{ d
 
 {% macro show_xp_steps_summary(steps, tasks_file) %}
 {% call show_project_summary_lead()%}
-{% for step in steps %}1. {{ get_xp_step_heading(step, tasks_file) | trim }}
+{% for step in steps %}1. {{ get_xp_step_heading(step, tasks_file, is_summary=true) | trim }}
 {% endfor %}
 {% endcall %}
 {% endmacro %}

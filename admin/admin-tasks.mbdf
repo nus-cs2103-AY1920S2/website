@@ -1,0 +1,173 @@
+{% from "common/admin.njk" import admin_topics_to_read, faqs, policies, show_admin_summary, topics with context %}
+{% from "common/macros.njk" import embed_topic, show_admin_sections_to_read, show_as_tab, thumb, timing_badge with context %}
+{% from "admin/ip-tasks.mbdf" import show_xp_page  with context %}
+
+{% set admin_schedule = {
+week1: [
+  {id: 'submit_pre_lecture_quiz', deadline: "by week 2 Monday 2359"},
+  {id: 'set_up_tools', deadline: "before the lecture"},
+  {id: 'submit_pre_module_survey', deadline: "by Friday 2359"},
+  {id: 'learn_about_the_module'},
+  {id: 'attend_the_first_lecture'}
+],
+week2: [
+  {id: 'submit_first_post_lecture_quiz', deadline: "Thursday 2359"},
+  {id: 'get_connect_with_comm_channels'}
+],
+week3: [
+  {id: 'submit_post_lecture_quiz'},
+  {id: 'form_teams'}
+],
+week4: [
+  {id: 'accept_github_invitations'},
+  {id: 'submit_post_lecture_quiz'}
+],
+week05: [
+  {id: 'submit_post_lecture_quiz'},
+  {id: 'practice_peer_evaluations_on_TEAMMATES', deadline: "by Sunday"}
+],
+week6: [
+  {id: 'submit_post_lecture_quiz'},
+  {id: 'submit_midterm_feedback_for_the_module', deadline: "by Sunday", deadline_type: 'info'}
+],
+week7: [
+  {id: 'submit_post_lecture_quiz'}
+],
+week8: [
+  {id: 'submit_post_lecture_quiz'},
+  {id: 'submit_midterm_peer_evaluations', deadline: "by Sunday"}
+],
+week9: [
+  {id: 'submit_post_lecture_quiz'}
+],
+week10: [
+  {id: 'submit_post_lecture_quiz'}
+],
+week11: [
+  {id: 'submit_post_lecture_quiz'}
+],
+week12: [
+],
+week13: [
+  {id: 'submit_final_peer_evaluations', deadline: "by Thursday 2359"}
+]
+} %}
+{#====================================================================================================================#}
+{# Tasks
+{#====================================================================================================================#}
+<span id="heading_submit_pre_lecture_quiz">Submit pre-lecture quiz</span>
+<span id="desc_submit_pre_lecture_quiz">
+
+* **Read prerequisite  [{{ show_as_tab('Topics', icon_book) }}](../schedule/week1/topics.html)** allocated for week 1. **Submit `Lecture 1 - Pre-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics.
+</span>
+{#====================================================================================================================#}
+<span id="heading_set_up_tools">Set up the tools</span>
+<span id="desc_set_up_tools">
+
+* Follow the <span class="border pr-1 pl-1" style="color:purple">**:fas-hard-hat: Preparation**</span> instructions of the following tools.
+
+{{ embed_topic("programmingLanguages.md#main", "Admin " + icon_embedding + " **Programming Language**", "2", indent="2") }}
+{{ embed_topic("tools.md#github", "Admin " + icon_embedding + " **Tools - GitHub**", "2", indent="2") }}
+{{ embed_topic("tools.md#rcs", "Admin " + icon_embedding + " **Tools - RCS**", "2", indent="2") }}
+{{ embed_topic("tools.md#ide", "Admin " + icon_embedding + " **Tools - IDE**", "2", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_submit_pre_module_survey">Submit the pre-module survey</span>
+<span id="desc_submit_pre_module_survey">
+
+* **Submit the pre-module survey ==(compulsory)==**<br>
+  _Pre-Module Survey_ will be available on LumiNUS **Week 1 Monday - Friday 2359**. %%We need all of you to submit it because it tells us some important information about you, especially your GitHub username.%%
+</span>
+{#====================================================================================================================#}
+<span id="heading_learn_about_the_module">Learn about the module</span>
+<span id="desc_learn_about_the_module">
+
+* Read the following admin info about the module.
+
+{{ embed_topic("moduleExpectations.md#main", "Admin " + icon_embedding + " **Module expectations and the ==star rating system==**", "1", indent="2", type="danger") }}
+{{ embed_topic("usingThisWebsite.md#essential", "Admin " + icon_embedding + " **Using this website [essential info]**", "1", indent="2", type="danger") }}
+{{ embed_topic("usingThisWebsite.md#more", "Admin " + icon_embedding + " **Using this website [more info]**", "3", indent="2", type="info") }}
+{{ embed_topic("weeklySchedule.md#main", "Admin " + icon_embedding + " **Weekly schedule**", "2", indent="2", type="warning") }}
+{{ embed_topic("moduleOverview.md#main", "Admin " + icon_embedding + " **Module overview**", "4", indent="2", type="success") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_attend_the_first_lecture">Attend the first lecture</span>
+<span id="desc_attend_the_first_lecture">
+
+* Attend the Week 1 lecture (Week 1 lecture is ==**compulsory**==).
+* Bring your computer to the lecture. Some lecture activities will need it.
+</span>
+{#====================================================================================================================#}
+<span id="heading_submit_first_post_lecture_quiz">Submit post-lecture quiz</span>
+<span id="desc_submit_first_post_lecture_quiz">
+
+* **Read weekly topics** allocated for this week. **Submit the `Post-Lecture Quiz`** (on LumiNUS) to test your knowledge of those topics.
+</span>
+{#====================================================================================================================#}
+<span id="heading_get_connect_with_comm_channels">Subscribe to the module forum</span>
+<span id="desc_get_connect_with_comm_channels">
+
+* Follow the 'Preparation' instructions of the following panel, to get connected with the module forum.
+
+{{ embed_topic("tools.md#communication", "Admin " + icon_embedding + " **Tools - Communication**", "3", indent="2") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_submit_post_lecture_quiz">Submit post-lecture quiz</span>
+<span id="desc_submit_post_lecture_quiz">
+
+* **Post-lecture quiz**: As usual, read weekly topics allocated for this week and submit the post-lecture quiz by the midnight before the lecture.
+</span>
+{#====================================================================================================================#}
+<span id="heading_form_teams">[{{ module }} students only] Form teams during the tutorial</span>
+<span id="desc_form_teams">
+
+* See the [{{ show_as_tab("Tutorial", icon_tutorial) }}](../schedule/week3/tutorial.html) tab for more info.
+</span>
+{#====================================================================================================================#}
+<span id="heading_accept_github_invitations">Accept GitHub invitation from the module organization</span>
+<span id="desc_accept_github_invitations">
+
+* We will be adding you all to {{ module | lower }}-{{ semester }} github org. **Please accept the invitation sent by GitHub** as you need to be a member of the org for some of the future module activities. If you did not receive the invitation link, you can use the link [https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation](https://github.com/orgs/nus-{{ module | lower }}-{{ semester }}/invitation).
+</span>
+{#====================================================================================================================#}
+<span id="heading_practice_peer_evaluations_on_TEAMMATES">Practice peer evaluation on TEAMMATES</span>
+<span id="desc_practice_peer_evaluations_on_TEAMMATES">
+
+* You should receive the submission link by Monday noon. Email `{{ module | lower }}@comp.nus.edu.sg` if you did not receive the submission link on time.
+{{ embed_topic("peerEvaluations.md#intro", "Admin " + icon_embedding + " Peer Evaluations → Introduction", "3", indent="2") }}
+{{ embed_topic("peerEvaluations.md#practicePeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Practice Peer Evaluation", "1", indent="2") }}
+{{ embed_topic("appendixB-policies.md#policy-deadlineExtensions", "Admin " + icon_embedding + " **Module Policies → Policy on Deadline Extensions**", "3", indent="2", type="primary") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_submit_midterm_feedback_for_the_module">[optional] Submit mid-term feedback for the module</span>
+<span id="desc_submit_midterm_feedback_for_the_module">
+
+* **An anonymous survey to submit feedback about the teaching team** will open on LumiNUS around Monday. You will receive an email when it opens. Please take a few minutes to give feedback to your tutors.
+</span>
+{#====================================================================================================================#}
+<span id="heading_submit_midterm_peer_evaluations">Submit Midterm Peer Evaluations on TEAMMATES</span>
+<span id="desc_submit_midterm_peer_evaluations">
+
+* **Peer Evaluation Round 1** will open on TEAMMATES. You will receive the submission link soon.
+
+{{ embed_topic("peerEvaluations.md#midtermPeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Midterm Peer Evaluation", "1", indent="2", status="expanded") }}
+</span>
+{#====================================================================================================================#}
+<span id="heading_submit_final_peer_evaluations">Submit Final Peer Evaluation on TEAMMATES</span>
+<span id="desc_submit_final_peer_evaluations">
+
+* Submission will open on Tuesday morning (after the final submission deadline).
+
+{{ embed_topic("peerEvaluations.md#finalPeerEvaluations", "Admin " + icon_embedding + " Peer Evaluations → Session: Final Peer Evaluation", "1", indent="2", status="expanded") }}
+</span>
+{#====================================================================================================================#}
+{#====================================================================================================================#}
+
+{% macro show_weekly_admin_tasks(week_num) %}
+{{ show_xp_page(week_num, admin_schedule['week' + week_num], '../../admin/admin-tasks.mbdf') }}
+
+{% set admin_topics_to_show = admin_topics_to_read['week' + week_num] %}
+{% if (admin_topics_to_show | length) != 0 %}
+{{ show_admin_sections_to_read(topics, policies, faqs, admin_topics_to_read['week' + week_num], is_flat=false ) }}
+{% endif %}
+{% endmacro %}

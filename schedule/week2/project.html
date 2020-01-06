@@ -117,10 +117,21 @@
             <h2 id="ip">iP<a class="fa fa-anchor" href="#ip"></a></h2>
             <div>
               <div>
-                <box type="info">
-                  <p>The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the <a href="https://github.com/nus-cs2103-AY1920S2/forum/issues">forum</a>                    so that we can take necessary actions.
-                  </p>
-                </box>
+                <div>
+                  <box type="info">
+                    <p>The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the <a href="https://github.com/nus-cs2103-AY1920S2/forum/issues">forum</a>                      so that we can take necessary actions.
+                    </p>
+                  </box>
+                </div>
+                <div>
+                  <box>
+                    <p>
+                      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> We discourage you from doing project tasks allocated to future weeks. Reasons: In order to help you gain
+                      <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time"><em>fluency</em></tooltip> (and also to better simulate real projects), <strong>we want the project work to be <tooltip content="done at multiple times with time gaps in between"><em>spaced</em></tooltip> and spread over a longer period</strong>,
+                      rather than to be done as a short burst. Reminder: as per iP grading criteria, <em>some</em> increments need to to be done in each week for you to get full marks.
+                    </p>
+                  </box>
+                </div>
               </div>
               <h4 id="1-learn-about-the-project"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span>Learn about the project</span><a class="fa fa-anchor" href="#1-learn-about-the-project"></a></h4>
               <div>
@@ -175,34 +186,29 @@
               <p></p>
               <h4 id="4-add-increments-while-committing-frequently-level-1-level-2-level-3-level-4-a-textuitesting-level-5-level-6-a-enums-by-thursday-2359"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> Add Increments while committing frequently: <code>Level-1</code>, <code>Level-2</code>, <code>Level-3</code>, <code>Level-4</code>, <code>A-TextUiTesting</code>,
                 <code>Level-5</code>,
-                <code>Level-6</code>, <code>A-Enums</code> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Thursday 2359</span>
+                <code>Level-6</code>, <code>A-Enums</code> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Thursday 2359</span>
                 </span><a class="fa fa-anchor" href="#4-add-increments-while-committing-frequently-level-1-level-2-level-3-level-4-a-textuitesting-level-5-level-6-a-enums-by-thursday-2359"></a></h4>
               <div>
                 <div>
-                  <p>Implement the following
-                    <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> <mark>in the given order</mark>.</p>
                   <ul>
-                    <li>Commit code at important points. <mark>Minimally, commit after completing each increment</mark>.</li>
-                    <li>After completing each increment,
+                    <li>Implement the following
+                      <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> <mark>in the given order</mark>.</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>From this point onward, commit code at important points. <mark>Minimally, commit after completing each increment</mark>.</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>From this point onward, after completing each increment,
                       <ul>
                         <li><strong><code>git tag</code></strong> the commit with the exact increment ID e.g., <code>Level-2</code>, <code>A-TextUiTesting</code></li>
                         <li><strong><code>git push</code></strong> the code to your fork (<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> git doesn't push tags unless you specifically ask it to)</li>
                       </ul>
                     </li>
                   </ul>
-                </div>
-                <div>
-                  <box>
-                    <p>
-                      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> We discourage you from doing project tasks allocated to future weeks. Reasons:</p>
-                    <ol>
-                      <li>In order to help you gain
-                        <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time"><em>fluency</em></tooltip> (and also to better simulate real projects), <strong>we want the project work to be <tooltip content="done at multiple times with time gaps in between"><em>spaced</em></tooltip> and spread over a longer period</strong>,
-                        rather than to be done as a short burst. Reminder: as per iP grading criteria, <em>some</em> increments need to to be done in each week for you to get full marks.</li>
-                      <li>As a further incentive to not jump ahead, we have left some future project requirements unspecified, and we might change some requirements along the way too.
-                      </li>
-                    </ol>
-                  </box>
                 </div>
               </div>
               <div>
@@ -500,7 +506,7 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
                           <h3 id="a-textuitesting"><span class="badge badge-pill badge-primary">A-TextUiTesting</span><a class="fa fa-anchor" href="#a-textuitesting"></a></h3>
                           <p>     <big>↳</big> <strong>Test using the I/O redirection technique</strong></p>
                         </div>
-                        <p>Use the input/output redirection technique to semi-automate testing of Duke.</p>
+                        <p>Use the input/output redirection technique to semi-automate the testing of Duke.</p>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> A tutorial is provided in the duke repository.</p>
                       </div>
                     </panel>
@@ -660,7 +666,7 @@ delete 3
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Fri, 03 Jan 2020 09:35:53 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 02:07:01 GMT</small></div>
     </footer>
   </div>
 </body>

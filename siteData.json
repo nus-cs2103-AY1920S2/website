@@ -43,19 +43,19 @@
       "headings": {
         "apdx-c-faq": "Apdx C: FAQ \n                ",
         "where-is-everything": "Where is everything? ",
-        "what-are-the-differences-between-the-t-and-the-non-t-version-of-the-module-optional": "What are the differences between the T and the non-T version of the module? : OPTIONAL\n                \n              ",
+        "what-are-the-differences-between-cs2103t-and-cs2103-optional": "What are the differences between CS2103T and CS2103? : OPTIONAL\n                \n              ",
         "why-the-workload-is-so-high-optional": "Why the workload is so high? : OPTIONAL\n                \n              ",
         "what-are-the-extra-requirements-to-get-an-a": "What are the extra requirements to get an A+? \n                \n              ",
         "why-so-much-bean-counting-optional": "Why so much bean counting? : OPTIONAL\n                \n              ",
-        "why-you-force-me-to-visit-a-separate-website-instead-of-using-luminus-optional": "Why you force me to visit a separate website instead of using LumiNUS? : OPTIONAL\n                \n              ",
+        "why-use-a-separate-website-instead-of-luminus-optional": "Why use a separate website instead of LumiNUS? : OPTIONAL\n                \n              ",
         "why-slides-are-not-detailed-optional": "Why slides are not detailed? : OPTIONAL\n                \n              ",
         "why-so-much-self-study-optional": "Why so much self-study? : OPTIONAL\n                \n              ",
         "what-if-i-don-t-carry-around-a-laptop-optional": "What if I don’t carry around a laptop? : OPTIONAL\n                \n              ",
         "why-very-narrow-project-scope-optional": "Why very narrow project scope? : OPTIONAL\n                \n              ",
-        "why-i-m-not-allowed-to-use-my-favorite-tool-framework-language-etc-optional": "Why I’m not allowed to use my favorite tool/framework/language etc.? : OPTIONAL\n                \n              ",
+        "why-can-t-i-use-my-favorite-tool-framework-language-etc-optional": "Why can't I use my favorite tool/framework/language etc.? : OPTIONAL\n                \n              ",
         "why-so-many-submissions-optional": "Why so many submissions? : OPTIONAL\n                \n              ",
-        "why-aren-t-we-allowed-to-build-a-new-product-from-scratch-in-the-tp-optional": "Why aren't we allowed to build a new product from scratch in the tP? : OPTIONAL\n                \n              ",
-        "why-submission-requirements-differ-between-cs2103-t-and-cs2101-optional": "Why submission requirements differ between CS2103/T and CS2101? : OPTIONAL\n                \n              "
+        "can-we-build-a-new-product-from-scratch-in-the-tp-optional": "Can we build a new product from scratch in the tP? : OPTIONAL\n                \n              ",
+        "why-submission-requirements-differ-between-cs2103t-and-cs2101-optional": "Why submission requirements differ between CS2103T and CS2101? : OPTIONAL\n                \n              "
       },
       "title": "Admin: Apdx C: FAQ",
       "header": "header.md",
@@ -829,7 +829,7 @@
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
       "pageNav": 4,
-      "src": "admin/ip-w02.md",
+      "src": "admin/ip-w2.md",
       "layout": "default"
     },
     {
@@ -847,7 +847,7 @@
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
       "pageNav": 4,
-      "src": "admin/ip-w03.md",
+      "src": "admin/ip-w3.md",
       "layout": "default"
     },
     {
@@ -862,7 +862,7 @@
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
       "pageNav": 4,
-      "src": "admin/ip-w04.md",
+      "src": "admin/ip-w4.md",
       "layout": "default"
     },
     {
@@ -870,7 +870,7 @@
         "ip-week-5": "iP: Week 5 \n                ",
         "1-generate-a-new-jar-file-extra": "1 Generate a new jar file  extra\n                \n                ",
         "2-add-increments-as-prs-a-assertions-a-codequality-a-lambdas-a-streams": "2 Add Increments as PRs: A-Assertions, A-CodeQuality, A-Lambdas, A-Streams",
-        "3-add-increments-a-travis": "3 Add Increments: A-Travis",
+        "3-add-increment-a-travis": "3 Add Increment: A-Travis",
         "4-add-an-extension": "4 Add an extension"
       },
       "title": "Admin: iP: Week 5",
@@ -879,7 +879,7 @@
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
       "pageNav": 4,
-      "src": "admin/ip-w05.md",
+      "src": "admin/ip-w5.md",
       "layout": "default"
     },
     {
@@ -895,7 +895,7 @@
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
       "pageNav": 4,
-      "src": "admin/ip-w06.md",
+      "src": "admin/ip-w6.md",
       "layout": "default"
     },
     {
@@ -910,13 +910,13 @@
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
       "pageNav": 4,
-      "src": "admin/ip-w07.md",
+      "src": "admin/ip-w7.md",
       "layout": "default"
     },
     {
       "headings": {
         "ip-week-8": "iP: Week 8 \n                ",
-        "1-evaluate-two-peer-ips-by-saturday-2359": "1 Evaluate two peer iPs  by Saturday 2359\n                "
+        "1-evaluate-two-peer-ips-by-saturday-2359": "1 Evaluate two peer iPs  by Saturday\n                2359\n                "
       },
       "title": "Admin: iP: Week 8",
       "header": "header.md",
@@ -924,7 +924,7 @@
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
       "pageNav": 4,
-      "src": "admin/ip-w08.md",
+      "src": "admin/ip-w8.md",
       "layout": "default"
     },
     {
@@ -1608,7 +1608,7 @@
         "2-project-grading-implementation-10-marks": "\n              2. Project Grading: Implementation [ 10 marks]\n              ",
         "3-project-grading-qa-10-marks": "\n              3. Project Grading: QA [ 10 marks]\n              ",
         "grading-bugs-found-in-the-pe": "Grading bugs found in the PE",
-        "4-project-grading-documentation-10-marks": "\n              4. Project Grading: Documentation [ 10 marks]\n              ",
+        "4-project-grading-documentation-10-marks": "\n                4. Project Grading: Documentation [ 10 marks]\n                ",
         "5-project-grading-project-management-5-5-10-marks": "\n              5. Project Grading: Project Management [ 5 +  5 = 10 marks]\n              "
       },
       "title": "Admin: tP: Grading",
@@ -1649,122 +1649,6 @@
       "head": "adminHead.md",
       "pageNav": 4,
       "src": "admin/tp-teams.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
-        "tp-kickoff-week-3": "tP: Kickoff [week 3] \n                ",
-        "1-get-familiar-with-ab3-features": "1  Get familiar with AB3 features",
-        "2-set-up-a-project-meeting-time-by-the-end-of-the-tutorial": "2  Set up a project meeting time                 by the end of the tutorial\n                "
-      },
-      "title": "Admin: tP: Kickoff [week 3]",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
-      "src": "admin/tp-w03.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
-        "tp-inception-week-4": "tP: Inception [week 4] \n                \n                \n                ",
-        "1-start-weekly-project-meetings": "1  Start weekly project meetings",
-        "2-decide-on-a-overall-project-direction-user-profile-problem-addressed": "2  Decide on a overall project direction (user profile, problem addressed)\n                \n               | project expectations",
-        "3-start-a-collaborative-doc-to-take-project-notes-before-the-tutorial": "3  Start a collaborative doc to take project notes                 before the tutorial\n                "
-      },
-      "title": "Admin: tP: Inception [week 4]",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
-      "src": "admin/tp-w04.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
-        "tp-v1-0-week-5": "tP: v1.0 [week 5] \n                ",
-        "1-brainstorm-user-stories-before-the-tutorial": "1  Brainstorm user stories                 before the tutorial\n                ",
-        "2-prioritize-the-user-stories-before-during-the-tutorial": "2  Prioritize the user stories                 before/during the tutorial\n                "
-      },
-      "title": "Admin: tP: v1.0 [week 5]",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
-      "src": "admin/tp-w05.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
-        "tp-mid-v1-1-week-6": "tP: mid-v1.1 [week 6] \n                ",
-        "1-set-up-the-project-repo": "1  Set up the project repo",
-        "2-get-familiar-with-the-code-base": "2  Get familiar with the code base",
-        "3-conceptualize-v2-0": "3  Conceptualize v2.0",
-        "4-draft-the-ug": "4  Draft the UG",
-        "5-refine-the-product-design": "5  Refine the product design"
-      },
-      "title": "Admin: tP: mid-v1.1 [week 6]",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
-      "src": "admin/tp-w06.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
-        "tp-v1-1-week-7": "tP: v1.1 [week 7] \n                ",
-        "1-update-project-website-aboutus-contactus-readme": "1  Update project website: AboutUs, ContactUs, README\n                \n              ",
-        "2-update-the-ug": "2  Update the UG",
-        "3-update-the-dg-user-stories-glossary-nfrs-use-cases": "3  Update the DG: user stories, glossary, NFRs, use cases",
-        "4-wrap-up-v1-1": "4  Wrap up v1.1",
-        "5-draft-a-rough-project-plan": "5  Draft a rough project plan",
-        "6-start-implementing-a-minimal-version-of-your-enhancement": "6  start implementing a minimal version of your enhancement"
-      },
-      "title": "Admin: tP: v1.1 [week 7]",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
-      "src": "admin/tp-w07.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
-        "tp-mid-v1-2-week-8": "tP: mid-v1.2 [week 8] \n                \n                \n                ",
-        "1-ensure-you-know-tp-expectations": "1  Ensure you know tP expectations\n                ",
-        "2-adjust-process-rigor-if-necessary": "2  Adjust process rigor if necessary",
-        "3-start-proper-milestone-management": "3  Start proper milestone management",
-        "4-add-another-increment-to-your-feature": "4  Add another increment to your feature"
-      },
-      "title": "Admin: tP: mid-v1.2 [week 8]",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
-      "src": "admin/tp-w08.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
-        "tp-v1-2-week-9": "tP: v1.2 [week 9] \n                ",
-        "1-deliver-an-intermediate-version-of-the-new-features": "1  Deliver an intermediate version of the new features",
-        "2-wrap-up-milestone": "2  Wrap up milestone",
-        "3-do-an-informal-demo": "3  Do an informal demo"
-      },
-      "title": "Admin: tP: v1.2 [week 9]",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
-      "src": "admin/tp-w09.md",
       "layout": "default"
     },
     {
@@ -1837,6 +1721,122 @@
       "head": "adminHead.md",
       "pageNav": 4,
       "src": "admin/tp-w13.md",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "tp-kickoff-week-3": "tP: Kickoff [week 3] \n                ",
+        "1-get-familiar-with-ab3-features": "1  Get familiar with AB3 features",
+        "2-set-up-a-project-meeting-time-by-the-end-of-the-tutorial": "2  Set up a project meeting time                 by the end of the tutorial\n                "
+      },
+      "title": "Admin: tP: Kickoff [week 3]",
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
+      "pageNav": 4,
+      "src": "admin/tp-w3.md",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "tp-inception-week-4": "tP: Inception [week 4] \n                \n                \n                ",
+        "1-start-weekly-project-meetings": "1  Start weekly project meetings",
+        "2-decide-on-an-overall-project-direction-user-profile-problem-addressed": "2  Decide on an overall project direction (user profile, problem addressed)\n                \n               | project expectations",
+        "3-start-a-collaborative-doc-to-take-project-notes-before-the-tutorial": "3  Start a collaborative doc to take project notes                 before the tutorial\n                "
+      },
+      "title": "Admin: tP: Inception [week 4]",
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
+      "pageNav": 4,
+      "src": "admin/tp-w4.md",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "tp-v1-0-week-5": "tP: v1.0 [week 5] \n                ",
+        "1-brainstorm-user-stories-before-the-tutorial": "1  Brainstorm user stories                 before the tutorial\n                ",
+        "2-prioritize-the-user-stories-before-during-the-tutorial": "2  Prioritize the user stories                 before/during the tutorial\n                "
+      },
+      "title": "Admin: tP: v1.0 [week 5]",
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
+      "pageNav": 4,
+      "src": "admin/tp-w5.md",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "tp-mid-v1-1-week-6": "tP: mid-v1.1 [week 6] \n                ",
+        "1-set-up-the-project-repo": "1  Set up the project repo",
+        "2-get-familiar-with-the-code-base": "2  Get familiar with the code base",
+        "3-conceptualize-v2-0": "3  Conceptualize v2.0",
+        "4-draft-the-ug": "4  Draft the UG",
+        "5-refine-the-product-design": "5  Refine the product design"
+      },
+      "title": "Admin: tP: mid-v1.1 [week 6]",
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
+      "pageNav": 4,
+      "src": "admin/tp-w6.md",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "tp-v1-1-week-7": "tP: v1.1 [week 7] \n                ",
+        "1-update-project-website-aboutus-contactus-readme": "1  Update project website: AboutUs, ContactUs, README\n                \n              ",
+        "2-update-the-ug": "2  Update the UG",
+        "3-update-the-dg-user-stories-glossary-nfrs-use-cases": "3  Update the DG: user stories, glossary, NFRs, use cases",
+        "4-wrap-up-v1-1": "4  Wrap up v1.1",
+        "5-draft-a-rough-project-plan": "5  Draft a rough project plan",
+        "6-start-implementing-a-minimal-version-of-your-enhancement": "6  start implementing a minimal version of your enhancement"
+      },
+      "title": "Admin: tP: v1.1 [week 7]",
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
+      "pageNav": 4,
+      "src": "admin/tp-w7.md",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "tp-mid-v1-2-week-8": "tP: mid-v1.2 [week 8] \n                \n                \n                ",
+        "1-ensure-you-know-tp-expectations": "1  Ensure you know tP expectations\n                ",
+        "2-adjust-process-rigor-if-necessary": "2  Adjust process rigor if necessary",
+        "3-start-proper-milestone-management": "3  Start proper milestone management",
+        "4-add-another-increment-to-your-feature": "4  Add another increment to your feature"
+      },
+      "title": "Admin: tP: mid-v1.2 [week 8]",
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
+      "pageNav": 4,
+      "src": "admin/tp-w8.md",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "tp-v1-2-week-9": "tP: v1.2 [week 9] \n                ",
+        "1-deliver-an-intermediate-version-of-the-new-features": "1  Deliver an intermediate version of the new features",
+        "2-wrap-up-milestone": "2  Wrap up milestone",
+        "3-do-an-informal-demo": "3  Do an informal demo"
+      },
+      "title": "Admin: tP: v1.2 [week 9]",
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "adminSiteNav.md",
+      "head": "adminHead.md",
+      "pageNav": 4,
+      "src": "admin/tp-w9.md",
       "layout": "default"
     },
     {
