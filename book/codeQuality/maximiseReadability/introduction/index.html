@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Code Quality: [Guideline] Maximise Readability: Introduction</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -66,8 +66,7 @@
                                     </span>
                                   </font>
                                 </p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (!age) {
         <span class="hljs-keyword">if</span> (!sub) {
@@ -85,8 +84,6 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                               </td>
                               <td>&nbsp;&nbsp;<br><br></td>
                               <td valign="top">
@@ -95,8 +92,7 @@
                                     </span>
                                   </font>
                                 </p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (isSenior) {
         subsidy = REJECT_SENIOR;
@@ -110,8 +106,6 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                               </td>
                             </tr>
                           </table>
@@ -127,8 +121,7 @@
                                     </span>
                                   </font>
                                 </p>
-                                <div class="code-block">
-                                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
+                                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
         <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:
             <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:
@@ -141,8 +134,6 @@
         subsidy = <span class="hljs-number">-1</span>
     <span class="hljs-keyword">return</span> subsidy
 </code></pre>
-                                  <div class="code-block-lang"><span>python</span></div>
-                                </div>
                               </td>
                               <td>&nbsp;&nbsp;<br><br></td>
                               <td valign="top">
@@ -151,8 +142,7 @@
                                     </span>
                                   </font>
                                 </p>
-                                <div class="code-block">
-                                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
+                                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> is_senior:
         <span class="hljs-keyword">return</span> REJECT_SENIOR
     <span class="hljs-keyword">elif</span> is_already_subsidised:
@@ -162,8 +152,6 @@
     <span class="hljs-keyword">else</span>:
         <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY
 </code></pre>
-                                  <div class="code-block-lang"><span>python</span></div>
-                                </div>
                               </td>
                             </tr>
                           </table>

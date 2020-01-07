@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Error Handling: Defensive Programming: Enforcing Compulsory Associations</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -60,8 +60,7 @@
                       <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
                       <p></p>
                       <p>Here, the association is compulsory i.e. an <code>Account</code> object should always be linked to a <code>Guarantor</code>. One way to implement this is to simply use a reference variable, like this:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     Guarantor guarantor;
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setGuarantor</span><span class="hljs-params">(Guarantor g)</span> </span>{
@@ -69,19 +68,13 @@
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>However, what if someone else used the <code>Account</code> class like this?</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java">Account a = <span class="hljs-keyword">new</span> Account();
+                      <pre><code class="hljs java">Account a = <span class="hljs-keyword">new</span> Account();
 a.setGuarantor(<span class="hljs-keyword">null</span>);
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>This results in an <code>Account</code> without a <code>Guarantor</code>! In a real banking system, this could have serious consequences! The code here did not try to prevent such a thing from happening. We can make the code more
                         defensive by proactively enforcing the multiplicity constraint, like this:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     <span class="hljs-keyword">private</span> Guarantor guarantor;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Account</span><span class="hljs-params">(Guarantor g)</span></span>{
@@ -99,8 +92,6 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     …
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </box>
                   </div>
                   <div>
@@ -117,8 +108,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                               <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg" height="55">
                               <p></p>
                               <div slot="answer" class="algolia-no-index">
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
+                                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Manager</span> </span>{
     <span class="hljs-keyword">private</span> ArrayList&lt; Account &gt; theAccounts ;
@@ -138,8 +128,6 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                               </div>
                             </question>
                           </panel>
@@ -152,8 +140,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                               <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg" height="55">
                               <p></p>
                               <div slot="answer" class="algolia-no-index">
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Marriage</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Marriage</span> </span>{
     <span class="hljs-keyword">private</span> Man husband = <span class="hljs-keyword">null</span>;
     <span class="hljs-keyword">private</span> Woman wife = <span class="hljs-keyword">null</span>;
 
@@ -200,8 +187,6 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     }
 } 
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                               </div>
                             </question>
                           </panel>
@@ -213,8 +198,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                               <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png" height="80">
                               <p></p>
                               <div slot="answer" class="algolia-no-index">
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     <span class="hljs-keyword">private</span> Guarantor myGuarantor; <span class="hljs-comment">// should not be public</span>
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Account</span><span class="hljs-params">(Guarantor g)</span></span>{
@@ -226,8 +210,6 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     <span class="hljs-comment">// there should not be a setGuarantor method</span>
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                               </div>
                             </question>
                           </panel>
@@ -237,8 +219,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                             <question>
                               <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/countryCity.png" height="45">
                               <p></p>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">City</span></span>{
+                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">City</span></span>{
     Country country;
     
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setCountry</span><span class="hljs-params">(Country country)</span></span>{
@@ -246,8 +227,6 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     }
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                               <p>This is a defensive implementation of the association.</p>
                               <ul radio-group="ac03f" class="radio-list">
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="ac03f" type="radio"> True</label></li>

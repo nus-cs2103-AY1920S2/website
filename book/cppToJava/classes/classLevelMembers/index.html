@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Objects: Getters and Setters</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -60,8 +60,7 @@
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose you want to create a number of Bicycle objects and assign each a serial number, beginning with 1 for the first object. This ID number is unique to each object
                           and is therefore an instance variable. At the same time, you need a field to keep track of how many <code>Bicycle</code> objects have been created so that you know what ID to assign to the next one. Such a field is not related
                           to any individual object, but to the class as a whole. For this you need a class variable, numberOfBicycles, as follows:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gear;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
@@ -74,8 +73,6 @@
         ...
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                       </box>
                       <p><strong><em>Class variables</em> are referenced by the class name itself</strong>, as in <code>Bicycle.numberOfBicycles</code> This makes it clear that they are class variables.</p>
                       <p>The Java programming language supports static methods as well as static variables. Static methods, which have the <code>static</code> modifier in their declarations, should be invoked with the class name, without the need for creating
@@ -85,8 +82,7 @@
                         <code>static final double PI = 3.141592653589793;</code></p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example with class-level variables and class-level methods:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gear;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
@@ -128,8 +124,6 @@
 
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                       </box>
                     </div>
                     <box>
@@ -148,8 +142,7 @@
                             <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] add getMaxRadius to the `Circle` class</small></small><a class='fa fa-anchor' href='#key-exercise-add-getmaxradius-to-the-circle-class'></a>" expanded>
                               <question>
                                 <p>Consider the <code>Circle</code> class below:</p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> x;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> y;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> radius;
@@ -194,14 +187,11 @@
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p>Update it as follows so that code given below produces the given output.</p>
                                 <ul>
                                   <li>Add a class-level <code>getMaxRadius</code> method that returns the maximum radius that has been used in all <code>Circle</code> objects created thus far.</li>
                                 </ul>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         Circle c = <span class="hljs-keyword">new</span> Circle();
         System.out.println(<span class="hljs-string">"max radius used so far : "</span> + Circle.getMaxRadius());
@@ -214,8 +204,6 @@
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                 </p>
                                 <pre><code class="hljs">max radius used so far : 0.0
@@ -226,16 +214,13 @@ max radius used so far : 12.0
                                 <div slot="hint" class="algolia-no-index">
                                   <p>You can use a <code>static</code> variable <code>maxRadius</code> to track the maximum value used for the <code>radius</code> attribute so far.</p>
                                   <p>Partial solution:</p>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setRadius</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
+                                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setRadius</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
     <span class="hljs-keyword">this</span>.radius = Math.max(radius, <span class="hljs-number">0</span>);
     <span class="hljs-keyword">if</span> (maxRadius &lt; <span class="hljs-keyword">this</span>.radius){
         <span class="hljs-comment">// ...</span>
     }
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
                                 </div>
                               </question>
                             </panel>

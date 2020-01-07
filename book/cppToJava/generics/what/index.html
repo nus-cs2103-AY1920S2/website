@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Generics: What are Generics?</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -54,8 +54,7 @@
                       <p><strong>You can use polymorphism to write code that can work with multiple types, but that approach has some shortcomings.</strong></p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following <code>Box</code> class. It can be used only for storing <code>Integer</code> objects.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BoxForIntegers</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BoxForIntegers</span> </span>{
     <span class="hljs-keyword">private</span> Integer x;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">set</span><span class="hljs-params">(Integer x)</span> </span>{
@@ -66,12 +65,9 @@
     }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p>To store <code>String</code> objects, another similar class is needed, resulting in the duplication of the entire class. As you can see, if you need to store many different types of objects, you could end up writing many similar
                           classes.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BoxForString</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BoxForString</span> </span>{
     <span class="hljs-keyword">private</span> String x;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">set</span><span class="hljs-params">(String x)</span> </span>{
@@ -82,11 +78,8 @@
     }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p>One solution for this problem is to use <em>polymorphism</em> i.e., write the <code>Box</code> class to store <code>Object</code> objects.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
     <span class="hljs-keyword">private</span> Object x;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">set</span><span class="hljs-params">(Object x)</span> </span>{
@@ -97,8 +90,6 @@
     }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p>The problem with this solution is, since its methods accept or return an <code>Object</code>, you are free to pass in whatever you want, provided that it is not one of the primitive types. There is no way to verify, at compile
                           time, how the class is used. One part of the code may place an <code>Integer</code> in the box and expect to get <code>Integers</code> out of it, while another part of the code may mistakenly pass in a <code>String</code>, resulting
                           in a runtime error.

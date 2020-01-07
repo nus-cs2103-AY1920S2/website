@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Exceptions</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -119,8 +119,7 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>writeList()</code> method below calls a method <code>process()</code> that can cause two type of exceptions. It uses a try-catch construct to deal with each
                       exception.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> </span>{
     print(<span class="hljs-string">"starting method"</span>);
     <span class="hljs-keyword">try</span> {
         print(<span class="hljs-string">"starting process"</span>);
@@ -137,8 +136,6 @@
     print(<span class="hljs-string">"finishing method"</span>);
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p>Some possible outputs:</p>
                     <div class="table-responsive">
                       <table class="markbind-table table table-bordered table-striped">
@@ -165,8 +162,7 @@
                   <p>You can <strong>use a <code>finally</code> block to specify code that is guaranteed to execute with or without the exception.</strong> This is the right place to close files, recover resources, and otherwise clean up after the code enclosed
                     in the <code>try</code> block.</p>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>writeList()</code> method below has a <code>finally</code> block:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> </span>{
+                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> </span>{
     print(<span class="hljs-string">"starting method"</span>);
     <span class="hljs-keyword">try</span> {
         print(<span class="hljs-string">"starting process"</span>);
@@ -186,8 +182,6 @@
     print(<span class="hljs-string">"finishing method"</span>);
 }
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                   <p>Some possible outputs:</p>
                   <div class="table-responsive">
                     <table class="markbind-table table table-bordered table-striped">
@@ -222,13 +216,10 @@
                     <tooltip content="Throwable objects are instances of any subclass of the `Throwable` class.">throwable</tooltip> object as the argument.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's an example of a <code>throw</code> statement.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) {
+                    <pre><code class="hljs java"><span class="hljs-keyword">if</span> (size == <span class="hljs-number">0</span>) {
     <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> EmptyStackException();
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </box>
                   <p>In Java, <strong>Checked exceptions are subject to the <em>Catch or Specify Requirement</em></strong>: code that might throw checked exceptions must be enclosed by either of the following:</p>
                   <ul>
@@ -238,15 +229,12 @@
                   <p>Unchecked exceptions are not required to follow to the <em>Catch or Specify Requirement</em> but you can apply the requirement to them too.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's an example of a method specifying that it throws certain checked exceptions:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException, IndexOutOfBoundsException </span>{
+                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException, IndexOutOfBoundsException </span>{
     print(<span class="hljs-string">"starting method"</span>);
     process();
     print(<span class="hljs-string">"finishing method"</span>);
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <pre><code>Some possible outputs:
 </code></pre>
                     <div class="table-responsive">
@@ -281,8 +269,7 @@
                           <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] parse rectangle descriptor</small></small><a class='fa fa-anchor' href='#key-exercise-parse-rectangle-descriptor'></a>" expanded>
                             <question>
                               <p>The <code>Main</code> class below parses a string descriptor of a rectangle of the format <code>&quot;WIDTHxHEIGHT&quot;</code> <span class="dimmed">e.g., <code>&quot;3x4&quot;</code></span> and prints the area of the rectangle.</p>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{
         <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> modify the code below</span>
@@ -301,8 +288,6 @@
     }
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                               <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                               </p>
                               <pre><code class="hljs">3x4=12
@@ -325,17 +310,13 @@
                                 </li>
                               </ol>
                               <div class="indented-level2">
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IllegalShapeException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Exception</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IllegalShapeException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Exception</span> </span>{
   <span class="hljs-comment">//no other code needed</span>
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                               </div>
                               <p>Here is the expected behavior after you have done the above changes:</p>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-comment">//...</span>
 
@@ -348,8 +329,6 @@
     }
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                               <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                               </p>
                               <pre><code class="hljs">3x4=12
@@ -359,8 +338,7 @@ WIDTH or HEIGHT is missing: 3
 Too many dimensions: 3x4x5
 </code></pre>
                               <panel type="seamless" header="Partial solution" class="algolia-no-index">
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{
         <span class="hljs-keyword">try</span> {
@@ -381,8 +359,6 @@ Too many dimensions: 3x4x5
 
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                               </panel>
                             </question>
                           </panel>

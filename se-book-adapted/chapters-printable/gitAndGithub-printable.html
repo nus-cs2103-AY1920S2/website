@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Textbook Chapter [Printable] : Git and Github</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -124,15 +124,11 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                     <tab header="CLI" class="algolia-no-index">
                       <div>
                         <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs sh">git status
+                        <pre><code class="hljs sh">git status
 </code></pre>
-                          <div class="code-block-lang"><span>sh</span></div>
-                        </div>
                         <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                         </p>
-                        <div class="code-block">
-                          <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
+                        <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Initial commit</span>
 <span class="hljs-comment">#</span>
@@ -142,8 +138,6 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
 <span class="hljs-comment">#   a.txt</span>
 nothing added to commit but untracked files present (use <span class="hljs-string">"git add"</span> to track)
 </code></pre>
-                          <div class="code-block-lang"><span>sh</span></div>
-                        </div>
                       </div>
                     </tab>
                   </tabs>
@@ -172,16 +166,12 @@ nothing added to commit but untracked files present (use <span class="hljs-strin
                     <tab header="CLI" class="algolia-no-index">
                       <div>
                         <p>You can use the <code>stage</code> or the <code>add</code> command (they are synonyms, <code>add</code> is the more popular choice) to stage files.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs sh">git add fruits.txt
+                        <pre><code class="hljs sh">git add fruits.txt
 git status
 </code></pre>
-                          <div class="code-block-lang"><span>sh</span></div>
-                        </div>
                         <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                         </p>
-                        <div class="code-block">
-                          <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
+                        <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Initial commit</span>
 <span class="hljs-comment">#</span>
@@ -191,8 +181,6 @@ git status
 <span class="hljs-comment">#       new file:   fruits.txt</span>
 <span class="hljs-comment">#</span>
 </code></pre>
-                          <div class="code-block-lang"><span>sh</span></div>
-                        </div>
                       </div>
                     </tab>
                   </tabs>
@@ -208,17 +196,11 @@ git status
                     <tab header="CLI" class="algolia-no-index">
                       <div>
                         <p>Use the <code>commit</code> command to commit. The <code>-m</code> switch is used to specify the commit message.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs sh">git commit -m <span class="hljs-string">"add fruits.txt"</span>
+                        <pre><code class="hljs sh">git commit -m <span class="hljs-string">"add fruits.txt"</span>
 </code></pre>
-                          <div class="code-block-lang"><span>sh</span></div>
-                        </div>
                         <p>You can use the <code>log</code> command to see the commit history</p>
-                        <div class="code-block">
-                          <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
+                        <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
 </code></pre>
-                          <div class="code-block-lang"><span>sh</span></div>
-                        </div>
                         <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                         </p>
                         <pre><code class="hljs">commit 8fd30a6910efb28bb258cd01be93e481caeab846
@@ -339,18 +321,14 @@ git push origin --tags
                     </tab>
                     <tab header="CLI" class="algolia-no-index">
                       <div>
-                        <div class="code-block">
-                          <pre><code class="hljs sh">git show &lt; part-of-commit-hash &gt;
+                        <pre><code class="hljs sh">git show &lt; part-of-commit-hash &gt;
 </code></pre>
-                          <div class="code-block-lang"><span>sh</span></div>
-                        </div>
                         <p>Example:</p>
                         <pre><code class="hljs">git show 251b4cf
 </code></pre>
                         <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                         </p>
-                        <div class="code-block">
-                          <pre><code class="hljs diff">commit 5bc0e30635a754908dbdd3d2d833756cc4b52ef3
+                        <pre><code class="hljs diff">commit 5bc0e30635a754908dbdd3d2d833756cc4b52ef3
 Author: … &lt; … &gt;
 Date:   Sat Jul 8 16:50:27 2017 +0800
 
@@ -366,8 +344,6 @@ index 15b57f7..17f4528 100644
 <span class="hljs-addition">+berries</span>
  cherries
 </code></pre>
-                          <div class="code-block-lang"><span>diff</span></div>
-                        </div>
                       </div>
                     </tab>
                   </tabs>
@@ -846,8 +822,7 @@ git checkout feature1
                   <img src="/website/book/gitAndGithub/mergeConflicts/images/sourcetree_1.png" height="350">
                   <p></p>
                   <p><strong>3. Try to merge the <code>fix1</code> branch onto the <code>master</code> branch.</strong> Git will pause mid-way during the merge and report a merge conflict. If you open the conflicted file, you will see something like this:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs">COLORS
+                  <pre><code class="hljs">COLORS
 ------
 blue
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
@@ -858,34 +833,25 @@ green
 red
 white
 </code></pre>
-                    <div class="code-block-lang"><span>txt</span></div>
-                  </div>
                   <p><strong>4. Observe how the conflicted part is marked</strong> between a line starting with <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> and a line starting with <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>, separated by another line starting
                     with
                     <code>=======</code>.</p>
                   <p>This is the conflicting part that is coming from the <code>master</code> branch:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs">
+                  <pre><code class="hljs">
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 black
 =======
 
 </code></pre>
-                    <div class="code-block-lang"><span>txt</span></div>
-                  </div>
                   <p>This is the conflicting part that is coming from the <code>fix1</code> branch:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs">
+                  <pre><code class="hljs">
 =======
 green
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; fix1
 
 </code></pre>
-                    <div class="code-block-lang"><span>txt</span></div>
-                  </div>
                   <p><strong>5. Resolve the conflict by editing the file</strong>. Let us assume you want to keep both lines in the merged version. You can modify the file to be like this:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs">COLORS
+                  <pre><code class="hljs">COLORS
 ------
 blue
 black
@@ -893,8 +859,6 @@ green
 red
 white
 </code></pre>
-                    <div class="code-block-lang"><span>txt</span></div>
-                  </div>
                   <p><strong>6. Stage the changes, and commit.</strong></p>
                 </div>
               </div>
@@ -908,15 +872,12 @@ white
                 <div>
                   <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
                   <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs md">
+                  <pre><code class="hljs md">
 <span class="hljs-section"># Introduction</span>
 Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
 This repo can be used to practice creating PRs.
 
 </code></pre>
-                    <div class="code-block-lang"><span>md</span></div>
-                  </div>
                   <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
                   <tabs>
                     <tab header="SourceTree">
@@ -984,15 +945,12 @@ This repo can be used to practice creating PRs.
                       <div>
                         <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
                         <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs md">
+                        <pre><code class="hljs md">
 <span class="hljs-section"># Introduction</span>
 Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
 This repo can be used to practice creating PRs.
 
 </code></pre>
-                          <div class="code-block-lang"><span>md</span></div>
-                        </div>
                         <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
                         <tabs>
                           <tab header="SourceTree">
@@ -1143,7 +1101,7 @@ git pull origin master
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 02:07:01 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 07:10:50 GMT</small></div>
     </footer>
   </div>
 </body>

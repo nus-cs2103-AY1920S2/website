@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Object Oriented Programming</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -872,8 +872,7 @@ Enter command: exit
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>Logic</code> class has a variable that can hold <code>0..1</code> <span class="dimmed">i.e., zero or one</span> <code>Minefield</code> objects.</p>
         <div>
           <div class="alt-java">
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
+            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
     Minefield minefield;
 }
 
@@ -881,12 +880,9 @@ Enter command: exit
     ...
 }
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
           </div>
           <div class="alt-python">
-            <div class="code-block">
-              <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, minefield)</span>:</span>
     self.minefield = minefield
@@ -897,8 +893,6 @@ Enter command: exit
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
   <span class="hljs-comment"># ...</span>
 </code></pre>
-              <div class="code-block-lang"><span>python</span></div>
-            </div>
           </div>
         </div>
       </box>
@@ -906,32 +900,25 @@ Enter command: exit
       <box>
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>Logic</code> class will always have a <code>ConfigGenerator</code> object, provided the variable is not set to null at some point.</p>
         <div class="alt-java">
-          <div class="code-block">
-            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     ConfigGenerator cg = <span class="hljs-keyword">new</span> ConfigGenerator();
     ...
 }
 </code></pre>
-            <div class="code-block-lang"><span>java</span></div>
-          </div>
         </div>
         <div class="alt-python">
-          <div class="code-block">
-            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
+          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.config_gen = ConfigGenerator()
 </code></pre>
-            <div class="code-block-lang"><span>python</span></div>
-          </div>
         </div>
       </box>
       <p><strong>Bi-directional associations require matching variables in both classes.</strong></p>
       <box>
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>Foo</code> class has a variable to hold a <code>Bar</code> object and vice versa <span class="dimmed">i.e., each object can have an association with an object of the other type</span>.</p>
         <div class="alt-java">
-          <div class="code-block">
-            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
     Bar bar;
     <span class="hljs-comment">//...</span>
 }
@@ -942,12 +929,9 @@ Enter command: exit
 }
 
 </code></pre>
-            <div class="code-block-lang"><span>java</span></div>
-          </div>
         </div>
         <div class="alt-python">
-          <div class="code-block">
-            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
+          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, bar)</span>:</span>
     self.bar = bar;
@@ -959,32 +943,24 @@ Enter command: exit
     self.foo = foo;
     
 </code></pre>
-            <div class="code-block-lang"><span>python</span></div>
-          </div>
         </div>
       </box>
       <p><strong>To implement other multiplicities, choose a suitable data structure</strong> such as Arrays, ArrayLists, HashMaps, Sets, etc.</p>
       <box>
         <div class="alt-java">
           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code uses an two-dimensional array to implement a 1-to-many association from the <code>Minefield</code> to <code>Cell</code>.</p>
-          <div class="code-block">
-            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span> </span>{
     Cell[][] cell;
     ...
 }
 </code></pre>
-            <div class="code-block-lang"><span>java</span></div>
-          </div>
         </div>
         <div class="alt-python">
-          <div class="code-block">
-            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
+          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.cells = {<span class="hljs-number">1</span>:[], <span class="hljs-number">2</span>:[], <span class="hljs-number">3</span>:[]}
 </code></pre>
-            <div class="code-block-lang"><span>python</span></div>
-          </div>
         </div>
       </box>
     </div>
@@ -1017,8 +993,7 @@ Enter command: exit
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
           <tooltip content="temporary">transient</tooltip> interaction and there is no long term relationship between a <code>Foo</code> object and a <code>Bar</code> object. <span class="dimmed">i.e. the <code>Foo</code> object does not keep the <code>Bar</code> object it receives as a parameter</span>.</p>
         <div class="alt-java">
-          <div class="code-block">
-            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     
     <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculate</span><span class="hljs-params">(Bar bar)</span></span>{
         <span class="hljs-keyword">return</span> bar.getValue();
@@ -1033,12 +1008,9 @@ Enter command: exit
     }
 }
 </code></pre>
-            <div class="code-block-lang"><span>java</span></div>
-          </div>
         </div>
         <div class="alt-python">
-          <div class="code-block">
-            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
+          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
     
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate</span><span class="hljs-params">(self, bar)</span>:</span>
         <span class="hljs-keyword">return</span> bar.value;
@@ -1048,8 +1020,6 @@ Enter command: exit
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, value)</span>:</span>
       self.value = value
 </code></pre>
-            <div class="code-block-lang"><span>python</span></div>
-          </div>
         </div>
       </box>
     </div>
@@ -1086,24 +1056,18 @@ Enter command: exit
       <p><strong>Composition is implemented using a normal variable.</strong> If correctly implemented, the ‘part’ object will be deleted when the ‘whole’ object is deleted. Ideally, the ‘part’ object may not even be visible to clients of the ‘whole’ object.</p>
       <box>
         <div class="alt-java float-right ml-5">
-          <div class="code-block">
-            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span> </span>{
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span> </span>{
     <span class="hljs-keyword">private</span> Subject subject;
   ...
 }
 </code></pre>
-            <div class="code-block-lang"><span>java</span></div>
-          </div>
         </div>
         <div class="alt-python  float-right ml-5">
-          <div class="code-block">
-            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span>:</span>
+          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Email</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.__subject = Subject()
 </code></pre>
-            <div class="code-block-lang"><span>python</span></div>
-          </div>
         </div>
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this code, the <code>Email</code> has a composition type relationship with the <code>Subject</code> class, in the sense that the subject is part of the email.</p>
       </box>
@@ -1137,8 +1101,7 @@ Enter command: exit
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, there is an aggregation association between the <code>Team</code> class and the <code>Person</code> in that a <code>Team</code> contains <code>Person</code> a
           object who is the leader of the team.</p>
         <div class="alt-java">
-          <div class="code-block">
-            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span> </span>{
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span> </span>{
     Person leader;
     ...
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setLeader</span><span class="hljs-params">(Person p)</span> </span>{
@@ -1146,12 +1109,9 @@ Enter command: exit
     }
 }
 </code></pre>
-            <div class="code-block-lang"><span>java</span></div>
-          </div>
         </div>
         <div class="alt-python">
-          <div class="code-block">
-            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span>:</span>
+          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span>:</span>
   
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.__leader = <span class="hljs-literal">None</span>
@@ -1159,8 +1119,6 @@ Enter command: exit
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_leader</span><span class="hljs-params">(self, person)</span>:</span>
     self.__leader = person
 </code></pre>
-            <div class="code-block-lang"><span>python</span></div>
-          </div>
         </div>
       </box>
     </div>
@@ -1198,8 +1156,7 @@ Enter command: exit
       <p>There is no special way to implement an association class. It can be implemented as a normal class that has variables to represent the endpoint of the association it represents.</p>
       <box>
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>Transaction</code> class is an association class that represent a transaction between a <code>Person</code> who is the seller and another <code>Person</code>          who is the buyer.</p>
-        <div class="code-block">
-          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Transaction</span></span>{
+        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Transaction</span></span>{
     
     <span class="hljs-comment">//all fields are compulsory</span>
     Person seller;
@@ -1212,8 +1169,6 @@ Enter command: exit
     }
 }
 </code></pre>
-          <div class="code-block-lang"><span>java</span></div>
-        </div>
       </box>
     </div>
     <div>
@@ -1637,19 +1592,13 @@ Enter command: exit
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of
           the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
         <p>The following code is valid because an <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
-        <div class="code-block">
-          <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
+        <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
 </code></pre>
-          <div class="code-block-lang"><span>java</span></div>
-        </div>
         <p>But the following code is not valid <span class="dimmed">because <code>staff</code> is declared as a <code>Staff</code> type and therefore its value may or may not be of  type <code>AcademicStaff</code>, which is the type expected by variable <code>academicStaff</code>.</span></p>
-        <div class="code-block">
-          <pre><code class="hljs java">Staff staff;
+        <pre><code class="hljs java">Staff staff;
 ...
 AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 </code></pre>
-          <div class="code-block-lang"><span>java</span></div>
-        </div>
       </box>
     </div>
     <div></div>
@@ -1830,15 +1779,12 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
       <box>
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below. The declared type of <code>s</code> is <code>Staff</code> and it appears as if the <code>adjustSalary(int)</code> operation of the <code>Staff</code> class
           is invoked.</p>
-        <div class="code-block">
-          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
+        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
     <span class="hljs-keyword">for</span> (Staff s: staff) {
         s.adjustSalary(byPercent);
     }
 }
 </code></pre>
-          <div class="code-block-lang"><span>java</span></div>
-        </div>
         <p>However, at runtime <code>s</code> can receive an object of any subclass of <code>Staff</code>. That means the <code>adjustSalary(int)</code> operation of the actual subclass object will be called. If the subclass does not override that operation,
           the operation defined in the superclass (in this case, <code>Staff</code> class) will be called.</p>
       </box>
@@ -1914,8 +1860,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
       </modal>
       <box>
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Note how the constructor is overloaded in the class below. The method call <code>new Account()</code> is bound to the first constructor at compile time.</p>
-        <div class="code-block">
-          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
 
     Account () {
         <span class="hljs-comment">// Signature: ()</span>
@@ -1928,16 +1873,11 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
     }
 }
 </code></pre>
-          <div class="code-block-lang"><span>java</span></div>
-        </div>
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Similarly, the <code>calcuateGrade</code> method is overloaded in the code below and a method call <code>calculateGrade(&quot;A1213232&quot;)</code> is bound to the second implementation,
           at compile time.</p>
-        <div class="code-block">
-          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(<span class="hljs-keyword">int</span>[] averages)</span> </span>{ ... }
+        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(<span class="hljs-keyword">int</span>[] averages)</span> </span>{ ... }
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(String matric)</span> </span>{ ... }
 </code></pre>
-          <div class="code-block-lang"><span>java</span></div>
-        </div>
       </box>
     </div>
     <div></div>

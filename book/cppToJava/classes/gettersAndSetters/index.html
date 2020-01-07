@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Objects: Getters and Setters</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -50,8 +50,7 @@
                 <div id="main">
                   <div>
                     <p>As the instance variables of <code>Time</code> are private, you can access them from within the <code>Time</code> class only. To compensate, <strong>you can provide methods to access attributes</strong>:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getHour</span><span class="hljs-params">()</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getHour</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">return</span> hour;
 }
 
@@ -63,12 +62,9 @@
     <span class="hljs-keyword">return</span> second;
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p>Methods like these are formally called “accessors”, but more commonly referred to as <em>getters</em>. By convention, the method that gets a variable named <code>something</code> is called <code>getSomething</code>.</p>
                     <p>Similarly, <strong>you can provide <em>setter</em> methods to modify attributes</strong> of a <code>Time</code> object:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setHour</span><span class="hljs-params">(<span class="hljs-keyword">int</span> hour)</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setHour</span><span class="hljs-params">(<span class="hljs-keyword">int</span> hour)</span> </span>{
     <span class="hljs-keyword">this</span>.hour = hour;
 }
 
@@ -80,8 +76,6 @@
     <span class="hljs-keyword">this</span>.second = second;
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </div>
                   <div>
                     <div>
@@ -91,8 +85,7 @@
                             <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] add getters/setters to the `Circle` class</small></small><a class='fa fa-anchor' href='#key-exercise-add-getters-setters-to-the-circle-class'></a>" expanded>
                               <question>
                                 <p>Consider the <code>Circle</code> class below:</p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> x;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> y;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> radius;
@@ -114,15 +107,12 @@
 
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p>Update it as follows so that code given below produces the given output.</p>
                                 <ul>
                                   <li>Add getter/setter methods for all three attributes</li>
                                   <li>Update the setters and constructors such that if the radius supplied is negative, the code automatically set the radius to 0 instead.</li>
                                 </ul>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         Circle c = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>, <span class="hljs-number">5</span>);
 
@@ -142,8 +132,6 @@
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                 </p>
                                 <pre><code class="hljs">x      : 4
@@ -155,8 +143,7 @@ radius : 0.0
 </code></pre>
                                 <div slot="hint" class="algolia-no-index">
                                   <p>Partial solution:</p>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">double</span> radius)</span></span>{
+                                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">double</span> radius)</span></span>{
     setX(x);
     setY(y);
     setRadius(radius);
@@ -166,8 +153,6 @@ radius : 0.0
     <span class="hljs-keyword">this</span>.radius = Math.max(radius, <span class="hljs-number">0</span>);
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
                                 </div>
                               </question>
                             </panel>

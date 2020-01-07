@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Inheritance: The Object Class</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -56,8 +56,7 @@
                         it simply returns the type of the object and its address (in hexadecimal).</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose you defined a class called <code>Time</code>, to represent a moment in time. If you create a <code>Time</code> object and display it with println:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Time</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Time</span> </span>{
     <span class="hljs-keyword">int</span> hours;
     <span class="hljs-keyword">int</span> minutes;
     <span class="hljs-keyword">int</span> seconds;
@@ -69,21 +68,15 @@
     }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
-                        <div class="code-block">
-                          <pre><code class="hljs java"> Time t = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">5</span>, <span class="hljs-number">20</span>, <span class="hljs-number">13</span>);
+                        <pre><code class="hljs java"> Time t = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">5</span>, <span class="hljs-number">20</span>, <span class="hljs-number">13</span>);
  System.out.println(t);
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>Time@80cc7c0</code> <span class="dimmed">(the address part can vary)</span></p>
                       </box>
                       <p><strong>You can override the <code>toString</code> method in your classes</strong> to provide a more meaningful string representation of the objects of that class.</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's an example of overriding the <code>toString</code> method of the <code>Time</code> class:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Time</span></span>{
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Time</span></span>{
 
    <span class="hljs-comment">//...</span>
 
@@ -93,14 +86,9 @@
    }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
-                        <div class="code-block">
-                          <pre><code class="hljs java"> Time t = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">5</span>, <span class="hljs-number">20</span>, <span class="hljs-number">13</span>);
+                        <pre><code class="hljs java"> Time t = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">5</span>, <span class="hljs-number">20</span>, <span class="hljs-number">13</span>);
  System.out.println(t);
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>05:20:13</code></p>
                       </box>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <code>@Override</code> is an optional annotation you can use to indicate that the method is overriding a method from the
@@ -117,13 +105,10 @@
                       <p>The definition of identity is always the same, so the <code>==</code> operator always does the same thing.</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the following variables:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java">Time time1 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">9</span>, <span class="hljs-number">30</span>, <span class="hljs-number">0</span>);
+                        <pre><code class="hljs java">Time time1 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">9</span>, <span class="hljs-number">30</span>, <span class="hljs-number">0</span>);
 Time time2 = time1;
 Time time3 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">9</span>, <span class="hljs-number">30</span>, <span class="hljs-number">0</span>);
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <ul>
                           <li>The assignment operator copies references, so <code>time1</code> and <code>time2</code> refer to the same object. Because they are identical, <code>time1 == time2</code> is <code>true</code>.</li>
                           <li>But <code>time1</code> and <code>time3</code> refer to different objects. Because they are not identical, <code>time1 == time3</code> is <code>false</code>.</li>
@@ -132,8 +117,7 @@ Time time3 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number
                       <p>By default, the <code>equals</code> method inherited from the <code>Object</code> class does the same thing as <code>==</code>. <strong>As the definition of equivalence is different for different classes, you can override the <code>equals</code> method to define your own criteria for equivalence</strong>                        of objects of your class.</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's how you can override the <code>equals</code> method of the <code>Time</code> class to provide an <code>equals</code> method that considers two <code>Time</code>                          objects equivalent as long as they represent the same time of the day:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Time</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Time</span> </span>{
     <span class="hljs-keyword">int</span> hours;
     <span class="hljs-keyword">int</span> minutes;
     <span class="hljs-keyword">int</span> seconds;
@@ -149,16 +133,11 @@ Time time3 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number
     }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
-                        <div class="code-block">
-                          <pre><code class="hljs java">Time t1 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">5</span>, <span class="hljs-number">20</span>, <span class="hljs-number">13</span>);
+                        <pre><code class="hljs java">Time t1 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">5</span>, <span class="hljs-number">20</span>, <span class="hljs-number">13</span>);
 Time t2 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">5</span>, <span class="hljs-number">20</span>, <span class="hljs-number">13</span>);
 System.out.println(t1 == t2);
 System.out.println(t1.equals(t2));
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                         </p>
                         <pre><code class="hljs">false
@@ -178,8 +157,7 @@ true
                             <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] override the `toString` method</small></small><a class='fa fa-anchor' href='#key-exercise-override-the-tostring-method'></a>" expanded>
                               <question>
                                 <p>Suppose you have the following classes <code>Task</code>, <code>Todo</code>, <code>Deadline</code>:</p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> String description;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String description)</span> </span>{
@@ -191,10 +169,7 @@ true
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Todo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Todo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Todo</span><span class="hljs-params">(String description)</span> </span>{
@@ -211,10 +186,7 @@ true
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Todo</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Todo</span> </span>{
 
     <span class="hljs-keyword">protected</span> String by;
 
@@ -232,11 +204,8 @@ true
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p>Override the <code>toString</code> method of the three classes to produce the following behavior.</p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         <span class="hljs-comment">// create a todo task and print it</span>
         Todo t = <span class="hljs-keyword">new</span> Todo(<span class="hljs-string">"Read a good book"</span>);
@@ -257,8 +226,6 @@ true
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                 </p>
                                 <pre><code class="hljs">description: Read a good book
@@ -276,8 +243,7 @@ do by: Postponed to Nov 18th
                                   This is useful here because the overriding method is simply <em>adding onto</em> the behavior of the overridden method.</p>
                                 <div slot="hint" class="algolia-no-index">
                                   <p><code>toString()</code> method of <code>Task</code> class and <code>Todo</code> class are given below. You can follow a similar approach for the <code>Deadline</code> class.</p>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-comment">// ...</span>
 
     <span class="hljs-meta">@Override</span>
@@ -286,10 +252,7 @@ do by: Postponed to Nov 18th
     }
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Todo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Todo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-comment">// ...</span>
 
     <span class="hljs-meta">@Override</span>
@@ -304,8 +267,6 @@ do by: Postponed to Nov 18th
     }
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
                                 </div>
                               </question>
                             </panel>

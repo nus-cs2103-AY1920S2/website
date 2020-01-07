@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Software Design Fundamentals: Cohesion: How</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -72,8 +72,7 @@ What%%" class="algolia-no-index"></panel>
                           <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which class is more cohesive?" class="algolia-no-index">
                             <question has-input="true">
                               <p>Compare the cohesion of the following two versions of the <code>EmailMessage</code> class. Which one is more cohesive and why?</p>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-comment">// version-1</span>
+                              <pre><code class="hljs java"><span class="hljs-comment">// version-1</span>
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{
     <span class="hljs-keyword">private</span> String sendTo;
  	  <span class="hljs-keyword">private</span> String subject;
@@ -113,8 +112,6 @@ What%%" class="algolia-no-index"></panel>
     }
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                               <div slot="answer" class="algolia-no-index">
                                 <p>Version 2 is less cohesive.</p>
                                 <p>Explanation: Version 2 is handling functionality related to login, which is not directly related to the concept of ‘email message’ that the class is supposed to represent. On a related note, we can improve the cohesion

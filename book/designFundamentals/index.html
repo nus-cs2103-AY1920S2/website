@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Software Design Fundamentals</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -218,8 +218,7 @@
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If <code>Foo</code> class calls the method <code>Bar#read()</code>, <code>Foo</code> is coupled to <code>Bar</code> because a change to <code>Bar</code> can potentially
                     (but not always) require a change in the <code>Foo</code> class <span class="dimmed">e.g. if the signature of the <code>Bar#read()</code> is changed, <code>Foo</code> needs to change as well, but a change to the <code>Bar#write()</code> method may not require a change in the <code>Foo</code> class because <code>Foo</code> does not call <code>Bar#write()</code></span>.</p>
                   <panel type="seamless" header="%%code for the above example%%" class="algolia-no-index">
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     ...
     <span class="hljs-keyword">new</span> Bar().read();
     ...
@@ -235,8 +234,6 @@
     }
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </panel>
                 </box>
                 <box>
@@ -380,8 +377,7 @@
               <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which class is more cohesive?" class="algolia-no-index">
                 <question has-input="true">
                   <p>Compare the cohesion of the following two versions of the <code>EmailMessage</code> class. Which one is more cohesive and why?</p>
-                  <div class="code-block">
-                    <pre><code class="hljs java"><span class="hljs-comment">// version-1</span>
+                  <pre><code class="hljs java"><span class="hljs-comment">// version-1</span>
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{
     <span class="hljs-keyword">private</span> String sendTo;
  	  <span class="hljs-keyword">private</span> String subject;
@@ -421,8 +417,6 @@
     }
 }
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                   <div slot="answer" class="algolia-no-index">
                     <p>Version 2 is less cohesive.</p>
                     <p>Explanation: Version 2 is handling functionality related to login, which is not directly related to the concept of ‘email message’ that the class is supposed to represent. On a related note, we can improve the cohesion of both versions

@@ -41,9 +41,9 @@
 <div><div data-included-from="C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\tp-deliverables-executable.mbdf">
 <ul>
 <li><strong>Should be an executable jar file</strong>.</li>
-<li><strong>Should be <tooltip content=" i.e., it can be used by end-users"><em>releasable</em></tooltip></strong>. While some features may be scheduled for later versions, the features in v1.4 should be good enough to make it usable by at least some of the target users.</li></ul>
-<p>Also note the following constraint:</p>
-<div class="indented-level1">
+<li><strong>Should be <tooltip content=" i.e., it can be used by end-users"><em>releasable</em></tooltip></strong>. While some features may be scheduled for later versions, the features in v1.4 should be good enough to make it usable by at least some of the target users.</li>
+<li>Also note the following constraint:</li></ul>
+<div class="indented-level2">
 <panel type src="/website/admin/tp-constraints._include_.html#Constraint-File-Size" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Constraint-File-Size  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="Constraint-File-Size"></panel></div><p></p></div></div></span>
     <h3 id="deliverable-source-code">
       <div class="text-white bg-info p-1">Deliverable: Source code</div>
@@ -61,9 +61,9 @@
 <ul>
 <li><strong>Should cover all v1.4 features</strong>.<br>
 <strong>Ensure those descriptions match the product precisely</strong>, as it will be used by peer testers (<mark>inaccuracies will be considered bugs</mark>).</li>
-<li><strong>Optionally, can also cover future features</strong>. Mark those as <code>Coming in v2.0</code>.</li></ul>
-<p>Also note the following constraint:</p>
-<div class="indented-level1">
+<li><strong>Optionally, can also cover future features</strong>. Mark those as <code>Coming in v2.0</code>.</li>
+<li>Also note the following constraint:</li></ul>
+<div class="indented-level2">
 <panel type src="/website/admin/tp-constraints._include_.html#Constraint-File-Size" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Constraint-File-Size  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="Constraint-File-Size"></panel></div><p></p></div></div></span>
     <h3 id="deliverable-developer-guide-dg">
       <div class="text-white bg-info p-1">Deliverable: Developer Guide (DG)</div>
@@ -91,7 +91,7 @@
     </li>
     </ul>
     <h5 id="dg-tips">DG Tips</h5>
-    <span id="dg-tips">
+    <span id="dgTips">
 <ul>
 <li><strong>Aim to showcase your documentation skills.</strong> The stated objective of the DG is to explain the implementation to a future developer, but a secondary objective is to show evidence that you can document deeply-technical content using prose, examples, diagrams, code snippets, etc. appropriately. To that end, you may also describe features that you plan to implement in the future, even beyond v1.4 (hypothetically).<br>
 For an example, see <a href="https://nus-cs2103-ay1920s2.github.io/addressbook-level3/DeveloperGuide.html#proposed-undo-redo-feature">the description of the undo/redo feature implementation in the AddressBook-Level3 developer guide</a>.</li>
@@ -143,8 +143,6 @@ It will look more 'polished' if the two text sizes match.
 </h3>
 <span id="tp-deliverables-website">
 <div><div data-included-from="C:\repos\nus-cs2103-AY1920S2\cs2103-website\admin\tp-deliverables-website.mbdf">
-<ul>
-<li><strong>Should match the submitted deliverables</strong> e.g., the UG on the website should match the submitted PDF file.</li></ul>
 <h4 id="website-readme"><span class="badge badge-info">Website</span> <span class="text-info">README</span></h4>
 <ul>
   <li><mark>Ensure the <code>Ui.png</code> matches the current product</mark></li>
@@ -198,6 +196,14 @@ It will look more 'polished' if the two text sizes match.
 <ul>
   <li><strong>Include a link to each person's PPP page.</strong></li>
   <li><strong>Team member names match full names used by LumiNUS.</strong></li>
+</ul>
+<h4 id="website-ug-web-page"><span class="badge badge-info">Website</span> <span class="text-info">UG (Web Page)</span></h4>
+<ul>
+  <li>Should match the submitted PDF file.</li>
+</ul>
+<h4 id="website-dg-web-page"><span class="badge badge-info">Website</span> <span class="text-info">DG (Web Page)</span></h4>
+<ul>
+  <li>Should match the submitted PDF file.</li>
 </ul>
 </div>
 </div>
@@ -373,17 +379,16 @@ sitting periods, and alerts the user if ...
 <ul>
   <li>There is no need to introduce team members or explain who did what. <span class="dimmed">Reason: to save time.</span></li>
   <li><strong>Each person should do a fair share of the demo</strong>. However, it's OK for one member to do all the typing.</li>
-  <li><strong>There is no need for you to demo your own work</strong>.</li>
+  <li><strong>There is no need for each person to demo their own work</strong>.</li>
   <li><strong>Present the features in a reasonable order</strong>: Organize the demo to present a cohesive picture of the product as a whole, presented in a logical order.</li>
   <li><strong>No need to cover design/implementation details</strong> as the manager is not interested in those details.</li>
-  <li><strong>No need to demo features inherited from AB3</strong> unless they are needed to explain your new features. <span class="dimmed">Reason: existing features will not earn you marks, and the audience is already familiar with AB3 features.</span></li>
 </ul>
 <h4 id="demo-structure"><span class="badge badge-info">Demo</span> <span class="text-info">Structure</span></h4>
 <ul>
   <li><strong>Demo the product using the same executable</strong> you submitted, on your own laptop, using the TV.</li>
   <li><strong>It can be a <em>sitting down</em> demo.</strong> You'll be demonstrating the features using the TV while sitting down. But you may stand around the TV if you prefer that way.</li>
   <li><strong>It will be an uninterrupted demo.</strong> The audience members will not interrupt you during the demo. That means you should finish within the given time.</li>
-  <li><strong>Use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name"><em>realistic</em></tooltip> demo data.</strong> <span class="dimmed">e.g at least 20 contacts</span>. Trying to demo a product using just 1-2 sample data
+  <li><strong>Use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name"><em>realistic</em></tooltip> demo data.</strong> <span class="dimmed">e.g at least 20 data items</span>. Trying to demo a product using just 1-2 sample data
     creates a bad impression.</li>
   <li><strong>Dress code</strong>: The level of formality is up to you, but it is recommended that the whole team dress at the same level.</li>
 </ul>
@@ -856,25 +861,19 @@ sitting periods, and alerts the user if ...
             <li><strong>Do not edit the subject or the description.</strong> Your response (if any) should be added as a comment.</li>
             <li>Add a comment using the following exact template.</li>
           </ul>
-          <div class="code-block">
-            <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
+          <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
 {replace this with your response}
 <p><span class="hljs-section">## Duplicate status (if any):</span></p>
 <p></p></code></pre>
-            <div class="code-block-lang"><span>markdown</span></div>
-          </div>
           <p></p>
           <p>Here is an example:</p>
-          <div class="code-block">
-            <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
+          <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
 <p>Yes this is a bug. But it is a duplicate.
 <span class="hljs-bullet">* </span>Changed the bug type because this is just a bug in the UG.
 <span class="hljs-bullet">* </span>Lowered the severity because users can still use the feature.</p>
 <p><span class="hljs-section">## Duplicate status (if any):</span>
 Duplicate of #67
 </p></code></pre>
-            <div class="code-block-lang"><span>markdown</span></div>
-          </div>
           <p></p>
           <ul>
             <li>Do not close the bug report after you are done processing it.</li>
@@ -950,6 +949,8 @@ Duplicate of #67
               <ul>
                 <li>If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated
                   tests and defensive coding techniques.</li>
+                <li>It is expected that PR reviewers will take part of the responsibilities if they were given a reasonable time to review the PR (even if they never review it), provided the bug should have been reasonably apparent to a reviewer. For example,
+                  if someone put up a PR for review but merged it un-reviewed after two days because no one bothered to review it, it's only fair that the whole team (or whoever was assigned to review the PR) take a share of the blame.</li>
               </ul>
             </li>
           </ul>
@@ -1878,25 +1879,19 @@ Duplicate of #67
   <li><strong>Do not edit the subject or the description.</strong> Your response (if any) should be added as a comment.</li>
   <li>Add a comment using the following exact template.</li>
 </ul>
-<div class="code-block">
-  <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
+<pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
 {replace this with your response}
 <p><span class="hljs-section">## Duplicate status (if any):</span></p>
 <p></p></code></pre>
-  <div class="code-block-lang"><span>markdown</span></div>
-</div>
 <p></p>
 <p>Here is an example:</p>
-<div class="code-block">
-  <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
+<pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
 <p>Yes this is a bug. But it is a duplicate.
 <span class="hljs-bullet">* </span>Changed the bug type because this is just a bug in the UG.
 <span class="hljs-bullet">* </span>Lowered the severity because users can still use the feature.</p>
 <p><span class="hljs-section">## Duplicate status (if any):</span>
 Duplicate of #67
 </p></code></pre>
-  <div class="code-block-lang"><span>markdown</span></div>
-</div>
 <p></p>
 <ul>
   <li>Do not close the bug report after you are done processing it.</li>
@@ -1972,6 +1967,8 @@ Duplicate of #67
     <ul>
       <li>If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and
         defensive coding techniques.</li>
+      <li>It is expected that PR reviewers will take part of the responsibilities if they were given a reasonable time to review the PR (even if they never review it), provided the bug should have been reasonably apparent to a reviewer. For example, if someone
+        put up a PR for review but merged it un-reviewed after two days because no one bothered to review it, it's only fair that the whole team (or whoever was assigned to review the PR) take a share of the blame.</li>
     </ul>
   </li>
 </ul>

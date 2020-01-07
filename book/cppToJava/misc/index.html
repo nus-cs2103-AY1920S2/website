@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Miscellaneous Topics</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -56,17 +56,13 @@
                     <p><strong>You can define an enum type by using the <code>enum</code> keyword.</strong> Because they are constants, the names of an enum type's fields are in uppercase letters e.g., <code>FLAG_SUCCESS</code> by convention.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Defining an enumeration to represent days of a week (code to be put in the <code>Day.java</code> file):</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Day {
+                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Day {
     SUNDAY, MONDAY, TUESDAY, WEDNESDAY,
     THURSDAY, FRIDAY, SATURDAY
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>Some examples of using the <code>Day</code> enumeration defined above:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java">Day today = Day.MONDAY;
+                      <pre><code class="hljs java">Day today = Day.MONDAY;
 Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.SUNDAY};
 
 <span class="hljs-keyword">switch</span> (today) {
@@ -78,8 +74,6 @@ Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.S
     System.out.println(<span class="hljs-string">"It's a week day"</span>);
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </box>
                     <p>Note that while enumerations are usually a simple set of fixed values, <strong>Java enumerations can have behaviors too</strong>, as explained in <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">this tutorial from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small></a></p>
                   </div>
@@ -91,8 +85,7 @@ Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.S
                             <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] show priority color</small></small><a class='fa fa-anchor' href='#key-exercise-show-priority-color'></a>" expanded>
                               <question>
                                 <p>Define an enumeration named <code>Priority</code>. Add the missing <code>describe</code> method to the code below so that it produces the output given.</p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-comment">// Add your method here</span>
 
@@ -104,8 +97,6 @@ Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.S
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                 </p>
                                 <pre><code class="hljs">Red indicates high priority
@@ -115,8 +106,7 @@ Green indicates low priority
 </code></pre>
                                 <div slot="hint" class="algolia-no-index">
                                   <p>Use a <code>switch</code> statement to select between possible values for <code>Priority</code>.</p>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">describe</span><span class="hljs-params">(String color, Priority p)</span> </span>{
+                                  <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">describe</span><span class="hljs-params">(String color, Priority p)</span> </span>{
         <span class="hljs-keyword">switch</span> (p) {
             <span class="hljs-keyword">case</span> LOW:
                 System.out.println(color + <span class="hljs-string">" indicates low priority"</span>);
@@ -125,16 +115,11 @@ Green indicates low priority
         }
     }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
                                   <p>Code for the enumeration is given below:</p>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Priority {
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Priority {
     HIGH, MEDIUM, LOW
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
                                 </div>
                               </question>
                             </panel>
@@ -168,8 +153,7 @@ Green indicates low priority
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Formatter</code> class below (in <code>&lt;source folder&gt;/seedu/tojava/util/Formatter.java</code> file) is in the package <code>seedu.tojava.util</code>.
                       When it is compiled, the <code>Formatter.class</code> file will be in the location <code>&lt;compiler output folder&gt;/seedu/tojava/util</code>:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
+                    <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;
@@ -179,8 +163,6 @@ Green indicates low priority
     }
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </box>
                   <p><strong>Package names are written in all lower case</strong> (not camelCase), using the dot as a separator. Packages in the Java language itself begin with <code>java</code>. or <code>javax</code>. Companies use their reversed Internet
                     domain name to begin their package names.</p>
@@ -198,8 +180,7 @@ Green indicates low priority
                       <li><code>import seedu.tojava.util.StringParser</code>: imports the class <code>StringParser</code> in the <code>seedu.tojava.util</code> package</li>
                       <li><code>import seedu.tojava.frontend.*</code>: imports all the classes in the <code>seedu.tojava.frontend</code> package</li>
                     </ul>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava;
+                    <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava;
 
 <span class="hljs-keyword">import</span> seedu.tojava.util.StringParser;
 <span class="hljs-keyword">import</span> seedu.tojava.frontend.*;
@@ -221,8 +202,6 @@ Green indicates low priority
     }
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p>Note how the class can still use the <code>Processor</code> without importing it first, by using its fully qualified name <code>seedu.tojava.logic.Processor</code></p>
                   </box>
                   <p><strong>Importing a package does not import its sub-packages</strong>, as packages do not behave as hierarchies despite appearances.</p>
@@ -233,8 +212,7 @@ Green indicates low priority
                   <p><strong>Optionally, a <em>static import</em> can be used to import static members of a type</strong> so that the imported members can be used without specifying the type name.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The class below uses static imports to import the constant <code>PREFIX</code> and the method <code>format()</code> from the <code>seedu.tojava.util.Formatter</code>                      class.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.PREFIX;
+                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.PREFIX;
 <span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.format;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
@@ -247,11 +225,8 @@ Green indicates low priority
     }
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <panel type="seamless" header="`Formatter` class" class="algolia-no-index">
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
+                      <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;
@@ -261,8 +236,6 @@ Green indicates low priority
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </panel>
                     <p>Note how the class can use <code>PREFIX</code> and <code>format()</code> (instead of <code>Formatter.PREFIX</code> and <code>Formatter.format()</code>).</p>
                   </box>
@@ -440,15 +413,12 @@ Green indicates low priority
                 object. The <code>final</code> modifier causes the variable to be unchangeable. Java constants are normally declared in ALL CAPS separated by underscores.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example of a constant named <code>MAX_BALANCE</code> which can be accessed as <code>Account.MAX_BALANCE</code>.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span></span>{
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span></span>{
 
   <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> MAX_BALANCE = <span class="hljs-number">1000000.0</span>;
 
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Math.html#PI"><code>Math.PI</code></a> is an example constant that comes with Java.</p>
               </box>
             </div>
@@ -475,16 +445,13 @@ Green indicates low priority
             <p><strong>When you cast a primitive value to another type, there may be a loss of precision.</strong></p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below cast a <code>double</code> value to an <code>int</code> value and cast it back to a <code>double</code>. Note the loss of precision.</p>
-              <div class="code-block">
-                <pre><code class="hljs java"><span class="hljs-keyword">double</span> d = <span class="hljs-number">5.3</span>;
+              <pre><code class="hljs java"><span class="hljs-keyword">double</span> d = <span class="hljs-number">5.3</span>;
 System.out.println(<span class="hljs-string">"Before casting to an int: "</span> + d);
 <span class="hljs-keyword">int</span> i = (<span class="hljs-keyword">int</span>)d; <span class="hljs-comment">// cast d to an int</span>
 System.out.println(<span class="hljs-string">"After casting to an int: "</span> + i);
 d = (<span class="hljs-keyword">double</span>)i; <span class="hljs-comment">// cast i back to a double</span>
 System.out.println(<span class="hljs-string">"After casting back a double: "</span> + d);
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
               <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
               </p>
               <pre><code class="hljs">Before casting to an int: 5.3
@@ -495,8 +462,7 @@ After casting back a double: 5.0
             <p><strong><mark><em>Downcasting</em></mark> is when you cast an object reference from a superclass to a subclass.</strong></p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Assume the following class hierarchy:</p>
-              <div class="code-block">
-                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span></span>{
+              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span></span>{
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span></span>{
         System.out.println(<span class="hljs-string">"I'm an animal"</span>);
     }
@@ -516,11 +482,8 @@ After casting back a double: 5.0
     }
 }
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
               <p>The <code>foo</code> method below downcasts an <code>Animal</code> object to its subclasses.</p>
-              <div class="code-block">
-                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Animal a)</span></span>{
+              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Animal a)</span></span>{
     a.speak();
     Cat c = (Cat)a; <span class="hljs-comment">// downcast a to a Cat</span>
     c.speak();
@@ -528,35 +491,27 @@ After casting back a double: 5.0
     dc.speak();
 }
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
             </box>
             <p><strong><mark><em>Upcasting</em></mark> is when you cast an object reference from a subclass to a superclass.</strong> However, upcasting is done automatically by the compiler even if you do not specify it explicitly.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example upcasts a <code>Cat</code> object to its superclass <code>Animal</code>:</p>
-              <div class="code-block">
-                <pre><code class="hljs java">Cat c = <span class="hljs-keyword">new</span> Cat();
+              <pre><code class="hljs java">Cat c = <span class="hljs-keyword">new</span> Cat();
 Animal a1 = (Animal)c; <span class="hljs-comment">//upcasting c to the Animal class</span>
 Animal a2 = c; <span class="hljs-comment">//upcasting is implicit</span>
 
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
             </box>
             <p>Note that due to polymorphism, the behavior of the object will reflect the actual type of the object irrespective of the type of the variable holding a reference to it.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The call to the <code>speak()</code> method in the code below always executes the <code>speak()</code> method of the <code>DomesticCat</code> class because the actual type
                 of the object remains <code>DomesticCat</code> although the reference to it is being downcast/upcast to various other types.</p>
-              <div class="code-block">
-                <pre><code class="hljs java">Animal a = <span class="hljs-keyword">new</span> DomesticCat(); <span class="hljs-comment">//implicit upcast</span>
+              <pre><code class="hljs java">Animal a = <span class="hljs-keyword">new</span> DomesticCat(); <span class="hljs-comment">//implicit upcast</span>
 a.speak();
 Cat c = (Cat)a; <span class="hljs-comment">//downcast</span>
 c.speak();
 DomesticCat dc = (DomesticCat)a; <span class="hljs-comment">//downcast</span>
 dc.speak();
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
               <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
               </p>
               <pre><code class="hljs">I'm a DomesticCat
@@ -567,12 +522,9 @@ I'm a DomesticCat
             <p><strong>Casting to an incompatible type can result in a <code>ClassCastException</code> at runtime.</strong></p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code will cause a <code>ClassCastException</code>:</p>
-              <div class="code-block">
-                <pre><code class="hljs java">Object o = <span class="hljs-keyword">new</span> Animal();
+              <pre><code class="hljs java">Object o = <span class="hljs-keyword">new</span> Animal();
 Integer x = (Integer)o;
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
               <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
               </p>
               <pre><code class="hljs">Exception in thread &quot;main&quot; java.lang.ClassCastException: misc.casting.Animal cannot be cast to java.lang.Integer
@@ -582,14 +534,11 @@ Integer x = (Integer)o;
             <p>You can use the <code>instanceof</code> operator to check if a cast is safe to perform.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code checks if the object <code>a</code> is an instance of the <code>Cat</code> class before casting it to a <code>Cat</code>.</p>
-              <div class="code-block">
-                <pre><code class="hljs java">Cat c;
+              <pre><code class="hljs java">Cat c;
 <span class="hljs-keyword">if</span> (a <span class="hljs-keyword">instanceof</span> Cat){
     c = (Cat)a;
 }
 </code></pre>
-                <div class="code-block-lang"><span>java</span></div>
-              </div>
             </box>
           </div>
           <div></div>
@@ -614,8 +563,7 @@ Integer x = (Integer)o;
           <p><strong>You can use the <a href="https://docs.oracle.com/javase/9/docs/api/java/io/File.html"><code>java.io.File</code></a> class to represent a file object</strong>. It can be used to access properties of the file object.</p>
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code creates a <code>File</code> object to represent a file <code>fruits.txt</code> that exists in the <code>data</code> directory <mark>relative to the current working directory</mark>              and uses that object to print some properties of the file.</p>
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
+            <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileClassDemo</span> </span>{
 
@@ -628,8 +576,6 @@ Integer x = (Integer)o;
 
 }
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
             <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
             </p>
             <pre><code class="hljs">full path: C:\sample-code\data\fruits.txt
@@ -645,8 +591,7 @@ is Directory?: false
           <p><strong>You can read from a file using a <code>Scanner</code> object that uses a <code>File</code> object as the <em>source</em> of data.</strong></p>
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code uses a <code>Scanner</code> object to read (and print) contents of a text file line-by-line:</p>
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
+            <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
 <span class="hljs-keyword">import</span> java.io.FileNotFoundException;
 <span class="hljs-keyword">import</span> java.util.Scanner;
 
@@ -670,8 +615,6 @@ is Directory?: false
 
 }
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
             <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> i.e., contents of the <code>data/fruits.txt</code></p>
             <pre><code class="hljs">5 Apples
 3 Bananas
@@ -681,8 +624,7 @@ is Directory?: false
           <p><strong>You can use a <a href="https://docs.oracle.com/javase/9/docs/api/java/io/FileWriter.html"><code>java.io.FileWriter</code></a> object to write to a file.</strong></p>
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>writeToFile</code> method below uses a <code>FileWrite</code> object to write to a file. The method is being used to write two lines to the file <code>temp/lines.txt</code>.</p>
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.FileWriter;
+            <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.FileWriter;
 <span class="hljs-keyword">import</span> java.io.IOException;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileWritingDemo</span> </span>{
@@ -704,8 +646,6 @@ is Directory?: false
 
 }
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
             <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> Contents of the <code>temp/lines.txt</code>:</p>
             <pre><code class="hljs">first line
 second line
@@ -715,21 +655,17 @@ second line
           <p><strong>You can create a <code>FileWriter</code> object that appends to the file</strong> (instead of overwriting the current content) by specifying an additional boolean parameter to the constructor.</p>
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The method below appends to the file rather than overwrites.</p>
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">appendToFile</span><span class="hljs-params">(String filePath, String textToAppend)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">appendToFile</span><span class="hljs-params">(String filePath, String textToAppend)</span> <span class="hljs-keyword">throws</span> IOException </span>{
     FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath, <span class="hljs-keyword">true</span>); <span class="hljs-comment">// create a FileWriter in append mode</span>
     fw.write(textToAppend);
     fw.close();
 }
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
           </box>
           <p><strong>The <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html"><code>java.nio.file.Files</code></a> is a utility class that provides several useful file operations.</strong> It relies on the <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Paths.html"><code>java.nio.file.Paths</code></a>            file to generate <code>Path</code> objects that represent file paths.</p>
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example uses the <code>Files</code> class to copy a file and delete a file.</p>
-            <div class="code-block">
-              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.IOException;
+            <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.IOException;
 <span class="hljs-keyword">import</span> java.nio.file.Files;
 <span class="hljs-keyword">import</span> java.nio.file.Paths;
 
@@ -742,8 +678,6 @@ second line
 
 }
 </code></pre>
-              <div class="code-block-lang"><span>java</span></div>
-            </div>
           </box>
           <p>The techniques above are good enough to manipulate simple text files. Note that <strong>it is also possible to <a href="https://www.tutorialspoint.com/java/java_files_io.htm">perform file I/O operations using other classes</a></strong>.</p>
         </div>
@@ -808,13 +742,10 @@ second line
       <p>Variable Arguments (Varargs) is a <em>syntactic sugar</em> type feature that allows writing a methods that can take a variable number of arguments.</p>
       <box>
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>search</code> method below can be called as <code>search()</code>, <code>search(&quot;book&quot;)</code>, <code>search(&quot;book&quot;, &quot;paper&quot;)</code>, etc.</p>
-        <div class="code-block">
-          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">search</span><span class="hljs-params">(String ... keywords)</span></span>{
+        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">search</span><span class="hljs-params">(String ... keywords)</span></span>{
    <span class="hljs-comment">// method body</span>
 }
 </code></pre>
-          <div class="code-block-lang"><span>java</span></div>
-        </div>
       </box>
       <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources:</p>
       <ul>

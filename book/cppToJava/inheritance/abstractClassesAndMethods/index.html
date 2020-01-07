@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Inheritance: Abstract Classes and Methods</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -53,8 +53,7 @@
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>speak</code> method in this <code>Animal</code> class is <code>abstract</code>. Note how the method signature ends with a semicolon and there is no method
                         body. This makes sense as the implementation of the <code>speak</code> method depends on the type of the animal and it is meaningless to provide a common implementation for all animal types.</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
 
     <span class="hljs-keyword">protected</span> String name;
 
@@ -64,16 +63,13 @@
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> String <span class="hljs-title">speak</span><span class="hljs-params">()</span></span>;
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>As one method of the class is <code>abstract</code>, the class itself is <code>abstract</code>.</p>
                     </box>
                     <p><strong>An <em>abstract class</em> is declared with the keyword <code>abstract</code>. Abstract classes can be used as reference type but cannot be instantiated.</strong></p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This <code>Account</code> class has been declared as abstract although it does not have any abstract methods. Attempting to instantiate <code>Account</code> objects
                         will result in a compile error.</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
 
     <span class="hljs-keyword">int</span> number;
 
@@ -82,8 +78,6 @@
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p><code>Account a;</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
                         </span> OK to use as a type <br>
                         <code>a = new Account();</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span>
@@ -94,19 +88,15 @@
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Feline</code> class below inherits from the abstract class <code>Animal</code> but it does not provide an implementation for the abstract method <code>speak</code>.
                         As a result, the <code>Feline</code> class needs to be abstract too.</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Feline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Feline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Feline</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
     }
 
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>The <code>DomesticCat</code> class inherits the abstract <code>Feline</code> class and provides the implementation for the abstract method <code>speak</code>. As a result, it need not be (but <em>can</em> be) declared as abstract.</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DomesticCat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Feline</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DomesticCat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Feline</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">DomesticCat</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
     }
@@ -117,8 +107,6 @@
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <ul>
                         <li><code class="hljs inline java">Animal a = <span class="hljs-keyword">new</span> Feline(<span class="hljs-string">"Mittens"</span>);</code><br><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span>
                           </span>
@@ -146,8 +134,7 @@
                             <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] print area with abstract `Shape`</small></small><a class='fa fa-anchor' href='#key-exercise-print-area-with-abstract-shape'></a>" expanded>
                               <question>
                                 <p>The <code>Main</code> class below keeps a list of <code>Circle</code> and <code>Rectangle</code> objects and prints the area (as an <code>int</code> value) of each shape when requested.</p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Shape[] shapes = <span class="hljs-keyword">new</span> Shape[<span class="hljs-number">100</span>];
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> shapeCount = <span class="hljs-number">0</span>;
 
@@ -171,8 +158,6 @@
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                 </p>
                                 <pre><code class="hljs">Circle of area 78
@@ -181,8 +166,7 @@ Circle of area 314
 Rectangle of area 16
 </code></pre>
                                 <p><code>Circle</code> class and <code>Rectangle</code> class is given below:</p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> radius;
 
@@ -201,10 +185,7 @@ Rectangle of area 16
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Shape</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> height;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> width;
 
@@ -224,19 +205,14 @@ Rectangle of area 16
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p>Add the missing <code>Shape</code> class <mark>as an abstract class with two abstract methods</mark>.</p>
                                 <panel type="seamless" header="Partial solution" class="algolia-no-index">
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;
     <span class="hljs-comment">// ...</span>
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
                                 </panel>
                               </question>
                             </panel>

@@ -425,25 +425,19 @@
   <li><strong>Do not edit the subject or the description.</strong> Your response (if any) should be added as a comment.</li>
   <li>Add a comment using the following exact template.</li>
 </ul>
-<div class="code-block">
-  <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
+<pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
 {replace this with your response}
 <p><span class="hljs-section">## Duplicate status (if any):</span></p>
 <p></p></code></pre>
-  <div class="code-block-lang"><span>markdown</span></div>
-</div>
 <p></p>
 <p>Here is an example:</p>
-<div class="code-block">
-  <pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
+<pre><code class="hljs markdown"><span class="hljs-section"># Team's Response</span>
 <p>Yes this is a bug. But it is a duplicate.
 <span class="hljs-bullet">* </span>Changed the bug type because this is just a bug in the UG.
 <span class="hljs-bullet">* </span>Lowered the severity because users can still use the feature.</p>
 <p><span class="hljs-section">## Duplicate status (if any):</span>
 Duplicate of #67
 </p></code></pre>
-  <div class="code-block-lang"><span>markdown</span></div>
-</div>
 <p></p>
 <ul>
   <li>Do not close the bug report after you are done processing it.</li>
@@ -519,6 +513,8 @@ Duplicate of #67
     <ul>
       <li>If it is not easy to decide the assignee(s), we recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, Reason: The feature owner should have defended the feature against bugs using automated tests and
         defensive coding techniques.</li>
+      <li>It is expected that PR reviewers will take part of the responsibilities if they were given a reasonable time to review the PR (even if they never review it), provided the bug should have been reasonably apparent to a reviewer. For example, if someone
+        put up a PR for review but merged it un-reviewed after two days because no one bothered to review it, it's only fair that the whole team (or whoever was assigned to review the PR) take a share of the blame.</li>
     </ul>
   </li>
 </ul>

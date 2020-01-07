@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Classes</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -63,15 +63,12 @@
                     </ul>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's a class called <code>Time</code>, intended to represent a moment in time. It has three attributes and no methods.</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Time</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Time</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> hour;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> minute;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> second;
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </box>
                     <p>You can give a class any name you like. <strong>The Java convention is to use <tooltip content="e.g., `MyHelloWord` rather than `myHelloWorld` or `myhelloword` or `my_hello_world`">PascalCase</tooltip> format for class names</strong>.</p>
                     <p>The code is usually placed in a file whose name matches the class <span class="dimmed">e.g., the <code>Time</code> class should be in a file named <code>Time.java</code></span>.</p>
@@ -90,15 +87,12 @@
                       <p>When you invoke <code>new</code>, Java creates the object and calls your constructor to initialize the instance variables. When the constructor is done, it returns a reference to the new object.</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example constructor for the <code>Time</code> class:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">()</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">()</span> </span>{
     hour = <span class="hljs-number">0</span>;
     minute = <span class="hljs-number">0</span>;
     second = <span class="hljs-number">0</span>;
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p>This constructor does not take any arguments. Each line initializes an instance variable to zero (which in this example means midnight). Now you can create <code>Time</code> objects.</p>
                         <p><code class="hljs inline java">Time time = <span class="hljs-keyword">new</span> Time();</code></p>
                       </box>
@@ -106,15 +100,12 @@
                         <tooltip content="i.e., you can provide multiple constructors with different parameters">overloaded</tooltip>.</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can add another constructor to the <code>Time</code> class to allow creating <code>Time</code> objects that are initialized to a specific time:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">(<span class="hljs-keyword">int</span> h, <span class="hljs-keyword">int</span> m, <span class="hljs-keyword">int</span> s)</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">(<span class="hljs-keyword">int</span> h, <span class="hljs-keyword">int</span> m, <span class="hljs-keyword">int</span> s)</span> </span>{
     hour = h;
     minute = m;
     second = s;
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p>Here's how you can invoke the new constructor:
                           <code class="hljs inline java">Time justBeforeMidnight = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">11</span>, <span class="hljs-number">59</span>, <span class="hljs-number">59</span>);</code></p>
                       </box>
@@ -126,21 +117,17 @@
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the following version of the constructor, the names and types of the parameters are the same as the instance variables (parameters don’t have to use the same
                           names, but that’s a common style). As a result, the parameters <strong><em>shadow</em></strong> (or hide) the instance variables, so the keyword <code>this</code> is necessary to tell them apart.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">(<span class="hljs-keyword">int</span> hour, <span class="hljs-keyword">int</span> minute, <span class="hljs-keyword">int</span> second)</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">(<span class="hljs-keyword">int</span> hour, <span class="hljs-keyword">int</span> minute, <span class="hljs-keyword">int</span> second)</span> </span>{
     <span class="hljs-keyword">this</span>.hour = hour;
     <span class="hljs-keyword">this</span>.minute = minute;
     <span class="hljs-keyword">this</span>.second = second;
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                       </box>
                       <p><strong><code>this</code> can be used to refer to a constructor of a class within the same class too.</strong></p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example the constructor <code>Time()</code> uses the <code>this</code> keyword to call its own overloaded constructor <code>Time(int, int, int)</code></p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">()</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Time</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">this</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>); <span class="hljs-comment">// call the overloaded constructor</span>
 }
 
@@ -149,28 +136,20 @@
 }
 
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                       </box>
                       <h5 id="instance-methods">Instance methods<a class="fa fa-anchor" href="#instance-methods"></a></h5>
                       <p><strong>You can add methods to a class which can then be used from the objects of that class.</strong> These <em>instance</em> methods do not have the <code>static</code> keyword in the method signature. Instance methods can access
                         attributes of the class.</p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's how you can add a method to the <code>Time</code> class to get the number of seconds passed till midnight.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">secondsSinceMidnight</span><span class="hljs-params">()</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">secondsSinceMidnight</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">return</span> hour*<span class="hljs-number">60</span>*<span class="hljs-number">60</span> + minute*<span class="hljs-number">60</span> + second;
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p>Here's how you can use that method.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java">Time t = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">0</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>);
+                        <pre><code class="hljs java">Time t = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">0</span>, <span class="hljs-number">2</span>, <span class="hljs-number">5</span>);
 System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" seconds since midnight!"</span>);
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                       </box>
                     </div>
                   </div>
@@ -204,8 +183,7 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
                                     </ul>
                                   </li>
                                 </ul>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         Circle c = <span class="hljs-keyword">new</span> Circle();
 
@@ -216,8 +194,6 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                 </p>
                                 <pre><code class="hljs">0
@@ -228,8 +204,7 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
                                     <li>Put the <code>Circle</code> class in a file called <code>Circle.java</code></li>
                                   </ul>
                                   <p>Partial solution:</p>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> x;
     <span class="hljs-comment">// ...</span>
 
@@ -249,8 +224,6 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
 
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
                                 </div>
                               </question>
                             </panel>
@@ -278,8 +251,7 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
                 <p></p>
                 <div>
                   <p>As the instance variables of <code>Time</code> are private, you can access them from within the <code>Time</code> class only. To compensate, <strong>you can provide methods to access attributes</strong>:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getHour</span><span class="hljs-params">()</span> </span>{
+                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getHour</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">return</span> hour;
 }
 
@@ -291,12 +263,9 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
     <span class="hljs-keyword">return</span> second;
 }
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                   <p>Methods like these are formally called “accessors”, but more commonly referred to as <em>getters</em>. By convention, the method that gets a variable named <code>something</code> is called <code>getSomething</code>.</p>
                   <p>Similarly, <strong>you can provide <em>setter</em> methods to modify attributes</strong> of a <code>Time</code> object:</p>
-                  <div class="code-block">
-                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setHour</span><span class="hljs-params">(<span class="hljs-keyword">int</span> hour)</span> </span>{
+                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setHour</span><span class="hljs-params">(<span class="hljs-keyword">int</span> hour)</span> </span>{
     <span class="hljs-keyword">this</span>.hour = hour;
 }
 
@@ -308,8 +277,6 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
     <span class="hljs-keyword">this</span>.second = second;
 }
 </code></pre>
-                    <div class="code-block-lang"><span>java</span></div>
-                  </div>
                 </div>
                 <div>
                   <div>
@@ -319,8 +286,7 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
                           <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] add getters/setters to the `Circle` class</small></small><a class='fa fa-anchor' href='#key-exercise-add-getters-setters-to-the-circle-class'></a>" expanded>
                             <question>
                               <p>Consider the <code>Circle</code> class below:</p>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> x;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> y;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> radius;
@@ -342,15 +308,12 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
 
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                               <p>Update it as follows so that code given below produces the given output.</p>
                               <ul>
                                 <li>Add getter/setter methods for all three attributes</li>
                                 <li>Update the setters and constructors such that if the radius supplied is negative, the code automatically set the radius to 0 instead.</li>
                               </ul>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         Circle c = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>, <span class="hljs-number">5</span>);
 
@@ -370,8 +333,6 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
     }
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                               <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                               </p>
                               <pre><code class="hljs">x      : 4
@@ -383,8 +344,7 @@ radius : 0.0
 </code></pre>
                               <div slot="hint" class="algolia-no-index">
                                 <p>Partial solution:</p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">double</span> radius)</span></span>{
+                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">double</span> radius)</span></span>{
     setX(x);
     setY(y);
     setRadius(radius);
@@ -394,8 +354,6 @@ radius : 0.0
     <span class="hljs-keyword">this</span>.radius = Math.max(radius, <span class="hljs-number">0</span>);
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                               </div>
                             </question>
                           </panel>
@@ -432,8 +390,7 @@ radius : 0.0
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose you want to create a number of Bicycle objects and assign each a serial number, beginning with 1 for the first object. This ID number is unique to each object
                       and is therefore an instance variable. At the same time, you need a field to keep track of how many <code>Bicycle</code> objects have been created so that you know what ID to assign to the next one. Such a field is not related to
                       any individual object, but to the class as a whole. For this you need a class variable, numberOfBicycles, as follows:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gear;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
@@ -446,8 +403,6 @@ radius : 0.0
         ...
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </box>
                   <p><strong><em>Class variables</em> are referenced by the class name itself</strong>, as in <code>Bicycle.numberOfBicycles</code> This makes it clear that they are class variables.</p>
                   <p>The Java programming language supports static methods as well as static variables. Static methods, which have the <code>static</code> modifier in their declarations, should be invoked with the class name, without the need for creating
@@ -457,8 +412,7 @@ radius : 0.0
                     <code>static final double PI = 3.141592653589793;</code></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example with class-level variables and class-level methods:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gear;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
@@ -500,8 +454,6 @@ radius : 0.0
 
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </box>
                 </div>
                 <box>
@@ -520,8 +472,7 @@ radius : 0.0
                         <panel type="dark" header="###  <small><small><md>:glyphicon-exclamation-sign:</md> [Key Exercise] add getMaxRadius to the `Circle` class</small></small><a class='fa fa-anchor' href='#key-exercise-add-getmaxradius-to-the-circle-class'></a>" expanded>
                           <question>
                             <p>Consider the <code>Circle</code> class below:</p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> x;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> y;
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> radius;
@@ -566,14 +517,11 @@ radius : 0.0
     }
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                             <p>Update it as follows so that code given below produces the given output.</p>
                             <ul>
                               <li>Add a class-level <code>getMaxRadius</code> method that returns the maximum radius that has been used in all <code>Circle</code> objects created thus far.</li>
                             </ul>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         Circle c = <span class="hljs-keyword">new</span> Circle();
         System.out.println(<span class="hljs-string">"max radius used so far : "</span> + Circle.getMaxRadius());
@@ -586,8 +534,6 @@ radius : 0.0
     }
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                             <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                             </p>
                             <pre><code class="hljs">max radius used so far : 0.0
@@ -598,16 +544,13 @@ max radius used so far : 12.0
                             <div slot="hint" class="algolia-no-index">
                               <p>You can use a <code>static</code> variable <code>maxRadius</code> to track the maximum value used for the <code>radius</code> attribute so far.</p>
                               <p>Partial solution:</p>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setRadius</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
+                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setRadius</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
     <span class="hljs-keyword">this</span>.radius = Math.max(radius, <span class="hljs-number">0</span>);
     <span class="hljs-keyword">if</span> (maxRadius &lt; <span class="hljs-keyword">this</span>.radius){
         <span class="hljs-comment">// ...</span>
     }
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                             </div>
                           </question>
                         </panel>

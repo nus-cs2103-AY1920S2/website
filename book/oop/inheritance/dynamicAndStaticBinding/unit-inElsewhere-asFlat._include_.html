@@ -201,15 +201,12 @@
         </modal>
         <box>
           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below. The declared type of <code>s</code> is <code>Staff</code> and it appears as if the <code>adjustSalary(int)</code> operation of the <code>Staff</code>            class is invoked.</p>
-          <div class="code-block">
-            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
+          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
     <span class="hljs-keyword">for</span> (Staff s: staff) {
         s.adjustSalary(byPercent);
     }
 }
 </code></pre>
-            <div class="code-block-lang"><span>java</span></div>
-          </div>
           <p>However, at runtime <code>s</code> can receive an object of any subclass of <code>Staff</code>. That means the <code>adjustSalary(int)</code> operation of the actual subclass object will be called. If the subclass does not override that operation,
             the operation defined in the superclass (in this case, <code>Staff</code> class) will be called.</p>
         </box>
@@ -299,8 +296,7 @@
         </modal>
         <box>
           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Note how the constructor is overloaded in the class below. The method call <code>new Account()</code> is bound to the first constructor at compile time.</p>
-          <div class="code-block">
-            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
 
     Account () {
         <span class="hljs-comment">// Signature: ()</span>
@@ -313,16 +309,11 @@
     }
 }
 </code></pre>
-            <div class="code-block-lang"><span>java</span></div>
-          </div>
           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Similarly, the <code>calcuateGrade</code> method is overloaded in the code below and a method call <code>calculateGrade(&quot;A1213232&quot;)</code> is bound to the second implementation,
             at compile time.</p>
-          <div class="code-block">
-            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(<span class="hljs-keyword">int</span>[] averages)</span> </span>{ ... }
+          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(<span class="hljs-keyword">int</span>[] averages)</span> </span>{ ... }
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(String matric)</span> </span>{ ... }
 </code></pre>
-            <div class="code-block-lang"><span>java</span></div>
-          </div>
         </box>
       </div>
     </div>

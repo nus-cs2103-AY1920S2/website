@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Code Quality: [Guideline] Avoid Unsafe Shortcuts: Basic</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -62,24 +62,18 @@
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
+                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
 <span class="hljs-keyword">else</span> print <span class="hljs-string">"blue"</span>;
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>
                         <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
+                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
 <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (blue) print <span class="hljs-string">"blue"</span>;
 <span class="hljs-keyword">else</span> error(<span class="hljs-string">"incorrect input"</span>);
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </box>
                   </div>
                   <div></div>
@@ -111,29 +105,23 @@
                         </span>
                       </font>
                     </p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     length = length * width;
     <span class="hljs-keyword">return</span> length;
 }
 
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p>
                       <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                         </span>
                       </font>
                     </p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     <span class="hljs-keyword">double</span> area;
     area = length * width;
     <span class="hljs-keyword">return</span> area;
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                   </box>
                 </div>
                 <div></div>

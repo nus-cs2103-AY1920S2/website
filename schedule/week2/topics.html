@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 2 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -804,11 +804,8 @@ Invalid command format: add
                 </li>
                 <li>
                   <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>. <span class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span></p>
-                  <div class="code-block">
-                    <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
+                  <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
 </code></pre>
-                    <div class="code-block-lang"><span>sh</span></div>
-                  </div>
                   <ul>
                     <li>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The way to run a CLI program differs based on the language.<br> e.g., In Python, assuming the code is in <code>AddressBook.py</code>                        file, use the command<br>
@@ -825,11 +822,8 @@ Invalid command format: add
                     </span>
                     <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators.
                       For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
-                    <div class="code-block">
-                      <pre><code class="hljs sh">java AddressBook &gt; output.txt 
+                    <pre><code class="hljs sh">java AddressBook &gt; output.txt 
 </code></pre>
-                      <div class="code-block-lang"><span>sh</span></div>
-                    </div>
                     <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any other
                       filename) makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
                     <box>
@@ -1198,15 +1192,11 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
               <tab header="CLI" class="algolia-no-index">
                 <div>
                   <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs sh">git status
+                  <pre><code class="hljs sh">git status
 </code></pre>
-                    <div class="code-block-lang"><span>sh</span></div>
-                  </div>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                   </p>
-                  <div class="code-block">
-                    <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
+                  <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Initial commit</span>
 <span class="hljs-comment">#</span>
@@ -1216,8 +1206,6 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
 <span class="hljs-comment">#   a.txt</span>
 nothing added to commit but untracked files present (use <span class="hljs-string">"git add"</span> to track)
 </code></pre>
-                    <div class="code-block-lang"><span>sh</span></div>
-                  </div>
                 </div>
               </tab>
             </tabs>
@@ -1246,16 +1234,12 @@ nothing added to commit but untracked files present (use <span class="hljs-strin
               <tab header="CLI" class="algolia-no-index">
                 <div>
                   <p>You can use the <code>stage</code> or the <code>add</code> command (they are synonyms, <code>add</code> is the more popular choice) to stage files.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs sh">git add fruits.txt
+                  <pre><code class="hljs sh">git add fruits.txt
 git status
 </code></pre>
-                    <div class="code-block-lang"><span>sh</span></div>
-                  </div>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                   </p>
-                  <div class="code-block">
-                    <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
+                  <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Initial commit</span>
 <span class="hljs-comment">#</span>
@@ -1265,8 +1249,6 @@ git status
 <span class="hljs-comment">#       new file:   fruits.txt</span>
 <span class="hljs-comment">#</span>
 </code></pre>
-                    <div class="code-block-lang"><span>sh</span></div>
-                  </div>
                 </div>
               </tab>
             </tabs>
@@ -1282,17 +1264,11 @@ git status
               <tab header="CLI" class="algolia-no-index">
                 <div>
                   <p>Use the <code>commit</code> command to commit. The <code>-m</code> switch is used to specify the commit message.</p>
-                  <div class="code-block">
-                    <pre><code class="hljs sh">git commit -m <span class="hljs-string">"add fruits.txt"</span>
+                  <pre><code class="hljs sh">git commit -m <span class="hljs-string">"add fruits.txt"</span>
 </code></pre>
-                    <div class="code-block-lang"><span>sh</span></div>
-                  </div>
                   <p>You can use the <code>log</code> command to see the commit history</p>
-                  <div class="code-block">
-                    <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
+                  <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
 </code></pre>
-                    <div class="code-block-lang"><span>sh</span></div>
-                  </div>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                   </p>
                   <pre><code class="hljs">commit 8fd30a6910efb28bb258cd01be93e481caeab846
@@ -1510,18 +1486,14 @@ git push origin --tags
               </tab>
               <tab header="CLI" class="algolia-no-index">
                 <div>
-                  <div class="code-block">
-                    <pre><code class="hljs sh">git show &lt; part-of-commit-hash &gt;
+                  <pre><code class="hljs sh">git show &lt; part-of-commit-hash &gt;
 </code></pre>
-                    <div class="code-block-lang"><span>sh</span></div>
-                  </div>
                   <p>Example:</p>
                   <pre><code class="hljs">git show 251b4cf
 </code></pre>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                   </p>
-                  <div class="code-block">
-                    <pre><code class="hljs diff">commit 5bc0e30635a754908dbdd3d2d833756cc4b52ef3
+                  <pre><code class="hljs diff">commit 5bc0e30635a754908dbdd3d2d833756cc4b52ef3
 Author: … &lt; … &gt;
 Date:   Sat Jul 8 16:50:27 2017 +0800
 
@@ -1537,8 +1509,6 @@ index 15b57f7..17f4528 100644
 <span class="hljs-addition">+berries</span>
  cherries
 </code></pre>
-                    <div class="code-block-lang"><span>diff</span></div>
-                  </div>
                 </div>
               </tab>
             </tabs>
@@ -2036,7 +2006,7 @@ index 15b57f7..17f4528 100644
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 02:07:01 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 07:10:50 GMT</small></div>
   </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Admin: iP: Week 2</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -349,6 +349,10 @@ bye
                         <ul>
                           <li>The indentation and horizontal lines are optional.</li>
                         </ul>
+                        <box type="tip">
+                          <p><strong>You are strongly encouraged to customize the chatbot</strong> name, command/display formats, and even the personality of the chatbot to make your chatbot unique.
+                          </p>
+                        </box>
                       </div>
                     </panel>
                   </div>
@@ -445,8 +449,7 @@ done 2
                                 <p>While it is possible to represent a task list as a multi-dimensional array containing
                                   <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
                                 <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> String description;
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
 
@@ -462,14 +465,9 @@ done 2
     <span class="hljs-comment">//...</span>
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java">Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);
+                                  <pre><code class="hljs java">Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);
 t.markAsDone()
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
                                 </panel>
                               </div>
                             </panel>
@@ -556,8 +554,7 @@ deadline do homework /by no idea :-p
                                 <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
                                 <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
                                 <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
 
     <span class="hljs-keyword">protected</span> String by;
 
@@ -572,14 +569,9 @@ deadline do homework /by no idea :-p
     }
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java">Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];
+                                  <pre><code class="hljs java">Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];
 task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Deadline(<span class="hljs-string">"return book"</span>, <span class="hljs-string">"Monday"</span>);
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
                                 </panel>
                               </div>
                             </panel>
@@ -769,7 +761,7 @@ delete 3
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 02:07:01 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 07:10:50 GMT</small></div>
     </footer>
   </div>
 </body>

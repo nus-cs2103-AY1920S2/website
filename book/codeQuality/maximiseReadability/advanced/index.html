@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Code Quality: [Guideline] Maximise Readability: Advanced</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -62,8 +62,7 @@
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (!isUnusualCase) {  <span class="hljs-comment">//detecting an unusual condition</span>
+                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (!isUnusualCase) {  <span class="hljs-comment">//detecting an unusual condition</span>
     <span class="hljs-keyword">if</span> (!isErrorCase) {
         start();    <span class="hljs-comment">//main path</span>
         process();
@@ -76,8 +75,6 @@
     handleUnusualCase(); <span class="hljs-comment">//handling that unusual condition</span>
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>In the code above,</p>
                       <ul>
                         <li>Unusual condition detection is separated from their handling.</li>
@@ -88,8 +85,7 @@
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isUnusualCase) { <span class="hljs-comment">//Guard Clause</span>
+                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isUnusualCase) { <span class="hljs-comment">//Guard Clause</span>
     handleUnusualCase();
     <span class="hljs-keyword">return</span>;
 }
@@ -104,8 +100,6 @@ process();
 cleanup();
 exit();
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>In contrast, the above code</p>
                       <ul>
                         <li>deals with unusual conditions as soon as they are detected so that the reader doesn't have to remember them for long.</li>

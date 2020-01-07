@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Object Oriented Programming: Inheritance: Substitutability</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -62,19 +62,13 @@
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever
                         an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
                       <p>The following code is valid because an <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
+                      <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>But the following code is not valid <span class="dimmed">because <code>staff</code> is declared as a <code>Staff</code> type and therefore its value may or may not be of  type <code>AcademicStaff</code>, which is the type expected by variable <code>academicStaff</code>.</span></p>
-                      <div class="code-block">
-                        <pre><code class="hljs java">Staff staff;
+                      <pre><code class="hljs java">Staff staff;
 ...
 AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </box>
                   </div>
                   <div></div>

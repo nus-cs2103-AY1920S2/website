@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 4 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -669,8 +669,7 @@
                         <panel header="<md>:glyphicon-question-sign:</md> Draw Class Diagram for Box etc." class="algolia-no-index">
                           <question>
                             <p>Draw a class diagram for the code below. Show the attributes, methods, associations, navigabilities, and multiplicities in the class diagram below:</p>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
     <span class="hljs-keyword">private</span> Item[] parts = <span class="hljs-keyword">new</span> Item[<span class="hljs-number">10</span>];
     <span class="hljs-keyword">private</span> Item spareItem;
     <span class="hljs-keyword">private</span> Lid lid; <span class="hljs-comment">// lid of this box</span>
@@ -681,22 +680,14 @@
     }
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> totalItems;
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
-                            <div class="code-block">
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{
     Box box; <span class="hljs-comment">// the box for which this is the lid</span>
 }
 </code></pre>
-                              <div class="code-block-lang"><span>java</span></div>
-                            </div>
                           </question>
                         </panel>
                       </div>
@@ -749,8 +740,7 @@
                               <panel header="<md>:glyphicon-question-sign:</md> Draw Class Diagram for Box etc." class="algolia-no-index">
                                 <question>
                                   <p>Draw a class diagram for the code below. Show the attributes, methods, associations, navigabilities, and multiplicities in the class diagram below:</p>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
+                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
     <span class="hljs-keyword">private</span> Item[] parts = <span class="hljs-keyword">new</span> Item[<span class="hljs-number">10</span>];
     <span class="hljs-keyword">private</span> Item spareItem;
     <span class="hljs-keyword">private</span> Lid lid; <span class="hljs-comment">// lid of this box</span>
@@ -761,22 +751,14 @@
     }
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{
+                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> totalItems;
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{
+                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{
     Box box; <span class="hljs-comment">// the box for which this is the lid</span>
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
                                 </question>
                               </panel>
                             </div>
@@ -1094,23 +1076,16 @@
                           <p>Consider the code below:</p>
                           <div class="row">
                             <div class="col-sm-6">
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>
          <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{
     <span class="hljs-keyword">private</span> Review review;
     <span class="hljs-keyword">private</span> String name;
 
@@ -1132,19 +1107,13 @@
     }
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                             </div>
                             <div class="col-sm-6">
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {
     GOOD, OK, POOR
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{
+                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{
@@ -1152,10 +1121,7 @@
     }
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
+                              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{
     <span class="hljs-keyword">private</span> List&lt;Item&gt; items;
@@ -1173,8 +1139,6 @@
     }
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                             </div>
                           </div>
                           <p>(a) Draw a class diagram to represent the code. Show all attributes, methods, associations, navigabilities, visibilities, known multiplicities, and association roles. Show associations as lines.<br> (b) Draw an object diagram
@@ -1225,8 +1189,7 @@
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, the <code>Transaction</code> class is an association class that represent a transaction between a <code>Person</code> who is the seller and another
                   <code>Person</code> who is the buyer.</p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Transaction</span></span>{
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Transaction</span></span>{
     
     <span class="hljs-comment">//all fields are compulsory</span>
     Person seller;
@@ -1239,8 +1202,6 @@
     }
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
             </div>
             <div>
@@ -1362,13 +1323,10 @@
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>search</code> method below can be called as <code>search()</code>, <code>search(&quot;book&quot;)</code>, <code>search(&quot;book&quot;, &quot;paper&quot;)</code>,
                   etc.
                 </p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">search</span><span class="hljs-params">(String ... keywords)</span></span>{
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">search</span><span class="hljs-params">(String ... keywords)</span></span>{
    <span class="hljs-comment">// method body</span>
 }
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
               <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources:</p>
               <ul>
@@ -1423,15 +1381,12 @@
                   <div>
                     <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
                     <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs md">
+                    <pre><code class="hljs md">
 <span class="hljs-section"># Introduction</span>
 Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
 This repo can be used to practice creating PRs.
 
 </code></pre>
-                      <div class="code-block-lang"><span>md</span></div>
-                    </div>
                     <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
                     <tabs>
                       <tab header="SourceTree">
@@ -1714,7 +1669,7 @@ git pull origin master
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.8.0</a> at Mon, 06 Jan 2020 02:07:01 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 07 Jan 2020 07:10:50 GMT</small></div>
   </footer>
   </div>
 </body>

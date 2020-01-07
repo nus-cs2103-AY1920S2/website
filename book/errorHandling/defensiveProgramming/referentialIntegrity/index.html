@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Error Handling: Defensive Programming: Enforcing Referential Integrity</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -57,8 +57,7 @@
                     <p>A bidirectional association in the design (shown in (a)) is usually emulated at code level using two variables (as shown in (b)).</p>
                     <img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
                     <p></p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span> </span>{
     Woman girlfriend;
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setGirlfriend</span><span class="hljs-params">(Woman w)</span> </span>{
@@ -67,10 +66,7 @@
     …
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
     Man boyfriend;
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setBoyfriend</span><span class="hljs-params">(Man m)</span> </span>{
@@ -78,34 +74,25 @@
     }
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p>The two classes are meant to be used as follows:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java">Woman jean;
+                    <pre><code class="hljs java">Woman jean;
 Man james;
 …
 james.setGirlfriend(jean);
 jean.setBoyfriend(james);
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p>Suppose the two classes were used this instead:</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java">Woman jean; Man james, yong;
+                    <pre><code class="hljs java">Woman jean; Man james, yong;
 …
 james.setGirlfriend(jean);  
 jean.setBoyfriend(yong);  
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p>Now James' girlfriend is Jean, while Jean's boyfriend is not James. This situation results as the code was not defensive enough to stop this &quot;love triangle&quot;. In such a situation, we say that <em>the referential integrity has been violated</em>.
                       It simply means <em>there is an inconsistency in object references</em>.</p>
                     <img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
                     <p></p>
                     <p>One way to prevent this situation is to implement the two classes as shown below. Note how the referential integrity is maintained.</p>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
     <span class="hljs-keyword">private</span> Man boyfriend;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setBoyfriend</span><span class="hljs-params">(Man m)</span> </span>{
@@ -125,10 +112,7 @@ jean.setBoyfriend(yong);
     ...
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
-                    <div class="code-block">
-                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
     <span class="hljs-keyword">private</span> Woman girlfriend;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setGirlfriend</span><span class="hljs-params">(Woman w)</span> </span>{
@@ -147,8 +131,6 @@ jean.setBoyfriend(yong);
    ...
 }
 </code></pre>
-                      <div class="code-block-lang"><span>java</span></div>
-                    </div>
                     <p>When the code <code>james.setGirlfriend(jean)</code> is executed, the code ensures that <code>james</code> break up with any current girlfriend before he accepts <code>jean</code> as the girlfriend. Furthermore, the code ensures that
                       <code>jean</code> breaks up with any existing boyfriends and accepts <code>james</code> as the boyfriend.</p>
                   </div>
@@ -166,8 +148,7 @@ jean.setBoyfriend(yong);
                               <img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/playerRegion.png" height="100">
                               <p></p>
                               <p>Minimally, this can be implemented like this.</p>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Player</span></span>{
+                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Player</span></span>{
     Region region;
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setRegion</span><span class="hljs-params">(Region r)</span> </span>{
         region = r;
@@ -179,25 +160,19 @@ jean.setBoyfriend(yong);
 
 <span class="hljs-comment">// Region class is similar</span>
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                               <p>However, this is not very defensive. For example, a user of this class can pass a <code>null</code> to either of the methods, thus violating the multiplicity of the relationship.</p>
                               <p>Implement the two classes using a more defensive approach. Take note of the bidirectional link which requires us to preserve referential integrity at all times.</p>
                               <div slot="answer" class="algolia-no-index">
                                 <p>In this solution, we assume <code>Regions</code> can be created without <code>Players</code> (note that we cannot be 100% defensive all the time). The usage will be something like this:</p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java">Region r1 = <span class="hljs-keyword">new</span> Region();
+                                <pre><code class="hljs java">Region r1 = <span class="hljs-keyword">new</span> Region();
 Player p1 = <span class="hljs-keyword">new</span> Player(r1);
 Region r2 = <span class="hljs-keyword">new</span> Region();
 Player p2 = <span class="hljs-keyword">new</span> Player(r2);
 p1.setRegion(r2);
 r1.setPlayer(p2);
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p>Here are the two classes. Get methods are omitted as they are simple. Note how much extra effort we need to be defensive.</p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Region</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Region</span> </span>{
     <span class="hljs-keyword">private</span> Player myPlayer;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Region</span><span class="hljs-params">()</span> </span>{
@@ -233,10 +208,7 @@ r1.setPlayer(p2);
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Player</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Player</span> </span>{
     <span class="hljs-keyword">private</span> Region myRegion;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Player</span><span class="hljs-params">(Region region)</span> </span>{
@@ -271,8 +243,6 @@ r1.setPlayer(p2);
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p>Note that the above code stops the system when the multiplicity is violated. Alternatively, we can throw an exception and let the caller handle the situation.</p>
                               </div>
                             </question>
@@ -289,8 +259,7 @@ r1.setPlayer(p2);
                                 <p>The code below contains a method in the <code>Bank</code> class to create an account; the bank field in the new account is thereby filled by the bank creating it.</p>
                                 <p>We assume that once an <code>Account</code> has been assigned to one <code>Bank</code>, it cannot be assigned to a different <code>Bank</code>. Once the <code>Account</code> is removed from the <code>Bank</code>, it will
                                   not be used any more (hence, no need to remove the link from <code>Account</code> to <code>Bank</code>).</p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> accNumber ;
     <span class="hljs-keyword">private</span> Bank theBank ;
 
@@ -306,10 +275,7 @@ r1.setPlayer(p2);
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
+                                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bank</span> </span>{
     <span class="hljs-keyword">private</span> HashMap&lt; Integer, Account &gt; theAccounts = <span class="hljs-keyword">new</span> HashMap &lt; Integer, Account &gt; ();
@@ -328,8 +294,6 @@ r1.setPlayer(p2);
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                               </div>
                             </question>
                           </panel>
@@ -338,8 +302,7 @@ r1.setPlayer(p2);
                           <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Is the code defensive? `Teacher` and `Student`" class="algolia-no-index">
                             <question has-input="true">
                               <p>(a) Is the code given below a defensive translation of the associations shown in the class diagram? Explain your answer.</p>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span></span>{
+                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span></span>{
     <span class="hljs-keyword">private</span> Student favoriteStudent;
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setFavoriteStudent</span><span class="hljs-params">(Student s)</span></span>{
@@ -347,10 +310,7 @@ r1.setPlayer(p2);
     }
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span></span>{
+                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span></span>{
     <span class="hljs-keyword">private</span> Teacher favoriteTeacher;
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setFavoriteTeacher</span><span class="hljs-params">(Teacher t)</span></span>{
@@ -358,8 +318,6 @@ r1.setPlayer(p2);
     }
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                               <img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png" height="80">
                               <p></p>
                               <p>(b) In terms of maintaining referential integrity in the implementation, what is the difference between the following two diagrams?</p>
@@ -376,8 +334,7 @@ r1.setPlayer(p2);
                                   favorite student from the <code>Teacher</code> object.</p>
                                 <p>(b) First diagram has unidirectional links. Second has a bidirectional link. RI is only applicable to the second.</p>
                                 <p>(c)</p>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">removeMember</span><span class="hljs-params">(Member m)</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">removeMember</span><span class="hljs-params">(Member m)</span> </span>{
     <span class="hljs-keyword">if</span> (m==<span class="hljs-keyword">null</span>) {
         <span class="hljs-keyword">throw</span> exception(<span class="hljs-string">"this is null, not a member!"</span>);
     } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(member_count == <span class="hljs-number">10</span>) {
@@ -389,8 +346,6 @@ r1.setPlayer(p2);
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                               </div>
                             </question>
                           </panel>

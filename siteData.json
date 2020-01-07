@@ -54,7 +54,6 @@
         "why-very-narrow-project-scope-optional": "Why very narrow project scope? : OPTIONAL\n                \n              ",
         "why-can-t-i-use-my-favorite-tool-framework-language-etc-optional": "Why can't I use my favorite tool/framework/language etc.? : OPTIONAL\n                \n              ",
         "why-so-many-submissions-optional": "Why so many submissions? : OPTIONAL\n                \n              ",
-        "can-we-build-a-new-product-from-scratch-in-the-tp-optional": "Can we build a new product from scratch in the tP? : OPTIONAL\n                \n              ",
         "why-submission-requirements-differ-between-cs2103t-and-cs2101-optional": "Why submission requirements differ between CS2103T and CS2101? : OPTIONAL\n                \n              "
       },
       "title": "Admin: Apdx C: FAQ",
@@ -992,7 +991,7 @@
         "peer-evaluation-criteria-professional-conduct": "Peer Evaluation Criteria: Professional Conduct",
         "peer-evaluation-criteria-competency": "Peer Evaluation Criteria: Competency",
         "session-final-peer-evaluation": "Session: Final Peer Evaluation",
-        "session-responses-peer-evaluation": "Session: Responses Peer Evaluation",
+        "session-responses-to-peer-evaluations": "Session: Responses to Peer Evaluations",
         "guidelines-for-giving-peer-feedback": "Guidelines for Giving Peer Feedback"
       },
       "title": "Admin: Peer Evaluations",
@@ -1538,6 +1537,8 @@
         "deliverable-product-website": "\n            Deliverable: Product Website",
         "website-readme": "Website README",
         "website-aboutus-page": "Website AboutUs Page",
+        "website-ug-web-page": "Website UG (Web Page)",
+        "website-dg-web-page": "Website DG (Web Page)",
         "deliverable-project-portfolio-page-ppp": "\n          Deliverable: Project Portfolio Page (PPP)",
         "ppp-objectives": "PPP Objectives",
         "ppp-sections-to-include": "PPP Sections to include",

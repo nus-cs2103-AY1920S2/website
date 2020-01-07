@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - UML: Class Diagrams: Classes: What</title>
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
@@ -58,8 +58,7 @@
                       <p></p>
                       <panel type="seamless" header="The equivalent code" class="algolia-no-index">
                         <div class="alt-java">
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
 
     Integer number;
     Chair[] chairs = <span class="hljs-keyword">null</span>;
@@ -73,12 +72,9 @@
     }
 }
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
                         </div>
                         <div class="alt-python">
-                          <div class="code-block">
-                            <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span>:</span>
+                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
     self.number = <span class="hljs-number">0</span>
@@ -90,8 +86,6 @@
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_number</span><span class="hljs-params">(self, n)</span>:</span>
     <span class="hljs-comment"># ...</span>
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
                         </div>
                       </panel>
                     </box>
@@ -183,8 +177,7 @@
                             <question>
                               <p>Draw a UML diagram to represent the <code>Car</code> class as given below. Include visibilities.</p>
                               <div class="alt-java">
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
 
     Engine engine;
     <span class="hljs-keyword">private</span> List&lt;Wheel&gt; wheels = <span class="hljs-keyword">null</span>;
@@ -199,13 +192,10 @@
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                               </div>
                               <div class="alt-python">
                                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You may omit <code>self</code> from method signatures in the class diagram.</p>
-                                <div class="code-block">
-                                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
+                                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
 
   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, model)</span>:</span>
     self._engine = <span class="hljs-literal">None</span> <span class="hljs-comment"># type: Engine</span>
@@ -218,8 +208,6 @@
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__move</span><span class="hljs-params">(self, speed)</span>:</span>
       <span class="hljs-keyword">pass</span>
 </code></pre>
-                                  <div class="code-block-lang"><span>python</span></div>
-                                </div>
                               </div>
                             </question>
                           </panel>

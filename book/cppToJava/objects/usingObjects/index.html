@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Objects: Using Java Objects</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -80,8 +80,7 @@
                               to the right and <code>y</code> units up from the origin.</p>
                           </div>
                         </popover>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.awt.Point;
+                        <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.awt.Point;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span></span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
@@ -91,8 +90,6 @@
    }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                       </box>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You might wonder why we can use the <code>System</code> class without importing it. <code>System</code> belongs to <strong>the <code>java.lang</code> package, which is imported automatically</strong>.</p>
                     </div>
@@ -101,11 +98,8 @@
                       <p><strong>To create a new object, you have to use the <code>new</code> operator</strong></p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This line shows how to create a new <code>Point</code> object using the <code>new</code> operator:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+                        <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                       </box>
                     </div>
                   </div>
@@ -121,8 +115,7 @@
                                   <li>The <code>Rectangle</code> class is found in the <code>java.awt</code> package.</li>
                                   <li>The parameters you need to supply when creating new <code>Rectangle</code> objects are <code>(int x, int y, int width, int height)</code>.</li>
                                 </ul>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         Rectangle r;
 
@@ -133,8 +126,6 @@
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                 </p>
                                 <pre><code class="hljs">java.awt.Rectangle[x=0,y=0,width=5,height=10]

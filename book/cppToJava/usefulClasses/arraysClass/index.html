@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Some Useful Classes: The Arrays Class</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -53,8 +53,7 @@
                       of an array. It also provides a <code>copyOf</code> that copies an array.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Using <code>Arrays.copyOf</code> and <code>Arrays.toString</code>:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] a = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>};
+                      <pre><code class="hljs java"><span class="hljs-keyword">int</span>[] a = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>};
 
 <span class="hljs-keyword">int</span>[] b = Arrays.copyOf(a, <span class="hljs-number">3</span>); <span class="hljs-comment">// copy first three elements</span>
 System.out.println(Arrays.toString(b));
@@ -62,8 +61,6 @@ System.out.println(Arrays.toString(b));
 <span class="hljs-keyword">int</span>[] c = Arrays.copyOf(a, a.length); <span class="hljs-comment">// copy all elements</span>
 System.out.println(Arrays.toString(c));
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                       </p>
                       <pre><code class="hljs">[1, 2, 3]
@@ -93,8 +90,7 @@ System.out.println(Arrays.toString(c));
                                     </ul>
                                   </li>
                                 </ul>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Arrays;
+                                <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Arrays;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterEmails(String[] items){
@@ -113,8 +109,6 @@ System.out.println(Arrays.toString(c));
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                 </p>
                                 <pre><code class="hljs">[]
@@ -139,8 +133,7 @@ System.out.println(Arrays.toString(c));
                                     </li>
                                   </ul>
                                   <panel type="seamless" header="Partial solution" class="algolia-no-index">
-                                    <div class="code-block">
-                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterEmails(String[] items){
+                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterEmails(String[] items){
     String[] results = <span class="hljs-keyword">new</span> String[items.length];
     <span class="hljs-keyword">int</span> matchCount = <span class="hljs-number">0</span>;
     <span class="hljs-keyword">for</span>(String item: items){
@@ -155,8 +148,6 @@ System.out.println(Arrays.toString(c));
     System.out.println(Arrays.toString(items));
 }
 </code></pre>
-                                      <div class="code-block-lang"><span>java</span></div>
-                                    </div>
                                   </panel>
                                 </div>
                               </question>

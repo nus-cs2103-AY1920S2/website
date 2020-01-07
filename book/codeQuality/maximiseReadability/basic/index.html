@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Code Quality: [Guideline] Maximise Readability: Basic</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -92,8 +92,7 @@
                                   </span>
                                 </font>
                               </p>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
+                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (!age) {
         <span class="hljs-keyword">if</span> (!sub) {
@@ -111,8 +110,6 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                             </td>
                             <td>&nbsp;&nbsp;<br><br></td>
                             <td valign="top">
@@ -121,8 +118,7 @@
                                   </span>
                                 </font>
                               </p>
-                              <div class="code-block">
-                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
+                              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">int</span> subsidy;
     <span class="hljs-keyword">if</span> (isSenior) {
         subsidy = REJECT_SENIOR;
@@ -136,8 +132,6 @@
     <span class="hljs-keyword">return</span> subsidy;
 }
 </code></pre>
-                                <div class="code-block-lang"><span>java</span></div>
-                              </div>
                             </td>
                           </tr>
                         </table>
@@ -153,8 +147,7 @@
                                   </span>
                                 </font>
                               </p>
-                              <div class="code-block">
-                                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
+                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
         <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:
             <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:
@@ -167,8 +160,6 @@
         subsidy = <span class="hljs-number">-1</span>
     <span class="hljs-keyword">return</span> subsidy
 </code></pre>
-                                <div class="code-block-lang"><span>python</span></div>
-                              </div>
                             </td>
                             <td>&nbsp;&nbsp;<br><br></td>
                             <td valign="top">
@@ -177,8 +168,7 @@
                                   </span>
                                 </font>
                               </p>
-                              <div class="code-block">
-                                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
+                              <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
     <span class="hljs-keyword">if</span> is_senior:
         <span class="hljs-keyword">return</span> REJECT_SENIOR
     <span class="hljs-keyword">elif</span> is_already_subsidised:
@@ -188,8 +178,6 @@
     <span class="hljs-keyword">else</span>:
         <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY
 </code></pre>
-                                <div class="code-block-lang"><span>python</span></div>
-                              </div>
                             </td>
                           </tr>
                         </table>
@@ -228,18 +216,14 @@
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
+                      <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>
                         <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs java">
+                      <pre><code class="hljs java">
 <span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
 <span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
 <span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;
@@ -248,8 +232,6 @@
 
 <span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </box>
                   </div>
                 </div>
@@ -262,18 +244,14 @@
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
+                      <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                       <p>
                         <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                           </span>
                         </font>
                       </p>
-                      <div class="code-block">
-                        <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
+                      <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
 is_same_size = previous_size != length
 is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size
 
@@ -281,8 +259,6 @@ is_urgent = type_code == URGENT
 
 <span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent
 </code></pre>
-                        <div class="code-block-lang"><span>python</span></div>
-                      </div>
                     </box>
                   </div>
                 </div>
@@ -323,13 +299,10 @@ is_urgent = type_code == URGENT
                               </span>
                             </font>
                           </p>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
+                          <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
                         </td>
                         <td>&nbsp;&nbsp;<br><br></td>
                         <td valign="top">
@@ -338,16 +311,13 @@ is_urgent = type_code == URGENT
                               </span>
                             </font>
                           </p>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
+                          <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
 <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
 ...
 <span class="hljs-keyword">return</span> PI;
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
                         </td>
                       </tr>
                     </table>
@@ -364,13 +334,10 @@ is_urgent = type_code == URGENT
                               </span>
                             </font>
                           </p>
-                          <div class="code-block">
-                            <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
+                          <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
 ...
 <span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
                         </td>
                         <td>&nbsp;&nbsp;<br><br></td>
                         <td valign="top">
@@ -379,16 +346,13 @@ is_urgent = type_code == URGENT
                               </span>
                             </font>
                           </p>
-                          <div class="code-block">
-                            <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
+                          <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
 MAX_SIZE = <span class="hljs-number">10</span>
 ...
 <span class="hljs-keyword">return</span> PI
 ...
 <span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span>
 </code></pre>
-                            <div class="code-block-lang"><span>python</span></div>
-                          </div>
                         </td>
                       </tr>
                     </table>
@@ -402,11 +366,8 @@ MAX_SIZE = <span class="hljs-number">10</span>
                     </span>
                   </font>
                 </p>
-                <div class="code-block">
-                  <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
+                <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
-                  <div class="code-block-lang"><span>java</span></div>
-                </div>
               </box>
               <p>In general, try to avoid any magic literals.</p>
             </div>

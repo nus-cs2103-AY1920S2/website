@@ -105,10 +105,10 @@ pageNav: 4
     {level: 2, id: "tp-w7", title: "tP: v1.1 [week 7]", link: "tp-w7.html", priority: 2},
     {level: 2, id: "tp-w8", title: "tP: mid-v1.2 [week 8]", link: "tp-w8.html", priority: 3},
     {level: 2, id: "tp-w9", title: "tP: v1.2 [week 9]", link: "tp-w9.html", priority: 2},
-    {level: 2, id: "tp-w10", title: "tP: mid-v1.3 [week 10]", link: "tp-w10.html", priority: 2},
-    {level: 2, id: "tp-w11", title: "tP: v1.3 [week 11]", link: "tp-w11.html", priority: 2},
-    {level: 2, id: "tp-w12", title: "tP: mid-v1.4 [week 12]", link: "tp-w12.html", priority: 3},
-    {level: 2, id: "tp-w13", title: "tP: v1.4 [week 13]", link: "tp-w13.html", priority: 2},
+    {level: 2, id: "tp-w10", title: "tP: mid-" + penultimate_version + " [week 10]", link: "tp-w10.html", priority: 2},
+    {level: 2, id: "tp-w11", title: "tP: " + penultimate_version + " [week 11]", link: "tp-w11.html", priority: 2},
+    {level: 2, id: "tp-w12", title: "tP: mid-" + final_version + " [week 12]", link: "tp-w12.html", priority: 3},
+    {level: 2, id: "tp-w13", title: "tP: " + final_version + " [week 13]", link: "tp-w13.html", priority: 2},
     {level: 2, id: "tp-deliverables", title: "tP: Deliverables", link: "tp-deliverables.html", priority: 2},
     {level: 2, id: "tp-grading", title: "tP: Grading", link: "tp-grading.html", priority: 2},
     {level: 2, id: "tp-supervision", title: "tP: Supervision", link: "tp-supervision.html", priority: 2},
@@ -139,7 +139,6 @@ pageNav: 4
   {id: "admin-faq-narrowScope", title: "Why very narrow project scope?", priority: 4},
   {id: "admin-faq-favoriteTool", title: "Why can't I use my favorite tool/framework/language etc.?", priority: 4},
   {id: "admin-faq-manySubmissions", title: "Why so many submissions?", priority: 4},
-  {id: "admin-faq-fromScratch", title: "Can we build a new product from scratch in the tP?", priority: 4},
   {id: "admin-faq-cs2101Differences", title: "Why submission requirements differ between " + module + "T and CS2101?", priority: 4}
 ]%}
 
@@ -186,7 +185,6 @@ week3: [
   {topic_id: "tp-supervision"},
   {policy_id: "policy-teamSize"}],
 week4: [
-  {faq_id: "admin-faq-fromScratch"},
   {faq_id: "admin-faq-narrowScope"},
   {faq_id: "admin-faq-favoriteTool"},
   {policy_id: "policy-publishingSubmissions"}],
@@ -208,6 +206,7 @@ week11: [],
 week12: [],
 week13: []
 }%}
+
 
 {% macro show_title(current_topic_id, topics) -%}
 {% for topic in topics  %}

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Control Flow: Loops</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -54,8 +54,7 @@
                       <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
                         </span>
                         </span> Here is an example while loop:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">countdown</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">countdown</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{
     <span class="hljs-keyword">while</span> (n &gt; <span class="hljs-number">0</span>) {
         System.out.println(n);
         n = n - <span class="hljs-number">1</span>;
@@ -63,8 +62,6 @@
     System.out.println(<span class="hljs-string">"Blastoff!"</span>);
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </div>
                     <h5 id="for-loops"><code>for</code> loops<a class="fa fa-anchor" href="#for-loops"></a></h5>
                     <div class="indented">
@@ -76,23 +73,19 @@
 }
 </code></pre>
                       <p>Here is an example:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTable</span><span class="hljs-params">(<span class="hljs-keyword">int</span> rows)</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printTable</span><span class="hljs-params">(<span class="hljs-keyword">int</span> rows)</span> </span>{
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= rows; i = i + <span class="hljs-number">1</span>) {
         printRow(i, rows);
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </div>
                     <h5 id="do-while-loops"><code>do-while</code> loops<a class="fa fa-anchor" href="#do-while-loops"></a></h5>
                     <div class="indented">
                       <p>The <code>while</code> and <code>for</code> statements are <em>pretest</em> loops; that is, they test the condition first and at the beginning of each pass through the loop. Java also provides a <em>posttest</em> loop: the <code>do-while</code>                        statement. This type of loop is useful when you need to run the body of the loop at least once.</p>
                       <p>Here is an example <span class="dimmed">(from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span>
                         </small>)</span>:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DoWhileDemo</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DoWhileDemo</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
         <span class="hljs-keyword">int</span> count = <span class="hljs-number">1</span>;
         <span class="hljs-keyword">do</span> {
@@ -102,8 +95,6 @@
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </div>
                     <h5 id="break-and-continue"><code>break</code> and <code>continue</code><a class="fa fa-anchor" href="#break-and-continue"></a></h5>
                     <div class="indented">
@@ -112,8 +103,7 @@
                         </span> <strong>A <code>break</code> statement exits the current loop</strong>.</p>
                       <p>Here is an example <span class="dimmed">(from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span>
                         </small>)</span>:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         <span class="hljs-keyword">int</span>[] numbers = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[] { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">0</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0</span> };
         <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; numbers.length; i++) {
@@ -125,8 +115,6 @@
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                       </p>
                       <pre><code class="hljs">123
@@ -137,8 +125,7 @@
                         </span> <strong>A <code>continue</code> statement skips the remainder of the current iteration</strong> and moves to the next iteration of the loop.</p>
                       <p>Here is an example <span class="dimmed">(from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span>
                         </small>)</span>:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
     <span class="hljs-keyword">int</span>[] numbers = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[] { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">0</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0</span> };
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; numbers.length; i++) {
         <span class="hljs-keyword">if</span> (numbers[i] == <span class="hljs-number">0</span>) {
@@ -148,8 +135,6 @@
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                       </p>
                       <pre><code class="hljs">12345
@@ -159,22 +144,16 @@
                     <h5 id="enhanced-for-loops">Enhanced <code>for</code> loops<a class="fa fa-anchor" href="#enhanced-for-loops"></a></h5>
                     <div class="indented">
                       <p>Since traversing arrays is so common, Java provides an alternative for-loop syntax that makes the code more compact. For example, consider a for loop that displays the elements of an array on separate lines:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; values.length; i++) {
+                      <pre><code class="hljs java"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; values.length; i++) {
     <span class="hljs-keyword">int</span> value = values[i];
     System.out.println(value);
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>We could rewrite the loop like this:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> value : values) {
+                      <pre><code class="hljs java"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> value : values) {
     System.out.println(value);
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>This statement is called an <em>enhanced <code>for</code> loop</em>. You can read it as, “for each value in values”. Notice how the single line <code>for (int value : values)</code> replaces the first two lines of the standard <code>for</code>                        loop.</p>
                     </div>
                   </div>
@@ -234,8 +213,7 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="code-block">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-comment">// ADD YOUR CODE HERE</span>
 
@@ -275,8 +253,6 @@
     }
 }
 </code></pre>
-                                  <div class="code-block-lang"><span>java</span></div>
-                                </div>
                                 <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                                 </p>
                                 <pre><code class="hljs">A+:5.0
@@ -285,8 +261,7 @@ A-:4.5
 </code></pre>
                                 <div slot="hint" class="algolia-no-index">
                                   <p>Partial solution:</p>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span>[] getMultipleGradeCaps(String[] grades) {
+                                  <pre><code class="hljs java">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span>[] getMultipleGradeCaps(String[] grades) {
         <span class="hljs-keyword">double</span>[] caps = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double</span>[grades.length];
         <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; grades.length; i++) {
            <span class="hljs-comment">// ...</span>
@@ -294,8 +269,6 @@ A-:4.5
         <span class="hljs-keyword">return</span> caps;
     }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
                                 </div>
                               </question>
                             </panel>

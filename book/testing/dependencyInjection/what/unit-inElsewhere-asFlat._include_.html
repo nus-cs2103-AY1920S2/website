@@ -60,8 +60,7 @@
                       </box>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
     Storage s;
 
     Logic(Storage s) {
@@ -73,17 +72,11 @@
     }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{
     <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
 
     <span class="hljs-meta">@Override</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
@@ -95,29 +88,20 @@
     }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p>Normally, you would use the <code>Logic</code> class as follows (note how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java">Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
+                        <pre><code class="hljs java">Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
 String name = logic.getName(<span class="hljs-number">23</span>);
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p>You can test it like this:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
+                        <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
     Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
     assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code>                          <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
                         <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
 
     <span class="hljs-meta">@Override</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
@@ -129,20 +113,15 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <p>Note how the <code>StorageStub</code> has the same interface as <code>DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct
                           response <code>DatabaseStorage</code> is expected to return for the given test input.</p>
                         <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
+                        <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
     Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());
     assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                       </box>
                       <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
                     </div>

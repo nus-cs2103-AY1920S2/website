@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Control Flow: Branching</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -54,24 +54,17 @@
                       <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span>
                         </span>
                         </span> Java supports the usual forms of <code>if</code> statements:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
+                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
     System.out.println(<span class="hljs-string">"x is positive"</span>);
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) {
+                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) {
     System.out.println(<span class="hljs-string">"x is even"</span>);
 } <span class="hljs-keyword">else</span> {
     System.out.println(<span class="hljs-string">"x is odd"</span>);
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
+                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
     System.out.println(<span class="hljs-string">"x is positive"</span>);
 } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">0</span>) {
     System.out.println(<span class="hljs-string">"x is negative"</span>);
@@ -79,10 +72,7 @@
     System.out.println(<span class="hljs-string">"x is zero"</span>);
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x == <span class="hljs-number">0</span>) {
+                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x == <span class="hljs-number">0</span>) {
     System.out.println(<span class="hljs-string">"x is zero"</span>);
 } <span class="hljs-keyword">else</span> {
     <span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">0</span>) {
@@ -92,20 +82,15 @@
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p>The braces are optional (but recommended) for branches that have only one statement. So we <em>could have</em> written the previous example this way (
                         <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                           </span>
                         </font>):</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)
+                      <pre><code class="hljs java"><span class="hljs-keyword">if</span> (x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)
     System.out.println(<span class="hljs-string">"x is even"</span>);
 <span class="hljs-keyword">else</span>
     System.out.println(<span class="hljs-string">"x is odd"</span>);
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                     </div>
                     <h5 id="switch-statements"><code>switch</code> statements<a class="fa fa-anchor" href="#switch-statements"></a></h5>
                     <div class="indented">
@@ -113,8 +98,7 @@
                         with enums, <code>String</code>.</p>
                       <p>Here is an example <span class="dimmed">(adapted from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span>
                         </small>)</span>:</p>
-                      <div class="code-block">
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SwitchDemo</span> </span>{
+                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SwitchDemo</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
 
         <span class="hljs-keyword">int</span> month = <span class="hljs-number">8</span>;
@@ -151,8 +135,6 @@
     }
 }
 </code></pre>
-                        <div class="code-block-lang"><span>java</span></div>
-                      </div>
                       <p><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>August</code></p>
                     </div>
                   </div>
@@ -198,8 +180,7 @@
                                 <p>You can assume that the input is always in the correct format <span class="dimmed">i.e., no need to handle invalid input cases</span>.</p>
                                 <div slot="hint" class="algolia-no-index">
                                   <p>Partial solution:</p>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeter</span> </span>{
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeter</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         String first = args[<span class="hljs-number">0</span>];
         String second = args[<span class="hljs-number">1</span>];
@@ -213,8 +194,6 @@
     }
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
                                 </div>
                               </question>
                             </panel>
@@ -260,8 +239,7 @@
                                 <p>You can assume that the input is always in the correct format <span class="dimmed">i.e., no need to handle invalid input cases</span>.</p>
                                 <div slot="hint" class="algolia-no-index">
                                   <p>Partial solution:</p>
-                                  <div class="code-block">
-                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GradeHelper</span> </span>{
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GradeHelper</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         String grade = args[<span class="hljs-number">0</span>];
         <span class="hljs-keyword">double</span> cutoff = <span class="hljs-number">0</span>;
@@ -273,8 +251,6 @@
     }
 }
 </code></pre>
-                                    <div class="code-block-lang"><span>java</span></div>
-                                  </div>
                                 </div>
                               </question>
                             </panel>

@@ -101,7 +101,7 @@ not vary by tutorial day). Set your own deadline accordingly, or else the bot wi
 <ul>
   <li>Get together with your team members and
     <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for
-    <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> <strong> for the v2.0 of the product</strong>.
+    <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> <strong> for the the product</strong>.
     <ul>
       <li>At this stage, aim to have more user stories than you can deliver in the project. <span class="dimmed">Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.</span></li>
       <li>Refer
@@ -912,27 +912,38 @@ not vary by tutorial day). Set your own deadline accordingly, or else the bot wi
               </box>
               <p><strong>A use case describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</strong></p>
               <box>
-                <panel header="<md>:fas-cube:</md> Example 1: 'check account balance' use case for an ATM" type="seamless" expanded>
-                  <div class="text-monospace">
-                    <ul>
-                      <li>System:
-                        <popover effect="fade" placement="right" content="Automated Teller Machine">
-                          ATM </popover>
-                      </li>
-                      <li>Actor: Customer</li>
-                      <li>Use Case: Check account balance
-                        <ol>
-                          <li>User inserts an ATM card</li>
-                          <li>ATM prompts for PIN</li>
-                          <li>User enters PIN</li>
-                          <li>ATM prompts for withdrawal amount</li>
-                          <li>User enters the amount</li>
-                          <li>ATM ejects the ATM card and issues cash</li>
-                          <li>User collects the card and the cash.</li>
-                        </ol>
-                      </li>
-                    </ul>
-                  </div>
+                <panel header="<md>:fas-cube:</md> Example 1: 'transfer money' use case for an online banking system" type="seamless" expanded>
+                  <pre>
+System: Online Banking System (OBS)
+Use case: UC23 - Transfer Money
+Actor: User
+MSS:
+  1. User chooses to transfer money.
+  2. OBS requests for details of the transfer.
+  3. User enters the requested details.
+  4. OBS requests for confirmation.
+  5. User confirms.
+  6. OBS transfers the money and displays the new account balance.
+  Use case ends.
+</pre>
+                  <pre>
+Extensions:
+  3a. OBS detects an error in the entered data.
+    3a1. OBS requests for the correct data.
+    3a2. User enters new data
+    Steps 3a1-3a2 are repeated until the data entered are correct.
+    Use case resumes from step 4.
+  
+  3b. User requests to effect the transfer in a future date.
+      3b1. OBS requests for confirmation.
+      3b2. User confirms future transfer.
+      Use case ends.
+  
+  *a. At any time, User chooses to cancel the transfer.
+      *a1. OBS requests to confirm the cancellation.
+      *a2. User confirms the cancellation.
+      Use case ends.
+</pre>
                 </panel>
                 <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless">
                   <div class="text-monospace">
@@ -951,21 +962,20 @@ not vary by tutorial day). Set your own deadline accordingly, or else the bot wi
                   </div>
                 </panel>
               </box>
-              <p></p>
-              <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of a system.
-                In the example below, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-              <modal title="**Unified Modeling Language (UML)**" id="modal:uml">
-                <div>
-                  <div data-included-from="C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\common\definitions.md">
-                    <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
-                      Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
-                      in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
+              <box background-color="white" border-color="white">
+                <img class="float-right ml-5" src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
+                <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of a system.</p>
+                <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
+                <modal title="**Unified Modeling Language (UML)**" id="modal:uml">
+                  <div>
+                    <div data-included-from="C:\repos\nus-cs2103-AY1920S2\cs2103-website\book\common\definitions.md">
+                      <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
+                        Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
+                        in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
+                    </div>
                   </div>
-                </div>
-              </modal>
-              <p></p>
-              <img src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
-              <p></p>
+                </modal>
+              </box>
               <p><strong>Use cases capture the <em>functional requirements</em> of a system.</strong></p>
             </div>
           </div>
@@ -1395,8 +1405,7 @@ not vary by tutorial day). Set your own deadline accordingly, or else the bot wi
     <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Remember to enable assertions in your IDEA run configurations and gradle file.</li>
   <li>Continue to do deliberate project management using GitHub issue tracker, milestones, labels, etc. as you did in v1.2.</li>
   <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> We recommend that <strong>each PR also updates the relevant parts of documents and tests</strong>. That way, your documentation/testing work
-    will not pile up towards the end.</li>
-  <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> There is <a href="https://help.github.com/articles/closing-issues-using-keywords/">a way to get GitHub to auto-close the relevant issue when a PR is merged</a>    (<a href="https://github.com/se-edu/addressbook-level4/pull/888">example</a>).
+    will not pile up towards the end.
   </li>
 </ul>
 <p><span id="heading_update_dg_with_design_details"><span><span aria-hidden="true" class="fas fa-user"></span></span> Update DG with design details</span>
@@ -1642,7 +1651,7 @@ It will look more 'polished' if the two text sizes match.
   </li>
 </ul>
 <div class="indented-level2">
-  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-demo" header="Admin <md>:glyphicon-log-in:</md> tP → v1.4 Demo (extract)  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
+  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-demo" header="Admin <md>:glyphicon-log-in:</md> tP → Final Demo (extract)  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
     fragment="tp-deliverables-demo"></panel>
 </div>
 <p></p>

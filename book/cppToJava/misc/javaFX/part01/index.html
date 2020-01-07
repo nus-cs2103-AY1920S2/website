@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website</title>
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
@@ -263,8 +263,7 @@
         <hr>
         <p>Open <code>MainApp.java</code> and replace the code with the following:</p>
         <p><strong>MainApp.java</strong></p>
-        <div class="code-block">
-          <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.address;
+        <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.address;
 
 <span class="hljs-keyword">import</span> java.io.IOException;
 
@@ -337,8 +336,6 @@
     }
 }
 </code></pre>
-          <div class="code-block-lang"><span>java</span></div>
-        </div>
         <p>The various comments should give you some hints about what's going on.</p>
         <h2 id="importing-javafx-9">Importing JavaFx 9<a class="fa fa-anchor" href="#importing-javafx-9"></a></h2>
         <p>JavaFx 9 is a separate module from Java 9. We must ensure that the modules are imported correctly.</p>
@@ -350,8 +347,7 @@
           <li>Ensure that your Project pane is open (<kbd>Alt</kbd>+<kbd>1</kbd>). Right click on the <code>src</code> folder, and select <code>New</code> → <code>module-info.java</code>:</li>
           <li>Add the following <code>requires</code> and <code>exports</code> in order to import and export the modules correctly:</li>
         </ol>
-        <div class="code-block">
-          <pre><code class="hljs java"><span class="hljs-keyword">module</span> AddressApp {
+        <pre><code class="hljs java"><span class="hljs-keyword">module</span> AddressApp {
     <span class="hljs-keyword">requires</span> javafx.graphics;
     <span class="hljs-keyword">requires</span> javafx.fxml;
     <span class="hljs-keyword">requires</span> javafx.controls;
@@ -359,8 +355,6 @@
     <span class="hljs-keyword">exports</span> seedu.address;
 }
 </code></pre>
-          <div class="code-block-lang"><span>java</span></div>
-        </div>
         <h2 id="running-the-application">Running the Application<a class="fa fa-anchor" href="#running-the-application"></a></h2>
         <p>If you run the application now (right click <code>MainApp.java</code> and select <code>Run MainApp.main()</code>), you should see something like this:</p>
         <img src="/website/book/cppToJava/misc/javaFX/part01/images/address-app-final-screenshot.png" height="350">

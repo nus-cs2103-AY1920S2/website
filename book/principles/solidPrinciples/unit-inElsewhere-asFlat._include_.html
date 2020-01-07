@@ -111,12 +111,9 @@
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves as
                           a container of <code>Students</code> in one instance and as a container of <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class is extended
                           without modifying its code.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java">ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt;Student&gt;();
+                        <pre><code class="hljs java">ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt;Student&gt;();
 ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt;Admin&gt;();
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                       </box>
                     </div>
                   </div>
@@ -215,19 +212,13 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt;Admin&gt;(
                                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>.
                                         i.e. wherever an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
                                       <p>The following code is valid because an <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
-                                      <div class="code-block">
-                                        <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
+                                      <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
 </code></pre>
-                                        <div class="code-block-lang"><span>java</span></div>
-                                      </div>
                                       <p>But the following code is not valid <span class="dimmed">because <code>staff</code> is declared as a <code>Staff</code> type and therefore its value may or may not be of  type <code>AcademicStaff</code>, which is the type expected by variable <code>academicStaff</code>.</span></p>
-                                      <div class="code-block">
-                                        <pre><code class="hljs java">Staff staff;
+                                      <pre><code class="hljs java">Staff staff;
 ...
 AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 </code></pre>
-                                        <div class="code-block-lang"><span>java</span></div>
-                                      </div>
                                     </box>
                                   </div>
                                 </div>
@@ -259,8 +250,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code>                            because it does not accept a <code>height</code> that is different from the <code>width</code>.</p>
                           <img src="/website/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
                           <p></p>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
     ...
     <span class="hljs-comment">/** sets the size to given height and width*/</span>
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">resize</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span></span>{
@@ -279,16 +269,11 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
     }
 }
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
                           <p>Now consider the following method that is written to work with the <code>Rectangle</code> class.</p>
-                          <div class="code-block">
-                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">makeSameSize</span><span class="hljs-params">(Rectangle original, Rectangle toResize)</span></span>{
+                          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">makeSameSize</span><span class="hljs-params">(Rectangle original, Rectangle toResize)</span></span>{
     toResize.resize(original.getHeight(), original.getWidth());
 }
 </code></pre>
-                            <div class="code-block-lang"><span>java</span></div>
-                          </div>
                           <p>This code will fail if it is called as <code>maekSameSize(new Rectangle(12,8), new Square(4, 4))</code> That is, <code>Square</code> class is not substitutable for the <code>Rectangle</code> class.</p>
                         </panel>
                       </box>
@@ -355,8 +340,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead,
                           it should depend on the <code>SalariedStaff</code> interface.</p>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
     <span class="hljs-comment">//...    </span>
     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(AdminStaff adminStaff)</span></span>{ <span class="hljs-comment">//violates ISP</span>
         <span class="hljs-comment">//...</span>
@@ -364,18 +348,13 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
-                        <div class="code-block">
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
+                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
     <span class="hljs-comment">//...    </span>
     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(SalariedStaff staff)</span></span>{ <span class="hljs-comment">//does not violate ISP</span>
         <span class="hljs-comment">//...</span>
     }
 }
 </code></pre>
-                          <div class="code-block-lang"><span>java</span></div>
-                        </div>
                         <img src="/website/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
                         <p></p>
                       </box>
