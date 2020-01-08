@@ -47,7 +47,7 @@
       "searchable": "no"
     }
   ],
-  "enableSearch": true,
+  "enableSearch": false,
   "headingIndexingLevel": 5,
   "plugins": ["filterTags", "algolia", "googleAnalytics"],
   "pluginsContext": {
