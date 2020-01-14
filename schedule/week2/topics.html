@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -26,13 +25,12 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
-      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown text="Schedule" class="nav-link temp-dropdown">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
@@ -49,7 +47,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown text="Links" class="nav-link temp-dropdown">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -75,7 +73,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -98,7 +96,7 @@
           </nav>
           <p></p>
           <h1 id="week-2-jan-20-topics">Week 2 <small><small><span class="dimmed">[Jan 20]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-2-jan-20-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
+          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week2/topics.html#W2-1">W2.1</a>] <strong>SE: Intro</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
@@ -277,7 +275,7 @@
                       of an implementation must be measured against other existing implementations, not against unrealized concepts. The challenge and the mission are to find real solutions to real problems on actual schedules with available resources.</p>
                     <p>This then is programming, both a tar pit in which many efforts have floundered and a creative activity with joys and woes all its own. For many, the joys far outweigh the woes....</p>
                   </blockquote>
-                  <modal title="**:book: The Mythical Man-Month: Essays on Software Engineering**" id="modal:mmm" class="algolia-no-index">
+                  <modal title="**:book: The Mythical Man-Month: Essays on Software Engineering**" id="modal:mmm">
                     <table>
                       <tr>
                         <td>
@@ -300,12 +298,12 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: SE vs Civil Engineering" class="algolia-no-index">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: SE vs Civil Engineering">
                           <question has-input="true">
                             <p>Compare Software Engineering with Civil Engineering in terms of how work products in CE (i.e. buildings) differ from those of SE (i.e. software).</p>
-                            <div slot="answer" class="algolia-no-index">
+                            <div slot="answer">
                               <div class="table-responsive">
                                 <table class="markbind-table table table-bordered table-striped">
                                   <thead>
@@ -371,10 +369,10 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Software vs Bridges" class="algolia-no-index">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Software vs Bridges">
                           <question has-input="true">
                             <p>Comment on this statement: Building software is cheaper and easier than building bridges (all we need is a PC!).</p>
-                            <div slot="answer" class="algolia-no-index">
+                            <div slot="answer">
                               <p>Depends on the size of the software. Manpower required for software is very costly. On the other hand, we can create a very valuable software (e.g. an iPhone application that can make million dollars in a month) with a just
                                 a PC and a few days of work!</p>
                             </div>
@@ -382,10 +380,10 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coding as a manufacturing activity" class="algolia-no-index">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coding as a manufacturing activity">
                           <question has-input="true">
                             <p>Justify this statement: Coding is still a ‘design’ activity, not a ‘manufacturing’ activity. You may use a comparison (or an analogy) of Software engineering versus Civil Engineering to argue this point.</p>
-                            <div slot="answer" class="algolia-no-index">
+                            <div slot="answer">
                               <p>Arguments to support this statement:</p>
                               <ul>
                                 <li>If coding is a manufacturing activity, we should be able to do it using robotic machines (just like in the car industry) or low-skilled laborers (like in the construction industry).</li>
@@ -398,14 +396,14 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md> List pros and cons of SE" class="algolia-no-index">
+                        <panel header="<md>:glyphicon-question-sign:</md> List pros and cons of SE">
                           <question has-input="true">
                             <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
                           </question>
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one of these is not included in Brook’s list of ‘Woes of the Craft’?" class="algolia-no-index">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one of these is not included in Brook’s list of ‘Woes of the Craft’?">
                           <question>
                             <ul class="task-list">
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Need for perfection when developing software</li>
@@ -415,7 +413,7 @@
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Seemingly never ending effort required for testing and debugging software</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Fast moving industry making our work obsolete quickly</li>
                             </ul>
-                            <div slot="answer" class="algolia-no-index">
+                            <div slot="answer">
                               <p>(c)</p>
                             </div>
                           </question>
@@ -477,9 +475,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these are features available in IDEs?" class="algolia-no-index">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these are features available in IDEs?">
                         <question>
                           <ul class="task-list">
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Compiling</li>
@@ -494,7 +492,7 @@
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> j. Code generation <span class="dimmed">e.g., to generate the code required by simply specifying which component/structure you want to implement</span></li>
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> k. Extension <span class="dimmed">i.e., ability add more functionality to the IDE using plugins</span></li>
                           </ul>
-                          <div slot="answer" class="algolia-no-index">
+                          <div slot="answer">
                             <p>All.</p>
                             <p>Explanation: While all of these features may not be present in some IDEs, most do have these features in some form or other.</p>
                           </div>
@@ -535,7 +533,7 @@
                       </li>
                     </ul>
                   </tab>
-                  <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+                  <tab header="<md>:glyphicon-facetime-video:</md>">
 
 
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/c0efB_CKOYo" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
@@ -597,7 +595,7 @@
                 </ul>
               </box>
               <p><strong>Test cases can be determined based on the specification, reviewing similar existing systems, or comparing to the past behavior of the SUT.</strong></p>
-              <panel type="seamless" class="algolia-no-index">
+              <panel type="seamless">
                 <span slot="header" class="card-title"><span><span class="dimmed">Other details a test case can contain</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                 </span>
                 </span>
@@ -624,7 +622,7 @@
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example: In the browser example above, a test case failure is implied if the scrollbar remains disabled after loading <code>longfile.html</code>. The defect/bug causing
                   that failure could be an uninitialized variable.</p>
               </box>
-              <panel type="seamless" class="algolia-no-index">
+              <panel type="seamless">
                 <span slot="header" class="card-title"><span><span class="dimmed">A deeper look at the definition of testing</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                 </span>
                 </span>
@@ -646,9 +644,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> Relate testing, test cases, failure, and defect" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md> Relate testing, test cases, failure, and defect">
                       <question has-input>
                         <p>Explain how the concepts of <em>testing</em>, <em>test case</em>, <em>test failure</em>, and <em>defect</em> are related to each other.</p>
                       </question>
@@ -685,9 +683,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Regression Testing defintion T/F?" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Regression Testing defintion T/F?">
                       <question>
                         <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
                         <ul radio-group="63d56" class="radio-list">
@@ -695,7 +693,7 @@
                           <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> b. False</label></li>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="63d56" type="radio"> c. Partially true</label></li>
                         </ul>
-                        <div slot="answer" class="algolia-no-index">
+                        <div slot="answer">
                           <p>c.</p>
                           <p>Explanation: Regression testing <mark>need not be automated</mark> but automation is highly recommended.</p>
                         </div>
@@ -703,7 +701,7 @@
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> Explain regression testing" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md> Explain regression testing">
                       <question has-input>
                         <p>Explain why and when you would do regression testing in a software project.</p>
                       </question>
@@ -739,13 +737,13 @@
                   <p><strong>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</strong> Compared to manual testing, automated testing reduces the effort required to run tests
                     repeatedly and increases precision of testing (because manual testing is susceptible to human errors).</p>
                 </tab>
-                <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+                <tab header="<md>:glyphicon-facetime-video:</md>">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/RbSlW8jZFe8?end=79&version=3" frameborder="0" allowfullscreen></iframe></tab>
               </tabs>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-paperclip:</md> Resources" class="algolia-no-index">
+                <panel header="<md>:fas-paperclip:</md> Resources">
                   <p><strong>Side readings:</strong></p>
                   <ul>
                     <li>[Quora post] <a href="http://www.quora.com/What-are-good-ways-to-avoid-bugs-while-programming/answer/Mattias-Petter-Johansson">What is the best way to avoid bugs</a></li>
@@ -785,7 +783,7 @@
               <ol>
                 <li>
                   <p>Store the test input in the text file <code>input.txt</code>.</p>
-                  <panel header="%%<md>:fas-cube:</md> Example `input.txt`%%" type="seamless" class="algolia-no-index">
+                  <panel header="%%<md>:fas-cube:</md> Example `input.txt`%%" type="seamless">
                     <pre><code class="hljs">add Valid Name p/12345 valid@email.butNoPrefix
 add Valid Name 12345 e/valid@email.butPhonePrefixMissing
 </code></pre>
@@ -793,7 +791,7 @@ add Valid Name 12345 e/valid@email.butPhonePrefixMissing
                 </li>
                 <li>
                   <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-                  <panel header="%%<md>:fas-cube:</md> Example `expected.txt`%%" type="seamless" class="algolia-no-index">
+                  <panel header="%%<md>:fas-cube:</md> Example `expected.txt`%%" type="seamless">
                     <pre><code class="hljs">Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
 Invalid command format: add 
 
@@ -815,7 +813,7 @@ Invalid command format: add
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
                     </li>
                   </ul>
-                  <panel header minimized class="algolia-no-index">
+                  <panel header minimized>
                     <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                     </span>
                     </span>
@@ -845,7 +843,7 @@ Invalid command format: add
               <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
               <div>
                 <popover id="pop:cli" placement="top">
-                  <div slot="content" class="algolia-no-index">
+                  <div slot="content">
                     <div>
                       <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
                     </div>
@@ -907,11 +905,11 @@ Invalid command format: add
                   </p>
                 </blockquote>
               </tab>
-              <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+              <tab header="<md>:glyphicon-facetime-video:</md>">
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </tab>
             </tabs>
-            <modal large title="Reference » Mercurial: The Definitive Guide" id="modal:rcsWhat-bryanMercurialGuide" class="algolia-no-index">
+            <modal large title="Reference » Mercurial: The Definitive Guide" id="modal:rcsWhat-bryanMercurialGuide">
               <div>
                 <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
               </div>
@@ -931,21 +929,21 @@ Invalid command format: add
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What does RCS stand for?" class="algolia-no-index">
+                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What does RCS stand for?">
                     <question has-input="true">
-                      <div slot="answer" class="algolia-no-index">
+                      <div slot="answer">
                         <p>Revision Control Software</p>
                       </div>
                     </question>
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is a Revision?" class="algolia-no-index">
+                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is a Revision?">
                     <question has-input="true">
                       <p>In the context of RCS, what is a <em>Revision</em>? Give an example.</p>
-                      <div slot="answer" class="algolia-no-index">
+                      <div slot="answer">
                         <p>A <em>revision</em> (some seem to use it interchangeably with <em>version</em> while others seem to distinguish the two -- here, let us treat them as the same, for simplicity) is a state of a piece of information at a specific
                           time that is a result of some changes to it. For example, take a file containing program code. If you modify the code and save the file, you have a new revision (or a version) of that file.</p>
                       </div>
@@ -953,7 +951,7 @@ Invalid command format: add
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these is not considered a benefit of a typical RCS?" class="algolia-no-index">
+                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these is not considered a benefit of a typical RCS?">
                     <question>
                       <ul class="task-list">
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Help a single user manage revisions of a single file</li>
@@ -963,14 +961,14 @@ Invalid command format: add
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Detect when multiple developers make incompatible changes to the same file</li>
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. All of them are benefits of RCS</li>
                       </ul>
-                      <div slot="answer" class="algolia-no-index">
+                      <div slot="answer">
                         <p>f</p>
                       </div>
                     </question>
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md> Explain RCS in a team project context" class="algolia-no-index">
+                  <panel header="<md>:glyphicon-question-sign:</md> Explain RCS in a team project context">
                     <question has-input="true">
                       <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
                     </question>
@@ -1014,16 +1012,16 @@ Invalid command format: add
                 </p>
                 <p><strong>You can have multiple repos in your computer</strong>, each repo revision-controlling files of a different working directly, for examples, files of different projects.</p>
               </tab>
-              <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+              <tab header="<md>:glyphicon-facetime-video:</md>">
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/mLnxwlCEIb8" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </tab>
             </tabs>
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md> What is a repo?" class="algolia-no-index">
+                  <panel header="<md>:glyphicon-question-sign:</md> What is a repo?">
                     <question has-input="true">
                       <p>In the context of RCS, what is a <em>repo</em>?</p>
                     </question>
@@ -1045,7 +1043,7 @@ Invalid command format: add
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/revisionControl/repositories/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Repositories%%" popup-url="/website/book/revisionControl/repositories" class="algolia-no-index"></panel>
+              <panel src="/website/book/revisionControl/repositories/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Repositories%%" popup-url="/website/book/revisionControl/repositories"></panel>
             </p>
           </div>
           <p></p>
@@ -1058,7 +1056,7 @@ Invalid command format: add
           <p></p>
           <p></p>
           <div>
-            <panel header="%%<md>:fas-paperclip:</md> Git Overview%%" class="non-printable algolia-no-index">
+            <panel header="%%<md>:fas-paperclip:</md> Git Overview%%" class="non-printable">
               <p>Soon you are going to take your first step in using Git. If you would like to see a quick overview of the full Git landscape before jumping in, watch the video below.</p>
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               <p></p>
@@ -1077,7 +1075,7 @@ Invalid command format: add
                   <p>Note: If you are on Windows, you might have to <a href="https://www.howtogeek.com/howto/windows-vista/show-hidden-files-and-folders-in-windows-vista/">configure Windows Explorer to show hidden files</a>.</p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab header="CLI">
                 <div>
                   <p>Open a Git Bash Terminal.</p>
                   <p>If you installed SourceTree, you can click the <code>Terminal</code> button to open a GitBash terminal.</p>
@@ -1138,7 +1136,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                 <p><strong><mark><em>Committing</em></mark> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
                 <p><strong>When ready to commit, we first <mark><em>stage</em></mark> the specific changes we want to commit.</strong> This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
               </tab>
-              <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+              <tab header="<md>:glyphicon-facetime-video:</md>">
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/7exFDGHgQcw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </tab>
             </tabs>
@@ -1160,7 +1158,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/gitAndGithub/init/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Git & GitHub → Init%%" popup-url="/website/book/gitAndGithub/init" class="algolia-no-index"></panel>
+              <panel src="/website/book/gitAndGithub/init/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Git & GitHub → Init%%" popup-url="/website/book/gitAndGithub/init"></panel>
             </p>
           </div>
           <p></p>
@@ -1189,7 +1187,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
                   <p></p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab header="CLI">
                 <div>
                   <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
                   <pre><code class="hljs sh">git status
@@ -1231,7 +1229,7 @@ nothing added to commit but untracked files present (use <span class="hljs-strin
                   <p></p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab header="CLI">
                 <div>
                   <p>You can use the <code>stage</code> or the <code>add</code> command (they are synonyms, <code>add</code> is the more popular choice) to stage files.</p>
                   <pre><code class="hljs sh">git add fruits.txt
@@ -1261,7 +1259,7 @@ git status
                   <p></p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab header="CLI">
                 <div>
                   <p>Use the <code>commit</code> command to commit. The <code>-m</code> switch is used to specify the commit message.</p>
                   <pre><code class="hljs sh">git commit -m <span class="hljs-string">"add fruits.txt"</span>
@@ -1311,7 +1309,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> Revision Control: Saving History" popup-url="/website/book/revisionControl/savingHistory" class="algolia-no-index"></panel>
+              <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> Revision Control: Saving History" popup-url="/website/book/revisionControl/savingHistory"></panel>
             </p>
           </div>
           <p></p>
@@ -1334,7 +1332,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
 </code></pre>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab header="CLI">
                 <div>
                   <p>Create a file named <code>.gitignore</code> in the working directory root and add the following line in it.</p>
                   <pre><code class="hljs">temp.txt
@@ -1377,7 +1375,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
               we are interested in.</p>
             <div>
               <popover id="pop:rcs" placement="top">
-                <div slot="content" class="algolia-no-index">
+                <div slot="content">
                   <div>
                     <p><strong>RCS</strong>: <strong>Revision Control Software</strong> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</p>
                   </div>
@@ -1401,8 +1399,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Saving History%%" popup-url="/website/book/revisionControl/savingHistory"
-                class="algolia-no-index"></panel>
+              <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Saving History%%" popup-url="/website/book/revisionControl/savingHistory"></panel>
             </p>
           </div>
           <p></p>
@@ -1426,7 +1423,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                   <p></p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab header="CLI">
                 <div>
                   <p>To add a tag to the current commit as <code>v1.0</code>,</p>
                   <pre><code class="hljs">git tag –a v1.0
@@ -1462,7 +1459,7 @@ git push origin --tags
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/revisionControl/usingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Using History%%" popup-url="/website/book/revisionControl/usingHistory" class="algolia-no-index"></panel>
+              <panel src="/website/book/revisionControl/usingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Using History%%" popup-url="/website/book/revisionControl/usingHistory"></panel>
             </p>
           </div>
           <p></p>
@@ -1484,7 +1481,7 @@ git push origin --tags
                   <p></p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab header="CLI">
                 <div>
                   <pre><code class="hljs sh">git show &lt; part-of-commit-hash &gt;
 </code></pre>
@@ -1524,7 +1521,7 @@ index 15b57f7..17f4528 100644
                   <p></p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab header="CLI">
                 <div>
                   <p>The <code>diff</code> command can be used to view the differences between two points of the history.</p>
                   <ul>
@@ -1543,7 +1540,7 @@ index 15b57f7..17f4528 100644
             </tabs>
             <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to
               <trigger trigger="click" for="modal:checkout-stash">stash</trigger> them first to prevent them from being overwritten.</p>
-            <modal large title="%%Extract%%" id="modal:checkout-stash" class="algolia-no-index">
+            <modal large title="%%Extract%%" id="modal:checkout-stash">
               <div>
                 <div></div>
                 <p></p>
@@ -1563,7 +1560,7 @@ index 15b57f7..17f4528 100644
                         <tab header="Source Tree">
                           <p>Follow <a href="https://confluence.atlassian.com/sourcetreekb/stash-a-file-with-sourcetree-785332122.html">this article from SourceTree creators</a>. <span class="dimmed">Note the GUI shown in the article is slightly outdated but you should be able to map it to the current GUI.</span></p>
                         </tab>
-                        <tab header="CLI" class="algolia-no-index">
+                        <tab header="CLI">
                           <p>Follow <a href="https://www.atlassian.com/git/tutorials/git-stash">this article from Atlassian</a>.</p>
                         </tab>
                       </tabs>
@@ -1589,7 +1586,7 @@ index 15b57f7..17f4528 100644
                   <p>To go back to the latest commit, double-click it.</p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab header="CLI">
                 <div>
                   <p>Use the <code>checkout &lt;commit-identifier&gt;</code> command to change the working directory to the state it was in at a specific past commit.</p>
                   <ul>
@@ -1611,7 +1608,7 @@ index 15b57f7..17f4528 100644
       </div>
     </panel>
     <p><span id="W2-4j"></span></p>
-    <panel type="seamless" popup-url="/website/book/gitAndGithub/stash" class="algolia-no-index">
+    <panel type="seamless" popup-url="/website/book/gitAndGithub/stash">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.4j</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1636,7 +1633,7 @@ index 15b57f7..17f4528 100644
               <tab header="Source Tree">
                 <p>Follow <a href="https://confluence.atlassian.com/sourcetreekb/stash-a-file-with-sourcetree-785332122.html">this article from SourceTree creators</a>. <span class="dimmed">Note the GUI shown in the article is slightly outdated but you should be able to map it to the current GUI.</span></p>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab header="CLI">
                 <p>Follow <a href="https://www.atlassian.com/git/tutorials/git-stash">this article from Atlassian</a>.</p>
               </tab>
             </tabs>
@@ -1702,8 +1699,7 @@ index 15b57f7..17f4528 100644
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/revisionControl/remoteRepositories/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Remote Respositories%%" popup-url="/website/book/revisionControl/remoteRepositories"
-                  class="algolia-no-index"></panel>
+                <panel src="/website/book/revisionControl/remoteRepositories/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Remote Respositories%%" popup-url="/website/book/revisionControl/remoteRepositories"></panel>
               </p>
             </div>
             <p></p>
@@ -1728,7 +1724,7 @@ index 15b57f7..17f4528 100644
                     <p><code>File</code> → <code>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab header="CLI">
                   <div>
                     <p>You can use the <code>clone</code> command to clone a repo.</p>
                     <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
@@ -1750,7 +1746,7 @@ index 15b57f7..17f4528 100644
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/clone/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Clone%%" popup-url="/website/book/gitAndGithub/clone" class="algolia-no-index"></panel>
+                <panel src="/website/book/gitAndGithub/clone/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Clone%%" popup-url="/website/book/gitAndGithub/clone"></panel>
               </p>
             </div>
             <p></p>
@@ -1766,7 +1762,7 @@ index 15b57f7..17f4528 100644
               <p>Clone the sample repo as explained in
                 <trigger for="modal:clone-repository" trigger="click">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → Git &amp; GitHub → Clone]</trigger>.</p>
               <p>Delete the last two commits to simulate cloning the repo 2 commits ago.</p>
-              <modal title="**Clone Repository**" id="modal:clone-repository" class="algolia-no-index">
+              <modal title="**Clone Repository**" id="modal:clone-repository">
                 <div>
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><div>
@@ -1792,7 +1788,7 @@ index 15b57f7..17f4528 100644
                             <p><code>File</code> → <code>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
                           </div>
                         </tab>
-                        <tab header="CLI" class="algolia-no-index">
+                        <tab header="CLI">
                           <div>
                             <p>You can use the <code>clone</code> command to clone a repo.</p>
                             <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
@@ -1820,7 +1816,7 @@ index 15b57f7..17f4528 100644
                     <p>Arrow marked as <code>a</code>: The local repo is now at this commit, marked by the <code>master</code> label.<br> Arrow marked as <code>b</code>: <code>origin/master</code> label shows what is the latest commit in the <code>master</code>                      branch in the remote repo.</p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab header="CLI">
                   <div>
                     <p>Use the <code>reset</code> command to delete commits at the tip of the revision history.</p>
                     <pre><code class="hljs">git reset --hard HEAD~2
@@ -1841,7 +1837,7 @@ index 15b57f7..17f4528 100644
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab header="CLI">
                   <div>
                     <p><code>git pull origin</code></p>
                   </div>
@@ -1862,7 +1858,7 @@ index 15b57f7..17f4528 100644
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/pull/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Pull%%" popup-url="/website/book/gitAndGithub/pull" class="algolia-no-index"></panel>
+                <panel src="/website/book/gitAndGithub/pull/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Pull%%" popup-url="/website/book/gitAndGithub/pull"></panel>
               </p>
             </div>
             <p></p>
@@ -1881,7 +1877,7 @@ index 15b57f7..17f4528 100644
                 </li>
                 <li>
                   <p>Fork the <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your GitHub account:</p>
-                  <panel type="seamless" header="%%How to fork a repo?%%" class="algolia-no-index">
+                  <panel type="seamless" header="%%How to fork a repo?%%">
                     <p>Navigate to the on GitHub and click on the <img src="/website/book/gitAndGithub/push/images/fork.png" height="30"> button on the top-right corner.</p>
                     <p></p>
                   </panel>
@@ -1909,7 +1905,7 @@ index 15b57f7..17f4528 100644
                     </box>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab header="CLI">
                   <div>
                     <p>Use the command <code>git push origin master</code>. Enter Github username and password when prompted.</p>
                     <box type="warning">
@@ -1919,7 +1915,7 @@ index 15b57f7..17f4528 100644
                 </tab>
               </tabs>
               <p></p>
-              <panel header minimized class="algolia-no-index">
+              <panel header minimized>
                 <span slot="header" class="card-title"><span> Pushing an existing local repo into a new remote repo on GitHub <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                 </span>
                 </span>
@@ -1957,7 +1953,7 @@ index 15b57f7..17f4528 100644
                         <img src="/website/book/gitAndGithub/push/images/pushToRemote.png" width="470"></li>
                     </ol>
                   </tab>
-                  <tab header="CLI" class="algolia-no-index">
+                  <tab header="CLI">
                     <ol>
                       <li>Navigate to the folder containing the local repo.</li>
                       <li>Set the new remote repo as a <em>remote</em> of the local repo.<br> command: <code>git remote add {remote_name} {remote_repo_url}</code><br> e.g., <code>git remote add origin https://github.com/johndoe/foobar.git</code></li>
@@ -2006,7 +2002,7 @@ index 15b57f7..17f4528 100644
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 08 Jan 2020 04:41:37 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -2017,37 +2013,9 @@ index 15b57f7..17f4528 100644
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = false
+  const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
-      indexName: "nus-cs2103-ay1920s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122519234-1');
-</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -26,13 +25,12 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
-      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown text="Schedule" class="nav-link temp-dropdown">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
@@ -49,7 +47,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown text="Links" class="nav-link temp-dropdown">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -75,7 +73,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -98,7 +96,7 @@
           </nav>
           <p></p>
           <h1 id="week-7-mar-2-topics">Week 7 <small><small><span class="dimmed">[Mar 2]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-7-mar-2-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
+          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week7/topics.html#W7-1">W7.1</a>] <strong>Requirements: Use Cases</strong> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -287,7 +285,7 @@
                         <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
                         </popover>]</p>
                       <popover id="pop:actor" title="<md>:glyphicon-eye-open:</md>" placement="top">
-                        <div slot="content" class="algolia-no-index">
+                        <div slot="content">
                           <div>
                             <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
                           </div>
@@ -330,7 +328,7 @@ Extensions:
       Use case ends.
 </pre>
                     </panel>
-                    <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless" class="algolia-no-index">
+                    <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless">
                       <div class="text-monospace">
                         <ul>
                           <li>System: A Learning Management System (LMS)</li>
@@ -352,7 +350,7 @@ Extensions:
                     <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of
                       a system.</p>
                     <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-                    <modal title="**Unified Modeling Language (UML)**" id="modal:uml" class="algolia-no-index">
+                    <modal title="**Unified Modeling Language (UML)**" id="modal:uml">
                       <div>
                         <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
                           Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term
@@ -461,16 +459,16 @@ Extensions:
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                       <div>
-                        <panel header="Q: Use case diagram for a ticket vending machine" class="algolia-no-index">
+                        <panel header="Q: Use case diagram for a ticket vending machine">
                           <question has-input="false">
                             <p>Consider a simple movie ticket vending machine application. Every week, the theatre staff will enter the weekly schedule as well as ticket price for each show. A customer sees the schedule and the ticket price displayed at
                               the machine. There is a slot to insert money, a keypad to enter a code for a movie, a code for the show time, and the number of tickets. A display shows the customer's balance inside the machine. A customer may choose to
                               cancel a transaction before pressing the “buy” button. Printed tickets can be collected from a slot at the bottom of the machine. The machine also displays messages such as &quot;Please enter more money”, “Request fewer tickets&quot;
                               or &quot;SOLD OUT!”. Finally, a &quot;Return Change&quot; button allows the customer to get back his unspent money.</p>
                             <p><strong>Draw a use case diagram for the above requirements.</strong></p>
-                            <div slot="answer" class="algolia-no-index">
+                            <div slot="answer">
                               <img src="/website/book/specifyingRequirements/useCases/identifying/images/ticketMachine.png" width="300">
                               <p></p>
                               <p>Note that most of the details in the description are better given as part of the use case description rather than as low-level use cases in the diagram.</p>
@@ -479,7 +477,7 @@ Extensions:
                         </panel>
                       </div>
                       <div>
-                        <panel header="Q: Use case diagram for QA system" class="algolia-no-index">
+                        <panel header="Q: Use case diagram for QA system">
                           <question has-input="false">
                             <p>A software house wishes to automate its Quality Assurance division.</p>
                             <p>The system is to be used by Testers, Programmers and System Administrators. Only an administrator can create new users and assign tasks to programmers. Any tester can create a bug report, as well as set the status of a bug
@@ -490,7 +488,7 @@ Extensions:
                               awaiting to be assigned to programmers etc.
                             </p>
                             <p><strong>Develop a use case diagram to capture their requirements given below.</strong></p>
-                            <div slot="answer" class="algolia-no-index">
+                            <div slot="answer">
                               <img src="/website/book/specifyingRequirements/useCases/identifying/images/qaSystem.jpg" width="400">
                               <p></p>
                               <p><strong>Explanation</strong>: The given description contains information not relevant to use case modeling. Furthermore, the description is not enough to complete the use case diagram All these are realities of real projects.
@@ -524,10 +522,8 @@ Extensions:
               <div class="indented">
                 <div>
                   <p>
-                    <panel src="/website/book/specifyingRequirements/useCases/introduction/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements → Specifying Requirements → Use Cases → Introduction%%" popup-url="/website/book/specifyingRequirements/useCases/introduction"
-                      class="algolia-no-index"></panel>
-                    <panel src="/website/book/specifyingRequirements/useCases/identifying/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements → Specifying Requirements → Use Cases → Identifying%%" popup-url="/website/book/specifyingRequirements/useCases/identifying"
-                      class="algolia-no-index"></panel>
+                    <panel src="/website/book/specifyingRequirements/useCases/introduction/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements → Specifying Requirements → Use Cases → Introduction%%" popup-url="/website/book/specifyingRequirements/useCases/introduction"></panel>
+                    <panel src="/website/book/specifyingRequirements/useCases/identifying/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements → Specifying Requirements → Use Cases → Identifying%%" popup-url="/website/book/specifyingRequirements/useCases/identifying"></panel>
                   </p>
                 </div>
                 <p></p>
@@ -745,10 +741,10 @@ Extensions:
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                       <div>
                         <link rel="stylesheet" href="/website/book/css/common.css">
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: EZ-Link top-up use case" class="algolia-no-index">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: EZ-Link top-up use case">
                           <question has-input="true">
                             <p>Complete the following use case (MSS, extensions, etc.). Note that you should not blindly follow how the existing
                               <tooltip content="A type of a cash card topup machine">EZ-Link machine</tooltip> operates because it will prevent you from designing a better system. You should consider all possible extensions without complicating the use case too much.</p>
@@ -759,7 +755,7 @@ Extensions:
                                 <li>Actor: EZ-Link card user</li>
                               </ul>
                             </box>
-                            <div slot="answer" class="algolia-no-index">
+                            <div slot="answer">
                               <box>
                                 <div>
                                   <ul>
@@ -854,7 +850,7 @@ Extensions:
                       </div>
                       <div>
                         <link rel="stylesheet" href="/website/book/css/common.css">
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: LearnSys – reply to post use case" class="algolia-no-index">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: LearnSys – reply to post use case">
                           <question has-input="true">
                             <p>Complete the following use case (MSS, extensions, etc.).</p>
                             <box>
@@ -864,7 +860,7 @@ Extensions:
                                 <li>Actor: Student</li>
                               </ul>
                             </box>
-                            <div slot="answer" class="algolia-no-index">
+                            <div slot="answer">
                               <box>
                                 <div>
                                   <ul>
@@ -937,7 +933,7 @@ Extensions:
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Parts of a use case descriptions" class="algolia-no-index">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Parts of a use case descriptions">
                           <question>
                             <p>Which of these cannot appear as part of a use case description?</p>
                             <ul class="task-list">
@@ -950,7 +946,7 @@ Extensions:
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. Extensions</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> h. Inclusions</li>
                             </ul>
-                            <div slot="answer" class="algolia-no-index">
+                            <div slot="answer">
                               <p>(f)</p>
                               <p>Explanation: Performance requirements are non-functional requirements. They are not captured in use cases.</p>
                             </div>
@@ -959,7 +955,7 @@ Extensions:
                       </div>
                       <div>
                         <link rel="stylesheet" href="/website/book/css/common.css">
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What’s wrong with this use case?" class="algolia-no-index">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What’s wrong with this use case?">
                           <question>
                             <p>Identify problems with this use case description.</p>
                             <div>
@@ -1003,7 +999,7 @@ Extensions:
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. No post conditions are given.</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. ‘Use case ends’ is duplicated.</li>
                             </ul>
-                            <div slot="answer" class="algolia-no-index">
+                            <div slot="answer">
                               <p>None.</p>
                               <p>Explanation: Catastrophic failures such as ‘system crash’ need not be included in a use case. A use case is not supposed to contain UI details. Post conditions are optional. It is not a problem to have multiple exit points
                                 for a use case.</p>
@@ -1065,9 +1061,9 @@ Extensions:
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Advantages of use cases" class="algolia-no-index">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Advantages of use cases">
                           <question>
                             <p>What are the advantages of using use cases (the textual form) for requirements modelling?</p>
                             <ul class="task-list">
@@ -1076,14 +1072,14 @@ Extensions:
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Extensions encourage us to consider all situations a software product might face during its operations.</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. They encourage us to identify and optimize the typical scenario of usage over exceptional usage scenarios.</li>
                             </ul>
-                            <div slot="answer" class="algolia-no-index">
+                            <div slot="answer">
                               <p>(a) (b) (c) (d)</p>
                             </div>
                           </question>
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about use cases" class="algolia-no-index">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about use cases">
                           <question>
                             <p>Which of these are correct?</p>
                             <ul class="task-list">
@@ -1092,7 +1088,7 @@ Extensions:
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Use cases are better than user stories.</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Use cases can be expressed at different levels of abstraction.</li>
                             </ul>
-                            <div slot="answer" class="algolia-no-index">
+                            <div slot="answer">
                               <p>(a)(b)(d)</p>
                               <p>Explanation: It is not correct to say one format is better than the other. It depends on the context.</p>
                             </div>
@@ -1245,16 +1241,16 @@ Extensions:
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling levels of alternative designs" class="algolia-no-index">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling levels of alternative designs">
                         <question has-input="true">
                           <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
                           <box>
                             <img src="/website/book/designFundamentals/coupling/what/images/alternativeDesigns.png" height="180">
                             <p></p>
                           </box>
-                          <div slot="answer" class="algolia-no-index">
+                          <div slot="answer">
                             <p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links
                               may be stronger than the others.). However, in <em>x</em>, <code>A</code> is highly-coupled to the rest of the system while <code>B</code>, <code>C</code>, <code>D</code>, and <code>E</code> are standalone (do not depend
                               on anything else). In <em>y</em>, no component is as highly-coupled as <code>A</code> of <em>x</em>. However, only <code>D</code> and <code>E</code> are standalone.</p>
@@ -1263,21 +1259,21 @@ Extensions:
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: regressions and coupling." class="algolia-no-index">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: regressions and coupling.">
                         <question has-input="true">
                           <p>Explain the link (if any) between regressions and coupling.</p>
-                          <div slot="answer" class="algolia-no-index">
+                          <div slot="answer">
                             <p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed">e.g. when component <code>A</code> is modified, all components ‘coupled’ to component <code>A</code> risk ‘unintended behavioral changes’</span>.</p>
                           </div>
                         </question>
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling and testability" class="algolia-no-index">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling and testability">
                         <question has-input="true">
                           <p>Discuss the relationship between coupling and
                             <tooltip content="a measure of how easily a given component can be tested">testability</tooltip>.</p>
-                          <div slot="answer" class="algolia-no-index">
+                          <div slot="answer">
                             <p>Coupling decreases testability because if the
                               <tooltip content="Software Under Test">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
                           </div>
@@ -1285,7 +1281,7 @@ Extensions:
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about coupling" class="algolia-no-index">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about coupling">
                         <question>
                           <p>Choose the correct statements.</p>
                           <ul class="task-list">
@@ -1295,7 +1291,7 @@ Extensions:
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. As coupling increases, integration becomes easier as everything is connected together.</li>
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As coupling increases, maintainability decreases.</li>
                           </ul>
-                          <div slot="answer" class="algolia-no-index">
+                          <div slot="answer">
                             <p>(a)(b)(c)<s>(d)</s>(e)</p>
                             <p>Explanation: High coupling means either more components require to be integrated at once in a big-bang fashion (increasing the risk of things going wrong) or more drivers and stubs are required when integrating incrementally.</p>
                           </div>
@@ -1320,7 +1316,7 @@ Extensions:
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Design Fundamentals → Coupling → What%%" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"></panel>
+                  <panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Design Fundamentals → Coupling → What%%" popup-url="/website/book/designFundamentals/coupling/what"></panel>
                 </p>
               </div>
               <p></p>
@@ -1337,7 +1333,7 @@ Extensions:
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If <code>Foo</code> class calls the method <code>Bar#read()</code>, <code>Foo</code> is coupled to <code>Bar</code> because a change to <code>Bar</code> can potentially
                     (but not always) require a change in the <code>Foo</code> class <span class="dimmed">e.g. if the signature of the <code>Bar#read()</code> is changed, <code>Foo</code> needs to change as well, but a change to the <code>Bar#write()</code> method may not require a change in the <code>Foo</code> class because <code>Foo</code> does not call <code>Bar#write()</code></span>.</p>
-                  <panel type="seamless" header="%%code for the above example%%" class="algolia-no-index">
+                  <panel type="seamless" header="%%code for the above example%%">
                     <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
     ...
     <span class="hljs-keyword">new</span> Bar().read();
@@ -1370,9 +1366,9 @@ Extensions:
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which indicate coupling?" class="algolia-no-index">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which indicate coupling?">
                         <question>
                           <p>Which of these indicate a coupling between components A and B?</p>
                           <ul class="task-list">
@@ -1383,7 +1379,7 @@ Extensions:
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. component A inherits from component B.</li>
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. components A and B have to follow the same data format or communication protocol.</li>
                           </ul>
-                          <div slot="answer" class="algolia-no-index">
+                          <div slot="answer">
                             <p>(a)<s>(b)</s>(c)(d)(e)(f)</p>
                             <p>Explanation: Being written by the same developer does not imply a coupling.</p>
                           </div>
@@ -1397,7 +1393,7 @@ Extensions:
           </div>
         </panel>
         <p><span id="W7-2e"></span></p>
-        <panel type="seamless" popup-url="/website/book/designFundamentals/coupling/types" class="algolia-no-index">
+        <panel type="seamless" popup-url="/website/book/designFundamentals/coupling/types">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.2e</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1407,7 +1403,7 @@ Extensions:
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Design Fundamentals → Coupling → What%%" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"></panel>
+                  <panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Design Fundamentals → Coupling → What%%" popup-url="/website/book/designFundamentals/coupling/what"></panel>
                 </p>
               </div>
               <p></p>
@@ -1483,7 +1479,7 @@ Extensions:
               <div>
                 <p>
                   <panel src="/website/book/designFundamentals/cohesion/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Design Fundamentals → Cohesion →
-What%%" class="algolia-no-index"></panel>
+What%%"></panel>
                 </p>
               </div>
               <p></p>
@@ -1509,9 +1505,9 @@ What%%" class="algolia-no-index"></panel>
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which class is more cohesive?" class="algolia-no-index">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which class is more cohesive?">
                         <question has-input="true">
                           <p>Compare the cohesion of the following two versions of the <code>EmailMessage</code> class. Which one is more cohesive and why?</p>
                           <pre><code class="hljs java"><span class="hljs-comment">// version-1</span>
@@ -1554,7 +1550,7 @@ What%%" class="algolia-no-index"></panel>
     }
 }
 </code></pre>
-                          <div slot="answer" class="algolia-no-index">
+                          <div slot="answer">
                             <p>Version 2 is less cohesive.</p>
                             <p>Explanation: Version 2 is handling functionality related to login, which is not directly related to the concept of ‘email message’ that the class is supposed to represent. On a related note, we can improve the cohesion of both
                               versions by removing the sendMessage functionality. Although sending message is related to emails, this class is supposed to represent an email message, not an email server.</p>
@@ -1590,8 +1586,7 @@ What%%" class="algolia-no-index"></panel>
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/designApproaches/multilevelDesign/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Design Approaches → Multi-Level Design → What%%" popup-url="/website/book/designApproaches/multilevelDesign/what"
-                  class="algolia-no-index"></panel>
+                <panel src="/website/book/designApproaches/multilevelDesign/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Design Approaches → Multi-Level Design → What%%" popup-url="/website/book/designApproaches/multilevelDesign/what"></panel>
               </p>
             </div>
             <p></p>
@@ -1614,16 +1609,16 @@ What%%" class="algolia-no-index"></panel>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which is better?" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which is better?">
                       <question>
                         <p>Top-down design is better than bottom-up design.</p>
                         <ul radio-group="81698" class="radio-list">
                           <li class="radio-list-item"><label><input class="radio-list-input" name="81698" type="radio"> True</label></li>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="81698" type="radio"> False</label></li>
                         </ul>
-                        <div slot="answer" class="algolia-no-index">
+                        <div slot="answer">
                           <p>False</p>
                           <p>Explanation: Not necessarily. It depends on the situation. Bottom-up design may be preferable when there are lot of existing components we want to reuse.</p>
                         </div>
@@ -1666,16 +1661,16 @@ What%%" class="algolia-no-index"></panel>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statement about agile design" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statement about agile design">
                       <question>
                         <p>Agile design camp expects the design to change over the product’s lifetime.</p>
                         <ul radio-group="07214" class="radio-list">
                           <li class="radio-list-item"><label><input class="radio-list-input" name="07214" type="radio"> True</label></li>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="07214" type="radio"> False</label></li>
                         </ul>
-                        <div slot="answer" class="algolia-no-index">
+                        <div slot="answer">
                           <p>True</p>
                           <p>Explanation: Yes, that is why they do not believe in spending too much time creating a detailed and full design at the very beginning. However, the architecture is expected to remain relatively stable even in the agile design
                             approach.
@@ -1702,7 +1697,7 @@ What%%" class="algolia-no-index"></panel>
   </span>
   <div class="indented-level1">
     <p><span id="W7-4a"></span></p>
-    <panel type="seamless" popup-url="/website/book/intellij/productivityShortcuts" class="algolia-no-index">
+    <panel type="seamless" popup-url="/website/book/intellij/productivityShortcuts">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.4a</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1750,7 +1745,7 @@ What%%" class="algolia-no-index"></panel>
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/integration/introduction/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Implementation → Integration → Introduction → What%%" popup-url="/website/book/integration/introduction/what" class="algolia-no-index"></panel>
+                <panel src="/website/book/integration/introduction/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Implementation → Integration → Introduction → What%%" popup-url="/website/book/integration/introduction/what"></panel>
               </p>
             </div>
             <p></p>
@@ -1817,13 +1812,13 @@ What%%" class="algolia-no-index"></panel>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                   <div>
-                    <panel header="Q: Big-bang integration in school projects" class="algolia-no-index">
+                    <panel header="Q: Big-bang integration in school projects">
                       <question has-input="true">
                         <p>Give two arguments in support and two arguments against the following statement.</p>
                         <p><em>Because there is no external client, it is OK to use big bang integration for a school project.</em></p>
-                        <div slot="answer" class="algolia-no-index">
+                        <div slot="answer">
                           <p>Arguments for:</p>
                           <ul>
                             <li>It is relatively simple; even big-bang can succeed.</li>
@@ -1847,7 +1842,7 @@ What%%" class="algolia-no-index"></panel>
         </div>
       </panel>
       <p><span id="W7-5c"></span></p>
-      <panel type="seamless" popup-url="/website/book/integration/approaches/topDownVsBottomUp" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/integration/approaches/topDownVsBottomUp">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.5c</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1857,8 +1852,7 @@ What%%" class="algolia-no-index"></panel>
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/integration/approaches/bigBangVsIncremental/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Implementation → Integration → Approaches → Big-Bang Vs Incremental%%" popup-url="/website/book/integration/approaches/bigBangVsIncremental"
-                  class="algolia-no-index"></panel>
+                <panel src="/website/book/integration/approaches/bigBangVsIncremental/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Implementation → Integration → Approaches → Big-Bang Vs Incremental%%" popup-url="/website/book/integration/approaches/bigBangVsIncremental"></panel>
               </p>
             </div>
             <p></p>
@@ -1878,7 +1872,7 @@ What%%" class="algolia-no-index"></panel>
                 is that this requires the use of
                 <trigger for="pop:topdown-stub">stubs</trigger> in place of lower level components until the real lower-level components are integrated to the system. Otherwise, higher-level components cannot function as they depend on lower level ones.</p>
               <popover id="pop:topdown-stub" title="<md>:glyphicon-eye-open:</md>" placement="top">
-                <div slot="content" class="algolia-no-index">
+                <div slot="content">
                   <div>
                     <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of
                       predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
@@ -1896,9 +1890,9 @@ What%%" class="algolia-no-index"></panel>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Suggest an integration strategy" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Suggest an integration strategy">
                       <question has-input="true">
                         <p>Suggest an integration strategy for the system represented by following diagram. You need not follow a strict top-down, bottom-up, sandwich, or big bang approach. Dashed arrows represent dependencies between classes.</p>
                         <p>Also take into account the following facts in your test strategy.</p>
@@ -1910,7 +1904,7 @@ What%%" class="algolia-no-index"></panel>
                         </ul>
                         <img src="/website/book/integration/approaches/topDownVsBottomUp/images/hospital.png" height="250">
                         <p></p>
-                        <div slot="answer" class="algolia-no-index">
+                        <div slot="answer">
                           <p>There can be many acceptable answers to this question. But any good strategy should consider at least some of the below.</p>
                           <ul>
                             <li>Because <code>HospitalUI</code> will be developed early, it’s OK to integrate it early, using stubs, rather than wait for the rest of the system to finish. (i.e. a top-down integration is suitable for <code>HospitalUI</code>)</li>
@@ -1928,14 +1922,14 @@ What%%" class="algolia-no-index"></panel>
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Integration order" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Integration order">
                       <question has-input="false">
                         <p>Consider the architecture given below. Describe the order in which components will be integrated with one another if the following integration strategies were adopted.</p>
                         <p>a) top-down b) bottom-up c) sandwich</p>
                         <p>Note that dashed arrows show dependencies (e.g. A depend on B, C, D and therefore, higher-level than B, C and D).</p>
                         <img src="/website/book/integration/approaches/topDownVsBottomUp/images/abc.png" height="190">
                         <p></p>
-                        <div slot="answer" class="algolia-no-index">
+                        <div slot="answer">
                           <p>a) Diagram:</p>
                           <img src="/website/book/integration/approaches/topDownVsBottomUp/images/aAnswer.png" height="230">
                           <p></p>
@@ -2271,9 +2265,9 @@ What%%" class="algolia-no-index"></panel>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one is not a well-defined task?" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one is not a well-defined task?">
                       <question>
                         <p>Which one these project tasks is not well-defined?</p>
                         <ul radio-group="9211e" class="radio-list">
@@ -2283,7 +2277,7 @@ What%%" class="algolia-no-index"></panel>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> d. Choose a tool to draw UML diagrams.</label></li>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> e. Clarify submission requirements with the customer.</label></li>
                         </ul>
-                        <div slot="answer" class="algolia-no-index">
+                        <div slot="answer">
                           <p>(c)</p>
                           <p>Explanation: ‘More testing’ is not well-defined. How much is ‘more’? ‘Test the delete functionality’ is a better-defined task.</p>
                         </div>
@@ -2297,7 +2291,7 @@ What%%" class="algolia-no-index"></panel>
         </div>
       </panel>
       <p><span id="W7-6e"></span></p>
-      <panel type="seamless" popup-url="/website/book/projectPlanning/ganttCharts" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/projectPlanning/ganttCharts">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.6e</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -2329,7 +2323,7 @@ What%%" class="algolia-no-index"></panel>
         </div>
       </panel>
       <p><span id="W7-6f"></span></p>
-      <panel type="seamless" popup-url="/website/book/projectPlanning/pertCharts" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/projectPlanning/pertCharts">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.6f</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -2416,9 +2410,9 @@ What%%" class="algolia-no-index"></panel>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which team structure is the most suitable for a school project?" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which team structure is the most suitable for a school project?">
                       <question>
                         <p>Which team structure is the most suitable for a school project?</p>
                         <ul radio-group="8ee7d" class="radio-list">
@@ -2426,7 +2420,7 @@ What%%" class="algolia-no-index"></panel>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="8ee7d" type="radio"> b. Chief programmer</label></li>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="8ee7d" type="radio"> c. Strict hierarchy</label></li>
                         </ul>
-                        <div slot="answer" class="algolia-no-index">
+                        <div slot="answer">
                           <p>(a)</p>
                           <p>Explanation: Given that students are all peers and beginners, Egoless team structure seems most suitable for a school project. However, given school projects are low-stakes, short-lived, and small, even the other two team structures
                             can be used for them.</p>
@@ -2507,7 +2501,7 @@ What%%" class="algolia-no-index"></panel>
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Revision Control → Forking Workflow%%" popup-url="/website/book/revisionControl/forkingWorkflow" class="algolia-no-index"></panel>
+                <panel src="/website/book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Revision Control → Forking Workflow%%" popup-url="/website/book/revisionControl/forkingWorkflow"></panel>
               </p>
             </div>
             <p></p>
@@ -2611,7 +2605,7 @@ What%%" class="algolia-no-index"></panel>
         </div>
       </panel>
       <p><span id="W7-7d"></span></p>
-      <panel type="seamless" popup-url="/website/book/revisionControl/featureBranchFlow" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/revisionControl/featureBranchFlow">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.7d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -2621,7 +2615,7 @@ What%%" class="algolia-no-index"></panel>
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Revision Control → Forking Workflow%%" popup-url="/website/book/revisionControl/forkingWorkflow" class="algolia-no-index"></panel>
+                <panel src="/website/book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Revision Control → Forking Workflow%%" popup-url="/website/book/revisionControl/forkingWorkflow"></panel>
               </p>
             </div>
             <p></p>
@@ -2652,7 +2646,7 @@ What%%" class="algolia-no-index"></panel>
         </div>
       </panel>
       <p><span id="W7-7e"></span></p>
-      <panel type="seamless" popup-url="/website/book/revisionControl/centralizedFlow" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/revisionControl/centralizedFlow">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.7e</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -2662,7 +2656,7 @@ What%%" class="algolia-no-index"></panel>
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/revisionControl/featureBranchFlow/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Revision Control → Feature Branch Workflow%%" popup-url="/website/book/revisionControl/featureBranchFlow" class="algolia-no-index"></panel>
+                <panel src="/website/book/revisionControl/featureBranchFlow/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Revision Control → Feature Branch Workflow%%" popup-url="/website/book/revisionControl/featureBranchFlow"></panel>
               </p>
             </div>
             <p></p>
@@ -2734,7 +2728,7 @@ What%%" class="algolia-no-index"></panel>
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 08 Jan 2020 04:41:37 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -2745,37 +2739,9 @@ What%%" class="algolia-no-index"></panel>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = false
+  const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
-      indexName: "nus-cs2103-ay1920s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122519234-1');
-</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

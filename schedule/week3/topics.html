@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -26,13 +25,12 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
-      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown text="Schedule" class="nav-link temp-dropdown">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
@@ -49,7 +47,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown text="Links" class="nav-link temp-dropdown">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -75,7 +73,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -98,7 +96,7 @@
           </nav>
           <p></p>
           <h1 id="week-3-jan-27-topics">Week 3 <small><small><span class="dimmed">[Jan 27]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-3-jan-27-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
+          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week3/topics.html#W3-1">W3.1</a>] <strong>Java</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
@@ -584,7 +582,7 @@ second line
     }
 }
 </code></pre>
-                    <panel type="seamless" header="`Formatter` class" class="algolia-no-index">
+                    <panel type="seamless" header="`Formatter` class">
                       <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
@@ -703,7 +701,7 @@ second line
                 </blockquote>
                 <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
                 <popover id="pop:production-code" title="<md>:glyphicon-eye-open:</md> Production Code" placement="top">
-                  <div slot="content" class="algolia-no-index">
+                  <div slot="content">
                     Code being used in an actual product with actual users
                   </div>
                 </popover>
@@ -739,9 +737,9 @@ second line
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is the recommended approach regarding coding standards?" class="algolia-no-index">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is the recommended approach regarding coding standards?">
                         <question>
                           <p>What is the recommended approach regarding coding standards?</p>
                           <ul radio-group="5c5a1" class="radio-list">
@@ -750,14 +748,14 @@ second line
                             <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
                             <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                           </ul>
-                          <div slot="answer" class="algolia-no-index">
+                          <div slot="answer">
                             <p>c</p>
                           </div>
                         </question>
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md> What is the aim? What is the value?" class="algolia-no-index">
+                      <panel header="<md>:glyphicon-question-sign:</md> What is the aim? What is the value?">
                         <question has-input>
                           <p>What is the aim of using a coding standard? How does it help?</p>
                         </question>
@@ -844,12 +842,12 @@ second line
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: implications of developers testing their own code" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: implications of developers testing their own code">
                       <question has-input="true">
                         <p>Discuss pros and cons of developers testing their own code.</p>
-                        <div slot="answer" class="algolia-no-index">
+                        <div slot="answer">
                           <p>Pros:</p>
                           <ul>
                             <li>Can be done early (the earlier we find a bug, the cheaper it is to fix).</li>
@@ -869,21 +867,21 @@ second line
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Cost of bug fixing over time" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Cost of bug fixing over time">
                       <question>
                         <p>The cost of fixing a bug goes down as we reach the product release.</p>
                         <ul radio-group="37242" class="radio-list">
                           <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> True</label></li>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> False</label></li>
                         </ul>
-                        <div slot="answer" class="algolia-no-index">
+                        <div slot="answer">
                           <p>False. The cost goes up over time.</p>
                         </div>
                       </question>
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> Why early testing?" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md> Why early testing?">
                       <question has-input="true">
                         <p>Explain why early testing by developers is important.</p>
                       </question>
@@ -1097,7 +1095,7 @@ second line
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-paperclip:</md> Resources" class="algolia-no-index">
+              <panel header="<md>:fas-paperclip:</md> Resources">
                 <p><strong>Side readings:</strong></p>
                 <ul>
                   <li>[Web article] <a href="http://blog.goyello.com/2011/10/06/three-pillars-of-unit-tests">The three pillars of unit testing</a> - A short article about what makes a good unit test.</li>
@@ -1229,8 +1227,7 @@ second line
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Quality Assurance → Testing → Unit Testing → What →%%" popup-url="/website/book/testing/testingTypes/unitTesting/what"
-                class="algolia-no-index"></panel>
+              <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Quality Assurance → Testing → Unit Testing → What →%%" popup-url="/website/book/testing/testingTypes/unitTesting/what"></panel>
             </p>
           </div>
           <p></p>
@@ -1332,16 +1329,16 @@ String name = logic.getName(<span class="hljs-number">23</span>);
               </panel>
             </div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Purpose of stubs" class="algolia-no-index">
+                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Purpose of stubs">
                     <question>
                       <p>Stubs help us to test a component in isolation from its dependencies.</p>
                       <ul radio-group="a0303" class="radio-list">
                         <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> True</label></li>
                         <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> False</label></li>
                       </ul>
-                      <div slot="answer" class="algolia-no-index">
+                      <div slot="answer">
                         <p>True</p>
                       </div>
                     </question>
@@ -1420,16 +1417,16 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> What is branching?" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md> What is branching?">
                       <question has-input="true">
                         <p>In the context of RCS, what is the <em>branching</em>? What is the need for branching?.</p>
                       </question>
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> What is merging?" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md> What is merging?">
                       <question has-input="true">
                         <p>In the context of RCS, what is the <em>merging</em> branches? How can it lead to <em>merge conflicts</em>?.</p>
                       </question>
@@ -1451,7 +1448,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/revisionControl/branching/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Branching%%" popup-url="/website/book/revisionControl/branching" class="algolia-no-index"></panel>
+                <panel src="/website/book/revisionControl/branching/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Branching%%" popup-url="/website/book/revisionControl/branching"></panel>
               </p>
             </div>
             <p></p>
@@ -1472,7 +1469,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab header="CLI">
                   <div>
                     <pre><code class="hljs">git status
 </code></pre>
@@ -1495,7 +1492,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab header="CLI">
                   <div>
                     <p>You can use the <code>branch</code> command to create a new branch and the <code>checkout</code> command to switch to a specific branch.</p>
                     <pre><code class="hljs">git branch feature1
@@ -1517,7 +1514,7 @@ git checkout feature1
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab header="CLI">
                   <div>
                     <pre><code class="hljs">git checkout master
 </code></pre>
@@ -1537,7 +1534,7 @@ git checkout feature1
                     <p>Right-click on the <code>master</code> branch and choose <code>merge master into the current branch</code>. Click <code>OK</code> in the next dialog.</p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab header="CLI">
                   <div>
                     <pre><code class="hljs">git merge master
 </code></pre>
@@ -1554,7 +1551,7 @@ git checkout feature1
                 <tab header="SourceTree">
                   <p>Right-click on the <code>feature1</code> branch and choose <code>Merge...</code>.</p>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab header="CLI">
                   <pre><code class="hljs">git merge feature1
 </code></pre>
                 </tab>
@@ -1580,7 +1577,7 @@ git checkout feature1
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab header="CLI">
                   <div>
                     <p>Use the <code>--no-ff</code> switch (short for <em>no fast forward</em>):</p>
                     <pre><code class="hljs">git merge --no-ff add-countries
@@ -1603,7 +1600,7 @@ git checkout feature1
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"></panel>
+                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch"></panel>
               </p>
             </div>
             <p></p>
@@ -1683,7 +1680,7 @@ white
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"></panel>
+                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch"></panel>
               </p>
             </div>
             <p></p>
@@ -1710,7 +1707,7 @@ This repo can be used to practice creating PRs.
                   <img src="/website/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
                   <p></p>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab header="CLI">
                   <pre><code class="hljs">git push origin add-intro
 </code></pre>
                 </tab>
@@ -1796,7 +1793,7 @@ This repo can be used to practice creating PRs.
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 08 Jan 2020 04:41:37 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -1807,37 +1804,9 @@ This repo can be used to practice creating PRs.
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = false
+  const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
-      indexName: "nus-cs2103-ay1920s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122519234-1');
-</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

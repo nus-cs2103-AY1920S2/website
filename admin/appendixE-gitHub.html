@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../markbind/css/page-nav.css">
@@ -26,13 +25,12 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
-      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown text="Schedule" class="nav-link temp-dropdown">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
@@ -49,7 +47,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown text="Links" class="nav-link temp-dropdown">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -75,7 +73,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -218,7 +216,7 @@
                     <li>Upload a profile photo that matches
                       <trigger trigger="click" for="modal:creatingGitHubAccount-photoCriteria">our requirements</trigger>.</li>
                   </ul>
-                  <panel type="seamless" header="%%Why am I being encouraged to complete my GitHub profile?%%" class="algolia-no-index">
+                  <panel type="seamless" header="%%Why am I being encouraged to complete my GitHub profile?%%">
                     <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub
                       account just for the module.</p>
                   </panel>
@@ -228,7 +226,7 @@
                     please let us know immediately.</p>
                 </li>
               </ol>
-              <modal large title="Our requirements for the profile photo" id="modal:creatingGitHubAccount-photoCriteria" class="algolia-no-index">
+              <modal large title="Our requirements for the profile photo" id="modal:creatingGitHubAccount-photoCriteria">
 
                 <div>
                   <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen
@@ -324,7 +322,7 @@
                 <p>
                   <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Read <trigger trigger="click" for="modal:appE-reusePolicy">our reuse policy <span class="dimmed">(in Admin: Appendix B)</span></trigger></strong>,
                   in particular, <mark>how to give credit when you reuse code from the Internet or classmates</mark>:</p>
-                <modal large title="Admin <md>:glyphicon-log-in:</md> Appendix E → Setting Git Username to Match GitHub Username" id="modal:appE-gitUsername" class="algolia-no-index">
+                <modal large title="Admin <md>:glyphicon-log-in:</md> Appendix E → Setting Git Username to Match GitHub Username" id="modal:appE-gitUsername">
 
                   <div>
                     <p><strong>Set Git <code>user.name</code></strong>: We use various tools to analyze your code. For us to be able to identify your commits, we encourage you to <mark>set your Git <code>user.name</code> in all computers you use</mark> to
@@ -338,7 +336,7 @@
                     <p>More info about setting Git username is <a href="https://help.github.com/articles/setting-your-username-in-git/">here</a>.</p>
                   </div>
                 </modal>
-                <modal large title="Admin <md>:glyphicon-log-in:</md> Appendix B: Policies → Policy on Reuse" id="modal:appE-reusePolicy" class="algolia-no-index">
+                <modal large title="Admin <md>:glyphicon-log-in:</md> Appendix B: Policies → Policy on Reuse" id="modal:appE-reusePolicy">
 
                   <div>
                     <h3 id="policy-on-reuse">Policy on reuse <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
@@ -411,7 +409,7 @@ Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;Cu
                             </li>
                           </ul>
                         </box>
-                        <modal large title="Admin <md>:glyphicon-log-in:</md> Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags" class="algolia-no-index">
+                        <modal large title="Admin <md>:glyphicon-log-in:</md> Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags">
 
                           <div>
                             <h4 id="adding-author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship<a class="fa fa-anchor" href="#adding-author-tags-indicate-authorship"></a></h4>
@@ -525,7 +523,7 @@ method 2 ...
                             </ul>
                           </div>
                         </modal>
-                        <modal large title="Admin <md>:glyphicon-log-in:</md> Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp" class="algolia-no-index">
+                        <modal large title="Admin <md>:glyphicon-log-in:</md> Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp">
 
                           <div>
                             <div>
@@ -556,11 +554,11 @@ method 2 ...
                                   </ul>
                                 </li>
                               </ul>
-                              <modal large title="Team-Based Tasks" id="modal:deliverablesPPP-teamTasks" class="algolia-no-index">
+                              <modal large title="Team-Based Tasks" id="modal:deliverablesPPP-teamTasks">
                                 <div>
                                   <box>
                                     <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
-                                    <panel type="seamless" header="<md>:fas-cube:</md> Examples of team-tasks" class="algolia-no-index">
+                                    <panel type="seamless" header="<md>:fas-cube:</md> Examples of team-tasks">
                                       <span id="example-team-tasks">
 <p>Here is a non-exhaustive list of team-tasks:</p>
 <ol>
@@ -679,7 +677,7 @@ method 2 ...
                   <li>After merging a PR, close the corresponding issue.<br>
                     <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span> PRO TIP</span> You can use GitHub's <a href="https://help.github.com/en/articles/closing-issues-using-keywords"><code>Fixes #123</code> trick</a>                    to get the issue to close automatically when the PR is merged.</li>
                 </ul>
-                <modal large title="TextBook <md>:glyphicon-log-in:</md>" id="modal:appErecommendedWorkflow-forkingworkflow" class="algolia-no-index">
+                <modal large title="TextBook <md>:glyphicon-log-in:</md>" id="modal:appErecommendedWorkflow-forkingworkflow">
 
                   <div>
                     <div></div>
@@ -745,7 +743,7 @@ method 2 ...
                 <ul>
                   <li>Use GitHub's <a href="https://help.github.com/articles/about-protected-branches/"><em>Protected Branches</em></a> feature to protect your <code>master</code> branch against rogue PRs.</li>
                 </ul>
-                <modal title="Admin <md>:glyphicon-log-in:</md> Project Grading → Expectation on testing" id="modal:appEworkflow-testingExpectations" class="algolia-no-index">
+                <modal title="Admin <md>:glyphicon-log-in:</md> Project Grading → Expectation on testing" id="modal:appEworkflow-testingExpectations">
 
                   <div>
                     <ul>
@@ -956,7 +954,7 @@ method 2 ...
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 08 Jan 2020 04:41:37 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -967,37 +965,9 @@ method 2 ...
 <script src="../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = false
+  const enableSearch = true
 </script>
 <script src="../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
-      indexName: "nus-cs2103-ay1920s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122519234-1');
-</script>
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

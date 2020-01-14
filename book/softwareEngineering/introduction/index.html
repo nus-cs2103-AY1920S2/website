@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
 
@@ -95,7 +94,7 @@
                         of an implementation must be measured against other existing implementations, not against unrealized concepts. The challenge and the mission are to find real solutions to real problems on actual schedules with available resources.</p>
                       <p>This then is programming, both a tar pit in which many efforts have floundered and a creative activity with joys and woes all its own. For many, the joys far outweigh the woes....</p>
                     </blockquote>
-                    <modal title="**:book: The Mythical Man-Month: Essays on Software Engineering**" id="modal:mmm" class="algolia-no-index">
+                    <modal title="**:book: The Mythical Man-Month: Essays on Software Engineering**" id="modal:mmm">
                       <table>
                         <tr>
                           <td>
@@ -118,12 +117,12 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: SE vs Civil Engineering" class="algolia-no-index">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: SE vs Civil Engineering">
                             <question has-input="true">
                               <p>Compare Software Engineering with Civil Engineering in terms of how work products in CE (i.e. buildings) differ from those of SE (i.e. software).</p>
-                              <div slot="answer" class="algolia-no-index">
+                              <div slot="answer">
                                 <div class="table-responsive">
                                   <table class="markbind-table table table-bordered table-striped">
                                     <thead>
@@ -189,10 +188,10 @@
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Software vs Bridges" class="algolia-no-index">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Software vs Bridges">
                             <question has-input="true">
                               <p>Comment on this statement: Building software is cheaper and easier than building bridges (all we need is a PC!).</p>
-                              <div slot="answer" class="algolia-no-index">
+                              <div slot="answer">
                                 <p>Depends on the size of the software. Manpower required for software is very costly. On the other hand, we can create a very valuable software (e.g. an iPhone application that can make million dollars in a month) with a
                                   just a PC and a few days of work!</p>
                               </div>
@@ -200,10 +199,10 @@
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coding as a manufacturing activity" class="algolia-no-index">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coding as a manufacturing activity">
                             <question has-input="true">
                               <p>Justify this statement: Coding is still a ‘design’ activity, not a ‘manufacturing’ activity. You may use a comparison (or an analogy) of Software engineering versus Civil Engineering to argue this point.</p>
-                              <div slot="answer" class="algolia-no-index">
+                              <div slot="answer">
                                 <p>Arguments to support this statement:</p>
                                 <ul>
                                   <li>If coding is a manufacturing activity, we should be able to do it using robotic machines (just like in the car industry) or low-skilled laborers (like in the construction industry).</li>
@@ -216,14 +215,14 @@
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> List pros and cons of SE" class="algolia-no-index">
+                          <panel header="<md>:glyphicon-question-sign:</md> List pros and cons of SE">
                             <question has-input="true">
                               <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
                             </question>
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one of these is not included in Brook’s list of ‘Woes of the Craft’?" class="algolia-no-index">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one of these is not included in Brook’s list of ‘Woes of the Craft’?">
                             <question>
                               <ul class="task-list">
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Need for perfection when developing software</li>
@@ -233,7 +232,7 @@
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Seemingly never ending effort required for testing and debugging software</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Fast moving industry making our work obsolete quickly</li>
                               </ul>
-                              <div slot="answer" class="algolia-no-index">
+                              <div slot="answer">
                                 <p>(c)</p>
                               </div>
                             </question>
@@ -260,37 +259,9 @@
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = false
+  const enableSearch = true
 </script>
 <script src="../../../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
-      indexName: "nus-cs2103-ay1920s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122519234-1');
-</script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

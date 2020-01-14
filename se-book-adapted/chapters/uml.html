@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -25,13 +24,12 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
-      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown text="Schedule" class="nav-link temp-dropdown">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
@@ -48,7 +46,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown text="Links" class="nav-link temp-dropdown">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -74,7 +72,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -267,7 +265,7 @@
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <code>Table</code> class shown in UML notation:</p>
             <img src="/website/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
             <p></p>
-            <panel type="seamless" header="The equivalent code" class="algolia-no-index">
+            <panel type="seamless" header="The equivalent code">
               <div class="alt-java">
                 <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
 
@@ -312,7 +310,7 @@
             <li><code>#</code> : protected</li>
             <li><code>~</code> : package private</li>
           </ul>
-          <panel type="seamless" header="How visibilities map to programming language features" class="algolia-no-index">
+          <panel type="seamless" header="How visibilities map to programming language features">
             <div class="table-responsive">
               <table class="markbind-table table table-bordered table-striped">
                 <thead>
@@ -357,9 +355,9 @@
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which classes are correct?" class="algolia-no-index">
+                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which classes are correct?">
                   <question>
                     <p>Which of these follow the correct UML notation?</p>
                     <img src="/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg" height="130">
@@ -371,7 +369,7 @@
                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 4</li>
                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> 5</li>
                     </ul>
-                    <div slot="answer" class="algolia-no-index">
+                    <div slot="answer">
                       <ol>
                         <li>Incorrect : <em>Attributes</em> compartment should be above the <em>Methods</em> compartment.</li>
                         <li>Incorrect : All attributes should be inside the same compartment.</li>
@@ -384,7 +382,7 @@
                 </panel>
               </div>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md> Draw Car class" class="algolia-no-index">
+                <panel header="<md>:glyphicon-question-sign:</md> Draw Car class">
                   <question>
                     <p>Draw a UML diagram to represent the <code>Car</code> class as given below. Include visibilities.</p>
                     <div class="alt-java">
@@ -513,9 +511,9 @@
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What does the navigability given by this diagram mean?" class="algolia-no-index">
+              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What does the navigability given by this diagram mean?">
                 <question>
                   <img src="/website/book/uml/classDiagrams/associations/navigability/images/unitItem.png" height="100">
                   <p></p>
@@ -524,7 +522,7 @@
                     <li class="radio-list-item"><label><input class="radio-list-input" name="77f6d" type="radio"> b. An <code>Item</code> object knows about the <code>Unit</code> object it is linked to</label></li>
                     <li class="radio-list-item"><label><input class="radio-list-input" name="77f6d" type="radio"> c. Depends on the programming language</label></li>
                   </ul>
-                  <div slot="answer" class="algolia-no-index">
+                  <div slot="answer">
                     <p>(a)</p>
                     <p>Explanation: The diagram indicates that <code>Unit</code> object should know about the <code>Item</code> object. In the implementation, the <code>Unit</code> object will hold a <code>Unit</code> object in one of its variables.</p>
                   </div>
@@ -667,9 +665,9 @@
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which statement agrees with the  multiplicity shown in this diagram?" class="algolia-no-index">
+              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which statement agrees with the  multiplicity shown in this diagram?">
                 <question>
                   <img src="/website/book/uml/classDiagrams/associations/multiplicity/images/unitItem.png" height="100">
                   <p></p>
@@ -679,7 +677,7 @@
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A <code>Unit</code> object must be linked 1,2,3, or 4 <code>Item</code> objects</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A <code>Item</code> object can be 0 or more <code>Unit</code> objects.</li>
                   </ul>
-                  <div slot="answer" class="algolia-no-index">
+                  <div slot="answer">
                     <p>(c)(d)</p>
                   </div>
                 </question>
@@ -791,7 +789,7 @@
             <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
               <div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md> Define WeekDay Enum" class="algolia-no-index">
+                  <panel header="<md>:glyphicon-question-sign:</md> Define WeekDay Enum">
                     <question has-input="true">
                       <p>Show (in UML notation) an enumeration called <code>WeekDay</code> to use when the value can only be <code>Monday</code> ... <code>Friday</code>.</p>
                     </question>
@@ -928,16 +926,16 @@
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one is not recommended to use?" class="algolia-no-index">
+                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one is not recommended to use?">
                   <question>
                     <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
                     <ul radio-group="29b56" class="radio-list">
                       <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> a. Composition symbol</label></li>
                       <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> b. Aggregation symbol</label></li>
                     </ul>
-                    <div slot="answer" class="algolia-no-index">
+                    <div slot="answer">
                       <p>(b)</p>
                     </div>
                   </question>
@@ -1061,9 +1059,9 @@
         <div></div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Class Diagram for code" class="algolia-no-index">
+                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Class Diagram for code">
                   <question>
                     <div class="alt-java">
                       <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running <code>Main#main()</code>.</p>
@@ -1154,13 +1152,13 @@ item2.add_previous_box(box1);
 item2.add_previous_box(box2);
 </code></pre>
                     </div>
-                    <div slot="answer" class="algolia-no-index">
+                    <div slot="answer">
                       <img src="/website/book/uml/classDiagrams/combine/basic/images/classDiagramForCodeAnswer.png" width="600"></div>
                   </question>
                 </panel>
               </div>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md> Implement Class Diagram" class="algolia-no-index">
+                <panel header="<md>:glyphicon-question-sign:</md> Implement Class Diagram">
                   <question>
                     <p>Implement the class structure given below:</p>
                     <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
@@ -1169,7 +1167,7 @@ item2.add_previous_box(box2);
                 </panel>
               </div>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md> Draw an Object Diagrams for the Class Diagram (Person-Guardian)" class="algolia-no-index">
+                <panel header="<md>:glyphicon-question-sign:</md> Draw an Object Diagrams for the Class Diagram (Person-Guardian)">
                   <question>
                     <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p>
                     <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
@@ -1193,7 +1191,7 @@ item2.add_previous_box(box2);
                         <p><code>Alfred</code> has a an office address at <code>Wayne Industries</code> building which is different from his home address (i.e. <code>Bat Cave</code>).</p>
                       </li>
                     </ol>
-                    <div slot="hint" class="algolia-no-index">
+                    <div slot="hint">
                       <p>After step 2, the diagram should be like this:</p>
                       <img src="/website/book/uml/classDiagrams/combine/basic/images/objectDiagramsForClassDiagramHint.png" width="600"></div>
                   </question>
@@ -1639,9 +1637,9 @@ item2.add_previous_box(box2);
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md> Draw Car object" class="algolia-no-index">
+                <panel header="<md>:glyphicon-question-sign:</md> Draw Car object">
                   <question>
                     <p>Draw a UML diagram to represent the <code>Car</code> object created by the following code.</p>
                     <div class="alt-java">
@@ -1728,7 +1726,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
           <p></p>
           <div>
             <p><strong><trigger trigger="click" for="modal:modelingAd-uml">UML</trigger> <em> activity diagrams</em> (AD) can model workflows. </strong> <span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
-            <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml" class="algolia-no-index">
+            <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml">
               <div>
                 <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,
                   Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML).
@@ -1776,9 +1774,9 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?" class="algolia-no-index">
+                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?">
                     <question>
                       <p>Which of these activity diagrams use the correct UML notation?</p>
                       <ul class="task-list">
@@ -1790,7 +1788,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                       </ul>
                       <img src="/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png" width="500">
                       <p></p>
-                      <div slot="answer" class="algolia-no-index">
+                      <div slot="answer">
                         <ul>
                           <li>i : 👍 Correct. The arrow-head type does not matter.</li>
                           <li>ii : Incorrect. The start and end node notation is swapped.</li>
@@ -1834,9 +1832,9 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?" class="algolia-no-index">
+                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?">
                     <question>
                       <p>Which of these activity diagrams use the correct UML notation?</p>
                       <ul class="task-list">
@@ -1850,7 +1848,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                       <img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation1.png" width="500">
                       <img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation2.png" width="500">
                       <p></p>
-                      <div slot="answer" class="algolia-no-index">
+                      <div slot="answer">
                         <ul>
                           <li>i : 👍 Correct. There can be more than two alternate paths.</li>
                           <li>ii : 👍 Correct. An alternate path can divide into more branches.</li>
@@ -1895,9 +1893,9 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?" class="algolia-no-index">
+                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?">
                     <question>
                       <p>Which of these activity diagrams use the correct UML notation?</p>
                       <ul class="task-list">
@@ -1908,7 +1906,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                       </ul>
                       <img src="/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/q-correctNotation.png" width="500">
                       <p></p>
-                      <div slot="answer" class="algolia-no-index">
+                      <div slot="answer">
                         <ul>
                           <li>i : 👍 Correct. There can be more than two parallel paths.</li>
                           <li>ii : Incorrect. All parallel paths that started from a fork should end in the same join node.</li>
@@ -2072,9 +2070,9 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which class diagrams match object diagram?" class="algolia-no-index">
+                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which class diagrams match object diagram?">
                   <question>
                     <p>Which of these class diagrams match the given object diagram?</p>
                     <img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png" height="330">
@@ -2083,7 +2081,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
                     </ul>
-                    <div slot="answer" class="algolia-no-index">
+                    <div slot="answer">
                       <p>(a) (b)</p>
                       <p>Explanation: Both class diagrams allow one <code>Unit</code> object to be linked to one <code>Item</code> object.</p>
                     </div>
@@ -2174,7 +2172,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 08 Jan 2020 04:41:37 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -2185,37 +2183,9 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = false
+  const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
-      indexName: "nus-cs2103-ay1920s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122519234-1');
-</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

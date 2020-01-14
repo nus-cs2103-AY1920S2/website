@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
 
@@ -55,9 +54,9 @@
                   <div></div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Class Diagram for code" class="algolia-no-index">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Class Diagram for code">
                             <question>
                               <div class="alt-java">
                                 <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running <code>Main#main()</code>.</p>
@@ -148,13 +147,13 @@ item2.add_previous_box(box1);
 item2.add_previous_box(box2);
 </code></pre>
                               </div>
-                              <div slot="answer" class="algolia-no-index">
+                              <div slot="answer">
                                 <img src="/website/book/uml/classDiagrams/combine/basic/images/classDiagramForCodeAnswer.png" width="600"></div>
                             </question>
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Implement Class Diagram" class="algolia-no-index">
+                          <panel header="<md>:glyphicon-question-sign:</md> Implement Class Diagram">
                             <question>
                               <p>Implement the class structure given below:</p>
                               <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
@@ -163,7 +162,7 @@ item2.add_previous_box(box2);
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Draw an Object Diagrams for the Class Diagram (Person-Guardian)" class="algolia-no-index">
+                          <panel header="<md>:glyphicon-question-sign:</md> Draw an Object Diagrams for the Class Diagram (Person-Guardian)">
                             <question>
                               <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p>
                               <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
@@ -187,7 +186,7 @@ item2.add_previous_box(box2);
                                   <p><code>Alfred</code> has a an office address at <code>Wayne Industries</code> building which is different from his home address (i.e. <code>Bat Cave</code>).</p>
                                 </li>
                               </ol>
-                              <div slot="hint" class="algolia-no-index">
+                              <div slot="hint">
                                 <p>After step 2, the diagram should be like this:</p>
                                 <img src="/website/book/uml/classDiagrams/combine/basic/images/objectDiagramsForClassDiagramHint.png" width="600"></div>
                             </question>
@@ -214,37 +213,9 @@ item2.add_previous_box(box2);
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = false
+  const enableSearch = true
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
-      indexName: "nus-cs2103-ay1920s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122519234-1');
-</script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
 
@@ -71,9 +70,9 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Suitable as a class-level variables" class="algolia-no-index">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Suitable as a class-level variables">
                             <question>
                               <p>Which of these are suitable as class-level variables?</p>
                               <ul class="task-list">
@@ -82,7 +81,7 @@
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. system: ToDo manager, class: <code>Task</code>, variable: <code>totalPendingTasks</code></li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: <code>ArrayList</code>, variable: <code>total</code> (i.e., total items in a given <code>ArrayList</code> object)</li>
                               </ul>
-                              <div slot="answer" class="algolia-no-index">
+                              <div slot="answer">
                                 <p>(c)</p>
                                 <p>Explanation: <code>totalPendingTasks</code> should not be managed by individual <code>Task</code> objects and therefore suitable to be maintained as a class-level variable. The other variables should be managed at instance
                                   level as their value varies from instance to instance. e.g., <code>totalStudents</code> for one <code>Course</code> object will differ from <code>totalStudents</code> of another.</p>
@@ -109,37 +108,9 @@
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = false
+  const enableSearch = true
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
-      indexName: "nus-cs2103-ay1920s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122519234-1');
-</script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

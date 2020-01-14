@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
 
@@ -60,7 +59,7 @@
                     <p></p>
                     <div>
                       <p><strong><trigger trigger="click" for="modal:modelingAd-uml">UML</trigger> <em> activity diagrams</em> (AD) can model workflows. </strong> <span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
-                      <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml" class="algolia-no-index">
+                      <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml">
                         <div>
                           <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists
                             James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence,
@@ -114,9 +113,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?" class="algolia-no-index">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?">
                           <question>
                             <p>Which of these activity diagrams use the correct UML notation?</p>
                             <ul class="task-list">
@@ -128,7 +127,7 @@
                             </ul>
                             <img src="/website/book/uml/activityDiagrams/basicNotations/linearPaths/images/q-correctNotation.png" width="500">
                             <p></p>
-                            <div slot="answer" class="algolia-no-index">
+                            <div slot="answer">
                               <ul>
                                 <li>i : 👍 Correct. The arrow-head type does not matter.</li>
                                 <li>ii : Incorrect. The start and end node notation is swapped.</li>
@@ -174,9 +173,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?" class="algolia-no-index">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?">
                         <question>
                           <p>Which of these activity diagrams use the correct UML notation?</p>
                           <ul class="task-list">
@@ -190,7 +189,7 @@
                           <img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation1.png" width="500">
                           <img src="/website/book/uml/activityDiagrams/basicNotations/alternatePaths/images/q-correctNotation2.png" width="500">
                           <p></p>
-                          <div slot="answer" class="algolia-no-index">
+                          <div slot="answer">
                             <ul>
                               <li>i : 👍 Correct. There can be more than two alternate paths.</li>
                               <li>ii : 👍 Correct. An alternate path can divide into more branches.</li>
@@ -237,9 +236,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?" class="algolia-no-index">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?">
                       <question>
                         <p>Which of these activity diagrams use the correct UML notation?</p>
                         <ul class="task-list">
@@ -250,7 +249,7 @@
                         </ul>
                         <img src="/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/q-correctNotation.png" width="500">
                         <p></p>
-                        <div slot="answer" class="algolia-no-index">
+                        <div slot="answer">
                           <ul>
                             <li>i : 👍 Correct. There can be more than two parallel paths.</li>
                             <li>ii : Incorrect. All parallel paths that started from a fork should end in the same join node.</li>
@@ -340,37 +339,9 @@
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = false
+  const enableSearch = true
 </script>
 <script src="../../../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
-      indexName: "nus-cs2103-ay1920s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122519234-1');
-</script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

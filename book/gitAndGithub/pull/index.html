@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
 
@@ -39,7 +38,7 @@
             <div>
               <div>
                 <p>
-                  <panel src="/website/book/gitAndGithub/clone/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Clone%%" popup-url="/website/book/gitAndGithub/clone" class="algolia-no-index"></panel>
+                  <panel src="/website/book/gitAndGithub/clone/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Clone%%" popup-url="/website/book/gitAndGithub/clone"></panel>
                 </p>
               </div>
               <p></p>
@@ -56,7 +55,7 @@
                     <p>Clone the sample repo as explained in
                       <trigger for="modal:clone-repository" trigger="click">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → Git &amp; GitHub → Clone]</trigger>.</p>
                     <p>Delete the last two commits to simulate cloning the repo 2 commits ago.</p>
-                    <modal title="**Clone Repository**" id="modal:clone-repository" class="algolia-no-index">
+                    <modal title="**Clone Repository**" id="modal:clone-repository">
                       <div>
                         <panel type="seamless" expanded>
                           <span slot="header" class="card-title"><div>
@@ -82,7 +81,7 @@
                                   <p><code>File</code> → <code>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
                                 </div>
                               </tab>
-                              <tab header="CLI" class="algolia-no-index">
+                              <tab header="CLI">
                                 <div>
                                   <p>You can use the <code>clone</code> command to clone a repo.</p>
                                   <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
@@ -110,7 +109,7 @@
                           <p>Arrow marked as <code>a</code>: The local repo is now at this commit, marked by the <code>master</code> label.<br> Arrow marked as <code>b</code>: <code>origin/master</code> label shows what is the latest commit in the <code>master</code>                            branch in the remote repo.</p>
                         </div>
                       </tab>
-                      <tab header="CLI" class="algolia-no-index">
+                      <tab header="CLI">
                         <div>
                           <p>Use the <code>reset</code> command to delete commits at the tip of the revision history.</p>
                           <pre><code class="hljs">git reset --hard HEAD~2
@@ -131,7 +130,7 @@
                           <p></p>
                         </div>
                       </tab>
-                      <tab header="CLI" class="algolia-no-index">
+                      <tab header="CLI">
                         <div>
                           <p><code>git pull origin</code></p>
                         </div>
@@ -155,37 +154,9 @@
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = false
+  const enableSearch = true
 </script>
 <script src="../../../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
-      indexName: "nus-cs2103-ay1920s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122519234-1');
-</script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

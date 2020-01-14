@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../markbind/css/page-nav.css">
@@ -26,13 +25,12 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
-      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is not ready yet! The updated version will be available soon.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown text="Schedule" class="nav-link temp-dropdown">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
+          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
           <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 27] </span></a></li>
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
@@ -49,7 +47,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown text="Links" class="nav-link temp-dropdown">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -75,7 +73,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -92,7 +90,7 @@
           <p></p>
           <p></p>
           <popover id="pop:LuWenQ" title="LU WE ... WENQI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-1.github.io/main/images/luwenq.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -103,7 +101,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jiayushe" title="SHE J ... JIAYU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-1.github.io/main/images/jiayushe.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -114,7 +112,7 @@
           <p></p>
           <p></p>
           <popover id="pop:le0tan" title="TAN Y ... NHONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-1.github.io/main/images/le0tan.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -125,7 +123,7 @@
           <p></p>
           <p></p>
           <popover id="pop:tiuweehan" title="TIU W ... E HAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-1.github.io/main/images/tiuweehan.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -136,7 +134,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Seris370" title="YU CH ... NGHUI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-1.github.io/main/images/seris370.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -148,7 +146,7 @@
           <p></p>
           <p></p>
           <popover id="pop:podocarp" title="JIA X ... ODONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-2.github.io/main/images/podocarp.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -159,7 +157,7 @@
           <p></p>
           <p></p>
           <popover id="pop:JohnNzj" title="JOHN... G JIE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-2.github.io/main/images/johnnzj.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -170,7 +168,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Aulud" title="KEVEN ... UQUAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-2.github.io/main/images/aulud.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -181,7 +179,7 @@
           <p></p>
           <p></p>
           <popover id="pop:liakify" title="LEE L ...GHEE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-2.github.io/main/images/liakify.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -192,7 +190,7 @@
           <p></p>
           <p></p>
           <popover id="pop:daekoon" title="LIM D ... EKOON" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-2.github.io/main/images/daekoon.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -204,7 +202,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jakq" title="ANG K ... AI QI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-3.github.io/main/images/jakq.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -215,7 +213,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ROHITREDDYBALAM" title="BALAM ... REDDY" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-3.github.io/main/images/rohitreddybalam.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -226,7 +224,7 @@
           <p></p>
           <p></p>
           <popover id="pop:dvrylc" title="CHAN... DARYL" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-3.github.io/main/images/dvrylc.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -237,7 +235,7 @@
           <p></p>
           <p></p>
           <popover id="pop:walnads" title="NADIA ... YAHYA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-3.github.io/main/images/walnads.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -248,7 +246,7 @@
           <p></p>
           <p></p>
           <popover id="pop:JunHongT" title="TEO J ...HONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-3.github.io/main/images/junhongt.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -260,7 +258,7 @@
           <p></p>
           <p></p>
           <popover id="pop:fangpinsern" title="FANG...SERN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-4.github.io/main/images/fangpinsern.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -271,7 +269,7 @@
           <p></p>
           <p></p>
           <popover id="pop:FelixNWJ" title="NG WE ... FELIX" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-4.github.io/main/images/felixnwj.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -282,7 +280,7 @@
           <p></p>
           <p></p>
           <popover id="pop:iltep64" title="RYAN...RONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-4.github.io/main/images/iltep64.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -293,7 +291,7 @@
           <p></p>
           <p></p>
           <popover id="pop:MauriceTXS" title="TAN X ... URICE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W11-4.github.io/main/images/mauricetxs.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -307,7 +305,7 @@
           <p></p>
           <p></p>
           <popover id="pop:joshuaseetss" title="JOSHU ...SUEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-1.github.io/main/images/joshuaseetss.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -318,7 +316,7 @@
           <p></p>
           <p></p>
           <popover id="pop:lawncegoh" title="LAWNC ... A WEI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-1.github.io/main/images/lawncegoh.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -329,7 +327,7 @@
           <p></p>
           <p></p>
           <popover id="pop:weigenie" title="LEE W ... I GEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-1.github.io/main/images/weigenie.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -340,7 +338,7 @@
           <p></p>
           <p></p>
           <popover id="pop:TanZhanMing" title="TAN Z ...MING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-1.github.io/main/images/tanzhanming.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -352,7 +350,7 @@
           <p></p>
           <p></p>
           <popover id="pop:krusagiz" title="ANG C ... ELVIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-2.github.io/main/images/krusagiz.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -363,7 +361,7 @@
           <p></p>
           <p></p>
           <popover id="pop:lightz96" title="LEE B ... QIANG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-2.github.io/main/images/lightz96.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -374,7 +372,7 @@
           <p></p>
           <p></p>
           <popover id="pop:lye-jw" title="LYE J ... N WEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-2.github.io/main/images/lye-jw.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -385,7 +383,7 @@
           <p></p>
           <p></p>
           <popover id="pop:kensonoenqh" title="OEN Q ... ENSON" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-2.github.io/main/images/kensonoenqh.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -396,7 +394,7 @@
           <p></p>
           <p></p>
           <popover id="pop:limerencee" title="POH J ... A HAO" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-2.github.io/main/images/limerencee.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -408,7 +406,7 @@
           <p></p>
           <p></p>
           <popover id="pop:dingyuchen" title="DING... UCHEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-3.github.io/main/images/dingyuchen.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -419,7 +417,7 @@
           <p></p>
           <p></p>
           <popover id="pop:joloong" title="LOONG ...JOEL" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-3.github.io/main/images/joloong.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -430,7 +428,7 @@
           <p></p>
           <p></p>
           <popover id="pop:yewon0303" title="PARK... E WON" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-3.github.io/main/images/yewon0303.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -441,7 +439,7 @@
           <p></p>
           <p></p>
           <popover id="pop:berttwm" title="TAN W ... TRAND" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-3.github.io/main/images/berttwm.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -452,7 +450,7 @@
           <p></p>
           <p></p>
           <popover id="pop:wallacelim97" title="WALLA ... E LIM" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-3.github.io/main/images/wallacelim97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -464,7 +462,7 @@
           <p></p>
           <p></p>
           <popover id="pop:troomtroom" title="KARTI ... ELWAL" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-4.github.io/main/images/troomtroom.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -475,7 +473,7 @@
           <p></p>
           <p></p>
           <popover id="pop:LeeYiyuan" title="LEE Y ... IYUAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-4.github.io/main/images/leeyiyuan.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -486,7 +484,7 @@
           <p></p>
           <p></p>
           <popover id="pop:nexolute" title="LIM W ... UGENE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-4.github.io/main/images/nexolute.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -497,7 +495,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Alaete" title="OLIVI ... ANZHI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-4.github.io/main/images/alaete.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -508,7 +506,7 @@
           <p></p>
           <p></p>
           <popover id="pop:weiyang13" title="TAN W ...YANG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W12-4.github.io/main/images/weiyang13.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -522,7 +520,7 @@
           <p></p>
           <p></p>
           <popover id="pop:geshuming" title="GE SH ... UMING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-1.github.io/main/images/geshuming.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -533,7 +531,7 @@
           <p></p>
           <p></p>
           <popover id="pop:CowSaysBaa" title="GUO Z ...ZILI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-1.github.io/main/images/cowsaysbaa.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -544,7 +542,7 @@
           <p></p>
           <p></p>
           <popover id="pop:kzrthikz" title="MURUG ... THIKA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-1.github.io/main/images/kzrthikz.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -555,7 +553,7 @@
           <p></p>
           <p></p>
           <popover id="pop:bitterg0d" title="WANG... IRLEY" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-1.github.io/main/images/bitterg0d.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -566,7 +564,7 @@
           <p></p>
           <p></p>
           <popover id="pop:alexwxh" title="WU XI ...ALEX" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-1.github.io/main/images/alexwxh.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -578,7 +576,7 @@
           <p></p>
           <p></p>
           <popover id="pop:fabbbbbbyy" title="FABIA ...PENG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-2.github.io/main/images/fabbbbbbyy.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -589,7 +587,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jeongyh99" title="JEONG ... U HAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-2.github.io/main/images/jeongyh99.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -600,7 +598,7 @@
           <p></p>
           <p></p>
           <popover id="pop:alages97" title="K ALA ... LAGES" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-2.github.io/main/images/alages97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -611,7 +609,7 @@
           <p></p>
           <p></p>
           <popover id="pop:lumwb" title="LUM W ...BOON" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-2.github.io/main/images/lumwb.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -622,7 +620,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Russell-Loh-NUS" title="RUSSE ... UN FA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-2.github.io/main/images/russell-loh-nus.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -634,7 +632,7 @@
           <p></p>
           <p></p>
           <popover id="pop:chanjunren" title="CHAN... N REN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-3.github.io/main/images/chanjunren.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -645,7 +643,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ckb055" title="CHEN... AIBIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-3.github.io/main/images/ckb055.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -656,7 +654,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jaesimin" title="JASMI ... A MIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-3.github.io/main/images/jaesimin.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -667,7 +665,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Sam-limyr" title="LIM Y ... AMUEL" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-3.github.io/main/images/sam-limyr.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -678,7 +676,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Sahilgat" title="SAHIL ... THANI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-3.github.io/main/images/sahilgat.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -690,7 +688,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ChenJiehan318" title="CHEN... IEHAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-4.github.io/main/images/chenjiehan318.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -701,7 +699,7 @@
           <p></p>
           <p></p>
           <popover id="pop:tcgj" title="CHONG ... G JUN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-4.github.io/main/images/tcgj.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -712,7 +710,7 @@
           <p></p>
           <p></p>
           <popover id="pop:cambrian-dk" title="DARYL ... I KAI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-4.github.io/main/images/cambrian-dk.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -723,7 +721,7 @@
           <p></p>
           <p></p>
           <popover id="pop:kenneth-fung" title="KENNE ... EN YU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-4.github.io/main/images/kenneth-fung.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -734,7 +732,7 @@
           <p></p>
           <p></p>
           <popover id="pop:thwnus" title="TEE H ... O WEI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-W13-4.github.io/main/images/thwnus.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -748,7 +746,7 @@
           <p></p>
           <p></p>
           <popover id="pop:OneArmyj" title="CHEN... I JUN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-1.github.io/main/images/onearmyj.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -759,7 +757,7 @@
           <p></p>
           <p></p>
           <popover id="pop:KxxMxxx" title="LEW K ...MING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-1.github.io/main/images/kxxmxxx.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -770,7 +768,7 @@
           <p></p>
           <p></p>
           <popover id="pop:oscarsu97" title="OSCAR ...HONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-1.github.io/main/images/oscarsu97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -781,7 +779,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ernestyyh" title="YEO Y ... RNEST" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-1.github.io/main/images/ernestyyh.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -792,7 +790,7 @@
           <p></p>
           <p></p>
           <popover id="pop:1nefootstep" title="LEONG ... XIANG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-1.github.io/main/images/1nefootstep.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -804,7 +802,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jietung" title="CHAI...TUNG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-2.github.io/main/images/jietung.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -815,7 +813,7 @@
           <p></p>
           <p></p>
           <popover id="pop:weihaw08" title="HO WE ... I HAW" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-2.github.io/main/images/weihaw08.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -826,7 +824,7 @@
           <p></p>
           <p></p>
           <popover id="pop:kwekke" title="KWEK... EE EN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-2.github.io/main/images/kwekke.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -837,7 +835,7 @@
           <p></p>
           <p></p>
           <popover id="pop:garylyp" title="LIM Y ...GARY" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-2.github.io/main/images/garylyp.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -848,7 +846,7 @@
           <p></p>
           <p></p>
           <popover id="pop:t-cheepeng" title="TAN C ...PENG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-2.github.io/main/images/t-cheepeng.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -860,7 +858,7 @@
           <p></p>
           <p></p>
           <popover id="pop:CarbonGrid" title="DANIE ...XIAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-3.github.io/main/images/carbongrid.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -871,7 +869,7 @@
           <p></p>
           <p></p>
           <popover id="pop:SakuraBlossom" title="LUM C ... SHAWN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-3.github.io/main/images/sakurablossom.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -882,7 +880,7 @@
           <p></p>
           <p></p>
           <popover id="pop:woon17" title="WEN S ... SHUFA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-3.github.io/main/images/woon17.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -893,7 +891,7 @@
           <p></p>
           <p></p>
           <popover id="pop:wongsm7" title="WONG... N MIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-3.github.io/main/images/wongsm7.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -905,7 +903,7 @@
           <p></p>
           <p></p>
           <popover id="pop:EugeneTeu" title="EUGEN ... U WEI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-4.github.io/main/images/eugeneteu.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -916,7 +914,7 @@
           <p></p>
           <p></p>
           <popover id="pop:qiujiaaa" title="OOI Q ... U JIA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-4.github.io/main/images/qiujiaaa.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -927,7 +925,7 @@
           <p></p>
           <p></p>
           <popover id="pop:zhixianggg" title="OON Z ... XIANG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-4.github.io/main/images/zhixianggg.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -938,7 +936,7 @@
           <p></p>
           <p></p>
           <popover id="pop:uberSaiyan" title="YAN W ... LIANG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-4.github.io/main/images/ubersaiyan.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -949,7 +947,7 @@
           <p></p>
           <p></p>
           <popover id="pop:yeodonghan" title="YEO D ... G HAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T09-4.github.io/main/images/yeodonghan.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -963,7 +961,7 @@
           <p></p>
           <p></p>
           <popover id="pop:nishcafe" title="ANISH ... OSEPH" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-1.github.io/main/images/nishcafe.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -974,7 +972,7 @@
           <p></p>
           <p></p>
           <popover id="pop:gohsnn" title="GOH S ...NING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-1.github.io/main/images/gohsnn.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -985,7 +983,7 @@
           <p></p>
           <p></p>
           <popover id="pop:marcfyk" title="MARC... G KIT" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-1.github.io/main/images/marcfyk.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -996,7 +994,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ryanYtan" title="RYAN... AN YU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-1.github.io/main/images/ryanytan.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1007,7 +1005,7 @@
           <p></p>
           <p></p>
           <popover id="pop:mrnewguy" title="TAN Y ... E KAI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-1.github.io/main/images/mrnewguy.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1019,7 +1017,7 @@
           <p></p>
           <p></p>
           <popover id="pop:hua-lun" title="CHUA... A LUN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-2.github.io/main/images/hua-lun.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1030,7 +1028,7 @@
           <p></p>
           <p></p>
           <popover id="pop:bakwxh" title="LEE W ... E WAH" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-2.github.io/main/images/bakwxh.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1041,7 +1039,7 @@
           <p></p>
           <p></p>
           <popover id="pop:bigjunnn" title="LIEW... N WEI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-2.github.io/main/images/bigjunnn.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1052,7 +1050,7 @@
           <p></p>
           <p></p>
           <popover id="pop:khairulazman1997" title="MUHAM ... AZMAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-2.github.io/main/images/khairulazman1997.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1063,7 +1061,7 @@
           <p></p>
           <p></p>
           <popover id="pop:yyuanxin" title="YEO Y ... N XIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-2.github.io/main/images/yyuanxin.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1075,7 +1073,7 @@
           <p></p>
           <p></p>
           <popover id="pop:blimyj" title="BRYAN ... N JIE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-3.github.io/main/images/blimyj.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1086,7 +1084,7 @@
           <p></p>
           <p></p>
           <popover id="pop:lrchema" title="CHAND ...HEMA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-3.github.io/main/images/lrchema.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1097,7 +1095,7 @@
           <p></p>
           <p></p>
           <popover id="pop:mannggoo" title="LIM Y ... U HUI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-3.github.io/main/images/mannggoo.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1108,7 +1106,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Icesiolz" title="LOW C ... NG YI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-3.github.io/main/images/icesiolz.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1119,7 +1117,7 @@
           <p></p>
           <p></p>
           <popover id="pop:sianghwee" title="NG SI ...HWEE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-3.github.io/main/images/sianghwee.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1131,7 +1129,7 @@
           <p></p>
           <p></p>
           <popover id="pop:aidilfbk" title="AIDIL ... MSANI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-4.github.io/main/images/aidilfbk.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1142,7 +1140,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Alvinnyk" title="ALVIN ... N KIT" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-4.github.io/main/images/alvinnyk.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1153,7 +1151,7 @@
           <p></p>
           <p></p>
           <popover id="pop:YiJiee" title="LIM Y ... I JIE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-4.github.io/main/images/yijiee.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1164,7 +1162,7 @@
           <p></p>
           <p></p>
           <popover id="pop:marqueurs404" title="ONG P ... ARCUS" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-4.github.io/main/images/marqueurs404.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1175,7 +1173,7 @@
           <p></p>
           <p></p>
           <popover id="pop:klementtan" title="TAN D ... EMENT" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T10-4.github.io/main/images/klementtan.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1189,7 +1187,7 @@
           <p></p>
           <p></p>
           <popover id="pop:atharvjoshi" title="JOSHI ... ABHAY" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-1.github.io/main/images/atharvjoshi.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1200,7 +1198,7 @@
           <p></p>
           <p></p>
           <popover id="pop:hellopanda128" title="LIN M ... EI AN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-1.github.io/main/images/hellopanda128.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1211,7 +1209,7 @@
           <p></p>
           <p></p>
           <popover id="pop:madanalogy" title="MUHAM ... AJJAJ" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-1.github.io/main/images/madanalogy.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1222,7 +1220,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Yoshi275" title="NG QI ... HERYL" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-1.github.io/main/images/yoshi275.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1233,7 +1231,7 @@
           <p></p>
           <p></p>
           <popover id="pop:tirameshu" title="WANG... INMAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-1.github.io/main/images/tirameshu.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1245,7 +1243,7 @@
           <p></p>
           <p></p>
           <popover id="pop:chensu2436" title="CHEN... EN SU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-2.github.io/main/images/chensu2436.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1256,7 +1254,7 @@
           <p></p>
           <p></p>
           <popover id="pop:CheongLiYuan" title="CHEON ...YUAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-2.github.io/main/images/cheongliyuan.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1267,7 +1265,7 @@
           <p></p>
           <p></p>
           <popover id="pop:AaronLuk" title="LUK C ...HENG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-2.github.io/main/images/aaronluk.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1278,7 +1276,7 @@
           <p></p>
           <p></p>
           <popover id="pop:SendorasLeft" title="NG YO ...KUAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-2.github.io/main/images/sendorasleft.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1289,7 +1287,7 @@
           <p></p>
           <p></p>
           <popover id="pop:MistyRainforest" title="TAN W ...ADAM" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-2.github.io/main/images/mistyrainforest.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1301,7 +1299,7 @@
           <p></p>
           <p></p>
           <popover id="pop:belbel98" title="CHRIS ...TENG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-3.github.io/main/images/belbel98.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1312,7 +1310,7 @@
           <p></p>
           <p></p>
           <popover id="pop:HoWeiChin" title="HO WE ...CHIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-3.github.io/main/images/howeichin.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1323,7 +1321,7 @@
           <p></p>
           <p></p>
           <popover id="pop:shawnkoh" title="KOH Z ... SHAWN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-3.github.io/main/images/shawnkoh.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1334,7 +1332,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ooimingsheng" title="OOI M ... SHENG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T11-3.github.io/main/images/ooimingsheng.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1348,7 +1346,7 @@
           <p></p>
           <p></p>
           <popover id="pop:anqichen9856" title="CHEN...ANQI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-1.github.io/main/images/anqichen9856.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1359,7 +1357,7 @@
           <p></p>
           <p></p>
           <popover id="pop:czkay" title="CHONG ...KANG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-1.github.io/main/images/czkay.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1370,7 +1368,7 @@
           <p></p>
           <p></p>
           <popover id="pop:briyanii" title="FUNG... EI-EN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-1.github.io/main/images/briyanii.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1381,7 +1379,7 @@
           <p></p>
           <p></p>
           <popover id="pop:qweiping31415" title="QUEK...PING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-1.github.io/main/images/qweiping31415.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1392,7 +1390,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ryoarmanda" title="RYO C ... MANDA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-1.github.io/main/images/ryoarmanda.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1404,7 +1402,7 @@
           <p></p>
           <p></p>
           <popover id="pop:chrischenhui" title="CHEN... N HUI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-2.github.io/main/images/chrischenhui.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1415,7 +1413,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jascxx" title="JASON ... CITRO" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-2.github.io/main/images/jascxx.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1426,7 +1424,7 @@
           <p></p>
           <p></p>
           <popover id="pop:kohyida1997" title="KOH Y ... YI DA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-2.github.io/main/images/kohyida1997.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1437,7 +1435,7 @@
           <p></p>
           <p></p>
           <popover id="pop:sreesubbash" title="L.V.S ... BBASH" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-2.github.io/main/images/sreesubbash.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1448,7 +1446,7 @@
           <p></p>
           <p></p>
           <popover id="pop:dragontho" title="THO W ...PAUL" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-2.github.io/main/images/dragontho.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1460,7 +1458,7 @@
           <p></p>
           <p></p>
           <popover id="pop:calvincxz" title="CALVI ... NGZHU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-3.github.io/main/images/calvincxz.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1471,7 +1469,7 @@
           <p></p>
           <p></p>
           <popover id="pop:DivineDX" title="CHIA... E XUN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-3.github.io/main/images/divinedx.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1482,7 +1480,7 @@
           <p></p>
           <p></p>
           <popover id="pop:eshwarkp" title="ESHWA ... PATHY" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-3.github.io/main/images/eshwarkp.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1493,7 +1491,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Crisgu" title="GU CH ... UNZHI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-3.github.io/main/images/crisgu.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1504,7 +1502,7 @@
           <p></p>
           <p></p>
           <popover id="pop:shihaoyap" title="YAP S ... I HAO" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-3.github.io/main/images/shihaoyap.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1516,7 +1514,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ang-zeyu" title="ANG Z ... ZE YU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-4.github.io/main/images/ang-zeyu.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1527,7 +1525,7 @@
           <p></p>
           <p></p>
           <popover id="pop:teoha" title="DERRI ...YING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-4.github.io/main/images/teoha.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1538,7 +1536,7 @@
           <p></p>
           <p></p>
           <popover id="pop:eizon05" title="KARAN ... SAPRA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-4.github.io/main/images/eizon05.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1549,7 +1547,7 @@
           <p></p>
           <p></p>
           <popover id="pop:SakshiPradyumn" title="SAKSH ... DYUMN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-4.github.io/main/images/sakshipradyumn.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1560,7 +1558,7 @@
           <p></p>
           <p></p>
           <popover id="pop:arjunwangty" title="WANG... IANYI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T11-4.github.io/main/images/arjunwangty.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1574,7 +1572,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ambhinav" title="ABHIN ... MNATH" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-1.github.io/main/images/ambhinav.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1585,7 +1583,7 @@
           <p></p>
           <p></p>
           <popover id="pop:elsakoh" title="KOH H ... ABETH" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-1.github.io/main/images/elsakoh.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1596,7 +1594,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ArunBeCoding" title="RAVI... UMARR" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-1.github.io/main/images/arunbecoding.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1607,7 +1605,7 @@
           <p></p>
           <p></p>
           <popover id="pop:seahlynn" title="SEAH...LYNN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-1.github.io/main/images/seahlynn.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1618,7 +1616,7 @@
           <p></p>
           <p></p>
           <popover id="pop:gabrielseow" title="SEOW... BRIEL" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-1.github.io/main/images/gabrielseow.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1630,7 +1628,7 @@
           <p></p>
           <p></p>
           <popover id="pop:charliechoong" title="CHOON ... N YAO" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-2.github.io/main/images/charliechoong.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1641,7 +1639,7 @@
           <p></p>
           <p></p>
           <popover id="pop:etlow" title="LOW E ... E TER" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-2.github.io/main/images/etlow.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1652,7 +1650,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ryantay232" title="RYAN...JIAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-2.github.io/main/images/ryantay232.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1663,7 +1661,7 @@
           <p></p>
           <p></p>
           <popover id="pop:SoilingRogue" title="YUAN... ANLEY" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-2.github.io/main/images/soilingrogue.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1674,7 +1672,7 @@
           <p></p>
           <p></p>
           <popover id="pop:MackyMaguire" title="ZHOU... IANYU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-2.github.io/main/images/mackymaguire.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1686,7 +1684,7 @@
           <p></p>
           <p></p>
           <popover id="pop:hellodommy" title="DOMIN ... WENYI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-3.github.io/main/images/hellodommy.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1697,7 +1695,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ChangUo79" title="ERWIN ... O XIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-3.github.io/main/images/changuo79.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1708,7 +1706,7 @@
           <p></p>
           <p></p>
           <popover id="pop:shawnlsj97" title="LEE S ... SHAWN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-3.github.io/main/images/shawnlsj97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1719,7 +1717,7 @@
           <p></p>
           <p></p>
           <popover id="pop:junhuplim" title="LIM J ... N HUP" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-3.github.io/main/images/junhuplim.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1730,7 +1728,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jeunhoe" title="POON... N HOE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-3.github.io/main/images/jeunhoe.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1742,7 +1740,7 @@
           <p></p>
           <p></p>
           <popover id="pop:keiteo" title="KEITH ... U HUI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-4.github.io/main/images/keiteo.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1753,7 +1751,7 @@
           <p></p>
           <p></p>
           <popover id="pop:LeonardTay748" title="LEONA ... A HAO" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-4.github.io/main/images/leonardtay748.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1764,7 +1762,7 @@
           <p></p>
           <p></p>
           <popover id="pop:LeowWB" title="LEOW... N BIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-4.github.io/main/images/leowwb.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1775,7 +1773,7 @@
           <p></p>
           <p></p>
           <popover id="pop:dalsontws" title="TAN W ... ALSON" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-4.github.io/main/images/dalsontws.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1786,7 +1784,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ShuTingY" title="YANG... UTING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T12-4.github.io/main/images/shutingy.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1800,7 +1798,7 @@
           <p></p>
           <p></p>
           <popover id="pop:C-likethis123" title="CHOW...YING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-1.github.io/main/images/c-likethis123.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1811,7 +1809,7 @@
           <p></p>
           <p></p>
           <popover id="pop:SimNee" title="CHUA... M NEE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-1.github.io/main/images/simnee.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1822,7 +1820,7 @@
           <p></p>
           <p></p>
           <popover id="pop:TheRealRavager" title="ISKAN ... HAINI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-1.github.io/main/images/therealravager.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1833,7 +1831,7 @@
           <p></p>
           <p></p>
           <popover id="pop:WilliamRyank" title="WILLI ... SNADI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-1.github.io/main/images/williamryank.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1844,7 +1842,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Yen-Peng" title="YIP Y ...PENG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-1.github.io/main/images/yen-peng.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1856,7 +1854,7 @@
           <p></p>
           <p></p>
           <popover id="pop:arjavibahety" title="BAHET ... RJAVI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-2.github.io/main/images/arjavibahety.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1867,7 +1865,7 @@
           <p></p>
           <p></p>
           <popover id="pop:bernicechio" title="BERNI ... I YIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-2.github.io/main/images/bernicechio.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1878,7 +1876,7 @@
           <p></p>
           <p></p>
           <popover id="pop:dalisc" title="CHAN... DALIS" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-2.github.io/main/images/dalisc.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1889,7 +1887,7 @@
           <p></p>
           <p></p>
           <popover id="pop:shaoyi1997" title="HONG... AO YI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-2.github.io/main/images/shaoyi1997.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1900,7 +1898,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ambervoong" title="VOONG ...XUAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-2.github.io/main/images/ambervoong.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1912,7 +1910,7 @@
           <p></p>
           <p></p>
           <popover id="pop:dawo5010" title="DANIE ...SHEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-3.github.io/main/images/dawo5010.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1923,7 +1921,7 @@
           <p></p>
           <p></p>
           <popover id="pop:EvonDong" title="EVON...BING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-3.github.io/main/images/evondong.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1934,7 +1932,7 @@
           <p></p>
           <p></p>
           <popover id="pop:CoderStellaJ" title="JIN S ... UYUAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-3.github.io/main/images/coderstellaj.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1945,7 +1943,7 @@
           <p></p>
           <p></p>
           <popover id="pop:kangyeelim" title="LIM K ... G YEE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-3.github.io/main/images/kangyeelim.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1956,7 +1954,7 @@
           <p></p>
           <p></p>
           <popover id="pop:MichaelaTSH" title="TANG... HAELA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-3.github.io/main/images/michaelatsh.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1968,7 +1966,7 @@
           <p></p>
           <p></p>
           <popover id="pop:openorclose" title="DARYL ... L TAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-4.github.io/main/images/openorclose.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1979,7 +1977,7 @@
           <p></p>
           <p></p>
           <popover id="pop:dorcastan" title="DORCA ... A TAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-4.github.io/main/images/dorcastan.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -1990,7 +1988,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Na-Nazhou" title="NA NA ... AZHOU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-4.github.io/main/images/na-nazhou.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2001,7 +1999,7 @@
           <p></p>
           <p></p>
           <popover id="pop:TSAI-HSIAO-HAN" title="TSAI, ... O-HAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-4.github.io/main/images/tsai-hsiao-han.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2012,7 +2010,7 @@
           <p></p>
           <p></p>
           <popover id="pop:kxyoke" title="YOKE... I XIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T13-4.github.io/main/images/kxyoke.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2026,7 +2024,7 @@
           <p></p>
           <p></p>
           <popover id="pop:weikiat97" title="LOH W ...KIAT" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-1.github.io/main/images/weikiat97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2037,7 +2035,7 @@
           <p></p>
           <p></p>
           <popover id="pop:SebastianLie" title="SEBAS ...YONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-1.github.io/main/images/sebastianlie.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2048,7 +2046,7 @@
           <p></p>
           <p></p>
           <popover id="pop:sheryltay28" title="TAY S ... HERYL" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-1.github.io/main/images/sheryltay28.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2059,7 +2057,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Xelyion" title="YOON... , KEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-1.github.io/main/images/xelyion.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2071,7 +2069,7 @@
           <p></p>
           <p></p>
           <popover id="pop:AhmadHatziq" title="AHMAD ... HAMAD" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-2.github.io/main/images/ahmadhatziq.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2082,7 +2080,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Ellieyee" title="ELLIE ... EN NA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-2.github.io/main/images/ellieyee.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2093,7 +2091,7 @@
           <p></p>
           <p></p>
           <popover id="pop:lumos309" title="TAN Y ... YUGIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-2.github.io/main/images/lumos309.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2104,7 +2102,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Zihawkeye" title="YEW K ... I ZHE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-2.github.io/main/images/zihawkeye.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2116,7 +2114,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Akimatsu98" title="HE SO ... NGCHI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-3.github.io/main/images/akimatsu98.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2127,7 +2125,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jolynnn8D" title="JOLYN ... SI QI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-3.github.io/main/images/jolynnn8d.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2138,7 +2136,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Oscar-B-Liang" title="LIANG ... OYUAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-3.github.io/main/images/oscar-b-liang.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2149,7 +2147,7 @@
           <p></p>
           <p></p>
           <popover id="pop:lzw12345" title="LING... I WEI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-3.github.io/main/images/lzw12345.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2161,7 +2159,7 @@
           <p></p>
           <p></p>
           <popover id="pop:limxuanhui" title="LIM X ... N HUI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-4.github.io/main/images/limxuanhui.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2172,7 +2170,7 @@
           <p></p>
           <p></p>
           <popover id="pop:choonx99" title="NG CH ... N WAH" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-4.github.io/main/images/choonx99.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2183,7 +2181,7 @@
           <p></p>
           <p></p>
           <popover id="pop:muhammadaljunied" title="SYED... UNIED" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-4.github.io/main/images/muhammadaljunied.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2194,7 +2192,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Cary-Xx" title="XIU Z ... IHENG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T14-4.github.io/main/images/cary-xx.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2208,7 +2206,7 @@
           <p></p>
           <p></p>
           <popover id="pop:chen-xi-cx" title="CHEN... EN XI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-1.github.io/main/images/chen-xi-cx.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2219,7 +2217,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jyx11011" title="JIANG ... YUXIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-1.github.io/main/images/jyx11011.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2230,7 +2228,7 @@
           <p></p>
           <p></p>
           <popover id="pop:whneo97" title="NEO W ... IHONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-1.github.io/main/images/whneo97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2241,7 +2239,7 @@
           <p></p>
           <p></p>
           <popover id="pop:scwaterbear" title="STEPH ... G ZHI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-1.github.io/main/images/scwaterbear.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2252,7 +2250,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ZhangHuafan" title="ZHANG ... IAOYU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-1.github.io/main/images/zhanghuafan.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2264,7 +2262,7 @@
           <p></p>
           <p></p>
           <popover id="pop:joannasara" title="JOANN ... PURBA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-2.github.io/main/images/joannasara.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2275,7 +2273,7 @@
           <p></p>
           <p></p>
           <popover id="pop:tohcejasmine" title="TOH C ... SMINE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-2.github.io/main/images/tohcejasmine.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2286,7 +2284,7 @@
           <p></p>
           <p></p>
           <popover id="pop:tuandingwei" title="TUAN... G WEI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-2.github.io/main/images/tuandingwei.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2297,7 +2295,7 @@
           <p></p>
           <p></p>
           <popover id="pop:victorvic54" title="VICTO ... ARIAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-2.github.io/main/images/victorvic54.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2309,7 +2307,7 @@
           <p></p>
           <p></p>
           <popover id="pop:LivingOnEdge" title="BILL...CHEE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-3.github.io/main/images/livingonedge.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2320,7 +2318,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jonchan51" title="CHAN... ATHAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-3.github.io/main/images/jonchan51.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2331,7 +2329,7 @@
           <p></p>
           <p></p>
           <popover id="pop:gary-lgy" title="LIU G ... GYUAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-3.github.io/main/images/gary-lgy.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2342,7 +2340,7 @@
           <p></p>
           <p></p>
           <popover id="pop:cutieprobe" title="LIU Z ...ZIMU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-3.github.io/main/images/cutieprobe.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2353,7 +2351,7 @@
           <p></p>
           <p></p>
           <popover id="pop:moziliar" title="MO ZO ... NGRAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-3.github.io/main/images/moziliar.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2365,7 +2363,7 @@
           <p></p>
           <p></p>
           <popover id="pop:rongrongrr" title="CHAN...RONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-4.github.io/main/images/rongrongrr.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2376,7 +2374,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jessicax941" title="JESSI ... U XIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-4.github.io/main/images/jessicax941.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2387,7 +2385,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Dandford" title="ONG M ... CHUNG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-4.github.io/main/images/dandford.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2398,7 +2396,7 @@
           <p></p>
           <p></p>
           <popover id="pop:swampertx" title="TAN Y ...JIAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-4.github.io/main/images/swampertx.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2409,7 +2407,7 @@
           <p></p>
           <p></p>
           <popover id="pop:yuhongtay" title="TAY Y ...HONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-T16-4.github.io/main/images/yuhongtay.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2423,7 +2421,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ccyccyccy" title="CHONG ...YUAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T17-1.github.io/main/images/ccyccyccy.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2434,7 +2432,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jerryk1997" title="KWONG ... JERRY" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T17-1.github.io/main/images/jerryk1997.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2445,7 +2443,7 @@
           <p></p>
           <p></p>
           <popover id="pop:philipalexanderb" title="PHILI ... DIMAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T17-1.github.io/main/images/philipalexanderb.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2456,7 +2454,7 @@
           <p></p>
           <p></p>
           <popover id="pop:fadisng" title="SNG J ... FARIS" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T17-1.github.io/main/images/fadisng.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2467,7 +2465,7 @@
           <p></p>
           <p></p>
           <popover id="pop:R-D-D-D" title="WANG... NDING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T17-1.github.io/main/images/r-d-d-d.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2479,7 +2477,7 @@
           <p></p>
           <p></p>
           <popover id="pop:honhaochen" title="HON H ...CHEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T17-2.github.io/main/images/honhaochen.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2490,7 +2488,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ngzhaoming" title="NG ZH ...MING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T17-2.github.io/main/images/ngzhaoming.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2501,7 +2499,7 @@
           <p></p>
           <p></p>
           <popover id="pop:bjhoohaha" title="ONG B ... G JUE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T17-2.github.io/main/images/bjhoohaha.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2512,7 +2510,7 @@
           <p></p>
           <p></p>
           <popover id="pop:pohlinwei" title="POH L ... N WEI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T17-2.github.io/main/images/pohlinwei.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2523,7 +2521,7 @@
           <p></p>
           <p></p>
           <popover id="pop:tishyakhanna97" title="TISHY ... HANNA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-T17-2.github.io/main/images/tishyakhanna97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2537,7 +2535,7 @@
           <p></p>
           <p></p>
           <popover id="pop:KendrickAng" title="ANG W ... DRICK" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-1.github.io/main/images/kendrickang.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2548,7 +2546,7 @@
           <p></p>
           <p></p>
           <popover id="pop:mirozo" title="GOH R ... I ZHI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-1.github.io/main/images/mirozo.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2559,7 +2557,7 @@
           <p></p>
           <p></p>
           <popover id="pop:dcshzj" title="HSU Z ... G JUN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-1.github.io/main/images/dcshzj.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2570,7 +2568,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ChrisKheng" title="KHENG ...DONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-1.github.io/main/images/chriskheng.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2581,7 +2579,7 @@
           <p></p>
           <p></p>
           <popover id="pop:mrchensheng21" title="KWAN... SHENG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-1.github.io/main/images/mrchensheng21.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2593,7 +2591,7 @@
           <p></p>
           <p></p>
           <popover id="pop:AHaliq" title="ABDUL ... ATIFF" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-2.github.io/main/images/ahaliq.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2604,7 +2602,7 @@
           <p></p>
           <p></p>
           <popover id="pop:timothyleong97" title="LEONG ... MOTHY" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-2.github.io/main/images/timothyleong97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2615,7 +2613,7 @@
           <p></p>
           <p></p>
           <popover id="pop:huiminlim" title="LIM H ... I MIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-2.github.io/main/images/huiminlim.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2626,7 +2624,7 @@
           <p></p>
           <p></p>
           <popover id="pop:PhireHandy" title="MUHAM ... ILANI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-2.github.io/main/images/phirehandy.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2637,7 +2635,7 @@
           <p></p>
           <p></p>
           <popover id="pop:shawnpunchew11" title="SHAWN ...CHEW" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-2.github.io/main/images/shawnpunchew11.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2648,7 +2646,7 @@
           <p></p>
           <p></p>
           <popover id="pop:nattanyz" title="TAN Y ... TALIE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-2.github.io/main/images/nattanyz.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2660,7 +2658,7 @@
           <p></p>
           <p></p>
           <popover id="pop:andyylam" title="ANDY... K WEE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-3.github.io/main/images/andyylam.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2671,7 +2669,7 @@
           <p></p>
           <p></p>
           <popover id="pop:chowyiwai" title="CHOW... I WAI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-3.github.io/main/images/chowyiwai.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2682,7 +2680,7 @@
           <p></p>
           <p></p>
           <popover id="pop:halfwhole" title="LIM Z ... I WEI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-3.github.io/main/images/halfwhole.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2693,7 +2691,7 @@
           <p></p>
           <p></p>
           <popover id="pop:LiuZechu" title="LIU Z ... ZECHU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-3.github.io/main/images/liuzechu.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2704,7 +2702,7 @@
           <p></p>
           <p></p>
           <popover id="pop:yaaanch" title="ONG Y ...CHUN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-3.github.io/main/images/yaaanch.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2716,7 +2714,7 @@
           <p></p>
           <p></p>
           <popover id="pop:chaitanyabaranwal" title="CHAIT ... ANWAL" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-4.github.io/main/images/chaitanyabaranwal.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2727,7 +2725,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ybchen97" title="CHEN... UANBO" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-4.github.io/main/images/ybchen97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2738,7 +2736,7 @@
           <p></p>
           <p></p>
           <popover id="pop:chowyiyin" title="CHOW... I YIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-4.github.io/main/images/chowyiyin.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2749,7 +2747,7 @@
           <p></p>
           <p></p>
           <popover id="pop:larrylawl" title="LAW A ... LARRY" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-4.github.io/main/images/larrylawl.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2760,7 +2758,7 @@
           <p></p>
           <p></p>
           <popover id="pop:olivercheok20" title="OLIVE ... CHEOK" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F09-4.github.io/main/images/olivercheok20.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2774,7 +2772,7 @@
           <p></p>
           <p></p>
           <popover id="pop:gabrielchao" title="CHAO... BRIEL" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-1.github.io/main/images/gabrielchao.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2785,7 +2783,7 @@
           <p></p>
           <p></p>
           <popover id="pop:cheongsiuhong" title="CHEON ...HONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-1.github.io/main/images/cheongsiuhong.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2796,7 +2794,7 @@
           <p></p>
           <p></p>
           <popover id="pop:crazoter" title="LEE W ... TTHEW" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-1.github.io/main/images/crazoter.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2807,7 +2805,7 @@
           <p></p>
           <p></p>
           <popover id="pop:francislow" title="LOW S ... ANCIS" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-1.github.io/main/images/francislow.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2818,7 +2816,7 @@
           <p></p>
           <p></p>
           <popover id="pop:sandydays" title="RAMAC ... NDHYA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-1.github.io/main/images/sandydays.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2830,7 +2828,7 @@
           <p></p>
           <p></p>
           <popover id="pop:evelynejuliet" title="EVELY ... ULIET" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-2.github.io/main/images/evelynejuliet.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2841,7 +2839,7 @@
           <p></p>
           <p></p>
           <popover id="pop:kelvinnharris" title="KELVI ... ARRIS" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-2.github.io/main/images/kelvinnharris.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2852,7 +2850,7 @@
           <p></p>
           <p></p>
           <popover id="pop:teika97" title="TIE Y ... HLEEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-2.github.io/main/images/teika97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2863,7 +2861,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ManasVegi" title="VEGI... MANAS" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-2.github.io/main/images/manasvegi.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2874,7 +2872,7 @@
           <p></p>
           <p></p>
           <popover id="pop:zhangxuan97" title="ZHANG ...XUAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-2.github.io/main/images/zhangxuan97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2886,7 +2884,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jxofficial" title="KENG...XIAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-3.github.io/main/images/jxofficial.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2897,7 +2895,7 @@
           <p></p>
           <p></p>
           <popover id="pop:neoshh" title="NEO S ... I HAO" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-3.github.io/main/images/neoshh.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2908,7 +2906,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ShaunNgTX" title="NG TZ ... SHAUN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-3.github.io/main/images/shaunngtx.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2919,7 +2917,7 @@
           <p></p>
           <p></p>
           <popover id="pop:khiangleon" title="SIM K ...LEON" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-3.github.io/main/images/khiangleon.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2930,7 +2928,7 @@
           <p></p>
           <p></p>
           <popover id="pop:wilfredbtan" title="WILFR ... Y TAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103-F10-3.github.io/main/images/wilfredbtan.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2944,7 +2942,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Abhiman2211" title="ABHIM ... YADAV" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-1.github.io/main/images/abhiman2211.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2955,7 +2953,7 @@
           <p></p>
           <p></p>
           <popover id="pop:hcwong" title="JOSHU ... CHIEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-1.github.io/main/images/hcwong.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2966,7 +2964,7 @@
           <p></p>
           <p></p>
           <popover id="pop:john0227" title="KYUNG ... O MIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-1.github.io/main/images/john0227.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2977,7 +2975,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Joanna-YJA" title="YAP J ... A AUN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-1.github.io/main/images/joanna-yja.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -2988,7 +2986,7 @@
           <p></p>
           <p></p>
           <popover id="pop:brianyenna" title="YEN R ... BRIAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-1.github.io/main/images/brianyenna.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3000,7 +2998,7 @@
           <p></p>
           <p></p>
           <popover id="pop:liawsy" title="LIAW... W YEE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-2.github.io/main/images/liawsy.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3011,7 +3009,7 @@
           <p></p>
           <p></p>
           <popover id="pop:xiaoyu-nus" title="LIU X ... IAOYU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-2.github.io/main/images/xiaoyu-nus.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3022,7 +3020,7 @@
           <p></p>
           <p></p>
           <popover id="pop:febee99" title="PHOEB ... R HUI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-2.github.io/main/images/febee99.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3033,7 +3031,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Kalsyc" title="SIM J ... ARREN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-2.github.io/main/images/kalsyc.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3044,7 +3042,7 @@
           <p></p>
           <p></p>
           <popover id="pop:JermyTan" title="TAN K ... EREMY" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-2.github.io/main/images/jermytan.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3056,7 +3054,7 @@
           <p></p>
           <p></p>
           <popover id="pop:hooncp" title="HOON...PING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-3.github.io/main/images/hooncp.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3067,7 +3065,7 @@
           <p></p>
           <p></p>
           <popover id="pop:eejian97" title="LEE E ...JIAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-3.github.io/main/images/eejian97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3078,7 +3076,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jityong" title="LEOW...YONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-3.github.io/main/images/jityong.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3089,7 +3087,7 @@
           <p></p>
           <p></p>
           <popover id="pop:niqiukun" title="NI TI ... NZHEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-3.github.io/main/images/niqiukun.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3100,7 +3098,7 @@
           <p></p>
           <p></p>
           <popover id="pop:yhtingg" title="YANG...TING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-3.github.io/main/images/yhtingg.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3112,7 +3110,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Parcly-Taxel" title="JEREM ... IERUI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-4.github.io/main/images/parcly-taxel.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3123,7 +3121,7 @@
           <p></p>
           <p></p>
           <popover id="pop:irene-lly" title="LEE L ... IRENE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-4.github.io/main/images/irene-lly.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3134,7 +3132,7 @@
           <p></p>
           <p></p>
           <popover id="pop:shuiyao-sg" title="SHUI... I YAO" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-4.github.io/main/images/shuiyao-sg.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3145,7 +3143,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ShirleyWangxt" title="WANG... ETING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-4.github.io/main/images/shirleywangxt.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3156,7 +3154,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Auxinnn" title="ZHANG ... NGJUN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F11-4.github.io/main/images/auxinnn.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3170,7 +3168,7 @@
           <p></p>
           <p></p>
           <popover id="pop:bruceskellator" title="BRUCE ... E ONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-1.github.io/main/images/bruceskellator.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3181,7 +3179,7 @@
           <p></p>
           <p></p>
           <popover id="pop:WeomuCat" title="DENIS ...TJIA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-1.github.io/main/images/weomucat.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3192,7 +3190,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ChengGeng97" title="ONG C ...GENG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-1.github.io/main/images/chenggeng97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3203,7 +3201,7 @@
           <p></p>
           <p></p>
           <popover id="pop:marcusteh1238" title="TEH H ... ARCUS" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-1.github.io/main/images/marcusteh1238.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3214,7 +3212,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Kyzure" title="TIMOT ... HIWEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-1.github.io/main/images/kyzure.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3226,7 +3224,7 @@
           <p></p>
           <p></p>
           <popover id="pop:gachia" title="GABRI ... ENHAO" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-2.github.io/main/images/gachia.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3237,7 +3235,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Q-gabe" title="GABRI ... N XIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-2.github.io/main/images/q-gabe.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3248,7 +3246,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ReignOfComputer" title="JASON ... G KAY" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-2.github.io/main/images/reignofcomputer.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3259,7 +3257,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Wingedevil" title="JERRO ... YU YI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-2.github.io/main/images/wingedevil.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3270,7 +3268,7 @@
           <p></p>
           <p></p>
           <popover id="pop:SQwQ" title="ZHENG ... IQIAO" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-2.github.io/main/images/sqwq.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3282,7 +3280,7 @@
           <p></p>
           <p></p>
           <popover id="pop:shiweing" title="NG SH ... I WEI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-3.github.io/main/images/shiweing.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3293,7 +3291,7 @@
           <p></p>
           <p></p>
           <popover id="pop:e0031374" title="ONG Y ... JONAS" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-3.github.io/main/images/e0031374.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3304,7 +3302,7 @@
           <p></p>
           <p></p>
           <popover id="pop:stevenwjy" title="STEVE ... IJAYA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-3.github.io/main/images/stevenwjy.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3315,7 +3313,7 @@
           <p></p>
           <p></p>
           <popover id="pop:tanlk99" title="TAN L ... LIKAI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-3.github.io/main/images/tanlk99.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3326,7 +3324,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Yehezkiel01" title="YEHEZ ... OROES" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-3.github.io/main/images/yehezkiel01.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3338,7 +3336,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Davidcwh" title="CHIA... DAVID" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-4.github.io/main/images/davidcwh.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3349,7 +3347,7 @@
           <p></p>
           <p></p>
           <popover id="pop:waynefong0401" title="FANG... EIWEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-4.github.io/main/images/waynefong0401.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3360,7 +3358,7 @@
           <p></p>
           <p></p>
           <popover id="pop:weiijiie" title="HUANG ... EIJIE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-4.github.io/main/images/weiijiie.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3371,7 +3369,7 @@
           <p></p>
           <p></p>
           <popover id="pop:waifonglee" title="LEE W ...FONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-4.github.io/main/images/waifonglee.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3382,7 +3380,7 @@
           <p></p>
           <p></p>
           <popover id="pop:xinmingzh" title="ZHOU... NMING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F12-4.github.io/main/images/xinmingzh.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3396,7 +3394,7 @@
           <p></p>
           <p></p>
           <popover id="pop:hoholyin" title="HO HO ... L YIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-1.github.io/main/images/hoholyin.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3407,7 +3405,7 @@
           <p></p>
           <p></p>
           <popover id="pop:linyutinglyt" title="LIN Y ... UTING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-1.github.io/main/images/linyutinglyt.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3418,7 +3416,7 @@
           <p></p>
           <p></p>
           <popover id="pop:seeziyang" title="SEE Z ...YANG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-1.github.io/main/images/seeziyang.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3429,7 +3427,7 @@
           <p></p>
           <p></p>
           <popover id="pop:shiyao821" title="WANG... HIYAO" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-1.github.io/main/images/shiyao821.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3440,7 +3438,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Cronyxx" title="YEO T ...TONG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-1.github.io/main/images/cronyxx.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3452,7 +3450,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Raikonen" title="CHOO...YUAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-2.github.io/main/images/raikonen.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3463,7 +3461,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jon-chua" title="CHUA... , JON" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-2.github.io/main/images/jon-chua.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3474,7 +3472,7 @@
           <p></p>
           <p></p>
           <popover id="pop:fatclarence" title="KOH W ... RENCE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-2.github.io/main/images/fatclarence.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3485,7 +3483,7 @@
           <p></p>
           <p></p>
           <popover id="pop:seanlowjk" title="LOW J ...SEAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-2.github.io/main/images/seanlowjk.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3496,7 +3494,7 @@
           <p></p>
           <p></p>
           <popover id="pop:robytanama" title="ROBY... ANAMA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-2.github.io/main/images/robytanama.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3508,7 +3506,7 @@
           <p></p>
           <p></p>
           <popover id="pop:austinsantoso" title="AUSTI ... NTOSO" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-3.github.io/main/images/austinsantoso.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3519,7 +3517,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Nanosync" title="BENED ... G JUN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-3.github.io/main/images/nanosync.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3530,7 +3528,7 @@
           <p></p>
           <p></p>
           <popover id="pop:choongyx" title="CHOON ... G XIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-3.github.io/main/images/choongyx.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3541,7 +3539,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jonathantjendana" title="JONAT ... NDANA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-3.github.io/main/images/jonathantjendana.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3552,7 +3550,7 @@
           <p></p>
           <p></p>
           <popover id="pop:minpyaemoe" title="MIN P ... E MOE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-3.github.io/main/images/minpyaemoe.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3564,7 +3562,7 @@
           <p></p>
           <p></p>
           <popover id="pop:heze8" title="CALEB ... E GEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-4.github.io/main/images/heze8.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3575,7 +3573,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jcjjjared" title="CHIAN ... JARED" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-4.github.io/main/images/jcjjjared.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3586,7 +3584,7 @@
           <p></p>
           <p></p>
           <popover id="pop:michelleykw" title="MICHE ... I WEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-4.github.io/main/images/michelleykw.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3597,7 +3595,7 @@
           <p></p>
           <p></p>
           <popover id="pop:wongchuankai" title="WONG... N KAI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-4.github.io/main/images/wongchuankai.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3608,7 +3606,7 @@
           <p></p>
           <p></p>
           <popover id="pop:tswuxia" title="WU XI ... U XIA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F13-4.github.io/main/images/tswuxia.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3622,7 +3620,7 @@
           <p></p>
           <p></p>
           <popover id="pop:alxkohh" title="ALEX... AN YU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-1.github.io/main/images/alxkohh.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3633,7 +3631,7 @@
           <p></p>
           <p></p>
           <popover id="pop:limhawjia" title="LIM H ... W JIA" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-1.github.io/main/images/limhawjia.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3644,7 +3642,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ning-sy210" title="NING... GYING" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-1.github.io/main/images/ning-sy210.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3655,7 +3653,7 @@
           <p></p>
           <p></p>
           <popover id="pop:zhangj1an" title="ZHANG ...JIAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-1.github.io/main/images/zhangj1an.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3667,7 +3665,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ngswbryan" title="BRYAN ... N WEI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-2.github.io/main/images/ngswbryan.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3678,7 +3676,7 @@
           <p></p>
           <p></p>
           <popover id="pop:caesarpjz" title="CAESA ... ZHANG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-2.github.io/main/images/caesarpjz.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3689,7 +3687,7 @@
           <p></p>
           <p></p>
           <popover id="pop:kerwin97" title="LIM S ... ERWIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-2.github.io/main/images/kerwin97.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3700,7 +3698,7 @@
           <p></p>
           <p></p>
           <popover id="pop:TeoShyanJie" title="TEO S ... N JIE" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-2.github.io/main/images/teoshyanjie.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3711,7 +3709,7 @@
           <p></p>
           <p></p>
           <popover id="pop:Xuerneas" title="XU TU ... U NAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-2.github.io/main/images/xuerneas.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3723,7 +3721,7 @@
           <p></p>
           <p></p>
           <popover id="pop:brebeek" title="HU YU ... UCHEN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-3.github.io/main/images/brebeek.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3734,7 +3732,7 @@
           <p></p>
           <p></p>
           <popover id="pop:nordic96" title="KO GI ... I HUN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-3.github.io/main/images/nordic96.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3745,7 +3743,7 @@
           <p></p>
           <p></p>
           <popover id="pop:lyskevin" title="LIM Y ... KEVIN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-3.github.io/main/images/lyskevin.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3756,7 +3754,7 @@
           <p></p>
           <p></p>
           <popover id="pop:jun-ha0" title="NG JU ... N HAO" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-3.github.io/main/images/jun-ha0.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3767,7 +3765,7 @@
           <p></p>
           <p></p>
           <popover id="pop:uggi121" title="SUDHA ... HAVAN" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-3.github.io/main/images/uggi121.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3779,7 +3777,7 @@
           <p></p>
           <p></p>
           <popover id="pop:cheeyou" title="CHEE... E YOU" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-4.github.io/main/images/cheeyou.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3790,7 +3788,7 @@
           <p></p>
           <p></p>
           <popover id="pop:ArgVampir" title="RUSHA ... HAMAS" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-4.github.io/main/images/argvampir.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3801,7 +3799,7 @@
           <p></p>
           <p></p>
           <popover id="pop:SamYJ2606" title="SAM Y ... G JEK" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-4.github.io/main/images/samyj2606.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3812,7 +3810,7 @@
           <p></p>
           <p></p>
           <popover id="pop:tysng" title="SONG... IANYI" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-4.github.io/main/images/tysng.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3823,7 +3821,7 @@
           <p></p>
           <p></p>
           <popover id="pop:junnbang" title="TAN J ...BANG" placement="top">
-            <div slot="content" class="algolia-no-index">
+            <div slot="content">
               <img style="border-radius: 8px;" src="https://ay1920s2-CS2103T-F14-4.github.io/main/images/junnbang.png" width="200" onerror="this.src='images/placeholder-small.png';"></div>
           </popover>
           <hr>
@@ -3861,7 +3859,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 08 Jan 2020 04:41:37 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -3872,37 +3870,9 @@
 <script src="../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = false
+  const enableSearch = true
 </script>
 <script src="../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
-      indexName: "nus-cs2103-ay1920s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122519234-1');
-</script>
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
 
@@ -263,7 +262,7 @@ Nov 16
 true
 Postponed to Nov 18th
 </code></pre>
-                                <div slot="hint" class="algolia-no-index">
+                                <div slot="hint">
                                   <p><code>Todo</code> class is given below. You can follow a similar approach for the <code>Deadline</code> class.</p>
                                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Todo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
@@ -298,37 +297,9 @@ Postponed to Nov 18th
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = false
+  const enableSearch = true
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
-      indexName: "nus-cs2103-ay1920s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122519234-1');
-</script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>
