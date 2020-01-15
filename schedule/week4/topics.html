@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -73,7 +74,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -96,7 +97,7 @@
           </nav>
           <p></p>
           <h1 id="week-4-feb-3-topics">Week 4 <small><small><span class="dimmed">[Feb 3]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-4-feb-3-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
+          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week4/topics.html#W4-1">W4.1</a>] <strong>Design: Models</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
@@ -247,13 +248,13 @@
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A
                       <trigger trigger="click" for="modal:modellingIntro-classDiagram">class diagram</trigger> is a model that represents a software design.</p>
                   </box>
-                  <modal large title="Class diagrams" id="modal:modellingIntro-classDiagram">
+                  <modal large title="Class diagrams" id="modal:modellingIntro-classDiagram" class="algolia-no-index">
                     <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br>
                       <span><span aria-hidden="true" class="fas fa-cube"></span></span> An example class diagram:<br></p>
                     <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
                   <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are
                     <trigger trigger="click" for="modal:modellingIntro-abstraction">abstractions</trigger>.</p>
-                  <modal large title="%%Textbook <md>:glyphicon-log-in:</md>%%" id="modal:modellingIntro-abstraction">
+                  <modal large title="%%Textbook <md>:glyphicon-log-in:</md>%%" id="modal:modellingIntro-abstraction" class="algolia-no-index">
                     <div>
                       <div></div>
                       <p></p>
@@ -349,7 +350,7 @@
                         <trigger trigger="click" for="modal:modelingIntro-archiDiagrams">architecture diagram</trigger> is such a model.</li>
                     </ol>
                   </box>
-                  <modal large title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams">
+                  <modal large title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams" class="algolia-no-index">
                     <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
                     <div>
                       <box>
@@ -358,18 +359,18 @@
                           <tab header="TEAMMATES">
                             <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
                           </tab>
-                          <tab header="se-edu/addressbook-level3">
+                          <tab header="se-edu/addressbook-level3" class="algolia-no-index">
                             <p><img src="https://se-education.org/addressbook-level3/images/ArchitectureDiagram.png" width="300"><br></p>
                           </tab>
-                          <tab header="Example 1">
+                          <tab header="Example 1" class="algolia-no-index">
                             <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
                               <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
                           </tab>
-                          <tab header="Example 2">
+                          <tab header="Example 2" class="algolia-no-index">
                             <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
                               <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
                           </tab>
-                          <tab header="Example 3">
+                          <tab header="Example 3" class="algolia-no-index">
                             <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
                               <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
                           </tab>
@@ -396,7 +397,7 @@
                   </box>
                   <box>
 
-                    <panel type="seamless">
+                    <panel type="seamless" class="algolia-no-index">
                       <span slot="header" class="card-title">Model Driven Development <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                       </span>
                       </span>
@@ -415,9 +416,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about models">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about models" class="algolia-no-index">
                           <question>
                             <p>Choose the correct statements about models.</p>
                             <ul class="task-list">
@@ -427,7 +428,7 @@
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Generating models from code is useless.</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Models can be used as blueprints for generating code.</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>(a) (b) (c) (e)</p>
                               <p>Explanation: Models generated from code can be used for understanding, analysing, and communicating about the code.</p>
                             </div>
@@ -435,10 +436,10 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md> Explain usage of models in a class project">
+                        <panel header="<md>:glyphicon-question-sign:</md> Explain usage of models in a class project" class="algolia-no-index">
                           <question>
                             <p>Explain how models (e.g. UML diagrams) can be used in a class project.</p>
-                            <div slot="hint">
+                            <div slot="hint" class="algolia-no-index">
                               <p>Can models be useful in evaluating the design quality of a software written by students?</p>
                             </div>
                           </question>
@@ -473,7 +474,7 @@
                 <div>
                   <p>The following diagram uses the class diagram notation to show the different types of
                     <trigger trigger="click" for="modal:umlModels-uml">UML</trigger> diagrams.</p>
-                  <modal large title="UML (Unified Modeling Language)" id="modal:umlModels-uml">
+                  <modal large title="UML (Unified Modeling Language)" id="modal:umlModels-uml" class="algolia-no-index">
                     <div>
                       <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
                         Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
@@ -509,7 +510,7 @@
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/oop/classes/what/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Design → OOP → Classes → Basic%%" popup-url="/website/book/oop/classes/what"></panel>
+                  <panel src="/website/book/oop/classes/what/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Design → OOP → Classes → Basic%%" popup-url="/website/book/oop/classes/what" class="algolia-no-index"></panel>
                 </p>
               </div>
               <p></p>
@@ -588,21 +589,21 @@
                 </p>
                 <p>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/introduction/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Class Diagrams → Introduction → What" alt="<md>:glyphicon-education:</md> UML/ClassDiagrams"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                 </p>
                 <p><strong>Classes form the basis of class diagrams.</strong></p>
                 <p>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/classes/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Class Diagrams → Classes → What" alt="<md>:glyphicon-education:</md> Classes"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/classLevelMembers/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Class Diagrams → Class-Level Members → What" alt="<md>:glyphicon-education:</md> Class-Level Members"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                 </p>
                 <p><strong><em>Associations</em> are the main connections among the classes in a class diagram.</strong></p>
                 <p>
                   <panel type="seamless" src="/website/book/oop/associations/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP <md>:glyphicon-log-in:</md> Associations → What" alt="<md>:glyphicon-education:</md> OOP/Associations"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/associations/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Class Diagrams → Associations → What" alt="<md>:glyphicon-education:</md> UML/Associations"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                 </p>
                 <p>The most basic class diagram is a bunch of classes with some solid lines among them to represent associations, such as this one.</p>
                 <box>
@@ -613,17 +614,17 @@
                 <p>In addition, <strong>associations can show additional decorations such as <em>association labels</em>, <em>association roles</em>, <em>multiplicity</em> and <em>navigability</em></strong> to add more information to a class diagram.</p>
                 <p>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/associations/labels/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Class Diagrams → Associations → Labels" alt="<md>:glyphicon-education:</md> Labels"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/associations/roles/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Class Diagrams → Associations → Roles" alt="<md>:glyphicon-education:</md> Roles"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/oop/associations/multiplicity/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP <md>:glyphicon-log-in:</md> Associations → Multiplicity" alt="<md>:glyphicon-education:</md> OOP/Multiplicity"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/associations/multiplicity/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Class Diagrams → Associations → Multiplicity" alt="<md>:glyphicon-education:</md> UML/Multiplicity"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/oop/associations/navigability/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP <md>:glyphicon-log-in:</md> Associations → Navigability" alt="<md>:glyphicon-education:</md> OOP/Navigability"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/associations/navigability/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Class Diagrams → Associations → Navigability" alt="<md>:glyphicon-education:</md> UML/Navigability"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                 </p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is the same class diagram shown earlier but with some additional information included:</p>
@@ -636,7 +637,7 @@
                   <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                     <div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which association notations are shown?">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which association notations are shown?" class="algolia-no-index">
                           <question>
                             <p>Which association notations are shown in this diagram?</p>
                             <img src="/website/book/modeling/modelingStructures/classDiagramsIntermediate/images/professorStudent.png" height="100">
@@ -647,7 +648,7 @@
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. association multiplicity</li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. class names</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>(a) (b) (c) (d)</p>
                               <p>Explanation: '1’ is a <em>multiplicity</em>, ‘mentored by’ is a <em>label</em>, and ‘mentor’ is a <em>role</em>.</p>
                             </div>
@@ -655,7 +656,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md> Explain Class Diagram">
+                        <panel header="<md>:glyphicon-question-sign:</md> Explain Class Diagram" class="algolia-no-index">
                           <question>
                             <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p>
                             <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
@@ -664,7 +665,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md> Draw Class Diagram for Box etc.">
+                        <panel header="<md>:glyphicon-question-sign:</md> Draw Class Diagram for Box etc." class="algolia-no-index">
                           <question>
                             <p>Draw a class diagram for the code below. Show the attributes, methods, associations, navigabilities, and multiplicities in the class diagram below:</p>
                             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
@@ -716,12 +717,14 @@
               <p></p>
               <div>
                 <p>
-                  <panel type="seamless" src="/website/book/uml/objectDiagrams/introduction/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML → Object Diagrams → Introduction" alt="<md>:glyphicon-education:</md> Object Diagrams" fragment="main"></panel>
+                  <panel type="seamless" src="/website/book/uml/objectDiagrams/introduction/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML → Object Diagrams → Introduction" alt="<md>:glyphicon-education:</md> Object Diagrams" fragment="main"
+                    class="algolia-no-index"></panel>
                 </p>
                 <p><strong>Object diagrams can be used to complement class diagrams.</strong> For example, you can use object diagrams to model different object structures that can result from a design represented by a given class diagram.</p>
                 <p>
-                  <panel type="seamless" src="/website/book/uml/objectDiagrams/objects/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML → Object Diagrams → Objects" alt="<md>:glyphicon-education:</md> OD/Objects" fragment="main"></panel>
-                  <panel type="seamless" src="/website/book/uml/objectDiagrams/associations/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML → Object Diagrams → Associations" alt="<md>:glyphicon-education:</md> OD/Associations" fragment="main"></panel>
+                  <panel type="seamless" src="/website/book/uml/objectDiagrams/objects/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML → Object Diagrams → Objects" alt="<md>:glyphicon-education:</md> OD/Objects" fragment="main" class="algolia-no-index"></panel>
+                  <panel type="seamless" src="/website/book/uml/objectDiagrams/associations/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML → Object Diagrams → Associations" alt="<md>:glyphicon-education:</md> OD/Associations" fragment="main"
+                    class="algolia-no-index"></panel>
                 </p>
               </div>
               <div>
@@ -729,11 +732,11 @@
                   <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                     <div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md> Draw Class Diagram for Box etc.">
+                        <panel header="<md>:glyphicon-question-sign:</md> Draw Class Diagram for Box etc." class="algolia-no-index">
                           <question>
                             <p>This question is based on the following question from another topic:</p>
                             <div>
-                              <panel header="<md>:glyphicon-question-sign:</md> Draw Class Diagram for Box etc.">
+                              <panel header="<md>:glyphicon-question-sign:</md> Draw Class Diagram for Box etc." class="algolia-no-index">
                                 <question>
                                   <p>Draw a class diagram for the code below. Show the attributes, methods, associations, navigabilities, and multiplicities in the class diagram below:</p>
                                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
@@ -811,9 +814,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which class diagrams match object diagram?">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which class diagrams match object diagram?" class="algolia-no-index">
                         <question>
                           <p>Which of these class diagrams match the given object diagram?</p>
                           <img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png" height="330">
@@ -822,7 +825,7 @@
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
                           </ul>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <p>(a) (b)</p>
                             <p>Explanation: Both class diagrams allow one <code>Unit</code> object to be linked to one <code>Item</code> object.</p>
                           </div>
@@ -878,7 +881,7 @@
         </div>
       </panel>
       <p><span id="W4-3b"></span></p>
-      <panel type="seamless" popup-url="/website/book/uml/notes/constraints">
+      <panel type="seamless" popup-url="/website/book/uml/notes/constraints" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W4.3b</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -888,7 +891,7 @@
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/uml/notes/notes/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> UML → Notes%%" popup-url="/website/book/uml/notes/notes"></panel>
+                <panel src="/website/book/uml/notes/notes/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> UML → Notes%%" popup-url="/website/book/uml/notes/notes" class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -963,7 +966,8 @@
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/modeling/modelingStructures/classDiagramsBasic/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Modeling → Class Diagrams (Basic)%%" popup-url="/website/book/modeling/modelingStructures/classDiagramsBasic"></panel>
+                <panel src="/website/book/modeling/modelingStructures/classDiagramsBasic/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Modeling → Class Diagrams (Basic)%%" popup-url="/website/book/modeling/modelingStructures/classDiagramsBasic"
+                  class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -980,49 +984,54 @@
               <div class="indented">
                 <h5 id="modeling-inheritance">Modeling inheritance<a class="fa fa-anchor" href="#modeling-inheritance"></a></h5>
                 <p>
-                  <panel type="seamless" src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP → Inheritance → What" alt="<md>:glyphicon-education:</md> OOP/Inheritance" fragment="main"></panel>
+                  <panel type="seamless" src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP → Inheritance → What" alt="<md>:glyphicon-education:</md> OOP/Inheritance" fragment="main" class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/classInheritance/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML → Class Diagrams → Inheritance → What" alt="<md>:glyphicon-education:</md> UML/Inheritance"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                 </p>
                 <h5 id="modeling-composition">Modeling composition<a class="fa fa-anchor" href="#modeling-composition"></a></h5>
                 <p>
-                  <panel type="seamless" src="/website/book/oop/associations/composition/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP → Associations → Composition" alt="<md>:glyphicon-education:</md> OOP/Composition" fragment="main"></panel>
+                  <panel type="seamless" src="/website/book/oop/associations/composition/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP → Associations → Composition" alt="<md>:glyphicon-education:</md> OOP/Composition" fragment="main"
+                    class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/composition/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML → Class Diagrams → Composition → What" alt="<md>:glyphicon-education:</md> UML/Composition"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                 </p>
                 <h5 id="modeling-aggregation">Modeling aggregation<a class="fa fa-anchor" href="#modeling-aggregation"></a></h5>
                 <p>
-                  <panel type="seamless" src="/website/book/oop/associations/aggregation/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP → Associations → Aggregation" alt="<md>:glyphicon-education:</md> OOP/Aggregation" fragment="main"></panel>
+                  <panel type="seamless" src="/website/book/oop/associations/aggregation/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP → Associations → Aggregation" alt="<md>:glyphicon-education:</md> OOP/Aggregation" fragment="main"
+                    class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/aggregation/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML → Class Diagrams → Aggregation → What" alt="<md>:glyphicon-education:</md> UML/Aggregation"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                 </p>
                 <h5 id="modeling-dependencies">Modeling dependencies<a class="fa fa-anchor" href="#modeling-dependencies"></a></h5>
                 <p>
-                  <panel type="seamless" src="/website/book/oop/associations/dependencies/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP → Associations → Dependencies" alt="<md>:glyphicon-education:</md> OOP/Dependencies" fragment="main"></panel>
+                  <panel type="seamless" src="/website/book/oop/associations/dependencies/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP → Associations → Dependencies" alt="<md>:glyphicon-education:</md> OOP/Dependencies" fragment="main"
+                    class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/dependencies/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML → Class Diagrams → Dependencies → What" alt="<md>:glyphicon-education:</md> UML/Dependencies"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                 </p>
               </div>
               <p><strong>A class diagram can also show different types of class-like entities:</strong></p>
               <div class="indented">
                 <h5 id="modeling-enumerations">Modeling enumerations<a class="fa fa-anchor" href="#modeling-enumerations"></a></h5>
                 <p>
-                  <panel type="seamless" src="/website/book/oop/classes/enumerations/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP → Classes → Enumerations" alt="<md>:glyphicon-education:</md> OOP/Enumerations" fragment="main"></panel>
+                  <panel type="seamless" src="/website/book/oop/classes/enumerations/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP → Classes → Enumerations" alt="<md>:glyphicon-education:</md> OOP/Enumerations" fragment="main"
+                    class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/enumerations/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML → Class Diagrams → Enumerations → What" alt="<md>:glyphicon-education:</md> UML/Enumerations"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                 </p>
                 <h5 id="modeling-abstract-classes">Modeling abstract classes<a class="fa fa-anchor" href="#modeling-abstract-classes"></a></h5>
                 <p>
                   <panel type="seamless" src="/website/book/oop/inheritance/abstractClasses/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP → Inheritance → Abstract Classes" alt="<md>:glyphicon-education:</md> OOP/AbstractClasses"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/abstractClasses/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML → Class Diagrams → Abstract Classes → What" alt="<md>:glyphicon-education:</md> UML/AbstractClasses"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                 </p>
                 <h5 id="modeling-interfaces">Modeling interfaces<a class="fa fa-anchor" href="#modeling-interfaces"></a></h5>
                 <p>
-                  <panel type="seamless" src="/website/book/oop/inheritance/interfaces/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP → Inheritance → Interfaces" alt="<md>:glyphicon-education:</md> OOP/Interfaces" fragment="main"></panel>
+                  <panel type="seamless" src="/website/book/oop/inheritance/interfaces/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> OOP → Inheritance → Interfaces" alt="<md>:glyphicon-education:</md> OOP/Interfaces" fragment="main"
+                    class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/classDiagrams/interfaces/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML → Class Diagrams → Interfaces → What" alt="<md>:glyphicon-education:</md> UML/Interfaces"
-                    fragment="main"></panel>
+                    fragment="main" class="algolia-no-index"></panel>
                 </p>
               </div>
             </div>
@@ -1031,7 +1040,7 @@
                 <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                   <div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about class diagram.">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about class diagram." class="algolia-no-index">
                         <question>
                           <p>Which of these statements match the class diagram?</p>
                           <img src="/website/book/modeling/modelingStructures/classDiagramsIntermediate/images/mismatch.png" height="290">
@@ -1043,7 +1052,7 @@
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A <code>Snake</code> head can be in more than one <code>SnakeHeadSquare</code></li>
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. The <code>Board</code> has exactly 5 <code>Snake</code>s.</li>
                           </ul>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <p><s>(a)</s>(b)(c)(d)(e)</p>
                             <p>Explanation:</p>
                             <p>(a) does not match because a <code>Snake</code> may or may not belong to a <code>Board</code> (multiplicity is <code>0..1</code>)<br> (b) matches the diagram because the multiplicity given in <code>1</code><br> (c) matches
@@ -1054,14 +1063,14 @@
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md> Explain notations in the class diagram">
+                      <panel header="<md>:glyphicon-question-sign:</md> Explain notations in the class diagram" class="algolia-no-index">
                         <question>
                           <p>Explain the meaning of various class diagram notations in the following class diagram:</p>
                           <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="750"></question>
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md> Draw a Class Diagram for the code (`StokItem`, `Inventory`, `Review` etc.)">
+                      <panel header="<md>:glyphicon-question-sign:</md> Draw a Class Diagram for the code (`StokItem`, `Inventory`, `Review` etc.)" class="algolia-no-index">
                         <question>
                           <p>Consider the code below:</p>
                           <div class="row">
@@ -1172,7 +1181,7 @@
               </box>
               <p>
                 <panel type="seamless" src="/website/book/uml/classDiagrams/associationClasses/what/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Class Diagrams → Association Classes → What" alt="<md>:glyphicon-education:</md> UML/AssociationClasses"
-                  fragment="main"></panel>
+                  fragment="main" class="algolia-no-index"></panel>
               </p>
               <h5 id="implementing-association-classes">Implementing association classes<a class="fa fa-anchor" href="#implementing-association-classes"></a></h5>
               <p>There is no special way to implement an association class. It can be implemented as a normal class that has variables to represent the endpoint of the association it represents.</p>
@@ -1196,9 +1205,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which are suitable as an Association Class?">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which are suitable as an Association Class?" class="algolia-no-index">
                       <question>
                         <p>Which one of these is the suitable as an Association Class?</p>
                         <img src="/website/book/oop/associations/associationClasses/images/exerciseDiagram.png" width="500">
@@ -1209,7 +1218,7 @@
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c</li>
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d</li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>(a)(b)<s>(c)</s>(d)</p>
                           <p>Explanation: Mileage is a property of the car, and not specifically about the association between the Driver and the Car. If Mileage was defined as the total number of miles that car was driven by that driver, then it would be
                             suitable as an association class.</p>
@@ -1349,9 +1358,9 @@
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch"></panel>
-                <panel src="/website/book/gitAndGithub/createPRs/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Create PRs%%" popup-url="/website/book/gitAndGithub/createPRs"></panel>
-                <panel src="/website/book/gitAndGithub/mergeConflicts/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Merge Conflicts%%" popup-url="/website/book/gitAndGithub/mergeConflicts"></panel>
+                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"></panel>
+                <panel src="/website/book/gitAndGithub/createPRs/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Create PRs%%" popup-url="/website/book/gitAndGithub/createPRs" class="algolia-no-index"></panel>
+                <panel src="/website/book/gitAndGithub/mergeConflicts/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Merge Conflicts%%" popup-url="/website/book/gitAndGithub/mergeConflicts" class="algolia-no-index"></panel>
               </p>
             </div>
             <p></p>
@@ -1366,14 +1375,14 @@
             <div>
               <p><strong>1. Go to the GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in [
                 <trigger trigger="click" for="modal:managePrs-createPrs">Tools → Git &amp; GitHub → Create PRs</trigger>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
-              <modal large title="Tools → Git & GitHub → Create PRs" id="modal:managePrs-createPrs">
+              <modal large title="Tools → Git & GitHub → Create PRs" id="modal:managePrs-createPrs" class="algolia-no-index">
                 <div>
                   <div>
                     <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
                     <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
                     <pre><code class="hljs md">
 <span class="hljs-section"># Introduction</span>
-Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
+Creating Pull Requests (PRs) is needed when using RCS in a multi-person projects.
 This repo can be used to practice creating PRs.
 
 </code></pre>
@@ -1383,7 +1392,7 @@ This repo can be used to practice creating PRs.
                         <img src="/website/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
                         <p></p>
                       </tab>
-                      <tab header="CLI">
+                      <tab header="CLI" class="algolia-no-index">
                         <pre><code class="hljs">git push origin add-intro
 </code></pre>
                       </tab>
@@ -1514,7 +1523,7 @@ git pull origin master
                   </ul>
                 </li>
               </ul>
-              <modal large title="Pair Programming" id="modal:codeReview-pairProgramming">
+              <modal large title="Pair Programming" id="modal:codeReview-pairProgramming" class="algolia-no-index">
                 <box type="definition">
                   <div>
                     <p><strong>Pair Programming</strong>:</p>
@@ -1659,7 +1668,7 @@ git pull origin master
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 02:03:15 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -1670,9 +1679,37 @@ git pull origin master
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

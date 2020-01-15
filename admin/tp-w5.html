@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../markbind/css/page-nav.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -73,7 +74,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -233,7 +234,7 @@
                     </ul>
                   </li>
                 </ul>
-                <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-brainstorming">
+                <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-brainstorming" class="algolia-no-index">
 
                   <div>
                     <div></div>
@@ -258,9 +259,9 @@
                         </div>
                         <div>
                           <div>
-                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                               <div>
-                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Characteristic of brainstorming">
+                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Characteristic of brainstorming" class="algolia-no-index">
                                   <question>
                                     <p>What is the key characteristic about brainstorming?</p>
                                     <ul radio-group="11d89" class="radio-list">
@@ -269,7 +270,7 @@
                                       <li class="radio-list-item"><label><input class="radio-list-input" name="11d89" type="radio"> c. Only the best people in the team should take part.</label></li>
                                       <li class="radio-list-item"><label><input class="radio-list-input" name="11d89" type="radio"> d. They are a good way to eliminate <em>bad</em> ideas.</label></li>
                                     </ul>
-                                    <div slot="answer">
+                                    <div slot="answer" class="algolia-no-index">
                                       <p>(b)</p>
                                     </div>
                                   </question>
@@ -282,7 +283,7 @@
                     </div>
                   </div>
                 </modal>
-                <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-userstories">
+                <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-userstories" class="algolia-no-index">
 
                   <div>
                     <div></div>
@@ -338,16 +339,16 @@
                         </div>
                         <div>
                           <div>
-                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                               <div>
-                                <panel header="Q: Which of these are true about user stories?">
+                                <panel header="Q: Which of these are true about user stories?" class="algolia-no-index">
                                   <question>
                                     <ul class="task-list">
                                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They are based on stories users tell about similar systems</li>
                                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They are written from the user/customer perspective</li>
                                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They are always written in some physical medium such as index cards or sticky notes</li>
                                     </ul>
-                                    <div slot="answer">
+                                    <div slot="answer" class="algolia-no-index">
                                       <ul class="task-list">
                                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Reason: Despite the name, user stories are not related to 'stories' about the software.</li>
                                         <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b.</li>
@@ -358,34 +359,34 @@
                                 </panel>
                               </div>
                               <div>
-                                <panel header="Q: What's wrong with this user story?">
+                                <panel header="Q: What's wrong with this user story?" class="algolia-no-index">
                                   <question has-input="true">
                                     <p>Critique the following user story taken from a software project to build an e-commerce website.</p>
                                     <p><code>As a developer, I want to use Python to implement the software, so that we can resue existing Python modules.</code></p>
-                                    <div slot="hint">
+                                    <div slot="hint" class="algolia-no-index">
                                       <p>Refer to the definition of a user story.</p>
                                       <p><span></span></p>
                                       <p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p>
                                       <p></p>
                                     </div>
-                                    <div slot="answer">
+                                    <div slot="answer" class="algolia-no-index">
                                       <p>This user story is not written from the perspective of the user/customer.</p>
                                     </div>
                                   </question>
                                 </panel>
                               </div>
                               <div>
-                                <panel header="Q: Extract user stories from customer statement">
+                                <panel header="Q: Extract user stories from customer statement" class="algolia-no-index">
                                   <question has-input="true">
                                     <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <popover content="The number of leave days not yet taken">leave balance</popover></em>.
                                       What are the user stories you can extract from that statement?</p>
-                                    <div slot="hint">
+                                    <div slot="hint" class="algolia-no-index">
                                       <p>Remember to follow the correct format when writing user stories.</p>
                                       <div>
                                         <p><strong>User story format</strong>: <code>As a {user type/role} I can {function} so that {benefit}</code></p>
                                       </div>
                                     </div>
-                                    <div slot="answer">
+                                    <div slot="answer" class="algolia-no-index">
                                       <p><code>As an employee, I can view my leave balance, so that I can know how many leave days I have left.</code></p>
                                       <p><span class="dimmed">Note: the <code>{benefit}</code> part may vary as it is not specifically mentioned in the question.</span></p>
                                     </div>
@@ -399,7 +400,7 @@
                     </div>
                   </div>
                 </modal>
-                <modal large title="Textbook <md>:glyphicon-log-in:</md> Specifying Requirements → UserStories → Usage → (panel)Tool Examples" id="modal:v10-onlinetools">
+                <modal large title="Textbook <md>:glyphicon-log-in:</md> Specifying Requirements → UserStories → Usage → (panel)Tool Examples" id="modal:v10-onlinetools" class="algolia-no-index">
 
                   <div>
                     <tabs>
@@ -416,13 +417,13 @@
                         <p>A video on GitHub Project Boards:</p>
                         <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                       </tab>
-                      <tab header="Google Sheets">
+                      <tab header="Google Sheets" class="algolia-no-index">
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example Google Sheet for recording user stories:</p>
                         <p><img src="/website/book/specifyingRequirements/userStories/usage/images/userStoriesInGoogleSheets.png" width="800"></p>
                         <p></p>
                         <p></p>
                       </tab>
-                      <tab header="Trello">
+                      <tab header="Trello" class="algolia-no-index">
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <a href="https://trello.com">Trello</a> Board for recording user stories:</p>
                         <p><img src="/website/book/specifyingRequirements/userStories/usage/images/userStoriesInTrello.png" width="800"></p>
                         <p></p>
@@ -431,7 +432,7 @@
                     </tabs>
                   </div>
                 </modal>
-                <modal large title="Textbook <md>:glyphicon-log-in:</md> Specifying Requirements → UserStories →  Usage → (section) Tips" id="modal:v10-userstoryusagetips">
+                <modal large title="Textbook <md>:glyphicon-log-in:</md> Specifying Requirements → UserStories →  Usage → (section) Tips" id="modal:v10-userstoryusagetips" class="algolia-no-index">
 
                   <div>
                     <p>Given their lightweight nature, <strong>user stories are quite handy for recording requirements during early stages of requirements gathering</strong>.</p>
@@ -454,7 +455,7 @@
                   <box>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Recommended: <strong>You can use GitHub issue tracker to manage user stories</strong>, but for that you need to set up your
                       team's GitHub organization, team repo, and its issue tracker first. Instructions for doing those steps are in the panel below.</p>
-                    <panel header="%%Admin <md>:glyphicon-log-in:</md> Appendix E: GitHub (extract)%%">
+                    <panel header="%%Admin <md>:glyphicon-log-in:</md> Appendix E: GitHub (extract)%%" class="algolia-no-index">
                       <div>
                         <h3 id="organization-setup">
                           <div class="text-white bg-dark p-1">Organization Setup</div><a class="fa fa-anchor" href="#organization-setup"></a></h3>
@@ -660,7 +661,7 @@
                       </div>
                     </panel>
                   </box>
-                  <panel header="<md>:fas-cube:</md> User Story examples (from a different product)" minimized>
+                  <panel header="<md>:fas-cube:</md> User Story examples (from a different product)" minimized class="algolia-no-index">
                     <span class="text-monospace">
 <ul>
 <li>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</li>
@@ -723,7 +724,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 02:03:15 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -734,9 +735,37 @@
 <script src="../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

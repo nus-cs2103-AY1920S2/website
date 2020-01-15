@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
 
@@ -70,7 +71,7 @@
                       <pre><code class="hljs">Mittens: Meow
 Snowball: Meow
 </code></pre>
-                      <panel type="seamless" header="%%The `Cat` class%%">
+                      <panel type="seamless" header="%%The `Cat` class%%" class="algolia-no-index">
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Cat</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -109,7 +110,7 @@ Snowball: Meow
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                      <panel type="seamless" header="%%The `Dog` class%%">
+                      <panel type="seamless" header="%%The `Dog` class%%" class="algolia-no-index">
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Dog</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -146,7 +147,7 @@ Spot: Woof
 Snowball: Meow
 Spot: Woof
 </code></pre>
-                      <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%">
+                      <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%" class="algolia-no-index">
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
 
     <span class="hljs-keyword">protected</span> String name;
@@ -254,7 +255,7 @@ Spot: Woof
 }
 </code></pre>
                                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You may use an array of size 100 to store the shapes.</p>
-                                <panel type="seamless" header="Partial solution">
+                                <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Shape[] shapes = <span class="hljs-keyword">new</span> Shape[<span class="hljs-number">100</span>];
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> shapeCount = <span class="hljs-number">0</span>;
@@ -292,9 +293,37 @@ Spot: Woof
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

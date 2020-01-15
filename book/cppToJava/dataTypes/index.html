@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
 
@@ -527,12 +528,12 @@ They are the same: true
 <span class="hljs-keyword">boolean</span> isSame = x.equals(<span class="hljs-string">"bar"</span>) <span class="hljs-comment">// false</span>
 isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comment">// true</span>
 </code></pre>
-                          <div slot="hint">
+                          <div slot="hint" class="algolia-no-index">
                             <ul>
                               <li>The two command line arguments can be accessed inside the <code>main</code> method using <code>args[0]</code> and <code>args[1]</code>.</li>
                               <li>When using multiple operators in the same expression, you might need to use parentheses to specify operator precedence. e.g., <code>&quot;foo&quot; + x == y</code> vs <code>&quot;foo&quot; + (x == y)</code></li>
                             </ul>
-                            <panel type="seamless" header="partial solution">
+                            <panel type="seamless" header="partial solution" class="algolia-no-index">
                               <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordComparator</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
       String first = args[<span class="hljs-number">0</span>];
@@ -570,9 +571,37 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

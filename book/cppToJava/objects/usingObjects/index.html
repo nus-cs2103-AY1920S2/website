@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
 
@@ -74,7 +75,7 @@
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example imports the <code>java.awt.Point</code> (i.e., the <code>Point</code> class in the <code>java.awt</code> package) class -- which can be used to represent
                           <trigger for="pop:usingObjects-coordinates">the coordinates of a location in a Cartesian plane</trigger> -- and use it in the <code>main</code> method.</p>
                         <popover id="pop:usingObjects-coordinates" title="Coordinates of a location in a Cartesian plane" placement="top">
-                          <div slot="content">
+                          <div slot="content" class="algolia-no-index">
                             <p>In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, <code>(0,0)</code> indicates the origin, and <code>(x,y)</code> indicates the point <code>x</code> units
                               to the right and <code>y</code> units up from the origin.</p>
                           </div>
@@ -129,7 +130,7 @@
                                 </p>
                                 <pre><code class="hljs">java.awt.Rectangle[x=0,y=0,width=5,height=10]
 </code></pre>
-                                <div slot="hint">
+                                <div slot="hint" class="algolia-no-index">
                                   <ul>
                                     <li>Import the <code>java.awt.Rectangle</code> class</li>
                                     <li>This is how you create the required object <code>new Rectangle(0, 0, 5, 10)</code></li>
@@ -158,9 +159,37 @@
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

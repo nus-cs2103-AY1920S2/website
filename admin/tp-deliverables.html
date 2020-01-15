@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../markbind/css/page-nav.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -73,7 +74,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -230,7 +231,7 @@
 <li><strong>Should be <tooltip content=" i.e., it can be used by end-users"><em>releasable</em></tooltip></strong>. While some features may be scheduled for later versions, the features in v1.4 should be good enough to make it usable by at least some of the target users.</li>
 <li>Also note the following constraint:</li></ul>
 <div class="indented-level2">
-<panel type src="/website/admin/tp-constraints._include_.html#Constraint-File-Size" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Constraint-File-Size  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="Constraint-File-Size"></panel></div><p></p></div></span>
+<panel type src="/website/admin/tp-constraints._include_.html#Constraint-File-Size" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Constraint-File-Size  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="Constraint-File-Size"></panel></div><p></p></div></span>
             <h3 id="deliverable-source-code">
               <div class="text-white bg-info p-1">Deliverable: Source code</div><a class="fa fa-anchor" href="#deliverable-source-code"></a></h3>
             <span id="tp-deliverables-sourcecode">
@@ -248,7 +249,7 @@
 <li><strong>Optionally, can also cover future features</strong>. Mark those as <code>Coming in v2.0</code>.</li>
 <li>Also note the following constraint:</li></ul>
 <div class="indented-level2">
-<panel type src="/website/admin/tp-constraints._include_.html#Constraint-File-Size" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Constraint-File-Size  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="Constraint-File-Size"></panel></div><p></p></div></span>
+<panel type src="/website/admin/tp-constraints._include_.html#Constraint-File-Size" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Constraint-File-Size  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="Constraint-File-Size"></panel></div><p></p></div></span>
             <h3 id="deliverable-developer-guide-dg">
               <div class="text-white bg-info p-1">Deliverable: Developer Guide (DG)</div><a class="fa fa-anchor" href="#deliverable-developer-guide-dg"></a></h3>
             <span id="tp-deliverables-dg">
@@ -296,7 +297,7 @@ For an example, see <a href="https://nus-cs2103-ay1920s2.github.io/addressbook-l
 <li><strong>Integrate diagrams into the description.</strong> Place the diagram close to where it is being described.</li>
 <li><strong>Use code snippets sparingly.</strong> The more you use code snippets in the DG, and longer the code snippet, the higher the risk of it getting outdated quickly. Instead, use code snippets only when necessary and cite only the strictly relevant parts only.</li>
 <li><strong>Resize diagrams</strong> so that the text size in the diagram matches the the text size of the main text of the diagram. See <trigger trigger="click" for="modal:ipWeek10-diagramSizeNegative">example</trigger>.</li></ul>
-<modal large title="UML Diagrams: Negative Examples " id="modal:ipWeek10-umlExamples">
+<modal large title="UML Diagrams: Negative Examples " id="modal:ipWeek10-umlExamples" class="algolia-no-index">
 <p>These class diagrams seem to have lot of member details, which can get outdated pretty quickly:<br>
 <img src="https://cs2103-ay1819s1-w10-3.github.io/main/images/PollClassDiagram.png" width="750"><br>
 <img src="https://cs2103-ay1819s1-w10-4.github.io/main/images/healthPlanClassDiagram.png" width="750"></p>
@@ -308,16 +309,16 @@ For an example, see <a href="https://nus-cs2103-ay1920s2.github.io/addressbook-l
   <img src="https://cs2103-ay1819s1-w13-1.github.io/main/images/TagCommandSequenceDiagram.png" width="750">
   <p></p>
   <img src="https://cs2103-ay1819s1-f10-1.github.io/main/images/modifyPermissionSequenceDiagram.png" width="750"></modal>
-<modal large title="Diagram resizing: a negative example" id="modal:ipWeek10-diagramSizeNegative">
+<modal large title="Diagram resizing: a negative example" id="modal:ipWeek10-diagramSizeNegative" class="algolia-no-index">
 <p>In this negative example, the text size in the diagram is much bigger than the text size used by the document:<br>
 <img src="/website/admin/images/diagramSizeNegativeExample.png" width="200"><br>
 It will look more 'polished' if the two text sizes match.
 </p></modal>
-<modal large title="AB3 - Class Diagram of the Logic Component" id="modal:ipWeek10-logicClassDiagram">
+<modal large title="AB3 - Class Diagram of the Logic Component" id="modal:ipWeek10-logicClassDiagram" class="algolia-no-index">
   <img src="https://nus-cs2103-ay1920s2.github.io/addressbook-level3/images/LogicClassDiagram.png" width="900"></modal>
-<modal large title="AB3 - Sequence Diagram for the `delete` command" id="modal:ipWeek10-deleteSd">
+<modal large title="AB3 - Sequence Diagram for the `delete` command" id="modal:ipWeek10-deleteSd" class="algolia-no-index">
   <img src="https://nus-cs2103-ay1920s2.github.io/addressbook-level3/images/DeleteSequenceDiagram.png" width="900"></modal>
-<modal large title="AB3 - Architecture-Level Sequence Diagram" id="modal:ipWeek10-archiSd">
+<modal large title="AB3 - Architecture-Level Sequence Diagram" id="modal:ipWeek10-archiSd" class="algolia-no-index">
   <img src="https://nus-cs2103-ay1920s2.github.io/addressbook-level3/images/ArchitectureSequenceDiagram.png"></modal></span></div>
           </span>
           <h3 id="deliverable-product-website">
@@ -348,17 +349,17 @@ It will look more 'polished' if the two text sizes match.
                     <p>Reason: Distracting annotations.</p>
                     <img src="/website/admin/images/Ui-notGood1.png" width="600"></tab>
 
-                  <tab header=":-1: Not Good">
+                  <tab header=":-1: Not Good" class="algolia-no-index">
                     <p>Reason: Not enough data.</p>
                     <img src="/website/admin/images/Ui-notGood2.png" width="600"></tab>
 
-                  <tab header=":-1: Not Good">
+                  <tab header=":-1: Not Good" class="algolia-no-index">
                     <p>Reason: screenshot not cropped cleanly (contains extra background details)</p>
                     <img src="/website/admin/images/Ui-notGood3.png" width="600"></tab>
-                  <tab header=":+1: Good">
+                  <tab header=":+1: Good" class="algolia-no-index">
                     <img src="/website/admin/images/Ui-good1.png" width="600"></tab>
 
-                  <tab header=":+1: Good">
+                  <tab header=":+1: Good" class="algolia-no-index">
                     <img src="/website/admin/images/Ui-good2.png" width="600"></tab>
                 </tabs>
               </panel>
@@ -419,11 +420,11 @@ It will look more 'polished' if the two text sizes match.
             </ul>
           </li>
         </ul>
-        <modal large title="Team-Based Tasks" id="modal:deliverablesPPP-teamTasks">
+        <modal large title="Team-Based Tasks" id="modal:deliverablesPPP-teamTasks" class="algolia-no-index">
           <div>
             <box>
               <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
-              <panel type="seamless" header="<md>:fas-cube:</md> Examples of team-tasks">
+              <panel type="seamless" header="<md>:fas-cube:</md> Examples of team-tasks" class="algolia-no-index">
                 <span id="example-team-tasks">
 <p>Here is a non-exhaustive list of team-tasks:</p>
 <ol>
@@ -597,7 +598,7 @@ sitting periods, and alerts the user if ...
     <p><strong>What</strong>: The v1.3 is subjected to a round of peer <em>acceptance/system testing</em>, also called the <em>Practical Exam (PE) Dry Run</em> as this round of testing will be similar to the graded
       <trigger trigger="click" for="modal:projectDeliverablesPeDryRun-pe">Practical Exam that will be done at v1.4</trigger>.</p>
     <p><strong>When, where</strong>: uses a 40 minute slot at the start of week 11 lecture</p>
-    <modal large title="Admin <md>:glyphicon-log-in:</md> Project → Deliverables → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe">
+    <modal large title="Admin <md>:glyphicon-log-in:</md> Project → Deliverables → Practical Exam" id="modal:projectDeliverablesPeDryRun-pe" class="algolia-no-index">
 
       <div>
         <div>
@@ -615,13 +616,13 @@ sitting periods, and alerts the user if ...
 <li>As such, we have put in measures to identify and <mark>penalize insincere/random evaluations</mark>.</li>
 <li>Also see:</li></ul>
 <div class="indented-level2">
-<p><panel type src="/website/admin/tp-grading-bugs._include_.html#bugCalculationNotes" header="Admin <md>:glyphicon-log-in:</md> tP Grading → Notes on how marks are calculated for PE  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="bugCalculationNotes"></panel></p></div></span>
+<p><panel type src="/website/admin/tp-grading-bugs._include_.html#bugCalculationNotes" header="Admin <md>:glyphicon-log-in:</md> tP Grading → Notes on how marks are calculated for PE  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="bugCalculationNotes"></panel></p></div></span>
           <h4 id="pe-preparation"><span class="badge badge-success">PE</span> <span class="text-success">Preparation</span><a class="fa fa-anchor" href="#pe-preparation"></a></h4>
           <ul>
             <li>It's similar to,</li>
           </ul>
           <div class="indented-level2">
-            <panel type="primary" header="PE-D Preparation" minimized>
+            <panel type="primary" header="PE-D Preparation" minimized class="algolia-no-index">
               <div>
                 <ul>
                   <li>
@@ -638,7 +639,7 @@ sitting periods, and alerts the user if ...
                       </li>
                     </ul>
                   </tab>
-                  <tab header="Not using CATcher">
+                  <tab header="Not using CATcher" class="algolia-no-index">
 
                     <div class="indented-less">
                       <box type="warning">
@@ -753,16 +754,16 @@ sitting periods, and alerts the user if ...
                 </ul>
                 <div class="indented-level2">
                   <p>
-                    <panel type src="/website/admin/tp-grading-bugs._include_.html#functionalityBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Functionality Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+                    <panel type src="/website/admin/tp-grading-bugs._include_.html#functionalityBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Functionality Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
                       minimized fragment="functionalityBugs"></panel>
                   </p>
                   <p>
-                    <panel type src="/website/admin/tp-grading-bugs._include_.html#featureFlaws" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Functionality Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+                    <panel type src="/website/admin/tp-grading-bugs._include_.html#featureFlaws" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Functionality Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
                       minimized fragment="featureFlaws"></panel>
                   </p>
                   <p>
-                    <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible UG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
-                      fragment="ugBugs"></panel>
+                    <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible UG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+                      minimized fragment="ugBugs"></panel>
                   </p>
                 </div>
                 <ul>
@@ -770,8 +771,8 @@ sitting periods, and alerts the user if ...
                 </ul>
                 <div class="indented-level2">
                   <p>
-                    <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible DG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
-                      fragment="dgBugs"></panel>
+                    <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible DG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+                      minimized fragment="dgBugs"></panel>
                   </p>
                 </div>
                 <ul>
@@ -803,7 +804,7 @@ sitting periods, and alerts the user if ...
                         </li>
                       </ul>
                     </tab>
-                    <tab header="Not using CATcher">
+                    <tab header="Not using CATcher" class="algolia-no-index">
 
                       <div class="indented-less">
                         <div>
@@ -869,12 +870,12 @@ sitting periods, and alerts the user if ...
           </ul>
           <div class="indented-level2">
             <p>
-              <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible UG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
-                fragment="ugBugs"></panel>
+              <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible UG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+                minimized fragment="ugBugs"></panel>
             </p>
             <p>
-              <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible DG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
-                fragment="dgBugs"></panel>
+              <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible DG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+                minimized fragment="dgBugs"></panel>
             </p>
           </div>
           <h5 id="pe-phase-1-part-iii-overall-evaluation-15-minutes"><span class="badge badge-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span><a class="fa fa-anchor" href="#pe-phase-1-part-iii-overall-evaluation-15-minutes"></a></h5>
@@ -994,7 +995,7 @@ sitting periods, and alerts the user if ...
                 <li>Respond to the bug reports shown.
                 </li>
               </tab>
-              <tab header="Not using CATcher">
+              <tab header="Not using CATcher" class="algolia-no-index">
 
                 <div class="indented-less">
                   <div><span id="warning-use-catcher">
@@ -1144,7 +1145,7 @@ Duplicate of #67
                   <li>If you disagree with any of the items listed, tick on the <code>I disagree</code> tick box and enter your justification for the disagreement, and click <code>Save</code>.</li>
                 </ul>
               </tab>
-              <tab header="Not using CATcher">
+              <tab header="Not using CATcher" class="algolia-no-index">
                 <div class="indented-less">
                   <div>
                     <div>
@@ -1210,7 +1211,7 @@ Duplicate of #67
             </li>
           </ul>
         </tab>
-        <tab header="Not using CATcher">
+        <tab header="Not using CATcher" class="algolia-no-index">
 
           <div class="indented-less">
             <box type="warning">
@@ -1314,16 +1315,16 @@ Duplicate of #67
         </ul>
         <div class="indented-level2">
           <p>
-            <panel type src="/website/admin/tp-grading-bugs._include_.html#functionalityBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Functionality Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+            <panel type src="/website/admin/tp-grading-bugs._include_.html#functionalityBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Functionality Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
               minimized fragment="functionalityBugs"></panel>
           </p>
           <p>
-            <panel type src="/website/admin/tp-grading-bugs._include_.html#featureFlaws" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Functionality Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+            <panel type src="/website/admin/tp-grading-bugs._include_.html#featureFlaws" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Functionality Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
               minimized fragment="featureFlaws"></panel>
           </p>
           <p>
-            <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible UG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
-              fragment="ugBugs"></panel>
+            <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible UG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+              minimized fragment="ugBugs"></panel>
           </p>
         </div>
         <ul>
@@ -1331,8 +1332,8 @@ Duplicate of #67
         </ul>
         <div class="indented-level2">
           <p>
-            <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible DG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
-              fragment="dgBugs"></panel>
+            <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible DG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+              minimized fragment="dgBugs"></panel>
           </p>
         </div>
         <ul>
@@ -1364,7 +1365,7 @@ Duplicate of #67
                 </li>
               </ul>
             </tab>
-            <tab header="Not using CATcher">
+            <tab header="Not using CATcher" class="algolia-no-index">
 
               <div class="indented-less">
                 <div>
@@ -1422,7 +1423,7 @@ Duplicate of #67
         </div>
       </box>
     </div>
-    <modal large title="Admin <md>:glyphicon-log-in:</md> Project →" id="modal:v1.3-ppp">
+    <modal large title="Admin <md>:glyphicon-log-in:</md> Project →" id="modal:v1.3-ppp" class="algolia-no-index">
 
       <div>
         <div>
@@ -1453,11 +1454,11 @@ Duplicate of #67
               </ul>
             </li>
           </ul>
-          <modal large title="Team-Based Tasks" id="modal:deliverablesPPP-teamTasks">
+          <modal large title="Team-Based Tasks" id="modal:deliverablesPPP-teamTasks" class="algolia-no-index">
             <div>
               <box>
                 <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
-                <panel type="seamless" header="<md>:fas-cube:</md> Examples of team-tasks">
+                <panel type="seamless" header="<md>:fas-cube:</md> Examples of team-tasks" class="algolia-no-index">
                   <span id="example-team-tasks">
 <p>Here is a non-exhaustive list of team-tasks:</p>
 <ol>
@@ -1584,13 +1585,13 @@ Duplicate of #67
 <li>As such, we have put in measures to identify and <mark>penalize insincere/random evaluations</mark>.</li>
 <li>Also see:</li></ul>
 <div class="indented-level2">
-<p><panel type src="/website/admin/tp-grading-bugs._include_.html#bugCalculationNotes" header="Admin <md>:glyphicon-log-in:</md> tP Grading → Notes on how marks are calculated for PE  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="bugCalculationNotes"></panel></p></div></span>
+<p><panel type src="/website/admin/tp-grading-bugs._include_.html#bugCalculationNotes" header="Admin <md>:glyphicon-log-in:</md> tP Grading → Notes on how marks are calculated for PE  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="bugCalculationNotes"></panel></p></div></span>
   <h4 id="pe-preparation-2"><span class="badge badge-success">PE</span> <span class="text-success">Preparation</span><a class="fa fa-anchor" href="#pe-preparation-2"></a></h4>
   <ul>
     <li>It's similar to,</li>
   </ul>
   <div class="indented-level2">
-    <panel type="primary" header="PE-D Preparation" minimized>
+    <panel type="primary" header="PE-D Preparation" minimized class="algolia-no-index">
       <div>
         <ul>
           <li>
@@ -1607,7 +1608,7 @@ Duplicate of #67
               </li>
             </ul>
           </tab>
-          <tab header="Not using CATcher">
+          <tab header="Not using CATcher" class="algolia-no-index">
 
             <div class="indented-less">
               <box type="warning">
@@ -1722,16 +1723,16 @@ Duplicate of #67
         </ul>
         <div class="indented-level2">
           <p>
-            <panel type src="/website/admin/tp-grading-bugs._include_.html#functionalityBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Functionality Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+            <panel type src="/website/admin/tp-grading-bugs._include_.html#functionalityBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Functionality Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
               minimized fragment="functionalityBugs"></panel>
           </p>
           <p>
-            <panel type src="/website/admin/tp-grading-bugs._include_.html#featureFlaws" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Functionality Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
+            <panel type src="/website/admin/tp-grading-bugs._include_.html#featureFlaws" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Functionality Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
               minimized fragment="featureFlaws"></panel>
           </p>
           <p>
-            <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible UG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
-              fragment="ugBugs"></panel>
+            <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible UG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+              minimized fragment="ugBugs"></panel>
           </p>
         </div>
         <ul>
@@ -1739,8 +1740,8 @@ Duplicate of #67
         </ul>
         <div class="indented-level2">
           <p>
-            <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible DG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
-              fragment="dgBugs"></panel>
+            <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible DG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+              minimized fragment="dgBugs"></panel>
           </p>
         </div>
         <ul>
@@ -1772,7 +1773,7 @@ Duplicate of #67
                 </li>
               </ul>
             </tab>
-            <tab header="Not using CATcher">
+            <tab header="Not using CATcher" class="algolia-no-index">
 
               <div class="indented-less">
                 <div>
@@ -1838,12 +1839,12 @@ Duplicate of #67
   </ul>
   <div class="indented-level2">
     <p>
-      <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible UG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
-        fragment="ugBugs"></panel>
+      <panel type src="/website/admin/tp-grading-bugs._include_.html#ugBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible UG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+        minimized fragment="ugBugs"></panel>
     </p>
     <p>
-      <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible DG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized
-        fragment="dgBugs"></panel>
+      <panel type src="/website/admin/tp-grading-bugs._include_.html#dgBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → **Possible DG Bugs**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
+        minimized fragment="dgBugs"></panel>
     </p>
   </div>
   <h5 id="pe-phase-1-part-iii-overall-evaluation-15-minutes-2"><span class="badge badge-success">PE Phase 1 - Part III</span> <span class="text-success">Overall Evaluation [15 minutes]</span><a class="fa fa-anchor" href="#pe-phase-1-part-iii-overall-evaluation-15-minutes-2"></a></h5>
@@ -1963,7 +1964,7 @@ Duplicate of #67
         <li>Respond to the bug reports shown.
         </li>
       </tab>
-      <tab header="Not using CATcher">
+      <tab header="Not using CATcher" class="algolia-no-index">
 
         <div class="indented-less">
           <div><span id="warning-use-catcher">
@@ -2113,7 +2114,7 @@ Duplicate of #67
           <li>If you disagree with any of the items listed, tick on the <code>I disagree</code> tick box and enter your justification for the disagreement, and click <code>Save</code>.</li>
         </ul>
       </tab>
-      <tab header="Not using CATcher">
+      <tab header="Not using CATcher" class="algolia-no-index">
         <div class="indented-less">
           <div>
             <div>
@@ -2225,7 +2226,7 @@ Duplicate of #67
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 02:03:15 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -2236,9 +2237,37 @@ Duplicate of #67
 <script src="../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

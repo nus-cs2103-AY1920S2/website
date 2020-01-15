@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../markbind/css/site-nav.css">
 
@@ -27,7 +28,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -46,7 +47,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -72,7 +73,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -212,7 +213,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/softwareEngineering-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:softwareEngineering-preview" title="Software Engineering <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about software engineering</p>
               </div>
@@ -226,7 +227,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/oop-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:oop-preview" title="Object-Oriented Programming <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about object oriented programming</p>
               </div>
@@ -240,7 +241,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/requirements-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:requirements-preview" title="Requirements <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about requirements</p>
               </div>
@@ -252,7 +253,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/gatheringRequirements-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:gatheringRequirements-preview" title="Gathering Requirements <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about gathering requirements</p>
               </div>
@@ -264,7 +265,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/specifyingRequirements-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:specifyingRequirements-preview" title="Specifying Requirements <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about specifying requirements</p>
               </div>
@@ -278,7 +279,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/design-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:design-preview" title="Software Design <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about software design</p>
               </div>
@@ -290,7 +291,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/designFundamentals-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:designFundamentals-preview" title="Design Fundamentals <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about software design principles</p>
               </div>
@@ -302,7 +303,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/modeling-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:modeling-preview" title="Modeling <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about modeling</p>
               </div>
@@ -314,7 +315,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/architecture-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:architecture-preview" title="Software Architecture <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about software architecture</p>
               </div>
@@ -326,7 +327,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/designPatterns-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:designPatterns-preview" title="Software Design Patterns <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about software design patterns</p>
               </div>
@@ -338,7 +339,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/designApproaches-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:designApproaches-preview" title="Design Approaches <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about software design approaches</p>
               </div>
@@ -352,7 +353,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/ides-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:ides-preview" title="IDEs <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about IDEs</p>
               </div>
@@ -364,7 +365,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/codeQuality-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:codeQuality-preview" title="Code Quality <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about writing better quality code</p>
               </div>
@@ -376,7 +377,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/refactoring-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:refactoring-preview" title="Refactoring <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about refactoring</p>
               </div>
@@ -388,7 +389,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/documentation-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:documentation-preview" title="Documentation <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about documentation</p>
               </div>
@@ -400,7 +401,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/errorHandling-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:errorHandling-preview" title="Error Handling <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about error handling</p>
               </div>
@@ -412,7 +413,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/integration-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:integration-preview" title="Integration <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about integration</p>
               </div>
@@ -424,7 +425,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/reuse-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:reuse-preview" title="Reuse <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about reuse</p>
               </div>
@@ -438,7 +439,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/qualityAssurance-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:qualityAssurance-preview" title="Quality Assurance <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about quality assurance</p>
               </div>
@@ -450,7 +451,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/testing-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:testing-preview" title="Testing <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about testing</p>
               </div>
@@ -462,7 +463,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/testCaseDesign-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:testCaseDesign-preview" title="Test Case Design <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about test case design</p>
               </div>
@@ -476,7 +477,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/revisionControl-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:revisionControl-preview" title="Revision Control <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about revision control</p>
               </div>
@@ -488,7 +489,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/projectPlanning-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:projectPlanning-preview" title="Project Planning <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about project planning</p>
               </div>
@@ -500,7 +501,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/teamwork-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:teamwork-preview" title="Teamwork <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about teamwork</p>
               </div>
@@ -512,7 +513,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/processModels-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:processModels-preview" title="SDLC Process Models <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about SDLC process models</p>
               </div>
@@ -526,7 +527,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/principles-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:principles-preview" title="Principles <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about principles</p>
               </div>
@@ -540,7 +541,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/uml-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:uml-preview" title="UML <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about UML</p>
               </div>
@@ -552,7 +553,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/intellij-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:intellij-preview" title="Intellij IDEA <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about Intellij IDEA</p>
               </div>
@@ -564,7 +565,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/gitAndGithub-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:gitAndGithub-preview" title="Git and Github <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>All about Git and Github</p>
               </div>
@@ -578,7 +579,7 @@
               </trigger> <a href="/website/se-book-adapted/chapters-printable/cppToJava-printable.html"><span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
           </ul>
           <popover id="pop:cppToJava-preview" title="C++ to Java <md>:glyphicon-eye-open:</md>" placement="right">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <div>
                 <p>A crash course for C++ programmers to transition to Java</p>
               </div>
@@ -593,7 +594,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 02:03:15 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -604,9 +605,37 @@
 <script src="../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

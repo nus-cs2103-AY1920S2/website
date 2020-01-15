@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
 
@@ -38,8 +39,10 @@
             <div>
               <div>
                 <p>
-                  <panel src="/website/book/specifyingRequirements/useCases/introduction/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements → Specifying Requirements → Use Cases → Introduction%%" popup-url="/website/book/specifyingRequirements/useCases/introduction"></panel>
-                  <panel src="/website/book/specifyingRequirements/useCases/identifying/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements → Specifying Requirements → Use Cases → Identifying%%" popup-url="/website/book/specifyingRequirements/useCases/identifying"></panel>
+                  <panel src="/website/book/specifyingRequirements/useCases/introduction/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements → Specifying Requirements → Use Cases → Introduction%%" popup-url="/website/book/specifyingRequirements/useCases/introduction"
+                    class="algolia-no-index"></panel>
+                  <panel src="/website/book/specifyingRequirements/useCases/identifying/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements → Specifying Requirements → Use Cases → Identifying%%" popup-url="/website/book/specifyingRequirements/useCases/identifying"
+                    class="algolia-no-index"></panel>
                 </p>
               </div>
               <p></p>
@@ -258,10 +261,10 @@ Extensions:
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                         <div>
                           <link rel="stylesheet" href="/website/book/css/common.css">
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: EZ-Link top-up use case">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: EZ-Link top-up use case" class="algolia-no-index">
                             <question has-input="true">
                               <p>Complete the following use case (MSS, extensions, etc.). Note that you should not blindly follow how the existing
                                 <tooltip content="A type of a cash card topup machine">EZ-Link machine</tooltip> operates because it will prevent you from designing a better system. You should consider all possible extensions without complicating the use case too much.</p>
@@ -272,7 +275,7 @@ Extensions:
                                   <li>Actor: EZ-Link card user</li>
                                 </ul>
                               </box>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <box>
                                   <div>
                                     <ul>
@@ -367,7 +370,7 @@ Extensions:
                         </div>
                         <div>
                           <link rel="stylesheet" href="/website/book/css/common.css">
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: LearnSys – reply to post use case">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: LearnSys – reply to post use case" class="algolia-no-index">
                             <question has-input="true">
                               <p>Complete the following use case (MSS, extensions, etc.).</p>
                               <box>
@@ -377,7 +380,7 @@ Extensions:
                                   <li>Actor: Student</li>
                                 </ul>
                               </box>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <box>
                                   <div>
                                     <ul>
@@ -450,7 +453,7 @@ Extensions:
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Parts of a use case descriptions">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Parts of a use case descriptions" class="algolia-no-index">
                             <question>
                               <p>Which of these cannot appear as part of a use case description?</p>
                               <ul class="task-list">
@@ -463,7 +466,7 @@ Extensions:
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. Extensions</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> h. Inclusions</li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>(f)</p>
                                 <p>Explanation: Performance requirements are non-functional requirements. They are not captured in use cases.</p>
                               </div>
@@ -472,7 +475,7 @@ Extensions:
                         </div>
                         <div>
                           <link rel="stylesheet" href="/website/book/css/common.css">
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What’s wrong with this use case?">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What’s wrong with this use case?" class="algolia-no-index">
                             <question>
                               <p>Identify problems with this use case description.</p>
                               <div>
@@ -516,7 +519,7 @@ Extensions:
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. No post conditions are given.</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. ‘Use case ends’ is duplicated.</li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>None.</p>
                                 <p>Explanation: Catastrophic failures such as ‘system crash’ need not be included in a use case. A use case is not supposed to contain UI details. Post conditions are optional. It is not a problem to have multiple exit points
                                   for a use case.</p>
@@ -543,9 +546,37 @@ Extensions:
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../markbind/css/page-nav.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -73,7 +74,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -221,9 +222,9 @@
 <p></p>
 <p>This product is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, <mark>Command Line Interface (CLI) is the primary mode of input.</mark></p>
 <div class="indented-level1">
-<panel type src="/website/admin/tp-constraints._include_.html#Constraint-Typing-Preferred" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Constraint-Typing-Preferred  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="Constraint-Typing-Preferred"></panel></div><p></p>
+<panel type src="/website/admin/tp-constraints._include_.html#Constraint-Typing-Preferred" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Constraint-Typing-Preferred  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="Constraint-Typing-Preferred"></panel></div><p></p>
 <div class="indented-level1">
-<panel type src="/website/admin/tp-constraints._include_.html#Recommendation-CLI-First" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Recommendation-CLI-First  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="Recommendation-CLI-First"></panel></div><p></p>
+<panel type src="/website/admin/tp-constraints._include_.html#Recommendation-CLI-First" header="Admin <md>:glyphicon-log-in:</md> tP Contstraints → Recommendation-CLI-First  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="Recommendation-CLI-First"></panel></div><p></p>
 <p></p>
 <p><strong>You may evolve/morph the <tooltip content="AddressBook-Level3">AB3</tooltip> any direction you wish.</strong> For example, an app to manage one of these:</p>
 <ul>
@@ -251,7 +252,7 @@
                   class="dimmed">e.g. the target user should still prefer typing over mouse actions</span>.</li>
             </ul>
             <div class="indented-level2">
-              <panel type="seamless" header="%%Why the need to narrow down the user profile?%%">
+              <panel type="seamless" header="%%Why the need to narrow down the user profile?%%" class="algolia-no-index">
                 <ul>
                   <li>It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.</li>
                   <li>It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have done
@@ -337,7 +338,7 @@
           </li>
         </ul>
         <div class="indented-level4">
-          <panel type="seamless" header="Example enhancements" minimized>
+          <panel type="seamless" header="Example enhancements" minimized class="algolia-no-index">
             <ul>
               <li>Add a new feature <span class="dimmed">e.g. add the ability to view statistics</span></li>
               <li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
@@ -393,7 +394,7 @@
         <div id="team-tasks" class="indented-level2">
           <box>
             <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
-            <panel type="seamless" header="<md>:fas-cube:</md> Examples of team-tasks">
+            <panel type="seamless" header="<md>:fas-cube:</md> Examples of team-tasks" class="algolia-no-index">
               <span id="example-team-tasks">
 <p>Here is a non-exhaustive list of team-tasks:</p>
 <ol>
@@ -420,7 +421,7 @@
           <box>
             <span id="roles">
 <p><em>Roles</em> indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
-            <panel type="seamless" header="<md>:fas-cube:</md> Recommended roles and responsibilities">
+            <panel type="seamless" header="<md>:fas-cube:</md> Recommended roles and responsibilities" class="algolia-no-index">
               <p>This is a non-exhaustive list; you may define additional roles.</p>
               <ul>
                 <li><em>Team lead</em>: Responsible for overall project coordination.</li>
@@ -486,7 +487,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 02:03:15 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -497,9 +498,37 @@
 <script src="../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

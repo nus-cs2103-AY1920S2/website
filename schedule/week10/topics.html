@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -73,7 +74,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -96,7 +97,7 @@
           </nav>
           <p></p>
           <h1 id="week-10-mar-23-topics">Week 10 <small><small><span class="dimmed">[Mar 23]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-10-mar-23-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
+          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week10/topics.html#W10-1">W10.1</a>] <strong>Design Patterns</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
@@ -283,9 +284,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Definition of design patterns">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Definition of design patterns" class="algolia-no-index">
                           <question>
                             <p>Which one of these describes the ‘software design patterns’ concept best?</p>
                             <ul radio-group="a7255" class="radio-list">
@@ -294,7 +295,7 @@
                               <li class="radio-list-item"><label><input class="radio-list-input" name="a7255" type="radio"> c. Architectural styles used in applications.</label></li>
                               <li class="radio-list-item"><label><input class="radio-list-input" name="a7255" type="radio"> d. Some good design techniques proposed by the Gang of Four</label></li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>(b)</p>
                             </div>
                           </question>
@@ -337,16 +338,16 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Anti-patterns required?">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Anti-patterns required?" class="algolia-no-index">
                           <question>
                             <p>When we describe a pattern, we must also specify anti-patterns.</p>
                             <ul radio-group="2350f" class="radio-list">
                               <li class="radio-list-item"><label><input class="radio-list-input" name="2350f" type="radio"> True</label></li>
                               <li class="radio-list-item"><label><input class="radio-list-input" name="2350f" type="radio"> False</label></li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>False.</p>
                               <p>Explanation: Anti-patterns are related to patterns, but they are not a ‘must have’ component of a pattern description.</p>
                             </div>
@@ -397,9 +398,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about the Singleton pattern">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about the Singleton pattern" class="algolia-no-index">
                           <question>
                             <p>We use the Singleton pattern when</p>
                             <ul radio-group="d9393" class="radio-list">
@@ -408,7 +409,7 @@
                               <li class="radio-list-item"><label><input class="radio-list-input" name="d9393" type="radio"> c. we want a class with no more than one instance.</label></li>
                               <li class="radio-list-item"><label><input class="radio-list-input" name="d9393" type="radio"> d. we want to hide internal structure of a component from its clients.</label></li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>(c)</p>
                             </div>
                           </question>
@@ -556,9 +557,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Is this Facade?">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Is this Facade?" class="algolia-no-index">
                           <question>
                             <p>Does the design below likely to use the Facade pattern?</p>
                             <img src="/website/book/designPatterns/facade/what/images/textStorage.png" height="150">
@@ -567,7 +568,7 @@
                               <li class="radio-list-item"><label><input class="radio-list-input" name="ac766" type="radio"> True</label></li>
                               <li class="radio-list-item"><label><input class="radio-list-input" name="ac766" type="radio"> False</label></li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>True.</p>
                               <p>Facade is clearly visible (Storage is the &lt;
                                 <facade>&gt; class).</facade>
@@ -636,7 +637,7 @@
           <br>
           <h3 id="abstraction-occurrence-pattern"><span class="dimmed"><strong>Abstraction Occurrence pattern</strong></span><a class="fa fa-anchor" href="#abstraction-occurrence-pattern"></a></h3>
           <p><span id="W10-1h"></span></p>
-          <panel type="seamless" popup-url="/website/book/designPatterns/abstractionOccurrence/what">
+          <panel type="seamless" popup-url="/website/book/designPatterns/abstractionOccurrence/what" class="algolia-no-index">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.1h</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -703,9 +704,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which situations match the pattern?">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which situations match the pattern?" class="algolia-no-index">
                           <question has-input="true">
                             <p>Which pairs of classes are likely to be the <code>&lt;&lt;Abstraction&gt;&gt;</code> and the <code>&lt;&lt;Occurrence&gt;&gt;</code> of the abstraction occurrence pattern?</p>
                             <ol>
@@ -715,7 +716,7 @@
                               <li>TeamLeader, TeamMember</li>
                               <li>Magazine (E.g. ReadersDigest, PCWorld), MagazineIssue</li>
                             </ol>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>One of the key things to keep in mind is that the <code>&lt;&lt;Abstraction&gt;&gt;</code> does not represent a real entity. Rather, it represents some information common to a set of objects. A single real entity is represented
                                 by an object of <code>&lt;&lt; Abstraction &gt;&gt;</code> type and <code>&lt;&lt; Occurrence &gt;&gt;</code> type.</p>
                               <p>Before applying the pattern, some attributes have the same values for multiple objects. For example, w.r.t. the BookTitle-BookCopy example given in this handout, values of attributes such as <code>book_title</code>, <code>ISBN</code>                                are exactly the same for copies of the same book.</p>
@@ -734,7 +735,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Apply pattern?">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Apply pattern?" class="algolia-no-index">
                           <question>
                             <p>Which one of these is most suited for an application of the Abstraction Occurrence pattern?</p>
                             <ul radio-group="56836" class="radio-list">
@@ -742,7 +743,7 @@
                               <li class="radio-list-item"><label><input class="radio-list-input" name="56836" type="radio"> b. Teachers and their students</label></li>
                               <li class="radio-list-item"><label><input class="radio-list-input" name="56836" type="radio"> c. Modules and exams/assignments given by those modules</label></li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>(a)</p>
                               <p>Explanation:</p>
                               <p>(a) Stagings of a drama are ‘occurrences’ of the drama. They have many attributes common (e.g., Drama name, producer, cast, etc.) but some attributes are different (e.g., venue, time).</p>
@@ -825,7 +826,8 @@
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/errorHandling/defensiveProgramming/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Implementation → Error Handling → Defensive Programming → What%%" popup-url="/website/book/errorHandling/defensiveProgramming/what"></panel>
+                  <panel src="/website/book/errorHandling/defensiveProgramming/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Implementation → Error Handling → Defensive Programming → What%%" popup-url="/website/book/errorHandling/defensiveProgramming/what"
+                    class="algolia-no-index"></panel>
                 </p>
               </div>
               <p></p>
@@ -880,9 +882,9 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Write a `Manager#addAccount()`">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Write a `Manager#addAccount()`" class="algolia-no-index">
                         <question has-input="true">
                           <p>For the <code>Manager</code> class shown below, write an <code>addAccount()</code> method that</p>
                           <ul>
@@ -891,7 +893,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                           </ul>
                           <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg" height="55">
                           <p></p>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Manager</span> </span>{
@@ -917,13 +919,13 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Implement `Marriage`">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Implement `Marriage`" class="algolia-no-index">
                         <question has-input="true">
                           <p>Implement the classes defensively with appropriate references and operations to establish the association among the classes. Follow the defensive coding approach. Let the <code>Marriage</code> class handle setting/removal of
                             reference.</p>
                           <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg" height="55">
                           <p></p>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Marriage</span> </span>{
     <span class="hljs-keyword">private</span> Man husband = <span class="hljs-keyword">null</span>;
     <span class="hljs-keyword">private</span> Woman wife = <span class="hljs-keyword">null</span>;
@@ -976,12 +978,12 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Immutable `Account` class">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Immutable `Account` class" class="algolia-no-index">
                         <question has-input="true">
                           <p>Give a suitable defensive implementation to the <code>Account</code> class in the following class diagram. Note that “{immutable}” means once the association is formed, it cannot be changed.</p>
                           <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png" height="80">
                           <p></p>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
     <span class="hljs-keyword">private</span> Guarantor myGuarantor; <span class="hljs-comment">// should not be public</span>
 
@@ -999,7 +1001,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Is this defensive?">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Is this defensive?" class="algolia-no-index">
                         <question>
                           <img src="/website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/countryCity.png" height="45">
                           <p></p>
@@ -1016,7 +1018,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                             <li class="radio-list-item"><label><input class="radio-list-input" name="ac03f" type="radio"> True</label></li>
                             <li class="radio-list-item"><label><input class="radio-list-input" name="ac03f" type="radio"> False</label></li>
                           </ul>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <p>False</p>
                             <p>Explanation: While the design requires a City to be connected to exactly one Country, the code allows it to be connected to zero Country objects (by passing null to the setCountry() method).</p>
                           </div>
@@ -1030,7 +1032,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
           </div>
         </panel>
         <p><span id="W10-2c"></span></p>
-        <panel type="seamless" popup-url="/website/book/errorHandling/defensiveProgramming/1to1Associations">
+        <panel type="seamless" popup-url="/website/book/errorHandling/defensiveProgramming/1to1Associations" class="algolia-no-index">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2c</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1040,7 +1042,8 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/errorHandling/defensiveProgramming/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Implementation → Error Handling → Defensive Programming → What%%" popup-url="/website/book/errorHandling/defensiveProgramming/what"></panel>
+                  <panel src="/website/book/errorHandling/defensiveProgramming/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Implementation → Error Handling → Defensive Programming → What%%" popup-url="/website/book/errorHandling/defensiveProgramming/what"
+                    class="algolia-no-index"></panel>
                 </p>
               </div>
               <p></p>
@@ -1088,7 +1091,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
           </div>
         </panel>
         <p><span id="W10-2d"></span></p>
-        <panel type="seamless" popup-url="/website/book/errorHandling/defensiveProgramming/referentialIntegrity">
+        <panel type="seamless" popup-url="/website/book/errorHandling/defensiveProgramming/referentialIntegrity" class="algolia-no-index">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1098,7 +1101,8 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/errorHandling/defensiveProgramming/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Implementation → Error Handling → Defensive Programming → What%%" popup-url="/website/book/errorHandling/defensiveProgramming/what"></panel>
+                  <panel src="/website/book/errorHandling/defensiveProgramming/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Implementation → Error Handling → Defensive Programming → What%%" popup-url="/website/book/errorHandling/defensiveProgramming/what"
+                    class="algolia-no-index"></panel>
                 </p>
               </div>
               <p></p>
@@ -1192,9 +1196,9 @@ jean.setBoyfriend(yong);
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Implement `Player` and `Region`">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Implement `Player` and `Region`" class="algolia-no-index">
                         <question has-input="true">
                           <p>Imagine that we now support the following feature in our Minesweeper game.</p>
                           <box>
@@ -1218,7 +1222,7 @@ jean.setBoyfriend(yong);
 </code></pre>
                           <p>However, this is not very defensive. For example, a user of this class can pass a <code>null</code> to either of the methods, thus violating the multiplicity of the relationship.</p>
                           <p>Implement the two classes using a more defensive approach. Take note of the bidirectional link which requires us to preserve referential integrity at all times.</p>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <p>In this solution, we assume <code>Regions</code> can be created without <code>Players</code> (note that we cannot be 100% defensive all the time). The usage will be something like this:</p>
                             <pre><code class="hljs java">Region r1 = <span class="hljs-keyword">new</span> Region();
 Player p1 = <span class="hljs-keyword">new</span> Player(r1);
@@ -1305,13 +1309,13 @@ r1.setPlayer(p2);
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Bidirectional association between `Bank` and `Account`">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Bidirectional association between `Bank` and `Account`" class="algolia-no-index">
                         <question has-input="true">
                           <p>Implement this bidirectional association. Note that the <code>Bank</code> uses <code>accNumber</code> attribute to uniquely identify an <code>Account</code> object. Assume the <code>Bank</code> class is responsible for maintaining
                             the links between objects.</p>
                           <img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/bankAccount.jpg" height="60">
                           <p></p>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <p>The code below contains a method in the <code>Bank</code> class to create an account; the bank field in the new account is thereby filled by the bank creating it.</p>
                             <p>We assume that once an <code>Account</code> has been assigned to one <code>Bank</code>, it cannot be assigned to a different <code>Bank</code>. Once the <code>Account</code> is removed from the <code>Bank</code>, it will not
                               be used any more (hence, no need to remove the link from <code>Account</code> to <code>Bank</code>).</p>
@@ -1355,7 +1359,7 @@ r1.setPlayer(p2);
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Is the code defensive? `Teacher` and `Student`">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Is the code defensive? `Teacher` and `Student`" class="algolia-no-index">
                         <question has-input="true">
                           <p>(a) Is the code given below a defensive translation of the associations shown in the class diagram? Explain your answer.</p>
                           <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span></span>{
@@ -1384,7 +1388,7 @@ r1.setPlayer(p2);
                           <p>(c) Show a defensive implementation of the <code>remove(Member m)</code> of the <code>Club</code> class given below.</p>
                           <img src="/website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/clubMember.png" height="60">
                           <p></p>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <p>(a) Yes. Each links is mutable and unidirectional. A simple reference variable is suitable to hold the link.</p>
                             <p><code>Teacher</code> class can be made even more defensive by introducing a <code>resetFavoriteStudent()</code> method to unlink the current favorite student from a teacher. In that case, <code>setFavoriteStudent(Student)</code>                              method should not accept null. This approach is more defensive because it prevents a null value being passed to <code>setFavoriteStudent(Student)</code> by mistake and being interpreted as a request to de-link the current
                               favorite student from the <code>Teacher</code> object.</p>
@@ -1407,14 +1411,14 @@ r1.setPlayer(p2);
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: True or False?">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: True or False?" class="algolia-no-index">
                         <question>
                           <p>Bidirectional associations, if not implemented properly, can result in referential integrity violations.</p>
                           <ul radio-group="719bb" class="radio-list">
                             <li class="radio-list-item"><label><input class="radio-list-input" name="719bb" type="radio"> True</label></li>
                             <li class="radio-list-item"><label><input class="radio-list-input" name="719bb" type="radio"> False</label></li>
                           </ul>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <p>True</p>
                             <p>Explanation: Bidirectional associations require two objects to link to each other. When one of these links is not consistent with the other, we have a referential integrity violation.</p>
                           </div>
@@ -1439,7 +1443,8 @@ r1.setPlayer(p2);
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/errorHandling/defensiveProgramming/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Implementation → Error Handling → Defensive Programming → What%%" popup-url="/website/book/errorHandling/defensiveProgramming/what"></panel>
+                  <panel src="/website/book/errorHandling/defensiveProgramming/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Implementation → Error Handling → Defensive Programming → What%%" popup-url="/website/book/errorHandling/defensiveProgramming/what"
+                    class="algolia-no-index"></panel>
                 </p>
               </div>
               <p></p>
@@ -1463,9 +1468,9 @@ r1.setPlayer(p2);
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Defensive programming">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Defensive programming" class="algolia-no-index">
                         <question>
                           <p>Defensive programming,</p>
                           <ul class="task-list">
@@ -1475,7 +1480,7 @@ r1.setPlayer(p2);
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. can make the code less susceptible to misuse.</li>
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. can require extra effort.</li>
                           </ul>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <p>(a)(b)(c)(d)(e)</p>
                             <p>Explanation: Defensive programming requires a more checks, possibly making the code longer, more complex, and possibly slower. Use it only when benefits outweigh costs, which is often.</p>
                           </div>
@@ -1489,7 +1494,7 @@ r1.setPlayer(p2);
           </div>
         </panel>
         <p><span id="W10-2f"></span></p>
-        <panel type="seamless" popup-url="/website/book/errorHandling/designByContract/what">
+        <panel type="seamless" popup-url="/website/book/errorHandling/designByContract/what" class="algolia-no-index">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W10.2f</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1517,9 +1522,9 @@ r1.setPlayer(p2);
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about the Design-by-contract approach?">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about the Design-by-contract approach?" class="algolia-no-index">
                         <question>
                           <p>Which statements are correct?</p>
                           <ul class="task-list">
@@ -1527,7 +1532,7 @@ r1.setPlayer(p2);
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is an alternative to OOP.</li>
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It assumes the caller of a method is responsible for ensuring all preconditions are met.</li>
                           </ul>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <p>(a)<s>(b)</s>(c)</p>
                             <p>Explanation: DbC is not an alternative to OOP. We can use DbC in an OOP solution.</p>
                           </div>
@@ -1609,9 +1614,9 @@ r1.setPlayer(p2);
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Test cases for `TriangleDetector`">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Test cases for `TriangleDetector`" class="algolia-no-index">
                       <question has-input="true">
                         <p>Given below is the sample output from a text-based program <code>TriangleDetector</code> ithat determines whether the three input numbers make up the three sides of a valid triangle. List test cases you would use to test this software.
                           Two sample test cases are given below.</p>
@@ -1626,7 +1631,7 @@ Enter side 1:
                         <pre><code class="hljs">34,34,34: Yes
 0, any valid, any valid: No
 </code></pre>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>In addition to obvious test cases such as</p>
                           <ul>
                             <li>sum of two sides == third,</li>
@@ -1648,10 +1653,10 @@ Enter side 1:
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Exhaustive testing in Minesweeper">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Exhaustive testing in Minesweeper" class="algolia-no-index">
                       <question has-input="true">
                         <p>Explain the why exhaustive testing is not practical using the example of testing <code>newGame()</code> operation in the <code>Logic</code> class of a Minesweeper game.</p>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>Consider this sequence of test cases:</p>
                           <ul>
                             <li>Test case 1. Start Minesweeper. Activate <code>newGame()</code> and see if it works.</li>
@@ -1666,7 +1671,7 @@ Enter side 1:
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about E&E of testing">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about E&E of testing" class="algolia-no-index">
                       <question>
                         <p>Improving efficiency and effectiveness of test case design can,</p>
                         <ul class="task-list">
@@ -1677,7 +1682,7 @@ Enter side 1:
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. minimize redundant test cases.</li>
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. forces us to understand the SUT better.</li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>(a)(b)(c)(d)(e)(f)</p>
                         </div>
                       </question>
@@ -1753,16 +1758,16 @@ Enter side 1:
                     1000 items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
                 </li>
               </ul>
-              <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> %%Black-box and white-box testing%%">
+              <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> %%Black-box and white-box testing%%" class="algolia-no-index">
                 <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
                 <tabs>
                   <tab header="<md>:glyphicon-facetime-video:</md> Black-box vs White-box testing">
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </tab>
-                  <tab header="<md>:glyphicon-facetime-video:</md> Black-box testing example">
+                  <tab header="<md>:glyphicon-facetime-video:</md> Black-box testing example" class="algolia-no-index">
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </tab>
-                  <tab header="<md>:glyphicon-facetime-video:</md> White-box testing example">
+                  <tab header="<md>:glyphicon-facetime-video:</md> White-box testing example" class="algolia-no-index">
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </tab>
                 </tabs>
@@ -1799,7 +1804,7 @@ Enter side 1:
               <p>To increase
                 <trigger trigger="click" for="modal:usebaseBased-EandE">E&amp;E of testing</trigger>, high-priority use cases are given more attention. For example, a
                 <trigger trigger="click" for="modal:usecaseBased-scripted">scripted approach</trigger> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
-              <modal large title="Quality Assurance → Test Case Design → Introduction → (extract) E&E of testing" id="modal:usebaseBased-EandE">
+              <modal large title="Quality Assurance → Test Case Design → Introduction → (extract) E&E of testing" id="modal:usebaseBased-EandE" class="algolia-no-index">
                 <div>
                   <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed">e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>                    In particular:</p>
                   <ul>
@@ -1814,7 +1819,7 @@ Enter side 1:
                     techniques that can help us improve E&amp;E of testing.</p>
                 </div>
               </modal>
-              <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:usecaseBased-scripted">
+              <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:usecaseBased-scripted" class="algolia-no-index">
                 <div>
                   <div></div>
                   <p></p>
@@ -1851,7 +1856,7 @@ Enter side 1:
                         <box>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                         </box>
-                        <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained <md>:glyphicon-eye-open:</md>">
+                        <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained <md>:glyphicon-eye-open:</md>" class="algolia-no-index">
                           <div>
                             <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry
                               thought leader in software testing).</p>
@@ -1860,16 +1865,16 @@ Enter side 1:
                       </div>
                       <div>
                         <div>
-                          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                             <div>
-                              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about exploratory and scripted testing">
+                              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about exploratory and scripted testing" class="algolia-no-index">
                                 <question>
                                   <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
                                   <ul radio-group="db31a" class="radio-list">
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> True</label></li>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> False</label></li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>A) False</p>
                                     <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
                                   </div>
@@ -1877,7 +1882,7 @@ Enter side 1:
                               </panel>
                             </div>
                             <div>
-                              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which testing technique is better?">
+                              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which testing technique is better?" class="algolia-no-index">
                                 <question>
                                   <p>Which testing technique is better?</p>
                                   <ul radio-group="9fd35" class="radio-list">
@@ -1887,17 +1892,17 @@ Enter side 1:
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> d. reactive testing</label></li>
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
                                   </ul>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>(e)</p>
                                   </div>
                                 </question>
                               </panel>
                             </div>
                             <div>
-                              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Explain the concept of exploratory testing using Minesweeper as an example.">
+                              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Explain the concept of exploratory testing using Minesweeper as an example." class="algolia-no-index">
                                 <question has-input="true">
                                   <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
-                                  <div slot="answer">
+                                  <div slot="answer" class="algolia-no-index">
                                     <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
                                   </div>
                                 </question>
@@ -1999,7 +2004,7 @@ Enter side 1:
               </ul>
             </box>
             <popover id="pop:epBasic-isValidMonth" title="`isValidMonth`" placement="top">
-              <div slot="content">
+              <div slot="content" class="algolia-no-index">
                 <div>
                   <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
                 </div>
@@ -2071,9 +2076,9 @@ Enter side 1:
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: EPs for `isValidName` method">
+                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: EPs for `isValidName` method" class="algolia-no-index">
                     <question>
                       <p>Consider this SUT:</p>
                       <box>
@@ -2094,7 +2099,7 @@ Enter side 1:
                         <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> c. A string that is 40 characters long</label></li>
                         <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> d. null</label></li>
                       </ul>
-                      <div slot="answer">
+                      <div slot="answer" class="algolia-no-index">
                         <p>A. (d)</p>
                         <p>Explanation: The description does not mention anything about the content of the string. Therefore, the method is unlikely to behave differently for strings consisting of numbers.</p>
                         <p>B. (a) or (c)</p>
@@ -2225,16 +2230,16 @@ Enter side 1:
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What BVA recommends">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What BVA recommends" class="algolia-no-index">
                       <question>
                         <p>Boundary value analysis recommends testing <em>only</em> values that reside on the equivalence class boundary.</p>
                         <ul radio-group="f8ff4" class="radio-list">
                           <li class="radio-list-item"><label><input class="radio-list-input" name="f8ff4" type="radio"> True</label></li>
                           <li class="radio-list-item"><label><input class="radio-list-input" name="f8ff4" type="radio"> False</label></li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>False</p>
                           <p>Explanation: It does not recommend testing <em>only</em> those values <em>on</em> the boundary. It merely suggests that values on and around a boundary are more likely to cause errors.</p>
                         </div>
@@ -2370,7 +2375,7 @@ Enter side 1:
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 02:03:15 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -2381,9 +2386,37 @@ Enter side 1:
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
 
@@ -55,7 +56,7 @@
                           <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
                           </popover>]</p>
                         <popover id="pop:actor" title="<md>:glyphicon-eye-open:</md>" placement="top">
-                          <div slot="content">
+                          <div slot="content" class="algolia-no-index">
                             <div>
                               <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
                             </div>
@@ -98,7 +99,7 @@ Extensions:
       Use case ends.
 </pre>
                       </panel>
-                      <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless">
+                      <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless" class="algolia-no-index">
                         <div class="text-monospace">
                           <ul>
                             <li>System: A Learning Management System (LMS)</li>
@@ -120,7 +121,7 @@ Extensions:
                       <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases
                         of a system.</p>
                       <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-                      <modal title="**Unified Modeling Language (UML)**" id="modal:uml">
+                      <modal title="**Unified Modeling Language (UML)**" id="modal:uml" class="algolia-no-index">
                         <div>
                           <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists
                             James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence,
@@ -147,9 +148,37 @@ Extensions:
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

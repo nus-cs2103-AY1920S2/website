@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
 
@@ -258,7 +259,7 @@
             <li>The line starting with <code>//</code> is a comment. You can use <code>//</code> for single line comments and <code>/* ... */</code> for multi-line comments in Java code.</li>
           </ul>
           <popover id="pop:helloWorld-statement" title="Statements" placement="top">
-            <div slot="content">
+            <div slot="content" class="algolia-no-index">
               <p>A statement is a line of code that performs a basic operation. In the HelloWorld program, this line is a print statement that displays a message on the screen:</p>
               <p><code>System.out.println(&quot;Hello, World!&quot;);</code></p>
             </div>
@@ -280,7 +281,7 @@
     </div>
     <div>
       <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="compliling-a-program"><span>Compliling a Program</span><a class="fa fa-anchor" href="#compliling-a-program"></a></h4>
+        <span slot="header" class="card-title"><div><h4 id="compiling-a-program"><span>Compiling a Program</span><a class="fa fa-anchor" href="#compiling-a-program"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -299,7 +300,7 @@
         <p>If the compilation is successful, you should see a file <code>HelloWorld.class</code>. That file contains the byte code for your program. If the compilation is unsuccessful, you will be notified of the
           <trigger for="pop:compiling-errors">compile-time errors</trigger>.</p>
         <popover id="pop:compiling-errors" title="Compile-time errors" placement="top">
-          <div slot="content">
+          <div slot="content" class="algolia-no-index">
             <p><em>Compile-time errors</em> <span class="dimmed">(aka <em>compile errors</em>)</span> occur when you violate the syntax rules of the Java language. For example, parentheses and braces have to come in matching pairs.</p>
             <p>Error messages from the compiler usually indicate where in the program the error occurred, and sometimes they can tell you exactly what the error is.</p>
           </div>
@@ -880,12 +881,12 @@ They are the same: true
 <span class="hljs-keyword">boolean</span> isSame = x.equals(<span class="hljs-string">"bar"</span>) <span class="hljs-comment">// false</span>
 isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comment">// true</span>
 </code></pre>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <ul>
                       <li>The two command line arguments can be accessed inside the <code>main</code> method using <code>args[0]</code> and <code>args[1]</code>.</li>
                       <li>When using multiple operators in the same expression, you might need to use parentheses to specify operator precedence. e.g., <code>&quot;foo&quot; + x == y</code> vs <code>&quot;foo&quot; + (x == y)</code></li>
                     </ul>
-                    <panel type="seamless" header="partial solution">
+                    <panel type="seamless" header="partial solution" class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WordComparator</span> </span>{
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
       String first = args[<span class="hljs-number">0</span>];
@@ -1026,7 +1027,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
           <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
             <div>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md> Greeter">
+                <panel header="<md>:glyphicon-question-sign:</md> Greeter" class="algolia-no-index">
                   <question>
                     <p>Write a Java program that takes several command line arguments that describe a person or a family | and prints out a greeting. The parameters can be one of two formats.</p>
                     <div class="table-responsive">
@@ -1060,7 +1061,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                     <p>
                       <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>java Greeter Tan M M F</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>Dear Tan family</code></p>
                     <p>You can assume that the input is always in the correct format <span class="dimmed">i.e., no need to handle invalid input cases</span>.</p>
-                    <div slot="hint">
+                    <div slot="hint" class="algolia-no-index">
                       <p>Partial solution:</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeter</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
@@ -1119,7 +1120,7 @@ isSame = x.equals(<span class="hljs-string">"foo"</span>) <span class="hljs-comm
                     <p>
                       <smal><span class="badge badge-secondary">&gt;_</span></smal> <code>java GradeHelper B</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>CAP for grade B is 3.5</code></p>
                     <p>You can assume that the input is always in the correct format <span class="dimmed">i.e., no need to handle invalid input cases</span>.</p>
-                    <div slot="hint">
+                    <div slot="hint" class="algolia-no-index">
                       <p>Partial solution:</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GradeHelper</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
@@ -1193,7 +1194,7 @@ Polly likes crackers
 </code></pre>
         <p>By convention, method names should be named in the
           <trigger trigger="click" for="modal:javaMethods_camelCase"><em>camelCase</em></trigger> format.</p>
-        <modal large title="Defintion: camelCase" id="modal:javaMethods_camelCase">
+        <modal large title="Defintion: camelCase" id="modal:javaMethods_camelCase" class="algolia-no-index">
           <div>
             <blockquote>
               <pic src="https://upload.wikimedia.org/wikipedia/commons/e/ef/CamelCase.svg" width="200" alt="camelCase"></pic>
@@ -1343,7 +1344,7 @@ Polly likes crackers
                   <pre><code class="hljs">A+: 5.0
 B : 3.5
 </code></pre>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <p>Partial solution:</p>
                     <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getGradeCap</span><span class="hljs-params">(String grade)</span> </span>{
         <span class="hljs-keyword">double</span> cap = <span class="hljs-number">0</span>;
@@ -1602,7 +1603,7 @@ B : 3.5
 A:5.0
 A-:4.5
 </code></pre>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <p>Partial solution:</p>
                     <pre><code class="hljs java">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span>[] getMultipleGradeCaps(String[] grades) {
         <span class="hljs-keyword">double</span>[] caps = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double</span>[grades.length];
@@ -1673,7 +1674,7 @@ A-:4.5
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example imports the <code>java.awt.Point</code> (i.e., the <code>Point</code> class in the <code>java.awt</code> package) class -- which can be used to represent
               <trigger for="pop:usingObjects-coordinates">the coordinates of a location in a Cartesian plane</trigger> -- and use it in the <code>main</code> method.</p>
             <popover id="pop:usingObjects-coordinates" title="Coordinates of a location in a Cartesian plane" placement="top">
-              <div slot="content">
+              <div slot="content" class="algolia-no-index">
                 <p>In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, <code>(0,0)</code> indicates the origin, and <code>(x,y)</code> indicates the point <code>x</code> units to the right
                   and <code>y</code> units up from the origin.</p>
               </div>
@@ -1728,7 +1729,7 @@ A-:4.5
                     </p>
                     <pre><code class="hljs">java.awt.Rectangle[x=0,y=0,width=5,height=10]
 </code></pre>
-                    <div slot="hint">
+                    <div slot="hint" class="algolia-no-index">
                       <ul>
                         <li>Import the <code>java.awt.Rectangle</code> class</li>
                         <li>This is how you create the required object <code>new Rectangle(0, 0, 5, 10)</code></li>
@@ -1838,7 +1839,7 @@ System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y);
 Area: 24
 java.awt.Rectangle[x=0,y=0,width=8,height=10]
 </code></pre>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <ul>
                       <li>Area can be calculated as <code>r.width * r.height</code></li>
                       <li>Setting the size can be done as <code>r.setSize(8, 10)</code></li>
@@ -2018,7 +2019,7 @@ argument rectangle after method call: java.awt.Rectangle[x=0,y=0,width=5,height=
 returned point: java.awt.Point[x=2,y=3]
 null
 </code></pre>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <p>Partial solution:</p>
                     <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Point <span class="hljs-title">move</span><span class="hljs-params">(Point p, Rectangle r)</span></span>{
     <span class="hljs-keyword">if</span> (p == <span class="hljs-keyword">null</span> || r == <span class="hljs-keyword">null</span>){
@@ -2244,7 +2245,7 @@ System.out.println(t.secondsSinceMidnight() + <span class="hljs-string">" second
                     <pre><code class="hljs">0
 78
 </code></pre>
-                    <div slot="hint">
+                    <div slot="hint" class="algolia-no-index">
                       <ul>
                         <li>Put the <code>Circle</code> class in a file called <code>Circle.java</code></li>
                       </ul>
@@ -2387,7 +2388,7 @@ area   : 113
 radius : 0.0
 radius : 0.0
 </code></pre>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <p>Partial solution:</p>
                     <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">double</span> radius)</span></span>{
     setX(x);
@@ -2586,7 +2587,7 @@ max radius used so far : 10.0
 max radius used so far : 10.0
 max radius used so far : 12.0
 </code></pre>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <p>You can use a <code>static</code> variable <code>maxRadius</code> to track the maximum value used for the <code>radius</code> attribute so far.</p>
                     <p>Partial solution:</p>
                     <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setRadius</span><span class="hljs-params">(<span class="hljs-keyword">double</span> radius)</span> </span>{
@@ -2658,7 +2659,7 @@ max radius used so far : 12.0
     <div>
       <p>String is a built-in Java class that you
         <trigger trigger="click" for="modal:stringClass-javaLang">can use without importing</trigger>. Given below are some useful String methods:</p>
-      <modal id="modal:stringClass-javaLang" title=":bulb: `java.lang` classes can be used without importing" placement="top">
+      <modal id="modal:stringClass-javaLang" title=":bulb: `java.lang` classes can be used without importing" placement="top" class="algolia-no-index">
         <p>Any class in the <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/package-summary.html"><code>java.lang</code></a> package can be used without importing.
         </p>
       </modal>
@@ -2924,7 +2925,7 @@ Second line
 SODA: 10.00
 FRIES: 0.50
 </code></pre>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <p>Partial solution:</p>
                     <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printPrice</span><span class="hljs-params">(String item)</span> </span>{
     <span class="hljs-keyword">int</span> dividerPosition = item.indexOf(<span class="hljs-string">"--"</span>);
@@ -3069,7 +3070,7 @@ System.out.println(i);
                   <pre><code class="hljs">0
 109
 </code></pre>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the <a href="https://www.tutorialspoint.com/java/number_parseint.htm"><code>Integer.parseInt()</code></a> method
                       to convert a <code>String</code> to the equivalent <code>int</code> value.</p>
                     <p>Partial solution:</p>
@@ -3175,7 +3176,7 @@ System.out.println(Arrays.toString(c));
 [@bee.com]
 
 </code></pre>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <ul>
                       <li><strong><code>filterEmailsfilterEmails(String[] items): String[]</code></strong>
                         <ol>
@@ -3190,7 +3191,7 @@ System.out.println(Arrays.toString(c));
                         </ul>
                       </li>
                     </ul>
-                    <panel type="seamless" header="Partial solution">
+                    <panel type="seamless" header="Partial solution" class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String[] filterEmails(String[] items){
     String[] results = <span class="hljs-keyword">new</span> String[items.length];
     <span class="hljs-keyword">int</span> matchCount = <span class="hljs-number">0</span>;
@@ -3319,9 +3320,9 @@ String[] words = sentence.split(<span class="hljs-string">" "</span>); <span cla
 System.out.println(Arrays.toString(words));
 </code></pre>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>[hello, my, dear]</code></p>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <code>String.format(&quot;%.2f&quot;, doubleValue)</code> to format <code>doubleValue</code> to two decimal points.<br>                      e.g., <code>String.format(&quot;%.2f&quot;, 1.3334)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code>1.33</code></p>
-                    <panel type="seamless" header="Partial solution">
+                    <panel type="seamless" header="Partial solution" class="algolia-no-index">
                       <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Arrays;
 <span class="hljs-keyword">import</span> java.util.Scanner;
 
@@ -3604,7 +3605,7 @@ Nov 16
 true
 Postponed to Nov 18th
 </code></pre>
-                    <div slot="hint">
+                    <div slot="hint" class="algolia-no-index">
                       <p><code>Todo</code> class is given below. You can follow a similar approach for the <code>Deadline</code> class.</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Todo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
@@ -3832,7 +3833,7 @@ do by: Postponed to Nov 18th
 </code></pre>
                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use the <code>super.toString</code> from the subclass to invoke the behavior of the method you are overriding. This
                     is useful here because the overriding method is simply <em>adding onto</em> the behavior of the overridden method.</p>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <p><code>toString()</code> method of <code>Task</code> class and <code>Todo</code> class are given below. You can follow a similar approach for the <code>Deadline</code> class.</p>
                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
     <span class="hljs-comment">// ...</span>
@@ -3904,7 +3905,7 @@ do by: Postponed to Nov 18th
         <pre><code class="hljs">Mittens: Meow
 Snowball: Meow
 </code></pre>
-        <panel type="seamless" header="%%The `Cat` class%%">
+        <panel type="seamless" header="%%The `Cat` class%%" class="algolia-no-index">
           <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Cat</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -3943,7 +3944,7 @@ Snowball: Meow
 Snowball: Meow
 Spot: Woof
 </code></pre>
-        <panel type="seamless" header="%%The `Dog` class%%">
+        <panel type="seamless" header="%%The `Dog` class%%" class="algolia-no-index">
           <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Dog</span><span class="hljs-params">(String name)</span> </span>{
         <span class="hljs-keyword">super</span>(name);
@@ -3979,7 +3980,7 @@ Spot: Woof
 Snowball: Meow
 Spot: Woof
 </code></pre>
-        <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%">
+        <panel type="seamless" header="%%The `Animal`, `Cat`, and `Dog` classes%%" class="algolia-no-index">
           <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
 
     <span class="hljs-keyword">protected</span> String name;
@@ -4087,7 +4088,7 @@ Spot: Woof
 }
 </code></pre>
                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You may use an array of size 100 to store the shapes.</p>
-                  <panel type="seamless" header="Partial solution">
+                  <panel type="seamless" header="Partial solution" class="algolia-no-index">
                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Shape[] shapes = <span class="hljs-keyword">new</span> Shape[<span class="hljs-number">100</span>];
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> shapeCount = <span class="hljs-number">0</span>;
@@ -4283,7 +4284,7 @@ Rectangle of area 16
 }
 </code></pre>
                   <p>Add the missing <code>Shape</code> class <mark>as an abstract class with two abstract methods</mark>.</p>
-                  <panel type="seamless" header="Partial solution">
+                  <panel type="seamless" header="Partial solution" class="algolia-no-index">
                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;
@@ -4295,7 +4296,7 @@ Rectangle of area 16
               </panel>
             </div>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about abstract classes">
+              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about abstract classes" class="algolia-no-index">
                 <question>
                   <p>Choose the correct statements about Java abstract classes and
                     <tooltip content="classes that are not abstract">concrete classes</tooltip>.</p>
@@ -4305,7 +4306,7 @@ Rectangle of area 16
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An abstract class need not contain any concrete methods.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. An abstract class cannot be instantiated.</li>
                   </ul>
-                  <div slot="answer">
+                  <div slot="answer" class="algolia-no-index">
                     <p>(b)(c)(d)</p>
                     <p>Explanation: A concrete class cannot contain even a single abstract method.</p>
                   </div>
@@ -4388,7 +4389,7 @@ Rectangle of area 16
         </ol>
       </box>
       <p><strong>Interfaces can also contain <trigger trigger="click" for="modal:javaInterfaces-constants">constants</trigger> and static methods</strong>.</p>
-      <modal large title="%%Textbook »%%" id="modal:javaInterfaces-constants">
+      <modal large title="%%Textbook »%%" id="modal:javaInterfaces-constants" class="algolia-no-index">
         <div>
           <div></div>
           <p></p>
@@ -4525,7 +4526,7 @@ Person of name James Cook
     <span class="hljs-comment">// todo: add missing methods</span>
 }
 </code></pre>
-                  <panel type="seamless" header="Partial solution">
+                  <panel type="seamless" header="Partial solution" class="algolia-no-index">
                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Printable</span> </span>{
     <span class="hljs-comment">//...</span>
 }
@@ -4849,7 +4850,7 @@ WIDTH or HEIGHT is missing: 3x
 WIDTH or HEIGHT is missing: 3
 Too many dimensions: 3x4x5
 </code></pre>
-                  <panel type="seamless" header="Partial solution">
+                  <panel type="seamless" header="Partial solution" class="algolia-no-index">
                     <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{
@@ -5296,7 +5297,7 @@ The total is: 35
 [3, 24]
 The total is: 27
 </code></pre>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <p>Partial solution:</p>
                     <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.ArrayList;
 
@@ -5433,7 +5434,7 @@ Number of keys after clearing: 0
 Friday =&gt; 1
 Wednesday =&gt; 2
 </code></pre>
-                  <div slot="hint">
+                  <div slot="hint" class="algolia-no-index">
                     <p>Partial solution:</p>
                     <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.HashMap;
 <span class="hljs-keyword">import</span> java.util.Map;
@@ -5549,7 +5550,7 @@ Orange indicates medium priority
 Blue indicates medium priority
 Green indicates low priority
 </code></pre>
-                    <div slot="hint">
+                    <div slot="hint" class="algolia-no-index">
                       <p>Use a <code>switch</code> statement to select between possible values for <code>Priority</code>.</p>
                       <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">describe</span><span class="hljs-params">(String color, Priority p)</span> </span>{
         <span class="hljs-keyword">switch</span> (p) {
@@ -5669,7 +5670,7 @@ Green indicates low priority
     }
 }
 </code></pre>
-        <panel type="seamless" header="`Formatter` class">
+        <panel type="seamless" header="`Formatter` class" class="algolia-no-index">
           <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
 
 <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
@@ -6235,12 +6236,12 @@ second line
                 </li>
               </ul>
             </tab>
-            <tab header="<md>:glyphicon-facetime-video:</md>">
+            <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
 
 
               <p>A video tutorial by well-known Java coach Venkat Subramaniam</p>
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Ee5t_EGjv0A" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-              <panel type="seamless" header="A a more detailed version covering similar grounds">
+              <panel type="seamless" header="A a more detailed version covering similar grounds" class="algolia-no-index">
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1OpAgZvYXLQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </panel>
             </tab>
@@ -6305,9 +6306,37 @@ second line
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

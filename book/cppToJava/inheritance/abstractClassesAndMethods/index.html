@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
 
 
@@ -205,7 +206,7 @@ Rectangle of area 16
 }
 </code></pre>
                                 <p>Add the missing <code>Shape</code> class <mark>as an abstract class with two abstract methods</mark>.</p>
-                                <panel type="seamless" header="Partial solution">
+                                <panel type="seamless" header="Partial solution" class="algolia-no-index">
                                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">int</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span>;
@@ -217,7 +218,7 @@ Rectangle of area 16
                             </panel>
                           </div>
                           <div>
-                            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about abstract classes">
+                            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about abstract classes" class="algolia-no-index">
                               <question>
                                 <p>Choose the correct statements about Java abstract classes and
                                   <tooltip content="classes that are not abstract">concrete classes</tooltip>.</p>
@@ -227,7 +228,7 @@ Rectangle of area 16
                                   <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An abstract class need not contain any concrete methods.</li>
                                   <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. An abstract class cannot be instantiated.</li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>(b)(c)(d)</p>
                                   <p>Explanation: A concrete class cannot contain even a single abstract method.</p>
                                 </div>
@@ -254,9 +255,37 @@ Rectangle of area 16
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

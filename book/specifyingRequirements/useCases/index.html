@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
 
@@ -59,7 +60,7 @@
                           <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
                           </popover>]</p>
                         <popover id="pop:actor" title="<md>:glyphicon-eye-open:</md>" placement="top">
-                          <div slot="content">
+                          <div slot="content" class="algolia-no-index">
                             <div>
                               <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
                             </div>
@@ -102,7 +103,7 @@ Extensions:
       Use case ends.
 </pre>
                       </panel>
-                      <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless">
+                      <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless" class="algolia-no-index">
                         <div class="text-monospace">
                           <ul>
                             <li>System: A Learning Management System (LMS)</li>
@@ -124,7 +125,7 @@ Extensions:
                       <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases
                         of a system.</p>
                       <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-                      <modal title="**Unified Modeling Language (UML)**" id="modal:uml">
+                      <modal title="**Unified Modeling Language (UML)**" id="modal:uml" class="algolia-no-index">
                         <div>
                           <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists
                             James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence,
@@ -229,16 +230,16 @@ Extensions:
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel header="Q: Use case diagram for a ticket vending machine">
+                        <panel header="Q: Use case diagram for a ticket vending machine" class="algolia-no-index">
                           <question has-input="false">
                             <p>Consider a simple movie ticket vending machine application. Every week, the theatre staff will enter the weekly schedule as well as ticket price for each show. A customer sees the schedule and the ticket price displayed at
                               the machine. There is a slot to insert money, a keypad to enter a code for a movie, a code for the show time, and the number of tickets. A display shows the customer's balance inside the machine. A customer may choose to
                               cancel a transaction before pressing the “buy” button. Printed tickets can be collected from a slot at the bottom of the machine. The machine also displays messages such as &quot;Please enter more money”, “Request fewer tickets&quot;
                               or &quot;SOLD OUT!”. Finally, a &quot;Return Change&quot; button allows the customer to get back his unspent money.</p>
                             <p><strong>Draw a use case diagram for the above requirements.</strong></p>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <img src="/website/book/specifyingRequirements/useCases/identifying/images/ticketMachine.png" width="300">
                               <p></p>
                               <p>Note that most of the details in the description are better given as part of the use case description rather than as low-level use cases in the diagram.</p>
@@ -247,7 +248,7 @@ Extensions:
                         </panel>
                       </div>
                       <div>
-                        <panel header="Q: Use case diagram for QA system">
+                        <panel header="Q: Use case diagram for QA system" class="algolia-no-index">
                           <question has-input="false">
                             <p>A software house wishes to automate its Quality Assurance division.</p>
                             <p>The system is to be used by Testers, Programmers and System Administrators. Only an administrator can create new users and assign tasks to programmers. Any tester can create a bug report, as well as set the status of a bug
@@ -258,7 +259,7 @@ Extensions:
                               awaiting to be assigned to programmers etc.
                             </p>
                             <p><strong>Develop a use case diagram to capture their requirements given below.</strong></p>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <img src="/website/book/specifyingRequirements/useCases/identifying/images/qaSystem.jpg" width="400">
                               <p></p>
                               <p><strong>Explanation</strong>: The given description contains information not relevant to use case modeling. Furthermore, the description is not enough to complete the use case diagram All these are realities of real projects.
@@ -503,10 +504,10 @@ Extensions:
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                     <div>
                       <link rel="stylesheet" href="/website/book/css/common.css">
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: EZ-Link top-up use case">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: EZ-Link top-up use case" class="algolia-no-index">
                         <question has-input="true">
                           <p>Complete the following use case (MSS, extensions, etc.). Note that you should not blindly follow how the existing
                             <tooltip content="A type of a cash card topup machine">EZ-Link machine</tooltip> operates because it will prevent you from designing a better system. You should consider all possible extensions without complicating the use case too much.</p>
@@ -517,7 +518,7 @@ Extensions:
                               <li>Actor: EZ-Link card user</li>
                             </ul>
                           </box>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <box>
                               <div>
                                 <ul>
@@ -612,7 +613,7 @@ Extensions:
                     </div>
                     <div>
                       <link rel="stylesheet" href="/website/book/css/common.css">
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: LearnSys – reply to post use case">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: LearnSys – reply to post use case" class="algolia-no-index">
                         <question has-input="true">
                           <p>Complete the following use case (MSS, extensions, etc.).</p>
                           <box>
@@ -622,7 +623,7 @@ Extensions:
                               <li>Actor: Student</li>
                             </ul>
                           </box>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <box>
                               <div>
                                 <ul>
@@ -695,7 +696,7 @@ Extensions:
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Parts of a use case descriptions">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Parts of a use case descriptions" class="algolia-no-index">
                         <question>
                           <p>Which of these cannot appear as part of a use case description?</p>
                           <ul class="task-list">
@@ -708,7 +709,7 @@ Extensions:
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. Extensions</li>
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> h. Inclusions</li>
                           </ul>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <p>(f)</p>
                             <p>Explanation: Performance requirements are non-functional requirements. They are not captured in use cases.</p>
                           </div>
@@ -717,7 +718,7 @@ Extensions:
                     </div>
                     <div>
                       <link rel="stylesheet" href="/website/book/css/common.css">
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What’s wrong with this use case?">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What’s wrong with this use case?" class="algolia-no-index">
                         <question>
                           <p>Identify problems with this use case description.</p>
                           <div>
@@ -761,7 +762,7 @@ Extensions:
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. No post conditions are given.</li>
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. ‘Use case ends’ is duplicated.</li>
                           </ul>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <p>None.</p>
                             <p>Explanation: Catastrophic failures such as ‘system crash’ need not be included in a use case. A use case is not supposed to contain UI details. Post conditions are optional. It is not a problem to have multiple exit points
                               for a use case.</p>
@@ -816,9 +817,9 @@ Extensions:
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Advantages of use cases">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Advantages of use cases" class="algolia-no-index">
                       <question>
                         <p>What are the advantages of using use cases (the textual form) for requirements modelling?</p>
                         <ul class="task-list">
@@ -827,14 +828,14 @@ Extensions:
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Extensions encourage us to consider all situations a software product might face during its operations.</li>
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. They encourage us to identify and optimize the typical scenario of usage over exceptional usage scenarios.</li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>(a) (b) (c) (d)</p>
                         </div>
                       </question>
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about use cases">
+                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about use cases" class="algolia-no-index">
                       <question>
                         <p>Which of these are correct?</p>
                         <ul class="task-list">
@@ -843,7 +844,7 @@ Extensions:
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Use cases are better than user stories.</li>
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Use cases can be expressed at different levels of abstraction.</li>
                         </ul>
-                        <div slot="answer">
+                        <div slot="answer" class="algolia-no-index">
                           <p>(a)(b)(d)</p>
                           <p>Explanation: It is not correct to say one format is better than the other. It depends on the context.</p>
                         </div>
@@ -871,9 +872,37 @@ Extensions:
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

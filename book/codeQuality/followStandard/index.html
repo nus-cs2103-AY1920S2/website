@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
 
@@ -60,9 +61,9 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is the recommended approach regarding coding standards?">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is the recommended approach regarding coding standards?" class="algolia-no-index">
                             <question>
                               <p>What is the recommended approach regarding coding standards?</p>
                               <ul radio-group="5c5a1" class="radio-list">
@@ -71,14 +72,14 @@
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>c</p>
                               </div>
                             </question>
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> What is the aim? What is the value?">
+                          <panel header="<md>:glyphicon-question-sign:</md> What is the aim? What is the value?" class="algolia-no-index">
                             <question has-input>
                               <p>What is the aim of using a coding standard? How does it help?</p>
                             </question>
@@ -117,7 +118,7 @@
                     <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                       <div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Find basic coding standard violations">
+                          <panel header="<md>:glyphicon-question-sign:</md> Find basic coding standard violations" class="algolia-no-index">
                             <question>
                               <p>Consider the code given below:</p>
                               <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
@@ -146,7 +147,7 @@
 }
 </code></pre>
                               <p>In what ways the code violate the coding standard you are expected to follow?</p>
-                              <div slot="hint">
+                              <div slot="hint" class="algolia-no-index">
                                 <p>Here are three:</p>
                                 <ul>
                                   <li><code>descriptionPrefix</code> is a constant and should be named <code>DESCRIPTION_PREFIX</code></li>
@@ -187,7 +188,7 @@
                   <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                     <div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Unsuitable variable name">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Unsuitable variable name" class="algolia-no-index">
                           <question>
                             <p>According to the given Java coding standard, which one of these is not a good name?</p>
                             <ul radio-group="d008b" class="radio-list">
@@ -197,7 +198,7 @@
                               <li class="radio-list-item"><label><input class="radio-list-input" name="d008b" type="radio"> d. method name (returns boolean): <code>isValidAddress</code></label></li>
                               <li class="radio-list-item"><label><input class="radio-list-input" name="d008b" type="radio"> e. String variable name: <code>description</code></label></li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>b</p>
                               <p>Explanation: <code>checkWeight</code> is an action. Naming variables as actions makes the code harder to follow. <code>isWeightValid</code> may be a better name.</p>
                             </div>
@@ -205,11 +206,11 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md> Find intermediate coding standard violations">
+                        <panel header="<md>:glyphicon-question-sign:</md> Find intermediate coding standard violations" class="algolia-no-index">
                           <question>
                             <p>Repeat the exercise in the panel below but also find violations of <em>intermediate</em> level guidelines.</p>
                             <div>
-                              <panel header="<md>:glyphicon-question-sign:</md> Find basic coding standard violations">
+                              <panel header="<md>:glyphicon-question-sign:</md> Find basic coding standard violations" class="algolia-no-index">
                                 <question>
                                   <p>Consider the code given below:</p>
                                   <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
@@ -238,7 +239,7 @@
 }
 </code></pre>
                                   <p>In what ways the code violate the coding standard you are expected to follow?</p>
-                                  <div slot="hint">
+                                  <div slot="hint" class="algolia-no-index">
                                     <p>Here are three:</p>
                                     <ul>
                                       <li><code>descriptionPrefix</code> is a constant and should be named <code>DESCRIPTION_PREFIX</code></li>
@@ -250,7 +251,7 @@
                                 </question>
                               </panel>
                             </div>
-                            <div slot="hint">
+                            <div slot="hint" class="algolia-no-index">
                               <p>Here's one you are more likely to miss:</p>
                               <ul>
                                 <li><code>* Print the description as a string.</code> → <code>* Prints the description as a string.</code></li>
@@ -282,9 +283,37 @@
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

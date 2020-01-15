@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../markbind/css/page-nav.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -73,7 +74,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -242,7 +243,7 @@
               <div>
                 <div class="indented">
                   <div class="indented border">
-                    <panel type="seamless">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
                       <div slot="header"><span><span class="dimmed"><strong><code>Level-7</code>: Save</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                       </div>
@@ -272,7 +273,7 @@ T | 1 | join sports club
               <div>
                 <div class="indented">
                   <div class="indented border">
-                    <panel type="seamless">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
                       <div slot="header"><span><span class="dimmed"><strong><code>Level-8</code>: Dates and Times</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                       </div>
@@ -289,7 +290,7 @@ T | 1 | join sports club
                             format such as <code>MMM d yyyy</code> e.g., (<code>Oct 15 2019</code>).</li>
                           <li><strong>Stretch goal</strong>: Use dates and times in more meaningful ways. e.g., add a command to print deadlines/events occurring on a specific date.</li>
                         </ul>
-                        <panel header="Using dates/times in Java" minimized>
+                        <panel header="Using dates/times in Java" minimized class="algolia-no-index">
                           <p>A code snippet using the <code>LocalDate</code> class:</p>
                           <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.time.LocalDate;
 <span class="hljs-keyword">import</span> java.time.format.DateTimeFormatter;
@@ -338,7 +339,7 @@ T | 1 | join sports club
               <div>
                 <div class="indented">
                   <div class="indented border">
-                    <panel type="seamless">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
                       <div slot="header"><span><span class="dimmed"><strong><code>A-MoreOOP</code>: Use More OOP</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                       </div>
@@ -419,7 +420,7 @@ T | 1 | join sports club
               <div>
                 <div class="indented">
                   <div class="indented border">
-                    <panel type="seamless">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
                       <div slot="header"><span><span class="dimmed"><strong><code>A-Packages</code>: Organize into Packages</strong></span> <span class="badge badge-pill badge-secondary">optional</span></span>
                       </div>
@@ -443,7 +444,7 @@ T | 1 | join sports club
               <div>
                 <div class="indented">
                   <div class="indented border">
-                    <panel type="seamless">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
                       <div slot="header"><span><span class="dimmed"><strong><code>A-JUnit</code>: Add JUnit Tess</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                       </div>
@@ -520,12 +521,12 @@ T | 1 | join sports club
                               </li>
                             </ol>
                           </tab>
-                          <tab header="With Gradle">
+                          <tab header="With Gradle" class="algolia-no-index">
 
 
 
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Refer to the Gradle tutorial at the Duke repo (i.e., the repo you forked from) to find how to use JUnit via Gradle.</p>
-                            <panel header="**Extension `A-Gradle`**">
+                            <panel header="**Extension `A-Gradle`**" class="algolia-no-index">
                               <div>
                                 <div>
                                   <div></div>
@@ -550,7 +551,7 @@ T | 1 | join sports club
               <div>
                 <div class="indented">
                   <div class="indented border">
-                    <panel type="seamless">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
                       <div slot="header"><span><span class="dimmed"><strong><code>A-Jar</code>: Create a JAR File</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                       </div>
@@ -574,7 +575,7 @@ T | 1 | join sports club
                         </ul>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Gradle for your project, refer to the Gradle tutorial at the Duke repo (i.e., the repo you forked from)
                           to find how to create a jar file using Gradle.</p>
-                        <panel header="**Extension `A-Gradle`**">
+                        <panel header="**Extension `A-Gradle`**" class="algolia-no-index">
                           <div>
                             <div>
                               <div></div>
@@ -605,7 +606,7 @@ T | 1 | join sports club
               <div>
                 <div class="indented">
                   <div class="indented border">
-                    <panel type="seamless">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
                       <div slot="header"><span><span class="dimmed"><strong><code>A-JavaDoc</code>: JavaDoc</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                       </div>
@@ -629,7 +630,7 @@ T | 1 | join sports club
               <div>
                 <div class="indented">
                   <div class="indented border">
-                    <panel type="seamless">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
                       <div slot="header"><span><span class="dimmed"><strong><code>A-CodingStandard</code>: Follow the Coding Standard</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                       </div>
@@ -649,7 +650,7 @@ T | 1 | join sports club
               <div>
                 <div class="indented">
                   <div class="indented border">
-                    <panel type="seamless">
+                    <panel type="seamless" class="algolia-no-index">
                       <div></div>
                       <div slot="header"><span><span class="dimmed"><strong><code>Level-9</code>: Find</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
                       </div>
@@ -707,7 +708,7 @@ T | 1 | join sports club
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 02:03:15 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -718,9 +719,37 @@ T | 1 | join sports club
 <script src="../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

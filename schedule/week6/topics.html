@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown">
+        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown">
+        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -73,7 +74,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -96,7 +97,7 @@
           </nav>
           <p></p>
           <h1 id="week-6-feb-17-topics">Week 6 <small><small><span class="dimmed">[Feb 17]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-6-feb-17-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%">
+          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week6/topics.html#W6-1">W6.1</a>] <strong>Modeling: Sequence Diagrams</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -220,21 +221,21 @@
                 <div>
                   <p>
                     <panel type="seamless" src="/website/book/uml/sequenceDiagrams/introduction/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Introduction" alt="<md>:glyphicon-education:</md> UML/SequenceDiagrams"
-                      fragment="main"></panel>
+                      fragment="main" class="algolia-no-index"></panel>
                   </p>
                   <p>
                     <panel type="seamless" src="/website/book/uml/sequenceDiagrams/basic/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Basic Notation" alt="<md>:glyphicon-education:</md> UML/SD/Basic"
-                      fragment="main"></panel>
+                      fragment="main" class="algolia-no-index"></panel>
                   </p>
                   <p>
                     <panel type="seamless" src="/website/book/uml/sequenceDiagrams/loops/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Loops" alt="<md>:glyphicon-education:</md> UML/SD/Loops"
-                      fragment="main"></panel>
+                      fragment="main" class="algolia-no-index"></panel>
                     <panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectCreation/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Object Creation" alt="<md>:glyphicon-education:</md> UML/SD/Creation"
-                      fragment="main"></panel>
+                      fragment="main" class="algolia-no-index"></panel>
                   </p>
                   <p>
                     <panel type="seamless" src="/website/book/uml/sequenceDiagrams/minimalNotation/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Minimal Notation" alt="<md>:glyphicon-education:</md> UML/SD/Minimal"
-                      fragment="main"></panel>
+                      fragment="main" class="algolia-no-index"></panel>
                   </p>
                 </div>
                 <div>
@@ -242,14 +243,14 @@
                     <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                       <div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Explain Sequence Diagram about Machine">
+                          <panel header="<md>:glyphicon-question-sign:</md> Explain Sequence Diagram about Machine" class="algolia-no-index">
                             <question>
                               <p>Explain in your own words the interactions illustrated by this Sequence Diagram:</p>
                               <img src="/website/book/uml/sequenceDiagrams/introduction/images/Machine.png" width="500"></question>
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Draw a Sequence Diagram for the code (`PersonList`, `Person`, `Tag`)">
+                          <panel header="<md>:glyphicon-question-sign:</md> Draw a Sequence Diagram for the code (`PersonList`, `Person`, `Tag`)" class="algolia-no-index">
                             <question>
                               <p>Consider the code below:</p>
                               <div class="row">
@@ -291,7 +292,7 @@
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Find notation errors in sequence diagram">
+                          <panel header="<md>:glyphicon-question-sign:</md> Find notation errors in sequence diagram" class="algolia-no-index">
                             <question>
                               <p>Find notation mistakes in the sequence diagram below:</p>
                               <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png" width="500"></question>
@@ -327,15 +328,15 @@
                 <div>
                   <p>
                     <panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectDeletion/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Object Deletion" alt="<md>:glyphicon-education:</md> UML/SD/Deletion"
-                      fragment="main"></panel>
+                      fragment="main" class="algolia-no-index"></panel>
                     <panel type="seamless" src="/website/book/uml/sequenceDiagrams/selfInvocation/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Self-Invocation" alt="<md>:glyphicon-education:</md> UML/SD/Self-Invocation"
-                      fragment="main"></panel>
+                      fragment="main" class="algolia-no-index"></panel>
                     <panel type="seamless" src="/website/book/uml/sequenceDiagrams/alternativePaths/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Alternative Paths" alt="<md>:glyphicon-education:</md> UML/SD/Alternative"
-                      fragment="main"></panel>
+                      fragment="main" class="algolia-no-index"></panel>
                     <panel type="seamless" src="/website/book/uml/sequenceDiagrams/optionalPaths/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Optional Paths" alt="<md>:glyphicon-education:</md> UML/SD/Optional"
-                      fragment="main"></panel>
+                      fragment="main" class="algolia-no-index"></panel>
                     <panel type="seamless" src="/website/book/uml/sequenceDiagrams/staticMethods/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Calls to Static Methods" alt="<md>:glyphicon-education:</md> UML/SD/StaticMethods"
-                      fragment="main"></panel>
+                      fragment="main" class="algolia-no-index"></panel>
                   </p>
                 </div>
                 <div>
@@ -343,7 +344,7 @@
                     <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                       <div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What’s going on here?">
+                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What’s going on here?" class="algolia-no-index">
                             <question>
                               <p>What’s going on here?</p>
                               <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
@@ -355,26 +356,26 @@
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. One of <code>Logic</code> object’s methods is calling another of its methods.</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. <code>Minefield</code> object is calling a method of <code>Logic</code>.</li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>(d)</p>
                               </div>
                             </question>
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Explain Sequence Diagram (`ParserFactory`)">
+                          <panel header="<md>:glyphicon-question-sign:</md> Explain Sequence Diagram (`ParserFactory`)" class="algolia-no-index">
                             <question>
                               <p>Explain the interactions depicted in this sequence diagram.</p>
                               <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
                               <p></p>
-                              <div slot="hint">
+                              <div slot="hint" class="algolia-no-index">
                                 <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
                               </div>
                             </question>
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Draw Sequence Diagram for printing a quote">
+                          <panel header="<md>:glyphicon-question-sign:</md> Draw Sequence Diagram for printing a quote" class="algolia-no-index">
                             <question>
                               <p>Draw a sequence diagram to represent this code snippet.</p>
                               <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isFirstPage) {
@@ -400,7 +401,7 @@
 
 }
 </code></pre>
-                              <div slot="hint">
+                              <div slot="hint" class="algolia-no-index">
                                 <ul>
                                   <li>Show <code>new Quote().print();</code> as two method calls.</li>
                                   <li>As the created Quote object is not assigned to a variable, it can be considered as 'deleted' soon after its <code>print()</code> method is called.</li>
@@ -552,9 +553,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about architecture">
+                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about architecture" class="algolia-no-index">
                         <question>
                           <p>Choose the correct statement</p>
                           <ul class="task-list">
@@ -563,7 +564,7 @@
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The architecture is usually decided by the project manager.</li>
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. The architecture can contain details private to a component.</li>
                           </ul>
-                          <div slot="answer">
+                          <div slot="answer" class="algolia-no-index">
                             <p>(a)(b)</p>
                             <p><s>(c)</s> Reason: Architecture is usually designed by the Architect</p>
                             <p><s>(d)</s> Reason:</p>
@@ -590,7 +591,7 @@
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/architecture/introduction/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Architecture → Introduction → What%%" popup-url="/website/book/architecture/introduction/what"></panel>
+                  <panel src="/website/book/architecture/introduction/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Architecture → Introduction → What%%" popup-url="/website/book/architecture/introduction/what" class="algolia-no-index"></panel>
                 </p>
               </div>
               <p></p>
@@ -611,18 +612,18 @@
                       <tab header="TEAMMATES">
                         <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
                       </tab>
-                      <tab header="se-edu/addressbook-level3">
+                      <tab header="se-edu/addressbook-level3" class="algolia-no-index">
                         <p><img src="https://se-education.org/addressbook-level3/images/ArchitectureDiagram.png" width="300"><br></p>
                       </tab>
-                      <tab header="Example 1">
+                      <tab header="Example 1" class="algolia-no-index">
                         <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
                           <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
                       </tab>
-                      <tab header="Example 2">
+                      <tab header="Example 2" class="algolia-no-index">
                         <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
                           <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
                       </tab>
-                      <tab header="Example 3">
+                      <tab header="Example 3" class="algolia-no-index">
                         <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
                           <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
                       </tab>
@@ -668,9 +669,9 @@
                     <tabs>
                       <tab header="UI">
                         <img src="https://se-edu.github.io/addressbook-level3/images/UiClassDiagram.png" width="700"></tab>
-                      <tab header="Logic">
+                      <tab header="Logic" class="algolia-no-index">
                         <img src="https://se-edu.github.io/addressbook-level3/images/LogicClassDiagram.png" width="800"></tab>
-                      <tab header="Storage">
+                      <tab header="Storage" class="algolia-no-index">
                         <img src="https://se-edu.github.io/addressbook-level3/images/StorageClassDiagram.png" width="700"></tab>
                     </tabs>
                   </box>
@@ -858,9 +859,9 @@
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Logging vs blackbox">
+                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Logging vs blackbox" class="algolia-no-index">
                     <question>
                       <p>Why is logging like having the 'black box' in an airplane?</p>
                       <ul radio-group="6f5b0" class="radio-list">
@@ -869,7 +870,7 @@
                         <li class="radio-list-item"><label><input class="radio-list-input" name="6f5b0" type="radio"> c. Because they both can be in hardcopy form or digital form.</label></li>
                         <li class="radio-list-item"><label><input class="radio-list-input" name="6f5b0" type="radio"> d. Because they are hard to open by normal users.</label></li>
                       </ul>
-                      <div slot="answer">
+                      <div slot="answer" class="algolia-no-index">
                         <p>(a)</p>
                       </div>
                     </question>
@@ -967,7 +968,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
       <br>
       <h3 id="markdown"><span class="dimmed"><strong>Markdown</strong></span><a class="fa fa-anchor" href="#markdown"></a></h3>
       <p><span id="W6-5a"></span></p>
-      <panel type="seamless" popup-url="/website/book/documentation/tools/markdown/what">
+      <panel type="seamless" popup-url="/website/book/documentation/tools/markdown/what" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.5a</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -993,7 +994,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
         </div>
       </panel>
       <p><span id="W6-5b"></span></p>
-      <panel type="seamless" popup-url="/website/book/documentation/tools/markdown/how">
+      <panel type="seamless" popup-url="/website/book/documentation/tools/markdown/how" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.5b</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1088,7 +1089,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Tue, 14 Jan 2020 08:40:39 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Wed, 15 Jan 2020 02:03:15 GMT</small></div>
   </footer>
   </div>
 </body>
@@ -1099,9 +1100,37 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

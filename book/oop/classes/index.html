@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
 
 
@@ -102,13 +103,13 @@
                       <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                         <div>
                           <div>
-                            <panel header="<md>:glyphicon-question-sign:</md> Identify Classes and Objects">
+                            <panel header="<md>:glyphicon-question-sign:</md> Identify Classes and Objects" class="algolia-no-index">
                               <question>
                                 <p>Consider the following scenario. If you were to simulate this in an OOP program, what are the classes and the objects you would use?</p>
                                 <box>
                                   <p>A customer (name: John) gave a cheque to the Cashier (name: Peter) to pay for the LoTR and GoT books he bought.</p>
                                 </box>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <div class="table-responsive">
                                     <table class="markbind-table table table-bordered table-striped">
                                       <thead>
@@ -142,7 +143,7 @@
                             </panel>
                           </div>
                           <div>
-                            <panel header="<md>:glyphicon-question-sign:</md> Classes for CityConnect app">
+                            <panel header="<md>:glyphicon-question-sign:</md> Classes for CityConnect app" class="algolia-no-index">
                               <question has-input="true">
                                 <p>Assume you are writing a CLI program called <strong><code>CityConnect</code></strong> for storing and querying distances between cities. The behavior is as follows:</p>
                                 <pre><code class="hljs">Welcome to CityConnect!
@@ -166,7 +167,7 @@ Enter command: exit
 
 </code></pre>
                                 <p>What classes would you have in your code if you write your program based on the OOP paradigm?</p>
-                                <div slot="hint">
+                                <div slot="hint" class="algolia-no-index">
                                   <p>One class you can have is <code>Route</code></p>
                                 </div>
                               </question>
@@ -215,9 +216,9 @@ Enter command: exit
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable>
+                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Suitable as a class-level variables">
+                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Suitable as a class-level variables" class="algolia-no-index">
                           <question>
                             <p>Which of these are suitable as class-level variables?</p>
                             <ul class="task-list">
@@ -226,7 +227,7 @@ Enter command: exit
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. system: ToDo manager, class: <code>Task</code>, variable: <code>totalPendingTasks</code></li>
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: <code>ArrayList</code>, variable: <code>total</code> (i.e., total items in a given <code>ArrayList</code> object)</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>(c)</p>
                               <p>Explanation: <code>totalPendingTasks</code> should not be managed by individual <code>Task</code> objects and therefore suitable to be maintained as a class-level variable. The other variables should be managed at instance
                                 level as their value varies from instance to instance. e.g., <code>totalStudents</code> for one <code>Course</code> object will differ from <code>totalStudents</code> of another.</p>
@@ -259,8 +260,8 @@ Enter command: exit
                   values to be assigned to a variable.</p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose you want a variable called <code>priority</code> to store the priority of something. There are only three priority levels: high, medium, and low. You can declare
-                    the variable <code>priority</code> as of type <code>int</code> and use only values <code>2</code>, <code>1</code>, and <code>0</code> to indication the three priority levels. However, this opens the possibility of an invalid values
-                    such as <code>9</code> being assigned to it. But if you define an enumeration type called <code>Priority</code> that has three values <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code> only, a variable of type <code>Priority</code>                    will never be assigned an invalid value because the compiler is able to catch such an error.</p>
+                    the variable <code>priority</code> as of type <code>int</code> and use only values <code>2</code>, <code>1</code>, and <code>0</code> to indicate the three priority levels. However, this opens the possibility of an invalid values such
+                    as <code>9</code> being assigned to it. But if you define an enumeration type called <code>Priority</code> that has three values <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code> only, a variable of type <code>Priority</code>                    will never be assigned an invalid value because the compiler is able to catch such an error.</p>
                   <p><code>Priority</code>: <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code></p>
                 </box>
               </div>
@@ -283,9 +284,37 @@ Enter command: exit
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  const enableSearch = false
 </script>
 <script src="../../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "0b1e4ae12d54a6114a4c5d131a850c2b",
+      indexName: "nus-cs2103-ay1920s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122519234-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122519234-1');
+</script>
 <script src="../../../markbind/layouts/default/scripts.js"></script>
 
 </html>
