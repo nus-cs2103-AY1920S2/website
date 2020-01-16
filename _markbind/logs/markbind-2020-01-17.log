@@ -1,0 +1,152 @@
+2020-01-16T22:04:54.414Z - info: Website generation started at 6:04:52 AM
+2020-01-16T22:04:57.651Z - info: Building assets...
+2020-01-16T22:05:00.107Z - info: Assets built
+2020-01-16T22:05:00.108Z - info: Generating pages...
+2020-01-16T22:07:15.534Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.536Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.538Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.539Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.541Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.541Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.541Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.542Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.544Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.544Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.547Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.549Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.550Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.550Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.758Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.872Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:15.973Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:07:33.935Z - debug:  
+2020-01-16T22:07:33.936Z - debug:  
+2020-01-16T22:07:33.936Z - debug:  
+2020-01-16T22:07:33.936Z - debug:  
+2020-01-16T22:09:40.433Z - info: Pages built
+2020-01-16T22:10:21.273Z - info: Website generation complete! Total build time: 328.791s
+2020-01-16T22:10:21.351Z - info: Serving "D:\Teaching\CS2103\AY1920S2\website\_site" at http://127.0.0.1:8080
+2020-01-16T22:10:21.352Z - info: Press CTRL+C to stop ...
+2020-01-16T22:10:21.432Z - info: Site data built
+2020-01-16T22:14:30.469Z - info: [6:14:30 AM] Reload for file change: D:\Teaching\CS2103\AY1920S2\website\admin\tutorials.md
+2020-01-16T22:14:31.478Z - info: Rebuilding affected source files
+2020-01-16T22:14:31.484Z - info: Rebuilding 6 pages
+2020-01-16T22:14:32.475Z - error:  Error: No such segment 'exchangeStudentTutorialSignup' in file: D:\Teaching\CS2103\AY1920S2\website\admin\tutorials.md
+Missing reference in D:\Teaching\CS2103\AY1920S2\website\schedule\week1\admin.md
+    at Parser._preprocess (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:439:25)
+    at element.children.element.children.map.e (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at dom.map (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:673:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:670:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+    at Parser.onend (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:340:36)
+2020-01-16T22:14:38.212Z - debug:  
+2020-01-16T22:14:39.697Z - info: Pages rebuilt
+2020-01-16T22:14:39.741Z - info: Site data built
+2020-01-16T22:15:14.925Z - info: [6:15:14 AM] Reload for file change: D:\Teaching\CS2103\AY1920S2\website\admin\tutorials.md
+2020-01-16T22:15:15.931Z - info: Rebuilding affected source files
+2020-01-16T22:15:15.936Z - info: Rebuilding 6 pages
+2020-01-16T22:15:21.049Z - debug:  
+2020-01-16T22:15:23.288Z - info: Pages rebuilt
+2020-01-16T22:15:23.314Z - info: Site data built
+2020-01-16T22:19:08.470Z - info: [6:19:08 AM] Reload for file change: D:\Teaching\CS2103\AY1920S2\website\common\admin.njk
+2020-01-16T22:19:09.497Z - info: Assets built
+2020-01-16T22:19:19.435Z - info: [6:19:19 AM] Reload for file change: D:\Teaching\CS2103\AY1920S2\website\admin\tutorials.md
+2020-01-16T22:19:20.441Z - info: Rebuilding affected source files
+2020-01-16T22:19:20.450Z - info: Rebuilding 6 pages
+2020-01-16T22:19:21.448Z - error:  Error: No such segment 'exchangeStudentTutorialSignup' in file: D:\Teaching\CS2103\AY1920S2\website\admin\tutorials.md
+Missing reference in D:\Teaching\CS2103\AY1920S2\website\schedule\week1\admin.md
+    at Parser._preprocess (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:439:25)
+    at element.children.element.children.map.e (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at element.children.element.children.map.e (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:505:43)
+    at dom.map (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:673:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\parser.js:670:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+    at Parser.onend (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:340:36)
+2020-01-16T22:19:25.213Z - debug:  
+2020-01-16T22:19:27.220Z - info: Pages rebuilt
+2020-01-16T22:19:27.273Z - info: Site data built
+2020-01-16T22:19:39.942Z - info: Website generation started at 6:19:38 AM
+2020-01-16T22:19:42.264Z - info: Building assets...
+2020-01-16T22:19:44.009Z - info: Assets built
+2020-01-16T22:19:44.010Z - info: Generating pages...
+2020-01-16T22:21:54.120Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.123Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.124Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.126Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.127Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.127Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.127Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.128Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.486Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.486Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.487Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.508Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.508Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.539Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.554Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.555Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:21:54.598Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:22:07.038Z - debug:  
+2020-01-16T22:22:07.038Z - debug:  
+2020-01-16T22:22:07.038Z - debug:  
+2020-01-16T22:22:07.039Z - debug:  
+2020-01-16T22:24:09.879Z - info: Pages built
+2020-01-16T22:24:53.129Z - info: Website generation complete! Total build time: 314.721s
+2020-01-16T22:24:53.208Z - info: Serving "D:\Teaching\CS2103\AY1920S2\website\_site" at http://127.0.0.1:8080
+2020-01-16T22:24:53.210Z - info: Press CTRL+C to stop ...
+2020-01-16T22:24:53.294Z - info: Site data built
+2020-01-16T22:40:49.851Z - info: Website generation started at 6:40:47 AM
+2020-01-16T22:40:52.575Z - info: Building assets...
