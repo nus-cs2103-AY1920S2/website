@@ -150,3 +150,50 @@ Missing reference in D:\Teaching\CS2103\AY1920S2\website\schedule\week1\admin.md
 2020-01-16T22:24:53.294Z - info: Site data built
 2020-01-16T22:40:49.851Z - info: Website generation started at 6:40:47 AM
 2020-01-16T22:40:52.575Z - info: Building assets...
+2020-01-16T22:40:54.775Z - info: Assets built
+2020-01-16T22:40:54.776Z - info: Generating pages...
+2020-01-16T22:43:09.152Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.154Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.155Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.155Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.156Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.157Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.157Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.158Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.158Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.158Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.158Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.158Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.381Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.382Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.465Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.465Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:09.569Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-16T22:43:18.620Z - debug:  
+2020-01-16T22:43:21.402Z - debug:  
+2020-01-16T22:43:21.402Z - debug:  
+2020-01-16T22:43:21.403Z - debug:  
+2020-01-16T22:45:40.155Z - info: Pages built
+2020-01-16T22:46:29.752Z - info: Website generation complete! Total build time: 341.899s
+2020-01-16T22:46:29.753Z - info: Build success!
+2020-01-16T22:46:29.756Z - info: Site data built
+2020-01-16T23:32:52.061Z - info: Deployed!
+2020-01-16T23:44:33.523Z - info: Website generation started at 7:44:31 AM
+2020-01-16T23:44:37.088Z - info: Building assets...
