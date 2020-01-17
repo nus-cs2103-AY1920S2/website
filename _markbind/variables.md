@@ -24,7 +24,7 @@
 
 <span id="ab3_website">https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level3</span>
 
-<span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vQt_VkIgajiPIkdLzgqLTBkYf6UoYhAEMkgDns7S3eWfsx7x2EsI0wix6RLHooaYbETWkTuGnqGP-5s/pub?embedded=true</span>
+<span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vQe3k_8EDv73v8PmGf0vjoJWVh1eixYQ31_sNHz1eKfRjVciSwZJ9UDu6H1H4ZxVmqKy9CY4vRAq7cv/pub?embedded=true</span>
 
 <span id="team_IDs_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vRuJ9gGqFSvZci_uqivCoBipX5AOjJa7DgxRIDQ60xFnH-KEqPyEINmo4M0BJYENj7sS4dcMgRcnnMN/pubhtml?gid=0&single=true</span>
 
