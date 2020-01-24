@@ -503,8 +503,9 @@
                     values to be assigned to a variable.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose you want a variable called <code>priority</code> to store the priority of something. There are only three priority levels: high, medium, and low. You can declare
-                      the variable <code>priority</code> as of type <code>int</code> and use only values <code>2</code>, <code>1</code>, and <code>0</code> to indicate the three priority levels. However, this opens the possibility of an invalid values
-                      such as <code>9</code> being assigned to it. But if you define an enumeration type called <code>Priority</code> that has three values <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code> only, a variable of type <code>Priority</code>                      will never be assigned an invalid value because the compiler is able to catch such an error.</p>
+                      the variable <code>priority</code> as of type <code>int</code> and use only values <code>2</code>, <code>1</code>, and <code>0</code> to indication the three priority levels. However, this opens the possibility of an invalid values
+                      such as
+                      <code>9</code> being assigned to it. But if you define an enumeration type called <code>Priority</code> that has three values <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code> only, a variable of type <code>Priority</code>                      will never be assigned an invalid value because the compiler is able to catch such an error.</p>
                     <p><code>Priority</code>: <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code></p>
                   </box>
                 </div>
@@ -677,8 +678,8 @@
                 </span><a class="fa fa-anchor" href="#dependencies"></a></h4>
               <div class="indented-less">
                 <div>
-                  <p>In the context of OOP associations, <strong>a <em>dependency</em> is a need for one class to depend on another without having a direct association with it.</strong> One cause of dependencies is interactions between objects that do not
-                    have a long-term link between them.</p>
+                  <p>In the context of OOP associations, <strong>a <em>dependency</em> is a need for one class to depend on another without having a direction association with it.</strong> One cause of dependencies is interactions between objects that do
+                    not have a long-term link between them.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <code>Course</code> object can have a dependency on a <code>Registrar</code> object to obtain the maximum number of students it can support.</p>
                   </box>
@@ -867,7 +868,7 @@
                   <p><strong>A superclass is said to be <em>more general</em> than the subclass.</strong> Conversely, a subclass is said to be more <em>specialized</em> than the superclass.</p>
                   <p><strong>Applying inheritance on a group of similar classes can result in the common parts among classes being extracted into more general classes.</strong></p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>Man</code> and <code>Woman</code> behaves the same way for certain things. However, the two classes cannot be simply replaced with a more general class <code>Person</code>                      because of the need to distinguish between <code>Man</code> and <code>Woman</code> for certain other things. A solution is to add the <code>Person</code> class as a superclass (to contain the code common to men and women) and let
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>Man</code> and <code>Woman</code> behaves the same way for certain things. However, the two classes cannot be simply replaced with a more general class <code>Person</code>                      because of the need to distinguish between <code>Man</code> and <code>Woman</code> for certain other things. A solution is to add the <code>Person</code> class as a superclass (to contain the code common to men and woment) and let
                       <code>Man</code> and <code>Woman</code> inherit from <code>Person</code> class.</p>
                   </box>
                   <p><strong>Inheritance implies the derived class can be considered as a <em>sub-type</em> of the base class (and the base class is a <em>super-type</em> of the derived class), resulting in an <em>is a</em> relationship.</strong></p>
@@ -2954,7 +2955,7 @@ Extensions:
                 <ul>
                   <li>Lowers the understandability of modules as it is difficult to express module functionalities at a higher level.</li>
                   <li>Lowers maintainability because a module can be modified due to unrelated causes <span class="dimmed">(reason: the module contains code unrelated to each other)</span> or many many modules may need to be modified to achieve a small change
-                    in behavior <span class="dimmed">(reason: because the code related to that change is not localized to a single module)</span>.</li>
+                    in behavior <span class="dimmed">(reason: because the code realated to that change is not localized to a single module)</span>.</li>
                   <li>Lowers reusability of modules because they do not represent logical units of functionality.</li>
                 </ul>
               </div>
@@ -11559,7 +11560,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           <ul>
                             <li>Lowers the understandability of modules as it is difficult to express module functionalities at a higher level.</li>
                             <li>Lowers maintainability because a module can be modified due to unrelated causes <span class="dimmed">(reason: the module contains code unrelated to each other)</span> or many many modules may need to be modified to achieve
-                              a small change in behavior <span class="dimmed">(reason: because the code related to that change is not localized to a single module)</span>.</li>
+                              a small change in behavior <span class="dimmed">(reason: because the code realated to that change is not localized to a single module)</span>.</li>
                             <li>Lowers reusability of modules because they do not represent logical units of functionality.</li>
                           </ul>
                         </div>
@@ -13179,7 +13180,7 @@ index 15b57f7..17f4528 100644
                       <p>The specified version is now loaded to the working folder, as indicated by the <code>HEAD</code> label. <code>HEAD</code> is a reference to the currently checked out commit.</p>
                       <img src="/website/book/gitAndGithub/checkout/images/sourcetree_4.png" height="100">
                       <p></p>
-                      <p>If you checkout a commit that come before the commit in which you added the <code>.gitignore</code> file, Git will now show ignored files as ‘unstaged modifications’ because at that stage Git hasn’t been told to ignore those files.</p>
+                      <p>If you checkout a commit that come before the commit in which you added the <code>.gitignore</code> file, Git will now show ignored fiels as ‘unstaged modifications’ because at that stage Git hasn’t been told to ignore those files.</p>
                       <img src="/website/book/gitAndGithub/checkout/images/sourcetree_5.png" height="260">
                       <p></p>
                       <p>To go back to the latest commit, double-click it.</p>
@@ -13215,7 +13216,7 @@ index 15b57f7..17f4528 100644
               <div>
                 <p>Clone the sample repo <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your computer.</p>
                 <box type="error">
-                  <p>Note that the URL of the Github project is different from the URL you need to clone a repo in that Github project. e.g.
+                  <p>Note that the URL of the Github project is different form the URL you need to clone a repo in that Github project. e.g.
                   </p>
                   <p>Github project URL: <code>https://github.com/se-edu/samplerepo-things</code> <br> Git repo URL: <code>https://github.com/se-edu/samplerepo-things.git</code> (note the <code>.git</code> at the end)</p>
                 </box>
@@ -13263,7 +13264,7 @@ index 15b57f7..17f4528 100644
                       <div>
                         <p>Clone the sample repo <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your computer.</p>
                         <box type="error">
-                          <p>Note that the URL of the Github project is different from the URL you need to clone a repo in that Github project. e.g.
+                          <p>Note that the URL of the Github project is different form the URL you need to clone a repo in that Github project. e.g.
                           </p>
                           <p>Github project URL: <code>https://github.com/se-edu/samplerepo-things</code> <br> Git repo URL: <code>https://github.com/se-edu/samplerepo-things.git</code> (note the <code>.git</code> at the end)</p>
                         </box>
@@ -13635,7 +13636,7 @@ white
                 <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
                 <pre><code class="hljs md">
 <span class="hljs-section"># Introduction</span>
-Creating Pull Requests (PRs) is needed when using RCS in a multi-person projects.
+Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
 This repo can be used to practice creating PRs.
 
 </code></pre>
@@ -13710,7 +13711,7 @@ This repo can be used to practice creating PRs.
                       <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
                       <pre><code class="hljs md">
 <span class="hljs-section"># Introduction</span>
-Creating Pull Requests (PRs) is needed when using RCS in a multi-person projects.
+Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.
 This repo can be used to practice creating PRs.
 
 </code></pre>
@@ -13866,7 +13867,7 @@ git pull origin master
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Thu, 16 Jan 2020 23:44:39 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Fri, 24 Jan 2020 07:51:21 GMT</small></div>
   </footer>
   </div>
 </body>

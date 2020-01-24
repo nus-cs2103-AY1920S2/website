@@ -771,9 +771,8 @@ Enter command: exit
         be assigned to a variable.</p>
       <box>
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose you want a variable called <code>priority</code> to store the priority of something. There are only three priority levels: high, medium, and low. You can declare the variable
-          <code>priority</code> as of type <code>int</code> and use only values <code>2</code>, <code>1</code>, and <code>0</code> to indicate the three priority levels. However, this opens the possibility of an invalid values such as <code>9</code> being
-          assigned to it. But if you define an enumeration type called <code>Priority</code> that has three values <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code> only, a variable of type <code>Priority</code> will never be assigned an invalid
-          value because the compiler is able to catch such an error.</p>
+          <code>priority</code> as of type <code>int</code> and use only values <code>2</code>, <code>1</code>, and <code>0</code> to indication the three priority levels. However, this opens the possibility of an invalid values such as <code>9</code>          being assigned to it. But if you define an enumeration type called <code>Priority</code> that has three values <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code> only, a variable of type <code>Priority</code> will never be assigned an
+          invalid value because the compiler is able to catch such an error.</p>
         <p><code>Priority</code>: <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code></p>
       </box>
     </div>
@@ -984,8 +983,8 @@ Enter command: exit
     <p></p>
     <p></p>
     <div>
-      <p>In the context of OOP associations, <strong>a <em>dependency</em> is a need for one class to depend on another without having a direct association with it.</strong> One cause of dependencies is interactions between objects that do not have a long-term
-        link between them.</p>
+      <p>In the context of OOP associations, <strong>a <em>dependency</em> is a need for one class to depend on another without having a direction association with it.</strong> One cause of dependencies is interactions between objects that do not have a
+        long-term link between them.</p>
       <box>
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <code>Course</code> object can have a dependency on a <code>Registrar</code> object to obtain the maximum number of students it can support.</p>
       </box>
@@ -1237,7 +1236,7 @@ Enter command: exit
         <p><strong>A superclass is said to be <em>more general</em> than the subclass.</strong> Conversely, a subclass is said to be more <em>specialized</em> than the superclass.</p>
         <p><strong>Applying inheritance on a group of similar classes can result in the common parts among classes being extracted into more general classes.</strong></p>
         <box>
-          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>Man</code> and <code>Woman</code> behaves the same way for certain things. However, the two classes cannot be simply replaced with a more general class <code>Person</code>            because of the need to distinguish between <code>Man</code> and <code>Woman</code> for certain other things. A solution is to add the <code>Person</code> class as a superclass (to contain the code common to men and women) and let <code>Man</code>            and <code>Woman</code> inherit from <code>Person</code> class.</p>
+          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>Man</code> and <code>Woman</code> behaves the same way for certain things. However, the two classes cannot be simply replaced with a more general class <code>Person</code>            because of the need to distinguish between <code>Man</code> and <code>Woman</code> for certain other things. A solution is to add the <code>Person</code> class as a superclass (to contain the code common to men and woment) and let <code>Man</code>            and <code>Woman</code> inherit from <code>Person</code> class.</p>
         </box>
         <p><strong>Inheritance implies the derived class can be considered as a <em>sub-type</em> of the base class (and the base class is a <em>super-type</em> of the derived class), resulting in an <em>is a</em> relationship.</strong></p>
         <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Inheritance does not necessarily mean a sub-type relationship exists. However, the two often go hand-in-hand. For simplicity, at this point let us assume
