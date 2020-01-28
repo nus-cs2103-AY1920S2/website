@@ -1,0 +1,59 @@
+2020-01-28T06:07:11.007Z - info: Website generation started at 2:07:09 PM
+2020-01-28T06:07:12.892Z - info: Building assets...
+2020-01-28T06:07:14.406Z - info: Assets built
+2020-01-28T06:07:14.407Z - info: Generating pages...
+2020-01-28T06:08:08.325Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.325Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.326Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.326Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.326Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.407Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.407Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.408Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.408Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.409Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.409Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.409Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.409Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.409Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.484Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.489Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:08.491Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-01-28T06:08:16.491Z - debug:  
+2020-01-28T06:08:16.491Z - debug:  
+2020-01-28T06:08:16.491Z - debug:  
+2020-01-28T06:08:16.491Z - debug:  
+2020-01-28T06:09:01.867Z - info: Pages built
+2020-01-28T06:09:17.883Z - info: Website generation complete! Total build time: 127.941s
+2020-01-28T06:09:18.242Z - info: Serving "E:\Teaching\CS2103\CS2103-AY1920S2\website\_site" at http://127.0.0.1:8080
+2020-01-28T06:09:18.242Z - info: Press CTRL+C to stop ...
+2020-01-28T06:09:18.332Z - info: Site data built
+2020-01-28T06:09:18.476Z - info: [2:09:18 PM] Reload for file change: E:\Teaching\CS2103\CS2103-AY1920S2\website\admin\tutorial-schedule-CS2103-S2.mbdf
+2020-01-28T06:09:19.614Z - info: Rebuilding affected source files
+2020-01-28T06:09:19.616Z - info: Rebuilding 3 pages
+2020-01-28T06:09:23.532Z - info: Pages rebuilt
+2020-01-28T06:09:23.596Z - info: Site data built
+2020-01-28T06:12:04.300Z - info: [2:12:04 PM] Reload for file change: E:\Teaching\CS2103\CS2103-AY1920S2\website\admin\tutorial-schedule-CS2103-S2.mbdf
+2020-01-28T06:12:05.301Z - info: Rebuilding affected source files
+2020-01-28T06:12:05.303Z - info: Rebuilding 3 pages
+2020-01-28T06:12:06.493Z - info: Pages rebuilt
+2020-01-28T06:12:06.496Z - info: Site data built
+2020-01-28T06:37:29.828Z - info: Website generation started at 2:37:28 PM
+2020-01-28T06:37:31.714Z - info: Building assets...
