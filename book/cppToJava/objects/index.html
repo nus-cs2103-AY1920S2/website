@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Objects</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -76,7 +76,7 @@
                       </div>
                       <p><strong>Before using a class in your code, you need to <code>import</code> the class.</strong> <code>import</code> statements appear at the top of the code.</p>
                       <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example imports the <code>java.awt.Point</code> (i.e., the <code>Point</code> class in the <code>java.awt</code> package) class -- which can be used to represent
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example imports the <code>java.awt.Point</code> class (i.e., the <code>Point</code> class in the <code>java.awt</code> package) -- which can be used to represent
                           <trigger for="pop:usingObjects-coordinates">the coordinates of a location in a Cartesian plane</trigger> -- and use it in the <code>main</code> method.</p>
                         <popover id="pop:usingObjects-coordinates" title="Coordinates of a location in a Cartesian plane" placement="top">
                           <div slot="content" class="algolia-no-index">
@@ -170,7 +170,7 @@
                     </span>
                     </span> To access an attribute of an object, Java uses <em>dot notation</em>.</p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below uses <code>spot.x</code> which means &quot;go to the object spot refers to, and get the value of the attribute <code>x</code>.&quot;</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below uses <code>spot.x</code> which means &quot;go to the object <code>spot</code> refers to, and get the value of the attribute <code>x</code>.&quot;</p>
                     <pre><code class="hljs java">Point spot = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
 <span class="hljs-keyword">int</span> sum = spot.x * spot.x + spot.y * spot.y;
 System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y + <span class="hljs-string">", "</span> + sum);
@@ -231,7 +231,7 @@ System.out.println(spot.x + <span class="hljs-string">", "</span> + spot.y);
         System.out.println(<span class="hljs-string">"Area: "</span> + area);
 
         <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> add a line here to set the size of r to 8x10 (width x height)</span>
-        <span class="hljs-comment">//Recommended: use the setSize(int height, int width) method of the Rectangle object</span>
+        <span class="hljs-comment">//Recommended: use the setSize(int width, int height) method of the Rectangle object</span>
 
         System.out.println(r);
     }
@@ -311,13 +311,13 @@ java.awt.Rectangle[x=0,y=0,width=8,height=10]
                   <p><strong><code>null</code> is a special value that means &quot;no object&quot;</strong>. You can assign null to a variable to indicate that the variable is 'empty' at the moment. However, if you try to use a null value, either by accessing
                     an attribute or invoking a method, Java throws a <code>NullPointerException</code>.</p>
                   <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, the variable <code>spot</code> is assigned a <code>null</code> value. As a result, trying to access <code>spot.x</code> attribute or invoke <code>spot.translate</code>                      method results in a <code>NullPointerException</code>.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, the variable <code>spot</code> is assigned a <code>null</code> value. As a result, trying to access <code>spot.x</code> attribute or invoking the <code>spot.translate</code>                      method results in a <code>NullPointerException</code>.</p>
                     <pre><code class="hljs java">Point spot = <span class="hljs-keyword">null</span>;
 <span class="hljs-keyword">int</span> x = spot.x;          <span class="hljs-comment">// NullPointerException</span>
 spot.translate(<span class="hljs-number">50</span>, <span class="hljs-number">50</span>);  <span class="hljs-comment">// NullPointerException</span>
 </code></pre>
                   </box>
-                  <p>On the other hand, it is legal return null from a method or to pass a <code>null</code> reference as an argument to a method.</p>
+                  <p>On the other hand, it is legal to return null from a method or to pass a <code>null</code> reference as an argument to a method.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Returning <code>null</code> from a method.</p>
                     <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Point <span class="hljs-title">createCopy</span><span class="hljs-params">(Point p)</span> </span>{
@@ -362,9 +362,9 @@ p2: 1, 2
                 </box>
                 <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span><span aria-hidden="true" class="fas fa-not-equal"></span></span>
                   </span>
-                  </span> <strong>Java does not have explicit pointers</strong> (and other related things such as pointer de-referencing, pointer arithmetic). <strong>When an object is passed into a method as an argument, the method gains access to the original object.</strong>                  If the method changes the object it received, the changes are retained in the object even after the method is completed.</p>
+                  </span> <strong>Java does not have explicit pointers</strong> (and other related things such as pointer de-referencing and pointer arithmetic). <strong>When an object is passed into a method as an argument, the method gains access to the original object.</strong>                  If the method changes the object it received, the changes are retained in the object even after the method has completed.</p>
                 <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Note how <code>p3</code> retains changes done to it by the method <code>swapCoordinates</code> even after the method call.</p>
+                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Note how <code>p3</code> retains changes done to it by the method <code>swapCoordinates</code> even after the method has completed executing.</p>
                   <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">swapCoordinates</span><span class="hljs-params">(Point p)</span></span>{
     <span class="hljs-keyword">int</span> temp = p.x;
     p.x = p.y;
@@ -392,10 +392,10 @@ p3: 3, 2
                           <question>
                             <p>Add a method <code>move(Point p, Rectangle r)</code> to the code below, to produce the given output. The behavior of the method is as follows:</p>
                             <ul>
+                              <li>Returns <code>null</code> and does nothing if either <code>p</code> or <code>r</code> is null</li>
                               <li>Returns a new <code>Point</code> object that has attributes <code>x</code> and <code>y</code> that match those of <code>r</code></li>
                               <li>Does not modify <code>p</code></li>
                               <li>Updates <code>r</code> so that its attributes <code>x</code> and <code>y</code> match those of <code>p</code></li>
-                              <li>Returns <code>null</code> and does nothing if either <code>p</code> or <code>r</code> is null</li>
                             </ul>
                             <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.awt.Point;
 <span class="hljs-keyword">import</span> java.awt.Rectangle;

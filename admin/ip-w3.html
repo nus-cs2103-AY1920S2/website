@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Admin: iP: Week 3</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -265,6 +265,9 @@ T | 1 | join sports club
                           <li>remember to use relative paths rather than absolute paths such as <code>C:\data</code>. If not, your app can cause unpredictable results when used in another computer.</li>
                           <li>remember to <a href="https://www.sghill.net/how-do-i-make-cross-platform-file-paths-in-java.html">specify file paths in an OS-independent way</a>. If not, your app might not work when used on a different OS.</li>
                         </ul>
+                        <p>
+                          <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Your code must handle the case where the file doesn't exist at the start. Reason: when someone else takes your Duke and runs it for
+                          the first time, the required file might not exist in their computer. Similarly, if you expect the data file to be in as specific folder (e.g., <code>./data/</code>), you must also handle the 'folder does not exist yet' case.</p>
                       </div>
                     </panel>
                   </div>
@@ -563,6 +566,12 @@ T | 1 | join sports club
                           <p>     <big>↳</big> <strong>Package the App as a JAR file</strong></p>
                         </div>
                         <p>Package the app as an executable JAR file so that it can be distributed easily.</p>
+                        <p>You can assume <strong>the user will run the jar file in the following way only</strong>:</p>
+                        <ul>
+                          <li>Copy the jar file into an empty folder</li>
+                          <li>Open a command window in that folder</li>
+                          <li>Run the command <code>java -jar {filename}.jar</code> e.g., <code>java -jar Duke.jar</code> (i.e., run the command in the same folder as the jar file)</li>
+                        </ul>
                         <p><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> Do not commit the JAR file created. Instead, you can make the JAR file available in the following manner.</p>
                         <ul>
                           <li>Go to your fork on GitHub and <a href="https://help.github.com/en/articles/creating-releases">create a new <em>release</em></a>.</li>
@@ -708,7 +717,7 @@ T | 1 | join sports club
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Thu, 20 Feb 2020 15:28:46 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Fri, 21 Feb 2020 04:45:12 GMT</small></div>
     </footer>
   </div>
 </body>

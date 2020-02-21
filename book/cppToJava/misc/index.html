@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Miscellaneous Topics</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -441,10 +441,10 @@ Green indicates low priority
           <p></p>
           <p></p>
           <div>
-            <p><strong><mark><em>Casting</em></mark> is the action of converting from one type to another</strong>. You can use the <code>(newType)</code> syntax to cast a value to a new type.</p>
+            <p><strong><mark><em>Casting</em></mark> is the action of converting from one type to another</strong>. You can use the <code>(newType)</code> syntax to cast a value to a type named <code>newType</code>.</p>
             <p><strong>When you cast a primitive value to another type, there may be a loss of precision.</strong></p>
             <box>
-              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below cast a <code>double</code> value to an <code>int</code> value and cast it back to a <code>double</code>. Note the loss of precision.</p>
+              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below casts a <code>double</code> value to an <code>int</code> value and casts it back to a <code>double</code>. Note the loss of precision.</p>
               <pre><code class="hljs java"><span class="hljs-keyword">double</span> d = <span class="hljs-number">5.3</span>;
 System.out.println(<span class="hljs-string">"Before casting to an int: "</span> + d);
 <span class="hljs-keyword">int</span> i = (<span class="hljs-keyword">int</span>)d; <span class="hljs-comment">// cast d to an int</span>
@@ -527,8 +527,8 @@ Integer x = (Integer)o;
 </code></pre>
               <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
               </p>
-              <pre><code class="hljs">Exception in thread &quot;main&quot; java.lang.ClassCastException: misc.casting.Animal cannot be cast to java.lang.Integer
-	at misc.casting.CastingExamples.main(CastingExamples.java:14)
+              <pre><code class="hljs">Exception in thread &quot;main&quot; java.lang.ClassCastException: misc.casting.Animal cannot be
+cast to java.lang.Integer at misc.casting.CastingExamples.main(CastingExamples.java:14)
 </code></pre>
             </box>
             <p>You can use the <code>instanceof</code> operator to check if a cast is safe to perform.</p>
@@ -704,7 +704,7 @@ second line
         <p>An executable JAR file can be launched using the <code>java -jar</code> command.</p>
         <box>
           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>java -jar foo.jar</code> launches the <code>foo.jar</code> file.</p>
-          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can download the Collate-GUI.jar from <a href="https://se-edu.github.io/collate/">https://se-edu.github.io/collate/</a> and run it using the command<code>java -jar Collate-GUI.jar</code>            command.</p>
+          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can download the Collate-TUI.jar from <a href="https://se-edu.github.io/collate/">https://se-edu.github.io/collate/</a> and run it using the command<code>java -jar Collate-TUI.jar</code>            command. It's usage is given <a href="https://se-education.org/collate/docs/User-Guide.html#using-the-text-ui">here</a>.</p>
         </box>
         <p>The IDE can help you to package your application as a JAR file.</p>
       </div>

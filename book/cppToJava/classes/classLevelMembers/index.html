@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.9.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Objects: Getters and Setters</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -59,7 +59,7 @@
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose you want to create a number of Bicycle objects and assign each a serial number, beginning with 1 for the first object. This ID number is unique to each object
                           and is therefore an instance variable. At the same time, you need a field to keep track of how many <code>Bicycle</code> objects have been created so that you know what ID to assign to the next one. Such a field is not related
-                          to any individual object, but to the class as a whole. For this you need a class variable, numberOfBicycles, as follows:</p>
+                          to any individual object, but to the class as a whole. For this you need a class variable, <code>numberOfBicycles</code>, as follows:</p>
                         <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gear;
@@ -77,8 +77,8 @@
                       <p><strong><em>Class variables</em> are referenced by the class name itself</strong>, as in <code>Bicycle.numberOfBicycles</code> This makes it clear that they are class variables.</p>
                       <p>The Java programming language supports static methods as well as static variables. Static methods, which have the <code>static</code> modifier in their declarations, should be invoked with the class name, without the need for creating
                         an instance of the class, as in <code>ClassName.methodName(args)</code></p>
-                      <p><strong>The <code>static</code> modifier, in combination with the <code>final</code> modifier, is also used to define constants.</strong> The final modifier indicates that the value of this field cannot change.For example, the following
-                        variable declaration defines a constant named PI, whose value is an approximation of pi (the ratio of the circumference of a circle to its diameter):
+                      <p><strong>The <code>static</code> modifier, in combination with the <code>final</code> modifier, is also used to define constants.</strong> The final modifier indicates that the value of this field cannot change. For example, the following
+                        variable declaration defines a constant named <code>PI</code>, whose value is an approximation of pi (the ratio of the circumference of a circle to its diameter):
                         <code>static final double PI = 3.141592653589793;</code></p>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example with class-level variables and class-level methods:</p>
