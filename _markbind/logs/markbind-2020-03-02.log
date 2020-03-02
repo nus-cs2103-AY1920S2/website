@@ -1,82 +1,175 @@
-2020-03-01T22:30:46.991Z - info: Website generation started at 06:30:41
-2020-03-01T22:30:50.536Z - info: Building assets...
-2020-03-01T22:30:53.664Z - info: Assets built
-2020-03-01T22:30:53.665Z - info: Generating pages...
-2020-03-01T22:33:13.281Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:09:41.720Z - info: Website generation started at 4:09:40 PM
+2020-03-02T08:09:43.839Z - info: Building assets...
+2020-03-02T08:09:45.573Z - info: Assets built
+2020-03-02T08:09:45.573Z - info: Generating pages...
+2020-03-02T08:10:36.830Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.283Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:10:36.918Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.283Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:10:36.918Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.284Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:10:36.918Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.285Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:10:36.918Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.285Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:10:36.919Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.286Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:10:36.942Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.286Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:10:44.243Z - debug:  
+2020-03-02T08:10:49.485Z - debug:  
+2020-03-02T08:11:28.053Z - info: Pages built
+2020-03-02T08:11:43.593Z - info: Website generation complete! Total build time: 123.089s
+2020-03-02T08:11:43.987Z - info: Serving "E:\Teaching\CS2103\CS2103-AY1920S2\website\_site" at http://127.0.0.1:8080
+2020-03-02T08:11:43.987Z - info: Press CTRL+C to stop ...
+2020-03-02T08:11:44.096Z - info: Site data built
+2020-03-02T08:20:58.968Z - info: [4:20:58 PM] Reload for file change: E:\Teaching\CS2103\CS2103-AY1920S2\website\data-cs2103\studentData.njk
+2020-03-02T08:20:59.981Z - info: Assets built
+2020-03-02T08:21:13.667Z - info: [4:21:13 PM] Reload for file change: E:\Teaching\CS2103\CS2103-AY1920S2\website\schedule\week7\tutorial-cs2103.mbdf
+2020-03-02T08:21:14.670Z - info: Rebuilding affected source files
+2020-03-02T08:21:14.671Z - info: Rebuilding 1 pages
+2020-03-02T08:21:15.088Z - info: Pages rebuilt
+2020-03-02T08:21:15.093Z - info: Site data built
+2020-03-02T08:21:33.778Z - info: Website generation started at 4:21:32 PM
+2020-03-02T08:21:35.756Z - info: Building assets...
+2020-03-02T08:21:37.495Z - info: Assets built
+2020-03-02T08:21:37.496Z - info: Generating pages...
+2020-03-02T08:22:28.733Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.287Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:22:28.734Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.288Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:22:28.869Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.288Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:22:28.869Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.289Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:22:28.869Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.289Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:22:28.869Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.290Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:22:29.019Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.291Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:22:32.534Z - debug:  
+2020-03-02T08:22:32.534Z - debug:  
+2020-03-02T08:23:19.971Z - info: Pages built
+2020-03-02T08:23:35.489Z - info: Website generation complete! Total build time: 122.778s
+2020-03-02T08:23:35.863Z - info: Serving "E:\Teaching\CS2103\CS2103-AY1920S2\website\_site" at http://127.0.0.1:8080
+2020-03-02T08:23:35.864Z - info: Press CTRL+C to stop ...
+2020-03-02T08:23:35.954Z - info: Site data built
+2020-03-02T08:26:07.432Z - info: [4:26:07 PM] Reload for file change: E:\Teaching\CS2103\CS2103-AY1920S2\website\schedule\week7\tutorial-cs2103.mbdf
+2020-03-02T08:26:08.436Z - info: Rebuilding affected source files
+2020-03-02T08:26:08.437Z - info: Rebuilding 1 pages
+2020-03-02T08:26:08.467Z - error:  Template render error: (E:\Teaching\CS2103\CS2103-AY1920S2\website\schedule\week7\tutorial-cs2103.mbdf)
+  Error: Unable to call `team_id["slice"]`, which is undefined or falsey
+    at Object._prettifyError (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:41:12)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:26:3)
+    at Template.getExported (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:5)
+    at Environment.getTemplate (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:38:5)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:619:9
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:610:1)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:619:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:245:1)
+    at Template.getExported (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:5)
+    at Environment.getTemplate (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+2020-03-02T08:26:08.511Z - info: Pages rebuilt
+2020-03-02T08:26:08.514Z - info: Site data built
+2020-03-02T08:26:31.434Z - info: [4:26:31 PM] Reload for file change: E:\Teaching\CS2103\CS2103-AY1920S2\website\schedule\week7\tutorial-cs2103.mbdf
+2020-03-02T08:26:32.437Z - info: Rebuilding affected source files
+2020-03-02T08:26:32.439Z - info: Rebuilding 1 pages
+2020-03-02T08:26:32.466Z - error:  Template render error: (E:\Teaching\CS2103\CS2103-AY1920S2\website\schedule\week7\tutorial-cs2103.mbdf)
+  Error: Unable to call `team_id["slice"]`, which is undefined or falsey
+    at Object._prettifyError (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:41:12)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:26:3)
+    at Template.getExported (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:5)
+    at Environment.getTemplate (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:38:5)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:619:9
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:610:1)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:619:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:245:1)
+    at Template.getExported (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:5)
+    at Environment.getTemplate (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+2020-03-02T08:26:32.491Z - info: Pages rebuilt
+2020-03-02T08:26:32.494Z - info: Site data built
+2020-03-02T08:26:37.528Z - info: [4:26:37 PM] Reload for file change: E:\Teaching\CS2103\CS2103-AY1920S2\website\schedule\week7\tutorial-cs2103.mbdf
+2020-03-02T08:26:38.532Z - info: Rebuilding affected source files
+2020-03-02T08:26:38.535Z - info: Rebuilding 1 pages
+2020-03-02T08:26:38.559Z - error:  Template render error: (E:\Teaching\CS2103\CS2103-AY1920S2\website\schedule\week7\tutorial-cs2103.mbdf)
+  Error: Unable to call `team_id["slice"]`, which is undefined or falsey
+    at Object._prettifyError (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:41:12)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:26:3)
+    at Template.getExported (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:5)
+    at Environment.getTemplate (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:38:5)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:619:9
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:610:1)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:619:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:245:1)
+    at Template.getExported (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:5)
+    at Environment.getTemplate (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+2020-03-02T08:26:38.591Z - info: Pages rebuilt
+2020-03-02T08:26:38.595Z - info: Site data built
+2020-03-02T08:28:18.695Z - info: Website generation started at 4:28:17 PM
+2020-03-02T08:28:20.661Z - info: Building assets...
+2020-03-02T08:28:22.253Z - info: Assets built
+2020-03-02T08:28:22.253Z - info: Generating pages...
+2020-03-02T08:28:43.765Z - error:  Template render error: (E:\Teaching\CS2103\CS2103-AY1920S2\website\schedule\week7\tutorial-cs2103.mbdf)
+  Error: Unable to call `team_id["slice"]`, which is undefined or falsey
+    at Object._prettifyError (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\lib.js:36:11)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:567:19
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:41:12)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:617:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:26:3)
+    at Template.getExported (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:40:5)
+    at Environment.getTemplate (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:38:5)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:619:9
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:610:1)
+    at C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:619:9
+    at Template.root [as rootRenderFunc] (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:245:1)
+    at Template.getExported (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:615:10)
+    at eval (eval at _compile (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:637:18), <anonymous>:11:5)
+    at Environment.getTemplate (C:\users\dcsaksh\appdata\roaming\npm\node_modules\markbind-cli\node_modules\nunjucks\src\environment.js:279:9)
+2020-03-02T08:30:49.629Z - info: Website generation started at 4:30:49 PM
+2020-03-02T08:30:51.555Z - info: Building assets...
+2020-03-02T08:30:53.151Z - info: Assets built
+2020-03-02T08:30:53.151Z - info: Generating pages...
+2020-03-02T08:31:45.221Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.291Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:31:45.224Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.291Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:31:45.225Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.292Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:31:45.225Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.292Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:31:45.226Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.293Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:31:45.226Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.293Z - debug: The process cannot access the file because it is being used by another process.
+2020-03-02T08:31:45.381Z - debug: The process cannot access the file because it is being used by another process.
 
-2020-03-01T22:33:13.293Z - debug: The process cannot access the file because it is being used by another process.
-
-2020-03-01T22:33:14.017Z - debug: The process cannot access the file because it is being used by another process.
-
-2020-03-01T22:33:14.017Z - debug: The process cannot access the file because it is being used by another process.
-
-2020-03-01T22:33:14.018Z - debug: The process cannot access the file because it is being used by another process.
-
-2020-03-01T22:33:14.018Z - debug: The process cannot access the file because it is being used by another process.
-
-2020-03-01T22:33:14.018Z - debug: The process cannot access the file because it is being used by another process.
-
-2020-03-01T22:33:14.019Z - debug: The process cannot access the file because it is being used by another process.
-
-2020-03-01T22:33:14.019Z - debug: The process cannot access the file because it is being used by another process.
-
-2020-03-01T22:33:14.019Z - debug: The process cannot access the file because it is being used by another process.
-
-2020-03-01T22:33:14.082Z - debug: The process cannot access the file because it is being used by another process.
-
-2020-03-01T22:34:03.032Z - debug:  
-2020-03-01T22:34:03.033Z - debug:  
-2020-03-01T22:34:03.033Z - debug:  
-2020-03-01T22:34:03.033Z - debug:  
-2020-03-01T22:34:59.518Z - info: Pages built
-2020-03-01T22:35:34.735Z - info: Website generation complete! Total build time: 293.436s
-2020-03-01T22:35:35.153Z - info: Serving "D:\Teaching\CS2103-AY1920S2\website\_site" at http://127.0.0.1:8080
-2020-03-01T22:35:35.154Z - info: Press CTRL+C to stop ...
-2020-03-01T22:35:35.307Z - info: Site data built
-2020-03-01T22:50:47.323Z - info: [06:50:47] Reload for file change: D:\Teaching\CS2103-AY1920S2\website\admin\ip-showcase.md
-2020-03-01T22:50:48.335Z - info: Rebuilding affected source files
-2020-03-01T22:50:48.337Z - info: Rebuilding 1 pages
-2020-03-01T22:50:51.193Z - info: Pages rebuilt
-2020-03-01T22:50:51.202Z - info: Site data built
-2020-03-01T22:54:29.110Z - info: Website generation started at 06:54:21
-2020-03-01T22:54:32.764Z - info: Building assets...
+2020-03-02T08:31:49.145Z - debug:  
+2020-03-02T08:31:51.310Z - debug:  
+2020-03-02T08:32:36.196Z - info: Pages built
+2020-03-02T08:32:52.117Z - info: Website generation complete! Total build time: 122.993s
+2020-03-02T08:32:52.488Z - info: Serving "E:\Teaching\CS2103\CS2103-AY1920S2\website\_site" at http://127.0.0.1:8080
+2020-03-02T08:32:52.489Z - info: Press CTRL+C to stop ...
+2020-03-02T08:32:52.566Z - info: Site data built
+2020-03-02T08:44:58.804Z - info: Website generation started at 4:44:57 PM
+2020-03-02T08:45:00.838Z - info: Building assets...
