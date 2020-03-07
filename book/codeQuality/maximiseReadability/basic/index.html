@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Code Quality: [Guideline] Maximise Readability: Basic</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -367,8 +367,14 @@ MAX_SIZE = <span class="hljs-number">10</span>
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
+                <div class="alt-java">
+                  <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
+                </div>
+                <div class="alt-python">
+                  <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment"># A magic string!</span>
+</code></pre>
+                </div>
               </box>
               <p>In general, try to avoid any magic literals.</p>
             </div>

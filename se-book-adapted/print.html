@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Software Engineering for Self-Directed Learners [Printable Version for CS2103/T]</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -529,7 +529,7 @@
                   <p>Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such <strong>connections between objects are called <em>associations</em>.</strong></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose an OOP program for managing a learning management system creates an object structure to represent the related objects. In that object structure we can expect
-                      to have associations between a<code>Course</code> object that represents a specific course and <code>Student</code> objects that represents students taking that course.</p>
+                      to have associations between a<code>Course</code> object that represents a specific course and <code>Student</code> objects that represent students taking that course.</p>
                   </box>
                   <p><strong>Associations in an object structure can change over time</strong>.</p>
                   <box>
@@ -3529,9 +3529,26 @@ Extensions:
                     fragment="main" class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/sequenceDiagrams/optionalPaths/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Optional Paths" alt="<md>:glyphicon-education:</md> UML/SD/Optional"
                     fragment="main" class="algolia-no-index"></panel>
-                  <panel type="seamless" src="/website/book/uml/sequenceDiagrams/staticMethods/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Calls to Static Methods" alt="<md>:glyphicon-education:</md> UML/SD/StaticMethods"
-                    fragment="main" class="algolia-no-index"></panel>
                 </p>
+                <panel type="seamless" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Calls to Static Methods" alt="<md>:glyphicon-education:</md> UML/SD/StaticMethods" class="algolia-no-index">
+                  <div>
+                    <div>
+                      <p>Method calls to <code>static</code> i.e., class-level method are received by the class itself, not an instance of that class. We can use the <code>&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
+                      <box>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>m</code> calls the static method <code>Person.getMaxAge()</code> and also the <code>setAge()</code> method of a <code>Person</code> object
+                          <code>p</code>.</p>
+                        <p>
+                          <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png"></pic>
+                        </p>
+                        <p></p>
+                        <p>Here is the <code>Person</code> class, for reference:<br>
+                          <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></pic>
+                        </p>
+                      </box>
+                    </div>
+                    <div></div>
+                  </div>
+                </panel>
               </div>
             </div>
           </div>
@@ -4999,8 +5016,14 @@ MAX_SIZE = <span class="hljs-number">10</span>
                       </span>
                     </font>
                   </p>
-                  <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
+                  <div class="alt-java">
+                    <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
+                  </div>
+                  <div class="alt-python">
+                    <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment"># A magic string!</span>
+</code></pre>
+                  </div>
                 </box>
                 <p>In general, try to avoid any magic literals.</p>
               </div>
@@ -5700,23 +5723,39 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                       </span>
                     </font>
                   </p>
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
+                  <div class="alt-java">
+                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     length = length * width;
     <span class="hljs-keyword">return</span> length;
 }
-
 </code></pre>
+                  </div>
+                  <div class="alt-python">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute_rectangle_area</span><span class="hljs-params">(length, width)</span>:</span>
+    length = length * width
+    <span class="hljs-keyword">return</span> length
+</code></pre>
+                  </div>
                   <p>
                     <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                       </span>
                     </font>
                   </p>
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
+                  <div class="alt-java">
+                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     <span class="hljs-keyword">double</span> area;
     area = length * width;
     <span class="hljs-keyword">return</span> area;
 }
 </code></pre>
+                  </div>
+                  <div class="alt-python">
+                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute_rectangle_area</span><span class="hljs-params">(length, width)</span>:</span>
+    area = length * width
+    <span class="hljs-keyword">return</span> area
+}
+</code></pre>
+                  </div>
                 </box>
               </div>
             </div>
@@ -5861,7 +5900,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                       </span>
                     </font>
                   </p>
-                  <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
+                  <pre><code class="hljs java"><span class="hljs-comment">//increment x</span>
 x++;
 
 <span class="hljs-comment">//trim the input</span>
@@ -5874,10 +5913,10 @@ trimInput();
                       </span>
                     </font>
                   </p>
-                  <pre><code class="hljs python">// increment x
+                  <pre><code class="hljs python"><span class="hljs-comment"># increment x</span>
 x = x + <span class="hljs-number">1</span>
 
-//trim the input
+<span class="hljs-comment"># trim the input</span>
 trim_input()
 </code></pre>
                 </div>
@@ -5924,8 +5963,8 @@ trim_input()
                         <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                           </span>
                         </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                      <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+<span class="hljs-string">"""a quick trim function used to fix bug I detected overnight"""</span>
     ...
 </code></pre>
                       <p>
@@ -12516,10 +12555,13 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                 <p>Method calls to <code>static</code> i.e., class-level method are received by the class itself, not an instance of that class. We can use the <code>&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>m</code> calls the static method <code>Person.getMaxAge()</code> and also the <code>setAge()</code> method of a <code>Person</code> object <code>p</code>.</p>
-                  <img src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png">
+                  <p>
+                    <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png"></pic>
+                  </p>
                   <p></p>
                   <p>Here is the <code>Person</code> class, for reference:<br>
-                    <img src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></p>
+                    <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></pic>
+                  </p>
                 </box>
               </div>
             </div>
@@ -13869,7 +13911,7 @@ git pull origin master
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Mon, 02 Mar 2020 08:45:02 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sat, 07 Mar 2020 10:02:56 GMT</small></div>
   </footer>
   </div>
 </body>

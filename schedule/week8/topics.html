@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 8 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -37,8 +37,8 @@
           <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 3] </span></a></li>
           <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 10] </span></a></li>
           <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 17] </span></a></li>
-          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
-          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9] </span></a></li>
+          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 2] </span></a></li>
+          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 9]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
           <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 16] </span></a></li>
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
@@ -407,7 +407,7 @@
                     <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
                       <div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Draw Class Diagram for Box etc." class="algolia-no-index">
+                          <panel header="<md>:glyphicon-question-sign:</md> Draw an Object Diagram for Box etc." class="algolia-no-index">
                             <question>
                               <p>This question is based on the following question from another topic:</p>
                               <div>
@@ -1041,9 +1041,26 @@
                     fragment="main" class="algolia-no-index"></panel>
                   <panel type="seamless" src="/website/book/uml/sequenceDiagrams/optionalPaths/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Optional Paths" alt="<md>:glyphicon-education:</md> UML/SD/Optional"
                     fragment="main" class="algolia-no-index"></panel>
-                  <panel type="seamless" src="/website/book/uml/sequenceDiagrams/staticMethods/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Calls to Static Methods" alt="<md>:glyphicon-education:</md> UML/SD/StaticMethods"
-                    fragment="main" class="algolia-no-index"></panel>
                 </p>
+                <panel type="seamless" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Calls to Static Methods" alt="<md>:glyphicon-education:</md> UML/SD/StaticMethods" class="algolia-no-index">
+                  <div>
+                    <div>
+                      <p>Method calls to <code>static</code> i.e., class-level method are received by the class itself, not an instance of that class. We can use the <code>&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
+                      <box>
+                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>m</code> calls the static method <code>Person.getMaxAge()</code> and also the <code>setAge()</code> method of a <code>Person</code> object
+                          <code>p</code>.</p>
+                        <p>
+                          <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png"></pic>
+                        </p>
+                        <p></p>
+                        <p>Here is the <code>Person</code> class, for reference:<br>
+                          <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></pic>
+                        </p>
+                      </box>
+                    </div>
+                    <div></div>
+                  </div>
+                </panel>
               </div>
               <div>
                 <div>
@@ -2438,7 +2455,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Mon, 02 Mar 2020 08:45:02 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sat, 07 Mar 2020 10:02:56 GMT</small></div>
   </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Code Quality: [Guideline] Comment Minimally, but Sufficiently: Basic</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -60,7 +60,7 @@
                           </span>
                         </font>
                       </p>
-                      <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
+                      <pre><code class="hljs java"><span class="hljs-comment">//increment x</span>
 x++;
 
 <span class="hljs-comment">//trim the input</span>
@@ -73,10 +73,10 @@ trimInput();
                           </span>
                         </font>
                       </p>
-                      <pre><code class="hljs python">// increment x
+                      <pre><code class="hljs python"><span class="hljs-comment"># increment x</span>
 x = x + <span class="hljs-number">1</span>
 
-//trim the input
+<span class="hljs-comment"># trim the input</span>
 trim_input()
 </code></pre>
                     </div>
@@ -133,8 +133,8 @@ trim_input()
                           <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                             </span>
                           </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                        <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+<span class="hljs-string">"""a quick trim function used to fix bug I detected overnight"""</span>
     ...
 </code></pre>
                         <p>

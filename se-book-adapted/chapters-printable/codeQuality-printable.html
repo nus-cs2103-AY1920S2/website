@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.0">
+  <meta name="generator" content="MarkBind 2.9.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Textbook Chapter [Printable] : Code Quality</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -486,8 +486,14 @@ MAX_SIZE = <span class="hljs-number">10</span>
                         </span>
                       </font>
                     </p>
-                    <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
+                    <div class="alt-java">
+                      <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
 </code></pre>
+                    </div>
+                    <div class="alt-python">
+                      <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment"># A magic string!</span>
+</code></pre>
+                    </div>
                   </box>
                   <p>In general, try to avoid any magic literals.</p>
                 </div>
@@ -1189,23 +1195,39 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                         </span>
                       </font>
                     </p>
-                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
+                    <div class="alt-java">
+                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     length = length * width;
     <span class="hljs-keyword">return</span> length;
 }
-
 </code></pre>
+                    </div>
+                    <div class="alt-python">
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute_rectangle_area</span><span class="hljs-params">(length, width)</span>:</span>
+    length = length * width
+    <span class="hljs-keyword">return</span> length
+</code></pre>
+                    </div>
                     <p>
                       <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                         </span>
                       </font>
                     </p>
-                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
+                    <div class="alt-java">
+                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
     <span class="hljs-keyword">double</span> area;
     area = length * width;
     <span class="hljs-keyword">return</span> area;
 }
 </code></pre>
+                    </div>
+                    <div class="alt-python">
+                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute_rectangle_area</span><span class="hljs-params">(length, width)</span>:</span>
+    area = length * width
+    <span class="hljs-keyword">return</span> area
+}
+</code></pre>
+                    </div>
                   </box>
                 </div>
               </div>
@@ -1350,7 +1372,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                         </span>
                       </font>
                     </p>
-                    <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
+                    <pre><code class="hljs java"><span class="hljs-comment">//increment x</span>
 x++;
 
 <span class="hljs-comment">//trim the input</span>
@@ -1363,10 +1385,10 @@ trimInput();
                         </span>
                       </font>
                     </p>
-                    <pre><code class="hljs python">// increment x
+                    <pre><code class="hljs python"><span class="hljs-comment"># increment x</span>
 x = x + <span class="hljs-number">1</span>
 
-//trim the input
+<span class="hljs-comment"># trim the input</span>
 trim_input()
 </code></pre>
                   </div>
@@ -1413,8 +1435,8 @@ trim_input()
                           <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                             </span>
                           </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                        <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+                        <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
+<span class="hljs-string">"""a quick trim function used to fix bug I detected overnight"""</span>
     ...
 </code></pre>
                         <p>
@@ -1496,7 +1518,7 @@ compact(input);
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.0</a> at Mon, 02 Mar 2020 08:45:02 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Sat, 07 Mar 2020 10:02:56 GMT</small></div>
     </footer>
   </div>
 </body>
