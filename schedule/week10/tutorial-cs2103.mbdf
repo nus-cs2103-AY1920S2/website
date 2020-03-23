@@ -44,7 +44,7 @@ In this tutorial, we would like to smoke-test the CATcher app **to ensure it can
 #### {{ thumb(1) }} Review the <tooltip content="Developer Guide">DG</tooltip> of a Peer Team
 
 * **Divide into two sub-teams**, ensuring that each team has at least one member who is good with UML.
-* **Find the team your sub-team have been allocated to discuss** in the panel below and click on the link to locate their team PR.
+* **Find the team your sub-team has been allocated to discuss** in the panel below. Search for the PR using the team ID among the list of [PRs](https://github.com/nus-{{ module | lower}}-{{ semester }}/addressbook-level3/pulls); you can open the DG by clicking on the link given.
 
 {% macro get_review_allocation_for_team(reviewing_team) -%}
 {%- set reviewed_team = "" -%}
@@ -61,8 +61,14 @@ In this tutorial, we would like to smoke-test the CATcher app **to ensure it can
 [DG](https://{{ semester }}-{{ team_id | lower}}.github.io/main/DeveloperGuide.html)
 {%- endmacro  %}
 
+<!--
 {% macro get_links(team_id, backup_team_id) -%}
 {{ team_id }}: {{ get_pr_link(team_id) }} {{ get_dg_link(team_id) }} <small>%%({{ backup_team_id }}: {{ get_pr_link(backup_team_id) }} {{ get_dg_link(backup_team_id) }})%%</small>
+{%- endmacro  %}
+-->
+
+{% macro get_links(team_id, backup_team_id) -%}
+{{ team_id }}: {{ get_dg_link(team_id) }} <small>%%({{ backup_team_id }}: {{ get_dg_link(backup_team_id) }})%%</small>
 {%- endmacro  %}
 
 <div class="indented-level2">
