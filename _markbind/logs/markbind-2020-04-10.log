@@ -146,3 +146,52 @@
 2020-04-10T03:00:00.322Z - info: Site data built
 2020-04-10T03:01:53.502Z - info: Website generation started at 11:01:43 AM
 2020-04-10T03:02:00.851Z - info: Building assets...
+2020-04-10T03:02:05.408Z - info: Assets built
+2020-04-10T03:02:05.409Z - info: Generating pages...
+2020-04-10T03:06:19.115Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.116Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.117Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.118Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.118Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.170Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.171Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.172Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.172Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.173Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.174Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.175Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.176Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.177Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.179Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.184Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:19.185Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-10T03:06:28.332Z - debug:  
+2020-04-10T03:06:28.334Z - debug:  
+2020-04-10T03:06:28.334Z - debug:  
+2020-04-10T03:06:28.334Z - debug:  
+2020-04-10T03:06:35.719Z - debug:  
+2020-04-10T03:06:35.720Z - debug:  
+2020-04-10T03:06:39.608Z - info: Pages built
+2020-04-10T03:07:32.628Z - info: Website generation complete! Total build time: 349.56s
+2020-04-10T03:07:32.629Z - info: Build success!
+2020-04-10T03:07:32.637Z - info: Site data built
+2020-04-10T03:09:22.509Z - info: Deployed!
+2020-04-10T03:12:53.623Z - info: Website generation started at 11:12:43 AM
+2020-04-10T03:13:01.494Z - info: Building assets...
