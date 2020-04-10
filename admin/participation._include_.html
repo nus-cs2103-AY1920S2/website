@@ -9,8 +9,7 @@
   <p>
     <div>
       <h1 id="participation-marks">Participation Marks <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-        </span>
-      </h1>
+        </span><a class="fa fa-anchor" href="#participation-marks"></a></h1>
     </div>
   </p>
   <div id="main">
@@ -38,12 +37,10 @@
     <p><strong><span class="badge badge-pill badge-info p-2"><big><big>B</big></big></span> Received good peer evaluations</strong></p>
     <div class="indented">
       <p>
-        <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-conduct" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → Criteria (Conduct)  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-          class="embedding" minimized fragment="teamMemberEvaluation-conduct"></panel>
+        <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-conduct" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-conduct"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Conduct)  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
       </p>
       <p>
-        <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-competency" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → Criteria (Competency)  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-          class="embedding" minimized fragment="teamMemberEvaluation-competency"></panel>
+        <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-competency" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-competency"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Competency)  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
       </p>
       <ul>
         <li>-1 for each <em>professional conduct</em> criterion in which you score below average (based on the average of ratings received).</li>
@@ -66,7 +63,7 @@
       <li>Benjamin managed to get at least half of the participation points in 9 weeks only, which gives him 5-1 = 4 participation marks. But he received good peer ratings for all criteria, and hence get a bonus mark to make it 5/5.</li>
       <li>Chun Ming met the participation points bar in 8 weeks only, giving him 5-2 = 3 marks. He lost 2 more marks because he received multiple negative ratings for two criteria, giving him 1/5 participation marks.</li>
     </ul>
-    <panel type="info" header="##### Where to find your participation marks progress" expanded no-close no-switch>
+    <panel type="info" expanded no-close no-switch id="where-to-find-your-participation-marks-progress"><template slot="_header"><h5 id="where-to-find-your-participation-marks-progress">Where to find your participation marks progress<a class="fa fa-anchor" href="#where-to-find-your-participation-marks-progress"></a></h5></template>
       <p><strong>Participation marks are available in <a href="/website/admin/www.comp.nus.edu.sg/~cs2103">this page</a>.</strong></p>
       <ul>
         <li>The important column is the <span class="text-monospace"><mark>Weeks Count</mark></span> column. It tells you how many weeks you have met the bar for the criterion <span class="badge badge-info badge-pill">A</span>). Your target is to hit 10 weeks.</li>

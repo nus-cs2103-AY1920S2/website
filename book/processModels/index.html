@@ -5,24 +5,22 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - SDLC Process Models</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
-  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
-<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+<body>
   <div id="app">
     <div id="flex-body">
       <div id="content-wrapper">
@@ -38,13 +36,13 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="introduction">
                     <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
                 </div>
                 </span>
                 <div>
                   <div>
-                    <panel type="seamless" expanded>
+                    <panel type="seamless" expanded id="what">
                       <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                   </div>
                   </span>
@@ -66,7 +64,7 @@
                   </panel>
                 </div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="sequential-models">
                     <span slot="header" class="card-title"><div><h4 id="sequential-models"><span>Sequential Models</span><a class="fa fa-anchor" href="#sequential-models"></a></h4>
                 </div>
                 </span>
@@ -96,7 +94,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="iterative-models">
                   <span slot="header" class="card-title"><div><h4 id="iterative-models"><span>Iterative Models</span><a class="fa fa-anchor" href="#iterative-models"></a></h4>
               </div>
               </span>
@@ -129,7 +127,7 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="agile-models">
                 <span slot="header" class="card-title"><div><h4 id="agile-models"><span>Agile Models</span><a class="fa fa-anchor" href="#agile-models"></a></h4>
             </div>
             </span>
@@ -168,9 +166,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about agile processes" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about agile processes</p></template>
                         <question>
                           <p>Choose the correct statements about agile processes.</p>
                           <ul class="task-list">
@@ -195,13 +193,13 @@
         </panel>
       </div>
       <div>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="example-process-models">
           <span slot="header" class="card-title"><div><h2 id="example-process-models"><span>Example Process Models</span><a class="fa fa-anchor" href="#example-process-models"></a></h2>
       </div>
       </span>
       <div>
         <div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="xp">
             <span slot="header" class="card-title"><div><h4 id="xp"><span>XP</span><a class="fa fa-anchor" href="#xp"></a></h4>
         </div>
         </span>
@@ -238,7 +236,7 @@
         </panel>
       </div>
       <div>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="scrum">
           <span slot="header" class="card-title"><div><h4 id="scrum"><span>Scrum</span><a class="fa fa-anchor" href="#scrum"></a></h4>
       </div>
       </span>
@@ -290,7 +288,7 @@
             </ul>
             <p>...</p>
             <p>The daily scrum meeting is not used as a problem-solving or issue resolution meeting. <strong>Issues that are raised are taken offline and usually dealt with by the relevant subgroup immediately after the meeting.</strong></p>
-            <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> Intro to Scrum in Under 10 Minutes" class="non-printable algolia-no-index">
+            <panel type="seamless" class="non-printable algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Intro to Scrum in Under 10 Minutes</p></template>
               <p><sub>(This is not an endorsement of the product mentioned in the video)</sub></p>
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/XU0llRltyFM" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
             </panel>
@@ -301,7 +299,7 @@
       </panel>
     </div>
     <div>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="unified-process">
         <span slot="header" class="card-title"><div><h4 id="unified-process"><span>Unified Process</span><a class="fa fa-anchor" href="#unified-process"></a></h4>
     </div>
     </span>
@@ -399,9 +397,9 @@
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about the unified process" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about the unified process</p></template>
                 <question>
                   <p>Choose the correct statements about the unified process.</p>
                   <ul class="task-list">
@@ -427,13 +425,13 @@
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="more">
       <span slot="header" class="card-title"><div><h2 id="more"><span>More</span><a class="fa fa-anchor" href="#more"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="cmmi">
         <span slot="header" class="card-title"><div><h4 id="cmmi"><span>CMMI</span><a class="fa fa-anchor" href="#cmmi"></a></h4>
     </div>
     </span>
@@ -463,13 +461,13 @@
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="summary">
       <span slot="header" class="card-title"><div><h2 id="summary"><span>Summary</span><a class="fa fa-anchor" href="#summary"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="recap">
         <span slot="header" class="card-title"><div><h4 id="recap"><span>Recap</span><a class="fa fa-anchor" href="#recap"></a></h4>
     </div>
     </span>
@@ -487,9 +485,9 @@
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Sequential vs iterative approach" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Sequential vs iterative approach</p></template>
                 <question has-input="true">
                   <p>Discuss how sequential approach and the iterative approach can affect the following aspects of a project.</p>
                   <p>a) Quality of the final product.</p>
@@ -542,7 +540,7 @@
               </panel>
             </div>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Agile processes, Pair programming, Test-driven development" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Agile processes, Pair programming, Test-driven development</p></template>
                 <question has-input="true">
                   <p>Find out more about the following three topics and give at least three arguments for and three arguments against each.</p>
                   <p>(a) Agile processes</p>
@@ -597,7 +595,7 @@
               </panel>
             </div>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: the two basic process models" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> the two basic process models</p></template>
                 <question>
                   <p>The sequential model and the waterfall model are the two most basic process models.</p>
                   <ul radio-group="44ac6" class="radio-list">
@@ -612,7 +610,7 @@
               </panel>
             </div>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about sequential and iterative process models" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about sequential and iterative process models</p></template>
                 <question>
                   <p>Choose the correct statements about the sequential and iterative process models.</p>
                   <ul class="task-list">
@@ -630,7 +628,7 @@
               </panel>
             </div>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Risk of overshooting a deadline" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Risk of overshooting a deadline</p></template>
                 <question>
                   <p>In general, which has a higher risk of overshooting a deadline?</p>
                   <ul radio-group="2ba69" class="radio-list">
@@ -660,21 +658,6 @@
   </div>
   </div>
   </div>
-  <nav id="page-nav" class="navbar navbar-light bg-transparent">
-    <div class="border-left-grey nav-inner position-sticky slim-scroll">
-
-      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-        <a class="nav-link py-1" href="#sdlc-process-models">SDLC Process Models&#x200E;</a>
-        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-          <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
-          <a class="nav-link py-1" href="#example-process-models">Example Process Models&#x200E;</a>
-          <a class="nav-link py-1" href="#more">More&#x200E;</a>
-          <a class="nav-link py-1" href="#summary">Summary&#x200E;</a>
-        </nav>
-
-      </nav>
-    </div>
-  </nav>
   </div>
   </div>
 </body>

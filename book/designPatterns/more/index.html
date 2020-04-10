@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Software Design Patterns: More</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,7 +37,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="combining-design-patterns">
                     <span slot="header" class="card-title"><div><h4 id="combining-design-patterns"><span>Combining Design Patterns</span><a class="fa fa-anchor" href="#combining-design-patterns"></a></h4>
                 </div>
                 </span>
@@ -100,7 +98,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="other-design-patterns">
                   <span slot="header" class="card-title"><div><h4 id="other-design-patterns"><span>Other Design Patterns</span><a class="fa fa-anchor" href="#other-design-patterns"></a></h4>
               </div>
               </span>
@@ -138,7 +136,7 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="using-design-patterns">
                 <span slot="header" class="card-title"><div><h4 id="using-design-patterns"><span>Using Design Patterns</span><a class="fa fa-anchor" href="#using-design-patterns"></a></h4>
             </div>
             </span>
@@ -171,7 +169,7 @@
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded>
+            <panel type="seamless" expanded id="other-types-of-patterns">
               <span slot="header" class="card-title"><div><h4 id="other-types-of-patterns"><span>Other Types of Patterns</span><a class="fa fa-anchor" href="#other-types-of-patterns"></a></h4>
           </div>
           </span>
@@ -201,9 +199,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> Give a pattern from another domain" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Give a pattern from another domain</p></template>
                       <question has-input="true">
                         <p>Here are some common elements of a design pattern: Name, Context, Problem, Solution, Anti-patterns (optional), Consequences (optional), other useful information (optional).</p>
                         <p>Using similar elements, describe a pattern that is not a design pattern. It must be a pattern you have noticed, not a pattern already documented by others. You may also give a pattern not related to software.</p>
@@ -222,7 +220,7 @@
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="design-patterns-vs-design-principles">
             <span slot="header" class="card-title"><div><h4 id="design-patterns-vs-design-principles"><span>Design Patterns vs Design Principles</span><a class="fa fa-anchor" href="#design-patterns-vs-design-principles"></a></h4>
         </div>
         </span>

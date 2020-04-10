@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Software Design Fundamentals: Coupling: What</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -63,9 +61,9 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling levels of alternative designs" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
                             <question has-input="true">
                               <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
                               <box>
@@ -81,7 +79,7 @@
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: regressions and coupling." class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> regressions and coupling.</p></template>
                             <question has-input="true">
                               <p>Explain the link (if any) between regressions and coupling.</p>
                               <div slot="answer" class="algolia-no-index">
@@ -91,19 +89,18 @@
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling and testability" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
                             <question has-input="true">
-                              <p>Discuss the relationship between coupling and
-                                <tooltip content="a measure of how easily a given component can be tested">testability</tooltip>.</p>
+                              <p>Discuss the relationship between coupling and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a measure of how easily a given component can be tested</span>testability</span>.</p>
                               <div slot="answer" class="algolia-no-index">
-                                <p>Coupling decreases testability because if the
-                                  <tooltip content="Software Under Test">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                                <p>Coupling decreases testability because if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span>
+                                  is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
                               </div>
                             </question>
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about coupling" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
                             <question>
                               <p>Choose the correct statements.</p>
                               <ul class="task-list">

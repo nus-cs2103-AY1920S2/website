@@ -5,13 +5,14 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Admin: tP: v1.0 [week 5]</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../markbind/css/octicons.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -29,7 +30,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +49,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -221,21 +222,21 @@
               <div>
                 <img class="indented-level2" src="/website/admin/images/v00.png" width="250px">
                 <ul>
-                  <li>Get together with your team members and
-                    <trigger trigger="click" for="modal:v10-brainstorming">brainstorm</trigger> for
-                    <trigger trigger="click" for="modal:v10-userstories">user stories</trigger> <strong> for the the product</strong>.
+                  <li>Get together with your team members and <span trigger="click" for="modal:v10-brainstorming" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-brainstorming'].show()"
+                      class="trigger-click">brainstorm</span> for <span trigger="click" for="modal:v10-userstories" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-userstories'].show()"
+                      class="trigger-click">user stories</span> <strong> for the the product</strong>.
                     <ul>
                       <li>At this stage, aim to have more user stories than you can deliver in the project. <span class="dimmed">Aim to create at least 30 user stories. Include all 'obvious' ones you can think of but also look for 'non obvious' ones that you think are likely to be missed by other teams.</span></li>
-                      <li>Refer
-                        <trigger trigger="click" for="modal:v10-userstoryusagetips">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories → Usage → (section) Tips]</trigger> for tips on how to use user stories in this task.</li>
-                      <li>You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in
-                        <trigger trigger="click" for="modal:v10-onlinetools">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</trigger>).<br></li>
+                      <li>Refer <span trigger="click" for="modal:v10-userstoryusagetips" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-userstoryusagetips'].show()" class="trigger-click">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
+                        Specifying Requirements → UserStories → Usage → (section) Tips]</span> for tips on how to use user stories in this task.</li>
+                      <li>You can write each user story in a piece of paper (e.g. yellow sticky note, index card, or just pieces of paper about the size of a playing card). Alternatively you can use an online tool (some examples given in <span trigger="click"
+                          for="modal:v10-onlinetools" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-onlinetools'].show()" class="trigger-click">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
+                        Specifying Requirements → UserStories → Usage → (panel) Tool Examples ]</span>).<br></li>
                       <li>Note that <mark>you should not 'evaluate' the value of user stories while doing the above</mark>. <span class="dimmed">Reason: an important aspect of brainstorming is not judging the ideas generated.</span></li>
                     </ul>
                   </li>
                 </ul>
-                <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-brainstorming" class="algolia-no-index">
-
+                <b-modal id="modal:v10-brainstorming" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-brainstorming"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -259,9 +260,9 @@
                         </div>
                         <div>
                           <div>
-                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                               <div>
-                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Characteristic of brainstorming" class="algolia-no-index">
+                                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Characteristic of brainstorming</p></template>
                                   <question>
                                     <p>What is the key characteristic about brainstorming?</p>
                                     <ul radio-group="11d89" class="radio-list">
@@ -282,9 +283,8 @@
                       </div>
                     </div>
                   </div>
-                </modal>
-                <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-userstories" class="algolia-no-index">
-
+                </b-modal>
+                <b-modal id="modal:v10-userstories" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-userstories"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -322,16 +322,16 @@
                           <p></p>
                           <p><strong>We can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, we can use a software (e.g., <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>,
                             Trello, Google Docs, ...) to manage user stories digitally.</p>
-                          <panel header="%%User stories in use%%" class="non-printable" expanded>
-                            <panel header="With sticky notes" type="seamless" expanded>
+                          <panel class="non-printable" expanded><template slot="_header"><p><span class="dimmed">User stories in use</span></p></template>
+                            <panel type="seamless" expanded><template slot="_header"><p>With sticky notes</p></template>
                               <img src="/website/book/specifyingRequirements/userStories/introduction/images/workingWithStories.jpg" height="400">
                               <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/2682466984/">https://www.flickr.com/photos/jakuza/2682466984/</a>]</sup></span></p>
                             </panel>
-                            <panel header="With paper" type="seamless" expanded>
+                            <panel type="seamless" expanded><template slot="_header"><p>With paper</p></template>
                               <img src="/website/book/specifyingRequirements/userStories/introduction/images/userStoriesOnTable.jpg" height="400">
                               <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/with/2726048607/">https://www.flickr.com/photos/jakuza/with/2726048607/</a>]</sup></span></p>
                             </panel>
-                            <panel header="With software" type="seamless" expanded>
+                            <panel type="seamless" expanded><template slot="_header"><p>With software</p></template>
                               <img src="/website/book/specifyingRequirements/userStories/introduction/images/userStoriesWithSoftware.png" height="400">
                               <p><span class="dimmed"><sup>[credit: <a href="https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png">https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png</a>]</sup></span></p>
                             </panel>
@@ -339,9 +339,9 @@
                         </div>
                         <div>
                           <div>
-                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                               <div>
-                                <panel header="Q: Which of these are true about user stories?" class="algolia-no-index">
+                                <panel class="algolia-no-index"><template slot="_header"><p>Q: Which of these are true about user stories?</p></template>
                                   <question>
                                     <ul class="task-list">
                                       <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They are based on stories users tell about similar systems</li>
@@ -359,7 +359,7 @@
                                 </panel>
                               </div>
                               <div>
-                                <panel header="Q: What's wrong with this user story?" class="algolia-no-index">
+                                <panel class="algolia-no-index"><template slot="_header"><p>Q: What's wrong with this user story?</p></template>
                                   <question has-input="true">
                                     <p>Critique the following user story taken from a software project to build an e-commerce website.</p>
                                     <p><code>As a developer, I want to use Python to implement the software, so that we can resue existing Python modules.</code></p>
@@ -376,9 +376,9 @@
                                 </panel>
                               </div>
                               <div>
-                                <panel header="Q: Extract user stories from customer statement" class="algolia-no-index">
+                                <panel class="algolia-no-index"><template slot="_header"><p>Q: Extract user stories from customer statement</p></template>
                                   <question has-input="true">
-                                    <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <popover content="The number of leave days not yet taken">leave balance</popover></em>.
+                                    <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">The number of leave days not yet taken</span>leave balance</span></em>.
                                       What are the user stories you can extract from that statement?</p>
                                     <div slot="hint" class="algolia-no-index">
                                       <p>Remember to follow the correct format when writing user stories.</p>
@@ -399,12 +399,11 @@
                       </div>
                     </div>
                   </div>
-                </modal>
-                <modal large title="Textbook <md>:glyphicon-log-in:</md> Specifying Requirements → UserStories → Usage → (panel)Tool Examples" id="modal:v10-onlinetools" class="algolia-no-index">
-
+                </b-modal>
+                <b-modal id="modal:v10-onlinetools" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-onlinetools"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories → Usage → (panel)Tool Examples</template>
                   <div>
                     <tabs>
-                      <tab header="GitHub Project Boards">
+                      <tab><template slot="_header">GitHub Project Boards</template>
                         <p>You can create issues for each of the user stories and use a GitHub <em>Project Board</em> to sort them into categories.</p>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example Project Board:</p>
                         <p><img src="/website/book/specifyingRequirements/userStories/usage/images/userStoriesInGitHubProjectBoards.png" width="800"></p>
@@ -417,13 +416,13 @@
                         <p>A video on GitHub Project Boards:</p>
                         <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                       </tab>
-                      <tab header="Google Sheets" class="algolia-no-index">
+                      <tab class="algolia-no-index"><template slot="_header">Google Sheets</template>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example Google Sheet for recording user stories:</p>
                         <p><img src="/website/book/specifyingRequirements/userStories/usage/images/userStoriesInGoogleSheets.png" width="800"></p>
                         <p></p>
                         <p></p>
                       </tab>
-                      <tab header="Trello" class="algolia-no-index">
+                      <tab class="algolia-no-index"><template slot="_header">Trello</template>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <a href="https://trello.com">Trello</a> Board for recording user stories:</p>
                         <p><img src="/website/book/specifyingRequirements/userStories/usage/images/userStoriesInTrello.png" width="800"></p>
                         <p></p>
@@ -431,9 +430,8 @@
                       </tab>
                     </tabs>
                   </div>
-                </modal>
-                <modal large title="Textbook <md>:glyphicon-log-in:</md> Specifying Requirements → UserStories →  Usage → (section) Tips" id="modal:v10-userstoryusagetips" class="algolia-no-index">
-
+                </b-modal>
+                <b-modal id="modal:v10-userstoryusagetips" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-userstoryusagetips"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → UserStories →  Usage → (section) Tips</template>
                   <div>
                     <p>Given their lightweight nature, <strong>user stories are quite handy for recording requirements during early stages of requirements gathering</strong>.</p>
                     <box>
@@ -450,12 +448,12 @@
                       </ul>
                     </box>
                   </div>
-                </modal>
+                </b-modal>
                 <div class="indented-level3">
                   <box>
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Recommended: <strong>You can use GitHub issue tracker to manage user stories</strong>, but for that you need to set up your
                       team's GitHub organization, team repo, and its issue tracker first. Instructions for doing those steps are in the panel below.</p>
-                    <panel header="%%Admin <md>:glyphicon-log-in:</md> Appendix E: GitHub (extract)%%" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E: GitHub (extract)</span></p></template>
                       <div>
                         <h3 id="organization-setup">
                           <div class="text-white bg-dark p-1">Organization Setup</div><a class="fa fa-anchor" href="#organization-setup"></a></h3>
@@ -492,8 +490,8 @@
                           <li><a href="https://nus-cs2103-ay1920s2.github.io/addressbook-level3/UsingTravis.html#enabling-auto-publishing-of-documentation"><strong>Set up <em>auto-publishing</em> of docs</strong></a>. When set up correctly, your project website
                             should be available via the URL <code>https://ay1920s2-{team-id}.github.io/main</code> e.g., <code>https://ay1920s2-cs2103-w13-1.github.io/main/</code>. This also requires you to <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages">enable the <em>GitHub Pages</em> feature of your team repo and configure it to serve the website from the <code>gh-pages</code> branch</a>.</li>
                           <li><strong>create a <em>team PR</em></strong> for us to track your project progress: i.e., create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2103-AY1920S2/addressbook-level3">nus-cs2103-AY1920S2/addressbook-level3</a>]
-                            <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[CS2103T-T09-2] Contact List Pro</code>. <span class="dimmed">As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span>                            In the PR description
-                            <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.</li>
+                            <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[CS2103T-T09-2] Contact List Pro</code>. <span class="dimmed">As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span>                            In the PR description <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">use @githubUserName</span>@mention</span> the other team
+                            members so that they get notified when the tutor adds comments to the PR.</li>
                         </ol>
                         <p>All team members:</p>
                         <ol>
@@ -661,7 +659,7 @@
                       </div>
                     </panel>
                   </box>
-                  <panel header="<md>:fas-cube:</md> User Story examples (from a different product)" minimized class="algolia-no-index">
+                  <panel minimized class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> User Story examples (from a different product)</p></template>
                     <span class="text-monospace">
 <ul>
 <li>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</li>
@@ -714,6 +712,8 @@
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#1-brainstorm-user-stories-before-the-tutorial">1  Brainstorm user stories           before the tutorial
           &#x200E;</a>
+              <a class="nav-link py-1" href="#brainstorming">Brainstorming&#x200E;</a>
+              <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
               <a class="nav-link py-1" href="#2-prioritize-the-user-stories-before-during-the-tutorial">2  Prioritize the user stories           before/during the tutorial
           &#x200E;</a>
             </nav>
@@ -724,7 +724,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

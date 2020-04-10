@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - UML: Activity Diagrams</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,14 +37,14 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="introduction">
                     <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
                 </div>
                 </span>
                 <div>
                   <div>
-                    <panel type="seamless" expanded>
-                      <span slot="header" class="card-title"><div><h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
+                    <panel type="seamless" expanded id="introduction-2">
+                      <span slot="header" class="card-title"><div><h4 id="introduction-2"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-2"></a></h4>
                   </div>
                   </span>
                   <div class="indented">
@@ -59,14 +57,14 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <p><strong><trigger trigger="click" for="modal:modelingAd-uml">UML</trigger> <em> activity diagrams</em> (AD) can model workflows. </strong> <span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
-                      <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml" class="algolia-no-index">
+                      <p><strong><span trigger="click" for="modal:modelingAd-uml" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modelingAd-uml'].show()" class="trigger-click">UML</span> <em> activity diagrams</em> (AD) can model workflows. </strong>                        <span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
+                      <b-modal id="modal:modelingAd-uml" hide-footer size modal-class="mb-zoom" ref="modal:modelingAd-uml"><template slot="modal-title"><strong>Unified Modeling Language (UML)</strong></template>
                         <div>
                           <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists
                             James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence,
                             the term ‘Unified’ in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
                         </div>
-                      </modal>
+                      </b-modal>
                       <div v-closeable alt>
                         <p>An example activity diagram:<br>
                           <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br>
@@ -81,13 +79,13 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="basic-notations">
                 <span slot="header" class="card-title"><div><h2 id="basic-notations"><span>Basic Notations</span><a class="fa fa-anchor" href="#basic-notations"></a></h2>
             </div>
             </span>
             <div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="linear-paths">
                   <span slot="header" class="card-title"><div><h4 id="linear-paths"><span>Linear Paths</span><a class="fa fa-anchor" href="#linear-paths"></a></h4>
               </div>
               </span>
@@ -114,9 +112,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which activity diagrams are correct?</p></template>
                           <question>
                             <p>Which of these activity diagrams use the correct UML notation?</p>
                             <ul class="task-list">
@@ -147,7 +145,7 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="alternate-paths">
                 <span slot="header" class="card-title"><div><h4 id="alternate-paths"><span>Alternate Paths</span><a class="fa fa-anchor" href="#alternate-paths"></a></h4>
             </div>
             </span>
@@ -174,9 +172,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which activity diagrams are correct?</p></template>
                         <question>
                           <p>Which of these activity diagrams use the correct UML notation?</p>
                           <ul class="task-list">
@@ -210,7 +208,7 @@
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded>
+            <panel type="seamless" expanded id="parallel-paths">
               <span slot="header" class="card-title"><div><h4 id="parallel-paths"><span>Parallel Paths</span><a class="fa fa-anchor" href="#parallel-paths"></a></h4>
           </div>
           </span>
@@ -224,11 +222,11 @@
             <p></p>
             <p></p>
             <div>
-              <p><strong><em>Fork</em> nodes indicate the start of <tooltip content="parallel">concurrent</tooltip> flows of control.</strong></p>
+              <p><strong><em>Fork</em> nodes indicate the start of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">parallel</span>concurrent</span> flows of control.</strong></p>
               <p><strong><em>Join</em> nodes indicate the end of parallel paths.</strong></p>
               <p>Both have the same notation: a bar.</p>
-              <p>In a
-                <tooltip content="paths within a matching fork-join pair">set of parallel paths</tooltip>, execution along <strong>all parallel paths should be complete before the execution can start on the outgoing control flow of the <em>join</em>.</strong></p>
+              <p>In a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">paths within a matching fork-join pair</span>set of parallel paths</span>, execution along
+                <strong>all parallel paths should be complete before the execution can start on the outgoing control flow of the <em>join</em>.</strong></p>
               <img src="/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/notation.png" height="130">
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this activity diagram (from an online shop website) the actions <em>User browsers products</em> and <em>System records browsing data</em> happen in parallel. Both of
@@ -237,9 +235,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which activity diagrams are correct?</p></template>
                       <question>
                         <p>Which of these activity diagrams use the correct UML notation?</p>
                         <ul class="task-list">
@@ -268,7 +266,7 @@
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="rakes">
             <span slot="header" class="card-title"><div><h4 id="rakes"><span>Rakes</span><a class="fa fa-anchor" href="#rakes"></a></h4>
         </div>
         </span>
@@ -297,7 +295,7 @@
         </panel>
       </div>
       <div>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="swimlanes">
           <span slot="header" class="card-title"><div><h4 id="swimlanes"><span>Swimlanes</span><a class="fa fa-anchor" href="#swimlanes"></a></h4>
       </div>
       </span>

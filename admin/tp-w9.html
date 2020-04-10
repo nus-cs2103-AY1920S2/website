@@ -5,13 +5,14 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Admin: tP: v1.2 [week 9]</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../markbind/css/octicons.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -29,7 +30,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +49,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -225,12 +226,12 @@
               <h4 id="2-wrap-up-milestone"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Wrap up milestone</span><a class="fa fa-anchor" href="#2-wrap-up-milestone"></a></h4>
               <div>
                 <ul>
-                  <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Manage the milestone</strong> v1.2 as explained in
-                    <trigger trigger="click" for="modal:v12-projectTracking">[Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E: GitHub: Project Schedule Tracking]</trigger>.</li>
+                  <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Manage the milestone</strong> v1.2 as explained in <span trigger="click" for="modal:v12-projectTracking" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                      v-on:click="$refs['modal:v12-projectTracking'].show()" class="trigger-click">[Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E: GitHub: Project Schedule Tracking]</span>.</li>
                   <li><strong>Wrap up the milestone</strong> using a git tag <code>v1.2</code>. When the milestone deadline is near (e.g., 0.5 days before the deadline), if you think some of the ongoing work intended for the current milestone may not finish
                     in time, reassign them to a future milestone.</li>
                 </ul>
-                <modal large title="Appendix E: Using GitHub →" id="modal:v12-projectTracking" class="algolia-no-index">
+                <b-modal id="modal:v12-projectTracking" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v12-projectTracking"><template slot="modal-title">Appendix E: Using GitHub →</template>
                   <div>
                     <h3 id="project-schedule-tracking">
                       <div class="text-white bg-dark p-1">Project Schedule Tracking</div><a class="fa fa-anchor" href="#project-schedule-tracking"></a></h3>
@@ -329,7 +330,7 @@
                       </ul>
                     </div>
                   </div>
-                </modal>
+                </b-modal>
               </div>
               <p></p>
               <h4 id="3-do-an-informal-demo"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Do an informal demo</span><a class="fa fa-anchor" href="#3-do-an-informal-demo"></a></h4>
@@ -361,7 +362,15 @@
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#1-deliver-an-intermediate-version-of-the-new-features">1  Deliver an intermediate version of the new features&#x200E;</a>
               <a class="nav-link py-1" href="#2-wrap-up-milestone">2  Wrap up milestone&#x200E;</a>
-              <a class="nav-link py-1" href="#3-do-an-informal-demo">3  Do an informal demo&#x200E;</a>
+            </nav>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#project-schedule-tracking">
+                Project Schedule Tracking&#x200E;</a>
+              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+                <a class="nav-link py-1" href="#using-issues">Using Issues:&#x200E;</a>
+                <a class="nav-link py-1" href="#using-milestones">Using Milestones:&#x200E;</a>
+                <a class="nav-link py-1" href="#3-do-an-informal-demo">3  Do an informal demo&#x200E;</a>
+              </nav>
             </nav>
 
           </nav>
@@ -370,7 +379,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Integration: Approaches</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,7 +37,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="late-and-one-time-vs-early-and-frequent">
                     <span slot="header" class="card-title"><div><h4 id="late-and-one-time-vs-early-and-frequent"><span>Late-and-One-Time vs Early-and-Frequent</span><a class="fa fa-anchor" href="#late-and-one-time-vs-early-and-frequent"></a></h4>
                 </div>
                 </span>
@@ -60,7 +58,7 @@
                     </box>
                     <p><strong><em>Early and frequent</em>: integrate early and evolve each part in parallel, in small steps, re-integrating frequently.</strong></p>
                     <box>
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <em><tooltip content="it has all the main components in their minimal form, compiles, and runs but does not produce any useful output">walking skeleton</tooltip></em>                        can be written first. This can be done by one developer, possibly the one in charge of integration. After that, all developers can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <em><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">it has all the main components in their minimal form, compiles, and runs but does not produce any useful output</span>walking skeleton</span></em>                        can be written first. This can be done by one developer, possibly the one in charge of integration. After that, all developers can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply
                         integrate the new code to the main system.</p>
                     </box>
                     <div v-closeable alt="slideshow: comparison" class="non-printable">
@@ -74,7 +72,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="big-bang-vs-incremental-integration">
                   <span slot="header" class="card-title"><div><h4 id="big-bang-vs-incremental-integration"><span>Big-Bang vs Incremental Integration</span><a class="fa fa-anchor" href="#big-bang-vs-incremental-integration"></a></h4>
               </div>
               </span>
@@ -101,9 +99,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="Q: Big-bang integration in school projects" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p>Q: Big-bang integration in school projects</p></template>
                           <question has-input="true">
                             <p>Give two arguments in support and two arguments against the following statement.</p>
                             <p><em>Because there is no external client, it is OK to use big bang integration for a school project.</em></p>
@@ -131,7 +129,7 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="top-down-vs-bottom-up-integration">
                 <span slot="header" class="card-title"><div><h4 id="top-down-vs-bottom-up-integration"><span>Top-Down vs Bottom-Up Integration</span><a class="fa fa-anchor" href="#top-down-vs-bottom-up-integration"></a></h4>
             </div>
             </span>
@@ -149,18 +147,18 @@
                 <p></p>
                 <p><strong>Based on the order in which components are integrated, incremental integration can be done in three ways.</strong></p>
                 <p><strong><em>Top-down</em> integration: higher-level components are integrated before bringing in the lower-level components.</strong> One advantage of this approach is that higher-level problems can be discovered early. One disadvantage
-                  is that this requires the use of
-                  <trigger for="pop:topdown-stub">stubs</trigger> in place of lower level components until the real lower-level components are integrated to the system. Otherwise, higher-level components cannot function as they depend on lower level ones.</p>
-                <popover id="pop:topdown-stub" title="<md>:glyphicon-eye-open:</md>" placement="top">
-                  <div slot="content" class="algolia-no-index">
-                    <div>
-                      <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set
-                        of predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
-                    </div>
+                  is that this requires the use of <span for="pop:topdown-stub" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:topdown-stub'].show()" class="trigger">stubs</span>                  in place of lower level components until the real lower-level components are integrated to the system. Otherwise, higher-level components cannot function as they depend on lower level ones.</p>
+                <span id="pop:topdown-stub" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span>
+                </span>
+                <div data-mb-html-for="content">
+                  <div>
+                    <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of
+                      predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
                   </div>
-                </popover>
-                <p><strong><em>Bottom-up</em> integration: the reverse of top-down integration.</strong> Note that when integrating lower level components,
-                  <tooltip content="additional code written to provide inputs to a component via an API">drivers</tooltip> may be needed to test the integrated components <span class="dimmed">because the UI may not be integrated yet</span>, just like top-down integration needs stubs.</p>
+                </div>
+                </span>
+                <p><strong><em>Bottom-up</em> integration: the reverse of top-down integration.</strong> Note that when integrating lower level components, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">additional code written to provide inputs to a component via an API</span>drivers</span>
+                  may be needed to test the integrated components <span class="dimmed">because the UI may not be integrated yet</span>, just like top-down integration needs stubs.</p>
                 <p><strong><em>Sandwich</em> integration: a mix of the top-down and the bottom-up approaches.</strong> The idea is to do both top-down and bottom-up so as to 'meet' in the middle.</p>
                 <div v-closeable alt="slideshow: comparison">
                   <p>Here is an animation that compares the three approaches:</p>
@@ -170,9 +168,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Suggest an integration strategy" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Suggest an integration strategy</p></template>
                         <question has-input="true">
                           <p>Suggest an integration strategy for the system represented by following diagram. You need not follow a strict top-down, bottom-up, sandwich, or big bang approach. Dashed arrows represent dependencies between classes.</p>
                           <p>Also take into account the following facts in your test strategy.</p>
@@ -202,7 +200,7 @@
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Integration order" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Integration order</p></template>
                         <question has-input="false">
                           <p>Consider the architecture given below. Describe the order in which components will be integrated with one another if the following integration strategies were adopted.</p>
                           <p>a) top-down b) bottom-up c) sandwich</p>

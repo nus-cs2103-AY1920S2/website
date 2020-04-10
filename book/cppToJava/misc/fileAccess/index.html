@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - C++ to Java: Miscellaneous Topics: Constants</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -52,25 +50,10 @@
                     <p><strong>You can use the <a href="https://docs.oracle.com/javase/9/docs/api/java/io/File.html"><code>java.io.File</code></a> class to represent a file object</strong>. It can be used to access properties of the file object.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code creates a <code>File</code> object to represent a file <code>fruits.txt</code> that exists in the <code>data</code> directory <mark>relative to the current working directory</mark>                        and uses that object to print some properties of the file.</p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileClassDemo</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        File f = <span class="hljs-keyword">new</span> File(<span class="hljs-string">"data/fruits.txt"</span>);
-        System.out.println(<span class="hljs-string">"full path: "</span> + f.getAbsolutePath());
-        System.out.println(<span class="hljs-string">"file exists?: "</span> + f.exists());
-        System.out.println(<span class="hljs-string">"is Directory?: "</span> + f.isDirectory());
-    }
-
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.io.File;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileClassDemo</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        File f = <span class="hljs-keyword">new</span> File(<span class="hljs-string">"data/fruits.txt"</span>);</span><span>        System.out.println(<span class="hljs-string">"full path: "</span> + f.getAbsolutePath());</span><span>        System.out.println(<span class="hljs-string">"file exists?: "</span> + f.exists());</span><span>        System.out.println(<span class="hljs-string">"is Directory?: "</span> + f.isDirectory());</span><span>    }</span><span>&#x200B;</span><span>}</span></code></pre>
                       <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                       </p>
-                      <pre><code class="hljs">full path: C:\sample-code\data\fruits.txt
-file exists?: true
-is Directory?: false
-</code></pre>
+                      <pre><code class="hljs"><span>full path: C:\sample-code\data\fruits.txt</span><span>file exists?: true</span><span>is Directory?: false</span></code></pre>
                     </box>
                     <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If you use backslash to specify the file path in a Windows computer, you need to use an additional backslash as an escape character because the backslash by itself
                       has a special meaning. e.g., use <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
@@ -80,93 +63,27 @@ is Directory?: false
                     <p><strong>You can read from a file using a <code>Scanner</code> object that uses a <code>File</code> object as the <em>source</em> of data.</strong></p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code uses a <code>Scanner</code> object to read (and print) contents of a text file line-by-line:</p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
-<span class="hljs-keyword">import</span> java.io.FileNotFoundException;
-<span class="hljs-keyword">import</span> java.util.Scanner;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileReadingDemo</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printFileContents</span><span class="hljs-params">(String filePath)</span> <span class="hljs-keyword">throws</span> FileNotFoundException </span>{
-        File f = <span class="hljs-keyword">new</span> File(filePath); <span class="hljs-comment">// create a File for the given file path</span>
-        Scanner s = <span class="hljs-keyword">new</span> Scanner(f); <span class="hljs-comment">// create a Scanner using the File as the source</span>
-        <span class="hljs-keyword">while</span> (s.hasNext()) {
-            System.out.println(s.nextLine());
-        }
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        <span class="hljs-keyword">try</span> {
-            printFileContents(<span class="hljs-string">"data/fruits.txt"</span>);
-        } <span class="hljs-keyword">catch</span> (FileNotFoundException e) {
-            System.out.println(<span class="hljs-string">"File not found"</span>);
-        }
-    }
-
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.io.File;</span><span><span class="hljs-keyword">import</span> java.io.FileNotFoundException;</span><span><span class="hljs-keyword">import</span> java.util.Scanner;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileReadingDemo</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printFileContents</span><span class="hljs-params">(String filePath)</span> <span class="hljs-keyword">throws</span> FileNotFoundException </span>{</span><span>        File f = <span class="hljs-keyword">new</span> File(filePath); <span class="hljs-comment">// create a File for the given file path</span></span><span>        Scanner s = <span class="hljs-keyword">new</span> Scanner(f); <span class="hljs-comment">// create a Scanner using the File as the source</span></span><span>        <span class="hljs-keyword">while</span> (s.hasNext()) {</span><span>            System.out.println(s.nextLine());</span><span>        }</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        <span class="hljs-keyword">try</span> {</span><span>            printFileContents(<span class="hljs-string">"data/fruits.txt"</span>);</span><span>        } <span class="hljs-keyword">catch</span> (FileNotFoundException e) {</span><span>            System.out.println(<span class="hljs-string">"File not found"</span>);</span><span>        }</span><span>    }</span><span>&#x200B;</span><span>}</span></code></pre>
                       <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> i.e., contents of the <code>data/fruits.txt</code></p>
-                      <pre><code class="hljs">5 Apples
-3 Bananas
-6 Cherries
-</code></pre>
+                      <pre><code class="hljs"><span>5 Apples</span><span>3 Bananas</span><span>6 Cherries</span></code></pre>
                     </box>
                     <p><strong>You can use a <a href="https://docs.oracle.com/javase/9/docs/api/java/io/FileWriter.html"><code>java.io.FileWriter</code></a> object to write to a file.</strong></p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>writeToFile</code> method below uses a <code>FileWrite</code> object to write to a file. The method is being used to write two lines to the file <code>temp/lines.txt</code>.</p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.FileWriter;
-<span class="hljs-keyword">import</span> java.io.IOException;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileWritingDemo</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeToFile</span><span class="hljs-params">(String filePath, String textToAdd)</span> <span class="hljs-keyword">throws</span> IOException </span>{
-        FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath);
-        fw.write(textToAdd);
-        fw.close();
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        String file2 = <span class="hljs-string">"temp/lines.txt"</span>;
-        <span class="hljs-keyword">try</span> {
-            writeToFile(file2, <span class="hljs-string">"first line"</span> + System.lineSeparator() + <span class="hljs-string">"second line"</span>);
-        } <span class="hljs-keyword">catch</span> (IOException e) {
-            System.out.println(<span class="hljs-string">"Something went wrong: "</span> + e.getMessage());
-        }
-    }
-
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.io.FileWriter;</span><span><span class="hljs-keyword">import</span> java.io.IOException;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileWritingDemo</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeToFile</span><span class="hljs-params">(String filePath, String textToAdd)</span> <span class="hljs-keyword">throws</span> IOException </span>{</span><span>        FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath);</span><span>        fw.write(textToAdd);</span><span>        fw.close();</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        String file2 = <span class="hljs-string">"temp/lines.txt"</span>;</span><span>        <span class="hljs-keyword">try</span> {</span><span>            writeToFile(file2, <span class="hljs-string">"first line"</span> + System.lineSeparator() + <span class="hljs-string">"second line"</span>);</span><span>        } <span class="hljs-keyword">catch</span> (IOException e) {</span><span>            System.out.println(<span class="hljs-string">"Something went wrong: "</span> + e.getMessage());</span><span>        }</span><span>    }</span><span>&#x200B;</span><span>}</span></code></pre>
                       <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> Contents of the <code>temp/lines.txt</code>:</p>
-                      <pre><code class="hljs">first line
-second line
-</code></pre>
+                      <pre><code class="hljs"><span>first line</span><span>second line</span></code></pre>
                     </box>
                     <p>Note that you <mark>need to call the <code>close()</code> method</mark> of the <code>FileWriter</code> object for the writing operation to be completed.</p>
                     <p><strong>You can create a <code>FileWriter</code> object that appends to the file</strong> (instead of overwriting the current content) by specifying an additional boolean parameter to the constructor.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The method below appends to the file rather than overwrites.</p>
-                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">appendToFile</span><span class="hljs-params">(String filePath, String textToAppend)</span> <span class="hljs-keyword">throws</span> IOException </span>{
-    FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath, <span class="hljs-keyword">true</span>); <span class="hljs-comment">// create a FileWriter in append mode</span>
-    fw.write(textToAppend);
-    fw.close();
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">appendToFile</span><span class="hljs-params">(String filePath, String textToAppend)</span> <span class="hljs-keyword">throws</span> IOException </span>{</span><span>    FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath, <span class="hljs-keyword">true</span>); <span class="hljs-comment">// create a FileWriter in append mode</span></span><span>    fw.write(textToAppend);</span><span>    fw.close();</span><span>}</span></code></pre>
                     </box>
                     <p><strong>The <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html"><code>java.nio.file.Files</code></a> is a utility class that provides several useful file operations.</strong> It relies on the <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Paths.html"><code>java.nio.file.Paths</code></a>                      file to generate <code>Path</code> objects that represent file paths.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example uses the <code>Files</code> class to copy a file and delete a file.</p>
-                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.IOException;
-<span class="hljs-keyword">import</span> java.nio.file.Files;
-<span class="hljs-keyword">import</span> java.nio.file.Paths;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FilesClassDemo</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException</span>{
-        Files.copy(Paths.get(<span class="hljs-string">"data/fruits.txt"</span>), Paths.get(<span class="hljs-string">"temp/fruits2.txt"</span>));
-        Files.delete(Paths.get(<span class="hljs-string">"temp/fruits2.txt"</span>));
-    }
-
-}
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.io.IOException;</span><span><span class="hljs-keyword">import</span> java.nio.file.Files;</span><span><span class="hljs-keyword">import</span> java.nio.file.Paths;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FilesClassDemo</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException</span>{</span><span>        Files.copy(Paths.get(<span class="hljs-string">"data/fruits.txt"</span>), Paths.get(<span class="hljs-string">"temp/fruits2.txt"</span>));</span><span>        Files.delete(Paths.get(<span class="hljs-string">"temp/fruits2.txt"</span>));</span><span>    }</span><span>&#x200B;</span><span>}</span></code></pre>
                     </box>
                     <p>The techniques above are good enough to manipulate simple text files. Note that <strong>it is also possible to <a href="https://www.tutorialspoint.com/java/java_files_io.htm">perform file I/O operations using other classes</a></strong>.</p>
                   </div>

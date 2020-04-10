@@ -9,8 +9,7 @@
   <p>
     <div>
       <h1 id="apdx-d-getting-help">Apdx D: Getting Help <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-        </span>
-      </h1>
+        </span><a class="fa fa-anchor" href="#apdx-d-getting-help"></a></h1>
     </div>
   </p>
   <div id="main">
@@ -61,8 +60,8 @@
           </li>
           <li>
             <p><strong>Isolate the problem.</strong> &quot;My code doesn't work&quot; isn't going to help even if you post the whole code. Others don't have time to go through all of your code. Isolate the part that doesn't work and strip it down to the
-              bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself (have you heard about
-              <trigger trigger="click" for="modal:appendixHelp-rubberDuckDebugging">Rubber Duck Debugging</trigger>?).</p>
+              bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself (have you heard about <span trigger="click" for="modal:appendixHelp-rubberDuckDebugging" v-b-popover.click.top.html="popoverGenerator"
+                v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:appendixHelp-rubberDuckDebugging'].show()" class="trigger-click">Rubber Duck Debugging</span>?).</p>
             <box>
               <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related to the problem. Do that until
                 you can still reproduce the problem with the least amount of code remaining.
@@ -79,12 +78,12 @@
         </ul>
       </li>
     </ul>
-    <modal large title="Rubber Duck Debugging" id="modal:appendixHelp-rubberDuckDebugging">
+    <b-modal id="modal:appendixHelp-rubberDuckDebugging" hide-footer size="lg" modal-class="mb-zoom" ref="modal:appendixHelp-rubberDuckDebugging"><template slot="modal-title">Rubber Duck Debugging</template>
       <p><img src="/website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
       <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book <em>The Pragmatic Programmer</em> in which a programmer would carry around a rubber
         duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
       <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]<br></p>
-    </modal>
+    </b-modal>
     <ul>
       <li><strong>Ask the world</strong> using programming forums such as stackoverflow.
         <ul>

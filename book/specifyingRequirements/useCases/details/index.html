@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Specifying Requirements: Use Cases: Writing Detailed Use Cases</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,10 +37,8 @@
             <div>
               <div>
                 <p>
-                  <panel src="/website/book/specifyingRequirements/useCases/introduction/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements → Specifying Requirements → Use Cases → Introduction%%" popup-url="/website/book/specifyingRequirements/useCases/introduction"
-                    class="algolia-no-index"></panel>
-                  <panel src="/website/book/specifyingRequirements/useCases/identifying/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Requirements → Specifying Requirements → Use Cases → Identifying%%" popup-url="/website/book/specifyingRequirements/useCases/identifying"
-                    class="algolia-no-index"></panel>
+                  <panel src="/website/book/specifyingRequirements/useCases/introduction/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/specifyingRequirements/useCases/introduction" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Requirements → Specifying Requirements → Use Cases → Introduction</span></p></template></panel>
+                  <panel src="/website/book/specifyingRequirements/useCases/identifying/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/specifyingRequirements/useCases/identifying" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Requirements → Specifying Requirements → Use Cases → Identifying</span></p></template></panel>
                 </p>
               </div>
               <p></p>
@@ -99,8 +95,7 @@
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of how you can show a loop:</p>
                         <div class="text-monospace">
-                          <p>Software System: Square game<br> Use case:
-                            <popover content="Each use case can be given a unique identification for easier cross reference."> UC02 </popover> - Play a Game<br> Actors: Player (multiple players)</p>
+                          <p>Software System: Square game<br> Use case: <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">Each use case can be given a unique identification for easier cross reference.</span>                            UC02 </span> - Play a Game<br> Actors: Player (multiple players)</p>
                           <ol>
                             <li>A Player starts the game.</li>
                             <li>SquareGame asks for player names.</li>
@@ -261,13 +256,14 @@ Extensions:
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
                           <link rel="stylesheet" href="/website/book/css/common.css">
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: EZ-Link top-up use case" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> EZ-Link top-up use case</p></template>
                             <question has-input="true">
-                              <p>Complete the following use case (MSS, extensions, etc.). Note that you should not blindly follow how the existing
-                                <tooltip content="A type of a cash card topup machine">EZ-Link machine</tooltip> operates because it will prevent you from designing a better system. You should consider all possible extensions without complicating the use case too much.</p>
+                              <p>Complete the following use case (MSS, extensions, etc.). Note that you should not blindly follow how the existing <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">A type of a cash card topup machine</span>EZ-Link
+                                machine
+                                </span> operates because it will prevent you from designing a better system. You should consider all possible extensions without complicating the use case too much.</p>
                               <box>
                                 <ul>
                                   <li>System: EZ-Link machine</li>
@@ -370,7 +366,7 @@ Extensions:
                         </div>
                         <div>
                           <link rel="stylesheet" href="/website/book/css/common.css">
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: LearnSys – reply to post use case" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> LearnSys – reply to post use case</p></template>
                             <question has-input="true">
                               <p>Complete the following use case (MSS, extensions, etc.).</p>
                               <box>
@@ -453,7 +449,7 @@ Extensions:
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Parts of a use case descriptions" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Parts of a use case descriptions</p></template>
                             <question>
                               <p>Which of these cannot appear as part of a use case description?</p>
                               <ul class="task-list">
@@ -475,7 +471,7 @@ Extensions:
                         </div>
                         <div>
                           <link rel="stylesheet" href="/website/book/css/common.css">
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What’s wrong with this use case?" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What’s wrong with this use case?</p></template>
                             <question>
                               <p>Identify problems with this use case description.</p>
                               <div>

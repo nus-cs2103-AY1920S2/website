@@ -5,13 +5,14 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Textbook Chapter : Intellij IDEA</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -210,7 +211,7 @@
               <h1 id="intellij-idea"><span>Intellij IDEA</span><a class="fa fa-anchor" href="#intellij-idea"></a></h1>
             </div>
           </div>
-          <panel type="seamless" header="#### Project Setup<a class='fa fa-anchor' href='#project-setup'></a>" expanded>
+          <panel type="seamless" expanded id="project-setup"><template slot="_header"><h4 id="project-setup">Project Setup<a class="fa fa-anchor" href="#project-setup"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -226,14 +227,14 @@
               <div>
                 <h5 id="running-intellij-idea-for-the-first-time">Running Intellij IDEA for the First Time<a class="fa fa-anchor" href="#running-intellij-idea-for-the-first-time"></a></h5>
                 <tabs>
-                  <tab header="<md>:far-file-alt:</md>">
+                  <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                     <ul>
                       <li>
                         <p><a href="https://www.jetbrains.com/help/idea/creating-running-and-packaging-your-first-java-application.html">[Intellij Official Tutorial] <strong>Creating, Running and Packaging Your First Java Application</strong></a></p>
                       </li>
                     </ul>
                   </tab>
-                  <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+                  <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
 
 
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/c0efB_CKOYo" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
@@ -248,7 +249,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Code Navigation<a class='fa fa-anchor' href='#code-navigation'></a>" expanded>
+          <panel type="seamless" expanded id="code-navigation"><template slot="_header"><h4 id="code-navigation">Code Navigation<a class="fa fa-anchor" href="#code-navigation"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -270,14 +271,14 @@
                   <li>View the documentation of a method from where the method is being used, without navigating to the method itself.</li>
                   <li>Find where a method/field is being used.</li>
                 </ol>
-                <panel header="Intellij IDEA Code Navigation" expanded>
+                <panel expanded><template slot="_header"><p>Intellij IDEA Code Navigation</p></template>
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1UHsJyCq1SU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                 </panel>
               </div>
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Productivity Shortcuts<a class='fa fa-anchor' href='#productivity-shortcuts'></a>" expanded>
+          <panel type="seamless" expanded id="productivity-shortcuts"><template slot="_header"><h4 id="productivity-shortcuts">Productivity Shortcuts<a class="fa fa-anchor" href="#productivity-shortcuts"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -300,7 +301,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Debugging: Basic<a class='fa fa-anchor' href='#debugging-basic'></a>" expanded>
+          <panel type="seamless" expanded id="debugging-basic"><template slot="_header"><h4 id="debugging-basic">Debugging: Basic<a class="fa fa-anchor" href="#debugging-basic"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -325,7 +326,7 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" header="#### Refactoring<a class='fa fa-anchor' href='#refactoring'></a>" expanded>
+          <panel type="seamless" expanded id="refactoring"><template slot="_header"><h4 id="refactoring">Refactoring<a class="fa fa-anchor" href="#refactoring"></a></h4></template>
             <div class="indented">
               <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -374,7 +375,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

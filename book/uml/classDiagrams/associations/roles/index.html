@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - UML: Class Diagrams: Associations: Roles</title>
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -59,24 +57,10 @@
                       <p></p>
                       <p>Note how the variable names match closely with the association roles.</p>
                       <div class="alt-java">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
-    Woman wife;
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span></span>{
-    Man husband;
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{</span><span>    Woman wife;</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span></span>{</span><span>    Man husband;</span><span>}</span></code></pre>
                       </div>
                       <div class="alt-python">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span>:</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-    self.wife = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Woman object</span>
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span>:</span>
-   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-     self.husband = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Man object</span>
-</code></pre>
+                        <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>    self.wife = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Woman object</span></span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span>:</span></span><span>   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>     self.husband = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Man object</span></span></code></pre>
                       </div>
                     </box>
                     <box>
@@ -84,16 +68,10 @@
                       <img src="/website/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
                       <p></p>
                       <div class="alt-java">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{
-    List&lt;Student&gt; charges;
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{</span><span>    List&lt;Student&gt; charges;</span><span>}</span></code></pre>
                       </div>
                       <div class="alt-python">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span>:</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-    self.charges = [] <span class="hljs-comment"># list of Student objects</span>
-</code></pre>
+                        <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>    self.charges = [] <span class="hljs-comment"># list of Student objects</span></span></code></pre>
                       </div>
                     </box>
                   </div>

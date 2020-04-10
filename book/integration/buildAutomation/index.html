@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Integration: Build Automation</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,7 +37,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="what">
                     <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                 </div>
                 </span>
@@ -70,20 +68,20 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                      <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                         <ul>
                           <li><a href="https://gradle.org/docs/#getting-started"><strong>Getting Started with Gradle</strong></a> -- Documentation from Gradle</li>
                           <li><a href="http://www.tutorialspoint.com/gradle/"><strong>Gradle Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
                         </ul>
-                        <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> Working With Gradle in Intellij IDEA (6 minutes)" class="algolia-no-index">
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Working With Gradle in Intellij IDEA (6 minutes)</p></template>
                           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/JwPYjnhah3g" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                         </panel>
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: _Gradle_ is a tool for ..." class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> <em>Gradle</em> is a tool for ...</p></template>
                             <question>
                               <p>Gradle_is used used for,</p>
                               <ul class="task-list">
@@ -105,7 +103,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="continuous-integration-and-continuous-deployment">
                   <span slot="header" class="card-title"><div><h4 id="continuous-integration-and-continuous-deployment"><span>Continuous Integration and Continuous Deployment</span><a class="fa fa-anchor" href="#continuous-integration-and-continuous-deployment"></a></h4>
               </div>
               </span>
@@ -123,12 +121,13 @@
                   <p><strong>A natural extension of CI is <em>Continuous Deployment (CD)</em> where the changes are not only integrated continuously, but also deployed to end-users at the same time.</strong></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of CI/CD tools: <a href="https://travis-ci.org/">Travis</a>, <a href="http://jenkins-ci.org">Jenkins</a>, <a href="https://www.appveyor.com">Appveyor</a>,
-                      <a href="https://circleci.com">CircleCI</a>, <a href="https://github.com/features/actions">GitHub Actions</a></p>
+                      <a href="https://circleci.com">CircleCI</a>
+                    </p>
                   </box>
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                    <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                       <ul>
                         <li><a href="https://docs.travis-ci.com/user/for-beginners"><strong>Travis CI for Beginners</strong></a> -- Documentation from Travis</li>
                       </ul>

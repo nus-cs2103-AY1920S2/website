@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/website/book/css/textbook.css">
 <div class="website-content">
-  <h1 id="using-this-book">Using This Book</h1>
+  <h1 id="using-this-book">Using This Book<a class="fa fa-anchor" href="#using-this-book"></a></h1>
   <ul>
     <li><a href="#browsers">Browser Compatibility</a></li>
     <li><a href="#layers">Information Layers</a></li>
@@ -9,25 +9,25 @@
     <li><a href="#printing">Printing</a></li>
   </ul>
   <div id="browsers">
-    <h3 id="browser-compatibility">Browser Compatibility</h3>
+    <h3 id="browser-compatibility">Browser Compatibility<a class="fa fa-anchor" href="#browser-compatibility"></a></h3>
     <p>Most of this will work on most mainstream Browsers, but <mark>embedded slides are best viewed using Chrome</mark>.</p>
   </div>
   <div id="layers">
-    <h3 id="information-layers">Information Layers</h3>
+    <h3 id="information-layers">Information Layers<a class="fa fa-anchor" href="#information-layers"></a></h3>
     <p>This book tries to <em>layer</em> information so that readers can decide to omit less important layers if they wish to.</p>
     <p><strong>More important information are in bold</strong> or <mark>highlighted</mark> while <span class="dimmed">less important information are dimmed</span> or in collapsed panels such as the below.</p>
     <box>
-      <panel header="Some less important info in a minimized panel" minimized>
+      <panel minimized class="algolia-no-index"><template slot="_header"><p>Some less important info in a minimized panel</p></template>
         <p>Less important info</p>
         <p></p>
       </panel>
       <p></p>
-      <panel header="%%Some less important info in a boarder-less panel%%" type="seamless">
+      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Some less important info in a boarder-less panel</span></p></template>
         <p>Less important info</p>
         <p></p>
       </panel>
       <p></p>
-      <panel header="%%Some less important info in a panel%%">
+      <panel class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Some less important info in a panel</span></p></template>
         <p>Less important info</p>
         <p></p>
       </panel>
@@ -36,55 +36,54 @@
     <p><strong>Tabs indicate alternative formats of the same content</strong> (e.g. video vs text). You can choose the one you like and ignore the other tabs.</p>
     <box>
       <tabs>
-        <tab header="<md>:far-file-alt:</md>">
+        <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
           <p>Some textual description of X</p>
         </tab>
-        <tab header="<md>:glyphicon-facetime-video:</md>">
+        <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
           <p>Video describing X</p>
         </tab>
       </tabs>
     </box>
-    <p><strong>Dotted underlines indicate <trigger for="pop:tooltip-example">tool tips</trigger></strong> (activated by hovering over it) and <strong>dashed underlines indicate <trigger for="modal:modal-example" trigger="click">modal windows</trigger></strong>      (activated by clicking) containing additional information.</p>
-    <popover id="pop:tooltip-example" title="Tooltip Example" placement="top">
-      <div slot="content">
-        Additional information
-      </div>
-    </popover>
-    <modal title="Modal Example" id="modal:modal-example">
+    <p><strong>Dotted underlines indicate <span for="pop:tooltip-example" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:tooltip-example'].show()" class="trigger">tool tips</span></strong>      (activated by hovering over it) and <strong>dashed underlines indicate <span for="modal:modal-example" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modal-example'].show()" class="trigger-click">modal windows</span></strong>      (activated by clicking) containing additional information.</p>
+    <span id="pop:tooltip-example" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header">Tooltip Example</span>
+    <div data-mb-html-for="content">
       Additional information
-    </modal>
+    </div>
+    </span>
+    <b-modal id="modal:modal-example" hide-footer size modal-class="mb-zoom" ref="modal:modal-example"><template slot="modal-title">Modal Example</template> Additional information
+    </b-modal>
   </div>
   <div id="conventions">
-    <h3 id="conventions-used">Conventions Used</h3>
-    <h4 id="shorthand-headings">Shorthand Headings</h4>
+    <h3 id="conventions-used">Conventions Used<a class="fa fa-anchor" href="#conventions-used"></a></h3>
+    <h4 id="shorthand-headings">Shorthand Headings<a class="fa fa-anchor" href="#shorthand-headings"></a></h4>
     <p>Meaning of some shortened headings:</p>
     <ul>
       <li>
         <p><big><strong>What</strong></big> : the <strong>meaning</strong> of the concept in concern</p>
         <p>
-          <panel header="%%Example%%" src="/website/book/refactoring/what/unit-inElsewhere-asFlat._include_.html"></panel>
+          <panel src="/website/book/refactoring/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
         </p>
       </li>
       <li>
         <p><big><strong>Why</strong></big> : the <strong>motivation</strong> behind the concept in concern</p>
         <p>
-          <panel header="%%Example%%" src="/website/book/documentation/guidelines/goTopDown/why/unit-inElsewhere-asFlat._include_.html"></panel>
+          <panel src="/website/book/documentation/guidelines/goTopDown/why/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
         </p>
       </li>
       <li>
         <p><big><strong>How</strong></big> : the <strong>usage</strong> of the concept in concern</p>
         <p>
-          <panel header="%%Example%%" src="/website/book/refactoring/how/unit-inElsewhere-asFlat._include_.html"></panel>
+          <panel src="/website/book/refactoring/how/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
         </p>
       </li>
       <li>
         <p><big><strong>When</strong></big> : the <strong>pros and cons</strong> of the concept in concern, <strong>when to use</strong> the concept</p>
         <p>
-          <panel header="%%Example%%" src="/website/book/refactoring/when/unit-inElsewhere-asFlat._include_.html"></panel>
+          <panel src="/website/book/refactoring/when/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">Example</span></p></template></panel>
         </p>
       </li>
     </ul>
-    <h4 id="boxed-text-styles">Boxed-Text Styles</h4>
+    <h4 id="boxed-text-styles">Boxed-Text Styles<a class="fa fa-anchor" href="#boxed-text-styles"></a></h4>
     <div class="indented">
       <box type="info">
         additional info
@@ -108,7 +107,7 @@
         definition
       </box>
     </div>
-    <h4 id="meaning-of-icons">Meaning of Icons</h4>
+    <h4 id="meaning-of-icons">Meaning of Icons<a class="fa fa-anchor" href="#meaning-of-icons"></a></h4>
     <div class="indented">
       <p><span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
         </span> : tangential info, can be ignored if not interested<br>
@@ -130,12 +129,12 @@
     </div>
   </div>
   <div id="searching">
-    <h3 id="searching">Searching</h3>
+    <h3 id="searching">Searching<a class="fa fa-anchor" href="#searching"></a></h3>
     <p>The book currently does not have a <em>search</em> feature. The workaround is to load <a href="/website/book/common/print.html">the printable version of the book</a> (which loads the entire book into one page, minus the exercises) and use the Browser's
       search function.</p>
   </div>
   <div id="saving">
-    <h3 id="saving-as-pdf-files">Saving as PDF Files</h3>
+    <h3 id="saving-as-pdf-files">Saving as PDF Files<a class="fa fa-anchor" href="#saving-as-pdf-files"></a></h3>
     <ol>
       <li>
         <p>Use Chrome to load the page you want to save as pdf.</p>
@@ -150,7 +149,7 @@
     </ol>
   </div>
   <div id="printing">
-    <h3 id="printing">Printing</h3>
+    <h3 id="printing">Printing<a class="fa fa-anchor" href="#printing"></a></h3>
     <p>The <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span> icon indicates printer-friendly versions of each chapter. A printer-friendly version of the entire book can be found <a href="/website/book/common/print.html">here</a></p>
   </div>
 </div>

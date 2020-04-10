@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Requirements: Non-Functional Requirements</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -57,14 +55,14 @@
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of non-functional requirement categories:</p>
                       <ul>
-                        <li>Data requirements e.g. size,
-                          <tooltip content="how often do data change">volatility</tooltip>,
-                          <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
+                        <li>Data requirements e.g. size, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">how often do data change</span>volatility</span>,
+                          <span
+                            data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">saving data permanenetly</span>persistency</span> etc.,</li>
                         <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                         <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness,
                           Scalability, Security, Stability, Testability, and more ...</li>
                       </ul>
-                      <panel type="seamless" header="<md>:fas-cube:</md> Some concrete examples of NFRs" expanded>
+                      <panel type="seamless" expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some concrete examples of NFRs</p></template>
                         <ul>
                           <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
                           <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed
@@ -88,9 +86,9 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> TEAMMATES NFRs</p></template>
                             <question>
                               <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
                               <ul class="task-list">

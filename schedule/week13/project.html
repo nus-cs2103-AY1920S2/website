@@ -5,18 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 13 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -29,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -179,8 +179,7 @@
                   </li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-executable" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → Executable  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="tp-deliverables-executable"></panel>
+                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-executable" class="embedding algolia-no-index" minimized fragment="tp-deliverables-executable"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Executable  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <ul>
@@ -188,24 +187,21 @@
                     final score, graded individually.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-sourcecode" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → Source Code  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="tp-deliverables-sourcecode"></panel>
+                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-sourcecode" class="embedding algolia-no-index" minimized fragment="tp-deliverables-sourcecode"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Source Code  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <ul>
                   <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>User Guide</strong>: Convert the pdf (AB3 dev guide has some instructions on converting project docs to pdf) and upload to LumiNUS.<br> File name: <code>[TEAM_ID][product Name]UG.pdf</code>                    <span class="dimmed">e.g.[CS2103T-W09-1][Contacts Plus]UG.pdf</span></li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-ug" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → User Guide  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="tp-deliverables-ug"></panel>
+                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-ug" class="embedding algolia-no-index" minimized fragment="tp-deliverables-ug"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → User Guide  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <ul>
                   <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Developer Guide</strong>: submit similar to UG<br> File name: <code>[TEAM_ID][product Name]DG.pdf</code> <span class="dimmed">e.g. [CS2103T-W09-1][Contacts Plus]DG.pdf</span></li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-dg" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → Developer Guide  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="tp-deliverables-dg"></panel>
+                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-dg" class="embedding algolia-no-index" minimized fragment="tp-deliverables-dg"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Developer Guide  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <ul>
@@ -220,16 +216,28 @@
                   </li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-ppp" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → Project Portfolio Page  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="tp-deliverables-ppp"></panel>
+                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-ppp" class="embedding algolia-no-index" minimized fragment="tp-deliverables-ppp"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Project Portfolio Page  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <ul>
                   <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Product Website</strong>: Update (e.g., <code>README</code> page, <code>Ui.png</code>, <code>AboutUs</code>) on GitHub. Ensure the website is auto-published.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-website" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → Product Website  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="tp-deliverables-website"></panel>
+                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-website" class="embedding algolia-no-index" minimized fragment="tp-deliverables-website"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Product Website  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                </div>
+                <p></p>
+                <ul>
+                  <li><span><span aria-hidden="true" class="fas fa-user"></span></span> <strong>UML diagrams</strong>:
+                    <ul>
+                      <li>PDF file: submit to LumiNUS<br> File name: <code>[TEAM_ID][Your full Name as Given in LumiNUS]UML Diagrams.pdf</code> <span class="dimmed">e.g.[CS2103T-W09-1][Leow Wai Kit, John]UML Diagrams.pdf</span><br>
+                        <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Use <code>-</code> in place of <code>/</code> if your name has it e.g., <code>Ravi s/o Veegan</code> → <code>Ravi s-o Veegan</code> (reason: Windows does
+                        not allow
+                        <code>/</code> in file names)</li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="indented-level2">
+                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-umlfile" class="embedding algolia-no-index" minimized fragment="tp-deliverables-umlfile"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → UML Diagrams  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -248,185 +256,189 @@
                 <span id="demo-instructions">
 <div class="indented-level2">
 <p><img src="/website/admin/images/v05demo.png" style="width: 250px"></p><p></p><p></p>
-<p><panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-demo" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → Demo  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="tp-deliverables-demo"></panel></p>
-<p></p></div>
-<ul>
-<li><strong>Venue:</strong> Same as the tutorial venue unless informed otherwise. You'll be using the TV at your regular tutorial table (not the projector) for the demo.</li>
-<li><strong>Schedule:</strong> Your demo timing is same as your tutorial time in week 13.
-<ul>
-<li>Teams <code>1</code> and <code>3</code> will start at 05-minutes mark (e.g., 11.05 am), and teams <code>2</code> and <code>4</code> start at 30-minutes mark (e.g., 11.30 am).</li>
-<li>Please <mark>arrive <em>before</em> time</mark> and remain outside the venue until called in. Late arrival or absence is liable to a penalty.</li>
-<li>Any delay in starting the presentation is deducted out of your time allotment <span class="dimmed">e.g., if you are scheduled to demo at 11.05-11.23 am (i.e., 18 minutes), you'll have to stop at 11.23 am even if you start at 11.10 am.</span></li>
-                </ul>
+<p><panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-demo" class="embedding algolia-no-index" minimized fragment="tp-deliverables-demo"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
+                tP → Deliverables → Demo <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span>
+                </p>
+                </template>
+                </panel>
+                </p>
+                <p></p>
+              </div>
+              <ul>
+                <li><strong>Venue:</strong> Same as the tutorial venue unless informed otherwise. You'll be using the TV at your regular tutorial table (not the projector) for the demo.</li>
+                <li><strong>Schedule:</strong> Your demo timing is same as your tutorial time in week 13.
+                  <ul>
+                    <li>Teams <code>1</code> and <code>3</code> will start at 05-minutes mark (e.g., 11.05 am), and teams <code>2</code> and <code>4</code> start at 30-minutes mark (e.g., 11.30 am).</li>
+                    <li>Please <mark>arrive <em>before</em> time</mark> and remain outside the venue until called in. Late arrival or absence is liable to a penalty.</li>
+                    <li>Any delay in starting the presentation is deducted out of your time allotment <span class="dimmed">e.g., if you are scheduled to demo at 11.05-11.23 am (i.e., 18 minutes), you'll have to stop at 11.23 am even if you start at 11.10 am.</span></li>
+                  </ul>
                 </li>
                 <li>You should bring your own adapter if the display adapters available in your tutorial venue don't work for you.
                 </li>
-                </ul>
-                </span>
-              </div>
-              <p></p>
-              <h4 id="5-prepare-for-the-practical-exam-before-the-lecture"><span class="badge badge-pill badge-dark p-2"><big><big>5</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Prepare for the practical exam</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span>                before the lecture</span>
-                </span><a class="fa fa-anchor" href="#5-prepare-for-the-practical-exam-before-the-lecture"></a></h4>
-              <div>
-                <div class="indented-level2">
-                  <panel type="primary" header="Admin → Deliverables → **PE Overview**" minimized class="algolia-no-index">
-                    <div>
-                      <p><strong>Objectives:</strong></p>
-                      <ul>
-                        <li>The primary objective of the PE is to <mark>increase the rigor of project grading</mark>. Assessing most aspects of the project involves an element subjectivity. As the project counts for 45% of the final grade, it is not prudent
-                          to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being
-                          affected by evaluator-bias.</li>
-                        <li>PE is also <mark>used to evaluate your manual testing skills, product evaluation skills, effort estimation skills</mark> etc.</li>
-                        <li>Note that significant project components are <mark>not graded solely based on peer ratings</mark>. Rather, PE data are mostly used to cross-validate tutors' grades and identify cases that need further investigation. When peer inputs
-                          are used for grading, they are usually combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.</li>
-                        <li>Note that the PE is <mark>not a means of <em>pitting you against each other</em></mark>. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.</li>
-                      </ul>
-                      <p><strong>Grading</strong>:</p>
-                      <ul>
-                        <li>Your performance in the practical exam will affect your final grade and your peers', as explained in <a href="/website/admin/tp-grading.html"><em>Admin: Project Grading</em></a> section.</li>
-                        <li>As such, we have put in measures to identify and <mark>penalize insincere/random evaluations</mark>.</li>
-                        <li>Also see:</li>
-                      </ul>
-                      <div class="indented-level2">
-                        <p>
-                          <panel type src="/website/admin/tp-grading-bugs._include_.html#bugCalculationNotes" header="Admin <md>:glyphicon-log-in:</md> tP Grading → Notes on how marks are calculated for PE  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                            class="embedding algolia-no-index" minimized fragment="bugCalculationNotes"></panel>
-                        </p>
-                      </div>
+              </ul>
+              </span>
+            </div>
+            <p></p>
+            <h4 id="5-prepare-for-the-practical-exam-before-the-lecture"><span class="badge badge-pill badge-dark p-2"><big><big>5</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Prepare for the practical exam</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span>              before the lecture</span>
+              </span><a class="fa fa-anchor" href="#5-prepare-for-the-practical-exam-before-the-lecture"></a></h4>
+            <div>
+              <div class="indented-level2">
+                <panel type="primary" minimized class="algolia-no-index"><template slot="_header"><p>Admin → Deliverables → <strong>PE Overview</strong></p></template>
+                  <div>
+                    <p><strong>Objectives:</strong></p>
+                    <ul>
+                      <li>The primary objective of the PE is to <mark>increase the rigor of project grading</mark>. Assessing most aspects of the project involves an element subjectivity. As the project counts for 45% of the final grade, it is not prudent
+                        to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected
+                        by evaluator-bias.</li>
+                      <li>PE is also <mark>used to evaluate your manual testing skills, product evaluation skills, effort estimation skills</mark> etc.</li>
+                      <li>Note that significant project components are <mark>not graded solely based on peer ratings</mark>. Rather, PE data are mostly used to cross-validate tutors' grades and identify cases that need further investigation. When peer inputs
+                        are used for grading, they are usually combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other peers, if that is appropriate.</li>
+                      <li>Note that the PE is <mark>not a means of <em>pitting you against each other</em></mark>. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.</li>
+                    </ul>
+                    <p><strong>Grading</strong>:</p>
+                    <ul>
+                      <li>Your performance in the practical exam will affect your final grade and your peers', as explained in <a href="/website/admin/tp-grading.html"><em>Admin: Project Grading</em></a> section.</li>
+                      <li>As such, we have put in measures to identify and <mark>penalize insincere/random evaluations</mark>.</li>
+                      <li>Also see:</li>
+                    </ul>
+                    <div class="indented-level2">
+                      <p>
+                        <panel type src="/website/admin/tp-grading-bugs._include_.html#bugCalculationNotes" class="embedding algolia-no-index" minimized fragment="bugCalculationNotes"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → Notes on how marks are calculated for PE  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                      </p>
                     </div>
-                  </panel>
-                  <p></p>
-                  <panel type="primary" header="Admin → Deliverables → **PE-D/PE Preparation**" minimized class="algolia-no-index">
-                    <div>
-                      <ul>
-                        <li>
-                          <p>Ensure that you have accepted the invitation to join the GitHub org used by the module. Go to <a href="https://github.com/nus-cs2103-AY1920S2">https://github.com/nus-cs2103-AY1920S2</a> to accept the invitation.</p>
-                        </li>
-                        <li>
-                          <p>Ensure you have access to a <strong>computer that is able to run module projects</strong> <span class="dimmed">e.g. has the right Java version</span>.</p>
-                        </li>
-                      </ul>
-                      <tabs>
-                        <tab header="Using CATcher">
-                          <ul>
-                            <li><strong>Download the <a href="https://github.com/CATcher-org/CATcher/releases">latest CATcher</a></strong> and ensure you can run it on your computer.
-                            </li>
-                          </ul>
-                        </tab>
-                        <tab header="Not using CATcher" class="algolia-no-index">
+                  </div>
+                </panel>
+                <p></p>
+                <panel type="primary" minimized class="algolia-no-index"><template slot="_header"><p>Admin → Deliverables → <strong>PE-D/PE Preparation</strong></p></template>
+                  <div>
+                    <ul>
+                      <li>
+                        <p>Ensure that you have accepted the invitation to join the GitHub org used by the module. Go to <a href="https://github.com/nus-cs2103-AY1920S2">https://github.com/nus-cs2103-AY1920S2</a> to accept the invitation.</p>
+                      </li>
+                      <li>
+                        <p>Ensure you have access to a <strong>computer that is able to run module projects</strong> <span class="dimmed">e.g. has the right Java version</span>.</p>
+                      </li>
+                    </ul>
+                    <tabs>
+                      <tab><template slot="_header">Using CATcher</template>
+                        <ul>
+                          <li><strong>Download the <a href="https://github.com/CATcher-org/CATcher/releases">latest CATcher</a></strong> and ensure you can run it on your computer.
+                          </li>
+                        </ul>
+                      </tab>
+                      <tab class="algolia-no-index"><template slot="_header">Not using CATcher</template>
 
-                          <div class="indented-less">
-                            <box type="warning">
-                              <p>Issues created for PED and PE need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are strongly recommended to use CATcher for PED and PE activities.
-                                If you want to give your response via GitHub instead, <strong><span class="text-danger">please get our permission first</span></strong>.
-                              </p>
-                            </box>
-                            <div>
-                              <ul>
-                                <li>Create a public repo in your GitHub account with the following name:
+                        <div class="indented-less">
+                          <box type="warning">
+                            <p>Issues created for PED and PE need to be in a precise format for our grading scripts to work. Incorrectly-formatted responses will have to discarded. Therefore, you are strongly recommended to use CATcher for PED and PE activities.
+                              If you want to give your response via GitHub instead, <strong><span class="text-danger">please get our permission first</span></strong>.
+                            </p>
+                          </box>
+                          <div>
+                            <ul>
+                              <li>Create a public repo in your GitHub account with the following name:
+                                <ul>
+                                  <li>PE Dry Run: <code>ped</code></li>
+                                  <li>PE: <code>pe</code></li>
+                                </ul>
+                              </li>
+                              <li>Enable its issue tracker and add the following labels to it (the label names should be precisely as given).</li>
+                            </ul>
+                            <div class="indented-level2">
+                              <div>
+                                <box>
+                                  <p><strong>Bug Severity</strong> labels:</p>
                                   <ul>
-                                    <li>PE Dry Run: <code>ped</code></li>
-                                    <li>PE: <code>pe</code></li>
+                                    <li><code>severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
+                                    <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+                                    <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+                                    <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
                                   </ul>
-                                </li>
-                                <li>Enable its issue tracker and add the following labels to it (the label names should be precisely as given).</li>
-                              </ul>
-                              <div class="indented-level2">
-                                <div>
-                                  <box>
-                                    <p><strong>Bug Severity</strong> labels:</p>
-                                    <ul>
-                                      <li><code>severity.VeryLow</code> : A flaw that is purely cosmetic and does not affect usage e.g., a typo/spacing/layout/color/font issues in the docs or the UI that doesn't affect usage.</li>
-                                      <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
-                                      <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
-                                      <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
-                                    </ul>
-                                  </box>
-                                </div>
-                                <div>
-                                  <box>
-                                    <p><strong>Type</strong> labels:</p>
-                                    <ul>
-                                      <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
-                                      <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is
-                                        not 'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
-                                      <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
-                                    </ul>
-                                  </box>
-                                </div>
+                                </box>
+                              </div>
+                              <div>
+                                <box>
+                                  <p><strong>Type</strong> labels:</p>
+                                  <ul>
+                                    <li><code>type.FunctionalityBug</code>: A functionality does not work as specified/expected.</li>
+                                    <li><code>type.FeatureFlaw</code>: Some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for <em>normal</em> usage. i.e., the feature is not
+                                      'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                                    <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction, typos that affect users</span></li>
+                                  </ul>
+                                </box>
                               </div>
                             </div>
                           </div>
-                        </tab>
-                      </tabs>
-                      <ul>
-                        <li>
-                          <p><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</p>
-                          <ul>
-                            <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in bug report.</li>
-                          </ul>
-                        </li>
-                        <li>
-                          <p><strong><span class="text-danger">Download the product to be tested</span></strong>
-                            <tooltip content="notifications are likely to go out on the morning of the PE/PE-D session">after you have been notified</tooltip> of which team you have been allocated to test.</p>
-                        </li>
-                        <li>
-                          <p><strong>Charge your computer</strong> before coming to the session. The testing venue might not have enough charging points.</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </panel>
-                </div>
+                        </div>
+                      </tab>
+                    </tabs>
+                    <ul>
+                      <li>
+                        <p><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</p>
+                        <ul>
+                          <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in bug report.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong><span class="text-danger">Download the product to be tested</span></strong> <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">notifications are likely to go out on the morning of the PE/PE-D session</span>after
+                          you have been notified</span> of which team you have been allocated to test.</p>
+                      </li>
+                      <li>
+                        <p><strong>Charge your computer</strong> before coming to the session. The testing venue might not have enough charging points.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </panel>
               </div>
-              <p></p>
-              <h4 id="6-attend-the-practical-exam-during-the-lecture"><span class="badge badge-pill badge-dark p-2"><big><big>6</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Attend the practical exam</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span>                during the lecture</span>
-                </span><a class="fa fa-anchor" href="#6-attend-the-practical-exam-during-the-lecture"></a></h4>
-              <div>
-                <ul>
-                  <li>Attend the practical test, to be done during the lecture.</li>
-                </ul>
-                <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-practicalexam" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → Practical Exam  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="tp-deliverables-practicalexam"></panel>
-                </div>
-                <p></p>
+            </div>
+            <p></p>
+            <h4 id="6-attend-the-practical-exam-during-the-lecture"><span class="badge badge-pill badge-dark p-2"><big><big>6</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Attend the practical exam</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span>              during the lecture</span>
+              </span><a class="fa fa-anchor" href="#6-attend-the-practical-exam-during-the-lecture"></a></h4>
+            <div>
+              <ul>
+                <li>Attend the practical test, to be done during the lecture.</li>
+              </ul>
+              <div class="indented-level2">
+                <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-practicalexam" class="embedding algolia-no-index" minimized fragment="tp-deliverables-practicalexam"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Practical Exam  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
               </div>
               <p></p>
             </div>
+            <p></p>
           </div>
         </div>
       </div>
-      <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+    </div>
+    <nav id="page-nav" class="navbar navbar-light bg-transparent">
+      <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
-          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#week-13-apr-13-project">Week 13 [Apr 13] - Project&#x200E;</a>
+        <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+          <a class="nav-link py-1" href="#week-13-apr-13-project">Week 13 [Apr 13] - Project&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#tp-v1-4">tP: v1.4&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#tp-v1-4">tP: v1.4&#x200E;</a>
-              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-                <a class="nav-link py-1" href="#1-do-final-tweaks-to-the-feature">1  Do final tweaks to the feature&#x200E;</a>
-                <a class="nav-link py-1" href="#2-submit-deliverables-by-monday-2359">2  Submit deliverables
+              <a class="nav-link py-1" href="#1-do-final-tweaks-to-the-feature">1  Do final tweaks to the feature&#x200E;</a>
+              <a class="nav-link py-1" href="#2-submit-deliverables-by-monday-2359">2  Submit deliverables
            by Monday 2359
           &#x200E;</a>
-                <a class="nav-link py-1" href="#3-wrap-up-the-milestone-by-wednesday-2359">3  Wrap up the milestone           by Wednesday 2359
+              <a class="nav-link py-1" href="#3-wrap-up-the-milestone-by-wednesday-2359">3  Wrap up the milestone           by Wednesday 2359
           &#x200E;</a>
-                <a class="nav-link py-1" href="#4-demo-the-product-during-the-tutorial">4  Demo the product           during the tutorial
+              <a class="nav-link py-1" href="#4-demo-the-product-during-the-tutorial">4  Demo the product           during the tutorial
           &#x200E;</a>
-                <a class="nav-link py-1" href="#5-prepare-for-the-practical-exam-before-the-lecture">5  Prepare for the practical exam           before the lecture
-          &#x200E;</a>
-                <a class="nav-link py-1" href="#6-attend-the-practical-exam-during-the-lecture">6  Attend the practical exam           during the lecture
-          &#x200E;</a>
-              </nav>
+              <a class="nav-link py-1" href="#5-prepare-for-the-practical-exam-before-the-lecture">5  Prepare for the practical exam         before the lecture
+        &#x200E;</a>
+              <a class="nav-link py-1" href="#6-attend-the-practical-exam-during-the-lecture">6  Attend the practical exam         during the lecture
+        &#x200E;</a>
             </nav>
-
           </nav>
-        </div>
-      </nav>
-    </div>
-    <footer>
-      <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
-    </footer>
+
+        </nav>
+      </div>
+    </nav>
+  </div>
+  <footer>
+    <div class="text-center">
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
+  </footer>
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>

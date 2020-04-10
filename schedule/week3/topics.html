@@ -5,18 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 3 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -29,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -97,7 +97,7 @@
           </nav>
           <p></p>
           <h1 id="week-3-jan-27-topics">Week 3 <small><small><span class="dimmed">[Jan 27]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-3-jan-27-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week3/topics.html#W3-1">W3.1</a>] <strong>Java</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
@@ -208,7 +208,7 @@
           </panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W3-1"></span></p>
-          <panel type="seamless" no-close expandable="true" expanded>
+          <panel type="seamless" no-close expandable="true" expanded id="w3-1-java">
             <span slot="header" class="card-title"><div><h2 id="w3-1-java"><span class="dimmed">[W3.1]</span> <strong>Java</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
             <a class="fa fa-anchor" href="#w3-1-java"></a>
             </h2>
@@ -216,7 +216,7 @@
         </span>
         <div class="indented-level1">
           <p><span id="W3-1a"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/what">
+          <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/what" id="implementation-documentation-tools-javadoc-what">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.1a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             <h4 id="implementation-documentation-tools-javadoc-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → JavaDoc →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-documentation-tools-javadoc-what"></a></h4>
@@ -237,29 +237,7 @@
                   <p><strong>Javadoc is a tool for generating API documentation in HTML format from doc comments in source.</strong> In addition, modern IDEs use JavaDoc comments to generate explanatory tool tips.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example method header comment in JavaDoc format (adapted from <a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">Oracle's Java documentation</a>)</p>
-                    <pre><code class="hljs java"><span class="hljs-comment">/**
- * Returns an Image object that can then be painted on the screen.
- * The url argument must specify an absolute {<span class="hljs-doctag">@link</span> URL}. The name
- * argument is a specifier that is relative to the url argument.
- * &lt;p&gt;
- * This method always returns immediately, whether or not the
- * image exists. When this applet attempts to draw the image on
- * the screen, the data will be loaded. The graphics primitives
- * that draw the image will incrementally paint on the screen.
- *
- * <span class="hljs-doctag">@param</span> url an absolute URL giving the base location of the image
- * <span class="hljs-doctag">@param</span> name the location of the image, relative to the url argument
- * <span class="hljs-doctag">@return</span> the image at the specified URL
- * <span class="hljs-doctag">@see</span> Image
- */</span>
- <span class="hljs-function"><span class="hljs-keyword">public</span> Image <span class="hljs-title">getImage</span><span class="hljs-params">(URL url, String name)</span> </span>{
-        <span class="hljs-keyword">try</span> {
-            <span class="hljs-keyword">return</span> getImage(<span class="hljs-keyword">new</span> URL(url, name));
-        } <span class="hljs-keyword">catch</span> (MalformedURLException e) {
-            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
-        }
- }
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-comment">/**</span></span><span><span class="hljs-comment"> * Returns an Image object that can then be painted on the screen.</span></span><span><span class="hljs-comment"> * The url argument must specify an absolute {<span class="hljs-doctag">@link</span> URL}. The name</span></span><span><span class="hljs-comment"> * argument is a specifier that is relative to the url argument.</span></span><span><span class="hljs-comment"> * &lt;p&gt;</span></span><span><span class="hljs-comment"> * This method always returns immediately, whether or not the</span></span><span><span class="hljs-comment"> * image exists. When this applet attempts to draw the image on</span></span><span><span class="hljs-comment"> * the screen, the data will be loaded. The graphics primitives</span></span><span><span class="hljs-comment"> * that draw the image will incrementally paint on the screen.</span></span><span><span class="hljs-comment"> *</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> url an absolute URL giving the base location of the image</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> name the location of the image, relative to the url argument</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> the image at the specified URL</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@see</span> Image</span></span><span><span class="hljs-comment"> */</span></span><span> <span class="hljs-function"><span class="hljs-keyword">public</span> Image <span class="hljs-title">getImage</span><span class="hljs-params">(URL url, String name)</span> </span>{</span><span>        <span class="hljs-keyword">try</span> {</span><span>            <span class="hljs-keyword">return</span> getImage(<span class="hljs-keyword">new</span> URL(url, name));</span><span>        } <span class="hljs-keyword">catch</span> (MalformedURLException e) {</span><span>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;</span><span>        }</span><span> }</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Generated HTML documentation:</p>
                     <p><a href="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" target="_self"><img src="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" alt class="img-fluid"></a></p>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Tooltip generated by Intellij IDE:</p>
@@ -273,7 +251,7 @@
             </div>
           </panel>
           <p><span id="W3-1b"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/how">
+          <panel type="seamless" expanded popup-url="/website/book/documentation/tools/javaDoc/how" id="implementation-documentation-tools-javadoc-how">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.1b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -295,38 +273,13 @@
                 <div>
                   <p>In the absence of more extensive guidelines (e.g., given in a coding standard adopted by your project), you can follow the two examples below in your code.</p>
                   <p><strong>A minimal javadoc comment example for methods:</strong></p>
-                  <pre><code class="hljs java"><span class="hljs-comment">/**
- * Returns lateral location of the specified position.
- * If the position is unset, NaN is returned.
- *
- * <span class="hljs-doctag">@param</span> x  X coordinate of position.
- * <span class="hljs-doctag">@param</span> y Y coordinate of position.
- * <span class="hljs-doctag">@param</span> zone Zone of position.
- * <span class="hljs-doctag">@return</span> Lateral location.
- * <span class="hljs-doctag">@throws</span> IllegalArgumentException  If zone is &lt;= 0.
- */</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">computeLocation</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y, <span class="hljs-keyword">int</span> zone)</span>
-    <span class="hljs-keyword">throws</span> IllegalArgumentException </span>{
-  ...
-}
-</code></pre>
+                  <pre><code class="hljs java"><span><span class="hljs-comment">/**</span></span><span><span class="hljs-comment"> * Returns lateral location of the specified position.</span></span><span><span class="hljs-comment"> * If the position is unset, NaN is returned.</span></span><span><span class="hljs-comment"> *</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> x  X coordinate of position.</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> y Y coordinate of position.</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> zone Zone of position.</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> Lateral location.</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@throws</span> IllegalArgumentException  If zone is &lt;= 0.</span></span><span><span class="hljs-comment"> */</span></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">computeLocation</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y, <span class="hljs-keyword">int</span> zone)</span></span></span><span><span class="hljs-function">    <span class="hljs-keyword">throws</span> IllegalArgumentException </span>{</span><span>  ...</span><span>}</span></code></pre>
                   <p><strong>A minimal javadoc comment example for classes:</strong></p>
-                  <pre><code class="hljs java"><span class="hljs-keyword">package</span> ...
-
-<span class="hljs-keyword">import</span> ...
-
-<span class="hljs-comment">/**
- * Represents a location in a 2D space. A &lt;code&gt;Point&lt;/code&gt; object corresponds to
- * a coordinate represented by two integers e.g., &lt;code&gt;3,6&lt;/code&gt;
- */</span>
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span></span>{
-    <span class="hljs-comment">//...</span>
-}
-</code></pre>
+                  <pre><code class="hljs java"><span><span class="hljs-keyword">package</span> ...</span><span>&#x200B;</span><span><span class="hljs-keyword">import</span> ...</span><span>&#x200B;</span><span><span class="hljs-comment">/**</span></span><span><span class="hljs-comment"> * Represents a location in a 2D space. A &lt;code&gt;Point&lt;/code&gt; object corresponds to</span></span><span><span class="hljs-comment"> * a coordinate represented by two integers e.g., &lt;code&gt;3,6&lt;/code&gt;</span></span><span><span class="hljs-comment"> */</span></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span></span>{</span><span>    <span class="hljs-comment">//...</span></span><span>}</span></code></pre>
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                    <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                       <div>
                         <ul>
                           <li><a href="https://www.tutorialspoint.com/java/java_documentation.htm">A short tutorial on writing JavaDoc comments</a> <span class="dimmed">-- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></span></li>
@@ -340,7 +293,7 @@
             </div>
           </panel>
           <p><span id="W3-1c"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/fileAccess">
+          <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/fileAccess" id="c-to-java-miscellaneous-topics-file-access">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.1c</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span>
             : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -362,25 +315,10 @@
                   <p><strong>You can use the <a href="https://docs.oracle.com/javase/9/docs/api/java/io/File.html"><code>java.io.File</code></a> class to represent a file object</strong>. It can be used to access properties of the file object.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code creates a <code>File</code> object to represent a file <code>fruits.txt</code> that exists in the <code>data</code> directory <mark>relative to the current working directory</mark>                      and uses that object to print some properties of the file.</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileClassDemo</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        File f = <span class="hljs-keyword">new</span> File(<span class="hljs-string">"data/fruits.txt"</span>);
-        System.out.println(<span class="hljs-string">"full path: "</span> + f.getAbsolutePath());
-        System.out.println(<span class="hljs-string">"file exists?: "</span> + f.exists());
-        System.out.println(<span class="hljs-string">"is Directory?: "</span> + f.isDirectory());
-    }
-
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.io.File;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileClassDemo</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        File f = <span class="hljs-keyword">new</span> File(<span class="hljs-string">"data/fruits.txt"</span>);</span><span>        System.out.println(<span class="hljs-string">"full path: "</span> + f.getAbsolutePath());</span><span>        System.out.println(<span class="hljs-string">"file exists?: "</span> + f.exists());</span><span>        System.out.println(<span class="hljs-string">"is Directory?: "</span> + f.isDirectory());</span><span>    }</span><span>&#x200B;</span><span>}</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
-                    <pre><code class="hljs">full path: C:\sample-code\data\fruits.txt
-file exists?: true
-is Directory?: false
-</code></pre>
+                    <pre><code class="hljs"><span>full path: C:\sample-code\data\fruits.txt</span><span>file exists?: true</span><span>is Directory?: false</span></code></pre>
                   </box>
                   <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If you use backslash to specify the file path in a Windows computer, you need to use an additional backslash as an escape character because the backslash by itself
                     has a special meaning. e.g., use <span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
@@ -390,93 +328,27 @@ is Directory?: false
                   <p><strong>You can read from a file using a <code>Scanner</code> object that uses a <code>File</code> object as the <em>source</em> of data.</strong></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This code uses a <code>Scanner</code> object to read (and print) contents of a text file line-by-line:</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.File;
-<span class="hljs-keyword">import</span> java.io.FileNotFoundException;
-<span class="hljs-keyword">import</span> java.util.Scanner;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileReadingDemo</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printFileContents</span><span class="hljs-params">(String filePath)</span> <span class="hljs-keyword">throws</span> FileNotFoundException </span>{
-        File f = <span class="hljs-keyword">new</span> File(filePath); <span class="hljs-comment">// create a File for the given file path</span>
-        Scanner s = <span class="hljs-keyword">new</span> Scanner(f); <span class="hljs-comment">// create a Scanner using the File as the source</span>
-        <span class="hljs-keyword">while</span> (s.hasNext()) {
-            System.out.println(s.nextLine());
-        }
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        <span class="hljs-keyword">try</span> {
-            printFileContents(<span class="hljs-string">"data/fruits.txt"</span>);
-        } <span class="hljs-keyword">catch</span> (FileNotFoundException e) {
-            System.out.println(<span class="hljs-string">"File not found"</span>);
-        }
-    }
-
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.io.File;</span><span><span class="hljs-keyword">import</span> java.io.FileNotFoundException;</span><span><span class="hljs-keyword">import</span> java.util.Scanner;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileReadingDemo</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printFileContents</span><span class="hljs-params">(String filePath)</span> <span class="hljs-keyword">throws</span> FileNotFoundException </span>{</span><span>        File f = <span class="hljs-keyword">new</span> File(filePath); <span class="hljs-comment">// create a File for the given file path</span></span><span>        Scanner s = <span class="hljs-keyword">new</span> Scanner(f); <span class="hljs-comment">// create a Scanner using the File as the source</span></span><span>        <span class="hljs-keyword">while</span> (s.hasNext()) {</span><span>            System.out.println(s.nextLine());</span><span>        }</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        <span class="hljs-keyword">try</span> {</span><span>            printFileContents(<span class="hljs-string">"data/fruits.txt"</span>);</span><span>        } <span class="hljs-keyword">catch</span> (FileNotFoundException e) {</span><span>            System.out.println(<span class="hljs-string">"File not found"</span>);</span><span>        }</span><span>    }</span><span>&#x200B;</span><span>}</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> i.e., contents of the <code>data/fruits.txt</code></p>
-                    <pre><code class="hljs">5 Apples
-3 Bananas
-6 Cherries
-</code></pre>
+                    <pre><code class="hljs"><span>5 Apples</span><span>3 Bananas</span><span>6 Cherries</span></code></pre>
                   </box>
                   <p><strong>You can use a <a href="https://docs.oracle.com/javase/9/docs/api/java/io/FileWriter.html"><code>java.io.FileWriter</code></a> object to write to a file.</strong></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>writeToFile</code> method below uses a <code>FileWrite</code> object to write to a file. The method is being used to write two lines to the file <code>temp/lines.txt</code>.</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.FileWriter;
-<span class="hljs-keyword">import</span> java.io.IOException;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileWritingDemo</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeToFile</span><span class="hljs-params">(String filePath, String textToAdd)</span> <span class="hljs-keyword">throws</span> IOException </span>{
-        FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath);
-        fw.write(textToAdd);
-        fw.close();
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        String file2 = <span class="hljs-string">"temp/lines.txt"</span>;
-        <span class="hljs-keyword">try</span> {
-            writeToFile(file2, <span class="hljs-string">"first line"</span> + System.lineSeparator() + <span class="hljs-string">"second line"</span>);
-        } <span class="hljs-keyword">catch</span> (IOException e) {
-            System.out.println(<span class="hljs-string">"Something went wrong: "</span> + e.getMessage());
-        }
-    }
-
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.io.FileWriter;</span><span><span class="hljs-keyword">import</span> java.io.IOException;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FileWritingDemo</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeToFile</span><span class="hljs-params">(String filePath, String textToAdd)</span> <span class="hljs-keyword">throws</span> IOException </span>{</span><span>        FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath);</span><span>        fw.write(textToAdd);</span><span>        fw.close();</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        String file2 = <span class="hljs-string">"temp/lines.txt"</span>;</span><span>        <span class="hljs-keyword">try</span> {</span><span>            writeToFile(file2, <span class="hljs-string">"first line"</span> + System.lineSeparator() + <span class="hljs-string">"second line"</span>);</span><span>        } <span class="hljs-keyword">catch</span> (IOException e) {</span><span>            System.out.println(<span class="hljs-string">"Something went wrong: "</span> + e.getMessage());</span><span>        }</span><span>    }</span><span>&#x200B;</span><span>}</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span> Contents of the <code>temp/lines.txt</code>:</p>
-                    <pre><code class="hljs">first line
-second line
-</code></pre>
+                    <pre><code class="hljs"><span>first line</span><span>second line</span></code></pre>
                   </box>
                   <p>Note that you <mark>need to call the <code>close()</code> method</mark> of the <code>FileWriter</code> object for the writing operation to be completed.</p>
                   <p><strong>You can create a <code>FileWriter</code> object that appends to the file</strong> (instead of overwriting the current content) by specifying an additional boolean parameter to the constructor.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The method below appends to the file rather than overwrites.</p>
-                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">appendToFile</span><span class="hljs-params">(String filePath, String textToAppend)</span> <span class="hljs-keyword">throws</span> IOException </span>{
-    FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath, <span class="hljs-keyword">true</span>); <span class="hljs-comment">// create a FileWriter in append mode</span>
-    fw.write(textToAppend);
-    fw.close();
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">appendToFile</span><span class="hljs-params">(String filePath, String textToAppend)</span> <span class="hljs-keyword">throws</span> IOException </span>{</span><span>    FileWriter fw = <span class="hljs-keyword">new</span> FileWriter(filePath, <span class="hljs-keyword">true</span>); <span class="hljs-comment">// create a FileWriter in append mode</span></span><span>    fw.write(textToAppend);</span><span>    fw.close();</span><span>}</span></code></pre>
                   </box>
                   <p><strong>The <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Files.html"><code>java.nio.file.Files</code></a> is a utility class that provides several useful file operations.</strong> It relies on the <a href="https://docs.oracle.com/javase/9/docs/api/java/nio/file/Paths.html"><code>java.nio.file.Paths</code></a>                    file to generate <code>Path</code> objects that represent file paths.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This example uses the <code>Files</code> class to copy a file and delete a file.</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.io.IOException;
-<span class="hljs-keyword">import</span> java.nio.file.Files;
-<span class="hljs-keyword">import</span> java.nio.file.Paths;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FilesClassDemo</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException</span>{
-        Files.copy(Paths.get(<span class="hljs-string">"data/fruits.txt"</span>), Paths.get(<span class="hljs-string">"temp/fruits2.txt"</span>));
-        Files.delete(Paths.get(<span class="hljs-string">"temp/fruits2.txt"</span>));
-    }
-
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.io.IOException;</span><span><span class="hljs-keyword">import</span> java.nio.file.Files;</span><span><span class="hljs-keyword">import</span> java.nio.file.Paths;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FilesClassDemo</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException</span>{</span><span>        Files.copy(Paths.get(<span class="hljs-string">"data/fruits.txt"</span>), Paths.get(<span class="hljs-string">"temp/fruits2.txt"</span>));</span><span>        Files.delete(Paths.get(<span class="hljs-string">"temp/fruits2.txt"</span>));</span><span>    }</span><span>&#x200B;</span><span>}</span></code></pre>
                   </box>
                   <p>The techniques above are good enough to manipulate simple text files. Note that <strong>it is also possible to <a href="https://www.tutorialspoint.com/java/java_files_io.htm">perform file I/O operations using other classes</a></strong>.</p>
                 </div>
@@ -485,7 +357,7 @@ second line
             </div>
           </panel>
           <p><span id="W3-1d"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/packages">
+          <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/packages" id="c-to-java-miscellaneous-topics-packages">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.1d</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span>
             : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -511,25 +383,16 @@ second line
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code>Formatter</code> class below (in <code>&lt;source folder&gt;/seedu/tojava/util/Formatter.java</code> file) is in the package <code>seedu.tojava.util</code>.
                       When it is compiled, the <code>Formatter.class</code> file will be in the location <code>&lt;compiler output folder&gt;/seedu/tojava/util</code>:</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">format</span><span class="hljs-params">(String s)</span></span>{
-        <span class="hljs-keyword">return</span> PREFIX + s;
-    }
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-keyword">package</span> seedu.tojava.util;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{</span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">format</span><span class="hljs-params">(String s)</span></span>{</span><span>        <span class="hljs-keyword">return</span> PREFIX + s;</span><span>    }</span><span>}</span></code></pre>
                   </box>
                   <p><strong>Package names are written in all lower case</strong> (not camelCase), using the dot as a separator. Packages in the Java language itself begin with <code>java</code>. or <code>javax</code>. Companies use their reversed Internet
                     domain name to begin their package names.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, <code>com.foobar.doohickey.util</code> can be the name of a package created by a company with a domain name <code>foobar.com</code></p>
                   </box>
-                  <p><strong>To use a public <tooltip content="types contained in the package">package member</tooltip> from outside its package, you must do one of the following:</strong></p>
+                  <p><strong>To use a public <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">types contained in the package</span>package member</span> from outside its package, you must do one of the following:</strong></p>
                   <ol>
-                    <li><strong>Use the <tooltip content="type name prefixed by the package name e.g., `java.io.IOException`">fully qualified name</tooltip></strong> to refer to the member</li>
+                    <li><strong>Use the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">type name prefixed by the package name e.g., <code>java.io.IOException</code></span>fully qualified name</span></strong>                      to refer to the member</li>
                     <li><strong>Import</strong> the package or the specific package member</li>
                   </ol>
                   <box>
@@ -538,28 +401,7 @@ second line
                       <li><code>import seedu.tojava.util.StringParser</code>: imports the class <code>StringParser</code> in the <code>seedu.tojava.util</code> package</li>
                       <li><code>import seedu.tojava.frontend.*</code>: imports all the classes in the <code>seedu.tojava.frontend</code> package</li>
                     </ul>
-                    <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava;
-
-<span class="hljs-keyword">import</span> seedu.tojava.util.StringParser;
-<span class="hljs-keyword">import</span> seedu.tojava.frontend.*;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-
-        <span class="hljs-comment">// Using the fully qualified name to access the Processor class</span>
-        String status = seedu.tojava.logic.Processor.getStatus();
-
-        <span class="hljs-comment">// Using the StringParser previously imported</span>
-        StringParser sp = <span class="hljs-keyword">new</span> StringParser();
-
-        <span class="hljs-comment">// Using classes from the tojava.frontend package</span>
-        Ui ui = <span class="hljs-keyword">new</span> Ui();
-        Message m = <span class="hljs-keyword">new</span> Message();
-
-    }
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-keyword">package</span> seedu.tojava;</span><span>&#x200B;</span><span><span class="hljs-keyword">import</span> seedu.tojava.util.StringParser;</span><span><span class="hljs-keyword">import</span> seedu.tojava.frontend.*;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>&#x200B;</span><span>        <span class="hljs-comment">// Using the fully qualified name to access the Processor class</span></span><span>        String status = seedu.tojava.logic.Processor.getStatus();</span><span>&#x200B;</span><span>        <span class="hljs-comment">// Using the StringParser previously imported</span></span><span>        StringParser sp = <span class="hljs-keyword">new</span> StringParser();</span><span>&#x200B;</span><span>        <span class="hljs-comment">// Using classes from the tojava.frontend package</span></span><span>        Ui ui = <span class="hljs-keyword">new</span> Ui();</span><span>        Message m = <span class="hljs-keyword">new</span> Message();</span><span>&#x200B;</span><span>    }</span><span>}</span></code></pre>
                     <p>Note how the class can still use the <code>Processor</code> without importing it first, by using its fully qualified name <code>seedu.tojava.logic.Processor</code></p>
                   </box>
                   <p><strong>Importing a package does not import its sub-packages</strong>, as packages do not behave as hierarchies despite appearances.</p>
@@ -570,30 +412,9 @@ second line
                   <p><strong>Optionally, a <em>static import</em> can be used to import static members of a type</strong> so that the imported members can be used without specifying the type name.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The class below uses static imports to import the constant <code>PREFIX</code> and the method <code>format()</code> from the <code>seedu.tojava.util.Formatter</code>                      class.</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.PREFIX;
-<span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.format;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-
-        String formatted = format(<span class="hljs-string">"Hello"</span>);
-        <span class="hljs-keyword">boolean</span> isFormatted = formatted.startsWith(PREFIX);
-        System.out.println(formatted);
-    }
-}
-</code></pre>
-                    <panel type="seamless" header="`Formatter` class" class="algolia-no-index">
-                      <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.tojava.util;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">format</span><span class="hljs-params">(String s)</span></span>{
-        <span class="hljs-keyword">return</span> PREFIX + s;
-    }
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.PREFIX;</span><span><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.format;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>&#x200B;</span><span>        String formatted = format(<span class="hljs-string">"Hello"</span>);</span><span>        <span class="hljs-keyword">boolean</span> isFormatted = formatted.startsWith(PREFIX);</span><span>        System.out.println(formatted);</span><span>    }</span><span>}</span></code></pre>
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><code>Formatter</code> class</p></template>
+                      <pre><code class="hljs java"><span><span class="hljs-keyword">package</span> seedu.tojava.util;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Formatter</span> </span>{</span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PREFIX = <span class="hljs-string">"&gt;&gt;"</span>;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">format</span><span class="hljs-params">(String s)</span></span>{</span><span>        <span class="hljs-keyword">return</span> PREFIX + s;</span><span>    }</span><span>}</span></code></pre>
                     </panel>
                     <p>Note how the class can use <code>PREFIX</code> and <code>format()</code> (instead of <code>Formatter.PREFIX</code> and <code>Formatter.format()</code>).</p>
                   </box>
@@ -610,7 +431,7 @@ second line
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                    <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                       <div>
                         <ul>
                           <li>Oracle's tutorial on packages: [<a href="https://docs.oracle.com/javase/tutorial/java/concepts/package.html">What is a Package?</a>] [<a href="https://docs.oracle.com/javase/tutorial/java/package/index.html">Creating and Using Packages</a>]</li>
@@ -623,7 +444,7 @@ second line
             </div>
           </panel>
           <p><span id="W3-1e"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/jar">
+          <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/jar" id="c-to-java-miscellaneous-topics-using-jar-files">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.1e</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span>
             : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -646,13 +467,13 @@ second line
                   <p>An executable JAR file can be launched using the <code>java -jar</code> command.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>java -jar foo.jar</code> launches the <code>foo.jar</code> file.</p>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can download the Collate-TUI.jar from <a href="https://se-edu.github.io/collate/">https://se-edu.github.io/collate/</a> and run it using the command<code>java -jar Collate-TUI.jar</code>                      command. It's usage is given <a href="https://se-education.org/collate/docs/User-Guide.html#using-the-text-ui">here</a>.</p>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> You can download the Collate-GUI.jar from <a href="https://se-edu.github.io/collate/">https://se-edu.github.io/collate/</a> and run it using the command<code>java -jar Collate-GUI.jar</code>                      command.</p>
                   </box>
                   <p>The IDE can help you to package your application as a JAR file.</p>
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                    <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                       <div>
                         <ul>
                           <li><a href="https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html">Oracle's tutorial on JAR files</a></li>
@@ -669,7 +490,7 @@ second line
         </div>
         </panel>
         <p><span id="W3-2"></span></p>
-        <panel type="seamless" no-close expandable="true" expanded>
+        <panel type="seamless" no-close expandable="true" expanded id="w3-2-coding-standards">
           <span slot="header" class="card-title"><div><h2 id="w3-2-coding-standards"><span class="dimmed">[W3.2]</span> <strong>Coding Standards</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
           <a class="fa fa-anchor" href="#w3-2-coding-standards"></a>
           </h2>
@@ -677,7 +498,7 @@ second line
       </span>
       <div class="indented-level1">
         <p><span id="W3-2a"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/codeQuality/introduction/basic">
+        <panel type="seamless" expanded popup-url="/website/book/codeQuality/introduction/basic" id="implementation-code-quality-introduction-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.2a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -700,19 +521,21 @@ second line
                 <blockquote>
                   <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
                 </blockquote>
-                <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
-                <popover id="pop:production-code" title="<md>:glyphicon-eye-open:</md> Production Code" placement="top">
-                  <div slot="content" class="algolia-no-index">
-                    Code being used in an actual product with actual users
-                  </div>
-                </popover>
+                <p><strong><span for="pop:production-code" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:production-code'].show()" class="trigger">Production code</span> needs to be of high quality</strong>.
+                  Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
+                <span id="pop:production-code" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span>
+                Production Code</span>
+                <div data-mb-html-for="content">
+                  Code being used in an actual product with actual users
+                </div>
+                </span>
               </div>
               <div></div>
             </div>
           </div>
         </panel>
         <p><span id="W3-2b"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/codeQuality/followStandard/introduction">
+        <panel type="seamless" expanded popup-url="/website/book/codeQuality/followStandard/introduction" id="implementation-code-quality-style-introduction">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.2b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="implementation-code-quality-style-introduction"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Style →</span></span></small> <strong><span>Introduction</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-style-introduction"></a></h4>
@@ -738,9 +561,9 @@ second line
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is the recommended approach regarding coding standards?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What is the recommended approach regarding coding standards?</p></template>
                         <question>
                           <p>What is the recommended approach regarding coding standards?</p>
                           <ul radio-group="5c5a1" class="radio-list">
@@ -756,7 +579,7 @@ second line
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md> What is the aim? What is the value?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is the aim? What is the value?</p></template>
                         <question has-input>
                           <p>What is the aim of using a coding standard? How does it help?</p>
                         </question>
@@ -772,7 +595,7 @@ second line
       </panel>
       <p></p>
       <p><span id="W3-3"></span></p>
-      <panel type="seamless" no-close expandable="true" expanded>
+      <panel type="seamless" no-close expandable="true" expanded id="w3-3-developer-testing">
         <span slot="header" class="card-title"><div><h2 id="w3-3-developer-testing"><span class="dimmed">[W3.3]</span> <strong>Developer Testing</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
         <a class="fa fa-anchor" href="#w3-3-developer-testing"></a>
         </h2>
@@ -780,7 +603,7 @@ second line
     </span>
     <div class="indented-level1">
       <p><span id="W3-3a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/developerTesting/what">
+      <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/developerTesting/what" id="quality-assurance-testing-developer-testing-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.3a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="quality-assurance-testing-developer-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Developer Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-developer-testing-what"></a></h4>
@@ -805,7 +628,7 @@ second line
         </div>
       </panel>
       <p><span id="W3-3b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/developerTesting/why">
+      <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/developerTesting/why" id="quality-assurance-testing-developer-testing-why">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.3b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -843,9 +666,9 @@ second line
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: implications of developers testing their own code" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> implications of developers testing their own code</p></template>
                       <question has-input="true">
                         <p>Discuss pros and cons of developers testing their own code.</p>
                         <div slot="answer" class="algolia-no-index">
@@ -868,7 +691,7 @@ second line
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Cost of bug fixing over time" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Cost of bug fixing over time</p></template>
                       <question>
                         <p>The cost of fixing a bug goes down as we reach the product release.</p>
                         <ul radio-group="37242" class="radio-list">
@@ -882,7 +705,7 @@ second line
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> Why early testing?" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Why early testing?</p></template>
                       <question has-input="true">
                         <p>Explain why early testing by developers is important.</p>
                       </question>
@@ -897,7 +720,7 @@ second line
     </div>
     </panel>
     <p><span id="W3-4"></span></p>
-    <panel type="seamless" no-close expandable="true" expanded>
+    <panel type="seamless" no-close expandable="true" expanded id="w3-4-unit-testing">
       <span slot="header" class="card-title"><div><h2 id="w3-4-unit-testing"><span class="dimmed">[W3.4]</span> <strong>Unit Testing</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
       <a class="fa fa-anchor" href="#w3-4-unit-testing"></a>
       </h2>
@@ -905,7 +728,7 @@ second line
   </span>
   <div class="indented-level1">
     <p><span id="W3-4a"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/testing/testAutomation/usingTestDrivers">
+    <panel type="seamless" expanded popup-url="/website/book/testing/testAutomation/usingTestDrivers" id="quality-assurance-testing-test-automation-test-automation-using-test-drivers">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.4a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -925,34 +748,10 @@ second line
           <p></p>
           <p></p>
           <div>
-            <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
+            <p><strong>A test driver is the code that ‘drives’ the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span> for the purpose of testing</strong>              i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code>PayrollTest</code> ‘drives’ the <code>Payroll</code> class by sending it test inputs and verifies if the output is as expected.</p>
-              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
-
-        <span class="hljs-comment">//test setup</span>
-        Payroll p = <span class="hljs-keyword">new</span> Payroll();
-
-        <span class="hljs-comment">//test case 1</span>
-        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
-        <span class="hljs-comment">// automatically verify the response</span>
-        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">6400</span>) {
-            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 1 failed "</span>);
-        }
-
-        <span class="hljs-comment">//test case 2</span>
-        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
-        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">2300</span>) {
-            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 2 failed "</span>);
-        }
-
-        <span class="hljs-comment">//more tests...</span>
-
-        System.out.println(<span class="hljs-string">"All tests passed"</span>);
-    }
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{</span><span>&#x200B;</span><span>        <span class="hljs-comment">//test setup</span></span><span>        Payroll p = <span class="hljs-keyword">new</span> Payroll();</span><span>&#x200B;</span><span>        <span class="hljs-comment">//test case 1</span></span><span>        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});</span><span>        <span class="hljs-comment">// automatically verify the response</span></span><span>        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">6400</span>) {</span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 1 failed "</span>);</span><span>        }</span><span>&#x200B;</span><span>        <span class="hljs-comment">//test case 2</span></span><span>        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});</span><span>        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">2300</span>) {</span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 2 failed "</span>);</span><span>        }</span><span>&#x200B;</span><span>        <span class="hljs-comment">//more tests...</span></span><span>&#x200B;</span><span>        System.out.println(<span class="hljs-string">"All tests passed"</span>);</span><span>    }</span><span>}</span></code></pre>
             </box>
           </div>
           <div></div>
@@ -960,7 +759,7 @@ second line
       </div>
     </panel>
     <p><span id="W3-4b"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/testing/testAutomation/tools">
+    <panel type="seamless" expanded popup-url="/website/book/testing/testAutomation/tools" id="quality-assurance-testing-test-automation-test-automation-tools">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.4b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -983,21 +782,7 @@ second line
             <p><strong>JUnit is a tool for automated testing of Java programs.</strong> Similar tools are available for other languages and for automating different types of testing.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This an automated test for a <code>Payroll</code> class, written using JUnit libraries.</p>
-              <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testTotalSalary</span><span class="hljs-params">()</span></span>{
-    Payroll p = <span class="hljs-keyword">new</span> Payroll();
-
-    <span class="hljs-comment">//test case 1</span>
-    p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
-    assertEquals(<span class="hljs-number">6400</span>, p.totalSalary());
-
-    <span class="hljs-comment">//test case 2</span>
-    p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
-    assertEquals(<span class="hljs-number">2300</span>, p.totalSalary());
-
-    <span class="hljs-comment">//more tests...</span>
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testTotalSalary</span><span class="hljs-params">()</span></span>{</span><span>    Payroll p = <span class="hljs-keyword">new</span> Payroll();</span><span>&#x200B;</span><span>    <span class="hljs-comment">//test case 1</span></span><span>    p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});</span><span>    assertEquals(<span class="hljs-number">6400</span>, p.totalSalary());</span><span>&#x200B;</span><span>    <span class="hljs-comment">//test case 2</span></span><span>    p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});</span><span>    assertEquals(<span class="hljs-number">2300</span>, p.totalSalary());</span><span>&#x200B;</span><span>    <span class="hljs-comment">//more tests...</span></span><span>}</span></code></pre>
             </box>
             <p>Most modern IDEs has integrated support for testing tools. The figure below shows the JUnit output when running some JUnit tests using the Eclipse IDE.</p>
             <img src="/website/book/testing/testAutomation/tools/images/junit.png" height="190">
@@ -1008,7 +793,7 @@ second line
       </div>
     </panel>
     <p><span id="W3-4c"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/unitTesting/what">
+    <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/unitTesting/what" id="quality-assurance-testing-unit-testing-what">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.4c</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="quality-assurance-testing-unit-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Unit Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-unit-testing-what"></a></h4>
@@ -1036,67 +821,20 @@ second line
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here are the code skeletons for a <code>Foo</code> class containing two methods and a <code>FooTest</code> class that contains unit tests for those two methods.</p>
               <div class="alt-java">
                 <div>
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
-    <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">(String input)</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-    
-}
-</code></pre>
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{
-    
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//a unit test for Foo#read() method</span>
-    }
-    
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_emptyInput_exceptionThrown</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//a unit tests for Foo#write(String) method</span>
-    }  
-    
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_normalInput_writtenCorrectly</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//another unit tests for Foo#write(String) method</span>
-    }
-}
-</code></pre>
+                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{</span><span>    <span class="hljs-function">String <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>    </span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">(String input)</span></span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>    </span><span>}</span></code></pre>
+                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span></span>{</span><span>    </span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">//a unit test for Foo#read() method</span></span><span>    }</span><span>    </span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_emptyInput_exceptionThrown</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">//a unit tests for Foo#write(String) method</span></span><span>    }  </span><span>    </span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write_normalInput_writtenCorrectly</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">//another unit tests for Foo#write(String) method</span></span><span>    }</span><span>}</span></code></pre>
                 </div>
               </div>
               <div class="alt-python">
                 <div>
-                  <pre><code class="hljs python"><span class="hljs-keyword">import</span> unittest
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span>
-      <span class="hljs-comment"># ...</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, input)</span>:</span>
-      <span class="hljs-comment"># ...</span>
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span><span class="hljs-params">(unittest.TestCase)</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_read</span><span class="hljs-params">(sefl)</span>:</span>
-      <span class="hljs-comment"># a unit test for read() method</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_emptyIntput_ignored</span><span class="hljs-params">(self)</span>:</span>
-      <span class="hljs-comment"># a unit tests for write(string) method</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span>
-      <span class="hljs-comment"># another unit tests for write(string) method</span>
-</code></pre>
+                  <pre><code class="hljs python"><span><span class="hljs-keyword">import</span> unittest</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span><span class="hljs-params">(self)</span>:</span></span><span>      <span class="hljs-comment"># ...</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span><span class="hljs-params">(self, input)</span>:</span></span><span>      <span class="hljs-comment"># ...</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooTest</span><span class="hljs-params">(unittest.TestCase)</span>:</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_read</span><span class="hljs-params">(sefl)</span>:</span></span><span>      <span class="hljs-comment"># a unit test for read() method</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_emptyIntput_ignored</span><span class="hljs-params">(self)</span>:</span></span><span>      <span class="hljs-comment"># a unit tests for write(string) method</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_write_normalInput_writtenCorrectly</span><span class="hljs-params">(self)</span>:</span></span><span>      <span class="hljs-comment"># another unit tests for write(string) method</span></span></code></pre>
                 </div>
               </div>
             </box>
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-paperclip:</md> Resources" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                 <p><strong>Side readings:</strong></p>
                 <ul>
                   <li>[Web article] <a href="http://blog.goyello.com/2011/10/06/three-pillars-of-unit-tests">The three pillars of unit testing</a> - A short article about what makes a good unit test.</li>
@@ -1109,7 +847,7 @@ second line
       </div>
     </panel>
     <p><span id="W3-4d"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/cppToJava/junit/basic">
+    <panel type="seamless" expanded popup-url="/website/book/cppToJava/junit/basic" id="c-to-java-junit-junit-basic">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.4d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="c-to-java-junit-junit-basic"><small><span class="font-weight-bold text-muted"><span>C++ to Java → JUnit →</span></span></small> <strong><span>JUnit: Basic</span></strong><a class="fa fa-anchor" href="#c-to-java-junit-junit-basic"></a></h4>
@@ -1130,60 +868,9 @@ second line
             <p>When writing JUnit tests for a class <code>Foo</code>, the common practice is to create a <code>FooTest</code> class, which will contain various test methods.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Suppose we want to write tests for the <code>IntPair</code> class below.</p>
-              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntPair</span> </span>{
-    <span class="hljs-keyword">int</span> first;
-    <span class="hljs-keyword">int</span> second;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">IntPair</span><span class="hljs-params">(<span class="hljs-keyword">int</span> first, <span class="hljs-keyword">int</span> second)</span> </span>{
-        <span class="hljs-keyword">this</span>.first = first;
-        <span class="hljs-keyword">this</span>.second = second;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">intDivision</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
-        <span class="hljs-keyword">if</span> (second == <span class="hljs-number">0</span>){
-            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Exception(<span class="hljs-string">"Divisor is zero"</span>);
-        }
-        <span class="hljs-keyword">return</span> first/second;
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> first + <span class="hljs-string">","</span> + second;
-    }
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntPair</span> </span>{</span><span>    <span class="hljs-keyword">int</span> first;</span><span>    <span class="hljs-keyword">int</span> second;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">IntPair</span><span class="hljs-params">(<span class="hljs-keyword">int</span> first, <span class="hljs-keyword">int</span> second)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.first = first;</span><span>        <span class="hljs-keyword">this</span>.second = second;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">intDivision</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{</span><span>        <span class="hljs-keyword">if</span> (second == <span class="hljs-number">0</span>){</span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Exception(<span class="hljs-string">"Divisor is zero"</span>);</span><span>        }</span><span>        <span class="hljs-keyword">return</span> first/second;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">return</span> first + <span class="hljs-string">","</span> + second;</span><span>    }</span><span>}</span></code></pre>
               <p>Here's a <code>IntPairTest</code> class to match (using JUnit 5).</p>
-              <pre><code class="hljs java"><span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
-
-<span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.jupiter.api.Assertions.assertEquals;
-<span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.jupiter.api.Assertions.fail;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntPairTest</span> </span>{
-
-
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testStringConversion</span><span class="hljs-params">()</span> </span>{
-        assertEquals(<span class="hljs-string">"4,7"</span>, <span class="hljs-keyword">new</span> IntPair(<span class="hljs-number">4</span>, <span class="hljs-number">7</span>).toString());
-    }
-
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">intDivision_nonZeroDivisor_success</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
-        assertEquals(<span class="hljs-number">2</span>, <span class="hljs-keyword">new</span> IntPair(<span class="hljs-number">4</span>, <span class="hljs-number">2</span>).intDivision());
-        assertEquals(<span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> IntPair(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>).intDivision());
-        assertEquals(<span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> IntPair(<span class="hljs-number">0</span>, <span class="hljs-number">5</span>).intDivision());
-    }
-
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">intDivision_zeroDivisor_exceptionThrown</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">try</span> {
-            assertEquals(<span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> IntPair(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>).intDivision());
-            fail(); <span class="hljs-comment">// the test should not reach this line</span>
-        } <span class="hljs-keyword">catch</span> (Exception e) {
-            assertEquals(<span class="hljs-string">"Divisor is zero"</span>, e.getMessage());
-        }
-    }
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;</span><span>&#x200B;</span><span><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.jupiter.api.Assertions.assertEquals;</span><span><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.jupiter.api.Assertions.fail;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IntPairTest</span> </span>{</span><span>&#x200B;</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testStringConversion</span><span class="hljs-params">()</span> </span>{</span><span>        assertEquals(<span class="hljs-string">"4,7"</span>, <span class="hljs-keyword">new</span> IntPair(<span class="hljs-number">4</span>, <span class="hljs-number">7</span>).toString());</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">intDivision_nonZeroDivisor_success</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{</span><span>        assertEquals(<span class="hljs-number">2</span>, <span class="hljs-keyword">new</span> IntPair(<span class="hljs-number">4</span>, <span class="hljs-number">2</span>).intDivision());</span><span>        assertEquals(<span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> IntPair(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>).intDivision());</span><span>        assertEquals(<span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> IntPair(<span class="hljs-number">0</span>, <span class="hljs-number">5</span>).intDivision());</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">intDivision_zeroDivisor_exceptionThrown</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">try</span> {</span><span>            assertEquals(<span class="hljs-number">0</span>, <span class="hljs-keyword">new</span> IntPair(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>).intDivision());</span><span>            fail(); <span class="hljs-comment">// the test should not reach this line</span></span><span>        } <span class="hljs-keyword">catch</span> (Exception e) {</span><span>            assertEquals(<span class="hljs-string">"Divisor is zero"</span>, e.getMessage());</span><span>        }</span><span>    }</span><span>}</span></code></pre>
             </box>
             <p>Notes:</p>
             <ul>
@@ -1204,7 +891,7 @@ second line
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                 <ul>
                   <li><a href="https://junit.org/junit5/docs/current/user-guide/">JUnit Official User Guide</a></li>
                   <li><a href="https://www.testingexcellence.com/junit-5-annotations/">JUnit 5 Tutorial – Common Annotations With Examples</a> - a short tutorial</li>
@@ -1217,7 +904,7 @@ second line
       </div>
     </panel>
     <p><span id="W3-4e"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/unitTesting/stubs">
+    <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/unitTesting/stubs" id="quality-assurance-testing-unit-testing-stubs">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.4e</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1228,8 +915,7 @@ second line
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Quality Assurance → Testing → Unit Testing → What →%%" popup-url="/website/book/testing/testingTypes/unitTesting/what"
-                class="algolia-no-index"></panel>
+              <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/unitTesting/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Unit Testing → What →</span></p></template></panel>
             </p>
           </div>
           <p></p>
@@ -1242,13 +928,13 @@ second line
           <p></p>
           <p></p>
           <div>
-            <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the
-              <tooltip content="code the unit depends on">dependencies</tooltip> cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
+            <p><strong>A proper unit test requires the <em>unit</em> to be tested <mark>in isolation</mark></strong> so that bugs in the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">code the unit depends on</span>dependencies</span>
+              cannot influence the test <span class="dimmed">i.e. bugs outside of the unit should not affect the unit tests</span>.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code>Logic</code> class depends on a <code>Storage</code> class, unit testing the <code>Logic</code> class requires isolating the <code>Logic</code> class from the
                 <code>Storage</code> class.</p>
             </box>
-            <p><strong><em>Stubs</em> can isolate the <popover content="Software Under Test (in this case, the _unit_ being tested)">SUT</popover> from its dependencies</strong>.</p>
+            <p><strong><em>Stubs</em> can isolate the <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">Software Under Test (in this case, the <em>unit</em> being tested)</span>SUT</span> from its dependencies</strong>.</p>
             <box type="definition">
               <div>
                 <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined
@@ -1257,83 +943,35 @@ second line
             </box>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below:</p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{
-    Storage s;
-
-    Logic(Storage s) {
-        <span class="hljs-keyword">this</span>.s = s;
-    }
-
-    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);
-    }
-}
-</code></pre>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{
-    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;
-}
-</code></pre>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">return</span> readValueFromDatabase(index);
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-comment">// retrieve name from the database</span>
-    }
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{</span><span>    Storage s;</span><span>&#x200B;</span><span>    Logic(Storage s) {</span><span>        <span class="hljs-keyword">this</span>.s = s;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + s.getName(index);</span><span>    }</span><span>}</span></code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Storage</span> </span>{</span><span>    <span class="hljs-function">String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span></span>;</span><span>}</span></code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DatabaseStorage</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> readValueFromDatabase(index);</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> String <span class="hljs-title">readValueFromDatabase</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-comment">// retrieve name from the database</span></span><span>    }</span><span>}</span></code></pre>
               <p>Normally, you would use the <code>Logic</code> class as follows (note how the <code>Logic</code> object depends on a <code>DatabaseStorage</code> object to perform the <code>getName()</code> operation):</p>
-              <pre><code class="hljs java">Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
-String name = logic.getName(<span class="hljs-number">23</span>);
-</code></pre>
+              <pre><code class="hljs java"><span>Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());</span><span>String name = logic.getName(<span class="hljs-number">23</span>);</span></code></pre>
               <p>You can test it like this:</p>
-              <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
-    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());
-    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{</span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> DatabaseStorage());</span><span>    assertEquals(<span class="hljs-string">"Name: John"</span>, logic.getName(<span class="hljs-number">5</span>));</span><span>}</span></code></pre>
               <p>However, this <code>logic</code> object being tested is making use of a <code>DataBaseStorage</code> object which means a bug in the <code>DatabaseStorage</code> class can affect the test. Therefore, this test is not testing <code>Logic</code>                <em>in isolation from its dependencies</em> and hence it is not a pure unit test.</p>
               <p>Here is a stub class you can use in place of <code>DatabaseStorage</code>:</p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{
-        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {
-            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;
-        } <span class="hljs-keyword">else</span> {
-            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();
-        }
-    }
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StorageStub</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Storage</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">(<span class="hljs-keyword">int</span> index)</span> </span>{</span><span>        <span class="hljs-keyword">if</span>(index == <span class="hljs-number">5</span>) {</span><span>            <span class="hljs-keyword">return</span> <span class="hljs-string">"Adam"</span>;</span><span>        } <span class="hljs-keyword">else</span> {</span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();</span><span>        }</span><span>    }</span><span>}</span></code></pre>
               <p>Note how the <code>StorageStub</code> has the same interface as <code>DatabaseStorage</code>, is so simple that it is unlikely to contain bugs, and is pre-configured to respond with a hard-coded response, presumably, the correct response
                 <code>DatabaseStorage</code> is expected to return for the given test input.</p>
               <p>Here is how you can use the stub to write a unit test. This test is not affected by any bugs in the <code>DatabaseStorage</code> class and hence is a pure unit test.</p>
-              <pre><code class="hljs java"><span class="hljs-meta">@Test</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
-    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());
-    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));
-}
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-meta">@Test</span></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{</span><span>    Logic logic = <span class="hljs-keyword">new</span> Logic(<span class="hljs-keyword">new</span> StorageStub());</span><span>    assertEquals(<span class="hljs-string">"Name: Adam"</span>, logic.getName(<span class="hljs-number">5</span>));</span><span>}</span></code></pre>
             </box>
             <p>In addition to Stubs, there are other type of replacements you can use during testing. E.g. <em>Mocks</em>, <em>Fakes</em>, <em>Dummies</em>, <em>Spies</em>.</p>
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                 <ul>
                   <li><a href="https://martinfowler.com/articles/mocksArentStubs.html"><strong>Mocks Aren't Stubs</strong></a> by Martin Fowler -- An in-depth article about how Stubs differ from other types of test helpers.</li>
                 </ul>
               </panel>
             </div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Purpose of stubs" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Purpose of stubs</p></template>
                     <question>
                       <p>Stubs help us to test a component in isolation from its dependencies.</p>
                       <ul radio-group="a0303" class="radio-list">
@@ -1353,7 +991,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       </div>
     </panel>
     <p><span id="W3-4f"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/cppToJava/junit/intermediate">
+    <panel type="seamless" expanded popup-url="/website/book/cppToJava/junit/intermediate" id="c-to-java-junit-junit-intermediate">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.4f</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1383,7 +1021,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
   </panel>
   <p></p>
   <p><span id="W3-5"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
+  <panel type="seamless" no-close expandable="true" expanded id="w3-5-rcs-branching">
     <span slot="header" class="card-title"><div><h2 id="w3-5-rcs-branching"><span class="dimmed">[W3.5]</span> <strong>RCS: Branching</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
     <a class="fa fa-anchor" href="#w3-5-rcs-branching"></a>
     </h2>
@@ -1391,7 +1029,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     </span>
     <div class="indented-level1">
       <p><span id="W3-5a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/revisionControl/branching">
+      <panel type="seamless" expanded popup-url="/website/book/revisionControl/branching" id="project-management-revision-control-branching">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.5a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="project-management-revision-control-branching"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Branching</span></strong><a class="fa fa-anchor" href="#project-management-revision-control-branching"></a></h4>
@@ -1419,16 +1057,16 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> What is branching?" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is branching?</p></template>
                       <question has-input="true">
                         <p>In the context of RCS, what is the <em>branching</em>? What is the need for branching?.</p>
                       </question>
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> What is merging?" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is merging?</p></template>
                       <question has-input="true">
                         <p>In the context of RCS, what is the <em>merging</em> branches? How can it lead to <em>merge conflicts</em>?.</p>
                       </question>
@@ -1441,7 +1079,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </panel>
       <p><span id="W3-5b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/branch">
+      <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/branch" id="tools-git-and-github-branch">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.5b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="tools-git-and-github-branch"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Branch</span></strong><a class="fa fa-anchor" href="#tools-git-and-github-branch"></a></h4>
@@ -1450,7 +1088,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/revisionControl/branching/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Branching%%" popup-url="/website/book/revisionControl/branching" class="algolia-no-index"></panel>
+                <panel src="/website/book/revisionControl/branching/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/branching" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Branching</span></p></template></panel>
               </p>
             </div>
             <p></p>
@@ -1465,26 +1103,24 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <div>
               <p><strong>0. Observe that you are normally in the branch called <code>master</code>.</strong> For this, you can take any repo you have on your computer (e.g. a clone of the <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a>).</p>
               <tabs>
-                <tab header="SourceTree">
+                <tab><template slot="_header">SourceTree</template>
                   <div>
                     <img src="/website/book/gitAndGithub/branch/images/onMasterBranch.png" height="120">
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab class="algolia-no-index"><template slot="_header">CLI</template>
                   <div>
-                    <pre><code class="hljs">git status
-</code></pre>
+                    <pre><code class="hljs"><span>git status</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
-                    <pre><code class="hljs">on branch master
-</code></pre>
+                    <pre><code class="hljs"><span>on branch master</span></code></pre>
                   </div>
                 </tab>
               </tabs>
               <p><strong>1. Start a branch named <code>feature1</code> and switch to the new branch.</strong></p>
               <tabs>
-                <tab header="SourceTree">
+                <tab><template slot="_header">SourceTree</template>
                   <div>
                     <p>Click on the <code>Branch</code> button on the main menu. In the next dialog, enter the branch name and click <code>Create Branch</code></p>
                     <img src="/website/book/gitAndGithub/branch/images/sourcetree_1.png" height="150">
@@ -1494,32 +1130,28 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab class="algolia-no-index"><template slot="_header">CLI</template>
                   <div>
                     <p>You can use the <code>branch</code> command to create a new branch and the <code>checkout</code> command to switch to a specific branch.</p>
-                    <pre><code class="hljs">git branch feature1
-git checkout feature1
-</code></pre>
+                    <pre><code class="hljs"><span>git branch feature1</span><span>git checkout feature1</span></code></pre>
                     <p>One-step shortcut to create a branch and switch to it at the same time:</p>
-                    <pre><code class="hljs">git checkout –b feature1
-</code></pre>
+                    <pre><code class="hljs"><span>git checkout –b feature1</span></code></pre>
                   </div>
                 </tab>
               </tabs>
               <p><strong>2. Create some commits in the new branch.</strong> <span class="dimmed">Just commit as per normal. Commits you add while on a certain branch will become part of that branch.</span></p>
               <p><strong>3. Switch to the <code>master</code> branch.</strong> Note how the changes you did in the <code>feature1</code> branch are no longer in the working directory.</p>
               <tabs>
-                <tab header="SourceTree">
+                <tab><template slot="_header">SourceTree</template>
                   <div>
                     <p>Double-click the <code>master</code> branch</p>
                     <img src="/website/book/gitAndGithub/branch/images/sourcetree_3.png" height="150">
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab class="algolia-no-index"><template slot="_header">CLI</template>
                   <div>
-                    <pre><code class="hljs">git checkout master
-</code></pre>
+                    <pre><code class="hljs"><span>git checkout master</span></code></pre>
                   </div>
                 </tab>
               </tabs>
@@ -1531,15 +1163,14 @@ git checkout feature1
               <img src="/website/book/gitAndGithub/branch/images/sourcetree_5.png" height="120">
               <p></p>
               <tabs>
-                <tab header="SourceTree">
+                <tab><template slot="_header">SourceTree</template>
                   <div>
                     <p>Right-click on the <code>master</code> branch and choose <code>merge master into the current branch</code>. Click <code>OK</code> in the next dialog.</p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab class="algolia-no-index"><template slot="_header">CLI</template>
                   <div>
-                    <pre><code class="hljs">git merge master
-</code></pre>
+                    <pre><code class="hljs"><span>git merge master</span></code></pre>
                   </div>
                 </tab>
               </tabs>
@@ -1550,12 +1181,11 @@ git checkout feature1
               <img src="/website/book/gitAndGithub/branch/images/sourcetree_6.png" height="150">
               <p></p>
               <tabs>
-                <tab header="SourceTree">
+                <tab><template slot="_header">SourceTree</template>
                   <p>Right-click on the <code>feature1</code> branch and choose <code>Merge...</code>.</p>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
-                  <pre><code class="hljs">git merge feature1
-</code></pre>
+                <tab class="algolia-no-index"><template slot="_header">CLI</template>
+                  <pre><code class="hljs"><span>git merge feature1</span></code></pre>
                 </tab>
               </tabs>
               <p><strong>10. Create a new branch called <code>add-countries</code>, switch to it, and add some commits to it</strong> <span class="dimmed">(similar to steps 1-2 above)</span>. You should have something like this now:</p>
@@ -1572,18 +1202,17 @@ git checkout feature1
                 to just put the commits of the <code>add-countries</code> branch in front of the <code>master</code> branch, without going into the trouble of creating an extra merge commit.</p>
               <p><strong>It is possible to force Git to create a merge commit even if fast forwarding is possible.</strong></p>
               <tabs>
-                <tab header="SourceTree">
+                <tab><template slot="_header">SourceTree</template>
                   <div>
                     <p>Tick the box shown below when you merge a branch:</p>
                     <img src="/website/book/gitAndGithub/branch/images/mergeBranchDialog.png" height="150">
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab class="algolia-no-index"><template slot="_header">CLI</template>
                   <div>
                     <p>Use the <code>--no-ff</code> switch (short for <em>no fast forward</em>):</p>
-                    <pre><code class="hljs">git merge --no-ff add-countries
-</code></pre>
+                    <pre><code class="hljs"><span>git merge --no-ff add-countries</span></code></pre>
                   </div>
                 </tab>
               </tabs>
@@ -1593,7 +1222,7 @@ git checkout feature1
         </div>
       </panel>
       <p><span id="W3-5c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/mergeConflicts">
+      <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/mergeConflicts" id="tools-git-and-github-merge-conflicts">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.5c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="tools-git-and-github-merge-conflicts"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Merge Conflicts</span></strong><a class="fa fa-anchor" href="#tools-git-and-github-merge-conflicts"></a></h4>
@@ -1602,7 +1231,7 @@ git checkout feature1
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"></panel>
+                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Branching</span></p></template></panel>
               </p>
             </div>
             <p></p>
@@ -1620,42 +1249,15 @@ git checkout feature1
               <img src="/website/book/gitAndGithub/mergeConflicts/images/sourcetree_1.png" height="350">
               <p></p>
               <p><strong>3. Try to merge the <code>fix1</code> branch onto the <code>master</code> branch.</strong> Git will pause mid-way during the merge and report a merge conflict. If you open the conflicted file, you will see something like this:</p>
-              <pre><code class="hljs">COLORS
-------
-blue
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-black
-=======
-green
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; fix1
-red
-white
-</code></pre>
+              <pre><code class="hljs"><span>COLORS</span><span>------</span><span>blue</span><span>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span><span>black</span><span>=======</span><span>green</span><span>&gt;&gt;&gt;&gt;&gt;&gt;&gt; fix1</span><span>red</span><span>white</span></code></pre>
               <p><strong>4. Observe how the conflicted part is marked</strong> between a line starting with <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> and a line starting with <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>, separated by another line starting with
                 <code>=======</code>.</p>
               <p>This is the conflicting part that is coming from the <code>master</code> branch:</p>
-              <pre><code class="hljs">
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-black
-=======
-
-</code></pre>
+              <pre><code class="hljs"><span>&#x200B;</span><span>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span><span>black</span><span>=======</span><span>&#x200B;</span></code></pre>
               <p>This is the conflicting part that is coming from the <code>fix1</code> branch:</p>
-              <pre><code class="hljs">
-=======
-green
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; fix1
-
-</code></pre>
+              <pre><code class="hljs"><span>&#x200B;</span><span>=======</span><span>green</span><span>&gt;&gt;&gt;&gt;&gt;&gt;&gt; fix1</span><span>&#x200B;</span></code></pre>
               <p><strong>5. Resolve the conflict by editing the file</strong>. Let us assume you want to keep both lines in the merged version. You can modify the file to be like this:</p>
-              <pre><code class="hljs">COLORS
-------
-blue
-black
-green
-red
-white
-</code></pre>
+              <pre><code class="hljs"><span>COLORS</span><span>------</span><span>blue</span><span>black</span><span>green</span><span>red</span><span>white</span></code></pre>
               <p><strong>6. Stage the changes, and commit.</strong></p>
             </div>
             <div></div>
@@ -1665,7 +1267,7 @@ white
     </div>
   </panel>
   <p><span id="W3-6"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
+  <panel type="seamless" no-close expandable="true" expanded id="w3-6-rcs-creating-pull-requests">
     <span slot="header" class="card-title"><div><h2 id="w3-6-rcs-creating-pull-requests"><span class="dimmed">[W3.6]</span> <strong>RCS: Creating Pull Requests</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
     <a class="fa fa-anchor" href="#w3-6-rcs-creating-pull-requests"></a>
     </h2>
@@ -1673,7 +1275,7 @@ white
     </span>
     <div class="indented-level1">
       <p><span id="W3-6a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/createPRs">
+      <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/createPRs" id="tools-git-and-github-create-prs">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W3.6a</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="tools-git-and-github-create-prs"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Create PRs</span></strong><a class="fa fa-anchor" href="#tools-git-and-github-create-prs"></a></h4>
@@ -1682,7 +1284,7 @@ white
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"></panel>
+                <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Branching</span></p></template></panel>
               </p>
             </div>
             <p></p>
@@ -1697,21 +1299,15 @@ white
             <div>
               <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
               <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
-              <pre><code class="hljs md">
-<span class="hljs-section"># Introduction</span>
-Creating Pull Requests (PRs) is needed when using RCS in a multi-person projects.
-This repo can be used to practice creating PRs.
-
-</code></pre>
+              <pre><code class="hljs md"><span>&#x200B;</span><span><span class="hljs-section"># Introduction</span></span><span>Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.</span><span>This repo can be used to practice creating PRs.</span><span>&#x200B;</span></code></pre>
               <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
               <tabs>
-                <tab header="SourceTree">
+                <tab><template slot="_header">SourceTree</template>
                   <img src="/website/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
                   <p></p>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
-                  <pre><code class="hljs">git push origin add-intro
-</code></pre>
+                <tab class="algolia-no-index"><template slot="_header">CLI</template>
+                  <pre><code class="hljs"><span>git push origin add-intro</span></code></pre>
                 </tab>
               </tabs>
               <p><strong>4. Create a Pull Request from the <code>add-intro</code> branch in your fork to the <code>master</code> branch of the same fork</strong> (i.e. <code>your-user-name/samplerepo-pr-practice</code>, not <code>se-edu/samplerepo-pr-practice</code>),
@@ -1748,7 +1344,7 @@ This repo can be used to practice creating PRs.
               <img src="/website/book/gitAndGithub/createPRs/images/addSummaryBranch.png" width="400">
               <p></p>
               <p><strong>7. Push the <code>add-summary</code> to your fork and create a new PR</strong> similar to before.</p>
-              <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                 <ul>
                   <li><a href="https://help.github.com/articles/creating-a-pull-request/">GitHub's own documentation on creating a PR</a></li>
                 </ul>
@@ -1795,7 +1391,7 @@ This repo can be used to practice creating PRs.
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
   </footer>
   </div>
 </body>

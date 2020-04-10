@@ -5,18 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 2 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -29,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -97,7 +97,7 @@
           </nav>
           <p></p>
           <h1 id="week-2-jan-20-topics">Week 2 <small><small><span class="dimmed">[Jan 20]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-2-jan-20-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week2/topics.html#W2-1">W2.1</a>] <strong>SE: Intro</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
@@ -207,7 +207,7 @@
           </panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W2-1"></span></p>
-          <panel type="seamless" no-close expandable="true" expanded>
+          <panel type="seamless" no-close expandable="true" expanded id="w2-1-se-intro">
             <span slot="header" class="card-title"><div><h2 id="w2-1-se-intro"><span class="dimmed">[W2.1]</span> <strong>SE: Intro</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
             <a class="fa fa-anchor" href="#w2-1-se-intro"></a>
             </h2>
@@ -215,7 +215,7 @@
         </span>
         <div class="indented-level1">
           <p><span id="W2-1a"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/softwareEngineering/introduction/prosAndCons">
+          <panel type="seamless" expanded popup-url="/website/book/softwareEngineering/introduction/prosAndCons" id="software-engineering-introduction-pros-and-cons">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.1a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -240,8 +240,8 @@
                       <p><strong>Software Engineering</strong>: Software Engineering is the application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software&quot; <sub>-- IEEE Standard Glossary of Software Engineering Terminology</sub></p>
                     </div>
                   </box>
-                  <p>The following description of the <em>Joys of the Programming Craft</em> was taken from Chapter 1 of the famous book
-                    <trigger for="modal:mmm" trigger="click"><em>The Mythical Man-Month</em>, by Frederick P. Brooks</trigger>.</p>
+                  <p>The following description of the <em>Joys of the Programming Craft</em> was taken from Chapter 1 of the famous book <span for="modal:mmm" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                      v-on:click="$refs['modal:mmm'].show()" class="trigger-click"><em>The Mythical Man-Month</em>, by Frederick P. Brooks</span>.</p>
                   <blockquote>
                     <p><strong>Why is programming fun? What delights may its practitioner expect as his reward?</strong></p>
                     <p>First is the sheer joy of making things. As the child delights in his mud pie, so the adult enjoys building things, especially things of his own design. I think this delight must be an image of God's delight in making things, a delight
@@ -276,7 +276,7 @@
                       of an implementation must be measured against other existing implementations, not against unrealized concepts. The challenge and the mission are to find real solutions to real problems on actual schedules with available resources.</p>
                     <p>This then is programming, both a tar pit in which many efforts have floundered and a creative activity with joys and woes all its own. For many, the joys far outweigh the woes....</p>
                   </blockquote>
-                  <modal title="**:book: The Mythical Man-Month: Essays on Software Engineering**" id="modal:mmm" class="algolia-no-index">
+                  <b-modal id="modal:mmm" hide-footer size modal-class="mb-zoom" ref="modal:mmm"><template slot="modal-title"><strong>📖 The Mythical Man-Month: Essays on Software Engineering</strong></template>
                     <table>
                       <tr>
                         <td>
@@ -295,13 +295,13 @@
                     </table>
                     <p><em>The Mythical Man-Month: Essays on Software Engineering</em> is a book on software engineering and project management by Fred Brooks, whose central theme is that &quot;adding manpower to a late software project makes it later&quot;.
                       This idea is known as Brooks's law, and is presented along with the second-system effect and advocacy of prototyping.</p>
-                  </modal>
+                  </b-modal>
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: SE vs Civil Engineering" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> SE vs Civil Engineering</p></template>
                           <question has-input="true">
                             <p>Compare Software Engineering with Civil Engineering in terms of how work products in CE (i.e. buildings) differ from those of SE (i.e. software).</p>
                             <div slot="answer" class="algolia-no-index">
@@ -370,7 +370,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Software vs Bridges" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Software vs Bridges</p></template>
                           <question has-input="true">
                             <p>Comment on this statement: Building software is cheaper and easier than building bridges (all we need is a PC!).</p>
                             <div slot="answer" class="algolia-no-index">
@@ -381,7 +381,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coding as a manufacturing activity" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coding as a manufacturing activity</p></template>
                           <question has-input="true">
                             <p>Justify this statement: Coding is still a ‘design’ activity, not a ‘manufacturing’ activity. You may use a comparison (or an analogy) of Software engineering versus Civil Engineering to argue this point.</p>
                             <div slot="answer" class="algolia-no-index">
@@ -397,14 +397,14 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md> List pros and cons of SE" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> List pros and cons of SE</p></template>
                           <question has-input="true">
                             <p>List some (at least three each) pros and cons of Software Engineering compared to other traditional Engineering careers.</p>
                           </question>
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one of these is not included in Brook’s list of ‘Woes of the Craft’?" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which one of these is not included in Brook’s list of ‘Woes of the Craft’?</p></template>
                           <question>
                             <ul class="task-list">
                               <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Need for perfection when developing software</li>
@@ -430,7 +430,7 @@
         </panel>
         <p></p>
         <p><span id="W2-2"></span></p>
-        <panel type="seamless" no-close expandable="true" expanded>
+        <panel type="seamless" no-close expandable="true" expanded id="w2-2-ides-basic-features">
           <span slot="header" class="card-title"><div><h2 id="w2-2-ides-basic-features"><span class="dimmed">[W2.2]</span> <strong>IDEs: Basic Features</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
           <a class="fa fa-anchor" href="#w2-2-ides-basic-features"></a>
           </h2>
@@ -438,7 +438,7 @@
       </span>
       <div class="indented-level1">
         <p><span id="W2-2a"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/ides/introduction/what">
+        <panel type="seamless" expanded popup-url="/website/book/ides/introduction/what" id="implementation-ides-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.2a</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="implementation-ides-what"><small><span class="font-weight-bold text-muted"><span>Implementation → IDEs →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-ides-what"></a></h4>
@@ -476,9 +476,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these are features available in IDEs?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which of these are features available in IDEs?</p></template>
                         <question>
                           <ul class="task-list">
                             <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Compiling</li>
@@ -507,7 +507,7 @@
           </div>
         </panel>
         <p><span id="W2-2b"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/intellij/projectSetup">
+        <panel type="seamless" expanded popup-url="/website/book/intellij/projectSetup" id="tools-intellij-idea-project-setup">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.2b</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="tools-intellij-idea-project-setup"><small><span class="font-weight-bold text-muted"><span>Tools → Intellij IDEA →</span></span></small> <strong><span>Project Setup</span></strong><a class="fa fa-anchor" href="#tools-intellij-idea-project-setup"></a></h4>
@@ -527,14 +527,14 @@
               <div>
                 <h5 id="running-intellij-idea-for-the-first-time">Running Intellij IDEA for the First Time<a class="fa fa-anchor" href="#running-intellij-idea-for-the-first-time"></a></h5>
                 <tabs>
-                  <tab header="<md>:far-file-alt:</md>">
+                  <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                     <ul>
                       <li>
                         <p><a href="https://www.jetbrains.com/help/idea/creating-running-and-packaging-your-first-java-application.html">[Intellij Official Tutorial] <strong>Creating, Running and Packaging Your First Java Application</strong></a></p>
                       </li>
                     </ul>
                   </tab>
-                  <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+                  <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
 
 
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/c0efB_CKOYo" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
@@ -554,7 +554,7 @@
       </panel>
       <p></p>
       <p><span id="W2-3"></span></p>
-      <panel type="seamless" no-close expandable="true" expanded>
+      <panel type="seamless" no-close expandable="true" expanded id="w2-3-automated-testing-of-text-uis">
         <span slot="header" class="card-title"><div><h2 id="w2-3-automated-testing-of-text-uis"><span class="dimmed">[W2.3]</span> <strong>Automated Testing of Text UIs</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
         <a class="fa fa-anchor" href="#w2-3-automated-testing-of-text-uis"></a>
         </h2>
@@ -562,7 +562,7 @@
     </span>
     <div class="indented-level1">
       <p><span id="W2-3a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testing/introduction/what">
+      <panel type="seamless" expanded popup-url="/website/book/testing/introduction/what" id="quality-assurance-testing-introduction-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.3a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="quality-assurance-testing-introduction-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-introduction-what"></a></h4>
@@ -645,9 +645,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> Relate testing, test cases, failure, and defect" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Relate testing, test cases, failure, and defect</p></template>
                       <question has-input>
                         <p>Explain how the concepts of <em>testing</em>, <em>test case</em>, <em>test failure</em>, and <em>defect</em> are related to each other.</p>
                       </question>
@@ -660,7 +660,7 @@
         </div>
       </panel>
       <p><span id="W2-3b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/regressionTesting/what">
+      <panel type="seamless" expanded popup-url="/website/book/testing/testingTypes/regressionTesting/what" id="quality-assurance-testing-regression-testing-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.3b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="quality-assurance-testing-regression-testing-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Regression Testing →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-regression-testing-what"></a></h4>
@@ -684,9 +684,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Regression Testing defintion T/F?" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Regression Testing defintion T/F?</p></template>
                       <question>
                         <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
                         <ul radio-group="63d56" class="radio-list">
@@ -702,7 +702,7 @@
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> Explain regression testing" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain regression testing</p></template>
                       <question has-input>
                         <p>Explain why and when you would do regression testing in a software project.</p>
                       </question>
@@ -715,7 +715,7 @@
         </div>
       </panel>
       <p><span id="W2-3c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testing/testAutomation/what">
+      <panel type="seamless" expanded popup-url="/website/book/testing/testAutomation/what" id="quality-assurance-testing-test-automation-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.3c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="quality-assurance-testing-test-automation-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Test Automation →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-test-automation-what"></a></h4>
@@ -734,17 +734,17 @@
             <p></p>
             <div>
               <tabs>
-                <tab header="<md>:far-file-alt:</md>">
+                <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                   <p><strong>An automated test case can be run programmatically and the result of the test case (pass or fail) is determined programmatically.</strong> Compared to manual testing, automated testing reduces the effort required to run tests
                     repeatedly and increases precision of testing (because manual testing is susceptible to human errors).</p>
                 </tab>
-                <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+                <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/RbSlW8jZFe8?end=79&version=3" frameborder="0" allowfullscreen></iframe></tab>
               </tabs>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-paperclip:</md> Resources" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                   <p><strong>Side readings:</strong></p>
                   <ul>
                     <li>[Quora post] <a href="http://www.quora.com/What-are-good-ways-to-avoid-bugs-while-programming/answer/Mattias-Petter-Johansson">What is the best way to avoid bugs</a></li>
@@ -757,7 +757,7 @@
         </div>
       </panel>
       <p><span id="W2-3d"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testing/testAutomation/testingTextUis">
+      <panel type="seamless" expanded popup-url="/website/book/testing/testAutomation/testingTextUis" id="quality-assurance-testing-test-automation-automated-testing-of-cli-apps">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.3d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="quality-assurance-testing-test-automation-automated-testing-of-cli-apps"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Test Automation →</span></span></small> <strong><span>Automated Testing of CLI Apps</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-test-automation-automated-testing-of-cli-apps"></a></h4>
@@ -784,27 +784,19 @@
               <ol>
                 <li>
                   <p>Store the test input in the text file <code>input.txt</code>.</p>
-                  <panel header="%%<md>:fas-cube:</md> Example `input.txt`%%" type="seamless" class="algolia-no-index">
-                    <pre><code class="hljs">add Valid Name p/12345 valid@email.butNoPrefix
-add Valid Name 12345 e/valid@email.butPhonePrefixMissing
-</code></pre>
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <code>input.txt</code></span></p></template>
+                    <pre><code class="hljs"><span>add Valid Name p/12345 valid@email.butNoPrefix</span><span>add Valid Name 12345 e/valid@email.butPhonePrefixMissing</span></code></pre>
                   </panel>
                 </li>
                 <li>
                   <p>Store the output we expect from the SUT in another text file <code>expected.txt</code>.</p>
-                  <panel header="%%<md>:fas-cube:</md> Example `expected.txt`%%" type="seamless" class="algolia-no-index">
-                    <pre><code class="hljs">Command: || [add Valid Name p/12345 valid@email.butNoPrefix]
-Invalid command format: add 
-
-Command: || [add Valid Name 12345 e/valid@email.butPhonePrefixMissing]
-Invalid command format: add 
-</code></pre>
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <code>expected.txt</code></span></p></template>
+                    <pre><code class="hljs"><span>Command: || [add Valid Name p/12345 valid@email.butNoPrefix]</span><span>Invalid command format: add </span><span>&#x200B;</span><span>Command: || [add Valid Name 12345 e/valid@email.butPhonePrefixMissing]</span><span>Invalid command format: add </span></code></pre>
                   </panel>
                 </li>
                 <li>
                   <p>Run the program as given below, which will redirect the text in <code>input.txt</code> as the input to <code>AddressBook</code> and similarly, will redirect the output of AddressBook to a text file <code>output.txt</code>. <span class="dimmed">Note that this does not require any code changes to <code>AddressBook</code>.</span></p>
-                  <pre><code class="hljs sh">java AddressBook &lt; input.txt &gt; output.txt
-</code></pre>
+                  <pre><code class="hljs sh"><span>java AddressBook &lt; input.txt &gt; output.txt</span></code></pre>
                   <ul>
                     <li>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The way to run a CLI program differs based on the language.<br> e.g., In Python, assuming the code is in <code>AddressBook.py</code>                        file, use the command<br>
@@ -814,15 +806,14 @@ Invalid command format: add
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Windows, use a normal command window to run the app, not a Power Shell window.</p>
                     </li>
                   </ul>
-                  <panel header minimized class="algolia-no-index">
+                  <panel minimized class="algolia-no-index"><template slot="_header"></template>
                     <span slot="header" class="card-title"><span>More on the <code>&gt;</code> operator and the <code>&lt;</code> operator <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                     </span>
                     </span>
                     </span>
                     <p>A CLI program takes input from the keyboard and outputs to the console. That is because those two are default input and output streams, respectively. But you can change that behavior using <code>&lt;</code> and <code>&gt;</code> operators.
                       For example, if you run <code>AddressBook</code> in a command window, the output will be shown in the console, but if you run it like this,</p>
-                    <pre><code class="hljs sh">java AddressBook &gt; output.txt 
-</code></pre>
+                    <pre><code class="hljs sh"><span>java AddressBook &gt; output.txt </span></code></pre>
                     <p>the Operating System then creates a file <code>output.txt</code> and stores the output in that file instead of displaying it in the console. No file I/O coding is required. Similarly, adding <code>&lt; input.txt</code> (or any other
                       filename) makes the OS redirect the contents of the file as input to the program, as if the user typed the content of the file one line at a time.</p>
                     <box>
@@ -837,20 +828,15 @@ Invalid command format: add
                 </li>
                 <li>
                   <p>Next, we compare <code>output.txt</code> with the <code>expected.txt</code>. This can be done using a utility such as Windows <code>FC</code> (i.e. File Compare) command, Unix <code>diff</code> command, or a GUI tool such as <em>WinMerge</em>.</p>
-                  <pre><code class="hljs">FC output.txt expected.txt
-</code></pre>
+                  <pre><code class="hljs"><span>FC output.txt expected.txt</span></code></pre>
                 </li>
               </ol>
               <p>Note that the above technique is only suitable when testing CLI apps, and only if the exact output can be predetermined. <span class="dimmed">If the output varies from one run to the other (e.g. it contains a time stamp), this technique will not work. In those cases we need more sophisticated ways of automating tests.</span></p>
               <div>
-                <popover id="pop:cli" placement="top">
-                  <div slot="content" class="algolia-no-index">
-                    <div>
-                      <p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p>
-                    </div>
-                  </div>
-                </popover>
-              </div>
+                <span id="pop:cli" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger">
+  <div data-mb-html-for="content">
+    <div>
+<p><strong>CLI App</strong>: An application that has a <em>Command Line Interface</em>. i.e. user interacts with the app by typing in commands.</p></div></div></span></div>
             </div>
             <div></div>
           </div>
@@ -860,7 +846,7 @@ Invalid command format: add
     </panel>
     <p></p>
     <p><span id="W2-4"></span></p>
-    <panel type="seamless" no-close expandable="true" expanded>
+    <panel type="seamless" no-close expandable="true" expanded id="w2-4-rcs-revision-history">
       <span slot="header" class="card-title"><div><h2 id="w2-4-rcs-revision-history"><span class="dimmed">[W2.4]</span> <strong>RCS: Revision History</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
       <a class="fa fa-anchor" href="#w2-4-rcs-revision-history"></a>
       </h2>
@@ -868,7 +854,7 @@ Invalid command format: add
   </span>
   <div class="indented-level1">
     <p><span id="W2-4a"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/revisionControl/what">
+    <panel type="seamless" expanded popup-url="/website/book/revisionControl/what" id="project-management-revision-control-what">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.4a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="project-management-revision-control-what"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#project-management-revision-control-what"></a></h4>
@@ -887,7 +873,7 @@ Invalid command format: add
           <p></p>
           <div>
             <tabs>
-              <tab header="<md>:far-file-alt:</md>">
+              <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                 <blockquote>
                   <p><strong><em>Revision control</em> is the process of managing multiple versions of a piece of information.</strong> In its simplest form, this is something that many people do by hand: every time you modify a file, save it under a new
                     name that contains a number, each one higher than the number of the preceding version.</p>
@@ -901,20 +887,19 @@ Invalid command format: add
                     you to efficiently figure out exactly when a problem was introduced.</p>
                   <p><strong>It will help you to work simultaneously on, and manage the drift between, multiple versions of your project.</strong> Most of these reasons are equally valid, at least in theory, whether you're working on a project by yourself,
                     or with a hundred other people.</p>
-                  <p>-- [adapted from
-                    <trigger trigger="click" for="modal:rcsWhat-bryanMercurialGuide">bryan-mercurial-guide</trigger>
-                  </p>
+                  <p>-- [adapted from <span trigger="click" for="modal:rcsWhat-bryanMercurialGuide" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:rcsWhat-bryanMercurialGuide'].show()"
+                      class="trigger-click">bryan-mercurial-guide</span></p>
                 </blockquote>
               </tab>
-              <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/M-O8ZNW9icQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </tab>
             </tabs>
-            <modal large title="Reference » Mercurial: The Definitive Guide" id="modal:rcsWhat-bryanMercurialGuide" class="algolia-no-index">
+            <b-modal id="modal:rcsWhat-bryanMercurialGuide" hide-footer size="lg" modal-class="mb-zoom" ref="modal:rcsWhat-bryanMercurialGuide"><template slot="modal-title">Reference » Mercurial: The Definitive Guide</template>
               <div>
                 <p><a href="http://hgbook.red-bean.com/">Mercurial: The Definitive Guide</a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
               </div>
-            </modal>
+            </b-modal>
             <box type="definition">
               <div>
                 <p><strong>RCS</strong>: <strong>Revision Control Software</strong> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</p>
@@ -930,9 +915,9 @@ Invalid command format: add
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What does RCS stand for?" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What does RCS stand for?</p></template>
                     <question has-input="true">
                       <div slot="answer" class="algolia-no-index">
                         <p>Revision Control Software</p>
@@ -941,7 +926,7 @@ Invalid command format: add
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What is a Revision?" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What is a Revision?</p></template>
                     <question has-input="true">
                       <p>In the context of RCS, what is a <em>Revision</em>? Give an example.</p>
                       <div slot="answer" class="algolia-no-index">
@@ -952,7 +937,7 @@ Invalid command format: add
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these is not considered a benefit of a typical RCS?" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which of these is not considered a benefit of a typical RCS?</p></template>
                     <question>
                       <ul class="task-list">
                         <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Help a single user manage revisions of a single file</li>
@@ -969,7 +954,7 @@ Invalid command format: add
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md> Explain RCS in a team project context" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain RCS in a team project context</p></template>
                     <question has-input="true">
                       <p>Suppose You are doing a team project with Tom, Dick, and Harry but those three have not even heard the term RCS. How do you explain RCS to them as briefly as possible, using the project as an example?</p>
                     </question>
@@ -982,7 +967,7 @@ Invalid command format: add
       </div>
     </panel>
     <p><span id="W2-4b"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/revisionControl/repositories">
+    <panel type="seamless" expanded popup-url="/website/book/revisionControl/repositories" id="project-management-revision-control-repositories">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.4b</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="project-management-revision-control-repositories"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Repositories</span></strong><a class="fa fa-anchor" href="#project-management-revision-control-repositories"></a></h4>
@@ -1006,23 +991,23 @@ Invalid command format: add
               </div>
             </box>
             <tabs>
-              <tab header="<md>:far-file-alt:</md>">
+              <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                 <p><strong>The <em>repository</em> is the database where the meta-data about the revision history are stored.</strong> Suppose you want to apply revision control on files in a directory called <code>ProjectFoo</code>. In that case you need
                   to set up a <em>repo</em> (short for repository) in <code>ProjectFoo</code> directory, which is referred to as the <em>working directory</em> of the repo. For example, Git uses a hidden folder named <code>.git</code> inside the working
                   directory.
                 </p>
                 <p><strong>You can have multiple repos in your computer</strong>, each repo revision-controlling files of a different working directly, for examples, files of different projects.</p>
               </tab>
-              <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/mLnxwlCEIb8" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </tab>
             </tabs>
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md> What is a repo?" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> What is a repo?</p></template>
                     <question has-input="true">
                       <p>In the context of RCS, what is a <em>repo</em>?</p>
                     </question>
@@ -1035,7 +1020,7 @@ Invalid command format: add
       </div>
     </panel>
     <p><span id="W2-4c"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/init">
+    <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/init" id="tools-git-and-github-init">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.4c</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="tools-git-and-github-init"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Init</span></strong><a class="fa fa-anchor" href="#tools-git-and-github-init"></a></h4>
@@ -1044,7 +1029,7 @@ Invalid command format: add
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/revisionControl/repositories/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Repositories%%" popup-url="/website/book/revisionControl/repositories" class="algolia-no-index"></panel>
+              <panel src="/website/book/revisionControl/repositories/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/repositories" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Repositories</span></p></template></panel>
             </p>
           </div>
           <p></p>
@@ -1057,7 +1042,7 @@ Invalid command format: add
           <p></p>
           <p></p>
           <div>
-            <panel header="%%<md>:fas-paperclip:</md> Git Overview%%" class="non-printable algolia-no-index">
+            <panel class="non-printable algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Git Overview</span></p></template>
               <p>Soon you are going to take your first step in using Git. If you would like to see a quick overview of the full Git landscape before jumping in, watch the video below.</p>
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               <p></p>
@@ -1066,7 +1051,7 @@ Invalid command format: add
             <p>Install <a href="https://www.sourcetreeapp.com/">SourceTree</a> which is Git + a GUI for Git. If you prefer to use Git via the command line (i.e., without a GUI), you can <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">install Git</a>              instead.</p>
             <p>Suppose you want to create a repository in an empty directory <code>things</code>. Here are the steps:</p>
             <tabs>
-              <tab header="SourceTree">
+              <tab><template slot="_header">SourceTree</template>
                 <div>
                   <p>Windows: Click <code>File</code> → <code>Clone/New…</code>. Click on <code>Create</code> button.<br> Mac: <code>New...</code> → <code>Create New Repository</code>.</p>
                   <p>Enter the location of the directory (Windows version shown below) and click <code>Create</code>.</p>
@@ -1076,7 +1061,7 @@ Invalid command format: add
                   <p>Note: If you are on Windows, you might have to <a href="https://www.howtogeek.com/howto/windows-vista/show-hidden-files-and-folders-in-windows-vista/">configure Windows Explorer to show hidden files</a>.</p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header">CLI</template>
                 <div>
                   <p>Open a Git Bash Terminal.</p>
                   <p>If you installed SourceTree, you can click the <code>Terminal</code> button to open a GitBash terminal.</p>
@@ -1084,24 +1069,14 @@ Invalid command format: add
                   <p></p>
                   <p>Navigate to the <code>things</code> directory.</p>
                   <p>Use the command <code>git init</code> which should initialize the repo.</p>
-                  <pre><code class="hljs">$ git init
-Initialized empty Git repository in c:/repos/things/.git/
-</code></pre>
+                  <pre><code class="hljs"><span>$ git init</span><span>Initialized empty Git repository in c:/repos/things/.git/</span></code></pre>
                   <p>You can use the command <code>ls -a</code> to view all files, which should show the <code>.git</code> directory that was created by the previous command.</p>
-                  <pre><code class="hljs">$ ls -a
-.  ..  .git
-</code></pre>
+                  <pre><code class="hljs"><span>$ ls -a</span><span>.  ..  .git</span></code></pre>
                   <p>You can also use the <code>git status</code> command to check the status of the newly-created repo. It should respond with something like the bellow</p>
-                  <pre><code class="hljs">git status
-</code></pre>
+                  <pre><code class="hljs"><span>git status</span></code></pre>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                   </p>
-                  <pre><code class="hljs"># On branch master
-#
-# Initial commit
-#
-nothing to commit (create/copy files and use &quot;git add&quot; to track)
-</code></pre>
+                  <pre><code class="hljs"><span># On branch master</span><span>#</span><span># Initial commit</span><span>#</span><span>nothing to commit (create/copy files and use &quot;git add&quot; to track)</span></code></pre>
                 </div>
               </tab>
             </tabs>
@@ -1111,7 +1086,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
       </div>
     </panel>
     <p><span id="W2-4d"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/revisionControl/savingHistory">
+    <panel type="seamless" expanded popup-url="/website/book/revisionControl/savingHistory" id="project-management-revision-control-saving-history">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.4d</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="project-management-revision-control-saving-history"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Saving History</span></strong><a class="fa fa-anchor" href="#project-management-revision-control-saving-history"></a></h4>
@@ -1133,11 +1108,11 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
             <p><strong>In a repo, we can specify which files to track and which files to <mark>ignore</mark>.</strong> Some files such as temporary log files created during the build/test process should not be revision-controlled.</p>
             <h5 id="staging-and-committing">Staging and Committing<a class="fa fa-anchor" href="#staging-and-committing"></a></h5>
             <tabs>
-              <tab header="<md>:far-file-alt:</md>">
+              <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                 <p><strong><mark><em>Committing</em></mark> saves a snapshot of the current state of the tracked files in the revision control history. Such a snapshot is also called a <em>commit</em> (i.e. the noun).</strong></p>
                 <p><strong>When ready to commit, we first <mark><em>stage</em></mark> the specific changes we want to commit.</strong> This intermediate step allows us to commit only some changes while saving other changes for a later commit.</p>
               </tab>
-              <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/7exFDGHgQcw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </tab>
             </tabs>
@@ -1150,7 +1125,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
       </div>
     </panel>
     <p><span id="W2-4e"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/commit">
+    <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/commit" id="tools-git-and-github-commit">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.4e</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="tools-git-and-github-commit"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Commit</span></strong><a class="fa fa-anchor" href="#tools-git-and-github-commit"></a></h4>
@@ -1159,7 +1134,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/gitAndGithub/init/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Git & GitHub → Init%%" popup-url="/website/book/gitAndGithub/init" class="algolia-no-index"></panel>
+              <panel src="/website/book/gitAndGithub/init/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/init" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Git &amp; GitHub → Init</span></p></template></panel>
             </p>
           </div>
           <p></p>
@@ -1181,30 +1156,20 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
             </box>
             <p>Observe how the file is detected by Git.</p>
             <tabs>
-              <tab header="SourceTree">
+              <tab><template slot="_header">SourceTree</template>
                 <div>
                   <p>The file is shown as ‘unstaged’</p>
                   <img src="/website/book/gitAndGithub/commit/images/sourcetree_1.png" height="220">
                   <p></p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header">CLI</template>
                 <div>
                   <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
-                  <pre><code class="hljs sh">git status
-</code></pre>
+                  <pre><code class="hljs sh"><span>git status</span></code></pre>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                   </p>
-                  <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
-<span class="hljs-comment">#</span>
-<span class="hljs-comment"># Initial commit</span>
-<span class="hljs-comment">#</span>
-<span class="hljs-comment"># Untracked files:</span>
-<span class="hljs-comment">#   (use "git add &lt;file&gt;..." to include in what will be committed)</span>
-<span class="hljs-comment">#</span>
-<span class="hljs-comment">#   a.txt</span>
-nothing added to commit but untracked files present (use <span class="hljs-string">"git add"</span> to track)
-</code></pre>
+                  <pre><code class="hljs sh"><span><span class="hljs-comment"># On branch master</span></span><span><span class="hljs-comment">#</span></span><span><span class="hljs-comment"># Initial commit</span></span><span><span class="hljs-comment">#</span></span><span><span class="hljs-comment"># Untracked files:</span></span><span><span class="hljs-comment">#   (use "git add &lt;file&gt;..." to include in what will be committed)</span></span><span><span class="hljs-comment">#</span></span><span><span class="hljs-comment">#   a.txt</span></span><span>nothing added to commit but untracked files present (use <span class="hljs-string">"git add"</span> to track)</span></code></pre>
                 </div>
               </tab>
             </tabs>
@@ -1220,7 +1185,7 @@ nothing added to commit but untracked files present (use <span class="hljs-strin
               </div>
             </box>
             <tabs>
-              <tab header="SourceTree">
+              <tab><template slot="_header">SourceTree</template>
                 <div>
                   <p>Select the <code>fruits.txt</code> and click on the <code>Stage Selected</code> button</p>
                   <img src="/website/book/gitAndGithub/commit/images/sourcetree_2.png" height="100">
@@ -1230,52 +1195,34 @@ nothing added to commit but untracked files present (use <span class="hljs-strin
                   <p></p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header">CLI</template>
                 <div>
                   <p>You can use the <code>stage</code> or the <code>add</code> command (they are synonyms, <code>add</code> is the more popular choice) to stage files.</p>
-                  <pre><code class="hljs sh">git add fruits.txt
-git status
-</code></pre>
+                  <pre><code class="hljs sh"><span>git add fruits.txt</span><span>git status</span></code></pre>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                   </p>
-                  <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
-<span class="hljs-comment">#</span>
-<span class="hljs-comment"># Initial commit</span>
-<span class="hljs-comment">#</span>
-<span class="hljs-comment"># Changes to be committed:</span>
-<span class="hljs-comment">#   (use "git rm --cached &lt;file&gt;..." to unstage)</span>
-<span class="hljs-comment">#</span>
-<span class="hljs-comment">#       new file:   fruits.txt</span>
-<span class="hljs-comment">#</span>
-</code></pre>
+                  <pre><code class="hljs sh"><span><span class="hljs-comment"># On branch master</span></span><span><span class="hljs-comment">#</span></span><span><span class="hljs-comment"># Initial commit</span></span><span><span class="hljs-comment">#</span></span><span><span class="hljs-comment"># Changes to be committed:</span></span><span><span class="hljs-comment">#   (use "git rm --cached &lt;file&gt;..." to unstage)</span></span><span><span class="hljs-comment">#</span></span><span><span class="hljs-comment">#       new file:   fruits.txt</span></span><span><span class="hljs-comment">#</span></span></code></pre>
                 </div>
               </tab>
             </tabs>
             <p>Now, you can commit the staged version of <code>fruits.txt</code></p>
             <tabs>
-              <tab header="SourceTree">
+              <tab><template slot="_header">SourceTree</template>
                 <div>
                   <p>Click the <code>Commit</code> button, enter a commit message e.g. <code>add fruits.txt</code> in to the text box, and click <code>Commit</code></p>
                   <img src="/website/book/gitAndGithub/commit/images/sourcetree_4.png" height="300">
                   <p></p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header">CLI</template>
                 <div>
                   <p>Use the <code>commit</code> command to commit. The <code>-m</code> switch is used to specify the commit message.</p>
-                  <pre><code class="hljs sh">git commit -m <span class="hljs-string">"add fruits.txt"</span>
-</code></pre>
+                  <pre><code class="hljs sh"><span>git commit -m <span class="hljs-string">"add fruits.txt"</span></span></code></pre>
                   <p>You can use the <code>log</code> command to see the commit history</p>
-                  <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
-</code></pre>
+                  <pre><code class="hljs sh"><span>git <span class="hljs-built_in">log</span></span></code></pre>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                   </p>
-                  <pre><code class="hljs">commit 8fd30a6910efb28bb258cd01be93e481caeab846
-Author: … &lt; … @... &gt;
-Date:   Wed Jul 5 16:06:28 2017 +0800
-
-  Add fruits.txt
-</code></pre>
+                  <pre><code class="hljs"><span>commit 8fd30a6910efb28bb258cd01be93e481caeab846</span><span>Author: … &lt; … @... &gt;</span><span>Date:   Wed Jul 5 16:06:28 2017 +0800</span><span>&#x200B;</span><span>  Add fruits.txt</span></code></pre>
                 </div>
               </tab>
             </tabs>
@@ -1290,7 +1237,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                 <ul>
                   <li><a href="https://learngitbranching.js.org/"><strong>Try Git</strong></a> is an online simulation/tutorial of Git basics. You can try its first few steps to solidify what you learned in this LO.</li>
                 </ul>
@@ -1301,7 +1248,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
       </div>
     </panel>
     <p><span id="W2-4f"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/ignore">
+    <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/ignore" id="tools-git-and-github-ignore">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.4f</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="tools-git-and-github-ignore"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Ignore</span></strong><a class="fa fa-anchor" href="#tools-git-and-github-ignore"></a></h4>
@@ -1310,7 +1257,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> Revision Control: Saving History" popup-url="/website/book/revisionControl/savingHistory" class="algolia-no-index"></panel>
+              <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/savingHistory" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Revision Control: Saving History</p></template></panel>
             </p>
           </div>
           <p></p>
@@ -1325,19 +1272,17 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
           <div>
             <p>Add a file named <code>temp.txt</code> to the <code>things</code> repo you created. Suppose we don’t want this file to be revision controlled by Git. Let’s instruct Git to ignore <code>temp.txt</code></p>
             <tabs>
-              <tab header="SourceTree">
+              <tab><template slot="_header">SourceTree</template>
                 <div>
                   <p>The file should be currently listed under <code>Unstaged files</code>. Right-click it and choose <code>Ignore…</code>. Choose <code>Ignore exact filename(s)</code> and click <code>OK</code>.</p>
                   <p>Observe that a file named <code>.gitignore</code> has been created in the working directory root and has the following line in it.</p>
-                  <pre><code class="hljs">temp.txt
-</code></pre>
+                  <pre><code class="hljs"><span>temp.txt</span></code></pre>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header">CLI</template>
                 <div>
                   <p>Create a file named <code>.gitignore</code> in the working directory root and add the following line in it.</p>
-                  <pre><code class="hljs">temp.txt
-</code></pre>
+                  <pre><code class="hljs"><span>temp.txt</span></code></pre>
                 </div>
               </tab>
             </tabs>
@@ -1352,7 +1297,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
       </div>
     </panel>
     <p><span id="W2-4g"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/revisionControl/usingHistory">
+    <panel type="seamless" expanded popup-url="/website/book/revisionControl/usingHistory" id="project-management-revision-control-using-history">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.4g</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="project-management-revision-control-using-history"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Using History</span></strong><a class="fa fa-anchor" href="#project-management-revision-control-using-history"></a></h4>
@@ -1370,26 +1315,22 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
           <p></p>
           <p></p>
           <div>
-            <p><strong><trigger for="pop:rcs">RCS</trigger> tools store the history of the working directory as a series of commits.</strong> This means we should commit after each change that we want the RCS to 'remember' for us.</p>
+            <p><strong><span for="pop:rcs" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:rcs'].show()" class="trigger">RCS</span> tools store the history of the working directory as a series of commits.</strong>              This means we should commit after each change that we want the RCS to 'remember' for us.</p>
             <p><strong>To see what changed between two points of the history, you can ask the RCS tool to  <mark><em>diff</em></mark> the two commits in concern.</strong></p>
             <p><strong>To restore the state of the working directory at a point in the past, you can <mark><em>checkout</em></mark> the commit in concern.</strong> i.e., we can traverse the history of the working directory simply by checking out the commits
               we are interested in.</p>
             <div>
-              <popover id="pop:rcs" placement="top">
-                <div slot="content" class="algolia-no-index">
-                  <div>
-                    <p><strong>RCS</strong>: <strong>Revision Control Software</strong> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</p>
-                  </div>
-                </div>
-              </popover>
-            </div>
+              <span id="pop:rcs" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger">
+  <div data-mb-html-for="content">
+    <div>
+<p><strong>RCS</strong>:  <strong>Revision Control Software</strong> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</p></div></div></span></div>
           </div>
           <div></div>
         </div>
       </div>
     </panel>
     <p><span id="W2-4h"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/tag">
+    <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/tag" id="tools-git-and-github-tag">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.4h</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1400,8 +1341,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Saving History%%" popup-url="/website/book/revisionControl/savingHistory"
-                class="algolia-no-index"></panel>
+              <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/savingHistory" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Saving History</span></p></template></panel>
             </p>
           </div>
           <p></p>
@@ -1416,7 +1356,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
           <div>
             <p>Let's tag a commit in a local repo you have (e.g. the <code>sampelrepo-things</code> repo)</p>
             <tabs>
-              <tab header="SourceTree">
+              <tab><template slot="_header">SourceTree</template>
                 <div>
                   <p>Right-click on the commit (in the graphical revision graph) you want to tag and choose <code>Tag…</code></p>
                   <p>Specify the tag name e.g. <code>v1.0</code> and click <code>Add Tag</code>.</p>
@@ -1425,23 +1365,16 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                   <p></p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header">CLI</template>
                 <div>
                   <p>To add a tag to the current commit as <code>v1.0</code>,</p>
-                  <pre><code class="hljs">git tag –a v1.0
-</code></pre>
+                  <pre><code class="hljs"><span>git tag –a v1.0</span></code></pre>
                   <p>To view tags</p>
-                  <pre><code class="hljs">git tag
-</code></pre>
+                  <pre><code class="hljs"><span>git tag</span></code></pre>
                   <p>To learn how to add a tag to a past commit, go to the <a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">‘Git Basics – Tagging’ page of the git-scm book</a> and refer the ‘Tagging Later’ section.</p>
                   <box type="warning">
                     <p>Remember to push tags to the repo. A normal push does not include tags.</p>
-                    <pre><code class="hljs"># push a specific tag
-git push origin v1.0b
-
-# push all tags
-git push origin --tags
-</code></pre>
+                    <pre><code class="hljs"><span># push a specific tag</span><span>git push origin v1.0b</span><span>&#x200B;</span><span># push all tags</span><span>git push origin --tags</span></code></pre>
                   </box>
                 </div>
               </tab>
@@ -1452,7 +1385,7 @@ git push origin --tags
       </div>
     </panel>
     <p><span id="W2-4i"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/checkout">
+    <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/checkout" id="tools-git-and-github-checkout">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.4i</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="tools-git-and-github-checkout"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Checkout</span></strong><a class="fa fa-anchor" href="#tools-git-and-github-checkout"></a></h4>
@@ -1461,7 +1394,7 @@ git push origin --tags
         <div class="indented">
           <div>
             <p>
-              <panel src="/website/book/revisionControl/usingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Using History%%" popup-url="/website/book/revisionControl/usingHistory" class="algolia-no-index"></panel>
+              <panel src="/website/book/revisionControl/usingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/usingHistory" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Using History</span></p></template></panel>
             </p>
           </div>
           <p></p>
@@ -1476,44 +1409,27 @@ git push origin --tags
           <div>
             <p>Git can show you what changed in each commit.</p>
             <tabs>
-              <tab header="SourceTree">
+              <tab><template slot="_header">SourceTree</template>
                 <div>
                   <p>To see which files changed in a commit, click on the commit. To see what changed in a specific file in that commit, click on the file name.</p>
                   <img src="/website/book/gitAndGithub/checkout/images/sourcetree_1.png" height="220">
                   <p></p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header">CLI</template>
                 <div>
-                  <pre><code class="hljs sh">git show &lt; part-of-commit-hash &gt;
-</code></pre>
+                  <pre><code class="hljs sh"><span>git show &lt; part-of-commit-hash &gt;</span></code></pre>
                   <p>Example:</p>
-                  <pre><code class="hljs">git show 251b4cf
-</code></pre>
+                  <pre><code class="hljs"><span>git show 251b4cf</span></code></pre>
                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                   </p>
-                  <pre><code class="hljs diff">commit 5bc0e30635a754908dbdd3d2d833756cc4b52ef3
-Author: … &lt; … &gt;
-Date:   Sat Jul 8 16:50:27 2017 +0800
-
-    fruits.txt: replace banana with berries
-
-diff --git a/fruits.txt b/fruits.txt
-index 15b57f7..17f4528 100644
-<span class="hljs-comment">--- a/fruits.txt</span>
-<span class="hljs-comment">+++ b/fruits.txt</span>
-<span class="hljs-meta">@@ -1,3 +1,3 @@</span>
- apples
-<span class="hljs-deletion">-bananas</span>
-<span class="hljs-addition">+berries</span>
- cherries
-</code></pre>
+                  <pre><code class="hljs diff"><span>commit 5bc0e30635a754908dbdd3d2d833756cc4b52ef3</span><span>Author: … &lt; … &gt;</span><span>Date:   Sat Jul 8 16:50:27 2017 +0800</span><span>&#x200B;</span><span>    fruits.txt: replace banana with berries</span><span>&#x200B;</span><span>diff --git a/fruits.txt b/fruits.txt</span><span>index 15b57f7..17f4528 100644</span><span><span class="hljs-comment">--- a/fruits.txt</span></span><span><span class="hljs-comment">+++ b/fruits.txt</span></span><span><span class="hljs-meta">@@ -1,3 +1,3 @@</span></span><span> apples</span><span><span class="hljs-deletion">-bananas</span></span><span><span class="hljs-addition">+berries</span></span><span> cherries</span></code></pre>
                 </div>
               </tab>
             </tabs>
             <p>Git can also show you the difference between two points in the history of the repo.</p>
             <tabs>
-              <tab header="SourceTree">
+              <tab><template slot="_header">SourceTree</template>
                 <div>
                   <p>Select the two points you want to compare using <kbd>Ctrl</kbd>+<code>Click</code>.</p>
                   <img src="/website/book/gitAndGithub/checkout/images/sourcetree_2.png" height="200">
@@ -1523,7 +1439,7 @@ index 15b57f7..17f4528 100644
                   <p></p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header">CLI</template>
                 <div>
                   <p>The <code>diff</code> command can be used to view the differences between two points of the history.</p>
                   <ul>
@@ -1531,7 +1447,7 @@ index 15b57f7..17f4528 100644
                     <li><code>git diff 0023cdd..fcd6199</code>: shows the changes between the points indicated by by commit hashes</li>
                     <li><code>git diff v1.0..HEAD</code>: shows changes that happened from the commit tagged as <code>v1.0</code> to the most recent commit.</li>
                   </ul>
-                  <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                  <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                     <ul>
                       <li><a href="https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/diffs">Git-Tower Tutorial: Inspecting Changes with Diffs</a></li>
                       <li><a href="https://stackoverflow.com/questions/8640838/how-do-i-navigate-in-the-results-of-diff">How to view the next page of a <code>git</code> command result</a></li>
@@ -1540,9 +1456,9 @@ index 15b57f7..17f4528 100644
                 </div>
               </tab>
             </tabs>
-            <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to
-              <trigger trigger="click" for="modal:checkout-stash">stash</trigger> them first to prevent them from being overwritten.</p>
-            <modal large title="%%Extract%%" id="modal:checkout-stash" class="algolia-no-index">
+            <p>Git can load a specific version of the history to the working directory. Note that if you have uncommitted changes in the working directory, you need to <span trigger="click" for="modal:checkout-stash" v-b-popover.click.top.html="popoverGenerator"
+                v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:checkout-stash'].show()" class="trigger-click">stash</span> them first to prevent them from being overwritten.</p>
+            <b-modal id="modal:checkout-stash" hide-footer size="lg" modal-class="mb-zoom" ref="modal:checkout-stash"><template slot="modal-title"><span class="dimmed">Extract</span></template>
               <div>
                 <div></div>
                 <p></p>
@@ -1559,10 +1475,10 @@ index 15b57f7..17f4528 100644
                       <p><strong>You can use the git's <mark><em>stash</em></mark> feature to temporarily shelve (or stash) changes you've made to your working copy</strong> so that you can work on something else, and then come back and re-apply the stashed
                         changes later on. <sub>-- adapted from <a href="https://www.atlassian.com/git/tutorials/git-stash">this</a></sub></p>
                       <tabs>
-                        <tab header="Source Tree">
+                        <tab><template slot="_header">Source Tree</template>
                           <p>Follow <a href="https://confluence.atlassian.com/sourcetreekb/stash-a-file-with-sourcetree-785332122.html">this article from SourceTree creators</a>. <span class="dimmed">Note the GUI shown in the article is slightly outdated but you should be able to map it to the current GUI.</span></p>
                         </tab>
-                        <tab header="CLI" class="algolia-no-index">
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <p>Follow <a href="https://www.atlassian.com/git/tutorials/git-stash">this article from Atlassian</a>.</p>
                         </tab>
                       </tabs>
@@ -1571,9 +1487,9 @@ index 15b57f7..17f4528 100644
                   </div>
                 </div>
               </div>
-            </modal>
+            </b-modal>
             <tabs>
-              <tab header="SourceTree">
+              <tab><template slot="_header">SourceTree</template>
                 <div>
                   <p>Double-click the commit you want to load to the working directory, or right-click on that commit and choose <code>Checkout...</code>.</p>
                   <p>Click <code>OK</code> to the warning about ‘detached HEAD’ (similar to below).</p>
@@ -1582,13 +1498,13 @@ index 15b57f7..17f4528 100644
                   <p>The specified version is now loaded to the working folder, as indicated by the <code>HEAD</code> label. <code>HEAD</code> is a reference to the currently checked out commit.</p>
                   <img src="/website/book/gitAndGithub/checkout/images/sourcetree_4.png" height="100">
                   <p></p>
-                  <p>If you checkout a commit that come before the commit in which you added the <code>.gitignore</code> file, Git will now show ignored files as ‘unstaged modifications’ because at that stage Git hasn’t been told to ignore those files.</p>
+                  <p>If you checkout a commit that come before the commit in which you added the <code>.gitignore</code> file, Git will now show ignored fiels as ‘unstaged modifications’ because at that stage Git hasn’t been told to ignore those files.</p>
                   <img src="/website/book/gitAndGithub/checkout/images/sourcetree_5.png" height="260">
                   <p></p>
                   <p>To go back to the latest commit, double-click it.</p>
                 </div>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header">CLI</template>
                 <div>
                   <p>Use the <code>checkout &lt;commit-identifier&gt;</code> command to change the working directory to the state it was in at a specific past commit.</p>
                   <ul>
@@ -1610,7 +1526,7 @@ index 15b57f7..17f4528 100644
       </div>
     </panel>
     <p><span id="W2-4j"></span></p>
-    <panel type="seamless" popup-url="/website/book/gitAndGithub/stash" class="algolia-no-index">
+    <panel type="seamless" popup-url="/website/book/gitAndGithub/stash" id="tools-git-and-github-stash" class="algolia-no-index">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.4j</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1632,10 +1548,10 @@ index 15b57f7..17f4528 100644
             <p><strong>You can use the git's <mark><em>stash</em></mark> feature to temporarily shelve (or stash) changes you've made to your working copy</strong> so that you can work on something else, and then come back and re-apply the stashed changes
               later on. <sub>-- adapted from <a href="https://www.atlassian.com/git/tutorials/git-stash">this</a></sub></p>
             <tabs>
-              <tab header="Source Tree">
+              <tab><template slot="_header">Source Tree</template>
                 <p>Follow <a href="https://confluence.atlassian.com/sourcetreekb/stash-a-file-with-sourcetree-785332122.html">this article from SourceTree creators</a>. <span class="dimmed">Note the GUI shown in the article is slightly outdated but you should be able to map it to the current GUI.</span></p>
               </tab>
-              <tab header="CLI" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header">CLI</template>
                 <p>Follow <a href="https://www.atlassian.com/git/tutorials/git-stash">this article from Atlassian</a>.</p>
               </tab>
             </tabs>
@@ -1647,7 +1563,7 @@ index 15b57f7..17f4528 100644
   </div>
   </panel>
   <p><span id="W2-5"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
+  <panel type="seamless" no-close expandable="true" expanded id="w2-5-rcs-remote-repos">
     <span slot="header" class="card-title"><div><h2 id="w2-5-rcs-remote-repos"><span class="dimmed">[W2.5]</span> <strong>RCS: Remote Repos</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
     <a class="fa fa-anchor" href="#w2-5-rcs-remote-repos"></a>
     </h2>
@@ -1655,7 +1571,7 @@ index 15b57f7..17f4528 100644
     </span>
     <div class="indented-level1">
       <p><span id="W2-5a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/revisionControl/remoteRepositories">
+      <panel type="seamless" expanded popup-url="/website/book/revisionControl/remoteRepositories" id="project-management-revision-control-remote-repositories">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.5a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="project-management-revision-control-remote-repositories"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Remote Repositories</span></strong><a class="fa fa-anchor" href="#project-management-revision-control-remote-repositories"></a></h4>
@@ -1692,7 +1608,7 @@ index 15b57f7..17f4528 100644
         </div>
       </panel>
       <p><span id="W2-5b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/clone">
+      <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/clone" id="tools-git-and-github-clone">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.5b</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="tools-git-and-github-clone"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Clone</span></strong><a class="fa fa-anchor" href="#tools-git-and-github-clone"></a></h4>
@@ -1701,8 +1617,7 @@ index 15b57f7..17f4528 100644
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/revisionControl/remoteRepositories/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Remote Respositories%%" popup-url="/website/book/revisionControl/remoteRepositories"
-                  class="algolia-no-index"></panel>
+                <panel src="/website/book/revisionControl/remoteRepositories/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/remoteRepositories" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Remote Respositories</span></p></template></panel>
               </p>
             </div>
             <p></p>
@@ -1717,17 +1632,17 @@ index 15b57f7..17f4528 100644
             <div>
               <p>Clone the sample repo <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your computer.</p>
               <box type="error">
-                <p>Note that the URL of the Github project is different from the URL you need to clone a repo in that Github project. e.g.
+                <p>Note that the URL of the Github project is different form the URL you need to clone a repo in that Github project. e.g.
                 </p>
                 <p>Github project URL: <code>https://github.com/se-edu/samplerepo-things</code> <br> Git repo URL: <code>https://github.com/se-edu/samplerepo-things.git</code> (note the <code>.git</code> at the end)</p>
               </box>
               <tabs>
-                <tab header="SourceTree">
+                <tab><template slot="_header">SourceTree</template>
                   <div>
                     <p><code>File</code> → <code>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab class="algolia-no-index"><template slot="_header">CLI</template>
                   <div>
                     <p>You can use the <code>clone</code> command to clone a repo.</p>
                     <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
@@ -1740,7 +1655,7 @@ index 15b57f7..17f4528 100644
         </div>
       </panel>
       <p><span id="W2-5c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/pull">
+      <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/pull" id="tools-git-and-github-pull">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.5c</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="tools-git-and-github-pull"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Pull</span></strong><a class="fa fa-anchor" href="#tools-git-and-github-pull"></a></h4>
@@ -1749,7 +1664,7 @@ index 15b57f7..17f4528 100644
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/clone/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Clone%%" popup-url="/website/book/gitAndGithub/clone" class="algolia-no-index"></panel>
+                <panel src="/website/book/gitAndGithub/clone/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/clone" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Clone</span></p></template></panel>
               </p>
             </div>
             <p></p>
@@ -1762,10 +1677,11 @@ index 15b57f7..17f4528 100644
             <p></p>
             <p></p>
             <div>
-              <p>Clone the sample repo as explained in
-                <trigger for="modal:clone-repository" trigger="click">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → Git &amp; GitHub → Clone]</trigger>.</p>
+              <p>Clone the sample repo as explained in <span for="modal:clone-repository" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:clone-repository'].show()"
+                  class="trigger-click">[Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
+                Tools → Git &amp; GitHub → Clone]</span>.</p>
               <p>Delete the last two commits to simulate cloning the repo 2 commits ago.</p>
-              <modal title="**Clone Repository**" id="modal:clone-repository" class="algolia-no-index">
+              <b-modal id="modal:clone-repository" hide-footer size modal-class="mb-zoom" ref="modal:clone-repository"><template slot="modal-title"><strong>Clone Repository</strong></template>
                 <div>
                   <panel type="seamless" expanded>
                     <span slot="header" class="card-title"><div>
@@ -1781,17 +1697,17 @@ index 15b57f7..17f4528 100644
                     <div>
                       <p>Clone the sample repo <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your computer.</p>
                       <box type="error">
-                        <p>Note that the URL of the Github project is different from the URL you need to clone a repo in that Github project. e.g.
+                        <p>Note that the URL of the Github project is different form the URL you need to clone a repo in that Github project. e.g.
                         </p>
                         <p>Github project URL: <code>https://github.com/se-edu/samplerepo-things</code> <br> Git repo URL: <code>https://github.com/se-edu/samplerepo-things.git</code> (note the <code>.git</code> at the end)</p>
                       </box>
                       <tabs>
-                        <tab header="SourceTree">
+                        <tab><template slot="_header">SourceTree</template>
                           <div>
                             <p><code>File</code> → <code>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
                           </div>
                         </tab>
-                        <tab header="CLI" class="algolia-no-index">
+                        <tab class="algolia-no-index"><template slot="_header">CLI</template>
                           <div>
                             <p>You can use the <code>clone</code> command to clone a repo.</p>
                             <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
@@ -1802,9 +1718,9 @@ index 15b57f7..17f4528 100644
                     <div></div>
                   </panel>
                 </div>
-              </modal>
+              </b-modal>
               <tabs>
-                <tab header="SourceTree">
+                <tab><template slot="_header">SourceTree</template>
                   <div>
                     <p>Right-click the target commit (i.e. the commit that is 2 commits behind the tip) and choose <code>Reset current branch to this commit</code>.</p>
                     <img src="/website/book/gitAndGithub/pull/images/rightClickOnTargetCommit.png" height="100">
@@ -1819,18 +1735,17 @@ index 15b57f7..17f4528 100644
                     <p>Arrow marked as <code>a</code>: The local repo is now at this commit, marked by the <code>master</code> label.<br> Arrow marked as <code>b</code>: <code>origin/master</code> label shows what is the latest commit in the <code>master</code>                      branch in the remote repo.</p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab class="algolia-no-index"><template slot="_header">CLI</template>
                   <div>
                     <p>Use the <code>reset</code> command to delete commits at the tip of the revision history.</p>
-                    <pre><code class="hljs">git reset --hard HEAD~2
-</code></pre>
+                    <pre><code class="hljs"><span>git reset --hard HEAD~2</span></code></pre>
                   </div>
                 </tab>
               </tabs>
               <p>Now, your local repo state is exactly how it would be if you had cloned the repo 2 commits ago, as if somebody has added two more commits to the remote repo since you cloned it. To get those commits to your local repo (i.e. to sync your
                 local repo with upstream repo) you can do a pull.</p>
               <tabs>
-                <tab header="SourceTree">
+                <tab><template slot="_header">SourceTree</template>
                   <div>
                     <p>Click the <code>Pull</code> button in the main menu, choose <code>origin</code> and <code>master</code> in the next dialog, and click <code>OK</code>.</p>
                     <img src="/website/book/gitAndGithub/pull/images/sourcetree_3.png" height="160">
@@ -1840,7 +1755,7 @@ index 15b57f7..17f4528 100644
                     <p></p>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab class="algolia-no-index"><template slot="_header">CLI</template>
                   <div>
                     <p><code>git pull origin</code></p>
                   </div>
@@ -1852,7 +1767,7 @@ index 15b57f7..17f4528 100644
         </div>
       </panel>
       <p><span id="W2-5d"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/push">
+      <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/push" id="tools-git-and-github-push">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W2.5d</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="tools-git-and-github-push"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Push</span></strong><a class="fa fa-anchor" href="#tools-git-and-github-push"></a></h4>
@@ -1861,7 +1776,7 @@ index 15b57f7..17f4528 100644
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/gitAndGithub/pull/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Pull%%" popup-url="/website/book/gitAndGithub/pull" class="algolia-no-index"></panel>
+                <panel src="/website/book/gitAndGithub/pull/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/pull" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Pull</span></p></template></panel>
               </p>
             </div>
             <p></p>
@@ -1880,7 +1795,7 @@ index 15b57f7..17f4528 100644
                 </li>
                 <li>
                   <p>Fork the <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your GitHub account:</p>
-                  <panel type="seamless" header="%%How to fork a repo?%%" class="algolia-no-index">
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">How to fork a repo?</span></p></template>
                     <p>Navigate to the on GitHub and click on the <img src="/website/book/gitAndGithub/push/images/fork.png" height="30"> button on the top-right corner.</p>
                     <p></p>
                   </panel>
@@ -1897,7 +1812,7 @@ index 15b57f7..17f4528 100644
                 </li>
               </ol>
               <tabs>
-                <tab header="SourceTree">
+                <tab><template slot="_header">SourceTree</template>
                   <div>
                     <p>Click the <code>Push</code> button on the main menu, ensure the settings are as follows in the next dialog, and click the <code>Push</code> button on the dialog.</p>
                     <img src="/website/book/gitAndGithub/push/images/sourcetree_1.png" height="150">
@@ -1908,7 +1823,7 @@ index 15b57f7..17f4528 100644
                     </box>
                   </div>
                 </tab>
-                <tab header="CLI" class="algolia-no-index">
+                <tab class="algolia-no-index"><template slot="_header">CLI</template>
                   <div>
                     <p>Use the command <code>git push origin master</code>. Enter Github username and password when prompted.</p>
                     <box type="warning">
@@ -1918,7 +1833,7 @@ index 15b57f7..17f4528 100644
                 </tab>
               </tabs>
               <p></p>
-              <panel header minimized class="algolia-no-index">
+              <panel minimized class="algolia-no-index"><template slot="_header"></template>
                 <span slot="header" class="card-title"><span> Pushing an existing local repo into a new remote repo on GitHub <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
                 </span>
                 </span>
@@ -1940,7 +1855,7 @@ index 15b57f7..17f4528 100644
                 </ol>
                 <p>Next, you can push the existing local repo to the new remote repo as follows:</p>
                 <tabs>
-                  <tab header="SourceTree">
+                  <tab><template slot="_header">SourceTree</template>
                     <ol>
                       <li>Open the local repo in SourceTree.</li>
                       <li>Choose <code>Repository</code> → <code>Repository Settings</code> menu option.</li>
@@ -1956,12 +1871,12 @@ index 15b57f7..17f4528 100644
                         <img src="/website/book/gitAndGithub/push/images/pushToRemote.png" width="470"></li>
                     </ol>
                   </tab>
-                  <tab header="CLI" class="algolia-no-index">
+                  <tab class="algolia-no-index"><template slot="_header">CLI</template>
                     <ol>
                       <li>Navigate to the folder containing the local repo.</li>
                       <li>Set the new remote repo as a <em>remote</em> of the local repo.<br> command: <code>git remote add {remote_name} {remote_repo_url}</code><br> e.g., <code>git remote add origin https://github.com/johndoe/foobar.git</code></li>
-                      <li>Push to the new remote the usual way. You can use the <code>-u</code> flag to inform Git that you wish to
-                        <tooltip content="i.e., remember which branch in the remote repo corresponds to which branch in the local repo">track</tooltip> the branch.<br> e.g., <code>git push -u origin master</code></li>
+                      <li>Push to the new remote the usual way. You can use the <code>-u</code> flag to inform Git that you wish to <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., remember which branch in the remote repo corresponds to which branch in the local repo</span>track</span>
+                        the branch.<br> e.g., <code>git push -u origin master</code></li>
                     </ol>
                   </tab>
                 </tabs>
@@ -2005,7 +1920,7 @@ index 15b57f7..17f4528 100644
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
   </footer>
   </div>
 </body>

@@ -5,24 +5,22 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Documentation</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
-  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
-<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+<body>
   <div id="app">
     <div id="flex-body">
       <div id="content-wrapper">
@@ -38,13 +36,13 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="introduction">
                     <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
                 </div>
                 </span>
                 <div>
                   <div>
-                    <panel type="seamless" expanded>
+                    <panel type="seamless" expanded id="what">
                       <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                   </div>
                   </span>
@@ -149,9 +147,9 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                     </div>
                     <div>
                       <div>
-                        <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                        <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                           <div>
-                            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about API documentation" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about API documentation</p></template>
                               <question>
                                 <p>Choose correct statements about API documentation.</p>
                                 <ul class="task-list">
@@ -175,20 +173,20 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="guidelines">
                 <span slot="header" class="card-title"><div><h2 id="guidelines"><span>Guidelines</span><a class="fa fa-anchor" href="#guidelines"></a></h2>
             </div>
             </span>
             <div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="guideline-go-top-down-not-bottom-up">
                   <span slot="header" class="card-title"><div><h2 id="guideline-go-top-down-not-bottom-up"><span>Guideline: Go Top-down, Not Bottom-up</span><a class="fa fa-anchor" href="#guideline-go-top-down-not-bottom-up"></a></h2>
               </div>
               </span>
               <div>
                 <div>
-                  <panel type="seamless" expanded>
-                    <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                  <panel type="seamless" expanded id="what-2">
+                    <span slot="header" class="card-title"><div><h4 id="what-2"><span>What</span><a class="fa fa-anchor" href="#what-2"></a></h4>
                 </div>
                 </span>
                 <div class="indented">
@@ -208,7 +206,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="why">
                   <span slot="header" class="card-title"><div><h4 id="why"><span>Why</span><a class="fa fa-anchor" href="#why"></a></h4>
               </div>
               </span>
@@ -230,7 +228,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="how">
                 <span slot="header" class="card-title"><div><h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how"></a></h4>
             </div>
             </span>
@@ -279,14 +277,14 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
         </panel>
       </div>
       <div>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="guideline-aim-for-comprehensibility">
           <span slot="header" class="card-title"><div><h2 id="guideline-aim-for-comprehensibility"><span>Guideline: Aim for Comprehensibility</span><a class="fa fa-anchor" href="#guideline-aim-for-comprehensibility"></a></h2>
       </div>
       </span>
       <div>
         <div>
-          <panel type="seamless" expanded>
-            <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+          <panel type="seamless" expanded id="what-3">
+            <span slot="header" class="card-title"><div><h4 id="what-3"><span>What</span><a class="fa fa-anchor" href="#what-3"></a></h4>
         </div>
         </span>
         <div class="indented">
@@ -306,8 +304,8 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
         </panel>
       </div>
       <div>
-        <panel type="seamless" expanded>
-          <span slot="header" class="card-title"><div><h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how"></a></h4>
+        <panel type="seamless" expanded id="how-2">
+          <span slot="header" class="card-title"><div><h4 id="how-2"><span>How</span><a class="fa fa-anchor" href="#how-2"></a></h4>
       </div>
       </span>
       <div class="indented">
@@ -333,9 +331,9 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about documentation" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about documentation</p></template>
                   <question>
                     <p>It is recommended for developer documents,</p>
                     <ul class="task-list">
@@ -361,14 +359,14 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="guideline-document-minimally-but-sufficiently">
       <span slot="header" class="card-title"><div><h2 id="guideline-document-minimally-but-sufficiently"><span>Guideline: Document Minimally, but Sufficiently</span><a class="fa fa-anchor" href="#guideline-document-minimally-but-sufficiently"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+      <panel type="seamless" expanded id="what-4">
+        <span slot="header" class="card-title"><div><h4 id="what-4"><span>What</span><a class="fa fa-anchor" href="#what-4"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -392,8 +390,8 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
     </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
-      <span slot="header" class="card-title"><div><h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how"></a></h4>
+    <panel type="seamless" expanded id="how-3">
+      <span slot="header" class="card-title"><div><h4 id="how-3"><span>How</span><a class="fa fa-anchor" href="#how-3"></a></h4>
   </div>
   </span>
   <div class="indented">
@@ -420,20 +418,20 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="tools">
       <span slot="header" class="card-title"><div><h2 id="tools"><span>Tools</span><a class="fa fa-anchor" href="#tools"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="javadoc">
         <span slot="header" class="card-title"><div><h2 id="javadoc"><span>JavaDoc</span><a class="fa fa-anchor" href="#javadoc"></a></h2>
     </div>
     </span>
     <div>
       <div>
-        <panel type="seamless" expanded>
-          <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+        <panel type="seamless" expanded id="what-5">
+          <span slot="header" class="card-title"><div><h4 id="what-5"><span>What</span><a class="fa fa-anchor" href="#what-5"></a></h4>
       </div>
       </span>
       <div class="indented">
@@ -449,29 +447,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
           <p><strong>Javadoc is a tool for generating API documentation in HTML format from doc comments in source.</strong> In addition, modern IDEs use JavaDoc comments to generate explanatory tool tips.</p>
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example method header comment in JavaDoc format (adapted from <a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">Oracle's Java documentation</a>)</p>
-            <pre><code class="hljs java"><span class="hljs-comment">/**
- * Returns an Image object that can then be painted on the screen.
- * The url argument must specify an absolute {<span class="hljs-doctag">@link</span> URL}. The name
- * argument is a specifier that is relative to the url argument.
- * &lt;p&gt;
- * This method always returns immediately, whether or not the
- * image exists. When this applet attempts to draw the image on
- * the screen, the data will be loaded. The graphics primitives
- * that draw the image will incrementally paint on the screen.
- *
- * <span class="hljs-doctag">@param</span> url an absolute URL giving the base location of the image
- * <span class="hljs-doctag">@param</span> name the location of the image, relative to the url argument
- * <span class="hljs-doctag">@return</span> the image at the specified URL
- * <span class="hljs-doctag">@see</span> Image
- */</span>
- <span class="hljs-function"><span class="hljs-keyword">public</span> Image <span class="hljs-title">getImage</span><span class="hljs-params">(URL url, String name)</span> </span>{
-        <span class="hljs-keyword">try</span> {
-            <span class="hljs-keyword">return</span> getImage(<span class="hljs-keyword">new</span> URL(url, name));
-        } <span class="hljs-keyword">catch</span> (MalformedURLException e) {
-            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
-        }
- }
-</code></pre>
+            <pre><code class="hljs java"><span><span class="hljs-comment">/**</span></span><span><span class="hljs-comment"> * Returns an Image object that can then be painted on the screen.</span></span><span><span class="hljs-comment"> * The url argument must specify an absolute {<span class="hljs-doctag">@link</span> URL}. The name</span></span><span><span class="hljs-comment"> * argument is a specifier that is relative to the url argument.</span></span><span><span class="hljs-comment"> * &lt;p&gt;</span></span><span><span class="hljs-comment"> * This method always returns immediately, whether or not the</span></span><span><span class="hljs-comment"> * image exists. When this applet attempts to draw the image on</span></span><span><span class="hljs-comment"> * the screen, the data will be loaded. The graphics primitives</span></span><span><span class="hljs-comment"> * that draw the image will incrementally paint on the screen.</span></span><span><span class="hljs-comment"> *</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> url an absolute URL giving the base location of the image</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> name the location of the image, relative to the url argument</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> the image at the specified URL</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@see</span> Image</span></span><span><span class="hljs-comment"> */</span></span><span> <span class="hljs-function"><span class="hljs-keyword">public</span> Image <span class="hljs-title">getImage</span><span class="hljs-params">(URL url, String name)</span> </span>{</span><span>        <span class="hljs-keyword">try</span> {</span><span>            <span class="hljs-keyword">return</span> getImage(<span class="hljs-keyword">new</span> URL(url, name));</span><span>        } <span class="hljs-keyword">catch</span> (MalformedURLException e) {</span><span>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;</span><span>        }</span><span> }</span></code></pre>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Generated HTML documentation:</p>
             <p><a href="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" target="_self"><img src="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" alt class="img-fluid"></a></p>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Tooltip generated by Intellij IDE:</p>
@@ -485,8 +461,8 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
       </panel>
     </div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how"></a></h4>
+      <panel type="seamless" expanded id="how-4">
+        <span slot="header" class="card-title"><div><h4 id="how-4"><span>How</span><a class="fa fa-anchor" href="#how-4"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -501,38 +477,13 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
       <div>
         <p>In the absence of more extensive guidelines (e.g., given in a coding standard adopted by your project), you can follow the two examples below in your code.</p>
         <p><strong>A minimal javadoc comment example for methods:</strong></p>
-        <pre><code class="hljs java"><span class="hljs-comment">/**
- * Returns lateral location of the specified position.
- * If the position is unset, NaN is returned.
- *
- * <span class="hljs-doctag">@param</span> x  X coordinate of position.
- * <span class="hljs-doctag">@param</span> y Y coordinate of position.
- * <span class="hljs-doctag">@param</span> zone Zone of position.
- * <span class="hljs-doctag">@return</span> Lateral location.
- * <span class="hljs-doctag">@throws</span> IllegalArgumentException  If zone is &lt;= 0.
- */</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">computeLocation</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y, <span class="hljs-keyword">int</span> zone)</span>
-    <span class="hljs-keyword">throws</span> IllegalArgumentException </span>{
-  ...
-}
-</code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-comment">/**</span></span><span><span class="hljs-comment"> * Returns lateral location of the specified position.</span></span><span><span class="hljs-comment"> * If the position is unset, NaN is returned.</span></span><span><span class="hljs-comment"> *</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> x  X coordinate of position.</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> y Y coordinate of position.</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> zone Zone of position.</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> Lateral location.</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@throws</span> IllegalArgumentException  If zone is &lt;= 0.</span></span><span><span class="hljs-comment"> */</span></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">computeLocation</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y, <span class="hljs-keyword">int</span> zone)</span></span></span><span><span class="hljs-function">    <span class="hljs-keyword">throws</span> IllegalArgumentException </span>{</span><span>  ...</span><span>}</span></code></pre>
         <p><strong>A minimal javadoc comment example for classes:</strong></p>
-        <pre><code class="hljs java"><span class="hljs-keyword">package</span> ...
-
-<span class="hljs-keyword">import</span> ...
-
-<span class="hljs-comment">/**
- * Represents a location in a 2D space. A &lt;code&gt;Point&lt;/code&gt; object corresponds to
- * a coordinate represented by two integers e.g., &lt;code&gt;3,6&lt;/code&gt;
- */</span>
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span></span>{
-    <span class="hljs-comment">//...</span>
-}
-</code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-keyword">package</span> ...</span><span>&#x200B;</span><span><span class="hljs-keyword">import</span> ...</span><span>&#x200B;</span><span><span class="hljs-comment">/**</span></span><span><span class="hljs-comment"> * Represents a location in a 2D space. A &lt;code&gt;Point&lt;/code&gt; object corresponds to</span></span><span><span class="hljs-comment"> * a coordinate represented by two integers e.g., &lt;code&gt;3,6&lt;/code&gt;</span></span><span><span class="hljs-comment"> */</span></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span></span>{</span><span>    <span class="hljs-comment">//...</span></span><span>}</span></code></pre>
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+          <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
             <div>
               <ul>
                 <li><a href="https://www.tutorialspoint.com/java/java_documentation.htm">A short tutorial on writing JavaDoc comments</a> <span class="dimmed">-- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></span></li>
@@ -549,14 +500,14 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="markdown">
       <span slot="header" class="card-title"><div><h2 id="markdown"><span>Markdown</span><a class="fa fa-anchor" href="#markdown"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+      <panel type="seamless" expanded id="what-6">
+        <span slot="header" class="card-title"><div><h4 id="what-6"><span>What</span><a class="fa fa-anchor" href="#what-6"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -576,8 +527,8 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
     </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
-      <span slot="header" class="card-title"><div><h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how"></a></h4>
+    <panel type="seamless" expanded id="how-5">
+      <span slot="header" class="card-title"><div><h4 id="how-5"><span>How</span><a class="fa fa-anchor" href="#how-5"></a></h4>
   </div>
   </span>
   <div class="indented">
@@ -602,14 +553,14 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="asciidoc">
       <span slot="header" class="card-title"><div><h2 id="asciidoc"><span>AsciiDoc</span><a class="fa fa-anchor" href="#asciidoc"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+      <panel type="seamless" expanded id="what-7">
+        <span slot="header" class="card-title"><div><h4 id="what-7"><span>What</span><a class="fa fa-anchor" href="#what-7"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -642,26 +593,6 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
   </div>
   </div>
   </div>
-  <nav id="page-nav" class="navbar navbar-light bg-transparent">
-    <div class="border-left-grey nav-inner position-sticky slim-scroll">
-
-      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-        <a class="nav-link py-1" href="#documentation">Documentation&#x200E;</a>
-        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-          <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
-          <a class="nav-link py-1" href="#guidelines">Guidelines&#x200E;</a>
-          <a class="nav-link py-1" href="#guideline-go-top-down-not-bottom-up">Guideline: Go Top-down, Not Bottom-up&#x200E;</a>
-          <a class="nav-link py-1" href="#guideline-aim-for-comprehensibility">Guideline: Aim for Comprehensibility&#x200E;</a>
-          <a class="nav-link py-1" href="#guideline-document-minimally-but-sufficiently">Guideline: Document Minimally, but Sufficiently&#x200E;</a>
-          <a class="nav-link py-1" href="#tools">Tools&#x200E;</a>
-          <a class="nav-link py-1" href="#javadoc">JavaDoc&#x200E;</a>
-          <a class="nav-link py-1" href="#markdown">Markdown&#x200E;</a>
-          <a class="nav-link py-1" href="#asciidoc">AsciiDoc&#x200E;</a>
-        </nav>
-
-      </nav>
-    </div>
-  </nav>
   </div>
   </div>
 </body>

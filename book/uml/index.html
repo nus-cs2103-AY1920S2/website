@@ -5,24 +5,22 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - UML</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
-  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
-<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+<body>
   <div id="app">
     <div id="flex-body">
       <div id="content-wrapper">
@@ -38,19 +36,19 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="class-diagrams">
                     <span slot="header" class="card-title"><div><h2 id="class-diagrams"><span>Class Diagrams</span><a class="fa fa-anchor" href="#class-diagrams"></a></h2>
                 </div>
                 </span>
                 <div>
                   <div>
-                    <panel type="seamless" expanded>
+                    <panel type="seamless" expanded id="introduction">
                       <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
                   </div>
                   </span>
                   <div>
                     <div>
-                      <panel type="seamless" expanded>
+                      <panel type="seamless" expanded id="what">
                         <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                     </div>
                     </span>
@@ -77,14 +75,14 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="classes">
                   <span slot="header" class="card-title"><div><h2 id="classes"><span>Classes</span><a class="fa fa-anchor" href="#classes"></a></h2>
               </div>
               </span>
               <div>
                 <div>
-                  <panel type="seamless" expanded>
-                    <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                  <panel type="seamless" expanded id="what-2">
+                    <span slot="header" class="card-title"><div><h4 id="what-2"><span>What</span><a class="fa fa-anchor" href="#what-2"></a></h4>
                 </div>
                 </span>
                 <div class="indented">
@@ -104,36 +102,12 @@
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <code>Table</code> class shown in UML notation:</p>
                       <img src="/website/book/uml/classDiagrams/classes/what/images/operations.png" height="150">
                       <p></p>
-                      <panel type="seamless" header="The equivalent code" class="algolia-no-index">
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>The equivalent code</p></template>
                         <div class="alt-java">
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{
-
-    Integer number;
-    Chair[] chairs = <span class="hljs-keyword">null</span>;
-    
-    <span class="hljs-function">Integer <span class="hljs-title">getNumber</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setNumber</span><span class="hljs-params">(Integer n)</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span></span>{</span><span>&#x200B;</span><span>    Integer number;</span><span>    Chair[] chairs = <span class="hljs-keyword">null</span>;</span><span>    </span><span>    <span class="hljs-function">Integer <span class="hljs-title">getNumber</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setNumber</span><span class="hljs-params">(Integer n)</span></span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>}</span></code></pre>
                         </div>
                         <div class="alt-python">
-                          <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span>:</span>
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-    self.number = <span class="hljs-number">0</span>
-    self.chairs = []
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_number</span><span class="hljs-params">(self)</span>:</span>
-    <span class="hljs-comment"># ...</span>
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_number</span><span class="hljs-params">(self, n)</span>:</span>
-    <span class="hljs-comment"># ...</span>
-</code></pre>
+                          <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Table</span>:</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>    self.number = <span class="hljs-number">0</span></span><span>    self.chairs = []</span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_number</span><span class="hljs-params">(self)</span>:</span></span><span>    <span class="hljs-comment"># ...</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_number</span><span class="hljs-params">(self, n)</span>:</span></span><span>    <span class="hljs-comment"># ...</span></span></code></pre>
                         </div>
                       </panel>
                     </box>
@@ -149,7 +123,7 @@
                       <li><code>#</code> : protected</li>
                       <li><code>~</code> : package private</li>
                     </ul>
-                    <panel type="seamless" header="How visibilities map to programming language features" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>How visibilities map to programming language features</p></template>
                       <div class="table-responsive">
                         <table class="markbind-table table table-bordered table-striped">
                           <thead>
@@ -194,9 +168,9 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which classes are correct?" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which classes are correct?</p></template>
                             <question>
                               <p>Which of these follow the correct UML notation?</p>
                               <img src="/website/book/uml/classDiagrams/classes/what/images/chooseNotation.jpg" height="130">
@@ -221,41 +195,15 @@
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Draw Car class" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw Car class</p></template>
                             <question>
                               <p>Draw a UML diagram to represent the <code>Car</code> class as given below. Include visibilities.</p>
                               <div class="alt-java">
-                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
-
-    Engine engine;
-    <span class="hljs-keyword">private</span> List&lt;Wheel&gt; wheels = <span class="hljs-keyword">null</span>;
-    <span class="hljs-keyword">public</span> String model;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drive</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{
-        move(speed);
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">move</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{
-        ...
-    }
-}
-</code></pre>
+                                <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{</span><span>&#x200B;</span><span>    Engine engine;</span><span>    <span class="hljs-keyword">private</span> List&lt;Wheel&gt; wheels = <span class="hljs-keyword">null</span>;</span><span>    <span class="hljs-keyword">public</span> String model;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">drive</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{</span><span>        move(speed);</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">move</span><span class="hljs-params">(<span class="hljs-keyword">int</span> speed)</span></span>{</span><span>        ...</span><span>    }</span><span>}</span></code></pre>
                               </div>
                               <div class="alt-python">
                                 <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You may omit <code>self</code> from method signatures in the class diagram.</p>
-                                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, model)</span>:</span>
-    self._engine = <span class="hljs-literal">None</span> <span class="hljs-comment"># type: Engine</span>
-    self.__wheels = []  <span class="hljs-comment"># type: a list of Wheel objects</span>
-    self.model = model  <span class="hljs-comment"># type: string</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drive</span><span class="hljs-params">(self, speed)</span>:</span> <span class="hljs-comment"># speed is an int</span>
-      self.move(speed)
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__move</span><span class="hljs-params">(self, speed)</span>:</span>
-      <span class="hljs-keyword">pass</span>
-</code></pre>
+                                <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, model)</span>:</span></span><span>    self._engine = <span class="hljs-literal">None</span> <span class="hljs-comment"># type: Engine</span></span><span>    self.__wheels = []  <span class="hljs-comment"># type: a list of Wheel objects</span></span><span>    self.model = model  <span class="hljs-comment"># type: string</span></span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drive</span><span class="hljs-params">(self, speed)</span>:</span> <span class="hljs-comment"># speed is an int</span></span><span>      self.move(speed)</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__move</span><span class="hljs-params">(self, speed)</span>:</span></span><span>      <span class="hljs-keyword">pass</span></span></code></pre>
                               </div>
                             </question>
                           </panel>
@@ -270,14 +218,14 @@
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded>
+            <panel type="seamless" expanded id="associations">
               <span slot="header" class="card-title"><div><h2 id="associations"><span>Associations</span><a class="fa fa-anchor" href="#associations"></a></h2>
           </div>
           </span>
           <div>
             <div>
-              <panel type="seamless" expanded>
-                <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+              <panel type="seamless" expanded id="what-3">
+                <span slot="header" class="card-title"><div><h4 id="what-3"><span>What</span><a class="fa fa-anchor" href="#what-3"></a></h4>
             </div>
             </span>
             <div class="indented">
@@ -303,7 +251,7 @@
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded>
+            <panel type="seamless" expanded id="navigability">
               <span slot="header" class="card-title"><div><h4 id="navigability"><span>Navigability</span><a class="fa fa-anchor" href="#navigability"></a></h4>
           </div>
           </span>
@@ -323,27 +271,10 @@
                 <img src="/website/book/uml/classDiagrams/associations/navigability/images/logicMinefield.png" height="40">
                 <div>
                   <div class="alt-java">
-                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{
-    Minefield minefield;
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span></span>{
-    ...
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span></span>{</span><span>    Minefield minefield;</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span></span>{</span><span>    ...</span><span>}</span></code></pre>
                   </div>
                   <div class="alt-python">
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, minefield)</span>:</span>
-    self.minefield = minefield
-    
-  <span class="hljs-comment"># ...</span>
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span>
-  <span class="hljs-comment"># ...</span>
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span>:</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, minefield)</span>:</span></span><span>    self.minefield = minefield</span><span>    </span><span>  <span class="hljs-comment"># ...</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Minefield</span>:</span></span><span>  <span class="hljs-comment"># ...</span></span></code></pre>
                   </div>
                 </div>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example of a bidirectional navigability; each class is aware of the other.</p>
@@ -358,9 +289,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What does the navigability given by this diagram mean?" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What does the navigability given by this diagram mean?</p></template>
                       <question>
                         <img src="/website/book/uml/classDiagrams/associations/navigability/images/unitItem.png" height="100">
                         <p></p>
@@ -383,7 +314,7 @@
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="roles">
             <span slot="header" class="card-title"><div><h4 id="roles"><span>Roles</span><a class="fa fa-anchor" href="#roles"></a></h4>
         </div>
         </span>
@@ -405,24 +336,10 @@
               <p></p>
               <p>Note how the variable names match closely with the association roles.</p>
               <div class="alt-java">
-                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
-    Woman wife;
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span></span>{
-    Man husband;
-}
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{</span><span>    Woman wife;</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span></span>{</span><span>    Man husband;</span><span>}</span></code></pre>
               </div>
               <div class="alt-python">
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span>:</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-    self.wife = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Woman object</span>
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span>:</span>
-   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-     self.husband = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Man object</span>
-</code></pre>
+                <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>    self.wife = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Woman object</span></span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span>:</span></span><span>   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>     self.husband = <span class="hljs-literal">None</span> <span class="hljs-comment"># a Man object</span></span></code></pre>
               </div>
             </box>
             <box>
@@ -430,16 +347,10 @@
               <img src="/website/book/uml/classDiagrams/associations/roles/images/adminStudent.png" height="70">
               <p></p>
               <div class="alt-java">
-                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{
-    List&lt;Student&gt; charges;
-}
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span></span>{</span><span>    List&lt;Student&gt; charges;</span><span>}</span></code></pre>
               </div>
               <div class="alt-python">
-                <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span>:</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-    self.charges = [] <span class="hljs-comment"># list of Student objects</span>
-</code></pre>
+                <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span>:</span></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>    self.charges = [] <span class="hljs-comment"># list of Student objects</span></span></code></pre>
               </div>
             </box>
           </div>
@@ -448,7 +359,7 @@
         </panel>
       </div>
       <div>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="labels">
           <span slot="header" class="card-title"><div><h4 id="labels"><span>Labels</span><a class="fa fa-anchor" href="#labels"></a></h4>
       </div>
       </span>
@@ -479,7 +390,7 @@
       </panel>
     </div>
     <div>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="multiplicity">
         <span slot="header" class="card-title"><div><h4 id="multiplicity"><span>Multiplicity</span><a class="fa fa-anchor" href="#multiplicity"></a></h4>
     </div>
     </span>
@@ -519,9 +430,9 @@
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which statement agrees with the  multiplicity shown in this diagram?" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which statement agrees with the  multiplicity shown in this diagram?</p></template>
                 <question>
                   <img src="/website/book/uml/classDiagrams/associations/multiplicity/images/unitItem.png" height="100">
                   <p></p>
@@ -547,14 +458,14 @@
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="dependencies">
       <span slot="header" class="card-title"><div><h2 id="dependencies"><span>Dependencies</span><a class="fa fa-anchor" href="#dependencies"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="dependencies"><span>Dependencies</span><a class="fa fa-anchor" href="#dependencies"></a></h4>
+      <panel type="seamless" expanded id="dependencies-2">
+        <span slot="header" class="card-title"><div><h4 id="dependencies-2"><span>Dependencies</span><a class="fa fa-anchor" href="#dependencies-2"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -583,14 +494,14 @@
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="associations-as-attributes">
       <span slot="header" class="card-title"><div><h2 id="associations-as-attributes"><span>Associations as Attributes</span><a class="fa fa-anchor" href="#associations-as-attributes"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="associations-as-attributes"><span>Associations as Attributes</span><a class="fa fa-anchor" href="#associations-as-attributes"></a></h4>
+      <panel type="seamless" expanded id="associations-as-attributes-2">
+        <span slot="header" class="card-title"><div><h4 id="associations-as-attributes-2"><span>Associations as Attributes</span><a class="fa fa-anchor" href="#associations-as-attributes-2"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -628,14 +539,14 @@
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="enumerations">
       <span slot="header" class="card-title"><div><h2 id="enumerations"><span>Enumerations</span><a class="fa fa-anchor" href="#enumerations"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+      <panel type="seamless" expanded id="what-4">
+        <span slot="header" class="card-title"><div><h4 id="what-4"><span>What</span><a class="fa fa-anchor" href="#what-4"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -658,10 +569,10 @@
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+          <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md> Define WeekDay Enum" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Define WeekDay Enum</p></template>
                   <question has-input="true">
                     <p>Show (in UML notation) an enumeration called <code>WeekDay</code> to use when the value can only be <code>Monday</code> ... <code>Friday</code>.</p>
                   </question>
@@ -678,14 +589,14 @@
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="class-level-members">
       <span slot="header" class="card-title"><div><h2 id="class-level-members"><span>Class-Level Members</span><a class="fa fa-anchor" href="#class-level-members"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="class-level-members"><span>Class-Level Members</span><a class="fa fa-anchor" href="#class-level-members"></a></h4>
+      <panel type="seamless" expanded id="class-level-members-2">
+        <span slot="header" class="card-title"><div><h4 id="class-level-members-2"><span>Class-Level Members</span><a class="fa fa-anchor" href="#class-level-members-2"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -713,14 +624,14 @@
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="association-classes">
       <span slot="header" class="card-title"><div><h2 id="association-classes"><span>Association Classes</span><a class="fa fa-anchor" href="#association-classes"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="association-classes"><span>Association Classes</span><a class="fa fa-anchor" href="#association-classes"></a></h4>
+      <panel type="seamless" expanded id="association-classes-2">
+        <span slot="header" class="card-title"><div><h4 id="association-classes-2"><span>Association Classes</span><a class="fa fa-anchor" href="#association-classes-2"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -749,14 +660,14 @@
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="composition">
       <span slot="header" class="card-title"><div><h2 id="composition"><span>Composition</span><a class="fa fa-anchor" href="#composition"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="composition"><span>Composition</span><a class="fa fa-anchor" href="#composition"></a></h4>
+      <panel type="seamless" expanded id="composition-2">
+        <span slot="header" class="card-title"><div><h4 id="composition-2"><span>Composition</span><a class="fa fa-anchor" href="#composition-2"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -787,14 +698,14 @@
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="aggregation">
       <span slot="header" class="card-title"><div><h2 id="aggregation"><span>Aggregation</span><a class="fa fa-anchor" href="#aggregation"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="aggregation"><span>Aggregation</span><a class="fa fa-anchor" href="#aggregation"></a></h4>
+      <panel type="seamless" expanded id="aggregation-2">
+        <span slot="header" class="card-title"><div><h4 id="aggregation-2"><span>Aggregation</span><a class="fa fa-anchor" href="#aggregation-2"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -823,9 +734,9 @@
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which one is not recommended to use?" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which one is not recommended to use?</p></template>
                 <question>
                   <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
                   <ul radio-group="29b56" class="radio-list">
@@ -848,13 +759,13 @@
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="class-inheritance">
       <span slot="header" class="card-title"><div><h2 id="class-inheritance"><span>Class Inheritance</span><a class="fa fa-anchor" href="#class-inheritance"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="inheritance">
         <span slot="header" class="card-title"><div><h4 id="inheritance"><span>Inheritance</span><a class="fa fa-anchor" href="#inheritance"></a></h4>
     </div>
     </span>
@@ -886,14 +797,14 @@
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="interfaces">
       <span slot="header" class="card-title"><div><h2 id="interfaces"><span>Interfaces</span><a class="fa fa-anchor" href="#interfaces"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="interfaces"><span>Interfaces</span><a class="fa fa-anchor" href="#interfaces"></a></h4>
+      <panel type="seamless" expanded id="interfaces-2">
+        <span slot="header" class="card-title"><div><h4 id="interfaces-2"><span>Interfaces</span><a class="fa fa-anchor" href="#interfaces-2"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -921,14 +832,14 @@
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="abstract-classes">
       <span slot="header" class="card-title"><div><h2 id="abstract-classes"><span>Abstract Classes</span><a class="fa fa-anchor" href="#abstract-classes"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+      <panel type="seamless" expanded id="what-5">
+        <span slot="header" class="card-title"><div><h4 id="what-5"><span>What</span><a class="fa fa-anchor" href="#what-5"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -958,13 +869,13 @@
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="combine">
       <span slot="header" class="card-title"><div><h2 id="combine"><span>Combine</span><a class="fa fa-anchor" href="#combine"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="basic">
         <span slot="header" class="card-title"><div><h4 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h4>
     </div>
     </span>
@@ -980,9 +891,9 @@
       <div></div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Class Diagram for code" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Class Diagram for code</p></template>
                 <question>
                   <div class="alt-java">
                     <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running <code>Main#main()</code>.</p>
@@ -990,88 +901,11 @@
                       <li>Make the multiplicities as strict as possible without contradicting the code.</li>
                       <li>You may omit the <code>Main</code> class from both diagrams.</li>
                     </ul>
-                    <pre><code class="hljs java">
-<span class="hljs-keyword">import</span> java.util.ArrayList;
-<span class="hljs-keyword">import</span> java.util.List;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        Item item1 = <span class="hljs-keyword">new</span> Item();
-        Item item2 = <span class="hljs-keyword">new</span> Item();
-        Box box1 = <span class="hljs-keyword">new</span> Box(item1);
-        Box box2 = <span class="hljs-keyword">new</span> Box(item2);
-        item2.setMainCard(<span class="hljs-keyword">new</span> Card());
-        item2.addPreviousBox(box1);
-        item2.addPreviousBox(box2);
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span></span>{
-    <span class="hljs-keyword">private</span> Item item;
-    Box (Item item){
-        <span class="hljs-keyword">this</span>.item = item;
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span>{
-    <span class="hljs-keyword">private</span> List&lt;Box&gt; previousBoxes = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
-    <span class="hljs-keyword">private</span> Card mainCard = <span class="hljs-keyword">null</span>;
-    <span class="hljs-keyword">private</span> Card subCard = <span class="hljs-keyword">null</span>;
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setMainCard</span><span class="hljs-params">(Card card)</span></span>{
-        <span class="hljs-keyword">this</span>.mainCard = card;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setSubCard</span><span class="hljs-params">(Card card)</span></span>{
-        <span class="hljs-keyword">this</span>.subCard = card;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPreviousBox</span><span class="hljs-params">(Box previousBox)</span></span>{
-        previousBoxes.add(previousBox);
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span></span>{
-
-}
-</code></pre>
+                    <pre><code class="hljs java"><span>&#x200B;</span><span><span class="hljs-keyword">import</span> java.util.ArrayList;</span><span><span class="hljs-keyword">import</span> java.util.List;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        Item item1 = <span class="hljs-keyword">new</span> Item();</span><span>        Item item2 = <span class="hljs-keyword">new</span> Item();</span><span>        Box box1 = <span class="hljs-keyword">new</span> Box(item1);</span><span>        Box box2 = <span class="hljs-keyword">new</span> Box(item2);</span><span>        item2.setMainCard(<span class="hljs-keyword">new</span> Card());</span><span>        item2.addPreviousBox(box1);</span><span>        item2.addPreviousBox(box2);</span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span></span>{</span><span>    <span class="hljs-keyword">private</span> Item item;</span><span>    Box (Item item){</span><span>        <span class="hljs-keyword">this</span>.item = item;</span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span>{</span><span>    <span class="hljs-keyword">private</span> List&lt;Box&gt; previousBoxes = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();</span><span>    <span class="hljs-keyword">private</span> Card mainCard = <span class="hljs-keyword">null</span>;</span><span>    <span class="hljs-keyword">private</span> Card subCard = <span class="hljs-keyword">null</span>;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setMainCard</span><span class="hljs-params">(Card card)</span></span>{</span><span>        <span class="hljs-keyword">this</span>.mainCard = card;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setSubCard</span><span class="hljs-params">(Card card)</span></span>{</span><span>        <span class="hljs-keyword">this</span>.subCard = card;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPreviousBox</span><span class="hljs-params">(Box previousBox)</span></span>{</span><span>        previousBoxes.add(previousBox);</span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span></span>{</span><span>&#x200B;</span><span>}</span></code></pre>
                   </div>
                   <div class="alt-python">
                     <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running the code. Make the multiplicities as strict as possible without contradicting the code.</p>
-                    <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span>:</span>
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, item)</span>:</span>
-    self.__item = item <span class="hljs-comment"># type: Item</span>
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>:</span>
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-    self.__previous_boxes = [] <span class="hljs-comment"># type: list of Box objects</span>
-    self.__main_card = <span class="hljs-literal">None</span>    <span class="hljs-comment"># type: Car</span>
-    self.__sub_card = <span class="hljs-literal">None</span>     <span class="hljs-comment"># type: Card</span>
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_main_card</span><span class="hljs-params">(self, card)</span>:</span>
-    self.__main_card = card <span class="hljs-comment"># type: Card</span>
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_sub_card</span><span class="hljs-params">(self, card)</span>:</span>
-    self.__sub_card = card <span class="hljs-comment"># type: Card</span>
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_previous_box</span><span class="hljs-params">(self, previous_box)</span>:</span>
-    self.__previous_boxes.append(previous_box)
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span>:</span>
-  <span class="hljs-keyword">pass</span>
-
-
-item1 = Item();
-item2 = Item();
-box1 = Box(item1);
-box2 = Box(item2);
-item2.set_main_card(Card());
-item2.add_previous_box(box1);
-item2.add_previous_box(box2);
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span>:</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, item)</span>:</span></span><span>    self.__item = item <span class="hljs-comment"># type: Item</span></span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>:</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>    self.__previous_boxes = [] <span class="hljs-comment"># type: list of Box objects</span></span><span>    self.__main_card = <span class="hljs-literal">None</span>    <span class="hljs-comment"># type: Car</span></span><span>    self.__sub_card = <span class="hljs-literal">None</span>     <span class="hljs-comment"># type: Card</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_main_card</span><span class="hljs-params">(self, card)</span>:</span></span><span>    self.__main_card = card <span class="hljs-comment"># type: Card</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_sub_card</span><span class="hljs-params">(self, card)</span>:</span></span><span>    self.__sub_card = card <span class="hljs-comment"># type: Card</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_previous_box</span><span class="hljs-params">(self, previous_box)</span>:</span></span><span>    self.__previous_boxes.append(previous_box)</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span>:</span></span><span>  <span class="hljs-keyword">pass</span></span><span>&#x200B;</span><span>&#x200B;</span><span>item1 = Item();</span><span>item2 = Item();</span><span>box1 = Box(item1);</span><span>box2 = Box(item2);</span><span>item2.set_main_card(Card());</span><span>item2.add_previous_box(box1);</span><span>item2.add_previous_box(box2);</span></code></pre>
                   </div>
                   <div slot="answer" class="algolia-no-index">
                     <img src="/website/book/uml/classDiagrams/combine/basic/images/classDiagramForCodeAnswer.png" width="600"></div>
@@ -1079,7 +913,7 @@ item2.add_previous_box(box2);
               </panel>
             </div>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md> Implement Class Diagram" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Implement Class Diagram</p></template>
                 <question>
                   <p>Implement the class structure given below:</p>
                   <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
@@ -1088,7 +922,7 @@ item2.add_previous_box(box2);
               </panel>
             </div>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md> Draw an Object Diagrams for the Class Diagram (Person-Guardian)" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw an Object Diagrams for the Class Diagram (Person-Guardian)</p></template>
                 <question>
                   <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p>
                   <img src="/website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
@@ -1131,14 +965,14 @@ item2.add_previous_box(box2);
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="sequence-diagrams">
       <span slot="header" class="card-title"><div><h2 id="sequence-diagrams"><span>Sequence Diagrams</span><a class="fa fa-anchor" href="#sequence-diagrams"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
+      <panel type="seamless" expanded id="introduction-2">
+        <span slot="header" class="card-title"><div><h4 id="introduction-2"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-2"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -1154,25 +988,7 @@ item2.add_previous_box(box2);
         <p><strong>A UML sequence diagram <em>captures the interactions between multiple objects for a given scenario.</em></strong></p>
         <box>
           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below.</p>
-          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Machine</span> </span>{
-
-    <span class="hljs-function">Unit <span class="hljs-title">producePrototype</span><span class="hljs-params">()</span> </span>{
-        Unit prototype = <span class="hljs-keyword">new</span> Unit();
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
-            prototype.stressTest();
-        }
-        <span class="hljs-keyword">return</span> prototype;
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Unit</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stressTest</span><span class="hljs-params">()</span> </span>{
-
-    }
-}
-
-</code></pre>
+          <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Machine</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function">Unit <span class="hljs-title">producePrototype</span><span class="hljs-params">()</span> </span>{</span><span>        Unit prototype = <span class="hljs-keyword">new</span> Unit();</span><span>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {</span><span>            prototype.stressTest();</span><span>        }</span><span>        <span class="hljs-keyword">return</span> prototype;</span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Unit</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stressTest</span><span class="hljs-params">()</span> </span>{</span><span>&#x200B;</span><span>    }</span><span>}</span><span>&#x200B;</span></code></pre>
           <p>Here is the sequence diagram to model the interactions for the method call <code>producePrototype()</code> on a <code>Machine</code> object.</p>
           <img src="/website/book/uml/sequenceDiagrams/introduction/images/Machine.png" width="450">
           <p></p>
@@ -1183,8 +999,8 @@ item2.add_previous_box(box2);
     </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
-      <span slot="header" class="card-title"><div><h4 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h4>
+    <panel type="seamless" expanded id="basic-2">
+      <span slot="header" class="card-title"><div><h4 id="basic-2"><span>Basic</span><a class="fa fa-anchor" href="#basic-2"></a></h4>
   </div>
   </span>
   <div class="indented">
@@ -1201,8 +1017,8 @@ item2.add_previous_box(box2);
       <img src="/website/book/uml/sequenceDiagrams/basic/images/notation.png" height="300">
       <p></p>
       <box>
-        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sequence diagram shows some interactions between a human user and the Text UI of a
-          <tooltip content="Command Line Interface">CLI</tooltip> Minesweeper game.</p>
+        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sequence diagram shows some interactions between a human user and the Text UI of a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter"
+            class="trigger"><span data-mb-html-for="_content">Command Line Interface</span>CLI</span> Minesweeper game.</p>
         <img src="/website/book/uml/sequenceDiagrams/basic/images/playerText.png" height="300">
         <p></p>
         <p>The player runs the <code>newgame</code> action on the <code>TextUi</code> object which results in the <code>TextUi</code> showing the minefield to the player. Then, the player runs the <code>clear x y</code> command; in response, the <code>TextUi</code>          object shows the updated minefield.</p>
@@ -1224,7 +1040,7 @@ item2.add_previous_box(box2);
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="object-creation">
       <span slot="header" class="card-title"><div><h4 id="object-creation"><span>Object Creation</span><a class="fa fa-anchor" href="#object-creation"></a></h4>
   </div>
   </span>
@@ -1256,7 +1072,7 @@ item2.add_previous_box(box2);
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="object-deletion">
       <span slot="header" class="card-title"><div><h4 id="object-deletion"><span>Object Deletion</span><a class="fa fa-anchor" href="#object-deletion"></a></h4>
   </div>
   </span>
@@ -1289,7 +1105,7 @@ item2.add_previous_box(box2);
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="loops">
       <span slot="header" class="card-title"><div><h4 id="loops"><span>Loops</span><a class="fa fa-anchor" href="#loops"></a></h4>
   </div>
   </span>
@@ -1317,7 +1133,7 @@ item2.add_previous_box(box2);
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="self-invocation">
       <span slot="header" class="card-title"><div><h4 id="self-invocation"><span>Self Invocation</span><a class="fa fa-anchor" href="#self-invocation"></a></h4>
   </div>
   </span>
@@ -1349,7 +1165,7 @@ item2.add_previous_box(box2);
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="alternative-paths">
       <span slot="header" class="card-title"><div><h4 id="alternative-paths"><span>Alternative Paths</span><a class="fa fa-anchor" href="#alternative-paths"></a></h4>
   </div>
   </span>
@@ -1378,7 +1194,7 @@ item2.add_previous_box(box2);
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="optional-paths">
       <span slot="header" class="card-title"><div><h4 id="optional-paths"><span>Optional Paths</span><a class="fa fa-anchor" href="#optional-paths"></a></h4>
   </div>
   </span>
@@ -1407,7 +1223,7 @@ item2.add_previous_box(box2);
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="parallel-paths">
       <span slot="header" class="card-title"><div><h4 id="parallel-paths"><span>Parallel Paths</span><a class="fa fa-anchor" href="#parallel-paths"></a></h4>
   </div>
   </span>
@@ -1440,7 +1256,7 @@ item2.add_previous_box(box2);
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="reference-frames">
       <span slot="header" class="card-title"><div><h4 id="reference-frames"><span>Reference Frames</span><a class="fa fa-anchor" href="#reference-frames"></a></h4>
   </div>
   </span>
@@ -1473,7 +1289,7 @@ item2.add_previous_box(box2);
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="minimal-notation">
       <span slot="header" class="card-title"><div><h4 id="minimal-notation"><span>Minimal Notation</span><a class="fa fa-anchor" href="#minimal-notation"></a></h4>
   </div>
   </span>
@@ -1501,7 +1317,7 @@ item2.add_previous_box(box2);
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="calls-to-static-methods">
       <span slot="header" class="card-title"><div><h4 id="calls-to-static-methods"><span>Calls to Static Methods</span><a class="fa fa-anchor" href="#calls-to-static-methods"></a></h4>
   </div>
   </span>
@@ -1522,9 +1338,8 @@ item2.add_previous_box(box2);
           <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png"></pic>
         </p>
         <p></p>
-        <p>Here is the <code>Person</code> class, for reference:<br>
-          <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></pic>
-        </p>
+        Here is the `Person` class, for reference:<br>
+        <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></pic>
       </box>
     </div>
     <div></div>
@@ -1535,14 +1350,14 @@ item2.add_previous_box(box2);
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="object-diagrams">
       <span slot="header" class="card-title"><div><h2 id="object-diagrams"><span>Object Diagrams</span><a class="fa fa-anchor" href="#object-diagrams"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
+      <panel type="seamless" expanded id="introduction-3">
+        <span slot="header" class="card-title"><div><h4 id="introduction-3"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-3"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -1565,7 +1380,7 @@ item2.add_previous_box(box2);
     </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="objects">
       <span slot="header" class="card-title"><div><h4 id="objects"><span>Objects</span><a class="fa fa-anchor" href="#objects"></a></h4>
   </div>
   </span>
@@ -1598,38 +1413,16 @@ item2.add_previous_box(box2);
     </div>
     <div>
       <div>
-        <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+        <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
           <div>
-            <panel header="<md>:glyphicon-question-sign:</md> Draw Car object" class="algolia-no-index">
+            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw Car object</p></template>
               <question>
                 <p>Draw a UML diagram to represent the <code>Car</code> object created by the following code.</p>
                 <div class="alt-java">
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{
-
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> price;
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;
-
-    Car(<span class="hljs-keyword">double</span> price, <span class="hljs-keyword">int</span> speed){
-        <span class="hljs-comment">//...</span>
-    }
-}
-
-<span class="hljs-comment">// somewhere else in the code</span>
-
-Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);
-</code></pre>
+                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span></span>{</span><span>&#x200B;</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> price;</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> speed;</span><span>&#x200B;</span><span>    Car(<span class="hljs-keyword">double</span> price, <span class="hljs-keyword">int</span> speed){</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-comment">// somewhere else in the code</span></span><span>&#x200B;</span><span>Car myCar = <span class="hljs-keyword">new</span> Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);</span></code></pre>
                 </div>
                 <div class="alt-python">
-                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span>
-
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, price, speed)</span>:</span>
-    self.__price = price <span class="hljs-comment"># type: float</span>
-    self.__speed = speed <span class="hljs-comment"># type: int</span>
-
-
-<span class="hljs-comment"># somewhere else in the code</span>
-my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);
-</code></pre>
+                  <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span>:</span></span><span>&#x200B;</span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, price, speed)</span>:</span></span><span>    self.__price = price <span class="hljs-comment"># type: float</span></span><span>    self.__speed = speed <span class="hljs-comment"># type: int</span></span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-comment"># somewhere else in the code</span></span><span>my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">200</span>);</span></code></pre>
                 </div>
               </question>
             </panel>
@@ -1641,8 +1434,8 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
-      <span slot="header" class="card-title"><div><h4 id="associations"><span>Associations</span><a class="fa fa-anchor" href="#associations"></a></h4>
+    <panel type="seamless" expanded id="associations-2">
+      <span slot="header" class="card-title"><div><h4 id="associations-2"><span>Associations</span><a class="fa fa-anchor" href="#associations-2"></a></h4>
   </div>
   </span>
   <div class="indented">
@@ -1670,20 +1463,20 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="activity-diagrams">
       <span slot="header" class="card-title"><div><h2 id="activity-diagrams"><span>Activity Diagrams</span><a class="fa fa-anchor" href="#activity-diagrams"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
+      <panel type="seamless" expanded id="introduction-4">
+        <span slot="header" class="card-title"><div><h2 id="introduction-4"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-4"></a></h2>
     </div>
     </span>
     <div>
       <div>
-        <panel type="seamless" expanded>
-          <span slot="header" class="card-title"><div><h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
+        <panel type="seamless" expanded id="introduction-5">
+          <span slot="header" class="card-title"><div><h4 id="introduction-5"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-5"></a></h4>
       </div>
       </span>
       <div class="indented">
@@ -1696,14 +1489,14 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
         <p></p>
         <p></p>
         <div>
-          <p><strong><trigger trigger="click" for="modal:modelingAd-uml">UML</trigger> <em> activity diagrams</em> (AD) can model workflows. </strong> <span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
-          <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml" class="algolia-no-index">
+          <p><strong><span trigger="click" for="modal:modelingAd-uml" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modelingAd-uml'].show()" class="trigger-click">UML</span> <em> activity diagrams</em> (AD) can model workflows. </strong>            <span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
+          <b-modal id="modal:modelingAd-uml" hide-footer size modal-class="mb-zoom" ref="modal:modelingAd-uml"><template slot="modal-title"><strong>Unified Modeling Language (UML)</strong></template>
             <div>
               <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh,
                 Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML).
                 UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
             </div>
-          </modal>
+          </b-modal>
           <div v-closeable alt>
             <p>An example activity diagram:<br>
               <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br>
@@ -1718,13 +1511,13 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="basic-notations">
       <span slot="header" class="card-title"><div><h2 id="basic-notations"><span>Basic Notations</span><a class="fa fa-anchor" href="#basic-notations"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="linear-paths">
         <span slot="header" class="card-title"><div><h4 id="linear-paths"><span>Linear Paths</span><a class="fa fa-anchor" href="#linear-paths"></a></h4>
     </div>
     </span>
@@ -1751,9 +1544,9 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which activity diagrams are correct?</p></template>
                 <question>
                   <p>Which of these activity diagrams use the correct UML notation?</p>
                   <ul class="task-list">
@@ -1784,7 +1577,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
     </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="alternate-paths">
       <span slot="header" class="card-title"><div><h4 id="alternate-paths"><span>Alternate Paths</span><a class="fa fa-anchor" href="#alternate-paths"></a></h4>
   </div>
   </span>
@@ -1811,9 +1604,9 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
     </div>
     <div>
       <div>
-        <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+        <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
           <div>
-            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?" class="algolia-no-index">
+            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which activity diagrams are correct?</p></template>
               <question>
                 <p>Which of these activity diagrams use the correct UML notation?</p>
                 <ul class="task-list">
@@ -1847,8 +1640,8 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
-      <span slot="header" class="card-title"><div><h4 id="parallel-paths"><span>Parallel Paths</span><a class="fa fa-anchor" href="#parallel-paths"></a></h4>
+    <panel type="seamless" expanded id="parallel-paths-2">
+      <span slot="header" class="card-title"><div><h4 id="parallel-paths-2"><span>Parallel Paths</span><a class="fa fa-anchor" href="#parallel-paths-2"></a></h4>
   </div>
   </span>
   <div class="indented">
@@ -1861,11 +1654,10 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
     <p></p>
     <p></p>
     <div>
-      <p><strong><em>Fork</em> nodes indicate the start of <tooltip content="parallel">concurrent</tooltip> flows of control.</strong></p>
+      <p><strong><em>Fork</em> nodes indicate the start of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">parallel</span>concurrent</span> flows of control.</strong></p>
       <p><strong><em>Join</em> nodes indicate the end of parallel paths.</strong></p>
       <p>Both have the same notation: a bar.</p>
-      <p>In a
-        <tooltip content="paths within a matching fork-join pair">set of parallel paths</tooltip>, execution along <strong>all parallel paths should be complete before the execution can start on the outgoing control flow of the <em>join</em>.</strong></p>
+      <p>In a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">paths within a matching fork-join pair</span>set of parallel paths</span>, execution along <strong>all parallel paths should be complete before the execution can start on the outgoing control flow of the <em>join</em>.</strong></p>
       <img src="/website/book/uml/activityDiagrams/basicNotations/parallelPaths/images/notation.png" height="130">
       <box>
         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this activity diagram (from an online shop website) the actions <em>User browsers products</em> and <em>System records browsing data</em> happen in parallel. Both of them need
@@ -1874,9 +1666,9 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
     </div>
     <div>
       <div>
-        <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+        <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
           <div>
-            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which activity diagrams are correct?" class="algolia-no-index">
+            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which activity diagrams are correct?</p></template>
               <question>
                 <p>Which of these activity diagrams use the correct UML notation?</p>
                 <ul class="task-list">
@@ -1905,7 +1697,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="rakes">
       <span slot="header" class="card-title"><div><h4 id="rakes"><span>Rakes</span><a class="fa fa-anchor" href="#rakes"></a></h4>
   </div>
   </span>
@@ -1934,7 +1726,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="swimlanes">
       <span slot="header" class="card-title"><div><h4 id="swimlanes"><span>Swimlanes</span><a class="fa fa-anchor" href="#swimlanes"></a></h4>
   </div>
   </span>
@@ -1966,14 +1758,14 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="notes">
       <span slot="header" class="card-title"><div><h2 id="notes"><span>Notes</span><a class="fa fa-anchor" href="#notes"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
-        <span slot="header" class="card-title"><div><h4 id="notes"><span>Notes</span><a class="fa fa-anchor" href="#notes"></a></h4>
+      <panel type="seamless" expanded id="notes-2">
+        <span slot="header" class="card-title"><div><h4 id="notes-2"><span>Notes</span><a class="fa fa-anchor" href="#notes-2"></a></h4>
     </div>
     </span>
     <div class="indented">
@@ -1998,7 +1790,7 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
     </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="constraints">
       <span slot="header" class="card-title"><div><h4 id="constraints"><span>Constraints</span><a class="fa fa-anchor" href="#constraints"></a></h4>
   </div>
   </span>
@@ -2027,13 +1819,13 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
   </panel>
   </div>
   <div>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="miscellaneous">
       <span slot="header" class="card-title"><div><h2 id="miscellaneous"><span>Miscellaneous</span><a class="fa fa-anchor" href="#miscellaneous"></a></h2>
   </div>
   </span>
   <div>
     <div>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="object-vs-class-diagrams">
         <span slot="header" class="card-title"><div><h4 id="object-vs-class-diagrams"><span>Object vs Class Diagrams</span><a class="fa fa-anchor" href="#object-vs-class-diagrams"></a></h4>
     </div>
     </span>
@@ -2070,9 +1862,9 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which class diagrams match object diagram?" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which class diagrams match object diagram?</p></template>
                 <question>
                   <p>Which of these class diagrams match the given object diagram?</p>
                   <img src="/website/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png" height="330">
@@ -2102,38 +1894,6 @@ my_car = Car(<span class="hljs-number">13.5</span>, <span class="hljs-number">20
   </div>
   </div>
   </div>
-  <nav id="page-nav" class="navbar navbar-light bg-transparent">
-    <div class="border-left-grey nav-inner position-sticky slim-scroll">
-
-      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-        <a class="nav-link py-1" href="#uml">UML&#x200E;</a>
-        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-          <a class="nav-link py-1" href="#class-diagrams">Class Diagrams&#x200E;</a>
-          <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
-          <a class="nav-link py-1" href="#classes">Classes&#x200E;</a>
-          <a class="nav-link py-1" href="#associations">Associations&#x200E;</a>
-          <a class="nav-link py-1" href="#dependencies">Dependencies&#x200E;</a>
-          <a class="nav-link py-1" href="#associations-as-attributes">Associations as Attributes&#x200E;</a>
-          <a class="nav-link py-1" href="#enumerations">Enumerations&#x200E;</a>
-          <a class="nav-link py-1" href="#class-level-members">Class-Level Members&#x200E;</a>
-          <a class="nav-link py-1" href="#association-classes">Association Classes&#x200E;</a>
-          <a class="nav-link py-1" href="#composition">Composition&#x200E;</a>
-          <a class="nav-link py-1" href="#aggregation">Aggregation&#x200E;</a>
-          <a class="nav-link py-1" href="#class-inheritance">Class Inheritance&#x200E;</a>
-          <a class="nav-link py-1" href="#interfaces">Interfaces&#x200E;</a>
-          <a class="nav-link py-1" href="#abstract-classes">Abstract Classes&#x200E;</a>
-          <a class="nav-link py-1" href="#combine">Combine&#x200E;</a>
-          <a class="nav-link py-1" href="#sequence-diagrams">Sequence Diagrams&#x200E;</a>
-          <a class="nav-link py-1" href="#object-diagrams">Object Diagrams&#x200E;</a>
-          <a class="nav-link py-1" href="#activity-diagrams">Activity Diagrams&#x200E;</a>
-          <a class="nav-link py-1" href="#basic-notations">Basic Notations&#x200E;</a>
-          <a class="nav-link py-1" href="#notes">Notes&#x200E;</a>
-          <a class="nav-link py-1" href="#miscellaneous">Miscellaneous&#x200E;</a>
-        </nav>
-
-      </nav>
-    </div>
-  </nav>
   </div>
   </div>
 </body>

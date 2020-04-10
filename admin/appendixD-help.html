@@ -5,13 +5,14 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Admin: Apdx D: Getting Help</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../markbind/css/octicons.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -29,7 +30,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +49,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -250,8 +251,8 @@
                   </li>
                   <li>
                     <p><strong>Isolate the problem.</strong> &quot;My code doesn't work&quot; isn't going to help even if you post the whole code. Others don't have time to go through all of your code. Isolate the part that doesn't work and strip it down
-                      to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself (have you heard about
-                      <trigger trigger="click" for="modal:appendixHelp-rubberDuckDebugging">Rubber Duck Debugging</trigger>?).</p>
+                      to the bare minimum that is enough reproduce the error. Sometimes, this process actually helps you to figure out the problem yourself (have you heard about <span trigger="click" for="modal:appendixHelp-rubberDuckDebugging" v-b-popover.click.top.html="popoverGenerator"
+                        v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:appendixHelp-rubberDuckDebugging'].show()" class="trigger-click">Rubber Duck Debugging</span>?).</p>
                     <box>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> How to isolate problematic code? Delete code (one bit at a time) that is confirmed as not related to the problem. Do that
                         until you can still reproduce the problem with the least amount of code remaining.
@@ -268,12 +269,12 @@
                 </ul>
               </li>
             </ul>
-            <modal large title="Rubber Duck Debugging" id="modal:appendixHelp-rubberDuckDebugging" class="algolia-no-index">
+            <b-modal id="modal:appendixHelp-rubberDuckDebugging" hide-footer size="lg" modal-class="mb-zoom" ref="modal:appendixHelp-rubberDuckDebugging"><template slot="modal-title">Rubber Duck Debugging</template>
               <p><img src="/website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
               <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book <em>The Pragmatic Programmer</em> in which a programmer would carry around
                 a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
               <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]<br></p>
-            </modal>
+            </b-modal>
             <ul>
               <li><strong>Ask the world</strong> using programming forums such as stackoverflow.
                 <ul>
@@ -342,7 +343,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

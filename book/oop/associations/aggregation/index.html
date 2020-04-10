@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Object Oriented Programming: Associations: Aggregation</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -59,24 +57,10 @@
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the code below, there is an aggregation association between the <code>Team</code> class and the <code>Person</code> in that a <code>Team</code> contains <code>Person</code>                        a object who is the leader of the team.</p>
                       <div class="alt-java">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span> </span>{
-    Person leader;
-    ...
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setLeader</span><span class="hljs-params">(Person p)</span> </span>{
-        leader = p;
-    }
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span> </span>{</span><span>    Person leader;</span><span>    ...</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setLeader</span><span class="hljs-params">(Person p)</span> </span>{</span><span>        leader = p;</span><span>    }</span><span>}</span></code></pre>
                       </div>
                       <div class="alt-python">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span>:</span>
-  
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
-    self.__leader = <span class="hljs-literal">None</span>
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_leader</span><span class="hljs-params">(self, person)</span>:</span>
-    self.__leader = person
-</code></pre>
+                        <pre><code class="hljs python"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Team</span>:</span></span><span>  </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span></span><span>    self.__leader = <span class="hljs-literal">None</span></span><span>    </span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_leader</span><span class="hljs-params">(self, person)</span>:</span></span><span>    self.__leader = person</span></code></pre>
                       </div>
                     </box>
                   </div>

@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Error Handling: Logging</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,7 +37,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="what">
                     <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                 </div>
                 </span>
@@ -59,8 +57,8 @@
                       their associated log files may provide indications of what went wrong and action can then be taken to prevent it from happening again.</p>
                     <div v-closeable alt="blackbox photo">
                       <box>
-                        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>A log file is like the <tooltip content="flight data recorder">black box</tooltip> of an airplane</strong>; they
-                          don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
+                        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>A log file is like the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">flight data recorder</span>black box</span> of an airplane</strong>;
+                          they don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
                         <div class="non-printable">
                           <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG" width="250"><br>
                             <sub>source:<a href="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG">https://commons.wikimedia.org</a></sub></p>
@@ -70,9 +68,9 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Logging vs blackbox" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Logging vs blackbox</p></template>
                             <question>
                               <p>Why is logging like having the 'black box' in an airplane?</p>
                               <ul radio-group="6f5b0" class="radio-list">
@@ -94,7 +92,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="how">
                   <span slot="header" class="card-title"><div><h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how"></a></h4>
               </div>
               </span>
@@ -108,35 +106,24 @@
                 <p></p>
                 <p></p>
                 <div>
-                  <p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging
-                    <tooltip content="how much information to record">intensity</tooltip>.</p>
+                  <p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging <span data-mb-component-type="tooltip"
+                      v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">how much information to record</span>intensity</span>.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sample Java code uses Java’s default logging mechanism.</p>
                     <p>First, import the relevant Java package:</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.logging.*;
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.logging.*;</span></code></pre>
                     <p>Next, create a <code>Logger</code>:</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);
-</code></pre>
-                    <p>Now, you can use the <code>Logger</code> object to log information. Note the use of
-                      <popover content="`INFO`, `WARNING` etc.">logging level</popover> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than <code>WARNING</code>) will
-                      not be written to the log file at all.</p>
-                    <pre><code class="hljs java"><span class="hljs-comment">// log a message at INFO level</span>
-logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);
-<span class="hljs-comment">//...</span>
-processInput();
-<span class="hljs-keyword">if</span>(error){
-    <span class="hljs-comment">//log a message at WARNING level</span>
-    logger.log(Level.WARNING, <span class="hljs-string">"processing error"</span>, ex);
-}
-<span class="hljs-comment">//...</span>
-logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);</span></code></pre>
+                    <p>Now, you can use the <code>Logger</code> object to log information. Note the use of <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content"><code>INFO</code>, <code>WARNING</code> etc.</span>logging
+                      level
+                      </span> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than <code>WARNING</code>) will not be written
+                      to the log file at all.</p>
+                    <pre><code class="hljs java"><span><span class="hljs-comment">// log a message at INFO level</span></span><span>logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);</span><span><span class="hljs-comment">//...</span></span><span>processInput();</span><span><span class="hljs-keyword">if</span>(error){</span><span>    <span class="hljs-comment">//log a message at WARNING level</span></span><span>    logger.log(Level.WARNING, <span class="hljs-string">"processing error"</span>, ex);</span><span>}</span><span><span class="hljs-comment">//...</span></span><span>logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);</span></code></pre>
                   </box>
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                    <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                       <p><strong>Tutorials</strong>:</p>
                       <ul>
                         <li><a href="http://www.vogella.com/tutorials/Logging/article.html"><strong>Java Logging API - Tutorial</strong></a> -- A tutorial by <em>Lars Vogella</em></li>

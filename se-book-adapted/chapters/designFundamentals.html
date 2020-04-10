@@ -5,13 +5,14 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Textbook Chapter : Design Fundamentals</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -210,11 +211,11 @@
               <h1 id="design-fundamentals"><span>Design Fundamentals</span><a class="fa fa-anchor" href="#design-fundamentals"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="abstraction">
             <span slot="header" class="card-title"><div><h2 id="abstraction"><span>Abstraction</span><a class="fa fa-anchor" href="#abstraction"></a></h2>
         </div>
         </span>
-        <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+        <panel type="seamless" expanded id="what"><template slot="_header"><h4 id="what">What<a class="fa fa-anchor" href="#what"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -264,11 +265,11 @@
           </div>
         </panel>
         </panel>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="coupling">
           <span slot="header" class="card-title"><div><h2 id="coupling"><span>Coupling</span><a class="fa fa-anchor" href="#coupling"></a></h2>
       </div>
       </span>
-      <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+      <panel type="seamless" expanded id="what-2"><template slot="_header"><h4 id="what-2">What<a class="fa fa-anchor" href="#what-2"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -296,9 +297,9 @@
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling levels of alternative designs" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
                     <question has-input="true">
                       <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
                       <box>
@@ -314,7 +315,7 @@
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: regressions and coupling." class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> regressions and coupling.</p></template>
                     <question has-input="true">
                       <p>Explain the link (if any) between regressions and coupling.</p>
                       <div slot="answer" class="algolia-no-index">
@@ -324,19 +325,18 @@
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Coupling and testability" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
                     <question has-input="true">
-                      <p>Discuss the relationship between coupling and
-                        <tooltip content="a measure of how easily a given component can be tested">testability</tooltip>.</p>
+                      <p>Discuss the relationship between coupling and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a measure of how easily a given component can be tested</span>testability</span>.</p>
                       <div slot="answer" class="algolia-no-index">
-                        <p>Coupling decreases testability because if the
-                          <tooltip content="Software Under Test">SUT</tooltip> is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
+                        <p>Coupling decreases testability because if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span>
+                          is coupled to many other components it becomes difficult to test the SUI in isolation of its dependencies.</p>
                       </div>
                     </question>
                   </panel>
                 </div>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about coupling" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
                     <question>
                       <p>Choose the correct statements.</p>
                       <ul class="task-list">
@@ -358,7 +358,7 @@
           </div>
         </div>
       </panel>
-      <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+      <panel type="seamless" expanded id="how"><template slot="_header"><h4 id="how">How<a class="fa fa-anchor" href="#how"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -376,23 +376,8 @@
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If <code>Foo</code> class calls the method <code>Bar#read()</code>, <code>Foo</code> is coupled to <code>Bar</code> because a change to <code>Bar</code> can potentially (but
                 not always) require a change in the <code>Foo</code> class <span class="dimmed">e.g. if the signature of the <code>Bar#read()</code> is changed, <code>Foo</code> needs to change as well, but a change to the <code>Bar#write()</code> method may not require a change in the <code>Foo</code> class because <code>Foo</code> does not call <code>Bar#write()</code></span>.</p>
-              <panel type="seamless" header="%%code for the above example%%" class="algolia-no-index">
-                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
-    ...
-    <span class="hljs-keyword">new</span> Bar().read();
-    ...
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span></span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
-        ...
-    }
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">()</span></span>{
-        ...
-    }
-}
-</code></pre>
+              <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">code for the above example</span></p></template>
+                <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{</span><span>    ...</span><span>    <span class="hljs-keyword">new</span> Bar().read();</span><span>    ...</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span></span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{</span><span>        ...</span><span>    }</span><span>    </span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">()</span></span>{</span><span>        ...</span><span>    }</span><span>}</span></code></pre>
               </panel>
             </box>
             <box>
@@ -409,9 +394,9 @@
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which indicate coupling?" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which indicate coupling?</p></template>
                     <question>
                       <p>Which of these indicate a coupling between components A and B?</p>
                       <ul class="task-list">
@@ -434,7 +419,7 @@
           </div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Types of Coupling<a class='fa fa-anchor' href='#types-of-coupling'></a>" expanded>
+      <panel type="seamless" expanded id="types-of-coupling"><template slot="_header"><h4 id="types-of-coupling">Types of Coupling<a class="fa fa-anchor" href="#types-of-coupling"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -464,11 +449,11 @@
         </div>
       </panel>
       </panel>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="cohesion">
         <span slot="header" class="card-title"><div><h2 id="cohesion"><span>Cohesion</span><a class="fa fa-anchor" href="#cohesion"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-3"><template slot="_header"><h4 id="what-3">What<a class="fa fa-anchor" href="#what-3"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -487,14 +472,14 @@
           <ul>
             <li>Lowers the understandability of modules as it is difficult to express module functionalities at a higher level.</li>
             <li>Lowers maintainability because a module can be modified due to unrelated causes <span class="dimmed">(reason: the module contains code unrelated to each other)</span> or many many modules may need to be modified to achieve a small change in
-              behavior <span class="dimmed">(reason: because the code related to that change is not localized to a single module)</span>.</li>
+              behavior <span class="dimmed">(reason: because the code realated to that change is not localized to a single module)</span>.</li>
             <li>Lowers reusability of modules because they do not represent logical units of functionality.</li>
           </ul>
         </div>
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+    <panel type="seamless" expanded id="how-2"><template slot="_header"><h4 id="how-2">How<a class="fa fa-anchor" href="#how-2"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -521,51 +506,12 @@
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which class is more cohesive?" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which class is more cohesive?</p></template>
                   <question has-input="true">
                     <p>Compare the cohesion of the following two versions of the <code>EmailMessage</code> class. Which one is more cohesive and why?</p>
-                    <pre><code class="hljs java"><span class="hljs-comment">// version-1</span>
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{
-    <span class="hljs-keyword">private</span> String sendTo;
- 	  <span class="hljs-keyword">private</span> String subject;
-    <span class="hljs-keyword">private</span> String message;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{
-        <span class="hljs-keyword">this</span>.sendTo = sendTo;
-        <span class="hljs-keyword">this</span>.subject = subject;
-        <span class="hljs-keyword">this</span>.message = message;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">// sends message using sendTo, subject and message</span>
-    }
-}
-
-<span class="hljs-comment">// version-2</span>
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{
-    <span class="hljs-keyword">private</span> String sendTo;
-    <span class="hljs-keyword">private</span> String subject;
-    <span class="hljs-keyword">private</span> String message;
-    <span class="hljs-keyword">private</span> String username;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{
-        <span class="hljs-keyword">this</span>.sendTo = sendTo;
-        <span class="hljs-keyword">this</span>.subject = subject;
-        <span class="hljs-keyword">this</span>.message = message;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">// sends message using sendTo, subject and message</span>
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">login</span><span class="hljs-params">(String username, String password)</span> </span>{
-        <span class="hljs-keyword">this</span>.username = username;
-        <span class="hljs-comment">// code to login</span>
-    }
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-comment">// version-1</span></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{</span><span>    <span class="hljs-keyword">private</span> String sendTo;</span><span> 	  <span class="hljs-keyword">private</span> String subject;</span><span>    <span class="hljs-keyword">private</span> String message;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.sendTo = sendTo;</span><span>        <span class="hljs-keyword">this</span>.subject = subject;</span><span>        <span class="hljs-keyword">this</span>.message = message;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-comment">// sends message using sendTo, subject and message</span></span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-comment">// version-2</span></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{</span><span>    <span class="hljs-keyword">private</span> String sendTo;</span><span>    <span class="hljs-keyword">private</span> String subject;</span><span>    <span class="hljs-keyword">private</span> String message;</span><span>    <span class="hljs-keyword">private</span> String username;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.sendTo = sendTo;</span><span>        <span class="hljs-keyword">this</span>.subject = subject;</span><span>        <span class="hljs-keyword">this</span>.message = message;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-comment">// sends message using sendTo, subject and message</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">login</span><span class="hljs-params">(String username, String password)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.username = username;</span><span>        <span class="hljs-comment">// code to login</span></span><span>    }</span><span>}</span></code></pre>
                     <div slot="answer" class="algolia-no-index">
                       <p>Version 2 is less cohesive.</p>
                       <p>Explanation: Version 2 is handling functionality related to login, which is not directly related to the concept of ‘email message’ that the class is supposed to represent. On a related note, we can improve the cohesion of both versions
@@ -594,10 +540,15 @@
           </nav>
           <a class="nav-link py-1" href="#coupling">Coupling&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-2">What&#x200E;</a>
             <a class="nav-link py-1" href="#how">How&#x200E;</a>
             <a class="nav-link py-1" href="#types-of-coupling">Types of Coupling&#x200E;</a>
           </nav>
           <a class="nav-link py-1" href="#cohesion">Cohesion&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-3">What&#x200E;</a>
+            <a class="nav-link py-1" href="#how-2">How&#x200E;</a>
+          </nav>
         </nav>
 
       </nav>
@@ -606,7 +557,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
   </footer>
   </div>
 </body>

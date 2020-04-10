@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Code Quality: [Guideline] Name Well</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,7 +37,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="introduction">
                     <span slot="header" class="card-title"><div><h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
                 </div>
                 </span>
@@ -55,8 +53,7 @@
                   <div>
                     <p>Proper naming improves the readability. It also reduces bugs caused by ambiguities regarding the intent of a variable or a method.</p>
                     <blockquote>
-                      <p><span><span aria-hidden="true" class="fas fa-quote-left"></span></span> There are only two hard things in Computer Science: cache invalidation and naming things. <span><span aria-hidden="true" class="fas fa-quote-right"></span></span>
-                        <sub>-- Phil Karlton</sub></p>
+                      <p>There are only two hard things in Computer Science: cache invalidation and naming things. <sub>-- Phil Karlton</sub></p>
                     </blockquote>
                   </div>
                   <div></div>
@@ -64,13 +61,13 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="basic">
                   <span slot="header" class="card-title"><div><h2 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h2>
               </div>
               </span>
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="use-nouns-for-things-and-verbs-for-actions">
                     <span slot="header" class="card-title"><div><h4 id="use-nouns-for-things-and-verbs-for-actions"><span>Use Nouns for Things and Verbs for Actions</span><a class="fa fa-anchor" href="#use-nouns-for-things-and-verbs-for-actions"></a></h4>
                 </div>
                 </span>
@@ -85,8 +82,8 @@
                   <p></p>
                   <div>
                     <blockquote>
-                      <p><span><span aria-hidden="true" class="fas fa-quote-left"></span></span> Every system is built from a domain-specific language designed by the programmers to describe that system. Functions are the verbs of that language, and classes
-                        are the nouns. <span><span aria-hidden="true" class="fas fa-quote-right"></span></span><br><sub>― Robert C. Martin, <em>Clean Code: A Handbook of Agile Software Craftsmanship</em></sub></p>
+                      <p><span aria-hidden="true" class="fas fa-quote-left"></span> Every system is built from a domain-specific language designed by the programmers to describe that system. Functions are the verbs of that language, and classes are the nouns.
+                        <sub>― Robert C. Martin, <em>Clean Code: A Handbook of Agile Software Craftsmanship</em></sub></p>
                     </blockquote>
                     <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
                     <box>
@@ -132,9 +129,7 @@
                             </span>
                           </font>
                         </p>
-                        <pre><code class="hljs java">Person student;
-ArrayList&lt;Person&gt; students;
-</code></pre>
+                        <pre><code class="hljs java"><span>Person student;</span><span>ArrayList&lt;Person&gt; students;</span></code></pre>
                       </div>
                       <div class="alt-python">
                         <p>
@@ -142,9 +137,7 @@ ArrayList&lt;Person&gt; students;
                             </span>
                           </font>
                         </p>
-                        <pre><code class="hljs python">name = <span class="hljs-string">'Jim'</span>
-names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alice'</span>]
-</code></pre>
+                        <pre><code class="hljs python"><span>name = <span class="hljs-string">'Jim'</span></span><span>names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alice'</span>]</span></code></pre>
                       </div>
                     </box>
                   </div>
@@ -153,7 +146,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="use-standard-words">
                   <span slot="header" class="card-title"><div><h4 id="use-standard-words"><span>Use Standard Words</span><a class="fa fa-anchor" href="#use-standard-words"></a></h4>
               </div>
               </span>
@@ -177,13 +170,13 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="intermediate">
             <span slot="header" class="card-title"><div><h2 id="intermediate"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate"></a></h2>
         </div>
         </span>
         <div>
           <div>
-            <panel type="seamless" expanded>
+            <panel type="seamless" expanded id="use-name-to-explain">
               <span slot="header" class="card-title"><div><h4 id="use-name-to-explain"><span>Use Name to Explain</span><a class="fa fa-anchor" href="#use-name-to-explain"></a></h4>
           </div>
           </span>
@@ -301,7 +294,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
           </panel>
         </div>
         <div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="not-too-long-not-too-short">
             <span slot="header" class="card-title"><div><h4 id="not-too-long-not-too-short"><span>Not Too Long, Not Too Short</span><a class="fa fa-anchor" href="#not-too-long-not-too-short"></a></h4>
         </div>
         </span>
@@ -322,7 +315,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </panel>
       </div>
       <div>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="avoid-misleading-names">
           <span slot="header" class="card-title"><div><h4 id="avoid-misleading-names"><span>Avoid Misleading Names</span><a class="fa fa-anchor" href="#avoid-misleading-names"></a></h4>
       </div>
       </span>

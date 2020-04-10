@@ -9,13 +9,12 @@
   <p>
     <div>
       <h1 id="tutorials">Tutorials <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-        </span>
-      </h1>
+        </span><a class="fa fa-anchor" href="#tutorials"></a></h1>
     </div>
   </p>
   <div id="main">
-    <panel type="seamless" expanded>
-      <span slot="header" class="card-title"><div><h3 id="tutorial-timetable">Tutorial Timetable</h3></div></span>
+    <panel type="seamless" expanded id="tutorial-timetable">
+      <span slot="header" class="card-title"><div><h3 id="tutorial-timetable">Tutorial Timetable<a class="fa fa-anchor" href="#tutorial-timetable"></a></h3></div></span>
       <div id="tutorialTimetable">
         <box>
           <p>
@@ -35,8 +34,7 @@
             </thead>
             <tbody>
               <tr>
-                <td><span><span data-included-from="D:\Teaching\CS2103-AY1920S2\website\admin\tutorial-schedule-CS2103-S2.mbdf"><span class="badge badge-warning">CS2103T</span></span>
-                  </span>
+                <td><span><span class="badge badge-warning">CS2103T</span></span>
                 </td>
                 <td>COM1-B103</td>
                 <td><strong>W</strong>ed <strong>12</strong>:00</td>
@@ -129,7 +127,7 @@
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="### Tutorial Structure" expanded>
+    <panel type="seamless" expanded id="tutorial-structure"><template slot="_header"><h3 id="tutorial-structure">Tutorial Structure<a class="fa fa-anchor" href="#tutorial-structure"></a></h3></template>
       <div id="tutorialStructure">
         <p><strong>What happens during the tutorial</strong>:</p>
         <ul>
@@ -141,8 +139,7 @@
         </ul>
         <div class="indented-level2">
           <p>
-            <panel type src="/website/admin/appendixC-faq._include_.html#admin-faq-noLaptop" header="Admin <md>:glyphicon-log-in:</md> Appendix C(FAQ): What if I don't carry around a laptop?  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-              class="embedding" minimized fragment="admin-faq-noLaptop"></panel>
+            <panel type src="/website/admin/appendixC-faq._include_.html#admin-faq-noLaptop" class="embedding algolia-no-index" minimized fragment="admin-faq-noLaptop"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix C(FAQ): What if I don't carry around a laptop?  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
           </p>
         </div>
         <br>
@@ -152,7 +149,7 @@
         </ul>
         <div class="indented-level2">
           <p>
-            <panel type src="/website/admin/appendixD-help._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> Appendix D: How to get Help in CS2103/T  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding" minimized fragment="main"></panel>
+            <panel type src="/website/admin/appendixD-help._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix D: How to get Help in CS2103/T  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
           </p>
         </div>
         <br>
@@ -162,8 +159,7 @@
         </ul>
         <div class="indented-level2">
           <p>
-            <panel type src="/website/admin/appendixD-help._include_.html#questions-for-tutros" header="Admin <md>:glyphicon-log-in:</md> Appendix D (extract): Questions suitable for tutor  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
-              minimized fragment="questions-for-tutros"></panel>
+            <panel type src="/website/admin/appendixD-help._include_.html#questions-for-tutros" class="embedding algolia-no-index" minimized fragment="questions-for-tutros"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix D (extract): Questions suitable for tutor  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
           </p>
         </div>
         <br>

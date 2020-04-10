@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Software Design Patterns: Facade: What</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -59,8 +57,8 @@
                     <p><strong>Problem</strong></p>
                     <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed">e.g.  the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code> class within it.</span></p>
                     <p><strong>Solution</strong></p>
-                    <p>Include a
-                      <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
+                    <p>Include a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a French word that means 'front of a building'</span>Façade</span> class that
+                      sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
                       <img src="/website/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
@@ -69,9 +67,9 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Is this Facade?" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Is this Facade?</p></template>
                             <question>
                               <p>Does the design below likely to use the Facade pattern?</p>
                               <img src="/website/book/designPatterns/facade/what/images/textStorage.png" height="150">

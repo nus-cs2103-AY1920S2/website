@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Test Case Design: Summary</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,8 +37,8 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
-                    <span slot="header" class="card-title"><div><h4 id="recap"><span>Recap</span><a class="fa fa-anchor" href="#recap"></a></h4>
+                  <panel type="seamless" expanded id="recap-2">
+                    <span slot="header" class="card-title"><div><h4 id="recap-2"><span>Recap</span><a class="fa fa-anchor" href="#recap-2"></a></h4>
                 </div>
                 </span>
                 <div class="indented">
@@ -60,7 +58,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="exercises">
                   <span slot="header" class="card-title"><div><h4 id="exercises"><span>Exercises</span><a class="fa fa-anchor" href="#exercises"></a></h4>
               </div>
               </span>
@@ -76,9 +74,9 @@
                 <div></div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Matric numbers" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Matric numbers</p></template>
                           <question has-input="true">
                             <p>Assume students are given matriculation number according to the following format:</p>
                             <p>[Faculty Alphabet] [Gender Alphabet] [Serial Number] [Check Alphabet]</p>
@@ -119,7 +117,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: isValidDate" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> isValidDate</p></template>
                           <question has-input="true">
                             <p>Identify a set of equivalence partitions for testing isValidDate(String date) method. The method checks if the parameter date is a day that falls in the period 1880/01/01 to 2030/12/31 (both inclusive). The date is given in
                               the format yyyy/mm/dd.
@@ -141,7 +139,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Dispatch resources" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Dispatch resources</p></template>
                           <question has-input="true">
                             <p>Given below is the overview of the method dispatch(Resource, Task), from an emergency management system (e.g. a system used by those who handle emergency calls from the public about incidents such as fires, possible burglaries,
                               domestic disturbances, etc.). A task might need multiple resources of multiple types. For example, the task ‘fire at Clementi MRT’ might need two fire engines and one ambulance.</p>
@@ -185,7 +183,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: transferTable" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> transferTable</p></template>
                           <question has-input="true">
                             <p>Given below is an operation description taken from a restaurant booking system. Use equivalence partitions and boundary value analysis technique to design a set of test cases for it.</p>
                             <ul>
@@ -284,7 +282,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: add(Item)" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> add(Item)</p></template>
                           <question has-input="true">
                             <p>Assume you are testing the add(Item) method specified below.</p>
                             <img src="/website/book/testCaseDesign/summary/exercises/images/itemList.png" height="100">
@@ -321,7 +319,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: setWife" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> setWife</p></template>
                           <question has-input="true">
                             <p>Use equivalence partitions and boundary values to choose test inputs for testing the setWife operation in the Man class.</p>
                             <img src="/website/book/testCaseDesign/summary/exercises/images/manWoman.png" height="90">
@@ -339,7 +337,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Pre-Release Game" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Pre-Release Game</p></template>
                           <question>
                             <p>If you download a pre-release version of a new game (executable file) to do a test drive and submit bug reports, you would be doing</p>
                             <ul class="task-list">
@@ -362,7 +360,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: True or False?" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> True or False?</p></template>
                           <question>
                             <p>We can apply equivalence partitioning technique in white-box fashion.</p>
                             <ul class="task-list">
@@ -381,17 +379,11 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md> Design test cases for the `day` parameter" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Design test cases for the <code>day</code> parameter</p></template>
                           <question>
                             <ol>
                               <li>What are the EPs for the parameter <code>day</code> of this method?
-                                <pre><code class="hljs java"><span class="hljs-comment">/**
- * Returns true if the three values represent a valid day
- */</span>
-<span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isValidDay</span><span class="hljs-params">(<span class="hljs-keyword">int</span> year, <span class="hljs-keyword">int</span> month, <span class="hljs-keyword">int</span> day)</span></span>{
-
-} 
-</code></pre>
+                                <pre><code class="hljs java"><span><span class="hljs-comment">/**</span></span><span><span class="hljs-comment"> * Returns true if the three values represent a valid day</span></span><span><span class="hljs-comment"> */</span></span><span><span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isValidDay</span><span class="hljs-params">(<span class="hljs-keyword">int</span> year, <span class="hljs-keyword">int</span> month, <span class="hljs-keyword">int</span> day)</span></span>{</span><span>&#x200B;</span><span>} </span></code></pre>
                               </li>
                               <li>What are the boundary values for the parameter <code>day</code> in the question above?</li>
                             </ol>

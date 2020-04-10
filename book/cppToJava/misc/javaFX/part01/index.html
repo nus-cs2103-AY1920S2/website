@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website</title>
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -69,7 +67,7 @@
         </ol>
         <img src="/website/book/cppToJava/misc/javaFX/part01/images/config-scene-builder-settings.png" alt="Scene Builder settings" height="350">
         <p></p>
-        <box type="info" header="Helpful Links">
+        <box type="info"><template slot="_header"><p>Helpful Links</p></template>
           <p>The JavaDocs will come in handy when writing your own JavaFX applications:</p>
           <ul>
             <li><a href="https://docs.oracle.com/javase/9/docs/api">Java 9 API</a></li>
@@ -263,79 +261,7 @@
         <hr>
         <p>Open <code>MainApp.java</code> and replace the code with the following:</p>
         <p><strong>MainApp.java</strong></p>
-        <pre><code class="hljs java"><span class="hljs-keyword">package</span> seedu.address;
-
-<span class="hljs-keyword">import</span> java.io.IOException;
-
-<span class="hljs-keyword">import</span> javafx.application.Application;
-<span class="hljs-keyword">import</span> javafx.fxml.FXMLLoader;
-<span class="hljs-keyword">import</span> javafx.scene.Scene;
-<span class="hljs-keyword">import</span> javafx.scene.layout.AnchorPane;
-<span class="hljs-keyword">import</span> javafx.scene.layout.BorderPane;
-<span class="hljs-keyword">import</span> javafx.stage.Stage;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainApp</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Application</span> </span>{
-    <span class="hljs-keyword">private</span> Stage primaryStage;
-    <span class="hljs-keyword">private</span> BorderPane rootLayout;
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">start</span><span class="hljs-params">(Stage primaryStage)</span> </span>{
-        <span class="hljs-keyword">this</span>.primaryStage = primaryStage;
-        <span class="hljs-keyword">this</span>.primaryStage.setTitle(<span class="hljs-string">"AddressApp"</span>);
-
-        initRootLayout();
-
-        showPersonOverview();
-    }
-
-    <span class="hljs-comment">/**
-     * Initializes the root layout.
-     */</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">initRootLayout</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">try</span> {
-            <span class="hljs-comment">// Load root layout from fxml file.</span>
-            FXMLLoader loader = <span class="hljs-keyword">new</span> FXMLLoader();
-            loader.setLocation(MainApp<span class="hljs-class">.<span class="hljs-keyword">class</span>.<span class="hljs-title">getResource</span>("<span class="hljs-title">view</span>/<span class="hljs-title">RootLayout</span>.<span class="hljs-title">fxml</span>"))</span>;
-            rootLayout = loader.load();
-
-            <span class="hljs-comment">// Show the scene containing the root layout.</span>
-            Scene scene = <span class="hljs-keyword">new</span> Scene(rootLayout);
-            primaryStage.setScene(scene);
-            primaryStage.show();
-        } <span class="hljs-keyword">catch</span> (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    <span class="hljs-comment">/**
-     * Shows the person overview inside the root layout.
-     */</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">showPersonOverview</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">try</span> {
-            <span class="hljs-comment">// Load person overview.</span>
-            FXMLLoader loader = <span class="hljs-keyword">new</span> FXMLLoader();
-            loader.setLocation(MainApp<span class="hljs-class">.<span class="hljs-keyword">class</span>.<span class="hljs-title">getResource</span>("<span class="hljs-title">view</span>/<span class="hljs-title">PersonOverview</span>.<span class="hljs-title">fxml</span>"))</span>;
-            AnchorPane personOverview = loader.load();
-
-            <span class="hljs-comment">// Set person overview into the center of root layout.</span>
-            rootLayout.setCenter(personOverview);
-        } <span class="hljs-keyword">catch</span> (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    <span class="hljs-comment">/**
-     * Returns the main stage.
-     */</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> Stage <span class="hljs-title">getPrimaryStage</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> primaryStage;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        launch(args);
-    }
-}
-</code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-keyword">package</span> seedu.address;</span><span>&#x200B;</span><span><span class="hljs-keyword">import</span> java.io.IOException;</span><span>&#x200B;</span><span><span class="hljs-keyword">import</span> javafx.application.Application;</span><span><span class="hljs-keyword">import</span> javafx.fxml.FXMLLoader;</span><span><span class="hljs-keyword">import</span> javafx.scene.Scene;</span><span><span class="hljs-keyword">import</span> javafx.scene.layout.AnchorPane;</span><span><span class="hljs-keyword">import</span> javafx.scene.layout.BorderPane;</span><span><span class="hljs-keyword">import</span> javafx.stage.Stage;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainApp</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Application</span> </span>{</span><span>    <span class="hljs-keyword">private</span> Stage primaryStage;</span><span>    <span class="hljs-keyword">private</span> BorderPane rootLayout;</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">start</span><span class="hljs-params">(Stage primaryStage)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.primaryStage = primaryStage;</span><span>        <span class="hljs-keyword">this</span>.primaryStage.setTitle(<span class="hljs-string">"AddressApp"</span>);</span><span>&#x200B;</span><span>        initRootLayout();</span><span>&#x200B;</span><span>        showPersonOverview();</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-comment">/**</span></span><span><span class="hljs-comment">     * Initializes the root layout.</span></span><span><span class="hljs-comment">     */</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">initRootLayout</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">try</span> {</span><span>            <span class="hljs-comment">// Load root layout from fxml file.</span></span><span>            FXMLLoader loader = <span class="hljs-keyword">new</span> FXMLLoader();</span><span>            loader.setLocation(MainApp<span class="hljs-class">.<span class="hljs-keyword">class</span>.<span class="hljs-title">getResource</span>("<span class="hljs-title">view</span>/<span class="hljs-title">RootLayout</span>.<span class="hljs-title">fxml</span>"))</span>;</span><span>            rootLayout = loader.load();</span><span>&#x200B;</span><span>            <span class="hljs-comment">// Show the scene containing the root layout.</span></span><span>            Scene scene = <span class="hljs-keyword">new</span> Scene(rootLayout);</span><span>            primaryStage.setScene(scene);</span><span>            primaryStage.show();</span><span>        } <span class="hljs-keyword">catch</span> (IOException e) {</span><span>            e.printStackTrace();</span><span>        }</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-comment">/**</span></span><span><span class="hljs-comment">     * Shows the person overview inside the root layout.</span></span><span><span class="hljs-comment">     */</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">showPersonOverview</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">try</span> {</span><span>            <span class="hljs-comment">// Load person overview.</span></span><span>            FXMLLoader loader = <span class="hljs-keyword">new</span> FXMLLoader();</span><span>            loader.setLocation(MainApp<span class="hljs-class">.<span class="hljs-keyword">class</span>.<span class="hljs-title">getResource</span>("<span class="hljs-title">view</span>/<span class="hljs-title">PersonOverview</span>.<span class="hljs-title">fxml</span>"))</span>;</span><span>            AnchorPane personOverview = loader.load();</span><span>&#x200B;</span><span>            <span class="hljs-comment">// Set person overview into the center of root layout.</span></span><span>            rootLayout.setCenter(personOverview);</span><span>        } <span class="hljs-keyword">catch</span> (IOException e) {</span><span>            e.printStackTrace();</span><span>        }</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-comment">/**</span></span><span><span class="hljs-comment">     * Returns the main stage.</span></span><span><span class="hljs-comment">     */</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> Stage <span class="hljs-title">getPrimaryStage</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">return</span> primaryStage;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        launch(args);</span><span>    }</span><span>}</span></code></pre>
         <p>The various comments should give you some hints about what's going on.</p>
         <h2 id="importing-javafx-9">Importing JavaFx 9<a class="fa fa-anchor" href="#importing-javafx-9"></a></h2>
         <p>JavaFx 9 is a separate module from Java 9. We must ensure that the modules are imported correctly.</p>
@@ -347,23 +273,14 @@
           <li>Ensure that your Project pane is open (<kbd>Alt</kbd>+<kbd>1</kbd>). Right click on the <code>src</code> folder, and select <code>New</code> → <code>module-info.java</code>:</li>
           <li>Add the following <code>requires</code> and <code>exports</code> in order to import and export the modules correctly:</li>
         </ol>
-        <pre><code class="hljs java"><span class="hljs-keyword">module</span> AddressApp {
-    <span class="hljs-keyword">requires</span> javafx.graphics;
-    <span class="hljs-keyword">requires</span> javafx.fxml;
-    <span class="hljs-keyword">requires</span> javafx.controls;
-
-    <span class="hljs-keyword">exports</span> seedu.address;
-}
-</code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-keyword">module</span> AddressApp {</span><span>    <span class="hljs-keyword">requires</span> javafx.graphics;</span><span>    <span class="hljs-keyword">requires</span> javafx.fxml;</span><span>    <span class="hljs-keyword">requires</span> javafx.controls;</span><span>&#x200B;</span><span>    <span class="hljs-keyword">exports</span> seedu.address;</span><span>}</span></code></pre>
         <h2 id="running-the-application">Running the Application<a class="fa fa-anchor" href="#running-the-application"></a></h2>
         <p>If you run the application now (right click <code>MainApp.java</code> and select <code>Run MainApp.main()</code>), you should see something like this:</p>
         <img src="/website/book/cppToJava/misc/javaFX/part01/images/address-app-final-screenshot.png" height="350">
         <p></p>
         <h2 id="possible-issues">Possible Issues<a class="fa fa-anchor" href="#possible-issues"></a></h2>
         <p>If JavaFx fails to load <code>PersonOverview.fxml</code>, you might get the following error message:</p>
-        <pre><code class="hljs">javafx.fxml.LoadException:
-/.../AddressApp/out/production/AddressApp/seedu/address/view/PersonOverview.fxml:15
-</code></pre>
+        <pre><code class="hljs"><span>javafx.fxml.LoadException:</span><span>/.../AddressApp/out/production/AddressApp/seedu/address/view/PersonOverview.fxml:15</span></code></pre>
         <p>To solve this issue, open <code>PersonOverview.fxml</code> normally in IntelliJ and ensure that there is no such attribute around:</p>
         <p><code>fx:controller=&quot;seedu.address.view.PersonOverview&quot;</code></p>
       </div>

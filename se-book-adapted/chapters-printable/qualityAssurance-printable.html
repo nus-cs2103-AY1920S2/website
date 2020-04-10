@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Textbook Chapter [Printable] : Quality Assurance</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -99,13 +97,13 @@
                       </ul>
                     </li>
                     <li>
-                      <p><strong>In <trigger trigger="click" for="modal:codeReview-pairProgramming">pair programming</trigger></strong></p>
+                      <p><strong>In <span trigger="click" for="modal:codeReview-pairProgramming" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:codeReview-pairProgramming'].show()" class="trigger-click">pair programming</span></strong></p>
                       <ul>
                         <li>As pair programming involves two programmers working on the same code at the same time, there is an implicit review of the code by the other member of the pair.</li>
                       </ul>
                     </li>
                   </ul>
-                  <modal large title="Pair Programming" id="modal:codeReview-pairProgramming" class="algolia-no-index">
+                  <b-modal id="modal:codeReview-pairProgramming" hide-footer size="lg" modal-class="mb-zoom" ref="modal:codeReview-pairProgramming"><template slot="modal-title">Pair Programming</template>
                     <box type="definition">
                       <div>
                         <p><strong>Pair Programming</strong>:</p>
@@ -119,7 +117,7 @@
                       <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">image credit: Wikipedia</a>]</sub></p>
                     <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> A good introduction to pair programming:</p>
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ET3Q6zNK3Io" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                  </modal>
+                  </b-modal>
                   <ul>
                     <li>
                       <p><strong>Formal inspections</strong></p>
@@ -195,7 +193,7 @@
               <div class="indented-less">
                 <div>
                   <p><strong>Formal verification uses mathematical techniques to prove the correctness of a program.</strong></p>
-                  <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> An introduction to Formal Methods" class="non-printable algolia-no-index">
+                  <panel type="seamless" class="non-printable algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> An introduction to Formal Methods</p></template>
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                     <p>by <a href="http://www.cs.utoronto.ca/~hehner/">Eric Hehner</a></p>
                     <p></p>
@@ -219,7 +217,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

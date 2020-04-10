@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Git and Github: Tag</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,8 +37,7 @@
             <div>
               <div>
                 <p>
-                  <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Project Management → Revision Control → Saving History%%" popup-url="/website/book/revisionControl/savingHistory"
-                    class="algolia-no-index"></panel>
+                  <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/savingHistory" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Saving History</span></p></template></panel>
                 </p>
               </div>
               <p></p>
@@ -56,7 +53,7 @@
                   <div>
                     <p>Let's tag a commit in a local repo you have (e.g. the <code>sampelrepo-things</code> repo)</p>
                     <tabs>
-                      <tab header="SourceTree">
+                      <tab><template slot="_header">SourceTree</template>
                         <div>
                           <p>Right-click on the commit (in the graphical revision graph) you want to tag and choose <code>Tag…</code></p>
                           <p>Specify the tag name e.g. <code>v1.0</code> and click <code>Add Tag</code>.</p>
@@ -65,23 +62,16 @@
                           <p></p>
                         </div>
                       </tab>
-                      <tab header="CLI" class="algolia-no-index">
+                      <tab class="algolia-no-index"><template slot="_header">CLI</template>
                         <div>
                           <p>To add a tag to the current commit as <code>v1.0</code>,</p>
-                          <pre><code class="hljs">git tag –a v1.0
-</code></pre>
+                          <pre><code class="hljs"><span>git tag –a v1.0</span></code></pre>
                           <p>To view tags</p>
-                          <pre><code class="hljs">git tag
-</code></pre>
+                          <pre><code class="hljs"><span>git tag</span></code></pre>
                           <p>To learn how to add a tag to a past commit, go to the <a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">‘Git Basics – Tagging’ page of the git-scm book</a> and refer the ‘Tagging Later’ section.</p>
                           <box type="warning">
                             <p>Remember to push tags to the repo. A normal push does not include tags.</p>
-                            <pre><code class="hljs"># push a specific tag
-git push origin v1.0b
-
-# push all tags
-git push origin --tags
-</code></pre>
+                            <pre><code class="hljs"><span># push a specific tag</span><span>git push origin v1.0b</span><span>&#x200B;</span><span># push all tags</span><span>git push origin --tags</span></code></pre>
                           </box>
                         </div>
                       </tab>

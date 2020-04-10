@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Testing Types: Exploratory vs Scripted Testing: WWhen</title>
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -57,21 +55,20 @@
                     <blockquote>
                       <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most
                         situations benefit from a mix of scripted and exploratory approaches. --
-                        <trigger trigger="click" for="modal:ExploratoryWhen-bach-et-explained">[source: bach-et-explained]</trigger>
-                      </p>
+                        <span trigger="click" for="modal:ExploratoryWhen-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ExploratoryWhen-bach-et-explained'].show()" class="trigger-click">[source: bach-et-explained]</span></p>
                     </blockquote>
-                    <modal id="modal:ExploratoryWhen-bach-et-explained" title="bach-et-explained <md>:glyphicon-eye-open:</md>" class="algolia-no-index">
+                    <b-modal id="modal:ExploratoryWhen-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                       <div>
                         <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry
                           thought leader in software testing).</p>
                       </div>
-                    </modal>
+                    </b-modal>
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which is better?" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which is better?</p></template>
                             <question>
                               <p>Scripted testing is better than exploratory testing.</p>
                               <ul radio-group="7d3ff" class="radio-list">

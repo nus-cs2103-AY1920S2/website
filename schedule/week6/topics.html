@@ -5,18 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 6 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -29,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -97,7 +97,7 @@
           </nav>
           <p></p>
           <h1 id="week-6-feb-17-topics">Week 6 <small><small><span class="dimmed">[Feb 17]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-6-feb-17-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week6/topics.html#W6-1">W6.1</a>] <strong>Modeling: Sequence Diagrams</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -193,7 +193,7 @@
           </panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W6-1"></span></p>
-          <panel type="seamless" no-close expandable="true" expanded>
+          <panel type="seamless" no-close expandable="true" expanded id="w6-1-modeling-sequence-diagrams">
             <span slot="header" class="card-title"><div><h2 id="w6-1-modeling-sequence-diagrams"><span class="dimmed">[W6.1]</span> <strong>Modeling: Sequence Diagrams</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
             <a class="fa fa-anchor" href="#w6-1-modeling-sequence-diagrams"></a>
             </h2>
@@ -201,7 +201,7 @@
         </span>
         <div class="indented-level1">
           <p><span id="W6-1a"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic">
+          <panel type="seamless" expanded popup-url="/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic" id="design-modelling-modelling-behaviors-sequence-diagrams-basic">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.1a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             <h4 id="design-modelling-modelling-behaviors-sequence-diagrams-basic"><small><span class="font-weight-bold text-muted"><span>Design → Modelling → Modelling Behaviors</span></span></small> <strong><span>Sequence Diagrams - Basic</span></strong><a class="fa fa-anchor" href="#design-modelling-modelling-behaviors-sequence-diagrams-basic"></a></h4>
@@ -220,79 +220,69 @@
                 <p></p>
                 <div>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/introduction/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Introduction" alt="<md>:glyphicon-education:</md> UML/SequenceDiagrams"
-                      fragment="main" class="algolia-no-index"></panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/introduction/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Introduction</p></template>
+                      <template slot="_alt">
+                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SequenceDiagrams</p>
+                  </template>
+                    </panel>
                   </p>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/basic/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Basic Notation" alt="<md>:glyphicon-education:</md> UML/SD/Basic"
-                      fragment="main" class="algolia-no-index"></panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/basic/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Basic Notation</p></template>
+                      <template slot="_alt">
+                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Basic</p>
+                  </template>
+                    </panel>
                   </p>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/loops/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Loops" alt="<md>:glyphicon-education:</md> UML/SD/Loops"
-                      fragment="main" class="algolia-no-index"></panel>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectCreation/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Object Creation" alt="<md>:glyphicon-education:</md> UML/SD/Creation"
-                      fragment="main" class="algolia-no-index"></panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/loops/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Loops</p></template>
+                      <template slot="_alt">
+                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Loops</p>
+                  </template>
+                    </panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectCreation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Object Creation</p></template>
+                      <template slot="_alt">
+                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Creation</p>
+                  </template>
+                    </panel>
                   </p>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/minimalNotation/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Minimal Notation" alt="<md>:glyphicon-education:</md> UML/SD/Minimal"
-                      fragment="main" class="algolia-no-index"></panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/minimalNotation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Minimal Notation</p></template>
+                      <template slot="_alt">
+                  <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Minimal</p>
+                  </template>
+                    </panel>
                   </p>
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+                    <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Explain Sequence Diagram about Machine" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram about Machine</p></template>
                             <question>
                               <p>Explain in your own words the interactions illustrated by this Sequence Diagram:</p>
                               <img src="/website/book/uml/sequenceDiagrams/introduction/images/Machine.png" width="500"></question>
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Draw a Sequence Diagram for the code (`PersonList`, `Person`, `Tag`)" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Sequence Diagram for the code (<code>PersonList</code>, <code>Person</code>, <code>Tag</code>)</p></template>
                             <question>
                               <p>Consider the code below:</p>
                               <div class="row">
                                 <div class="col-sm-7">
-                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
-    Tag tag;
-    String name;
-
-    Person(String personName, String tagName){
-        name = personName;
-        tag = <span class="hljs-keyword">new</span> Tag(tagName);
-    }
-}
-</code></pre>
+                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{</span><span>    Tag tag;</span><span>    String name;</span><span>&#x200B;</span><span>    Person(String personName, String tagName){</span><span>        name = personName;</span><span>        tag = <span class="hljs-keyword">new</span> Tag(tagName);</span><span>    }</span><span>}</span></code></pre>
                                 </div>
                                 <div class="col-sm-5">
-                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
-    Tag(String value){
-        <span class="hljs-comment">//...</span>
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-}
-</code></pre>
+                                  <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{</span><span>    Tag(String value){</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>}</span></code></pre>
                                 </div>
                               </div>
                               <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                              <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
-<span class="hljs-keyword">while</span> (hasRoom){
-    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
-    personList.addPerson(p);
-}
-</code></pre>
+                              <pre><code class="hljs java"><span>PersonList personList = <span class="hljs-keyword">new</span> PersonList();</span><span><span class="hljs-keyword">while</span> (hasRoom){</span><span>    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);</span><span>    personList.addPerson(p);</span><span>}</span></code></pre>
                             </question>
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Find notation errors in sequence diagram" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Find notation errors in sequence diagram</p></template>
                             <question>
                               <p>Find notation mistakes in the sequence diagram below:</p>
                               <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png" width="500"></question>
@@ -306,7 +296,7 @@
             </div>
           </panel>
           <p><span id="W6-1b"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate">
+          <panel type="seamless" expanded popup-url="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate" id="design-modelling-modelling-behaviors-sequence-diagrams-intermediate">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.1b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -327,41 +317,39 @@
                 <p></p>
                 <div>
                   <p>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectDeletion/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Object Deletion" alt="<md>:glyphicon-education:</md> UML/SD/Deletion"
-                      fragment="main" class="algolia-no-index"></panel>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/selfInvocation/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Self-Invocation" alt="<md>:glyphicon-education:</md> UML/SD/Self-Invocation"
-                      fragment="main" class="algolia-no-index"></panel>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/alternativePaths/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Alternative Paths" alt="<md>:glyphicon-education:</md> UML/SD/Alternative"
-                      fragment="main" class="algolia-no-index"></panel>
-                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/optionalPaths/unit-inElsewhere-asFlat._include_.html#main" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Optional Paths" alt="<md>:glyphicon-education:</md> UML/SD/Optional"
-                      fragment="main" class="algolia-no-index"></panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/objectDeletion/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Object Deletion</p></template>
+                      <template slot="_alt">
+                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Deletion</p>
+                    </template>
+                    </panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/selfInvocation/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Self-Invocation</p></template>
+                      <template slot="_alt">
+                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Self-Invocation</p>
+                    </template>
+                    </panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/alternativePaths/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Alternative Paths</p></template>
+                      <template slot="_alt">
+                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Alternative</p>
+                    </template>
+                    </panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/optionalPaths/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Optional Paths</p></template>
+                      <template slot="_alt">
+                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/Optional</p>
+                    </template>
+                    </panel>
+                    <panel type="seamless" src="/website/book/uml/sequenceDiagrams/staticMethods/unit-inElsewhere-asFlat._include_.html#main" fragment="main" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Sequence Diagrams → Calls to Static Methods</p></template>
+                      <template slot="_alt">
+                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> UML/SD/StaticMethods</p>
+                    </template>
+                    </panel>
                   </p>
-                  <panel type="seamless" header="<md>:glyphicon-education:</md> UML <md>:glyphicon-log-in:</md> Sequence Diagrams → Calls to Static Methods" alt="<md>:glyphicon-education:</md> UML/SD/StaticMethods" class="algolia-no-index">
-                    <div>
-                      <div>
-                        <p>Method calls to <code>static</code> i.e., class-level method are received by the class itself, not an instance of that class. We can use the <code>&lt;&lt;class&gt;&gt;</code> to show that a participant is the class itself.</p>
-                        <box>
-                          <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example, <code>m</code> calls the static method <code>Person.getMaxAge()</code> and also the <code>setAge()</code> method of a <code>Person</code> object
-                            <code>p</code>.</p>
-                          <p>
-                            <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/staticMethodCall.png"></pic>
-                          </p>
-                          <p></p>
-                          <p>Here is the <code>Person</code> class, for reference:<br>
-                            <pic src="/website/book/uml/sequenceDiagrams/staticMethods/images/personClass.png"></pic>
-                          </p>
-                        </box>
-                      </div>
-                      <div></div>
-                    </div>
-                  </panel>
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+                    <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What’s going on here?" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What’s going on here?</p></template>
                             <question>
                               <p>What’s going on here?</p>
                               <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/exerciseDiagram.png" height="170">
@@ -380,7 +368,7 @@
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Explain Sequence Diagram (`ParserFactory`)" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram (<code>ParserFactory</code>)</p></template>
                             <question>
                               <p>Explain the interactions depicted in this sequence diagram.</p>
                               <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
@@ -392,32 +380,12 @@
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Draw Sequence Diagram for printing a quote" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw Sequence Diagram for printing a quote</p></template>
                             <question>
                               <p>Draw a sequence diagram to represent this code snippet.</p>
-                              <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isFirstPage) {
-    <span class="hljs-keyword">new</span> Quote().print();
-}
-</code></pre>
+                              <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (isFirstPage) {</span><span>    <span class="hljs-keyword">new</span> Quote().print();</span><span>}</span></code></pre>
                               <p>The <code>Quote</code> class:</p>
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{
-
-    String q;
-
-    Quote(){
-        q = generate();
-    }
-
-    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">// ...</span>
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
-        System.out.println(q);
-    }
-
-}
-</code></pre>
+                              <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Quote</span></span>{</span><span>&#x200B;</span><span>    String q;</span><span>&#x200B;</span><span>    Quote(){</span><span>        q = generate();</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function">String <span class="hljs-title">generate</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-comment">// ...</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{</span><span>        System.out.println(q);</span><span>    }</span><span>&#x200B;</span><span>}</span></code></pre>
                               <div slot="hint" class="algolia-no-index">
                                 <ul>
                                   <li>Show <code>new Quote().print();</code> as two method calls.</li>
@@ -435,7 +403,7 @@
             </div>
           </panel>
           <p><span id="W6-1c"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/uml/sequenceDiagrams/referenceFrames">
+          <panel type="seamless" expanded popup-url="/website/book/uml/sequenceDiagrams/referenceFrames" id="tools-uml-sequence-diagrams-reference-frames">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.1c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -474,7 +442,7 @@
             </div>
           </panel>
           <p><span id="W6-1d"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/uml/sequenceDiagrams/parallelPaths">
+          <panel type="seamless" expanded popup-url="/website/book/uml/sequenceDiagrams/parallelPaths" id="tools-uml-sequence-diagrams-parallel-paths">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.1d</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -514,7 +482,7 @@
         </div>
         </panel>
         <p><span id="W6-2"></span></p>
-        <panel type="seamless" no-close expandable="true" expanded>
+        <panel type="seamless" no-close expandable="true" expanded id="w6-2-architecture-diagrams">
           <span slot="header" class="card-title"><div><h2 id="w6-2-architecture-diagrams"><span class="dimmed">[W6.2]</span> <strong>Architecture Diagrams</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
           <a class="fa fa-anchor" href="#w6-2-architecture-diagrams"></a>
           </h2>
@@ -522,7 +490,7 @@
       </span>
       <div class="indented-level1">
         <p><span id="W6-2a"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/architecture/introduction/what">
+        <panel type="seamless" expanded popup-url="/website/book/architecture/introduction/what" id="design-architecture-introduction-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.2a</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="design-architecture-introduction-what"><small><span class="font-weight-bold text-muted"><span>Design → Architecture → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-architecture-introduction-what"></a></h4>
@@ -570,9 +538,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about architecture" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about architecture</p></template>
                         <question>
                           <p>Choose the correct statement</p>
                           <ul class="task-list">
@@ -599,7 +567,7 @@
           </div>
         </panel>
         <p><span id="W6-2b"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/architecture/architectureDiagrams/reading">
+        <panel type="seamless" expanded popup-url="/website/book/architecture/architectureDiagrams/reading" id="design-architecture-architecture-diagrams-reading">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.2b</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="design-architecture-architecture-diagrams-reading"><small><span class="font-weight-bold text-muted"><span>Design → Architecture → Architecture Diagrams →</span></span></small> <strong><span>Reading</span></strong><a class="fa fa-anchor" href="#design-architecture-architecture-diagrams-reading"></a></h4>
@@ -608,7 +576,7 @@
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/architecture/introduction/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Architecture → Introduction → What%%" popup-url="/website/book/architecture/introduction/what" class="algolia-no-index"></panel>
+                  <panel src="/website/book/architecture/introduction/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/architecture/introduction/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Architecture → Introduction → What</span></p></template></panel>
                 </p>
               </div>
               <p></p>
@@ -626,21 +594,21 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some example architecture diagrams:</p>
                     <tabs>
-                      <tab header="TEAMMATES">
+                      <tab><template slot="_header">TEAMMATES</template>
                         <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
                       </tab>
-                      <tab header="se-edu/addressbook-level3" class="algolia-no-index">
+                      <tab class="algolia-no-index"><template slot="_header">se-edu/addressbook-level3</template>
                         <p><img src="https://se-education.org/addressbook-level3/images/ArchitectureDiagram.png" width="300"><br></p>
                       </tab>
-                      <tab header="Example 1" class="algolia-no-index">
+                      <tab class="algolia-no-index"><template slot="_header">Example 1</template>
                         <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
                           <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
                       </tab>
-                      <tab header="Example 2" class="algolia-no-index">
+                      <tab class="algolia-no-index"><template slot="_header">Example 2</template>
                         <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
                           <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
                       </tab>
-                      <tab header="Example 3" class="algolia-no-index">
+                      <tab class="algolia-no-index"><template slot="_header">Example 3</template>
                         <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
                           <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
                       </tab>
@@ -653,7 +621,7 @@
           </div>
         </panel>
         <p><span id="W6-2c"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/designApproaches/multilevelDesign/what">
+        <panel type="seamless" expanded popup-url="/website/book/designApproaches/multilevelDesign/what" id="design-introduction-multi-level-design">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.2c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="design-introduction-multi-level-design"><small><span class="font-weight-bold text-muted"><span>Design → Introduction →</span></span></small> <strong><span>Multi-Level Design</span></strong><a class="fa fa-anchor" href="#design-introduction-multi-level-design"></a></h4>
@@ -684,11 +652,11 @@
                     <img src="https://se-education.org/addressbook-level3/images/ArchitectureDiagram.png" width="300">
                     <p>Here are examples of lower level designs of some components of the same software:</p>
                     <tabs>
-                      <tab header="UI">
+                      <tab><template slot="_header">UI</template>
                         <img src="https://se-edu.github.io/addressbook-level3/images/UiClassDiagram.png" width="700"></tab>
-                      <tab header="Logic" class="algolia-no-index">
+                      <tab class="algolia-no-index"><template slot="_header">Logic</template>
                         <img src="https://se-edu.github.io/addressbook-level3/images/LogicClassDiagram.png" width="800"></tab>
-                      <tab header="Storage" class="algolia-no-index">
+                      <tab class="algolia-no-index"><template slot="_header">Storage</template>
                         <img src="https://se-edu.github.io/addressbook-level3/images/StorageClassDiagram.png" width="700"></tab>
                     </tabs>
                   </box>
@@ -702,7 +670,7 @@
       </panel>
       <p></p>
       <p><span id="W6-3"></span></p>
-      <panel type="seamless" no-close expandable="true" expanded>
+      <panel type="seamless" no-close expandable="true" expanded id="w6-3-ides-basic-features">
         <span slot="header" class="card-title"><div><h2 id="w6-3-ides-basic-features"><span class="dimmed">[W6.3]</span> <strong>IDEs: Basic Features</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
         <a class="fa fa-anchor" href="#w6-3-ides-basic-features"></a>
         </h2>
@@ -710,7 +678,7 @@
     </span>
     <div class="indented-level1">
       <p><span id="W6-3a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/ides/debugging/what">
+      <panel type="seamless" expanded popup-url="/website/book/ides/debugging/what" id="implementation-ides-debugging-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.3a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -763,7 +731,7 @@
         </div>
       </panel>
       <p><span id="W6-3b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/intellij/debuggingBasic">
+      <panel type="seamless" expanded popup-url="/website/book/intellij/debuggingBasic" id="tools-intellij-idea-debugging-basic">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.3b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -796,7 +764,7 @@
         </div>
       </panel>
       <p><span id="W6-3c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/intellij/codeNavigation">
+      <panel type="seamless" expanded popup-url="/website/book/intellij/codeNavigation" id="tools-intellij-idea-code-navigation">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.3c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="tools-intellij-idea-code-navigation"><small><span class="font-weight-bold text-muted"><span>Tools → Intellij IDEA →</span></span></small> <strong><span>Code Navigation</span></strong><a class="fa fa-anchor" href="#tools-intellij-idea-code-navigation"></a></h4>
@@ -822,7 +790,7 @@
                 <li>View the documentation of a method from where the method is being used, without navigating to the method itself.</li>
                 <li>Find where a method/field is being used.</li>
               </ol>
-              <panel header="Intellij IDEA Code Navigation" expanded>
+              <panel expanded><template slot="_header"><p>Intellij IDEA Code Navigation</p></template>
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1UHsJyCq1SU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </panel>
             </div>
@@ -833,7 +801,7 @@
     </div>
     </panel>
     <p><span id="W6-4"></span></p>
-    <panel type="seamless" no-close expandable="true" expanded>
+    <panel type="seamless" no-close expandable="true" expanded id="w6-4-logging">
       <span slot="header" class="card-title"><div><h2 id="w6-4-logging"><span class="dimmed">[W6.4]</span> <strong>Logging</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
       <a class="fa fa-anchor" href="#w6-4-logging"></a>
       </h2>
@@ -841,7 +809,7 @@
   </span>
   <div class="indented-level1">
     <p><span id="W6-4a"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/errorHandling/logging/what">
+    <panel type="seamless" expanded popup-url="/website/book/errorHandling/logging/what" id="implementation-error-handling-logging-what">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.4a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="implementation-error-handling-logging-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Error Handling → Logging →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-error-handling-logging-what"></a></h4>
@@ -865,8 +833,8 @@
               associated log files may provide indications of what went wrong and action can then be taken to prevent it from happening again.</p>
             <div v-closeable alt="blackbox photo">
               <box>
-                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>A log file is like the <tooltip content="flight data recorder">black box</tooltip> of an airplane</strong>; they don't
-                  prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>A log file is like the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">flight data recorder</span>black box</span> of an airplane</strong>;
+                  they don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
                 <div class="non-printable">
                   <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG" width="250"><br>
                     <sub>source:<a href="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG">https://commons.wikimedia.org</a></sub></p>
@@ -876,9 +844,9 @@
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Logging vs blackbox" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Logging vs blackbox</p></template>
                     <question>
                       <p>Why is logging like having the 'black box' in an airplane?</p>
                       <ul radio-group="6f5b0" class="radio-list">
@@ -900,7 +868,7 @@
       </div>
     </panel>
     <p><span id="W6-4b"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/errorHandling/logging/how">
+    <panel type="seamless" expanded popup-url="/website/book/errorHandling/logging/how" id="implementation-error-handling-logging-how">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.4b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -920,35 +888,24 @@
           <p></p>
           <p></p>
           <div>
-            <p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging
-              <tooltip content="how much information to record">intensity</tooltip>.</p>
+            <p><strong>Most programming environments come with logging systems that allow sophisticated forms of logging.</strong> They have features such as the ability to enable and disable logging easily or to change the logging <span data-mb-component-type="tooltip"
+                v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">how much information to record</span>intensity</span>.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This sample Java code uses Java’s default logging mechanism.</p>
               <p>First, import the relevant Java package:</p>
-              <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.logging.*;
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.logging.*;</span></code></pre>
               <p>Next, create a <code>Logger</code>:</p>
-              <pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);
-</code></pre>
-              <p>Now, you can use the <code>Logger</code> object to log information. Note the use of
-                <popover content="`INFO`, `WARNING` etc.">logging level</popover> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than <code>WARNING</code>) will not
-                be written to the log file at all.</p>
-              <pre><code class="hljs java"><span class="hljs-comment">// log a message at INFO level</span>
-logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);
-<span class="hljs-comment">//...</span>
-processInput();
-<span class="hljs-keyword">if</span>(error){
-    <span class="hljs-comment">//log a message at WARNING level</span>
-    logger.log(Level.WARNING, <span class="hljs-string">"processing error"</span>, ex);
-}
-<span class="hljs-comment">//...</span>
-logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logger logger = Logger.getLogger(<span class="hljs-string">"Foo"</span>);</span></code></pre>
+              <p>Now, you can use the <code>Logger</code> object to log information. Note the use of <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content"><code>INFO</code>, <code>WARNING</code> etc.</span>logging
+                level
+                </span> for each message. When running the code, the logging level can be set to <code>WARNING</code> so that log messages specified as <code>INFO</code> level (which is a lower level than <code>WARNING</code>) will not be written to the
+                log file at all.</p>
+              <pre><code class="hljs java"><span><span class="hljs-comment">// log a message at INFO level</span></span><span>logger.log(Level.INFO, <span class="hljs-string">"going to start processing"</span>);</span><span><span class="hljs-comment">//...</span></span><span>processInput();</span><span><span class="hljs-keyword">if</span>(error){</span><span>    <span class="hljs-comment">//log a message at WARNING level</span></span><span>    logger.log(Level.WARNING, <span class="hljs-string">"processing error"</span>, ex);</span><span>}</span><span><span class="hljs-comment">//...</span></span><span>logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);</span></code></pre>
             </box>
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                 <p><strong>Tutorials</strong>:</p>
                 <ul>
                   <li><a href="http://www.vogella.com/tutorials/Logging/article.html"><strong>Java Logging API - Tutorial</strong></a> -- A tutorial by <em>Lars Vogella</em></li>
@@ -975,7 +932,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
   </panel>
   <p></p>
   <p><span id="W6-5"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
+  <panel type="seamless" no-close expandable="true" expanded id="w6-5-documentation-tools">
     <span slot="header" class="card-title"><div><h2 id="w6-5-documentation-tools"><span class="dimmed">[W6.5]</span> <strong>Documentation Tools</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
     <a class="fa fa-anchor" href="#w6-5-documentation-tools"></a>
     </h2>
@@ -985,7 +942,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
       <br>
       <h3 id="markdown"><span class="dimmed"><strong>Markdown</strong></span><a class="fa fa-anchor" href="#markdown"></a></h3>
       <p><span id="W6-5a"></span></p>
-      <panel type="seamless" popup-url="/website/book/documentation/tools/markdown/what" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/documentation/tools/markdown/what" id="implementation-documentation-tools-markdown-what" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.5a</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1011,7 +968,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
         </div>
       </panel>
       <p><span id="W6-5b"></span></p>
-      <panel type="seamless" popup-url="/website/book/documentation/tools/markdown/how" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/documentation/tools/markdown/how" id="implementation-documentation-tools-markdown-how" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.5b</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -1041,7 +998,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
       <br>
       <h3 id="asciidoc"><span class="dimmed"><strong>AsciiDoc</strong></span><a class="fa fa-anchor" href="#asciidoc"></a></h3>
       <p><span id="W6-5c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/documentation/tools/asciiDoc/what">
+      <panel type="seamless" expanded popup-url="/website/book/documentation/tools/asciiDoc/what" id="implementation-documentation-tools-asciidoc-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W6.5c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-documentation-tools-asciidoc-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Documentation → Tools → AsciiDoc →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-documentation-tools-asciidoc-what"></a></h4>
@@ -1106,7 +1063,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
   </footer>
   </div>
 </body>

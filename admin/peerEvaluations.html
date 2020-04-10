@@ -5,13 +5,14 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Admin: Peer Evaluations</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../markbind/css/octicons.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -29,7 +30,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +49,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -205,7 +206,7 @@
             <div id="intro">
               <p>This module leverages peer feedback/evaluations in many ways. In particular, we do several rounds of peer evaluations using TEAMMATES.</p>
               <div class="indented-level1">
-                <panel type src="/website/admin/tools._include_.html#teammates" header="Admin <md>:glyphicon-log-in:</md> Tools → TEAMMATES  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="teammates"></panel>
+                <panel type src="/website/admin/tools._include_.html#teammates" class="embedding algolia-no-index" minimized fragment="teammates"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → TEAMMATES  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
               </div>
               <p></p>
               <p>
@@ -234,7 +235,7 @@
                       <p>
                         <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the User Guide is,</strong></p>
                       <span id="equalShareScale">
-<panel type="seamless" header="Uses the `Equal Share +/- N%` scale for the answer" class="algolia-no-index">
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
 <ul radio-group="070b7" class="radio-list">
 <li class="radio-list-item"><label><input class="radio-list-input" name="070b7" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label>
                       </li>
@@ -252,14 +253,14 @@
                       <p>
                         <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the Developer Guide is,</strong></p>
                       <div>
-                        <panel type="seamless" header="Uses the `Equal Share +/- N%` scale for the answer" class="algolia-no-index">
-                          <ul radio-group="89cd2" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> ...</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
+                          <ul radio-group="75dc5" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> ...</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
                           </ul>
                         </panel>
                       </div>
@@ -269,14 +270,14 @@
                       <p>
                         <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the team-based tasks is,</strong></p>
                       <div>
-                        <panel type="seamless" header="Uses the `Equal Share +/- N%` scale for the answer" class="algolia-no-index">
-                          <ul radio-group="89cd2" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> ...</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
+                          <ul radio-group="75dc5" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> ...</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
                           </ul>
                         </panel>
                       </div>
@@ -286,14 +287,14 @@
                       <p>
                         <thumbnail circle text="**Q**" background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,</strong></p>
                       <div>
-                        <panel type="seamless" header="Uses the `Equal Share +/- N%` scale for the answer" class="algolia-no-index">
-                          <ul radio-group="89cd2" class="radio-list">
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> ...</label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
-                            <li class="radio-list-item"><label><input class="radio-list-input" name="89cd2" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
+                        <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code>Equal Share +/- N%</code> scale for the answer</p></template>
+                          <ul radio-group="75dc5" class="radio-list">
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> ...</label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+                            <li class="radio-list-item"><label><input class="radio-list-input" name="75dc5" type="radio"> <code>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
                           </ul>
                         </panel>
                       </div>
@@ -367,12 +368,11 @@
                 <h3 id="session-final-peer-evaluation">Session: <code>Final Peer Evaluation</code><a class="fa fa-anchor" href="#session-final-peer-evaluation"></a></h3>
                 <ul>
                   <li>Held soon after the final project submission.</li>
-                  <li><mark>There will be bonus marks for <tooltip content="i.e., those who are close to the overall consensus">good</tooltip> peer evaluations</mark>.</li>
+                  <li><mark>There will be bonus marks for <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., those who are close to the overall consensus</span>good</span> peer evaluations</mark>.</li>
                   <li>This session includes all questions from the Midterm Peer Evaluation:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/peerEvaluations-midterm._include_.html#questions" header="Admin <md>:glyphicon-log-in:</md> Peer Evaluations → Session: Midterm Peer Evaluation Questions  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized
-                    fragment="questions"></panel>
+                  <panel type src="/website/admin/peerEvaluations-midterm._include_.html#questions" class="embedding algolia-no-index" minimized fragment="questions"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Session: Midterm Peer Evaluation Questions  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <ul>
@@ -430,7 +430,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

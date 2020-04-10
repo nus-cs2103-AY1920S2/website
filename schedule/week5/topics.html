@@ -5,18 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 5 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -29,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -97,7 +97,7 @@
           </nav>
           <p></p>
           <h1 id="week-5-feb-10-topics">Week 5 <small><small><span class="dimmed">[Feb 10]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-5-feb-10-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week5/topics.html#W5-1">W5.1</a>] <strong>Requirements: Intro</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
@@ -352,7 +352,7 @@
           </panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W5-1"></span></p>
-          <panel type="seamless" no-close expandable="true" expanded>
+          <panel type="seamless" no-close expandable="true" expanded id="w5-1-requirements-intro">
             <span slot="header" class="card-title"><div><h2 id="w5-1-requirements-intro"><span class="dimmed">[W5.1]</span> <strong>Requirements: Intro</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
             <a class="fa fa-anchor" href="#w5-1-requirements-intro"></a>
             </h2>
@@ -360,7 +360,7 @@
         </span>
         <div class="indented-level1">
           <p><span id="W5-1a"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/requirements/introduction">
+          <panel type="seamless" expanded popup-url="/website/book/requirements/introduction" id="requirements-requirements-introduction">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.1a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             <h4 id="requirements-requirements-introduction"><small><span class="font-weight-bold text-muted"><span>Requirements → Requirements →</span></span></small> <strong><span>Introduction</span></strong><a class="fa fa-anchor" href="#requirements-requirements-introduction"></a></h4>
@@ -399,7 +399,7 @@
             </div>
           </panel>
           <p><span id="W5-1b"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/requirements/nonFunctionalRequirements">
+          <panel type="seamless" expanded popup-url="/website/book/requirements/nonFunctionalRequirements" id="requirements-requirements-non-functional-requirements">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.1b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             <h4 id="requirements-requirements-non-functional-requirements"><small><span class="font-weight-bold text-muted"><span>Requirements → Requirements →</span></span></small> <strong><span>Non-Functional Requirements</span></strong><a class="fa fa-anchor" href="#requirements-requirements-non-functional-requirements"></a></h4>
@@ -425,14 +425,14 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of non-functional requirement categories:</p>
                     <ul>
-                      <li>Data requirements e.g. size,
-                        <tooltip content="how often do data change">volatility</tooltip>,
-                        <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
+                      <li>Data requirements e.g. size, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">how often do data change</span>volatility</span>,
+                        <span
+                          data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">saving data permanenetly</span>persistency</span> etc.,</li>
                       <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                       <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness,
                         Scalability, Security, Stability, Testability, and more ...</li>
                     </ul>
-                    <panel type="seamless" header="<md>:fas-cube:</md> Some concrete examples of NFRs" expanded>
+                    <panel type="seamless" expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some concrete examples of NFRs</p></template>
                       <ul>
                         <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
                         <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5
@@ -455,9 +455,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> TEAMMATES NFRs</p></template>
                           <question>
                             <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
                             <ul class="task-list">
@@ -484,7 +484,7 @@
             </div>
           </panel>
           <p><span id="W5-1c"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/requirements/quality">
+          <panel type="seamless" expanded popup-url="/website/book/requirements/quality" id="requirements-requirements-quality-of-requirements">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.1c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -504,8 +504,7 @@
                 <p></p>
                 <p></p>
                 <div>
-                  <p>Here are some characteristics of well-defined requirements
-                    <trigger for="pop:zielczynski"><sup>[📖 zielczynski]</sup></trigger>:</p>
+                  <p>Here are some characteristics of well-defined requirements <span for="pop:zielczynski" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:zielczynski'].show()" class="trigger"><sup>[📖 zielczynski]</sup></span>:</p>
                   <ul>
                     <li>Unambiguous</li>
                     <li>Testable (verifiable)</li>
@@ -514,8 +513,7 @@
                     <li>Understandable</li>
                     <li>Feasible (realistic, possible)</li>
                     <li>Independent</li>
-                    <li>
-                      <tooltip content="Not divisible any further">Atomic</tooltip>
+                    <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Not divisible any further</span>Atomic</span>
                     </li>
                     <li>Necessary</li>
                     <li>Implementation-free (i.e. abstract)</li>
@@ -526,20 +524,16 @@
                     <li>Non-redundant</li>
                     <li>Complete</li>
                   </ul>
-                  <popover id="pop:zielczynski">
-                    <div slot="content" class="algolia-no-index">
-                      <div>
-                        <p>Peter Zielczynski, <em><strong>Requirements Management Using IBM Rational RequisitePro</strong></em>, IBM Press, 2008</p>
-                      </div>
-                    </div>
-                  </popover>
-                </div>
+                  <span id="pop:zielczynski" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger">
+  <div data-mb-html-for="content">
+    <div>
+<p>Peter Zielczynski, <em><strong>Requirements Management Using IBM Rational RequisitePro</strong></em>, IBM Press, 2008</p></div></div></span></div>
                 <div></div>
               </div>
             </div>
           </panel>
           <p><span id="W5-1d"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/requirements/prioritizing">
+          <panel type="seamless" expanded popup-url="/website/book/requirements/prioritizing" id="requirements-requirements-prioritizing-requirements">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.1d</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -575,7 +569,7 @@
                       <li><code>Level 0</code>, <code>Level 1</code>, <code>Level 2</code>, ...</li>
                     </ul>
                   </box>
-                  <p><strong>Some requirements can be discarded if they are considered ‘out of <em><tooltip content="the extent to which the software features should go">scope</tooltip></em>’.</strong></p>
+                  <p><strong>Some requirements can be discarded if they are considered ‘out of <em><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">the extent to which the software features should go</span>scope</span></em>’.</strong></p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The requirement given below is for a Calendar application. Stakeholder of the software (e.g. product designers) might decide the following requirement is not in the
                       scope of the software.</p>
@@ -591,7 +585,7 @@
         </div>
         </panel>
         <p><span id="W5-2"></span></p>
-        <panel type="seamless" no-close expandable="true" expanded>
+        <panel type="seamless" no-close expandable="true" expanded id="w5-2-requirements-gathering">
           <span slot="header" class="card-title"><div><h2 id="w5-2-requirements-gathering"><span class="dimmed">[W5.2]</span> <strong>Requirements: Gathering</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
           <a class="fa fa-anchor" href="#w5-2-requirements-gathering"></a>
           </h2>
@@ -599,7 +593,7 @@
       </span>
       <div class="indented-level1">
         <p><span id="W5-2a"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/brainstorming">
+        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/brainstorming" id="requirements-gathering-requirements-brainstorming">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.2a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -629,9 +623,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Characteristic of brainstorming" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Characteristic of brainstorming</p></template>
                         <question>
                           <p>What is the key characteristic about brainstorming?</p>
                           <ul radio-group="11d89" class="radio-list">
@@ -653,7 +647,7 @@
           </div>
         </panel>
         <p><span id="W5-2b"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/productSurveys">
+        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/productSurveys" id="requirements-gathering-requirements-product-surveys">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.2b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -686,7 +680,7 @@
           </div>
         </panel>
         <p><span id="W5-2c"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/observation">
+        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/observation" id="requirements-gathering-requirements-observation">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.2c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -714,7 +708,7 @@
           </div>
         </panel>
         <p><span id="W5-2d"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/userSurveys">
+        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/userSurveys" id="requirements-gathering-requirements-user-surveys">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.2d</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -741,7 +735,7 @@
           </div>
         </panel>
         <p><span id="W5-2e"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/interviews">
+        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/interviews" id="requirements-gathering-requirements-interviews">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.2e</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -761,21 +755,21 @@
               <p></p>
               <p></p>
               <div>
-                <p><strong>Interviewing stakeholders and <trigger for="pop:interviews-domainExpert">domain experts</trigger> can produce useful information that project requirements.</strong></p>
-                <popover id="pop:interviews-domainExpert" title placement="top">
-                  <div slot="content" class="algolia-no-index">
-                    <div>
-                      <p><strong>Domain Expert</strong> : An expert of a discipline to which the product is connected <span class="dimmed">e.g., for a software used for Accounting, a domain expert is someone who is an expert of Accounting</span>.</p>
-                    </div>
+                <p><strong>Interviewing stakeholders and <span for="pop:interviews-domainExpert" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:interviews-domainExpert'].show()" class="trigger">domain experts</span> can produce useful information that project requirements.</strong></p>
+                <span id="pop:interviews-domainExpert" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"></span>
+                <div data-mb-html-for="content">
+                  <div>
+                    <p><strong>Domain Expert</strong> : An expert of a discipline to which the product is connected <span class="dimmed">e.g., for a software used for Accounting, a domain expert is someone who is an expert of Accounting</span>.</p>
                   </div>
-                </popover>
+                </div>
+                </span>
               </div>
               <div></div>
             </div>
           </div>
         </panel>
         <p><span id="W5-2f"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/focusGroups">
+        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/focusGroups" id="requirements-gathering-requirements-focus-groups">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.2f</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -817,7 +811,7 @@
           </div>
         </panel>
         <p><span id="W5-2g"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/prototyping">
+        <panel type="seamless" expanded popup-url="/website/book/gatheringRequirements/prototyping" id="requirements-gathering-requirements-prototyping">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.2g</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -865,7 +859,7 @@
       </div>
       </panel>
       <p><span id="W5-3"></span></p>
-      <panel type="seamless" no-close expandable="true" expanded>
+      <panel type="seamless" no-close expandable="true" expanded id="w5-3-requirements-specifying">
         <span slot="header" class="card-title"><div><h2 id="w5-3-requirements-specifying"><span class="dimmed">[W5.3]</span> <strong>Requirements: Specifying</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
         <a class="fa fa-anchor" href="#w5-3-requirements-specifying"></a>
         </h2>
@@ -875,7 +869,7 @@
       <br>
       <h3 id="prose"><span class="dimmed"><strong>Prose</strong></span><a class="fa fa-anchor" href="#prose"></a></h3>
       <p><span id="W5-3a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/prose/what">
+      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/prose/what" id="requirements-specifying-requirements-prose-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.3a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -913,7 +907,7 @@
       <br>
       <h3 id="feature-lists"><span class="dimmed"><strong>Feature Lists</strong></span><a class="fa fa-anchor" href="#feature-lists"></a></h3>
       <p><span id="W5-3b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/featureList/what">
+      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/featureList/what" id="requirements-specifying-requirements-feature-lists-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.3b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="requirements-specifying-requirements-feature-lists-what"><small><span class="font-weight-bold text-muted"><span>Requirements → Specifying Requirements → Feature Lists →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#requirements-specifying-requirements-feature-lists-what"></a></h4>
@@ -959,7 +953,7 @@
       <br>
       <h3 id="user-stories"><span class="dimmed"><strong>User Stories</strong></span><a class="fa fa-anchor" href="#user-stories"></a></h3>
       <p><span id="W5-3c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/userStories/introduction">
+      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/userStories/introduction" id="requirements-specifying-requirements-user-stories-introduction">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.3c</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="requirements-specifying-requirements-user-stories-introduction"><small><span class="font-weight-bold text-muted"><span>Requirements → Specifying Requirements → User Stories →</span></span></small> <strong><span>Introduction</span></strong><a class="fa fa-anchor" href="#requirements-specifying-requirements-user-stories-introduction"></a></h4>
@@ -1001,16 +995,16 @@
               <p></p>
               <p><strong>We can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, we can use a software (e.g., <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>,
                 Trello, Google Docs, ...) to manage user stories digitally.</p>
-              <panel header="%%User stories in use%%" class="non-printable" expanded>
-                <panel header="With sticky notes" type="seamless" expanded>
+              <panel class="non-printable" expanded><template slot="_header"><p><span class="dimmed">User stories in use</span></p></template>
+                <panel type="seamless" expanded><template slot="_header"><p>With sticky notes</p></template>
                   <img src="/website/book/specifyingRequirements/userStories/introduction/images/workingWithStories.jpg" height="400">
                   <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/2682466984/">https://www.flickr.com/photos/jakuza/2682466984/</a>]</sup></span></p>
                 </panel>
-                <panel header="With paper" type="seamless" expanded>
+                <panel type="seamless" expanded><template slot="_header"><p>With paper</p></template>
                   <img src="/website/book/specifyingRequirements/userStories/introduction/images/userStoriesOnTable.jpg" height="400">
                   <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/with/2726048607/">https://www.flickr.com/photos/jakuza/with/2726048607/</a>]</sup></span></p>
                 </panel>
-                <panel header="With software" type="seamless" expanded>
+                <panel type="seamless" expanded><template slot="_header"><p>With software</p></template>
                   <img src="/website/book/specifyingRequirements/userStories/introduction/images/userStoriesWithSoftware.png" height="400">
                   <p><span class="dimmed"><sup>[credit: <a href="https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png">https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png</a>]</sup></span></p>
                 </panel>
@@ -1018,9 +1012,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="Q: Which of these are true about user stories?" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p>Q: Which of these are true about user stories?</p></template>
                       <question>
                         <ul class="task-list">
                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They are based on stories users tell about similar systems</li>
@@ -1038,7 +1032,7 @@
                     </panel>
                   </div>
                   <div>
-                    <panel header="Q: What's wrong with this user story?" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p>Q: What's wrong with this user story?</p></template>
                       <question has-input="true">
                         <p>Critique the following user story taken from a software project to build an e-commerce website.</p>
                         <p><code>As a developer, I want to use Python to implement the software, so that we can resue existing Python modules.</code></p>
@@ -1055,10 +1049,10 @@
                     </panel>
                   </div>
                   <div>
-                    <panel header="Q: Extract user stories from customer statement" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p>Q: Extract user stories from customer statement</p></template>
                       <question has-input="true">
-                        <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <popover content="The number of leave days not yet taken">leave balance</popover></em>. What
-                          are the user stories you can extract from that statement?</p>
+                        <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">The number of leave days not yet taken</span>leave balance</span></em>.
+                          What are the user stories you can extract from that statement?</p>
                         <div slot="hint" class="algolia-no-index">
                           <p>Remember to follow the correct format when writing user stories.</p>
                           <div>
@@ -1079,7 +1073,7 @@
         </div>
       </panel>
       <p><span id="W5-3d"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/userStories/details">
+      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/userStories/details" id="requirements-specifying-requirements-user-stories-details">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.3d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="requirements-specifying-requirements-user-stories-details"><small><span class="font-weight-bold text-muted"><span>Requirements → Specifying Requirements → User Stories →</span></span></small> <strong><span>Details</span></strong><a class="fa fa-anchor" href="#requirements-specifying-requirements-user-stories-details"></a></h4>
@@ -1177,9 +1171,9 @@
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Correct statements about user stories" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Correct statements about user stories</p></template>
                 <question>
                   <p>Choose the correct statements</p>
                   <ul class="task-list">
@@ -1207,7 +1201,7 @@
       </div>
       </panel>
       <p><span id="W5-3e"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/userStories/usage">
+      <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/userStories/usage" id="requirements-specifying-requirements-user-stories-usage">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.3e</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="requirements-specifying-requirements-user-stories-usage"><small><span class="font-weight-bold text-muted"><span>Requirements → Specifying Requirements → User Stories →</span></span></small> <strong><span>Usage</span></strong><a class="fa fa-anchor" href="#requirements-specifying-requirements-user-stories-usage"></a></h4>
@@ -1225,15 +1219,15 @@
             <p></p>
             <p></p>
             <div>
-              <p><strong>User stories capture user requirements in a way that is convenient for <popover content="i.e. which features to include in the product">scoping</popover>, <popover content="i.e. how much effort each feature will take">estimation</popover>, and <popover content="i.e. when to deliver each feature">scheduling</popover>.</strong></p>
+              <p><strong>User stories capture user requirements in a way that is convenient for <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">i.e. which features to include in the product</span>scoping</span>, <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">i.e. how much effort each feature will take</span>estimation</span>, and <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">i.e. when to deliver each feature</span>scheduling</span>.</strong></p>
               <blockquote>
                 <p>[User stories] strongly shift the focus from writing about features to discussing them. In fact, these discussions are more important than whatever text is written. <sub>[Mike Cohn, MountainGoat Software <a href="https://www.mountaingoatsoftware.com/agile/user-stories">🔗</a>]</sub></p>
               </blockquote>
-              <p><strong>User stories differ from <popover content="e.g. a description of the requirements written in prose">traditional requirements specifications</popover> mainly in the level of detail.</strong> User stories should only provide enough
-                details to make a reasonably low risk estimate of how long the user story will take to implement. When the time comes to implement the user story, the developers will meet with the customer face-to-face to work out a more detailed description
-                of the requirements. <span class="dimmed">[<trigger for="modal:xp-user-stories" trigger="click">more...</trigger>]</span></p>
-              <p><strong>User stories can capture <trigger trigger="click" for="modal:userStoriesUsage-nfr">non-functional requirements</trigger> too</strong> because even NFRs must benefit some stakeholder.</p>
-              <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:userStoriesUsage-nfr" class="algolia-no-index">
+              <p><strong>User stories differ from <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">e.g. a description of the requirements written in prose</span>traditional requirements specifications</span> mainly in the level of detail.</strong>                User stories should only provide enough details to make a reasonably low risk estimate of how long the user story will take to implement. When the time comes to implement the user story, the developers will meet with the customer face-to-face
+                to work out a more detailed description of the requirements. <span class="dimmed">[<span for="modal:xp-user-stories" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:xp-user-stories'].show()" class="trigger-click">more...</span>]</span>
+              </p>
+              <p><strong>User stories can capture <span trigger="click" for="modal:userStoriesUsage-nfr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:userStoriesUsage-nfr'].show()" class="trigger-click">non-functional requirements</span> too</strong>                because even NFRs must benefit some stakeholder.</p>
+              <b-modal id="modal:userStoriesUsage-nfr" hide-footer size="lg" modal-class="mb-zoom" ref="modal:userStoriesUsage-nfr"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                 <div>
                   <div></div>
                   <p></p>
@@ -1255,14 +1249,13 @@
                         <box>
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of non-functional requirement categories:</p>
                           <ul>
-                            <li>Data requirements e.g. size,
-                              <tooltip content="how often do data change">volatility</tooltip>,
-                              <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
+                            <li>Data requirements e.g. size, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">how often do data change</span>volatility</span>,
+                              <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">saving data permanenetly</span>persistency</span> etc.,</li>
                             <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                             <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time,
                               Robustness, Scalability, Security, Stability, Testability, and more ...</li>
                           </ul>
-                          <panel type="seamless" header="<md>:fas-cube:</md> Some concrete examples of NFRs" expanded>
+                          <panel type="seamless" expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some concrete examples of NFRs</p></template>
                             <ul>
                               <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
                               <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed
@@ -1286,9 +1279,9 @@
                       </div>
                       <div>
                         <div>
-                          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                             <div>
-                              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs" class="algolia-no-index">
+                              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> TEAMMATES NFRs</p></template>
                                 <question>
                                   <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
                                   <ul class="task-list">
@@ -1314,7 +1307,7 @@
                     </div>
                   </div>
                 </div>
-              </modal>
+              </b-modal>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of a NFR captured as a user story:</p>
                 <div class="table-responsive">
@@ -1352,14 +1345,13 @@
                   </ul>
                 </box>
               </div>
-              <p>While use cases can be recorded on
-                <tooltip content="e.g. index cards or sticky notes">physical paper</tooltip> in the initial stages, an online tool is more suitable for longer-term management of user stories, especially if the team is not
-                <tooltip content="physically in the same location">co-located</tooltip>.</p>
+              <p>While use cases can be recorded on <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g. index cards or sticky notes</span>physical paper</span>
+                in the initial stages, an online tool is more suitable for longer-term management of user stories, especially if the team is not <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">physically in the same location</span>co-located</span>.</p>
               <span class="non-printable">
-<panel header="**Tool Examples**: How to use some example online tools to manage user stories" alt="tool examples" class="algolia-no-index">
+<panel class="algolia-no-index"><template slot="_header"><p><strong>Tool Examples</strong>: How to use some example online tools to manage user stories</p></template><template slot="_alt"><p>tool examples</p></template>
   <div>
 <tabs> 
-  <tab header="GitHub Project Boards">
+  <tab><template slot="_header">GitHub Project Boards</template>
 <p>You can create issues for each of the user stories and use a GitHub <em>Project Board</em> to sort them into categories.</p>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example Project Board:</p>
               <p><img src="/website/book/specifyingRequirements/userStories/usage/images/userStoriesInGitHubProjectBoards.png" width="800"></p>
@@ -1372,13 +1364,13 @@
               <p>A video on GitHub Project Boards:</p>
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </tab>
-              <tab header="Google Sheets" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header">Google Sheets</template>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example Google Sheet for recording user stories:</p>
                 <p><img src="/website/book/specifyingRequirements/userStories/usage/images/userStoriesInGoogleSheets.png" width="800"></p>
                 <p></p>
                 <p></p>
               </tab>
-              <tab header="Trello" class="algolia-no-index">
+              <tab class="algolia-no-index"><template slot="_header">Trello</template>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example <a href="https://trello.com">Trello</a> Board for recording user stories:</p>
                 <p><img src="/website/book/specifyingRequirements/userStories/usage/images/userStoriesInTrello.png" width="800"></p>
                 <p></p>
@@ -1388,9 +1380,11 @@
             </div>
       </panel>
       </span>
-      <modal id="modal:xp-user-stories" title=":bookmark: User stories vs traditional requirement specifications, according to XP" class="algolia-no-index">
+      <b-modal id="modal:xp-user-stories" hide-footer size modal-class="mb-zoom" ref="modal:xp-user-stories"><template slot="modal-title">🔖 User stories vs traditional requirement specifications, according to XP</template>
         <p><span>
-<popover id="pop:xp" title="eXtreme Programming (XP)">eXtreme Programming (XP)</popover></span></p>
+<span id="pop:xp" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header">eXtreme Programming (XP)</span>eXtreme Programming (XP)</span>
+          </span>
+        </p>
         <div slot="content">
           <p><em>Extreme programming (XP)</em> is a software development methodology which is intended to improve software quality and responsiveness to changing customer requirements. As a type of agile software development, it advocates frequent &quot;releases&quot;
             in short development cycles, which is intended to improve productivity and introduce checkpoints at which new customer requirements can be adopted. [wikipedia, 2017.05.01]</p>
@@ -1402,11 +1396,11 @@
           <p>One of the biggest misunderstandings with user stories is how they differ from traditional requirements specifications. The biggest difference is in the level of detail. User stories should only provide enough detail to make a reasonably low
             risk estimate of how long the story will take to implement. When the time comes to implement the story developers will go to the customer and receive a detailed description of the requirements face to face.</p>
         </blockquote>
-      </modal>
+      </b-modal>
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+          <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
             <ul>
               <li><a href="https://www.mountaingoatsoftware.com/blog/non-functional-requirements-as-user-stories">This article by Mike Cohn</a> from MountainGoatSoftware explains how to use user stories to capture NFRs.</li>
             </ul>
@@ -1419,7 +1413,7 @@
     <br>
     <h3 id="glossary"><span class="dimmed"><strong>Glossary</strong></span><a class="fa fa-anchor" href="#glossary"></a></h3>
     <p><span id="W5-3f"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/glossary/what">
+    <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/glossary/what" id="requirements-specifying-requirements-glossary-what">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.3f</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1459,7 +1453,7 @@
     <br>
     <h3 id="supplementary-requirements"><span class="dimmed"><strong>Supplementary Requirements</strong></span><a class="fa fa-anchor" href="#supplementary-requirements"></a></h3>
     <p><span id="W5-3g"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/supplementaryRequirements/what">
+    <panel type="seamless" expanded popup-url="/website/book/specifyingRequirements/supplementaryRequirements/what" id="requirements-specifying-requirements-supplementary-requirements-what">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.3g</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1479,9 +1473,9 @@
           <p></p>
           <p></p>
           <div>
-            <p><strong>A <em>supplementary requirements</em> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most
-              <trigger trigger="click" for="modal:supplementary-nfr">Non Functional Requirements</trigger> will be listed.</p>
-            <modal large title="%%Textbook »%%" id="modal:supplementary-nfr" class="algolia-no-index">
+            <p><strong>A <em>supplementary requirements</em> section can be used to capture <em>requirements that do not fit elsewhere</em></strong>. Typically, this is where most <span trigger="click" for="modal:supplementary-nfr" v-b-popover.click.top.html="popoverGenerator"
+                v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:supplementary-nfr'].show()" class="trigger-click">Non Functional Requirements</span> will be listed.</p>
+            <b-modal id="modal:supplementary-nfr" hide-footer size="lg" modal-class="mb-zoom" ref="modal:supplementary-nfr"><template slot="modal-title"><span class="dimmed">Textbook »</span></template>
               <div>
                 <div></div>
                 <p></p>
@@ -1491,7 +1485,7 @@
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="non-functional-requirements"><span>Non-Functional Requirements</span><a class="fa fa-anchor" href="#non-functional-requirements"></a></h4>
+                    <h4 id="non-functional-requirements-2"><span>Non-Functional Requirements</span><a class="fa fa-anchor" href="#non-functional-requirements-2"></a></h4>
                   </div>
                   <div id="main">
                     <div>
@@ -1503,14 +1497,13 @@
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of non-functional requirement categories:</p>
                         <ul>
-                          <li>Data requirements e.g. size,
-                            <tooltip content="how often do data change">volatility</tooltip>,
-                            <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
+                          <li>Data requirements e.g. size, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">how often do data change</span>volatility</span>,
+                            <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">saving data permanenetly</span>persistency</span> etc.,</li>
                           <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                           <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time,
                             Robustness, Scalability, Security, Stability, Testability, and more ...</li>
                         </ul>
-                        <panel type="seamless" header="<md>:fas-cube:</md> Some concrete examples of NFRs" expanded>
+                        <panel type="seamless" expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some concrete examples of NFRs</p></template>
                           <ul>
                             <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
                             <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed
@@ -1534,9 +1527,9 @@
                     </div>
                     <div>
                       <div>
-                        <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                        <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                           <div>
-                            <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> TEAMMATES NFRs</p></template>
                               <question>
                                 <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
                                 <ul class="task-list">
@@ -1562,7 +1555,7 @@
                   </div>
                 </div>
               </div>
-            </modal>
+            </b-modal>
           </div>
           <div></div>
         </div>
@@ -1572,7 +1565,7 @@
   </panel>
   <p></p>
   <p><span id="W5-4"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
+  <panel type="seamless" no-close expandable="true" expanded id="w5-4-code-quality">
     <span slot="header" class="card-title"><div><h2 id="w5-4-code-quality"><span class="dimmed">[W5.4]</span> <strong>Code Quality</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
     <a class="fa fa-anchor" href="#w5-4-code-quality"></a>
     </h2>
@@ -1582,7 +1575,7 @@
       <br>
       <h3 id="readability"><span class="dimmed"><strong>Readability</strong></span><a class="fa fa-anchor" href="#readability"></a></h3>
       <p><span id="W5-4a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/introduction">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/introduction" id="implementation-code-quality-readability-introduction">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4a</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-readability-introduction"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Readability →</span></span></small> <strong><span>Introduction</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-readability-introduction"></a></h4>
@@ -1601,7 +1594,7 @@
             <p></p>
             <div>
               <blockquote>
-                <p><span><span aria-hidden="true" class="fas fa-quote-left"></span></span> Programs should be written and polished until they acquire publication quality. <span><span aria-hidden="true" class="fas fa-quote-right"></span></span> <sub>--<a href="https://en.wikipedia.org/wiki/Niklaus_Wirth">Niklaus Wirth</a></sub></p>
+                <p>Programs should be written and polished until they acquire publication quality. <sub>--<a href="https://en.wikipedia.org/wiki/Niklaus_Wirth">Niklaus Wirth</a></sub></p>
               </blockquote>
               <p><strong>Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is understandability.</strong> This is because in any non-trivial software project, code needs to be read,
                 understood, and modified by other developers later on. Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
@@ -1617,24 +1610,7 @@
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">int</span> subsidy;
-    <span class="hljs-keyword">if</span> (!age) {
-        <span class="hljs-keyword">if</span> (!sub) {
-            <span class="hljs-keyword">if</span> (!notFullTime) {
-                subsidy = <span class="hljs-number">500</span>;
-            } <span class="hljs-keyword">else</span> {
-                subsidy = <span class="hljs-number">250</span>;
-            }
-        } <span class="hljs-keyword">else</span> {
-            subsidy = <span class="hljs-number">250</span>;
-        }
-    } <span class="hljs-keyword">else</span> {
-        subsidy = -<span class="hljs-number">1</span>;
-    }
-    <span class="hljs-keyword">return</span> subsidy;
-}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-keyword">int</span> subsidy;</span><span>    <span class="hljs-keyword">if</span> (!age) {</span><span>        <span class="hljs-keyword">if</span> (!sub) {</span><span>            <span class="hljs-keyword">if</span> (!notFullTime) {</span><span>                subsidy = <span class="hljs-number">500</span>;</span><span>            } <span class="hljs-keyword">else</span> {</span><span>                subsidy = <span class="hljs-number">250</span>;</span><span>            }</span><span>        } <span class="hljs-keyword">else</span> {</span><span>            subsidy = <span class="hljs-number">250</span>;</span><span>        }</span><span>    } <span class="hljs-keyword">else</span> {</span><span>        subsidy = -<span class="hljs-number">1</span>;</span><span>    }</span><span>    <span class="hljs-keyword">return</span> subsidy;</span><span>}</span></code></pre>
                         </td>
                         <td>&nbsp;&nbsp;<br><br></td>
                         <td valign="top">
@@ -1643,20 +1619,7 @@
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">int</span> subsidy;
-    <span class="hljs-keyword">if</span> (isSenior) {
-        subsidy = REJECT_SENIOR;
-    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isAlreadySubsidised) {
-        subsidy = SUBSIDISED_SUBSIDY;
-    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isPartTime) {
-        subsidy = FULLTIME_SUBSIDY * RATIO;
-    } <span class="hljs-keyword">else</span> {
-        subsidy = FULLTIME_SUBSIDY;
-    }
-    <span class="hljs-keyword">return</span> subsidy;
-}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-keyword">int</span> subsidy;</span><span>    <span class="hljs-keyword">if</span> (isSenior) {</span><span>        subsidy = REJECT_SENIOR;</span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isAlreadySubsidised) {</span><span>        subsidy = SUBSIDISED_SUBSIDY;</span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isPartTime) {</span><span>        subsidy = FULLTIME_SUBSIDY * RATIO;</span><span>    } <span class="hljs-keyword">else</span> {</span><span>        subsidy = FULLTIME_SUBSIDY;</span><span>    }</span><span>    <span class="hljs-keyword">return</span> subsidy;</span><span>}</span></code></pre>
                         </td>
                       </tr>
                     </table>
@@ -1672,19 +1635,7 @@
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
-        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:
-            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:
-                subsidy = <span class="hljs-number">500</span>
-            <span class="hljs-keyword">else</span>:
-                subsidy = <span class="hljs-number">250</span>
-        <span class="hljs-keyword">else</span>:
-            subsidy = <span class="hljs-number">250</span>
-    <span class="hljs-keyword">else</span>:
-        subsidy = <span class="hljs-number">-1</span>
-    <span class="hljs-keyword">return</span> subsidy
-</code></pre>
+                          <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span></span><span>    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:</span><span>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:</span><span>            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:</span><span>                subsidy = <span class="hljs-number">500</span></span><span>            <span class="hljs-keyword">else</span>:</span><span>                subsidy = <span class="hljs-number">250</span></span><span>        <span class="hljs-keyword">else</span>:</span><span>            subsidy = <span class="hljs-number">250</span></span><span>    <span class="hljs-keyword">else</span>:</span><span>        subsidy = <span class="hljs-number">-1</span></span><span>    <span class="hljs-keyword">return</span> subsidy</span></code></pre>
                         </td>
                         <td>&nbsp;&nbsp;<br><br></td>
                         <td valign="top">
@@ -1693,16 +1644,7 @@
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">if</span> is_senior:
-        <span class="hljs-keyword">return</span> REJECT_SENIOR
-    <span class="hljs-keyword">elif</span> is_already_subsidised:
-        <span class="hljs-keyword">return</span> SUBSIDISED_SUBSIDY
-    <span class="hljs-keyword">elif</span> is_parttime:
-        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY * RATIO
-    <span class="hljs-keyword">else</span>:
-        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY
-</code></pre>
+                          <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span></span><span>    <span class="hljs-keyword">if</span> is_senior:</span><span>        <span class="hljs-keyword">return</span> REJECT_SENIOR</span><span>    <span class="hljs-keyword">elif</span> is_already_subsidised:</span><span>        <span class="hljs-keyword">return</span> SUBSIDISED_SUBSIDY</span><span>    <span class="hljs-keyword">elif</span> is_parttime:</span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY * RATIO</span><span>    <span class="hljs-keyword">else</span>:</span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY</span></code></pre>
                         </td>
                       </tr>
                     </table>
@@ -1715,7 +1657,7 @@
         </div>
       </panel>
       <p><span id="W5-4b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/basic/avoidLongMethods">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/basic/avoidLongMethods" id="implementation-code-quality-readability-basic-avoid-long-methods">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-readability-basic-avoid-long-methods"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Readability → Basic →</span></span></small> <strong><span>Avoid Long Methods</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-readability-basic-avoid-long-methods"></a></h4>
@@ -1740,7 +1682,7 @@
         </div>
       </panel>
       <p><span id="W5-4c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/basic/avoidDeepNesting">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/basic/avoidDeepNesting" id="implementation-code-quality-readability-basic-avoid-deep-nesting">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-readability-basic-avoid-deep-nesting"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Readability → Basic →</span></span></small> <strong><span>Avoid Deep Nesting</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-readability-basic-avoid-deep-nesting"></a></h4>
@@ -1776,24 +1718,7 @@
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">int</span> subsidy;
-    <span class="hljs-keyword">if</span> (!age) {
-        <span class="hljs-keyword">if</span> (!sub) {
-            <span class="hljs-keyword">if</span> (!notFullTime) {
-                subsidy = <span class="hljs-number">500</span>;
-            } <span class="hljs-keyword">else</span> {
-                subsidy = <span class="hljs-number">250</span>;
-            }
-        } <span class="hljs-keyword">else</span> {
-            subsidy = <span class="hljs-number">250</span>;
-        }
-    } <span class="hljs-keyword">else</span> {
-        subsidy = -<span class="hljs-number">1</span>;
-    }
-    <span class="hljs-keyword">return</span> subsidy;
-}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-keyword">int</span> subsidy;</span><span>    <span class="hljs-keyword">if</span> (!age) {</span><span>        <span class="hljs-keyword">if</span> (!sub) {</span><span>            <span class="hljs-keyword">if</span> (!notFullTime) {</span><span>                subsidy = <span class="hljs-number">500</span>;</span><span>            } <span class="hljs-keyword">else</span> {</span><span>                subsidy = <span class="hljs-number">250</span>;</span><span>            }</span><span>        } <span class="hljs-keyword">else</span> {</span><span>            subsidy = <span class="hljs-number">250</span>;</span><span>        }</span><span>    } <span class="hljs-keyword">else</span> {</span><span>        subsidy = -<span class="hljs-number">1</span>;</span><span>    }</span><span>    <span class="hljs-keyword">return</span> subsidy;</span><span>}</span></code></pre>
                         </td>
                         <td>&nbsp;&nbsp;<br><br></td>
                         <td valign="top">
@@ -1802,20 +1727,7 @@
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">int</span> subsidy;
-    <span class="hljs-keyword">if</span> (isSenior) {
-        subsidy = REJECT_SENIOR;
-    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isAlreadySubsidised) {
-        subsidy = SUBSIDISED_SUBSIDY;
-    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isPartTime) {
-        subsidy = FULLTIME_SUBSIDY * RATIO;
-    } <span class="hljs-keyword">else</span> {
-        subsidy = FULLTIME_SUBSIDY;
-    }
-    <span class="hljs-keyword">return</span> subsidy;
-}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-keyword">int</span> subsidy;</span><span>    <span class="hljs-keyword">if</span> (isSenior) {</span><span>        subsidy = REJECT_SENIOR;</span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isAlreadySubsidised) {</span><span>        subsidy = SUBSIDISED_SUBSIDY;</span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isPartTime) {</span><span>        subsidy = FULLTIME_SUBSIDY * RATIO;</span><span>    } <span class="hljs-keyword">else</span> {</span><span>        subsidy = FULLTIME_SUBSIDY;</span><span>    }</span><span>    <span class="hljs-keyword">return</span> subsidy;</span><span>}</span></code></pre>
                         </td>
                       </tr>
                     </table>
@@ -1831,19 +1743,7 @@
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
-        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:
-            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:
-                subsidy = <span class="hljs-number">500</span>
-            <span class="hljs-keyword">else</span>:
-                subsidy = <span class="hljs-number">250</span>
-        <span class="hljs-keyword">else</span>:
-            subsidy = <span class="hljs-number">250</span>
-    <span class="hljs-keyword">else</span>:
-        subsidy = <span class="hljs-number">-1</span>
-    <span class="hljs-keyword">return</span> subsidy
-</code></pre>
+                          <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span></span><span>    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:</span><span>        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:</span><span>            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:</span><span>                subsidy = <span class="hljs-number">500</span></span><span>            <span class="hljs-keyword">else</span>:</span><span>                subsidy = <span class="hljs-number">250</span></span><span>        <span class="hljs-keyword">else</span>:</span><span>            subsidy = <span class="hljs-number">250</span></span><span>    <span class="hljs-keyword">else</span>:</span><span>        subsidy = <span class="hljs-number">-1</span></span><span>    <span class="hljs-keyword">return</span> subsidy</span></code></pre>
                         </td>
                         <td>&nbsp;&nbsp;<br><br></td>
                         <td valign="top">
@@ -1852,16 +1752,7 @@
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">if</span> is_senior:
-        <span class="hljs-keyword">return</span> REJECT_SENIOR
-    <span class="hljs-keyword">elif</span> is_already_subsidised:
-        <span class="hljs-keyword">return</span> SUBSIDISED_SUBSIDY
-    <span class="hljs-keyword">elif</span> is_parttime:
-        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY * RATIO
-    <span class="hljs-keyword">else</span>:
-        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY
-</code></pre>
+                          <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span></span><span>    <span class="hljs-keyword">if</span> is_senior:</span><span>        <span class="hljs-keyword">return</span> REJECT_SENIOR</span><span>    <span class="hljs-keyword">elif</span> is_already_subsidised:</span><span>        <span class="hljs-keyword">return</span> SUBSIDISED_SUBSIDY</span><span>    <span class="hljs-keyword">elif</span> is_parttime:</span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY * RATIO</span><span>    <span class="hljs-keyword">else</span>:</span><span>        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY</span></code></pre>
                         </td>
                       </tr>
                     </table>
@@ -1874,7 +1765,7 @@
         </div>
       </panel>
       <p><span id="W5-4d"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/basic/avoidComplicatedExpressions">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/basic/avoidComplicatedExpressions" id="implementation-code-quality-readability-basic-avoid-complicated-expressions">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-readability-basic-avoid-complicated-expressions"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Readability → Basic →</span></span></small> <strong><span>Avoid Complicated Expressions</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-readability-basic-avoid-complicated-expressions"></a></h4>
@@ -1903,22 +1794,13 @@
                         </span>
                       </font>
                     </p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);</span></code></pre>
                     <p>
                       <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                         </span>
                       </font>
                     </p>
-                    <pre><code class="hljs java">
-<span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
-<span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
-<span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;
-
-<span class="hljs-keyword">boolean</span> isUrgent = typeCode == URGENT;
-
-<span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;
-</code></pre>
+                    <pre><code class="hljs java"><span>&#x200B;</span><span><span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;</span><span><span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;</span><span><span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;</span><span>&#x200B;</span><span><span class="hljs-keyword">boolean</span> isUrgent = typeCode == URGENT;</span><span>&#x200B;</span><span><span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;</span></code></pre>
                   </box>
                 </div>
               </div>
@@ -1931,27 +1813,18 @@
                         </span>
                       </font>
                     </p>
-                    <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)</span></code></pre>
                     <p>
                       <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                         </span>
                       </font>
                     </p>
-                    <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
-is_same_size = previous_size != length
-is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size
-
-is_urgent = type_code == URGENT
-
-<span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent
-</code></pre>
+                    <pre><code class="hljs python"><span>is_within_size_limit = length &lt; MAX_LENGTH</span><span>is_same_size = previous_size != length</span><span>is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size</span><span>&#x200B;</span><span>is_urgent = type_code == URGENT</span><span>&#x200B;</span><span><span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent</span></code></pre>
                   </box>
                 </div>
               </div>
               <blockquote>
-                <p><span><span aria-hidden="true" class="fas fa-quote-left"></span></span> The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other
-                  things he avoids clever tricks like the plague. <span><span aria-hidden="true" class="fas fa-quote-right"></span></span> <sub>-- Edsger Dijkstra</sub></p>
+                <p>The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague. <sub>-- Edsger Dijkstra</sub></p>
               </blockquote>
             </div>
             <div></div>
@@ -1959,7 +1832,7 @@ is_urgent = type_code == URGENT
         </div>
       </panel>
       <p><span id="W5-4e"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/basic/avoidMagicNumbers">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/basic/avoidMagicNumbers" id="implementation-code-quality-readability-basic-avoid-magic-numbers">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4e</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-readability-basic-avoid-magic-numbers"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Readability → Basic →</span></span></small> <strong><span>Avoid Magic Numbers</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-readability-basic-avoid-magic-numbers"></a></h4>
@@ -1977,8 +1850,8 @@ is_urgent = type_code == URGENT
             <p></p>
             <p></p>
             <div>
-              <p>When the code has a number that does not explain the meaning of the number, we call that a &quot;magic number&quot; (as in &quot;the number appears as if by magic&quot;). Using a
-                <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
+              <p>When the code has a number that does not explain the meaning of the number, we call that a &quot;magic number&quot; (as in &quot;the number appears as if by magic&quot;). Using a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter"
+                  class="trigger"><span data-mb-html-for="_content">e.g., <code>PI</code></span><em>named constant</em></span> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:</p>
                 <div class="alt-java">
@@ -1991,10 +1864,7 @@ is_urgent = type_code == URGENT
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
-...
-<span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;</span><span>...</span><span><span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;</span></code></pre>
                         </td>
                         <td>&nbsp;&nbsp;<br><br></td>
                         <td valign="top">
@@ -2003,13 +1873,7 @@ is_urgent = type_code == URGENT
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
-<span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
-...
-<span class="hljs-keyword">return</span> PI;
-...
-<span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;</span><span><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;</span><span>...</span><span><span class="hljs-keyword">return</span> PI;</span><span>...</span><span><span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;</span></code></pre>
                         </td>
                       </tr>
                     </table>
@@ -2026,10 +1890,7 @@ is_urgent = type_code == URGENT
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
-...
-<span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
-</code></pre>
+                          <pre><code class="hljs python"><span><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span></span><span>...</span><span><span class="hljs-keyword">return</span> <span class="hljs-number">9</span></span></code></pre>
                         </td>
                         <td>&nbsp;&nbsp;<br><br></td>
                         <td valign="top">
@@ -2038,13 +1899,7 @@ is_urgent = type_code == URGENT
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
-MAX_SIZE = <span class="hljs-number">10</span>
-...
-<span class="hljs-keyword">return</span> PI
-...
-<span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span>
-</code></pre>
+                          <pre><code class="hljs python"><span>PI = <span class="hljs-number">3.14236</span></span><span>MAX_SIZE = <span class="hljs-number">10</span></span><span>...</span><span><span class="hljs-keyword">return</span> PI</span><span>...</span><span><span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span></span></code></pre>
                         </td>
                       </tr>
                     </table>
@@ -2058,14 +1913,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                     </span>
                   </font>
                 </p>
-                <div class="alt-java">
-                  <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
-</code></pre>
-                </div>
-                <div class="alt-python">
-                  <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment"># A magic string!</span>
-</code></pre>
-                </div>
+                <pre><code class="hljs java"><span><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span></span></code></pre>
               </box>
               <p>In general, try to avoid any magic literals.</p>
             </div>
@@ -2074,7 +1922,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
         </div>
       </panel>
       <p><span id="W5-4f"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/basic/makeCodeObvious">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/basic/makeCodeObvious" id="implementation-code-quality-readability-basic-make-the-code-obvious">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4f</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-readability-basic-make-the-code-obvious"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Readability → Basic →</span></span></small> <strong><span>Make the Code Obvious</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-readability-basic-make-the-code-obvious"></a></h4>
@@ -2096,23 +1944,23 @@ MAX_SIZE = <span class="hljs-number">10</span>
               <ul>
                 <li>[<code>Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
                 <li>[<code>Java</code>, <code>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
-                <li>[<code>Java</code>, <code>Python</code>] Use
-                  <trigger trigger="click" for="modal:obviousCode-enums">enumerations</trigger> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and
-                  'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
+                <li>[<code>Java</code>, <code>Python</code>] Use <span trigger="click" for="modal:obviousCode-enums" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:obviousCode-enums'].show()"
+                    class="trigger-click">enumerations</span> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting',
+                  'enabled', and 'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
               </ul>
-              <modal title="More about enumerations" id="modal:obviousCode-enums" class="algolia-no-index">
+              <b-modal id="modal:obviousCode-enums" hide-footer size modal-class="mb-zoom" ref="modal:obviousCode-enums"><template slot="modal-title">More about enumerations</template>
                 <ul>
                   <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
                   <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
                 </ul>
-              </modal>
+              </b-modal>
             </div>
             <div></div>
           </div>
         </div>
       </panel>
       <p><span id="W5-4g"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/intermediate/structureCodeLogically">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/intermediate/structureCodeLogically" id="implementation-code-quality-readability-intermediate-structure-code-logically">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4g</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2141,7 +1989,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
         </div>
       </panel>
       <p><span id="W5-4h"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/intermediate/dontTripReader">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/intermediate/dontTripReader" id="implementation-code-quality-readability-intermediate-do-not-trip-up-reader">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4h</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2175,7 +2023,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
         </div>
       </panel>
       <p><span id="W5-4i"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/intermediate/practiceKISSing">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/intermediate/practiceKISSing" id="implementation-code-quality-readability-intermediate-practice-kissing">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4i</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2198,12 +2046,10 @@ MAX_SIZE = <span class="hljs-number">10</span>
               <p>As the old adage goes, <strong>&quot;keep it simple, stupid” (KISS).  Do not try to write ‘clever’ code.</strong> For example, do not dismiss the brute-force yet simple solution in favor of a complicated one because of some ‘supposed benefits’
                 such as 'better reusability' unless you have a strong justification.</p>
               <blockquote>
-                <p><span><span aria-hidden="true" class="fas fa-quote-left"></span></span> Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough
-                  to debug it. <span><span aria-hidden="true" class="fas fa-quote-right"></span></span> <sub>--Brian W. Kernighan </sub></p>
+                <p>Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it. <sub>--Brian W. Kernighan </sub></p>
               </blockquote>
               <blockquote>
-                <p><span><span aria-hidden="true" class="fas fa-quote-left"></span></span> Programs must be written for people to read, and only incidentally for machines to execute. <span><span aria-hidden="true" class="fas fa-quote-right"></span></span>
-                  <sub>--Abelson and Sussman</sub></p>
+                <p>Programs must be written for people to read, and only incidentally for machines to execute. <sub>--Abelson and Sussman</sub></p>
               </blockquote>
             </div>
             <div></div>
@@ -2211,7 +2057,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
         </div>
       </panel>
       <p><span id="W5-4j"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/intermediate/avoidPrematureOptimizations">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/intermediate/avoidPrematureOptimizations" id="implementation-code-quality-readability-intermediate-avoid-premature-optimizations">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4j</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2242,7 +2088,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
               <p>A popular saying in the industry is <strong><em>make it work, make it right, make it fast</em></strong> which means in most cases getting the code to perform correctly should take priority over optimizing it. If the code doesn't work correctly,
                 it has no value on matter how fast/efficient it it.</p>
               <blockquote>
-                <p><span><span aria-hidden="true" class="fas fa-quote-left"></span></span> Premature optimization is the root of all evil in programming. <sub>--<a href="https://en.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a></sub></p>
+                <p>Premature optimization is the root of all evil in programming. <sub>--<a href="https://en.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a></sub></p>
               </blockquote>
               <p>Note that <strong>there are cases where optimizing takes priority over other things</strong> <span class="dimmed">e.g. when writing code for resource-constrained environments</span>. This guideline simply a caution that you should optimize
                 only when it is really needed.</p>
@@ -2252,7 +2098,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
         </div>
       </panel>
       <p><span id="W5-4k"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/intermediate/slapHard">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/intermediate/slapHard" id="implementation-code-quality-readability-intermediate-slap-hard">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4k</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2272,29 +2118,21 @@ MAX_SIZE = <span class="hljs-number">10</span>
             <p></p>
             <p></p>
             <div>
-              <p>Avoid varying the level of
-                <trigger trigger="click" for="modal:slap-abstraction">abstraction</trigger> within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
+              <p>Avoid varying the level of <span trigger="click" for="modal:slap-abstraction" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:slap-abstraction'].show()" class="trigger-click">abstraction</span>                within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
               <box>
                 <p>Example:</p>
                 <p>
                   <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                     </span>
                   </font> (<code>readData();</code> and <code>salary = basic*rise+1000;</code> are at different levels of abstraction)</p>
-                <pre><code class="hljs java">readData();
-salary = basic*rise+<span class="hljs-number">1000</span>;
-tax = (taxable?salary*<span class="hljs-number">0.07</span>:<span class="hljs-number">0</span>);
-displayResult();
-</code></pre>
+                <pre><code class="hljs java"><span>readData();</span><span>salary = basic*rise+<span class="hljs-number">1000</span>;</span><span>tax = (taxable?salary*<span class="hljs-number">0.07</span>:<span class="hljs-number">0</span>);</span><span>displayResult();</span></code></pre>
                 <p>
                   <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                     </span>
                   </font> (all statements are at the same level of abstraction)</p>
-                <pre><code class="hljs java">readData();
-processData();
-displayResult();
-</code></pre>
+                <pre><code class="hljs java"><span>readData();</span><span>processData();</span><span>displayResult();</span></code></pre>
               </box>
-              <modal title id="modal:slap-abstraction" class="algolia-no-index">
+              <b-modal id="modal:slap-abstraction" hide-footer size modal-class="mb-zoom" ref="modal:slap-abstraction"><template slot="modal-title"></template>
                 <div>
                   <div></div>
                   <p></p>
@@ -2345,14 +2183,14 @@ displayResult();
                     </div>
                   </div>
                 </div>
-              </modal>
+              </b-modal>
             </div>
             <div></div>
           </div>
         </div>
       </panel>
       <p><span id="W5-4l"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/advanced/makeHappyPathProminent">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/maximiseReadability/advanced/makeHappyPathProminent" id="implementation-code-quality-readability-advanced-make-the-happy-path-prominent">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4l</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2381,19 +2219,7 @@ displayResult();
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (!isUnusualCase) {  <span class="hljs-comment">//detecting an unusual condition</span>
-    <span class="hljs-keyword">if</span> (!isErrorCase) {
-        start();    <span class="hljs-comment">//main path</span>
-        process();
-        cleanup();
-        exit();
-    } <span class="hljs-keyword">else</span> {
-        handleError();
-    }
-} <span class="hljs-keyword">else</span> {
-    handleUnusualCase(); <span class="hljs-comment">//handling that unusual condition</span>
-}
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (!isUnusualCase) {  <span class="hljs-comment">//detecting an unusual condition</span></span><span>    <span class="hljs-keyword">if</span> (!isErrorCase) {</span><span>        start();    <span class="hljs-comment">//main path</span></span><span>        process();</span><span>        cleanup();</span><span>        exit();</span><span>    } <span class="hljs-keyword">else</span> {</span><span>        handleError();</span><span>    }</span><span>} <span class="hljs-keyword">else</span> {</span><span>    handleUnusualCase(); <span class="hljs-comment">//handling that unusual condition</span></span><span>}</span></code></pre>
                 <p>In the code above,</p>
                 <ul>
                   <li>Unusual condition detection is separated from their handling.</li>
@@ -2404,21 +2230,7 @@ displayResult();
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isUnusualCase) { <span class="hljs-comment">//Guard Clause</span>
-    handleUnusualCase();
-    <span class="hljs-keyword">return</span>;
-}
-
-<span class="hljs-keyword">if</span> (isErrorCase) { <span class="hljs-comment">//Guard Clause</span>
-    handleError();
-    <span class="hljs-keyword">return</span>;
-}
-
-start();
-process();
-cleanup();
-exit();
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (isUnusualCase) { <span class="hljs-comment">//Guard Clause</span></span><span>    handleUnusualCase();</span><span>    <span class="hljs-keyword">return</span>;</span><span>}</span><span>&#x200B;</span><span><span class="hljs-keyword">if</span> (isErrorCase) { <span class="hljs-comment">//Guard Clause</span></span><span>    handleError();</span><span>    <span class="hljs-keyword">return</span>;</span><span>}</span><span>&#x200B;</span><span>start();</span><span>process();</span><span>cleanup();</span><span>exit();</span></code></pre>
                 <p>In contrast, the above code</p>
                 <ul>
                   <li>deals with unusual conditions as soon as they are detected so that the reader doesn't have to remember them for long.</li>
@@ -2433,7 +2245,7 @@ exit();
       <br>
       <h3 id="naming"><span class="dimmed"><strong>Naming</strong></span><a class="fa fa-anchor" href="#naming"></a></h3>
       <p><span id="W5-4m"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/nameWell/introduction">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/nameWell/introduction" id="implementation-code-quality-naming-introduction">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4m</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-naming-introduction"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Naming →</span></span></small> <strong><span>Introduction</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-naming-introduction"></a></h4>
@@ -2453,8 +2265,7 @@ exit();
             <div>
               <p>Proper naming improves the readability. It also reduces bugs caused by ambiguities regarding the intent of a variable or a method.</p>
               <blockquote>
-                <p><span><span aria-hidden="true" class="fas fa-quote-left"></span></span> There are only two hard things in Computer Science: cache invalidation and naming things. <span><span aria-hidden="true" class="fas fa-quote-right"></span></span>
-                  <sub>-- Phil Karlton</sub></p>
+                <p>There are only two hard things in Computer Science: cache invalidation and naming things. <sub>-- Phil Karlton</sub></p>
               </blockquote>
             </div>
             <div></div>
@@ -2462,7 +2273,7 @@ exit();
         </div>
       </panel>
       <p><span id="W5-4n"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/nameWell/basic/nounsAndVerbsAsNames">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/nameWell/basic/nounsAndVerbsAsNames" id="implementation-code-quality-naming-basic-use-nouns-for-things-and-verbs-for-actions">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4n</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-naming-basic-use-nouns-for-things-and-verbs-for-actions"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Naming → Basic →</span></span></small> <strong><span>Use Nouns for Things and Verbs for Actions</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-naming-basic-use-nouns-for-things-and-verbs-for-actions"></a></h4>
@@ -2481,8 +2292,8 @@ exit();
             <p></p>
             <div>
               <blockquote>
-                <p><span><span aria-hidden="true" class="fas fa-quote-left"></span></span> Every system is built from a domain-specific language designed by the programmers to describe that system. Functions are the verbs of that language, and classes are
-                  the nouns. <span><span aria-hidden="true" class="fas fa-quote-right"></span></span><br><sub>― Robert C. Martin, <em>Clean Code: A Handbook of Agile Software Craftsmanship</em></sub></p>
+                <p><span aria-hidden="true" class="fas fa-quote-left"></span> Every system is built from a domain-specific language designed by the programmers to describe that system. Functions are the verbs of that language, and classes are the nouns.
+                  <sub>― Robert C. Martin, <em>Clean Code: A Handbook of Agile Software Craftsmanship</em></sub></p>
               </blockquote>
               <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
               <box>
@@ -2528,9 +2339,7 @@ exit();
                       </span>
                     </font>
                   </p>
-                  <pre><code class="hljs java">Person student;
-ArrayList&lt;Person&gt; students;
-</code></pre>
+                  <pre><code class="hljs java"><span>Person student;</span><span>ArrayList&lt;Person&gt; students;</span></code></pre>
                 </div>
                 <div class="alt-python">
                   <p>
@@ -2538,9 +2347,7 @@ ArrayList&lt;Person&gt; students;
                       </span>
                     </font>
                   </p>
-                  <pre><code class="hljs python">name = <span class="hljs-string">'Jim'</span>
-names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alice'</span>]
-</code></pre>
+                  <pre><code class="hljs python"><span>name = <span class="hljs-string">'Jim'</span></span><span>names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alice'</span>]</span></code></pre>
                 </div>
               </box>
             </div>
@@ -2549,7 +2356,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </div>
       </panel>
       <p><span id="W5-4o"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/nameWell/basic/useStandardWords">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/nameWell/basic/useStandardWords" id="implementation-code-quality-naming-basic-use-standard-words">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4o</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2576,7 +2383,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </div>
       </panel>
       <p><span id="W5-4p"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/nameWell/intermediate/useNameExplain">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/nameWell/intermediate/useNameExplain" id="implementation-code-quality-naming-intermediate-use-name-to-explain">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4p</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2700,7 +2507,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </div>
       </panel>
       <p><span id="W5-4q"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/nameWell/intermediate/notTooLongNorShort">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/nameWell/intermediate/notTooLongNorShort" id="implementation-code-quality-naming-intermediate-not-too-long-not-too-short">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4q</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2727,7 +2534,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </div>
       </panel>
       <p><span id="W5-4r"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/nameWell/intermediate/avoidMisleadingNames">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/nameWell/intermediate/avoidMisleadingNames" id="implementation-code-quality-naming-intermediate-avoid-misleading-names">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4r</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2822,7 +2629,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
       <br>
       <h3 id="unsafe-practices"><span class="dimmed"><strong>Unsafe Practices</strong></span><a class="fa fa-anchor" href="#unsafe-practices"></a></h3>
       <p><span id="W5-4s"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/introduction">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/introduction" id="implementation-code-quality-error-prone-practices-introduction">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4s</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-error-prone-practices-introduction"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Error-Prone Practices →</span></span></small> <strong><span>Introduction</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-error-prone-practices-introduction"></a></h4>
@@ -2847,7 +2654,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </div>
       </panel>
       <p><span id="W5-4t"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/basic/useDefaultBranch">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/basic/useDefaultBranch" id="implementation-code-quality-error-prone-practices-basic-use-the-default-branch">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4t</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-error-prone-practices-basic-use-the-default-branch"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Error-Prone Practices → Basic →</span></span></small> <strong><span>Use the Default Branch</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-error-prone-practices-basic-use-the-default-branch"></a></h4>
@@ -2874,18 +2681,13 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
-<span class="hljs-keyword">else</span> print <span class="hljs-string">"blue"</span>;
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;</span><span><span class="hljs-keyword">else</span> print <span class="hljs-string">"blue"</span>;</span></code></pre>
                 <p>
                   <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
-<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (blue) print <span class="hljs-string">"blue"</span>;
-<span class="hljs-keyword">else</span> error(<span class="hljs-string">"incorrect input"</span>);
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;</span><span><span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (blue) print <span class="hljs-string">"blue"</span>;</span><span><span class="hljs-keyword">else</span> error(<span class="hljs-string">"incorrect input"</span>);</span></code></pre>
               </box>
             </div>
             <div></div>
@@ -2893,7 +2695,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </div>
       </panel>
       <p><span id="W5-4u"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/basic/dontRecycleVarsOrParams">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/basic/dontRecycleVarsOrParams" id="implementation-code-quality-error-prone-practices-basic-don-t-recycle-variables-or-parameters">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4u</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-error-prone-practices-basic-don-t-recycle-variables-or-parameters"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Error-Prone Practices → Basic →</span></span></small> <strong><span>Don't Recycle Variables or Parameters</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-error-prone-practices-basic-don-t-recycle-variables-or-parameters"></a></h4>
@@ -2921,39 +2723,13 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                     </span>
                   </font>
                 </p>
-                <div class="alt-java">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
-    length = length * width;
-    <span class="hljs-keyword">return</span> length;
-}
-</code></pre>
-                </div>
-                <div class="alt-python">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute_rectangle_area</span><span class="hljs-params">(length, width)</span>:</span>
-    length = length * width
-    <span class="hljs-keyword">return</span> length
-</code></pre>
-                </div>
+                <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{</span><span>    length = length * width;</span><span>    <span class="hljs-keyword">return</span> length;</span><span>}</span><span>&#x200B;</span></code></pre>
                 <p>
                   <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                     </span>
                   </font>
                 </p>
-                <div class="alt-java">
-                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
-    <span class="hljs-keyword">double</span> area;
-    area = length * width;
-    <span class="hljs-keyword">return</span> area;
-}
-</code></pre>
-                </div>
-                <div class="alt-python">
-                  <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compute_rectangle_area</span><span class="hljs-params">(length, width)</span>:</span>
-    area = length * width
-    <span class="hljs-keyword">return</span> area
-}
-</code></pre>
-                </div>
+                <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{</span><span>    <span class="hljs-keyword">double</span> area;</span><span>    area = length * width;</span><span>    <span class="hljs-keyword">return</span> area;</span><span>}</span></code></pre>
               </box>
             </div>
             <div></div>
@@ -2961,7 +2737,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </div>
       </panel>
       <p><span id="W5-4v"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/basic/avoidEmptyCatchBlocks">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/basic/avoidEmptyCatchBlocks" id="implementation-code-quality-error-prone-practices-basic-avoid-empty-catch-blocks">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4v</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-error-prone-practices-basic-avoid-empty-catch-blocks"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Error-Prone Practices → Basic →</span></span></small> <strong><span>Avoid Empty Catch Blocks</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-error-prone-practices-basic-avoid-empty-catch-blocks"></a></h4>
@@ -2986,7 +2762,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </div>
       </panel>
       <p><span id="W5-4w"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/basic/deleteDeadCode">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/basic/deleteDeadCode" id="implementation-code-quality-error-prone-practices-basic-delete-dead-code">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4w</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-error-prone-practices-basic-delete-dead-code"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Error-Prone Practices → Basic →</span></span></small> <strong><span>Delete Dead Code</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-error-prone-practices-basic-delete-dead-code"></a></h4>
@@ -3012,7 +2788,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </div>
       </panel>
       <p><span id="W5-4x"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/intermediate/minimiseVariableScope">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/intermediate/minimiseVariableScope" id="implementation-code-quality-error-prone-practices-intermediate-minimize-scope-of-variables">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4x</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -3047,7 +2823,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </div>
       </panel>
       <p><span id="W5-4y"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/intermediate/minimiseCodeDuplication">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/avoidShortcuts/intermediate/minimiseCodeDuplication" id="implementation-code-quality-error-prone-practices-intermediate-minimize-code-duplication">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4y</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -3069,12 +2845,10 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
             <div>
               <p><strong>Code duplication, especially when you copy-paste-modify code, often indicates a poor quality implementation.</strong> While it may not be possible to have zero duplication, always think twice before duplicating code; most often there
                 is a better alternative.</p>
-              <p>This guideline is closely related to the
-                <trigger for="modal:duplication-dry" trigger="click">DRY Principle
-                  <trigger>.</trigger>
-                </trigger>
+              <p>This guideline is closely related to the <span for="modal:duplication-dry" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:duplication-dry'].show()"
+                  class="trigger-click">DRY Principle<span v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['undefined'].show()" class="trigger">.</span></span>
               </p>
-              <modal title="**<md>:glyphicon-eye-open:</md> DRY Principle**" id="modal:duplication-dry" class="algolia-no-index">
+              <b-modal id="modal:duplication-dry" hide-footer size modal-class="mb-zoom" ref="modal:duplication-dry"><template slot="modal-title"><strong><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span> DRY Principle</strong></template>
                 <div>
                   <div></div>
                   <p></p>
@@ -3102,7 +2876,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                     </div>
                   </div>
                 </div>
-              </modal>
+              </b-modal>
               <p></p>
             </div>
             <div></div>
@@ -3112,7 +2886,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
       <br>
       <h3 id="code-comments"><span class="dimmed"><strong>Code Comments</strong></span><a class="fa fa-anchor" href="#code-comments"></a></h3>
       <p><span id="W5-4z"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/introduction">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/introduction" id="implementation-code-quality-comments-introduction">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4z</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-comments-introduction"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Comments →</span></span></small> <strong><span>Introduction</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-comments-introduction"></a></h4>
@@ -3140,7 +2914,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
         </div>
       </panel>
       <p><span id="W5-4A"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/basic/dontRepeatObvious">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/basic/dontRepeatObvious" id="implementation-code-quality-comments-basic-do-not-repeat-the-obvious">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4A</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-comments-basic-do-not-repeat-the-obvious"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Comments → Basic →</span></span></small> <strong><span>Do Not Repeat the Obvious</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-comments-basic-do-not-repeat-the-obvious"></a></h4>
@@ -3165,12 +2939,7 @@ names = [<span class="hljs-string">'Jim'</span>, <span class="hljs-string">'Alic
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs java"><span class="hljs-comment">//increment x</span>
-x++;
-
-<span class="hljs-comment">//trim the input</span>
-trimInput();
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-comment">// increment x</span></span><span>x++;</span><span>&#x200B;</span><span><span class="hljs-comment">//trim the input</span></span><span>trimInput();</span></code></pre>
               </div>
               <div class="alt-python">
                 <p>
@@ -3178,12 +2947,7 @@ trimInput();
                     </span>
                   </font>
                 </p>
-                <pre><code class="hljs python"><span class="hljs-comment"># increment x</span>
-x = x + <span class="hljs-number">1</span>
-
-<span class="hljs-comment"># trim the input</span>
-trim_input()
-</code></pre>
+                <pre><code class="hljs python"><span>// increment x</span><span>x = x + <span class="hljs-number">1</span></span><span>&#x200B;</span><span>//trim the input</span><span>trim_input()</span></code></pre>
               </div>
             </div>
             <div></div>
@@ -3191,7 +2955,7 @@ trim_input()
         </div>
       </panel>
       <p><span id="W5-4B"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/basic/writeToReader">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/basic/writeToReader" id="implementation-code-quality-comments-basic-write-to-the-reader">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4B</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-code-quality-comments-basic-write-to-the-reader"><small><span class="font-weight-bold text-muted"><span>Implementation → Code Quality → Comments → Basic →</span></span></small> <strong><span>Write to the Reader</span></strong><a class="fa fa-anchor" href="#implementation-code-quality-comments-basic-write-to-the-reader"></a></h4>
@@ -3219,21 +2983,13 @@ trim_input()
                       <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                         </span>
                       </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                    <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
-    ....
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{</span><span>    ....</span><span>}</span></code></pre>
                     <p>
                       <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                         </span>
                       </font>
                     </p>
-                    <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
-    ....
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{</span><span>    ....</span><span>}</span></code></pre>
                   </div>
                 </div>
                 <div class="alt-python">
@@ -3242,19 +2998,13 @@ trim_input()
                       <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                         </span>
                       </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
-<span class="hljs-string">"""a quick trim function used to fix bug I detected overnight"""</span>
-    ...
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span></span><span>    ...</span></code></pre>
                     <p>
                       <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                         </span>
                       </font>
                     </p>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
-<span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
-    ...
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span></span><span><span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span></span><span>    ...</span></code></pre>
                   </div>
                 </div>
               </box>
@@ -3264,7 +3014,7 @@ trim_input()
         </div>
       </panel>
       <p><span id="W5-4C"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/intermediate/explainWhatWhyNotHow">
+      <panel type="seamless" expanded popup-url="/website/book/codeQuality/commentMinimally/intermediate/explainWhatWhyNotHow" id="implementation-code-quality-comments-intermediate-explain-what-and-why-not-how">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.4C</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -3289,19 +3039,13 @@ trim_input()
                 </span> <strong>What</strong> : The specification of what the code <em>supposed</em> to do. The reader can compare such comments to the implementation to verify if the implementation is correct</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example: This method is possibly buggy because the implementation does not seem to match the comment. In this case the comment could help the reader to detect the bug.</p>
-                <pre><code class="hljs java"><span class="hljs-comment">/** Removes all spaces from the {<span class="hljs-doctag">@code</span> input} */</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">compact</span><span class="hljs-params">(String input)</span></span>{
-    input.trim();
-}
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-comment">/** Removes all spaces from the {<span class="hljs-doctag">@code</span> input} */</span></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">compact</span><span class="hljs-params">(String input)</span></span>{</span><span>    input.trim();</span><span>}</span></code></pre>
               </box>
               <p><span style="color:green"><span><span aria-hidden="true" class="fas fa-check"></span></span>
                 </span> <strong>Why</strong> : The rationale for the current implementation.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example: Without this comment, the reader will not know the reason for calling this method.</p>
-                <pre><code class="hljs java"><span class="hljs-comment">// Remove spaces to comply with IE23.5 formatting rules</span>
-compact(input);
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-comment">// Remove spaces to comply with IE23.5 formatting rules</span></span><span>compact(input);</span></code></pre>
               </box>
               <p><span style="color:red"><span><span aria-hidden="true" class="fas fa-times"></span></span>
                 </span> <strong>How</strong> : The explanation for how the code works. This should already be apparent from the code, if the code is self-explanatory. Adding comments to explain the same thing is redundant.</p>
@@ -3311,17 +3055,12 @@ compact(input);
                   <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                     </span>
                   </font> <span class="dimmed">Reason: Comment explains how the code works.</span></p>
-                <pre><code class="hljs java"><span class="hljs-comment">// return true if both left end and right end are correct or the size has not incremented</span>
-<span class="hljs-keyword">return</span> (left &amp;&amp; right) || (input.size() == size);
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-comment">// return true if both left end and right end are correct or the size has not incremented</span></span><span><span class="hljs-keyword">return</span> (left &amp;&amp; right) || (input.size() == size);</span></code></pre>
                 <p>
                   <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                     </span>
                   </font> <span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span></p>
-                <pre><code class="hljs java">
-<span class="hljs-keyword">boolean</span> isSameSize = (input.size() == size) ;
-<span class="hljs-keyword">return</span> (isLeftEndCorrect &amp;&amp; isRightEndCorrect) || isSameSize;
-</code></pre>
+                <pre><code class="hljs java"><span>&#x200B;</span><span><span class="hljs-keyword">boolean</span> isSameSize = (input.size() == size) ;</span><span><span class="hljs-keyword">return</span> (isLeftEndCorrect &amp;&amp; isRightEndCorrect) || isSameSize;</span></code></pre>
               </box>
             </div>
             <div></div>
@@ -3331,7 +3070,7 @@ compact(input);
     </div>
   </panel>
   <p><span id="W5-5"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
+  <panel type="seamless" no-close expandable="true" expanded id="w5-5-refactoring">
     <span slot="header" class="card-title"><div><h2 id="w5-5-refactoring"><span class="dimmed">[W5.5]</span> <strong>Refactoring</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
     <a class="fa fa-anchor" href="#w5-5-refactoring"></a>
     </h2>
@@ -3339,7 +3078,7 @@ compact(input);
     </span>
     <div class="indented-level1">
       <p><span id="W5-5a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/refactoring/what">
+      <panel type="seamless" expanded popup-url="/website/book/refactoring/what" id="implementation-refactoring-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.5a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-refactoring-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Refactoring →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-refactoring-what"></a></h4>
@@ -3369,9 +3108,9 @@ compact(input);
                   <li>improve performance (sometimes, simpler code runs faster than complex code because simpler code is easier for the compiler to optimize).</li>
                 </ul>
               </box>
-              <p>Given below are two common refactorings (
-                <trigger trigger="click" for="modal:refactoring-catalog-what">more</trigger>).</p>
-              <modal title="**Refactoring Catalogs**" id="modal:refactoring-catalog-what" class="algolia-no-index">
+              <p>Given below are two common refactorings (<span trigger="click" for="modal:refactoring-catalog-what" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:refactoring-catalog-what'].show()"
+                  class="trigger-click">more</span>).</p>
+              <b-modal id="modal:refactoring-catalog-what" hide-footer size modal-class="mb-zoom" ref="modal:refactoring-catalog-what"><template slot="modal-title"><strong>Refactoring Catalogs</strong></template>
                 <div>
                   <ul>
                     <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’
@@ -3379,7 +3118,7 @@ compact(input);
                     <li>Python: <a href="https://refactoring.guru/refactoring/catalog">https://refactoring.guru/refactoring/catalog</a> -- A catalog of refactorings applicable to Python code.</li>
                   </ul>
                 </div>
-              </modal>
+              </b-modal>
               <box>
                 <p>Refactoring Name: <strong>Consolidate Duplicate Conditional Fragments</strong></p>
                 <p>Situation: The same fragment of code is in all branches of a conditional expression.</p>
@@ -3390,25 +3129,11 @@ compact(input);
                     <table>
                       <tr>
                         <td valign="top">
-                          <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()) {
-    total = price * <span class="hljs-number">0.95</span>;
-    send();
-} <span class="hljs-keyword">else</span> {
-    total = price * <span class="hljs-number">0.98</span>;
-    send();
-}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (isSpecialDeal()) {</span><span>    total = price * <span class="hljs-number">0.95</span>;</span><span>    send();</span><span>} <span class="hljs-keyword">else</span> {</span><span>    total = price * <span class="hljs-number">0.98</span>;</span><span>    send();</span><span>}</span></code></pre>
                         </td>
                         <td valign="center">&nbsp;→&nbsp;</td>
                         <td valign="top">
-                          <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isSpecialDeal()){
-    total = price * <span class="hljs-number">0.95</span>;
-} <span class="hljs-keyword">else</span> {
-    total = price * <span class="hljs-number">0.98</span>;
-}
-send();
-
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-keyword">if</span> (isSpecialDeal()){</span><span>    total = price * <span class="hljs-number">0.95</span>;</span><span>} <span class="hljs-keyword">else</span> {</span><span>    total = price * <span class="hljs-number">0.98</span>;</span><span>}</span><span>send();</span><span>&#x200B;</span></code></pre>
                         </td>
                       </tr>
                     </table>
@@ -3419,23 +3144,11 @@ send();
                     <table>
                       <tr>
                         <td valign="top">
-                          <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
-    total = price * <span class="hljs-number">0.95</span>
-    send()
-<span class="hljs-keyword">else</span>:
-    total = price * <span class="hljs-number">0.98</span>
-    send()
-</code></pre>
+                          <pre><code class="hljs python"><span><span class="hljs-keyword">if</span> is_special_deal:</span><span>    total = price * <span class="hljs-number">0.95</span></span><span>    send()</span><span><span class="hljs-keyword">else</span>:</span><span>    total = price * <span class="hljs-number">0.98</span></span><span>    send()</span></code></pre>
                         </td>
                         <td valign="center">&nbsp;→&nbsp;</td>
                         <td valign="top">
-                          <pre><code class="hljs python"><span class="hljs-keyword">if</span> is_special_deal:
-    total = price * <span class="hljs-number">0.95</span>
-<span class="hljs-keyword">else</span>:
-    total = price * <span class="hljs-number">0.98</span>
-    
-send()
-</code></pre>
+                          <pre><code class="hljs python"><span><span class="hljs-keyword">if</span> is_special_deal:</span><span>    total = price * <span class="hljs-number">0.95</span></span><span><span class="hljs-keyword">else</span>:</span><span>    total = price * <span class="hljs-number">0.98</span></span><span>    </span><span>send()</span></code></pre>
                         </td>
                       </tr>
                     </table>
@@ -3449,47 +3162,18 @@ send()
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:</p>
                 <div class="alt-java">
                   <div>
-                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
-    printBanner();
-
-    <span class="hljs-comment">//print details</span>
-    System.out.println(<span class="hljs-string">"name:	"</span> + name);
-    System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{</span><span>    printBanner();</span><span>&#x200B;</span><span>    <span class="hljs-comment">//print details</span></span><span>    System.out.println(<span class="hljs-string">"name:	"</span> + name);</span><span>    System.out.println(<span class="hljs-string">"amount	"</span> + getOutstanding());</span><span>}</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
-                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{
-    printBanner();
-    printDetails(getOutstanding());
-}
-
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printDetails</span> <span class="hljs-params">(<span class="hljs-keyword">double</span> outstanding)</span> </span>{
-    System.out.println(<span class="hljs-string">"name:	"</span> + name);
-    System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);
-}
-</code></pre>
+                    <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printOwing</span><span class="hljs-params">()</span> </span>{</span><span>    printBanner();</span><span>    printDetails(getOutstanding());</span><span>}</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printDetails</span> <span class="hljs-params">(<span class="hljs-keyword">double</span> outstanding)</span> </span>{</span><span>    System.out.println(<span class="hljs-string">"name:	"</span> + name);</span><span>    System.out.println(<span class="hljs-string">"amount	"</span> + outstanding);</span><span>}</span></code></pre>
                   </div>
                 </div>
                 <div class="alt-python">
                   <div>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
-    print_banner()
-
-    //<span class="hljs-keyword">print</span> details
-    print(<span class="hljs-string">"name:	"</span> + name)
-    print(<span class="hljs-string">"amount	"</span> + get_outstanding())
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span></span><span>    print_banner()</span><span>&#x200B;</span><span>    //<span class="hljs-keyword">print</span> details</span><span>    print(<span class="hljs-string">"name:	"</span> + name)</span><span>    print(<span class="hljs-string">"amount	"</span> + get_outstanding())</span></code></pre>
                     <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                     </p>
-                    <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span>
-    print_banner()
-    print_details(get_outstanding())
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_details</span><span class="hljs-params">(amount)</span>:</span>
-    print(<span class="hljs-string">"name:	"</span> + name)
-    print(<span class="hljs-string">"amount	"</span> + amount)
-</code></pre>
+                    <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_owing</span><span class="hljs-params">()</span>:</span></span><span>    print_banner()</span><span>    print_details(get_outstanding())</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_details</span><span class="hljs-params">(amount)</span>:</span></span><span>    print(<span class="hljs-string">"name:	"</span> + name)</span><span>    print(<span class="hljs-string">"amount	"</span> + amount)</span></code></pre>
                   </div>
                 </div>
               </box>
@@ -3502,9 +3186,9 @@ send()
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Results of Refactoring" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Results of Refactoring</p></template>
                       <question>
                         <p>Choose the correct statements</p>
                         <ul class="task-list">
@@ -3525,7 +3209,7 @@ send()
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Do you agree with the following statement? Refactoring and regression testing" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Do you agree with the following statement? Refactoring and regression testing</p></template>
                       <question has-input="true">
                         <p>Do you agree with the following statement? Justify your answer.</p>
                         <p>Statement: <code>Whenever we refactor code to fix bugs, we need not do regression testing if the bug fix was minor.</code></p>
@@ -3543,7 +3227,7 @@ send()
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md> Explain Refactoring" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Refactoring</p></template>
                       <question has-input>
                         <p>Explain what is refactoring and why it is not the same as rewriting, bug fixing, or adding features.</p>
                       </question>
@@ -3556,7 +3240,7 @@ send()
         </div>
       </panel>
       <p><span id="W5-5b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/intellij/refactoring">
+      <panel type="seamless" expanded popup-url="/website/book/intellij/refactoring" id="tools-intellij-idea-refactoring">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.5b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="tools-intellij-idea-refactoring"><small><span class="font-weight-bold text-muted"><span>Tools → Intellij IDEA →</span></span></small> <strong><span>Refactoring</span></strong><a class="fa fa-anchor" href="#tools-intellij-idea-refactoring"></a></h4>
@@ -3565,7 +3249,7 @@ send()
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/refactoring/what/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Implementation → Refactoring → What%%" popup-url="/website/book/refactoring/what" class="algolia-no-index"></panel>
+                <panel src="/website/book/refactoring/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/refactoring/what" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Implementation → Refactoring → What</span></p></template></panel>
               </p>
             </div>
             <p></p>
@@ -3594,7 +3278,7 @@ send()
         </div>
       </panel>
       <p><span id="W5-5c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/refactoring/how">
+      <panel type="seamless" expanded popup-url="/website/book/refactoring/how" id="implementation-refactoring-how">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.5c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -3614,9 +3298,9 @@ send()
             <p></p>
             <p></p>
             <div>
-              <p>Given below are some more commonly used refactorings. A more comprehensive list is available at
-                <trigger trigger="click" for="modal:refactoring-catalog-how"> refactoring-catalog </trigger>.</p>
-              <modal title="**Refactoring Catalog**" id="modal:refactoring-catalog-how" class="algolia-no-index">
+              <p>Given below are some more commonly used refactorings. A more comprehensive list is available at <span trigger="click" for="modal:refactoring-catalog-how" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                  v-on:click="$refs['modal:refactoring-catalog-how'].show()" class="trigger-click"> refactoring-catalog </span>.</p>
+              <b-modal id="modal:refactoring-catalog-how" hide-footer size modal-class="mb-zoom" ref="modal:refactoring-catalog-how"><template slot="modal-title"><strong>Refactoring Catalog</strong></template>
                 <div>
                   <ul>
                     <li>Java: <a href="http://refactoring.com/catalog/">http://refactoring.com/catalog/</a> - This is a list of common refactorings, maintained by Martin Fowler, a leading authority on refactoring. He is also the author of the ‘bestseller’
@@ -3624,7 +3308,7 @@ send()
                     <li>Python: <a href="https://refactoring.guru/refactoring/catalog">https://refactoring.guru/refactoring/catalog</a> -- A catalog of refactorings applicable to Python code.</li>
                   </ul>
                 </div>
-              </modal>
+              </b-modal>
               <ol>
                 <li><a href="https://refactoring.com/catalog/consolidateConditionalExpression.html">Consolidate Conditional Expression</a></li>
                 <li><a href="https://refactoring.com/catalog/decomposeConditional.html">Decompose Conditional</a></li>
@@ -3645,7 +3329,7 @@ send()
         </div>
       </panel>
       <p><span id="W5-5d"></span></p>
-      <panel type="seamless" popup-url="/website/book/refactoring/when" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/refactoring/when" id="implementation-refactoring-when" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.5d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -3668,9 +3352,9 @@ send()
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: ‘Extract method’ and ‘Inline method’ refactorings" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> ‘Extract method’ and ‘Inline method’ refactorings</p></template>
                       <question>
                         <p>‘Extract method’ and ‘Inline method’ refactorings</p>
                         <ul radio-group="93b6b" class="radio-list">
@@ -3692,7 +3376,7 @@ send()
     </div>
   </panel>
   <p><span id="W5-6"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
+  <panel type="seamless" no-close expandable="true" expanded id="w5-6-assertions">
     <span slot="header" class="card-title"><div><h2 id="w5-6-assertions"><span class="dimmed">[W5.6]</span> <strong>Assertions</strong> <small><small><span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span></span></small></small>
     <a class="fa fa-anchor" href="#w5-6-assertions"></a>
     </h2>
@@ -3700,7 +3384,7 @@ send()
     </span>
     <div class="indented-level1">
       <p><span id="W5-6a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/errorHandling/assertions/what">
+      <panel type="seamless" expanded popup-url="/website/book/errorHandling/assertions/what" id="implementation-error-handling-assertions-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.6a</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span>
         : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -3728,8 +3412,7 @@ send()
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the Java code below, suppose we set an assertion that <code>timeout</code> returned by <code>Config.getTimeout()</code> is greater than <code>0</code>. Now, if the <code>Config.getTimeout()</code>                  returned <code>-1</code> in a specific execution of this line, the runtime can detect it as a <em>assertion failure</em> -- i.e. an assumption about the expected behavior of the code turned out to be wrong which could potentially be
                   the result of a bug -- and take some drastic action such as terminating the execution.</p>
-                <pre><code class="hljs java"><span class="hljs-keyword">int</span> timeout = Config.getTimeout(); 
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-keyword">int</span> timeout = Config.getTimeout(); </span></code></pre>
               </box>
             </div>
             <div></div>
@@ -3737,7 +3420,7 @@ send()
         </div>
       </panel>
       <p><span id="W5-6b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/errorHandling/assertions/how">
+      <panel type="seamless" expanded popup-url="/website/book/errorHandling/assertions/how" id="implementation-error-handling-assertions-how">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.6b</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span>
         : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -3747,7 +3430,7 @@ send()
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/errorHandling/assertions/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Error Handling → Assertions → What%%" popup-url="/website/book/errorHandling/assertions/what" class="algolia-no-index"></panel>
+                <panel src="/website/book/errorHandling/assertions/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/errorHandling/assertions/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Error Handling → Assertions → What</span></p></template></panel>
               </p>
             </div>
             <p></p>
@@ -3763,10 +3446,7 @@ send()
               <p>Use the <code>assert</code> keyword to define assertions.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> This assertion will fail with the message <code>x should be 0</code> if <code>x</code> is not 0 at this point.</p>
-                <pre><code class="hljs java">x = getX();
-<span class="hljs-keyword">assert</span> x == <span class="hljs-number">0</span> : <span class="hljs-string">"x should be 0"</span>;
-...
-</code></pre>
+                <pre><code class="hljs java"><span>x = getX();</span><span><span class="hljs-keyword">assert</span> x == <span class="hljs-number">0</span> : <span class="hljs-string">"x should be 0"</span>;</span><span>...</span></code></pre>
               </box>
               <p><strong>Assertions can be disabled without modifying the code.</strong></p>
               <box>
@@ -3783,7 +3463,7 @@ send()
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                   <p><strong>Tutorials</strong>:</p>
                   <ul>
                     <li><a href="https://www.javatpoint.com/assertion-in-java"><strong>Java Assertions</strong></a> -- a simple tutorial from <em><a href="http://javatpoint.com">javatpoint.com</a></em></li>
@@ -3801,7 +3481,7 @@ send()
         </div>
       </panel>
       <p><span id="W5-6c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/errorHandling/assertions/when">
+      <panel type="seamless" expanded popup-url="/website/book/errorHandling/assertions/when" id="implementation-error-handling-assertions-when">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.6c</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span>
         : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -3811,8 +3491,8 @@ send()
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/errorHandling/assertions/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Error Handling → Assertions → What%%" popup-url="/website/book/errorHandling/assertions/what" class="algolia-no-index"></panel>
-                <panel src="/website/book/errorHandling/exceptions/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Error Handling → Exceptions → What%%" popup-url="/website/book/errorHandling/exceptions/what" class="algolia-no-index"></panel>
+                <panel src="/website/book/errorHandling/assertions/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/errorHandling/assertions/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Error Handling → Assertions → What</span></p></template></panel>
+                <panel src="/website/book/errorHandling/exceptions/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/errorHandling/exceptions/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Error Handling → Exceptions → What</span></p></template></panel>
               </p>
             </div>
             <p></p>
@@ -3829,9 +3509,7 @@ send()
               <p><strong>Do not use assertions to do <em>work</em></strong> because assertions can be disabled. If not, your program will stop working when assertions are not enabled.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The code below will not invoke the <code>writeFile()</code> method when assertions are disabled. <span class="dimmed">If that method is performing some work that is necessary for your program, your program will not work correctly when assertions are disabled.</span></p>
-                <pre><code class="hljs java">...
-<span class="hljs-function"><span class="hljs-keyword">assert</span> <span class="hljs-title">writeFile</span><span class="hljs-params">()</span> : "File writing is supposed to return <span class="hljs-keyword">true</span>"</span>;
-</code></pre>
+                <pre><code class="hljs java"><span>...</span><span><span class="hljs-function"><span class="hljs-keyword">assert</span> <span class="hljs-title">writeFile</span><span class="hljs-params">()</span> : "File writing is supposed to return <span class="hljs-keyword">true</span>"</span>;</span></code></pre>
               </box>
               <p><strong>Assertions are suitable for verifying assumptions about <em>Internal Invariants</em>, <em>Control-Flow Invariants</em>,
 <em>Preconditions</em>, <em>Postconditions</em>, and <em>Class Invariants</em>.</strong> Refer to [<a href="http://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html#usage">Programming with Assertions (second half)</a>] to learn more.</p>
@@ -3843,9 +3521,9 @@ send()
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Assertions failure in Calculator" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Assertions failure in Calculator</p></template>
                       <question>
                         <p>A Calculator program crashes with an ‘assertion failure’ message when you try to find the square root of a negative number.</p>
                         <ul radio-group="f7dad" class="radio-list">
@@ -3863,7 +3541,7 @@ send()
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statement about exceptions and assertions" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statement about exceptions and assertions</p></template>
                       <question>
                         <p>Which statements are correct?</p>
                         <ul class="task-list">
@@ -3885,7 +3563,7 @@ send()
     </div>
   </panel>
   <p><span id="W5-7"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
+  <panel type="seamless" no-close expandable="true" expanded id="w5-7-java-streams">
     <span slot="header" class="card-title"><div><h2 id="w5-7-java-streams"><span class="dimmed">[W5.7]</span> <strong>Java: streams</strong> <small><small><span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span></span></small></small>
     <a class="fa fa-anchor" href="#w5-7-java-streams"></a>
     </h2>
@@ -3893,7 +3571,7 @@ send()
     </span>
     <div class="indented-level1">
       <p><span id="W5-7a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/streams">
+      <panel type="seamless" expanded popup-url="/website/book/cppToJava/misc/streams" id="c-to-java-miscellaneous-topics-streams-basic">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.7a</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span>
         : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -3917,10 +3595,10 @@ send()
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                   <p><strong>Tutorials</strong>:</p>
                   <tabs>
-                    <tab header="<md>:far-file-alt:</md>">
+                    <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                       <ul>
                         <li>
                           <p><a href="https://www.tutorialspoint.com/java8/"><strong>Java 8 Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a>. <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span>
@@ -3931,12 +3609,12 @@ send()
                         </li>
                       </ul>
                     </tab>
-                    <tab header="<md>:glyphicon-facetime-video:</md>" class="algolia-no-index">
+                    <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span></template>
 
 
                       <p>A video tutorial by well-known Java coach Venkat Subramaniam</p>
                       <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Ee5t_EGjv0A" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                      <panel type="seamless" header="A a more detailed version covering similar grounds" class="algolia-no-index">
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>A a more detailed version covering similar grounds</p></template>
                         <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1OpAgZvYXLQ" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                       </panel>
                     </tab>
@@ -3951,7 +3629,7 @@ send()
   </panel>
   <p></p>
   <p><span id="W5-8"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
+  <panel type="seamless" no-close expandable="true" expanded id="w5-8-continuous-integration-deployment">
     <span slot="header" class="card-title"><div><h2 id="w5-8-continuous-integration-deployment"><span class="dimmed">[W5.8]</span> <strong>Continuous Integration/Deployment</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
     <a class="fa fa-anchor" href="#w5-8-continuous-integration-deployment"></a>
     </h2>
@@ -3959,7 +3637,7 @@ send()
     </span>
     <div class="indented-level1">
       <p><span id="W5-8a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/integration/introduction/what">
+      <panel type="seamless" expanded popup-url="/website/book/integration/introduction/what" id="implementation-integration-introduction-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.8a</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-integration-introduction-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Integration → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-integration-introduction-what"></a></h4>
@@ -3984,7 +3662,7 @@ send()
         </div>
       </panel>
       <p><span id="W5-8b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/integration/buildAutomation/what">
+      <panel type="seamless" expanded popup-url="/website/book/integration/buildAutomation/what" id="implementation-integration-build-automation-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.8b</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-integration-build-automation-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Integration → Build Automation →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-integration-build-automation-what"></a></h4>
@@ -4019,20 +3697,20 @@ send()
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                   <ul>
                     <li><a href="https://gradle.org/docs/#getting-started"><strong>Getting Started with Gradle</strong></a> -- Documentation from Gradle</li>
                     <li><a href="http://www.tutorialspoint.com/gradle/"><strong>Gradle Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
                   </ul>
-                  <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> Working With Gradle in Intellij IDEA (6 minutes)" class="algolia-no-index">
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Working With Gradle in Intellij IDEA (6 minutes)</p></template>
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/JwPYjnhah3g" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   </panel>
                 </panel>
               </div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: _Gradle_ is a tool for ..." class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> <em>Gradle</em> is a tool for ...</p></template>
                       <question>
                         <p>Gradle_is used used for,</p>
                         <ul class="task-list">
@@ -4054,7 +3732,7 @@ send()
         </div>
       </panel>
       <p><span id="W5-8c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/integration/buildAutomation/continuousIntegrationDeployment">
+      <panel type="seamless" expanded popup-url="/website/book/integration/buildAutomation/continuousIntegrationDeployment" id="implementation-integration-build-automation-continuous-integration-and-continuous-deployment">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W5.8c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-integration-build-automation-continuous-integration-and-continuous-deployment"><small><span class="font-weight-bold text-muted"><span>Implementation → Integration → Build Automation →</span></span></small> <strong><span>Continuous Integration and Continuous Deployment</span></strong><a class="fa fa-anchor" href="#implementation-integration-build-automation-continuous-integration-and-continuous-deployment"></a></h4>
@@ -4076,12 +3754,12 @@ send()
               <p><strong>A natural extension of CI is <em>Continuous Deployment (CD)</em> where the changes are not only integrated continuously, but also deployed to end-users at the same time.</strong></p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of CI/CD tools: <a href="https://travis-ci.org/">Travis</a>, <a href="http://jenkins-ci.org">Jenkins</a>, <a href="https://www.appveyor.com">Appveyor</a>,
-                  <a href="https://circleci.com">CircleCI</a>, <a href="https://github.com/features/actions">GitHub Actions</a></p>
+                  <a href="https://circleci.com">CircleCI</a></p>
               </box>
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                   <ul>
                     <li><a href="https://docs.travis-ci.com/user/for-beginners"><strong>Travis CI for Beginners</strong></a> -- Documentation from Travis</li>
                   </ul>
@@ -4147,7 +3825,7 @@ send()
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
   </footer>
   </div>
 </body>

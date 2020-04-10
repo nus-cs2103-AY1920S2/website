@@ -5,18 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 11 - Topics</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -29,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -97,7 +97,7 @@
           </nav>
           <p></p>
           <h1 id="week-11-mar-30-topics">Week 11 <small><small><span class="dimmed">[Mar 30]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-11-mar-30-topics"></a></h1>
-          <panel type="seamless" header="%%:fas-list-ol: Detailed Table of Contents%%" class="algolia-no-index">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
             <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week11/topics.html#W11-1">W11.1</a>] <strong>More Design Patterns</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
@@ -294,7 +294,7 @@
           </panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W11-1"></span></p>
-          <panel type="seamless" no-close expandable="true" expanded>
+          <panel type="seamless" no-close expandable="true" expanded id="w11-1-more-design-patterns">
             <span slot="header" class="card-title"><div><h2 id="w11-1-more-design-patterns"><span class="dimmed">[W11.1]</span> <strong>More Design Patterns</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
             <a class="fa fa-anchor" href="#w11-1-more-design-patterns"></a>
             </h2>
@@ -302,7 +302,7 @@
         </span>
         <div class="indented-level1">
           <p><span id="W11-1a"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/designPatterns/modelViewController/what">
+          <panel type="seamless" expanded popup-url="/website/book/designPatterns/modelViewController/what" id="design-design-patterns-mvc-pattern-what">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.1a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             <h4 id="design-design-patterns-mvc-pattern-what"><small><span class="font-weight-bold text-muted"><span>Design → Design Patterns → MVC Pattern →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-design-patterns-mvc-pattern-what"></a></h4>
@@ -349,7 +349,7 @@
             </div>
           </panel>
           <p><span id="W11-1b"></span></p>
-          <panel type="seamless" expanded popup-url="/website/book/designPatterns/observer/what">
+          <panel type="seamless" expanded popup-url="/website/book/designPatterns/observer/what" id="design-design-patterns-observer-pattern-what">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.1b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -398,46 +398,26 @@
                     <ol>
                       <li>
                         <p>First, create the relevant objects.</p>
-                        <pre><code class="hljs java">StudentList studentList = <span class="hljs-keyword">new</span> StudentList();
-StudentListUi listUi = <span class="hljs-keyword">new</span> StudentListUi();
-StudentStatusUi statusUi = <span class="hljs-keyword">new</span> StudentStatsUi();
-</code></pre>
+                        <pre><code class="hljs java"><span>StudentList studentList = <span class="hljs-keyword">new</span> StudentList();</span><span>StudentListUi listUi = <span class="hljs-keyword">new</span> StudentListUi();</span><span>StudentStatusUi statusUi = <span class="hljs-keyword">new</span> StudentStatsUi();</span></code></pre>
                       </li>
                       <li>
                         <p>Next, the two UIs indicate to the <code>StudentList</code> that they are interested in being updated whenever <code>StudentList</code> changes. This is also known as ‘subscribing for updates’.</p>
-                        <pre><code class="hljs java">studentList.addUi(listUi);
-studentList.addUi(statusUi);
-</code></pre>
+                        <pre><code class="hljs java"><span>studentList.addUi(listUi);</span><span>studentList.addUi(statusUi);</span></code></pre>
                       </li>
                       <li>
                         <p>Within the <code>addUi</code> operation of <code>StudentList</code>, all Observer objects subscribers are added to an internal data structure called <code>observerList</code>.</p>
-                        <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addUi</span><span class="hljs-params">(Observer o)</span> </span>{
-    observerList.add(o);
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-comment">//StudentList class</span></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addUi</span><span class="hljs-params">(Observer o)</span> </span>{</span><span>    observerList.add(o);</span><span>}</span></code></pre>
                       </li>
                     </ol>
                     <p><strong>Now, whenever the data in <code>StudentList</code> changes</strong> (e.g. when a new student is added to the <code>StudentList</code>),</p>
                     <ol>
                       <li>
                         <p>All interested observers are updated by calling the <code>notifyUIs</code> operation.</p>
-                        <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">notifyUIs</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-comment">//for each observer in the list</span>
-    <span class="hljs-keyword">for</span>(Observer o: observerList){
-        o.update();
-    }
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-comment">//StudentList class</span></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">notifyUIs</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-comment">//for each observer in the list</span></span><span>    <span class="hljs-keyword">for</span>(Observer o: observerList){</span><span>        o.update();</span><span>    }</span><span>}</span></code></pre>
                       </li>
                       <li>
                         <p>UIs can then pull data from the <code>StudentList</code> whenever the <code>update</code> operation is called.</p>
-                        <pre><code class="hljs java"><span class="hljs-comment">//StudentListUI class</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-comment">//refresh UI by pulling data from StudentList</span>
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-comment">//StudentListUI class</span></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-comment">//refresh UI by pulling data from StudentList</span></span><span>}</span></code></pre>
                         <p>Note that <code>StudentList</code> is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
                       </li>
                     </ol>
@@ -459,9 +439,9 @@ studentList.addUi(statusUi);
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: polymorphism and Observer pattern." class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> polymorphism and Observer pattern.</p></template>
                           <question has-input="true">
                             <p>Explain how polymorphism is used in the Observer pattern.</p>
                             <div slot="answer" class="algolia-no-index">
@@ -479,7 +459,7 @@ studentList.addUi(statusUi);
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Observer patter usage" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Observer patter usage</p></template>
                           <question>
                             <p>The Observer pattern can be used when we want one object to initiate an activity in another object without having a direct dependency from the first object to the second object.</p>
                             <ul radio-group="caf40" class="radio-list">
@@ -500,7 +480,7 @@ studentList.addUi(statusUi);
             </div>
           </panel>
           <p><span id="W11-1c"></span></p>
-          <panel type="seamless" popup-url="/website/book/designPatterns/more/otherDesignPatterns" class="algolia-no-index">
+          <panel type="seamless" popup-url="/website/book/designPatterns/more/otherDesignPatterns" id="design-design-patterns-other-design-patterns" class="algolia-no-index">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.1c</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -543,7 +523,7 @@ studentList.addUi(statusUi);
             </div>
           </panel>
           <p><span id="W11-1d"></span></p>
-          <panel type="seamless" popup-url="/website/book/designPatterns/more/combiningDesignPatterns" class="algolia-no-index">
+          <panel type="seamless" popup-url="/website/book/designPatterns/more/combiningDesignPatterns" id="design-design-patterns-combining-design-patterns" class="algolia-no-index">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.1d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -609,7 +589,7 @@ studentList.addUi(statusUi);
             </div>
           </panel>
           <p><span id="W11-1e"></span></p>
-          <panel type="seamless" popup-url="/website/book/designPatterns/more/usingDesignPatterns" class="algolia-no-index">
+          <panel type="seamless" popup-url="/website/book/designPatterns/more/usingDesignPatterns" id="design-design-patterns-using-design-patterns" class="algolia-no-index">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.1e</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -647,7 +627,7 @@ studentList.addUi(statusUi);
             </div>
           </panel>
           <p><span id="W11-1f"></span></p>
-          <panel type="seamless" popup-url="/website/book/designPatterns/more/vsPrinciples" class="algolia-no-index">
+          <panel type="seamless" popup-url="/website/book/designPatterns/more/vsPrinciples" id="design-design-patterns-design-patterns-vs-design-principles" class="algolia-no-index">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.1f</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -674,7 +654,7 @@ studentList.addUi(statusUi);
             </div>
           </panel>
           <p><span id="W11-1g"></span></p>
-          <panel type="seamless" popup-url="/website/book/designPatterns/more/otherTypesOfPatterns" class="algolia-no-index">
+          <panel type="seamless" popup-url="/website/book/designPatterns/more/otherTypesOfPatterns" id="design-design-patterns-other-types-of-patterns" class="algolia-no-index">
             <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.1g</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -709,9 +689,9 @@ studentList.addUi(statusUi);
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md> Give a pattern from another domain" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Give a pattern from another domain</p></template>
                           <question has-input="true">
                             <p>Here are some common elements of a design pattern: Name, Context, Problem, Solution, Anti-patterns (optional), Consequences (optional), other useful information (optional).</p>
                             <p>Using similar elements, describe a pattern that is not a design pattern. It must be a pattern you have noticed, not a pattern already documented by others. You may also give a pattern not related to software.</p>
@@ -732,7 +712,7 @@ studentList.addUi(statusUi);
         </div>
         </panel>
         <p><span id="W11-2"></span></p>
-        <panel type="seamless" no-close expandable="true" expanded>
+        <panel type="seamless" no-close expandable="true" expanded id="w11-2-architectural-styles">
           <span slot="header" class="card-title"><div><h2 id="w11-2-architectural-styles"><span class="dimmed">[W11.2]</span> <strong>Architectural Styles</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
           <a class="fa fa-anchor" href="#w11-2-architectural-styles"></a>
           </h2>
@@ -740,7 +720,7 @@ studentList.addUi(statusUi);
       </span>
       <div class="indented-level1">
         <p><span id="W11-2a"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/introduction/what">
+        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/introduction/what" id="design-architecture-styles-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.2a</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -751,7 +731,7 @@ studentList.addUi(statusUi);
             <div class="indented">
               <div>
                 <p>
-                  <panel src="/website/book/architecture/introduction/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Architecture → Introduction → What%%" popup-url="/website/book/architecture/introduction/what" class="algolia-no-index"></panel>
+                  <panel src="/website/book/architecture/introduction/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/architecture/introduction/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Architecture → Introduction → What</span></p></template></panel>
                 </p>
               </div>
               <p></p>
@@ -764,23 +744,23 @@ studentList.addUi(statusUi);
               <p></p>
               <p></p>
               <div>
-                <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like
-                  <trigger trigger="click" for="modal:archiStyles-buildingArchitectures">building architectures follow various architecture styles</trigger>.</p>
+                <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like <span trigger="click" for="modal:archiStyles-buildingArchitectures" v-b-popover.click.top.html="popoverGenerator"
+                    v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:archiStyles-buildingArchitectures'].show()" class="trigger-click">building architectures follow various architecture styles</span>.</p>
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker style,
                     ...</p>
                 </box>
-                <modal large title="Building Architecture Styles" id="modal:archiStyles-buildingArchitectures" class="algolia-no-index">
+                <b-modal id="modal:archiStyles-buildingArchitectures" hide-footer size="lg" modal-class="mb-zoom" ref="modal:archiStyles-buildingArchitectures"><template slot="modal-title">Building Architecture Styles</template>
                   <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg" width="600"><br>
                     <sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
-                </modal>
+                </b-modal>
               </div>
               <div></div>
             </div>
           </div>
         </panel>
         <p><span id="W11-2b"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/nTier/what">
+        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/nTier/what" id="design-architecture-styles-n-tier-style-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.2b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="design-architecture-styles-n-tier-style-what"><small><span class="font-weight-bold text-muted"><span>Design → Architecture → Styles → n-Tier Style →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-architecture-styles-n-tier-style-what"></a></h4>
@@ -811,7 +791,7 @@ studentList.addUi(statusUi);
           </div>
         </panel>
         <p><span id="W11-2c"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/clientServer/what">
+        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/clientServer/what" id="design-architecture-styles-client-server-style-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.2c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -844,7 +824,7 @@ studentList.addUi(statusUi);
           </div>
         </panel>
         <p><span id="W11-2d"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/eventDriven/what">
+        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/eventDriven/what" id="design-architecture-styles-event-driven-style-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.2d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="design-architecture-styles-event-driven-style-what"><small><span class="font-weight-bold text-muted"><span>Design → Architecture → Styles → Event-Driven Style →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-architecture-styles-event-driven-style-what"></a></h4>
@@ -862,7 +842,7 @@ studentList.addUi(statusUi);
               <p></p>
               <p></p>
               <div>
-                <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>                  This architectural style is often used in GUIs.</p>
+                <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.</span>events</span> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>                  This architectural style is often used in GUIs.</p>
                 <img src="/website/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" width="450">
                 <box>
                   <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> When the ‘button clicked’ event occurs in a GUI, that event can be transmitted to components that are interested in reacting to that event. Similarly, events detected
@@ -874,7 +854,7 @@ studentList.addUi(statusUi);
           </div>
         </panel>
         <p><span id="W11-2e"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/transactionProcessing/what">
+        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/transactionProcessing/what" id="design-architecture-styles-transaction-processing-style-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.2e</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -898,8 +878,9 @@ studentList.addUi(statusUi);
                   queuing, ordering, undo etc. are handled by the dispatcher.</p>
                 <img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
                 <box>
-                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example from a Banking system, transactions are generated by the terminals used by
-                    <tooltip content="employees of a bank who deals directly with customers">tellers</tooltip> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units to execute.</p>
+                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example from a Banking system, transactions are generated by the terminals used by <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter"
+                      class="trigger"><span data-mb-html-for="_content">employees of a bank who deals directly with customers</span>tellers</span> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other
+                    units to execute.</p>
                   <img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png" height="120"></box>
               </div>
               <div></div>
@@ -907,7 +888,7 @@ studentList.addUi(statusUi);
           </div>
         </panel>
         <p><span id="W11-2f"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/serviceOriented/what">
+        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/serviceOriented/what" id="design-architecture-styles-service-oriented-style-what">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.2f</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -943,7 +924,7 @@ studentList.addUi(statusUi);
           </div>
         </panel>
         <p><span id="W11-2g"></span></p>
-        <panel type="seamless" popup-url="/website/book/architecture/architecturalStyles/more/moreStyles" class="algolia-no-index">
+        <panel type="seamless" popup-url="/website/book/architecture/architecturalStyles/more/moreStyles" id="design-architecture-styles-more-styles" class="algolia-no-index">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.2g</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -966,7 +947,7 @@ studentList.addUi(statusUi);
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                  <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                     <ul>
                       <li>
                         <p><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters"><strong>Pipes and Filters pattern</strong></a> -- an article from Microsoft about the pipes and filters architectural style</p>
@@ -988,7 +969,7 @@ studentList.addUi(statusUi);
           </div>
         </panel>
         <p><span id="W11-2h"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/more/usingStyles">
+        <panel type="seamless" expanded popup-url="/website/book/architecture/architecturalStyles/more/usingStyles" id="design-architecture-styles-using-styles">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.2h</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1015,9 +996,9 @@ studentList.addUi(statusUi);
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="Q: Comment on how to use architecture styles in Minesweeper." class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p>Q: Comment on how to use architecture styles in Minesweeper.</p></template>
                         <question has-input="true">
                           <p>Assume you are designing a multiplayer version of the Minesweeper game where any number of players can play the same Minefield. Players use their own PCs to play the game. A player scores by deducing a cell correctly before any
                             of the other players do. Once a cell is correctly deduced, it appears as either marked or cleared for all players.</p>
@@ -1048,7 +1029,7 @@ studentList.addUi(statusUi);
           </div>
         </panel>
         <p><span id="W11-2i"></span></p>
-        <panel type="seamless" expanded popup-url="/website/book/architecture/architectureDiagrams/drawing">
+        <panel type="seamless" expanded popup-url="/website/book/architecture/architectureDiagrams/drawing" id="design-architecture-architecture-diagrams-drawing">
           <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.2i</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           <h4 id="design-architecture-architecture-diagrams-drawing"><small><span class="font-weight-bold text-muted"><span>Design → Architecture → Architecture Diagrams →</span></span></small> <strong><span>Drawing</span></strong><a class="fa fa-anchor" href="#design-architecture-architecture-diagrams-drawing"></a></h4>
@@ -1090,7 +1071,7 @@ studentList.addUi(statusUi);
       </panel>
       <p></p>
       <p><span id="W11-3"></span></p>
-      <panel type="seamless" no-close expandable="true" expanded>
+      <panel type="seamless" no-close expandable="true" expanded id="w11-3-test-cases-combining-multiple-inputs">
         <span slot="header" class="card-title"><div><h2 id="w11-3-test-cases-combining-multiple-inputs"><span class="dimmed">[W11.3]</span> <strong>Test Cases: Combining Multiple Inputs</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
         <a class="fa fa-anchor" href="#w11-3-test-cases-combining-multiple-inputs"></a>
         </h2>
@@ -1098,7 +1079,7 @@ studentList.addUi(statusUi);
     </span>
     <div class="indented-level1">
       <p><span id="W11-3a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/combiningTestInputs/why">
+      <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/combiningTestInputs/why" id="quality-assurance-test-case-design-combining-test-inputs-why">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.3a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="quality-assurance-test-case-design-combining-test-inputs-why"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Combining Test Inputs →</span></span></small> <strong><span>Why</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-combining-test-inputs-why"></a></h4>
@@ -1166,7 +1147,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-3b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/combiningTestInputs/combinationStrategies">
+      <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/combiningTestInputs/combinationStrategies" id="quality-assurance-test-case-design-combining-test-inputs-test-input-combination-strategies">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.3b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="quality-assurance-test-case-design-combining-test-inputs-test-input-combination-strategies"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Test Case Design → Combining Test Inputs →</span></span></small> <strong><span>Test Input Combination Strategies</span></strong><a class="fa fa-anchor" href="#quality-assurance-test-case-design-combining-test-inputs-test-input-combination-strategies"></a></h4>
@@ -1303,7 +1284,7 @@ studentList.addUi(statusUi);
                 factors. The resulting number of test cases is lower than the <em>all combinations</em> strategy, but higher than the <em>at least once</em> approach.</p>
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> this strategy generates 9 test cases:</p>
-                <panel type="seamless" header="see steps" class="algolia-no-index">
+                <panel type="seamless" class="algolia-no-index"><template slot="_header"><p>see steps</p></template>
                   <p>Let's first consider inputs p1 and p2:</p>
                   <div class="table-responsive">
                     <table class="markbind-table table table-bordered table-striped">
@@ -1325,8 +1306,8 @@ studentList.addUi(statusUi);
                       </tbody>
                     </table>
                   </div>
-                  <p>These values can generate
-                    <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),...">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
+                  <p>These values can generate <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">(a,1)(a,2)(a,3)(b,1)(b,2),...</span>3x3=9 combinations</span>,
+                    and the test cases should cover all of them.</p>
                   <p>Next, let's consider p1 and p3.</p>
                   <div class="table-responsive">
                     <table class="markbind-table table table-bordered table-striped">
@@ -1348,8 +1329,8 @@ studentList.addUi(statusUi);
                       </tbody>
                     </table>
                   </div>
-                  <p>These values can generate
-                    <tooltip content="(a,T)(a,F)(b,T)(b,F),...">3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
+                  <p>These values can generate <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">(a,T)(a,F)(b,T)(b,F),...</span>3x2=6 combinations</span>, and the
+                    test cases should cover all of them.</p>
                   <p>Similarly, inputs p2 and p3 generates another 6 combinations.</p>
                   <p>The 9 test cases given below covers all those 9+6+6 combinations.</p>
                 </panel>
@@ -1484,7 +1465,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-3c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/combiningTestInputs/heuristicValid">
+      <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/combiningTestInputs/heuristicValid" id="quality-assurance-test-case-design-combining-test-inputs-heuristic-each-valid-input-at-least-once-in-a-positive-test-case">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.3c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1671,7 +1652,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-3d"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/combiningTestInputs/heuristicInvalid">
+      <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/combiningTestInputs/heuristicInvalid" id="quality-assurance-test-case-design-combining-test-inputs-heuristic-no-more-than-one-invalid-input-in-a-test-case">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.3d</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -1683,8 +1664,7 @@ studentList.addUi(statusUi);
           <div class="indented">
             <div>
               <p>
-                <panel src="/website/book/testCaseDesign/combiningTestInputs/heuristicValid/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: Each Valid Input at Least Once in a Positive Test Case%%"
-                  popup-url="/website/book/testCaseDesign/combiningTestInputs/heuristicValid" class="algolia-no-index"></panel>
+                <panel src="/website/book/testCaseDesign/combiningTestInputs/heuristicValid/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testCaseDesign/combiningTestInputs/heuristicValid" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: Each Valid Input at Least Once in a Positive Test Case</span></p></template></panel>
               </p>
             </div>
             <p></p>
@@ -1697,9 +1677,8 @@ studentList.addUi(statusUi);
             <p></p>
             <p></p>
             <div>
-              <p>Consider the
-                <trigger for="modal:heuristic-valid-test-case" trigger="click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</trigger>.</p>
-              <modal large title="**Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case**" id="modal:heuristic-valid-test-case" class="algolia-no-index">
+              <p>Consider the <span for="modal:heuristic-valid-test-case" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:heuristic-valid-test-case'].show()" class="trigger-click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</span>.</p>
+              <b-modal id="modal:heuristic-valid-test-case" hide-footer size="lg" modal-class="mb-zoom" ref="modal:heuristic-valid-test-case"><template slot="modal-title"><strong>Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case</strong></template>
                 <div>
                   <div class="table-responsive">
                     <table class="markbind-table table table-bordered table-striped">
@@ -1747,7 +1726,7 @@ studentList.addUi(statusUi);
                   </div>
                   <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
                 </div>
-              </modal>
+              </b-modal>
               <p>After running these test cases can you be sure that the error message “invalid price” is shown for negative prices?</p>
               <ul>
                 <li>Answer: No.</li>
@@ -1810,9 +1789,9 @@ studentList.addUi(statusUi);
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Can define test cases precisely" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Can define test cases precisely</p></template>
                       <question>
                         <p>Applying the heuristics covered so far, we can determine the precise number of test cases required to test any given SUT effectively.</p>
                         <ul radio-group="a7d7f" class="radio-list">
@@ -1834,7 +1813,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-3e"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/combiningTestInputs/mix">
+      <panel type="seamless" expanded popup-url="/website/book/testCaseDesign/combiningTestInputs/mix" id="quality-assurance-test-case-design-combining-test-inputs-mix">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.3e</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2211,10 +2190,10 @@ studentList.addUi(statusUi);
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expanded>
+                <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about test input combinations" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about test input combinations</p></template>
                         <question>
                           <p>Which of these contradict the heuristics recommended when creating test cases with multiple inputs?</p>
                           <ul radio-group="1da4e" class="radio-list">
@@ -2233,7 +2212,7 @@ studentList.addUi(statusUi);
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md> Combine test inputs for the `consume` method" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Combine test inputs for the <code>consume</code> method</p></template>
                         <question>
                           <p>Apply heuristics for combining multiple test inputs to improve the E&amp;E of the following test cases, assuming all 6 values in the table need to be tested. <ins>underlines</ins> indicate invalid values. Point out where the
                             heuristics are contradicted and how to improve the test cases.</p>
@@ -2281,7 +2260,7 @@ studentList.addUi(statusUi);
     </div>
     </panel>
     <p><span id="W11-4"></span></p>
-    <panel type="seamless" no-close expandable="true" expanded>
+    <panel type="seamless" no-close expandable="true" expanded id="w11-4-other-qa-techniques">
       <span slot="header" class="card-title"><div><h2 id="w11-4-other-qa-techniques"><span class="dimmed">[W11.4]</span> <strong>Other QA Techniques</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
       <a class="fa fa-anchor" href="#w11-4-other-qa-techniques"></a>
       </h2>
@@ -2289,7 +2268,7 @@ studentList.addUi(statusUi);
   </span>
   <div class="indented-level1">
     <p><span id="W11-4a"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/introduction/what">
+    <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/introduction/what" id="quality-assurance-quality-assurance-introduction-what">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.4a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
       <h4 id="quality-assurance-quality-assurance-introduction-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-introduction-what"></a></h4>
@@ -2315,7 +2294,7 @@ studentList.addUi(statusUi);
       </div>
     </panel>
     <p><span id="W11-4b"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/introduction/validationVsVerification">
+    <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/introduction/validationVsVerification" id="quality-assurance-quality-assurance-introduction-validation-vs-verification">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.4b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2345,9 +2324,9 @@ studentList.addUi(statusUi);
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about validation and verification." class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about validation and verification.</p></template>
                     <question>
                       <p>Choose the correct statements about validation and verification.</p>
                       <ul class="task-list">
@@ -2376,7 +2355,7 @@ studentList.addUi(statusUi);
       </div>
     </panel>
     <p><span id="W11-4c"></span></p>
-    <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/formalVerification/what">
+    <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/formalVerification/what" id="quality-assurance-quality-assurance-formal-verification-what">
       <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.4c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2397,7 +2376,7 @@ studentList.addUi(statusUi);
           <p></p>
           <div>
             <p><strong>Formal verification uses mathematical techniques to prove the correctness of a program.</strong></p>
-            <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> An introduction to Formal Methods" class="non-printable algolia-no-index">
+            <panel type="seamless" class="non-printable algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> An introduction to Formal Methods</p></template>
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               <p>by <a href="http://www.cs.utoronto.ca/~hehner/">Eric Hehner</a></p>
               <p></p>
@@ -2415,9 +2394,9 @@ studentList.addUi(statusUi);
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+              <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                 <div>
-                  <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Absence of errors" class="algolia-no-index">
+                  <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Absence of errors</p></template>
                     <question>
                       <p>Testing cannot prove the absence of errors. It can only prove the presence of errors. However, formal methods can prove the absence of errors.</p>
                       <ul radio-group="cefed" class="radio-list">
@@ -2442,7 +2421,7 @@ studentList.addUi(statusUi);
   </panel>
   <p></p>
   <p><span id="W11-5"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
+  <panel type="seamless" no-close expandable="true" expanded id="w11-5-reuse">
     <span slot="header" class="card-title"><div><h2 id="w11-5-reuse"><span class="dimmed">[W11.5]</span> <strong>Reuse</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
     <a class="fa fa-anchor" href="#w11-5-reuse"></a>
     </h2>
@@ -2452,7 +2431,7 @@ studentList.addUi(statusUi);
       <br>
       <h3 id="apis"><span class="dimmed"><strong>APIs</strong></span><a class="fa fa-anchor" href="#apis"></a></h3>
       <p><span id="W11-5a"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/reuse/introduction/what">
+      <panel type="seamless" expanded popup-url="/website/book/reuse/introduction/what" id="implementation-reuse-introduction-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-reuse-introduction-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Reuse → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-reuse-introduction-what"></a></h4>
@@ -2478,7 +2457,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-5b"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/reuse/introduction/when">
+      <panel type="seamless" expanded popup-url="/website/book/reuse/introduction/when" id="implementation-reuse-introduction-when">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2511,9 +2490,9 @@ studentList.addUi(statusUi);
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Using a cool UI framework" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Using a cool UI framework</p></template>
                       <question has-input="true">
                         <p>One of your teammates is proposing to use a recently-released “cool” UI framework for your class project. List the pros and cons of this idea.</p>
                         <div slot="answer" class="algolia-no-index">
@@ -2544,7 +2523,7 @@ studentList.addUi(statusUi);
       <br>
       <h3 id="libraries"><span class="dimmed"><strong>Libraries</strong></span><a class="fa fa-anchor" href="#libraries"></a></h3>
       <p><span id="W11-5c"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/reuse/libraries/what">
+      <panel type="seamless" expanded popup-url="/website/book/reuse/libraries/what" id="implementation-reuse-libraries-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5c</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-reuse-libraries-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Reuse → Libraries →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-reuse-libraries-what"></a></h4>
@@ -2581,7 +2560,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-5d"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/reuse/libraries/how">
+      <panel type="seamless" expanded popup-url="/website/book/reuse/libraries/how" id="implementation-reuse-libraries-how">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5d</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-reuse-libraries-how"><small><span class="font-weight-bold text-muted"><span>Implementation → Reuse → Libraries →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#implementation-reuse-libraries-how"></a></h4>
@@ -2603,8 +2582,8 @@ studentList.addUi(statusUi);
               <ol>
                 <li>Read the documentation to confirm that its functionality fits your needs</li>
                 <li>Check the license to confirm that it allows reuse in the way you plan to reuse it. For example, some libraries might allow non-commercial use only.</li>
-                <li>Download the library and make it accessible to your project. Alternatively, you can configure your
-                  <tooltip content="e.g. _Gradle_ (for Java) and _Pipenv_ (for Python)">dependency management tool</tooltip> to do it for you.</li>
+                <li>Download the library and make it accessible to your project. Alternatively, you can configure your <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g. <em>Gradle</em> (for Java) and <em>Pipenv</em> (for Python)</span>dependency
+                  management tool</span> to do it for you.</li>
                 <li>Call the library API from your code where you need to use the library functionality.</li>
               </ol>
             </div>
@@ -2613,7 +2592,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-5e"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/reuse/apis/what">
+      <panel type="seamless" expanded popup-url="/website/book/reuse/apis/what" id="implementation-reuse-apis-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5e</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-reuse-apis-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Reuse → APIs →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-reuse-apis-what"></a></h4>
@@ -2642,9 +2621,9 @@ studentList.addUi(statusUi);
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about APIs" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about APIs</p></template>
                       <question>
                         <p>Choose the correct statements</p>
                         <ul class="task-list">
@@ -2662,7 +2641,7 @@ studentList.addUi(statusUi);
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: True or False?" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> True or False?</p></template>
                       <question>
                         <p>Defining component APIs early is useful for developing components in parallel.</p>
                         <ul radio-group="9bd8a" class="radio-list">
@@ -2685,7 +2664,7 @@ studentList.addUi(statusUi);
       <br>
       <h3 id="frameworks"><span class="dimmed"><strong>Frameworks</strong></span><a class="fa fa-anchor" href="#frameworks"></a></h3>
       <p><span id="W11-5f"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/reuse/frameworks/what">
+      <panel type="seamless" expanded popup-url="/website/book/reuse/frameworks/what" id="implementation-reuse-frameworks-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5f</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         <h4 id="implementation-reuse-frameworks-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Reuse → Frameworks →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-reuse-frameworks-what"></a></h4>
@@ -2740,7 +2719,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-5g"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/reuse/frameworks/frameworksVsLibraries">
+      <panel type="seamless" expanded popup-url="/website/book/reuse/frameworks/frameworksVsLibraries" id="implementation-reuse-frameworks-frameworks-vs-libraries">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5g</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2774,9 +2753,9 @@ studentList.addUi(statusUi);
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statement about software frameworks" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statement about software frameworks</p></template>
                       <question>
                         <p>Choose correct statements about software frameworks.</p>
                         <ul class="task-list">
@@ -2796,7 +2775,7 @@ studentList.addUi(statusUi);
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which are frameworks?" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which are frameworks?</p></template>
                       <question>
                         <p>Which one of these are frameworks ?</p>
                         <ul radio-group="58823" class="radio-list">
@@ -2821,7 +2800,7 @@ studentList.addUi(statusUi);
       <br>
       <h3 id="platforms"><span class="dimmed"><strong>Platforms</strong></span><a class="fa fa-anchor" href="#platforms"></a></h3>
       <p><span id="W11-5h"></span></p>
-      <panel type="seamless" expanded popup-url="/website/book/reuse/platforms/what">
+      <panel type="seamless" expanded popup-url="/website/book/reuse/platforms/what" id="implementation-reuse-platforms-what">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.5h</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -2847,20 +2826,21 @@ studentList.addUi(statusUi);
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Technically, an operating system can be called a platform. For example, Windows PC is a platform for desktop applications while iOS is a platform for mobile apps.</p>
               </box>
               <box>
-                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <strong>Two well-known examples of platforms are JavaEE and .NET</strong>, both of which sit above Operating systems layer, and are used to develop
-                  <trigger for="modal:enterprise-application" trigger="click">enterprise applications</trigger>. Infrastructure services such as connection pooling, load balancing, remote code execution, transaction management, authentication, security, messaging etc. are done similarly in most enterprise applications.
-                  Both JavaEE and .NET provide these services to applications in a customizable way without developers having to implement them from scratch every time.</p>
+                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <strong>Two well-known examples of platforms are JavaEE and .NET</strong>, both of which sit above Operating systems layer, and are used to develop <span for="modal:enterprise-application"
+                    trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:enterprise-application'].show()" class="trigger-click">enterprise applications</span>. Infrastructure
+                  services such as connection pooling, load balancing, remote code execution, transaction management, authentication, security, messaging etc. are done similarly in most enterprise applications. Both JavaEE and .NET provide these services
+                  to applications in a customizable way without developers having to implement them from scratch every time.</p>
                 <ul>
                   <li>JavaEE (Java Enterprise Edition) is both a framework and a platform for writing enterprise applications. The runtime used by the JavaEE applications is the JVM (Java Virtual Machine) that can run on different Operating Systems.</li>
                   <li>.NET is a similar platform and a framework. Its runtime is called CLR (Common Language Runtime) and usually used on Windows machines.</li>
                 </ul>
               </box>
-              <modal title="**Enterprise Applications**" id="modal:enterprise-application" class="algolia-no-index">
+              <b-modal id="modal:enterprise-application" hide-footer size modal-class="mb-zoom" ref="modal:enterprise-application"><template slot="modal-title"><strong>Enterprise Applications</strong></template>
                 <div>
                   <p><strong>Enterprise Application</strong>: ‘enterprise applications’ means software applications used at organizations level and therefore has to meet much higher demands (such as in scalability, security, performance, and robustness)
                     than software meant for individual use.</p>
                 </div>
-              </modal>
+              </b-modal>
             </div>
             <div></div>
           </div>
@@ -2869,7 +2849,7 @@ studentList.addUi(statusUi);
     </div>
   </panel>
   <p><span id="W11-6"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
+  <panel type="seamless" no-close expandable="true" expanded id="w11-6-cloud-computing-optional">
     <span slot="header" class="card-title"><div><h2 id="w11-6-cloud-computing-optional"><span class="dimmed">[W11.6]</span> <strong>Cloud Computing</strong> <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small>
     <a class="fa fa-anchor" href="#w11-6-cloud-computing-optional"></a>
     </h2>
@@ -2877,7 +2857,7 @@ studentList.addUi(statusUi);
     </span>
     <div class="indented-level1">
       <p><span id="W11-6a"></span></p>
-      <panel type="seamless" popup-url="/website/book/reuse/cloudComputing/what" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/reuse/cloudComputing/what" id="implementation-reuse-cloud-computing-what" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.6a</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -2908,7 +2888,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-6b"></span></p>
-      <panel type="seamless" popup-url="/website/book/reuse/cloudComputing/services" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/reuse/cloudComputing/services" id="implementation-reuse-cloud-computing-iaas-paas-and-saas" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.6b</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -2946,9 +2926,9 @@ studentList.addUi(statusUi);
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Google Calendar in which category?" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Google Calendar in which category?</p></template>
                       <question>
                         <p>Google Calendar belongs to which category of cloud computing services?</p>
                         <ul class="task-list">
@@ -2973,7 +2953,7 @@ studentList.addUi(statusUi);
   </panel>
   <p></p>
   <p><span id="W11-7"></span></p>
-  <panel type="seamless" no-close expandable="true" expanded>
+  <panel type="seamless" no-close expandable="true" expanded id="w11-7-other-uml-models-optional">
     <span slot="header" class="card-title"><div><h2 id="w11-7-other-uml-models-optional"><span class="dimmed">[W11.7]</span> <strong>Other UML Models</strong> <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small>
     <a class="fa fa-anchor" href="#w11-7-other-uml-models-optional"></a>
     </h2>
@@ -2981,7 +2961,7 @@ studentList.addUi(statusUi);
     </span>
     <div class="indented-level1">
       <p><span id="W11-7a"></span></p>
-      <panel type="seamless" popup-url="/website/book/modeling/modelingStructures/deploymentDiagrams" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/modeling/modelingStructures/deploymentDiagrams" id="design-modelling-modelling-structure-deployment-diagrams" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.7a</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -3013,7 +2993,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-7b"></span></p>
-      <panel type="seamless" popup-url="/website/book/modeling/modelingStructures/componentDiagrams" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/modeling/modelingStructures/componentDiagrams" id="design-modelling-modelling-structure-component-diagrams" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.7b</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -3044,7 +3024,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-7c"></span></p>
-      <panel type="seamless" popup-url="/website/book/modeling/modelingStructures/packageDiagrams" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/modeling/modelingStructures/packageDiagrams" id="design-modelling-modelling-structure-package-diagrams" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.7c</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -3075,7 +3055,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-7d"></span></p>
-      <panel type="seamless" popup-url="/website/book/modeling/modelingStructures/compositeStructureDiagrams" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/modeling/modelingStructures/compositeStructureDiagrams" id="design-modelling-modelling-structure-composite-structure-diagrams" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.7d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -3107,7 +3087,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-7e"></span></p>
-      <panel type="seamless" popup-url="/website/book/modeling/modelingBehaviors/timingDiagrams" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/modeling/modelingBehaviors/timingDiagrams" id="design-modelling-modelling-behaviors-timing-diagrams" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.7e</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -3139,7 +3119,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-7f"></span></p>
-      <panel type="seamless" popup-url="/website/book/modeling/modelingBehaviors/interactionOverviewDiagrams" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/modeling/modelingBehaviors/interactionOverviewDiagrams" id="design-modelling-modelling-behaviors-interaction-overview-diagrams" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.7f</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -3171,7 +3151,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-7g"></span></p>
-      <panel type="seamless" popup-url="/website/book/modeling/modelingBehaviors/communicationDiagrams" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/modeling/modelingBehaviors/communicationDiagrams" id="design-modelling-modelling-behaviors-communication-diagrams" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.7g</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -3203,7 +3183,7 @@ studentList.addUi(statusUi);
         </div>
       </panel>
       <p><span id="W11-7h"></span></p>
-      <panel type="seamless" popup-url="/website/book/modeling/modelingBehaviors/stateMachineDiagrams" class="algolia-no-index">
+      <panel type="seamless" popup-url="/website/book/modeling/modelingBehaviors/stateMachineDiagrams" id="design-modelling-modelling-behaviors-state-machine-diagrams" class="algolia-no-index">
         <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W11.7h</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
@@ -3297,7 +3277,7 @@ studentList.addUi(statusUi);
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
   </footer>
   </div>
 </body>

@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Test Case Design: Introduction</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,7 +37,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="what">
                     <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                 </div>
                 </span>
@@ -53,11 +51,9 @@
                   <p></p>
                   <p></p>
                   <div>
-                    <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite
-                      number of test cases.</p>
+                    <p><strong>Except for trivial <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUTs</span>, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">testing all possible cases</span>exhaustive testing</span> is not practical</strong>                      because such testing often requires a massive/infinite number of test cases.</p>
                     <box>
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the test cases for adding a string object to a
-                        <tooltip content="Java: `ArrayList`,<br>Python: `list`">collection</tooltip>:</p>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the test cases for adding a string object to a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Java: <code>ArrayList</code>,<br>Python: <code>list</code></span>collection</span>:</p>
                       <ul>
                         <li>Add an item to an empty collection.</li>
                         <li>Add an item when there is one item in the collection.</li>
@@ -84,29 +80,20 @@
                           <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                         </li>
                       </ul>
-                      <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case
-                        design techniques that can help us improve E&amp;E of testing.</p>
+                      <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong>                        There are test case design techniques that can help us improve E&amp;E of testing.</p>
                     </div>
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Test cases for `TriangleDetector`" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Test cases for <code>TriangleDetector</code></p></template>
                             <question has-input="true">
                               <p>Given below is the sample output from a text-based program <code>TriangleDetector</code> ithat determines whether the three input numbers make up the three sides of a valid triangle. List test cases you would use to test
                                 this software. Two sample test cases are given below.</p>
-                              <pre><code class="hljs">C:\&gt; java TriangleDetector
-Enter side 1: 34
-Enter side 2: 34
-Enter side 3: 32
-Can this be a triangle?:  Yes
-Enter side 1:
-</code></pre>
+                              <pre><code class="hljs"><span>C:\&gt; java TriangleDetector</span><span>Enter side 1: 34</span><span>Enter side 2: 34</span><span>Enter side 3: 32</span><span>Can this be a triangle?:  Yes</span><span>Enter side 1:</span></code></pre>
                               <p>Sample test cases,</p>
-                              <pre><code class="hljs">34,34,34: Yes
-0, any valid, any valid: No
-</code></pre>
+                              <pre><code class="hljs"><span>34,34,34: Yes</span><span>0, any valid, any valid: No</span></code></pre>
                               <div slot="answer" class="algolia-no-index">
                                 <p>In addition to obvious test cases such as</p>
                                 <ul>
@@ -129,7 +116,7 @@ Enter side 1:
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Exhaustive testing in Minesweeper" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Exhaustive testing in Minesweeper</p></template>
                             <question has-input="true">
                               <p>Explain the why exhaustive testing is not practical using the example of testing <code>newGame()</code> operation in the <code>Logic</code> class of a Minesweeper game.</p>
                               <div slot="answer" class="algolia-no-index">
@@ -147,7 +134,7 @@ Enter side 1:
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about E&E of testing" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about E&amp;E of testing</p></template>
                             <question>
                               <p>Improving efficiency and effectiveness of test case design can,</p>
                               <ul class="task-list">
@@ -171,7 +158,7 @@ Enter side 1:
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="positive-vs-negative-test-cases">
                   <span slot="header" class="card-title"><div><h4 id="positive-vs-negative-test-cases"><span>Positive vs Negative Test Cases</span><a class="fa fa-anchor" href="#positive-vs-negative-test-cases"></a></h4>
               </div>
               </span>
@@ -199,7 +186,7 @@ Enter side 1:
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="black-box-vs-glass-box">
                 <span slot="header" class="card-title"><div><h4 id="black-box-vs-glass-box"><span>Black Box vs Glass Box</span><a class="fa fa-anchor" href="#black-box-vs-glass-box"></a></h4>
             </div>
             </span>
@@ -226,16 +213,16 @@ Enter side 1:
                       than 1000 items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
                   </li>
                 </ul>
-                <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> %%Black-box and white-box testing%%" class="algolia-no-index">
+                <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> <span class="dimmed">Black-box and white-box testing</span></p></template>
                   <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
                   <tabs>
-                    <tab header="<md>:glyphicon-facetime-video:</md> Black-box vs White-box testing">
+                    <tab><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Black-box vs White-box testing</template>
                       <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                     </tab>
-                    <tab header="<md>:glyphicon-facetime-video:</md> Black-box testing example" class="algolia-no-index">
+                    <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Black-box testing example</template>
                       <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                     </tab>
-                    <tab header="<md>:glyphicon-facetime-video:</md> White-box testing example" class="algolia-no-index">
+                    <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> White-box testing example</template>
                       <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                     </tab>
                   </tabs>

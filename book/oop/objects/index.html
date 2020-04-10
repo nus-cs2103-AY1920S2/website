@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Object Oriented Programming: Objects</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,7 +37,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="what">
                     <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                 </div>
                 </span>
@@ -216,10 +214,10 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
 
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Describe objects in the given scenario" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Describe objects in the given scenario</p></template>
                             <question has-input="true">
                               <p>Consider the following real-world scenario.</p>
                               <box>
@@ -334,7 +332,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="objects-as-abstractions">
                   <span slot="header" class="card-title"><div><h4 id="objects-as-abstractions"><span>Objects as Abstractions</span><a class="fa fa-anchor" href="#objects-as-abstractions"></a></h4>
               </div>
               </span>
@@ -348,12 +346,12 @@
                 <p></p>
                 <p></p>
                 <div>
-                  <p>The concept of <strong><em>Objects</em> in OOP is an <trigger trigger="click" for="modal:objectsAsAbstractions-abstraction">abstraction</trigger> mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong>                    i.e. ignore details of data formats and the method implementation details and work at the level of objects.</p>
-                  <modal large title="Definition: Abstraction" id="modal:objectsAsAbstractions-abstraction" class="algolia-no-index">
+                  <p>The concept of <strong><em>Objects</em> in OOP is an <span trigger="click" for="modal:objectsAsAbstractions-abstraction" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:objectsAsAbstractions-abstraction'].show()" class="trigger-click">abstraction</span> mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong>                    i.e. ignore details of data formats and the method implementation details and work at the level of objects.</p>
+                  <b-modal id="modal:objectsAsAbstractions-abstraction" hide-footer size="lg" modal-class="mb-zoom" ref="modal:objectsAsAbstractions-abstraction"><template slot="modal-title">Definition: Abstraction</template>
                     <div>
                       <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                     </div>
-                  </modal>
+                  </b-modal>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> We can deal with a <code>Person</code> object that represents the person Adam and query the object for Adam's age instead of dealing with details such as Adam’s date
                       of birth (DoB), in what format the DoB is stored, the algorithm used to calculate the age from the DoB, etc.</p>
@@ -364,7 +362,7 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="encapsulation-of-objects">
                 <span slot="header" class="card-title"><div><h4 id="encapsulation-of-objects"><span>Encapsulation of Objects</span><a class="fa fa-anchor" href="#encapsulation-of-objects"></a></h4>
             </div>
             </span>
@@ -387,9 +385,9 @@
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Choose the correct statement." class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Choose the correct statement.</p></template>
                         <question>
                           <p>Choose the correct statements</p>
                           <ul class="task-list">

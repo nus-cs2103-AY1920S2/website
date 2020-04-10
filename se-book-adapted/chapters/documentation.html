@@ -5,13 +5,14 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Textbook Chapter : Documentation</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -210,11 +211,11 @@
               <h1 id="documentation"><span>Documentation</span><a class="fa fa-anchor" href="#documentation"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="introduction">
             <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
         </div>
         </span>
-        <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+        <panel type="seamless" expanded id="what"><template slot="_header"><h4 id="what">What<a class="fa fa-anchor" href="#what"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -319,9 +320,9 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about API documentation" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about API documentation</p></template>
                       <question>
                         <p>Choose correct statements about API documentation.</p>
                         <ul class="task-list">
@@ -341,15 +342,15 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
           </div>
         </panel>
         </panel>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="guidelines">
           <span slot="header" class="card-title"><div><h2 id="guidelines"><span>Guidelines</span><a class="fa fa-anchor" href="#guidelines"></a></h2>
       </div>
       </span>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="guideline-go-top-down-not-bottom-up">
         <span slot="header" class="card-title"><div><h3 id="guideline-go-top-down-not-bottom-up"><span>Guideline: Go Top-down, Not Bottom-up</span><a class="fa fa-anchor" href="#guideline-go-top-down-not-bottom-up"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-2"><template slot="_header"><h4 id="what-2">What<a class="fa fa-anchor" href="#what-2"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -368,7 +369,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Why<a class='fa fa-anchor' href='#why'></a>" expanded>
+    <panel type="seamless" expanded id="why"><template slot="_header"><h4 id="why">Why<a class="fa fa-anchor" href="#why"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -388,7 +389,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+    <panel type="seamless" expanded id="how"><template slot="_header"><h4 id="how">How<a class="fa fa-anchor" href="#how"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -433,11 +434,11 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
       </div>
     </panel>
     </panel>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="guideline-aim-for-comprehensibility">
       <span slot="header" class="card-title"><div><h3 id="guideline-aim-for-comprehensibility"><span>Guideline: Aim for Comprehensibility</span><a class="fa fa-anchor" href="#guideline-aim-for-comprehensibility"></a></h3>
   </div>
   </span>
-  <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+  <panel type="seamless" expanded id="what-3"><template slot="_header"><h4 id="what-3">What<a class="fa fa-anchor" href="#what-3"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -456,7 +457,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
       <div></div>
     </div>
   </panel>
-  <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+  <panel type="seamless" expanded id="how-2"><template slot="_header"><h4 id="how-2">How<a class="fa fa-anchor" href="#how-2"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -482,9 +483,9 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about documentation" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about documentation</p></template>
                 <question>
                   <p>It is recommended for developer documents,</p>
                   <ul class="task-list">
@@ -506,11 +507,11 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
     </div>
   </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="guideline-document-minimally-but-sufficiently">
     <span slot="header" class="card-title"><div><h3 id="guideline-document-minimally-but-sufficiently"><span>Guideline: Document Minimally, but Sufficiently</span><a class="fa fa-anchor" href="#guideline-document-minimally-but-sufficiently"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-4"><template slot="_header"><h4 id="what-4">What<a class="fa fa-anchor" href="#what-4"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -533,7 +534,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
         <div></div>
       </div>
     </panel>
-    <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+    <panel type="seamless" expanded id="how-3"><template slot="_header"><h4 id="how-3">How<a class="fa fa-anchor" href="#how-3"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -555,15 +556,15 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
     </panel>
   </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="tools">
     <span slot="header" class="card-title"><div><h2 id="tools"><span>Tools</span><a class="fa fa-anchor" href="#tools"></a></h2>
     </div>
     </span>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="javadoc">
       <span slot="header" class="card-title"><div><h3 id="javadoc"><span>JavaDoc</span><a class="fa fa-anchor" href="#javadoc"></a></h3>
       </div>
       </span>
-      <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+      <panel type="seamless" expanded id="what-5"><template slot="_header"><h4 id="what-5">What<a class="fa fa-anchor" href="#what-5"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -580,29 +581,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
             <p><strong>Javadoc is a tool for generating API documentation in HTML format from doc comments in source.</strong> In addition, modern IDEs use JavaDoc comments to generate explanatory tool tips.</p>
             <box>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example method header comment in JavaDoc format (adapted from <a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">Oracle's Java documentation</a>)</p>
-              <pre><code class="hljs java"><span class="hljs-comment">/**
- * Returns an Image object that can then be painted on the screen.
- * The url argument must specify an absolute {<span class="hljs-doctag">@link</span> URL}. The name
- * argument is a specifier that is relative to the url argument.
- * &lt;p&gt;
- * This method always returns immediately, whether or not the
- * image exists. When this applet attempts to draw the image on
- * the screen, the data will be loaded. The graphics primitives
- * that draw the image will incrementally paint on the screen.
- *
- * <span class="hljs-doctag">@param</span> url an absolute URL giving the base location of the image
- * <span class="hljs-doctag">@param</span> name the location of the image, relative to the url argument
- * <span class="hljs-doctag">@return</span> the image at the specified URL
- * <span class="hljs-doctag">@see</span> Image
- */</span>
- <span class="hljs-function"><span class="hljs-keyword">public</span> Image <span class="hljs-title">getImage</span><span class="hljs-params">(URL url, String name)</span> </span>{
-        <span class="hljs-keyword">try</span> {
-            <span class="hljs-keyword">return</span> getImage(<span class="hljs-keyword">new</span> URL(url, name));
-        } <span class="hljs-keyword">catch</span> (MalformedURLException e) {
-            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
-        }
- }
-</code></pre>
+              <pre><code class="hljs java"><span><span class="hljs-comment">/**</span></span><span><span class="hljs-comment"> * Returns an Image object that can then be painted on the screen.</span></span><span><span class="hljs-comment"> * The url argument must specify an absolute {<span class="hljs-doctag">@link</span> URL}. The name</span></span><span><span class="hljs-comment"> * argument is a specifier that is relative to the url argument.</span></span><span><span class="hljs-comment"> * &lt;p&gt;</span></span><span><span class="hljs-comment"> * This method always returns immediately, whether or not the</span></span><span><span class="hljs-comment"> * image exists. When this applet attempts to draw the image on</span></span><span><span class="hljs-comment"> * the screen, the data will be loaded. The graphics primitives</span></span><span><span class="hljs-comment"> * that draw the image will incrementally paint on the screen.</span></span><span><span class="hljs-comment"> *</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> url an absolute URL giving the base location of the image</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> name the location of the image, relative to the url argument</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> the image at the specified URL</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@see</span> Image</span></span><span><span class="hljs-comment"> */</span></span><span> <span class="hljs-function"><span class="hljs-keyword">public</span> Image <span class="hljs-title">getImage</span><span class="hljs-params">(URL url, String name)</span> </span>{</span><span>        <span class="hljs-keyword">try</span> {</span><span>            <span class="hljs-keyword">return</span> getImage(<span class="hljs-keyword">new</span> URL(url, name));</span><span>        } <span class="hljs-keyword">catch</span> (MalformedURLException e) {</span><span>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;</span><span>        }</span><span> }</span></code></pre>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Generated HTML documentation:</p>
               <p><a href="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" target="_self"><img src="/website/book/documentation/tools/javaDoc/what/images/generatedHtml.png" alt class="img-fluid"></a></p>
               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Tooltip generated by Intellij IDE:</p>
@@ -614,7 +593,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+      <panel type="seamless" expanded id="how-4"><template slot="_header"><h4 id="how-4">How<a class="fa fa-anchor" href="#how-4"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -630,38 +609,13 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
           <div>
             <p>In the absence of more extensive guidelines (e.g., given in a coding standard adopted by your project), you can follow the two examples below in your code.</p>
             <p><strong>A minimal javadoc comment example for methods:</strong></p>
-            <pre><code class="hljs java"><span class="hljs-comment">/**
- * Returns lateral location of the specified position.
- * If the position is unset, NaN is returned.
- *
- * <span class="hljs-doctag">@param</span> x  X coordinate of position.
- * <span class="hljs-doctag">@param</span> y Y coordinate of position.
- * <span class="hljs-doctag">@param</span> zone Zone of position.
- * <span class="hljs-doctag">@return</span> Lateral location.
- * <span class="hljs-doctag">@throws</span> IllegalArgumentException  If zone is &lt;= 0.
- */</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">computeLocation</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y, <span class="hljs-keyword">int</span> zone)</span>
-    <span class="hljs-keyword">throws</span> IllegalArgumentException </span>{
-  ...
-}
-</code></pre>
+            <pre><code class="hljs java"><span><span class="hljs-comment">/**</span></span><span><span class="hljs-comment"> * Returns lateral location of the specified position.</span></span><span><span class="hljs-comment"> * If the position is unset, NaN is returned.</span></span><span><span class="hljs-comment"> *</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> x  X coordinate of position.</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> y Y coordinate of position.</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@param</span> zone Zone of position.</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@return</span> Lateral location.</span></span><span><span class="hljs-comment"> * <span class="hljs-doctag">@throws</span> IllegalArgumentException  If zone is &lt;= 0.</span></span><span><span class="hljs-comment"> */</span></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">computeLocation</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y, <span class="hljs-keyword">int</span> zone)</span></span></span><span><span class="hljs-function">    <span class="hljs-keyword">throws</span> IllegalArgumentException </span>{</span><span>  ...</span><span>}</span></code></pre>
             <p><strong>A minimal javadoc comment example for classes:</strong></p>
-            <pre><code class="hljs java"><span class="hljs-keyword">package</span> ...
-
-<span class="hljs-keyword">import</span> ...
-
-<span class="hljs-comment">/**
- * Represents a location in a 2D space. A &lt;code&gt;Point&lt;/code&gt; object corresponds to
- * a coordinate represented by two integers e.g., &lt;code&gt;3,6&lt;/code&gt;
- */</span>
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span></span>{
-    <span class="hljs-comment">//...</span>
-}
-</code></pre>
+            <pre><code class="hljs java"><span><span class="hljs-keyword">package</span> ...</span><span>&#x200B;</span><span><span class="hljs-keyword">import</span> ...</span><span>&#x200B;</span><span><span class="hljs-comment">/**</span></span><span><span class="hljs-comment"> * Represents a location in a 2D space. A &lt;code&gt;Point&lt;/code&gt; object corresponds to</span></span><span><span class="hljs-comment"> * a coordinate represented by two integers e.g., &lt;code&gt;3,6&lt;/code&gt;</span></span><span><span class="hljs-comment"> */</span></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span></span>{</span><span>    <span class="hljs-comment">//...</span></span><span>}</span></code></pre>
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                 <div>
                   <ul>
                     <li><a href="https://www.tutorialspoint.com/java/java_documentation.htm">A short tutorial on writing JavaDoc comments</a> <span class="dimmed">-- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></span></li>
@@ -674,11 +628,11 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
         </div>
       </panel>
     </panel>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="markdown">
       <span slot="header" class="card-title"><div><h3 id="markdown"><span>Markdown</span><a class="fa fa-anchor" href="#markdown"></a></h3>
       </div>
       </span>
-      <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+      <panel type="seamless" expanded id="what-6"><template slot="_header"><h4 id="what-6">What<a class="fa fa-anchor" href="#what-6"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -698,7 +652,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### How<a class='fa fa-anchor' href='#how'></a>" expanded>
+      <panel type="seamless" expanded id="how-5"><template slot="_header"><h4 id="how-5">How<a class="fa fa-anchor" href="#how-5"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -721,11 +675,11 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
         </div>
       </panel>
     </panel>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="asciidoc">
       <span slot="header" class="card-title"><div><h3 id="asciidoc"><span>AsciiDoc</span><a class="fa fa-anchor" href="#asciidoc"></a></h3>
       </div>
       </span>
-      <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+      <panel type="seamless" expanded id="what-7"><template slot="_header"><h4 id="what-7">What<a class="fa fa-anchor" href="#what-7"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -765,17 +719,37 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
             <a class="nav-link py-1" href="#guideline-go-top-down-not-bottom-up">Guideline: Go Top-down, Not Bottom-up&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-2">What&#x200E;</a>
               <a class="nav-link py-1" href="#why">Why&#x200E;</a>
               <a class="nav-link py-1" href="#how">How&#x200E;</a>
             </nav>
             <a class="nav-link py-1" href="#guideline-aim-for-comprehensibility">Guideline: Aim for Comprehensibility&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-3">What&#x200E;</a>
+              <a class="nav-link py-1" href="#how-2">How&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#guideline-document-minimally-but-sufficiently">Guideline: Document Minimally, but Sufficiently&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-4">What&#x200E;</a>
+              <a class="nav-link py-1" href="#how-3">How&#x200E;</a>
+            </nav>
           </nav>
           <a class="nav-link py-1" href="#tools">Tools&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
             <a class="nav-link py-1" href="#javadoc">JavaDoc&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-5">What&#x200E;</a>
+              <a class="nav-link py-1" href="#how-4">How&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#markdown">Markdown&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-6">What&#x200E;</a>
+              <a class="nav-link py-1" href="#how-5">How&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#asciidoc">AsciiDoc&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-7">What&#x200E;</a>
+            </nav>
           </nav>
         </nav>
 
@@ -785,7 +759,7 @@ They are: tutorials, how-to guides, explanation and technical reference.</strong
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
   </footer>
   </div>
 </body>

@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Coding Best Practices: [Practice] SLAP Hard</title>
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -49,29 +47,21 @@
                 </div>
                 <div id="main">
                   <div>
-                    <p>Avoid varying the level of
-                      <trigger trigger="click" for="modal:slap-abstraction">abstraction</trigger> within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
+                    <p>Avoid varying the level of <span trigger="click" for="modal:slap-abstraction" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:slap-abstraction'].show()" class="trigger-click">abstraction</span>                      within a code fragment. Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
                     <box>
                       <p>Example:</p>
                       <p>
                         <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                           </span>
                         </font> (<code>readData();</code> and <code>salary = basic*rise+1000;</code> are at different levels of abstraction)</p>
-                      <pre><code class="hljs java">readData();
-salary = basic*rise+<span class="hljs-number">1000</span>;
-tax = (taxable?salary*<span class="hljs-number">0.07</span>:<span class="hljs-number">0</span>);
-displayResult();
-</code></pre>
+                      <pre><code class="hljs java"><span>readData();</span><span>salary = basic*rise+<span class="hljs-number">1000</span>;</span><span>tax = (taxable?salary*<span class="hljs-number">0.07</span>:<span class="hljs-number">0</span>);</span><span>displayResult();</span></code></pre>
                       <p>
                         <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                           </span>
                         </font> (all statements are at the same level of abstraction)</p>
-                      <pre><code class="hljs java">readData();
-processData();
-displayResult();
-</code></pre>
+                      <pre><code class="hljs java"><span>readData();</span><span>processData();</span><span>displayResult();</span></code></pre>
                     </box>
-                    <modal title id="modal:slap-abstraction" class="algolia-no-index">
+                    <b-modal id="modal:slap-abstraction" hide-footer size modal-class="mb-zoom" ref="modal:slap-abstraction"><template slot="modal-title"></template>
                       <div>
                         <div></div>
                         <p></p>
@@ -122,7 +112,7 @@ displayResult();
                           </div>
                         </div>
                       </div>
-                    </modal>
+                    </b-modal>
                   </div>
                   <div></div>
                 </div>

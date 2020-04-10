@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Modeling: Introduction</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,7 +37,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="what">
                     <span slot="header" class="card-title"><div><h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                 </div>
                 </span>
@@ -55,16 +53,16 @@
                   <div>
                     <p><strong>A <em>model</em> is a representation of something else.</strong></p>
                     <box>
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A
-                        <trigger trigger="click" for="modal:modellingIntro-classDiagram">class diagram</trigger> is a model that represents a software design.</p>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <span trigger="click" for="modal:modellingIntro-classDiagram" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modellingIntro-classDiagram'].show()"
+                          class="trigger-click">class diagram</span> is a model that represents a software design.</p>
                     </box>
-                    <modal large title="Class diagrams" id="modal:modellingIntro-classDiagram" class="algolia-no-index">
+                    <b-modal id="modal:modellingIntro-classDiagram" hide-footer size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-classDiagram"><template slot="modal-title">Class diagrams</template>
                       <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br>
                         <span><span aria-hidden="true" class="fas fa-cube"></span></span> An example class diagram:<br></p>
-                      <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
-                    <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are
-                      <trigger trigger="click" for="modal:modellingIntro-abstraction">abstractions</trigger>.</p>
-                    <modal large title="%%Textbook <md>:glyphicon-log-in:</md>%%" id="modal:modellingIntro-abstraction" class="algolia-no-index">
+                      <img src="/website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></b-modal>
+                    <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are <span trigger="click" for="modal:modellingIntro-abstraction"
+                        v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:modellingIntro-abstraction'].show()" class="trigger-click">abstractions</span>.</p>
+                    <b-modal id="modal:modellingIntro-abstraction" hide-footer size="lg" modal-class="mb-zoom" ref="modal:modellingIntro-abstraction"><template slot="modal-title"><span class="dimmed">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></span></template>
                       <div>
                         <div></div>
                         <p></p>
@@ -74,7 +72,7 @@
                         </p>
                         <div id="title-and-body">
                           <div>
-                            <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                            <h4 id="what-2"><span>What</span><a class="fa fa-anchor" href="#what-2"></a></h4>
                           </div>
                           <div id="main">
                             <div>
@@ -115,7 +113,7 @@
                           </div>
                         </div>
                       </div>
-                    </modal>
+                    </b-modal>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A class diagram captures the structure of the software design but not the behavior.</p>
                     </box>
@@ -129,7 +127,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="how">
                   <span slot="header" class="card-title"><div><h4 id="how"><span>How</span><a class="fa fa-anchor" href="#how"></a></h4>
               </div>
               </span>
@@ -148,40 +146,41 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of using models for analysis:</p>
                     <ol>
-                      <li>Models of the
-                        <tooltip content="i.e. the environment in which the software is expected to solve a problem">problem domain</tooltip> can be built to aid the understanding of the problem to be solved.</li>
-                      <li>When planning a software solution, models can be created to figure out how the solution is to be built. An
-                        <trigger trigger="click" for="modal:modelingIntro-archiDiagrams">architecture diagram</trigger> is such a model.</li>
+                      <li>Models of the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e. the environment in which the software is expected to solve a problem</span>problem
+                        domain
+                        </span> can be built to aid the understanding of the problem to be solved.</li>
+                      <li>When planning a software solution, models can be created to figure out how the solution is to be built. An <span trigger="click" for="modal:modelingIntro-archiDiagrams" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                          v-on:click="$refs['modal:modelingIntro-archiDiagrams'].show()" class="trigger-click">architecture diagram</span> is such a model.</li>
                     </ol>
                   </box>
-                  <modal large title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams" class="algolia-no-index">
+                  <b-modal id="modal:modelingIntro-archiDiagrams" hide-footer size="lg" modal-class="mb-zoom" ref="modal:modelingIntro-archiDiagrams"><template slot="modal-title">Architecture Diagrams</template>
                     <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
                     <div>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some example architecture diagrams:</p>
                         <tabs>
-                          <tab header="TEAMMATES">
+                          <tab><template slot="_header">TEAMMATES</template>
                             <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
                           </tab>
-                          <tab header="se-edu/addressbook-level3" class="algolia-no-index">
+                          <tab class="algolia-no-index"><template slot="_header">se-edu/addressbook-level3</template>
                             <p><img src="https://se-education.org/addressbook-level3/images/ArchitectureDiagram.png" width="300"><br></p>
                           </tab>
-                          <tab header="Example 1" class="algolia-no-index">
+                          <tab class="algolia-no-index"><template slot="_header">Example 1</template>
                             <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
                               <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
                           </tab>
-                          <tab header="Example 2" class="algolia-no-index">
+                          <tab class="algolia-no-index"><template slot="_header">Example 2</template>
                             <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
                               <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
                           </tab>
-                          <tab header="Example 3" class="algolia-no-index">
+                          <tab class="algolia-no-index"><template slot="_header">Example 3</template>
                             <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
                               <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
                           </tab>
                         </tabs>
                       </box>
                     </div>
-                  </modal>
+                  </b-modal>
                   <p>b) <strong>To communicate information among stakeholders.</strong> Models can be used as a visual aid in discussions and documentations.</p>
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of using models to communicate:</p>
@@ -220,9 +219,9 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about models" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about models</p></template>
                           <question>
                             <p>Choose the correct statements about models.</p>
                             <ul class="task-list">
@@ -240,7 +239,7 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md> Explain usage of models in a class project" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain usage of models in a class project</p></template>
                           <question>
                             <p>Explain how models (e.g. UML diagrams) can be used in a class project.</p>
                             <div slot="hint" class="algolia-no-index">
@@ -256,7 +255,7 @@
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="uml-models">
                 <span slot="header" class="card-title"><div><h4 id="uml-models"><span>UML Models</span><a class="fa fa-anchor" href="#uml-models"></a></h4>
             </div>
             </span>
@@ -270,15 +269,15 @@
               <p></p>
               <p></p>
               <div>
-                <p>The following diagram uses the class diagram notation to show the different types of
-                  <trigger trigger="click" for="modal:umlModels-uml">UML</trigger> diagrams.</p>
-                <modal large title="UML (Unified Modeling Language)" id="modal:umlModels-uml" class="algolia-no-index">
+                <p>The following diagram uses the class diagram notation to show the different types of <span trigger="click" for="modal:umlModels-uml" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:umlModels-uml'].show()"
+                    class="trigger-click">UML</span> diagrams.</p>
+                <b-modal id="modal:umlModels-uml" hide-footer size="lg" modal-class="mb-zoom" ref="modal:umlModels-uml"><template slot="modal-title">UML (Unified Modeling Language)</template>
                   <div>
                     <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James
                       Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’
                       in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
                   </div>
-                </modal>
+                </b-modal>
                 <box>
                   <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/UML_diagrams_overview.svg" width="800"><br>
                     <sub>source:<a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">https://en.wikipedia.org/</a></sub></p>

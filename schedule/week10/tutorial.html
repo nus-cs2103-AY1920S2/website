@@ -5,18 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 10 - Tutorial</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -29,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -102,15 +102,16 @@
             <span id="catcher-alpha">
 <div class="indented-level2">
 <box dismissible>
-<p><span class="dimmed"><strong><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Some background:</strong> As you know, our
-            <tooltip content="i.e., Practical Exam">PE</tooltip> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students
-            have been developing an app called
-            <tooltip content="CAT stands for Crowd-sourced Anonymous Testing">CATcher</tooltip> that we would like to use for the PE this semester.</span>
+<p><span class="dimmed"><strong><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Some background:</strong> As you know, our <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter"
+              class="trigger"><span data-mb-html-for="_content">i.e., Practical Exam</span>PE</span>
+            includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing
+            an app called <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">CAT stands for Crowd-sourced Anonymous Testing</span>CATcher</span> that
+            we would like to use for the PE this semester.</span>
             </p>
             </box>
             <p>In this tutorial, we would like to smoke-test the CATcher app <strong>to ensure it can run in your computer</strong>.</p>
             <p></p>
-            <panel type="info" header="**The steps for smoke-testing CATcher:**" minimized class="algolia-no-index">
+            <panel type="info" minimized class="algolia-no-index"><template slot="_header"><p><strong>The steps for smoke-testing CATcher:</strong></p></template>
               <ol>
                 <li><strong>Download the latest version</strong> of the CATcher executable from <a href="https://github.com/CATcher-org/CATcher/releases">https://github.com/CATcher-org/CATcher/releases</a>.</li>
                 <li><strong>Launch the app.</strong> Allow the app to run if there are security warnings <span class="dimmed">(e.g., for Win 10, click the <code>More Info</code> link in the security warning and choose <code>Run anyway</code>)</span>.<br>
@@ -135,8 +136,8 @@
               <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Being able to run CATcher is important for the PE</strong> -- if you are unable to run it, please follow up via the <a href="https://github.com/CATcher-org/CATcher/issues">CATcher issue tracker</a>              until you resolve the issue ASAP.</p>
           </div>
           </span>
-          <h4 id="1-review-the-dg-of-a-peer-team"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Review the
-            <tooltip content="Developer Guide">DG</tooltip> of a Peer Team<a class="fa fa-anchor" href="#1-review-the-dg-of-a-peer-team"></a></h4>
+          <h4 id="1-review-the-dg-of-a-peer-team"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Review the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Developer Guide</span>DG</span>
+            of a Peer Team<a class="fa fa-anchor" href="#1-review-the-dg-of-a-peer-team"></a></h4>
           <ul>
             <li><strong>Divide into two sub-teams</strong>, ensuring that each team has at least one member who is good with UML.</li>
             <li><strong>Find the team your sub-team has been allocated to discuss</strong> in the panel below. Search for the PR using the team ID among the list of <a href="https://github.com/nus-cs2103-AY1920S2/addressbook-level3/pulls">PRs</a>; you can
@@ -144,7 +145,7 @@
           </ul>
 
           <div class="indented-level2">
-            <panel header="Allocation for DG review" class="algolia-no-index">
+            <panel class="algolia-no-index"><template slot="_header"><p>Allocation for DG review</p></template>
               <div class="table-responsive">
                 <table class="markbind-table table table-bordered table-striped">
                   <thead>
@@ -390,7 +391,7 @@
             <box>
               <ul>
                 <li>To be done collectively with sub-team members.</li>
-                <li>Add <em>review comments</em> in the corresponding place of the code. But <mark>if the <tooltip content="i.e., the tab named `Files changed`"><em>diff view</em></tooltip> is too laggy, you can use a normal comment</mark>.</li>
+                <li>Add <em>review comments</em> in the corresponding place of the code. But <mark>if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., the tab named <code>Files changed</code></span><em>diff view</em></span> is too laggy, you can use a normal comment</mark>.</li>
                 <li>Choose the <code>Start a review</code> option rather than <code>Add single comment</code>.</li>
                 <li>Each person can do their own review, but coordinate with sub-team members to avoid duplicating the same point.</li>
                 <li>Phrase your comments as question/doubts (e.g., <code>Is this format correct? Should it be ... instead?</code>) rather than directives (e.g., <code>Change this to ...</code>).</li>
@@ -406,24 +407,20 @@
               <p>
                 <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Pay attention to these as they are same as the final evaluation criteria of the DG.<br></p>
               <div class="indented-level1">
-                <panel type="danger" src="/website/admin/tp-grading-bugs._include_.html#architectureDiagramBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → DG Bugs → Architecture Section → Possible Bugs  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                  class="embedding" expanded fragment="architectureDiagramBugs"></panel>
+                <panel type="danger" src="/website/admin/tp-grading-bugs._include_.html#architectureDiagramBugs" class="embedding" expanded fragment="architectureDiagramBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → DG Bugs → Architecture Section → Possible Bugs  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
               </div>
               <p></p>
               <div class="indented-level1">
-                <panel type="danger" src="/website/admin/tp-grading-bugs._include_.html#umlDiagramBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → DG Bugs → UML Diagrams → Possible Bugs  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                  class="embedding" expanded fragment="umlDiagramBugs"></panel>
+                <panel type="danger" src="/website/admin/tp-grading-bugs._include_.html#umlDiagramBugs" class="embedding" expanded fragment="umlDiagramBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → DG Bugs → UML Diagrams → Possible Bugs  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
               </div>
               <p></p>
               <div class="indented-level1">
-                <panel type="danger" src="/website/admin/tp-grading-bugs._include_.html#generalDocBugs" header="Admin <md>:glyphicon-log-in:</md> tP Grading → General Documentation Bugs  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
-                  expanded fragment="generalDocBugs"></panel>
+                <panel type="danger" src="/website/admin/tp-grading-bugs._include_.html#generalDocBugs" class="embedding" expanded fragment="generalDocBugs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → General Documentation Bugs  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
               </div>
               <p></p>
               <p>Also see:</p>
               <div class="indented-level1">
-                <panel type="success" src="/website/admin/tp-deliverables-dg._include_.html#dgTips" header="Admin <md>:glyphicon-log-in:</md> tP: Deliverables → DG → Tips  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding"
-                  expanded fragment="dgTips"></panel>
+                <panel type="success" src="/website/admin/tp-deliverables-dg._include_.html#dgTips" class="embedding" expanded fragment="dgTips"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP: Deliverables → DG → Tips  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
               </div>
               <p></p>
             </box>
@@ -442,8 +439,8 @@
           <a class="nav-link py-1" href="#week-10-mar-23-tutorial">Week 10 [Mar 23] - Tutorial&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
             <a class="nav-link py-1" href="#0-smoke-test-catcher">0 Smoke-test CATcher&#x200E;</a>
-            <a class="nav-link py-1" href="#1-review-the-dg-of-a-peer-team">1 Review the
-      DG of a Peer Team&#x200E;</a>
+            <a class="nav-link py-1" href="#1-review-the-dg-of-a-peer-team">1 Review the Developer GuideDG
+      of a Peer Team&#x200E;</a>
           </nav>
 
         </nav>
@@ -452,7 +449,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
   </footer>
   </div>
 </body>

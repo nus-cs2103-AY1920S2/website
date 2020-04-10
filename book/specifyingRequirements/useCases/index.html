@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Specifying Requirements: Use Cases</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,7 +37,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="introduction">
                     <span slot="header" class="card-title"><div><h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
                 </div>
                 </span>
@@ -55,22 +53,23 @@
                   <div>
                     <box type="definition">
                       <div>
-                        <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
-                          <trigger for="pop:actor">actor</trigger>.[ 📖 :
-                          <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
-                          </popover>]</p>
-                        <popover id="pop:actor" title="<md>:glyphicon-eye-open:</md>" placement="top">
-                          <div slot="content" class="algolia-no-index">
-                            <div>
-                              <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
-                            </div>
+                        <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an <span for="pop:actor" v-b-popover.hover.top.html="popoverGenerator"
+                            v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:actor'].show()" class="trigger">actor</span>.[ 📖 : <span effect="fade" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator"
+                            class="trigger">uml-user-guide<span data-mb-html-for="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
+                          </span>]</p>
+                        <span id="pop:actor" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span>
+                        </span>
+                        <div data-mb-html-for="content">
+                          <div>
+                            <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
                           </div>
-                        </popover>
+                        </div>
+                        </span>
                       </div>
                     </box>
                     <p><strong>A use case describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</strong></p>
                     <box>
-                      <panel header="<md>:fas-cube:</md> Example 1: 'transfer money' use case for an online banking system" type="seamless" expanded>
+                      <panel type="seamless" expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example 1: 'transfer money' use case for an online banking system</p></template>
                         <pre>
 System: Online Banking System (OBS)
 Use case: UC23 - Transfer Money
@@ -103,7 +102,7 @@ Extensions:
       Use case ends.
 </pre>
                       </panel>
-                      <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless" class="algolia-no-index">
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example 2: 'upload file' use case of an LMS</span></p></template>
                         <div class="text-monospace">
                           <ul>
                             <li>System: A Learning Management System (LMS)</li>
@@ -122,16 +121,16 @@ Extensions:
                     </box>
                     <box background-color="white" border-color="white">
                       <img class="float-right ml-5" src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
-                      <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases
-                        of a system.</p>
+                      <p><strong><span for="modal:uml" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:uml'].show()" class="trigger-click">UML</span> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>,
+                        providing a visual ‘table of contents’ of the use cases of a system.</p>
                       <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-                      <modal title="**Unified Modeling Language (UML)**" id="modal:uml" class="algolia-no-index">
+                      <b-modal id="modal:uml" hide-footer size modal-class="mb-zoom" ref="modal:uml"><template slot="modal-title"><strong>Unified Modeling Language (UML)</strong></template>
                         <div>
                           <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists
                             James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence,
                             the term ‘Unified’ in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
                         </div>
-                      </modal>
+                      </b-modal>
                     </box>
                     <p><strong>Use cases capture the <em>functional requirements</em> of a system.</strong></p>
                   </div>
@@ -140,7 +139,7 @@ Extensions:
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="identifying">
                   <span slot="header" class="card-title"><div><h4 id="identifying"><span>Identifying</span><a class="fa fa-anchor" href="#identifying"></a></h4>
               </div>
               </span>
@@ -165,9 +164,8 @@ Extensions:
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some example actors for a Learning Management System</p>
                     <div class="text-monospace">
                       <ul>
-                        <li>Actors: Guest, Student, Staff, Admin,
-                          <tooltip content="an exam management system">ExamSys</tooltip>,
-                          <tooltip content="a library management system">LibSys</tooltip>.</li>
+                        <li>Actors: Guest, Student, Staff, Admin, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">an exam management system</span>ExamSys</span>,
+                          <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a library management system</span>LibSys</span>.</li>
                       </ul>
                     </div>
                   </box>
@@ -230,9 +228,9 @@ Extensions:
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="Q: Use case diagram for a ticket vending machine" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p>Q: Use case diagram for a ticket vending machine</p></template>
                           <question has-input="false">
                             <p>Consider a simple movie ticket vending machine application. Every week, the theatre staff will enter the weekly schedule as well as ticket price for each show. A customer sees the schedule and the ticket price displayed at
                               the machine. There is a slot to insert money, a keypad to enter a code for a movie, a code for the show time, and the number of tickets. A display shows the customer's balance inside the machine. A customer may choose to
@@ -248,7 +246,7 @@ Extensions:
                         </panel>
                       </div>
                       <div>
-                        <panel header="Q: Use case diagram for QA system" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p>Q: Use case diagram for QA system</p></template>
                           <question has-input="false">
                             <p>A software house wishes to automate its Quality Assurance division.</p>
                             <p>The system is to be used by Testers, Programmers and System Administrators. Only an administrator can create new users and assign tasks to programmers. Any tester can create a bug report, as well as set the status of a bug
@@ -284,7 +282,7 @@ Extensions:
               </panel>
             </div>
             <div>
-              <panel type="seamless" expanded>
+              <panel type="seamless" expanded id="details">
                 <span slot="header" class="card-title"><div><h4 id="details"><span>Details</span><a class="fa fa-anchor" href="#details"></a></h4>
             </div>
             </span>
@@ -341,8 +339,7 @@ Extensions:
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of how you can show a loop:</p>
                     <div class="text-monospace">
-                      <p>Software System: Square game<br> Use case:
-                        <popover content="Each use case can be given a unique identification for easier cross reference."> UC02 </popover> - Play a Game<br> Actors: Player (multiple players)</p>
+                      <p>Software System: Square game<br> Use case: <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">Each use case can be given a unique identification for easier cross reference.</span>                        UC02 </span> - Play a Game<br> Actors: Player (multiple players)</p>
                       <ol>
                         <li>A Player starts the game.</li>
                         <li>SquareGame asks for player names.</li>
@@ -504,13 +501,14 @@ Extensions:
               </div>
               <div>
                 <div>
-                  <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                  <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                     <div>
                       <link rel="stylesheet" href="/website/book/css/common.css">
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: EZ-Link top-up use case" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> EZ-Link top-up use case</p></template>
                         <question has-input="true">
-                          <p>Complete the following use case (MSS, extensions, etc.). Note that you should not blindly follow how the existing
-                            <tooltip content="A type of a cash card topup machine">EZ-Link machine</tooltip> operates because it will prevent you from designing a better system. You should consider all possible extensions without complicating the use case too much.</p>
+                          <p>Complete the following use case (MSS, extensions, etc.). Note that you should not blindly follow how the existing <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">A type of a cash card topup machine</span>EZ-Link
+                            machine
+                            </span> operates because it will prevent you from designing a better system. You should consider all possible extensions without complicating the use case too much.</p>
                           <box>
                             <ul>
                               <li>System: EZ-Link machine</li>
@@ -613,7 +611,7 @@ Extensions:
                     </div>
                     <div>
                       <link rel="stylesheet" href="/website/book/css/common.css">
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: LearnSys – reply to post use case" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> LearnSys – reply to post use case</p></template>
                         <question has-input="true">
                           <p>Complete the following use case (MSS, extensions, etc.).</p>
                           <box>
@@ -696,7 +694,7 @@ Extensions:
                       </panel>
                     </div>
                     <div>
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Parts of a use case descriptions" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Parts of a use case descriptions</p></template>
                         <question>
                           <p>Which of these cannot appear as part of a use case description?</p>
                           <ul class="task-list">
@@ -718,7 +716,7 @@ Extensions:
                     </div>
                     <div>
                       <link rel="stylesheet" href="/website/book/css/common.css">
-                      <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: What’s wrong with this use case?" class="algolia-no-index">
+                      <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What’s wrong with this use case?</p></template>
                         <question>
                           <p>Identify problems with this use case description.</p>
                           <div>
@@ -777,7 +775,7 @@ Extensions:
             </panel>
           </div>
           <div>
-            <panel type="seamless" expanded>
+            <panel type="seamless" expanded id="usage">
               <span slot="header" class="card-title"><div><h4 id="usage"><span>Usage</span><a class="fa fa-anchor" href="#usage"></a></h4>
           </div>
           </span>
@@ -817,9 +815,9 @@ Extensions:
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Advantages of use cases" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Advantages of use cases</p></template>
                       <question>
                         <p>What are the advantages of using use cases (the textual form) for requirements modelling?</p>
                         <ul class="task-list">
@@ -835,7 +833,7 @@ Extensions:
                     </panel>
                   </div>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about use cases" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about use cases</p></template>
                       <question>
                         <p>Which of these are correct?</p>
                         <ul class="task-list">

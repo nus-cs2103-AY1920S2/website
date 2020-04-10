@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Specifying Requirements: Use Cases: Identifying Use Cases for a System</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -60,9 +58,8 @@
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some example actors for a Learning Management System</p>
                       <div class="text-monospace">
                         <ul>
-                          <li>Actors: Guest, Student, Staff, Admin,
-                            <tooltip content="an exam management system">ExamSys</tooltip>,
-                            <tooltip content="a library management system">LibSys</tooltip>.</li>
+                          <li>Actors: Guest, Student, Staff, Admin, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">an exam management system</span>ExamSys</span>,
+                            <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a library management system</span>LibSys</span>.</li>
                         </ul>
                       </div>
                     </box>
@@ -125,9 +122,9 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="Q: Use case diagram for a ticket vending machine" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p>Q: Use case diagram for a ticket vending machine</p></template>
                             <question has-input="false">
                               <p>Consider a simple movie ticket vending machine application. Every week, the theatre staff will enter the weekly schedule as well as ticket price for each show. A customer sees the schedule and the ticket price displayed at
                                 the machine. There is a slot to insert money, a keypad to enter a code for a movie, a code for the show time, and the number of tickets. A display shows the customer's balance inside the machine. A customer may choose to
@@ -143,7 +140,7 @@
                           </panel>
                         </div>
                         <div>
-                          <panel header="Q: Use case diagram for QA system" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p>Q: Use case diagram for QA system</p></template>
                             <question has-input="false">
                               <p>A software house wishes to automate its Quality Assurance division.</p>
                               <p>The system is to be used by Testers, Programmers and System Administrators. Only an administrator can create new users and assign tasks to programmers. Any tester can create a bug report, as well as set the status of a bug

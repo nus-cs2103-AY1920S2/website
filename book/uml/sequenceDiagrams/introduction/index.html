@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - UML: Sequence Diagrams: Introduction</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -52,25 +50,7 @@
                     <p><strong>A UML sequence diagram <em>captures the interactions between multiple objects for a given scenario.</em></strong></p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the code below.</p>
-                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Machine</span> </span>{
-
-    <span class="hljs-function">Unit <span class="hljs-title">producePrototype</span><span class="hljs-params">()</span> </span>{
-        Unit prototype = <span class="hljs-keyword">new</span> Unit();
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
-            prototype.stressTest();
-        }
-        <span class="hljs-keyword">return</span> prototype;
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Unit</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stressTest</span><span class="hljs-params">()</span> </span>{
-
-    }
-}
-
-</code></pre>
+                      <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Machine</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function">Unit <span class="hljs-title">producePrototype</span><span class="hljs-params">()</span> </span>{</span><span>        Unit prototype = <span class="hljs-keyword">new</span> Unit();</span><span>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {</span><span>            prototype.stressTest();</span><span>        }</span><span>        <span class="hljs-keyword">return</span> prototype;</span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Unit</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stressTest</span><span class="hljs-params">()</span> </span>{</span><span>&#x200B;</span><span>    }</span><span>}</span><span>&#x200B;</span></code></pre>
                       <p>Here is the sequence diagram to model the interactions for the method call <code>producePrototype()</code> on a <code>Machine</code> object.</p>
                       <img src="/website/book/uml/sequenceDiagrams/introduction/images/Machine.png" width="450">
                       <p></p>

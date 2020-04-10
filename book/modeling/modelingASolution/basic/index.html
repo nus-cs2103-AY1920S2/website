@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Modeling: Modeling a Solution: Basic</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,10 +37,8 @@
             <div>
               <div>
                 <p>
-                  <panel src="/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Basic%%" popup-url="/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic"
-                    class="algolia-no-index"></panel>
-                  <panel src="/website/book/modeling/modelingStructures/classDiagramsBasic/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Design → Modeling → Modeling Structures → Class Diagrams → Basic%%" popup-url="/website/book/modeling/modelingStructures/classDiagramsBasic"
-                    class="algolia-no-index"></panel>
+                  <panel src="/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/modeling/modelingBehaviors/sequenceDiagramsBasic" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Basic</span></p></template></panel>
+                  <panel src="/website/book/modeling/modelingStructures/classDiagramsBasic/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/modeling/modelingStructures/classDiagramsBasic" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Modeling → Modeling Structures → Class Diagrams → Basic</span></p></template></panel>
                 </p>
               </div>
               <p></p>
@@ -56,9 +52,9 @@
                 </div>
                 <div id="main">
                   <div>
-                    <p>As mentioned in [
-                      <trigger trigger="click" for="modal:basicModelling-modelingIntro">Design → Modeling → Modeling a Solutions → Introduction</trigger>], this is the Minesweeper design you have come up with so far. Our objective is to analyze, evaluate, and refine that design.</p>
-                    <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:basicModelling-modelingIntro" class="algolia-no-index">
+                    <p>As mentioned in [<span trigger="click" for="modal:basicModelling-modelingIntro" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:basicModelling-modelingIntro'].show()"
+                        class="trigger-click">Design → Modeling → Modeling a Solutions → Introduction</span>], this is the Minesweeper design you have come up with so far. Our objective is to analyze, evaluate, and refine that design.</p>
+                    <b-modal id="modal:basicModelling-modelingIntro" hide-footer size="lg" modal-class="mb-zoom" ref="modal:basicModelling-modelingIntro"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                       <div>
                         <div></div>
                         <p></p>
@@ -88,7 +84,7 @@
                           </div>
                         </div>
                       </div>
-                    </modal>
+                    </b-modal>
                     <img src="/website/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                     <p></p>
                     <p>Let us start by modelling a sample interaction between the person playing the game and the <code>TextUi</code> object.</p>
@@ -120,8 +116,8 @@
                     </box>
                     <p></p>
                     <box>
-                      <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that
-                        <tooltip content="using sequence diagramsn">a similar technique</tooltip> can be used when discovering/defining the architecture-level APIs.</p>
+                      <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">using sequence diagramsn</span>a
+                        similar technique</span> can be used when discovering/defining the architecture-level APIs.</p>
                       <div v-closeable alt="Tic-Tac-Toe Video" class="non-printable">
                         <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Defining the architecture-level APIs for a small Tic-Tac-Toe game:</p>
                         <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Un80XoRT1ME" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>

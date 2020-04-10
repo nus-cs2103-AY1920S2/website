@@ -5,13 +5,14 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Admin: iP (Individual Project): Overview</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../markbind/css/octicons.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -29,7 +30,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +49,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -234,58 +235,7 @@
                         </div>
                         <p><strong>The project aims to build a product named <em>Duke</em>, a Personal Assistant Chatbot that helps a person to keep track of various things.</strong> <span class="dimmed">The name <em>Duke</em> was chosen as a placeholder name, in honor of <a href="https://www.oracle.com/java/duke.html">Duke, the Java Mascot</a>.</span>                          <strong>You may give it any other name and personality you wish.</strong></p>
                         <p>Here is a sample interaction with Duke:</p>
-                        <pre><code class="hljs">    ____________________________________________________________
-      ____        _        
-     |  _ \ _   _| | _____ 
-     | | | | | | | |/ / _ \
-     | |_| | |_| |   &lt;  __/
-     |____/ \__,_|_|\_\___|
-
-     Hello! I'm Duke
-     What can I do for you?
-    ____________________________________________________________
-
-list
-    ____________________________________________________________
-     Here are the tasks in your list:
-     1.[T][✓] read book
-     2.[D][✗] return book (by: June 6th)
-     3.[E][✗] project meeting (at: Aug 6th 2-4pm)
-     4.[T][✓] join sports club
-    ____________________________________________________________
-
-todo borrow book
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [T][✗] borrow book
-     Now you have 5 tasks in the list.
-    ____________________________________________________________
-
-
-deadline return book /by Sunday
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [D][✗] return book (by: Sunday)
-     Now you have 6 tasks in the list.
-    ____________________________________________________________
-
-done 2
-    ____________________________________________________________
-     Nice! I've marked this task as done: 
-       [D][✓] return book (by: June 6th)
-    ____________________________________________________________
-
-blah
-    ____________________________________________________________
-     ☹ OOPS!!! I'm sorry, but I don't know what that means :-(
-    ____________________________________________________________
-
-bye
-    ____________________________________________________________
-     Bye. Hope to see you again soon!
-    ____________________________________________________________
-
-</code></pre>
+                        <pre><code class="hljs"><span>    ____________________________________________________________</span><span>      ____        _        </span><span>     |  _ \ _   _| | _____ </span><span>     | | | | | | | |/ / _ \</span><span>     | |_| | |_| |   &lt;  __/</span><span>     |____/ \__,_|_|\_\___|</span><span>&#x200B;</span><span>     Hello! I'm Duke</span><span>     What can I do for you?</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>list</span><span>    ____________________________________________________________</span><span>     Here are the tasks in your list:</span><span>     1.[T][✓] read book</span><span>     2.[D][✗] return book (by: June 6th)</span><span>     3.[E][✗] project meeting (at: Aug 6th 2-4pm)</span><span>     4.[T][✓] join sports club</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>todo borrow book</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [T][✗] borrow book</span><span>     Now you have 5 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>&#x200B;</span><span>deadline return book /by Sunday</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [D][✗] return book (by: Sunday)</span><span>     Now you have 6 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>done 2</span><span>    ____________________________________________________________</span><span>     Nice! I've marked this task as done: </span><span>       [D][✓] return book (by: June 6th)</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>blah</span><span>    ____________________________________________________________</span><span>     ☹ OOPS!!! I'm sorry, but I don't know what that means :-(</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>bye</span><span>    ____________________________________________________________</span><span>     Bye. Hope to see you again soon!</span><span>    ____________________________________________________________</span><span>&#x200B;</span></code></pre>
                         <div id="increments_summary">
                           <p>The project consists of the following <em>increments</em>:</p>
                           <ul>
@@ -340,7 +290,7 @@ bye
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

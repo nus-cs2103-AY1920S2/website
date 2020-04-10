@@ -5,18 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 6 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -29,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -127,7 +127,7 @@
             <div>
               <div>
                 <box type="important">
-                  <p><strong>Aim to finish the iP by this week!</strong><br> Although the official iP submission deadline is Week 7 Monday, aim to finish the iP <strong>by this week's <tooltip content="i.e., 2359 before the tutorial">weekly deadline</tooltip></strong>                    so that you can devote more time to the tP after this week. <span class="dimmed">The extra time for the iP (i.e., from week 6 to 7) is meant as a buffer for those lagging behind in the iP.</span></p>
+                  <p><strong>Aim to finish the iP by this week!</strong><br> Although the official iP submission deadline is Week 7 Monday, aim to finish the iP <strong>by this week's <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., 2359 before the tutorial</span>weekly deadline</span></strong>                    so that you can devote more time to the tP after this week. <span class="dimmed">The extra time for the iP (i.e., from week 6 to 7) is meant as a buffer for those lagging behind in the iP.</span></p>
                 </box>
               </div>
               <h4 id="1-finalize-the-features"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span>Finalize the features</span><a class="fa fa-anchor" href="#1-finalize-the-features"></a></h4>
@@ -139,7 +139,7 @@
                     <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Remember to give credit to any code you reused or solutions you adopted from others. Reuse without giving credit is plagiarism and <strong>will be reported to the university for disciplinary action</strong>.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/appendixB-policies._include_.html#policy-reuse" header="Admin <md>:glyphicon-log-in:</md> **Module Policies → Policy on Reuse**  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="policy-reuse"></panel>
+                  <panel type src="/website/admin/appendixB-policies._include_.html#policy-reuse" class="embedding algolia-no-index" minimized fragment="policy-reuse"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module Policies → Policy on Reuse</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -155,8 +155,7 @@
                   </li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables-website._include_.html#tips-for-product-screenshot" header="Admin <md>:glyphicon-log-in:</md> Team Project (tP) → Tips for Product Screenshots  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                    class="embedding algolia-no-index" minimized fragment="tips-for-product-screenshot"></panel>
+                  <panel type src="/website/admin/tp-deliverables-website._include_.html#tips-for-product-screenshot" class="embedding algolia-no-index" minimized fragment="tips-for-product-screenshot"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Team Project (tP) → Tips for Product Screenshots  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <ul>
@@ -180,9 +179,8 @@
                             <p>Add a User Guide to the project. Here is one simple way to do it.</p>
                             <ul>
                               <li>Update the given <code>docs\README.md</code>. See <a href="https://guides.github.com/features/mastering-markdown/">this guide</a> to GitHub flavored Markdown (GFMD).</li>
-                              <li>Go to the <span class="border border-secondary border-bottom-0 pr-1 pl-1 mr-1 ml-1 rounded-top"><small><span aria-hidden="true" class="fas fa-cog"></span> settings</small>
-                                </span> page of your Duke fork and enable GitHub pages to publish from the <code>docs</code> folder (you can select a theme too).</li>
-                              <li>Go to <code>http://{your username}.github.io/duke/</code> to view the user guide of your product. <span class="dimmed">Note: it could take 5-10 minutes for GitHub to update the page.</span></li>
+                              <li>Go to the settings page of your Duke fork and enable GitHub pages to publish from the <code>docs</code> folder (you can select a theme too).</li>
+                              <li>Go to <code>http://{your username}.github.io/duke/</code> to view the user guide of your product.</li>
                             </ul>
                           </div>
                         </panel>
@@ -243,11 +241,10 @@
                   <p><span><span aria-hidden="true" class="fas fa-user"></span></span> indicates an individual milestone <span class="dimmed">(i.e., each team member has to do their part of the milestone, graded individually)</span> while <span><span aria-hidden="true" class="fas fa-users"></span></span>
                     indicates a team milestone <span class="dimmed">(some or all members may do the work; graded for the whole team)</span>.</p>
                   <p>
-                    <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Milestone progress is graded</strong>. Be reminded that reaching individual and team milestones are considered for
-                    <trigger trigger="click" for="modal:w06Intro-projectMgtGrading">grading the <em>project management</em> component</trigger> of your project grade.</p>
+                    <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Milestone progress is graded</strong>. Be reminded that reaching individual and team milestones are considered for <span trigger="click"
+                      for="modal:w06Intro-projectMgtGrading" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:w06Intro-projectMgtGrading'].show()" class="trigger-click">grading the <em>project management</em> component</span>                    of your project grade.</p>
                   <div class="indented-level1">
-                    <panel type src="/website/admin/tp-grading._include_.html#project-management-grading" header="Admin <md>:glyphicon-log-in:</md> tP → Grading → Project Management  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                      minimized fragment="project-management-grading"></panel>
+                    <panel type src="/website/admin/tp-grading._include_.html#project-management-grading" class="embedding algolia-no-index" minimized fragment="project-management-grading"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Grading → Project Management  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                   </div>
                   <p></p>
                   <p>
@@ -267,11 +264,11 @@
                   <li>Set up the team org and the team repo as explained below:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/appendixE-gitHub._include_.html#organization-setup" header="Admin <md>:glyphicon-log-in:</md> Appendix E(extract): **Organization setup**  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="organization-setup"></panel>
+                  <panel type src="/website/admin/appendixE-gitHub._include_.html#organization-setup" class="embedding algolia-no-index" minimized fragment="organization-setup"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Organization setup</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/appendixE-gitHub._include_.html#repo-setup" header="Admin <md>:glyphicon-log-in:</md> Appendix E(extract): **Repo setup**  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="repo-setup"></panel>
+                  <panel type src="/website/admin/appendixE-gitHub._include_.html#repo-setup" class="embedding algolia-no-index" minimized fragment="repo-setup"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Repo setup</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -301,7 +298,7 @@
                   <li>For reference, given below is the workflow you should follow use to merge code in your tP:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/appendixE-gitHub._include_.html#workflow" header="Admin <md>:glyphicon-log-in:</md> Appendix E(extract): **Workflow**  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="workflow"></panel>
+                  <panel type src="/website/admin/appendixE-gitHub._include_.html#workflow" class="embedding algolia-no-index" minimized fragment="workflow"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Workflow</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -335,8 +332,7 @@
                     <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Recommended: <strong>Divide documentation work (in the User Guide and the Developer Guide) among team members equally; preferably based on enhancements/features each person would be adding</strong>                      <span class="dimmed">e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>.</p>
                     <p><span class="dimmed">Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.</span></p>
                     <p>
-                      <panel type src="/website/admin/tp-grading._include_.html#criteria-documentation" header="Admin <md>:glyphicon-log-in:</md> **tP: Grading → ==Documentation==**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                        minimized fragment="criteria-documentation"></panel>
+                      <panel type src="/website/admin/tp-grading._include_.html#criteria-documentation" class="embedding algolia-no-index" minimized fragment="criteria-documentation"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Grading → <mark>Documentation</mark></strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                     </p>
                     <p></p>
                   </box>
@@ -349,8 +345,7 @@
                   <li>Review the UG to ensure the features written by each member fit together to form a cohesive product. Note that cohesiveness of the product can affect the grading of the <em>product design</em> aspect.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-grading._include_.html#criteria-productDesign" header="Admin <md>:glyphicon-log-in:</md> **tP: Grading → ==Product Design==**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="criteria-productDesign"></panel>
+                  <panel type src="/website/admin/tp-grading._include_.html#criteria-productDesign" class="embedding algolia-no-index" minimized fragment="criteria-productDesign"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Grading → <mark>Product Design</mark></strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -387,7 +382,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

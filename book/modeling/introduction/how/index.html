@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Modeling: Introduction: How</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -54,40 +52,41 @@
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of using models for analysis:</p>
                       <ol>
-                        <li>Models of the
-                          <tooltip content="i.e. the environment in which the software is expected to solve a problem">problem domain</tooltip> can be built to aid the understanding of the problem to be solved.</li>
-                        <li>When planning a software solution, models can be created to figure out how the solution is to be built. An
-                          <trigger trigger="click" for="modal:modelingIntro-archiDiagrams">architecture diagram</trigger> is such a model.</li>
+                        <li>Models of the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e. the environment in which the software is expected to solve a problem</span>problem
+                          domain
+                          </span> can be built to aid the understanding of the problem to be solved.</li>
+                        <li>When planning a software solution, models can be created to figure out how the solution is to be built. An <span trigger="click" for="modal:modelingIntro-archiDiagrams" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                            v-on:click="$refs['modal:modelingIntro-archiDiagrams'].show()" class="trigger-click">architecture diagram</span> is such a model.</li>
                       </ol>
                     </box>
-                    <modal large title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams" class="algolia-no-index">
+                    <b-modal id="modal:modelingIntro-archiDiagrams" hide-footer size="lg" modal-class="mb-zoom" ref="modal:modelingIntro-archiDiagrams"><template slot="modal-title">Architecture Diagrams</template>
                       <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
                       <div>
                         <box>
                           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some example architecture diagrams:</p>
                           <tabs>
-                            <tab header="TEAMMATES">
+                            <tab><template slot="_header">TEAMMATES</template>
                               <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
                             </tab>
-                            <tab header="se-edu/addressbook-level3" class="algolia-no-index">
+                            <tab class="algolia-no-index"><template slot="_header">se-edu/addressbook-level3</template>
                               <p><img src="https://se-education.org/addressbook-level3/images/ArchitectureDiagram.png" width="300"><br></p>
                             </tab>
-                            <tab header="Example 1" class="algolia-no-index">
+                            <tab class="algolia-no-index"><template slot="_header">Example 1</template>
                               <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
                                 <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
                             </tab>
-                            <tab header="Example 2" class="algolia-no-index">
+                            <tab class="algolia-no-index"><template slot="_header">Example 2</template>
                               <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
                                 <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
                             </tab>
-                            <tab header="Example 3" class="algolia-no-index">
+                            <tab class="algolia-no-index"><template slot="_header">Example 3</template>
                               <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
                                 <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
                             </tab>
                           </tabs>
                         </box>
                       </div>
-                    </modal>
+                    </b-modal>
                     <p>b) <strong>To communicate information among stakeholders.</strong> Models can be used as a visual aid in discussions and documentations.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of using models to communicate:</p>
@@ -126,9 +125,9 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about models" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about models</p></template>
                             <question>
                               <p>Choose the correct statements about models.</p>
                               <ul class="task-list">
@@ -146,7 +145,7 @@
                           </panel>
                         </div>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md> Explain usage of models in a class project" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain usage of models in a class project</p></template>
                             <question>
                               <p>Explain how models (e.g. UML diagrams) can be used in a class project.</p>
                               <div slot="hint" class="algolia-no-index">

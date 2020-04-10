@@ -5,18 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 7 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -29,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -187,26 +187,25 @@
                     <li>Update the team repo by following the recommended workflow.</li>
                   </ol>
                   <p>
-                    <panel type src="/website/admin/appendixE-gitHub._include_.html#workflow-before-v11" header="Admin <md>:glyphicon-log-in:</md> Appendix E(extract): **Workflow**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                      minimized fragment="workflow-before-v11"></panel>
+                    <panel type src="/website/admin/appendixE-gitHub._include_.html#workflow-before-v11" class="embedding algolia-no-index" minimized fragment="workflow-before-v11"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Workflow</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                   </p>
                 </box>
                 <p>Update the following pages in your project repo:</p>
                 <ul>
                   <li><strong><em>About Us</em> page</strong>: This page is used for module admin purposes. <mark>Please follow the format closely</mark> or else our scripts will not be able to give credit for your work.
                     <ul>
-                      <li>Replace info of SE-EDU developers with info of your team. Include a <mark>suitable photo</mark> as described
-                        <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.</li>
+                      <li>Replace info of SE-EDU developers with info of your team. Include a <mark>suitable photo</mark> as described <span trigger="click" for="modal:mid-v12-photo" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                          v-on:click="$refs['modal:mid-v12-photo'].show()" class="trigger-click">here</span>.</li>
                       <li>Including the name/photo of the supervisor/lecturer is optional.</li>
                       <li>The filename of the profile photo (even a placeholder image) should be <code>doc/images/githbub_username_in_lower_case.png</code> <span class="dimmed">e.g. <code>docs/images/damithc.png</code></span>. <mark>If your photo is in jpg format, name the file as <code>.png</code> anyway</mark>.</li>
-                      <li>Indicate the different roles played and responsibilities held by each team member. You can reassign these
-                        <trigger trigger="click" for="modal:midv11-rolesAndResponsibilities">roles and responsibilities <span class="dimmed">(as explained in Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project Scope)</span>
-                        </trigger> later in the project, if necessary.</li>
+                      <li>Indicate the different roles played and responsibilities held by each team member. You can reassign these <span trigger="click" for="modal:midv11-rolesAndResponsibilities" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                          v-on:click="$refs['modal:midv11-rolesAndResponsibilities'].show()" class="trigger-click">roles and responsibilities <span class="dimmed">(as explained in Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span>
+                        Project Scope)</span>
+                        </span> later in the project, if necessary.</li>
                     </ul>
                   </li>
                 </ul>
-                <modal large title="Admin <md>:glyphicon-log-in:</md> Choosing a profile photo" id="modal:mid-v12-photo" class="algolia-no-index">
-
+                <b-modal id="modal:mid-v12-photo" hide-footer size="lg" modal-class="mb-zoom" ref="modal:mid-v12-photo"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Choosing a profile photo</template>
                   <div>
                     <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen
                       in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
@@ -214,12 +213,11 @@
                     <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you may use
                       <a href="https://en.wikipedia.org/wiki/File:Portrait_placeholder.png">a placeholder image</a> in place of the photo in module-related documents that are publicly visible.</p>
                   </div>
-                </modal>
-                <modal large title="Admin <md>:glyphicon-log-in:</md> Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities" class="algolia-no-index">
-
+                </b-modal>
+                <b-modal id="modal:midv11-rolesAndResponsibilities" hide-footer size="lg" modal-class="mb-zoom" ref="modal:midv11-rolesAndResponsibilities"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project Scope (extract): roles and responsibilities</template>
                   <div>
                     <p><em>Roles</em> indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
-                    <panel type="seamless" header="<md>:fas-cube:</md> Recommended roles and responsibilities" class="algolia-no-index">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Recommended roles and responsibilities</p></template>
                       <p>This is a non-exhaustive list; you may define additional roles.</p>
                       <ul>
                         <li><em>Team lead</em>: Responsible for overall project coordination.</li>
@@ -241,7 +239,7 @@
                       <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>.
                       <span class="dimmed">Reason: when <em>everyone is responsible for everything</em>, no one is.</span></p>
                   </div>
-                </modal>
+                </b-modal>
                 <ul>
                   <li>
                     <p><strong><em>Contact Us</em> Page</strong>: Update to match your product.</p>
@@ -289,24 +287,23 @@
               <h4 id="2-update-the-ug"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Update the UG</span><a class="fa fa-anchor" href="#2-update-the-ug"></a></h4>
               <div>
                 <ul>
-                  <li>Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming in v2.0' (<a href="https://nus-cs2103-ay1920s2.github.io/addressbook-level3/UserGuide.html#encrypting-data-files-code-coming-in-v2-0-code">example</a>).<br>                    As
-                    <trigger trigger="click" for="modal:v11-divideDocs">mentioned in week 6</trigger>, we recommend that <strong>each person updates their own part of the docs</strong> so that we can easily track the contribution of each member using <a href="https://nus-cs2103-ay1920s2.github.io/tp-dashboard">RepoSense</a>.<br>
+                  <li>Move the draft UG into the User Guide page in your repository. If a feature is not implemented, mark it as 'Coming in v2.0' (<a href="https://nus-cs2103-ay1920s2.github.io/addressbook-level3/UserGuide.html#encrypting-data-files-code-coming-in-v2-0-code">example</a>).<br>                    As <span trigger="click" for="modal:v11-divideDocs" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v11-divideDocs'].show()" class="trigger-click">mentioned in week 6</span>,
+                    we recommend that <strong>each person updates their own part of the docs</strong> so that we can easily track the contribution of each member using <a href="https://nus-cs2103-ay1920s2.github.io/tp-dashboard">RepoSense</a>.<br>
                     <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> While it is more convenient for one person to update the entire UG, splitting the work will give you a good opportunity to
                     learn to deal with merge conflicts.</li>
                 </ul>
-                <modal large title="About Dividing Documentation Work" id="modal:v11-divideDocs" class="algolia-no-index">
+                <b-modal id="modal:v11-divideDocs" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v11-divideDocs"><template slot="modal-title">About Dividing Documentation Work</template>
                   <div>
                     <box>
                       <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Recommended: <strong>Divide documentation work (in the User Guide and the Developer Guide) among team members equally; preferably based on enhancements/features each person would be adding</strong>                        <span class="dimmed">e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>.</p>
                       <p><span class="dimmed">Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.</span></p>
                       <p>
-                        <panel type src="/website/admin/tp-grading._include_.html#criteria-documentation" header="Admin <md>:glyphicon-log-in:</md> **tP: Grading → ==Documentation==**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                          minimized fragment="criteria-documentation"></panel>
+                        <panel type src="/website/admin/tp-grading._include_.html#criteria-documentation" class="embedding algolia-no-index" minimized fragment="criteria-documentation"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Grading → <mark>Documentation</mark></strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                       </p>
                       <p></p>
                     </box>
                   </div>
-                </modal>
+                </b-modal>
               </div>
               <p></p>
               <h4 id="3-update-the-dg-user-stories-glossary-nfrs-use-cases"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Update the DG: user stories, glossary, NFRs, use cases</span><a class="fa fa-anchor" href="#3-update-the-dg-user-stories-glossary-nfrs-use-cases"></a></h4>
@@ -316,22 +313,21 @@
                     <p>Update the following in the DG, based on your project notes from the previous weeks.<br>
                       <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Some examples of these can be found in the <a href="https://nus-cs2103-ay1920s2.github.io/addressbook-level3/DeveloperGuide.html#product-scope">AB3 Developer Guide</a>.</p>
                     <ul>
-                      <li><strong>Target user profile</strong>, <strong>value proposition</strong>, and
-                        <trigger trigger="click" for="modal:v10-userstories"><strong>user stories</strong></trigger>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including
-                        priorities. This can include user stories considered but will not be included in the final product.</li>
-                      <li>
-                        <trigger trigger="click" for="modal:v10-usecases"><strong>Use cases</strong></trigger>: Give use cases (textual form) for a few representative user stories that need multiple steps to complete. <span class="dimmed">e.g. Adding a tag to a person (assume the user needs to find the person first)</span></li>
-                      <li>
-                        <trigger trigger="click" for="modal:v10-nfr"><strong>Non-functional requirements</strong></trigger>: Note: Many of the given project constraints can be considered NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.</li>
-                      <li>
-                        <trigger trigger="click" for="modal:v10-glossary"><strong>Glossary</strong></trigger>: Define terms that are worth recording.</li>
-                      <li>[Optional]
-                        <trigger trigger="click" for="modal:v10-prodsurveys"><strong>Product survey</strong></trigger>: Explore a few similar/related products and describe your findings i.e. Pros, cons, (from the target user's point of view).</li>
+                      <li><strong>Target user profile</strong>, <strong>value proposition</strong>, and <span trigger="click" for="modal:v10-userstories" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-userstories'].show()"
+                          class="trigger-click"><strong>user stories</strong></span>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones,
+                        if applicable), including priorities. This can include user stories considered but will not be included in the final product.</li>
+                      <li><span trigger="click" for="modal:v10-usecases" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-usecases'].show()" class="trigger-click"><strong>Use cases</strong></span>:
+                        Give use cases (textual form) for a few representative user stories that need multiple steps to complete. <span class="dimmed">e.g. Adding a tag to a person (assume the user needs to find the person first)</span></li>
+                      <li><span trigger="click" for="modal:v10-nfr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-nfr'].show()" class="trigger-click"><strong>Non-functional requirements</strong></span>:
+                        Note: Many of the given project constraints can be considered NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.</li>
+                      <li><span trigger="click" for="modal:v10-glossary" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-glossary'].show()" class="trigger-click"><strong>Glossary</strong></span>:
+                        Define terms that are worth recording.</li>
+                      <li>[Optional] <span trigger="click" for="modal:v10-prodsurveys" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-prodsurveys'].show()" class="trigger-click"><strong>Product survey</strong></span>:
+                        Explore a few similar/related products and describe your findings i.e. Pros, cons, (from the target user's point of view).</li>
                     </ul>
                   </li>
                 </ul>
-                <modal large title="Textbook <md>:glyphicon-log-in:</md> Specifying Requirements → Use Cases" id="modal:v10-usecases" class="algolia-no-index">
-
+                <b-modal id="modal:v10-usecases" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-usecases"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → Use Cases</template>
                   <div>
                     <div></div>
                     <p></p>
@@ -347,22 +343,23 @@
                         <div>
                           <box type="definition">
                             <div>
-                              <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an
-                                <trigger for="pop:actor">actor</trigger>.[ 📖 :
-                                <popover effect="fade" placement="top">uml-user-guide<span slot="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
-                                </popover>]</p>
-                              <popover id="pop:actor" title="<md>:glyphicon-eye-open:</md>" placement="top">
-                                <div slot="content" class="algolia-no-index">
-                                  <div>
-                                    <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
-                                  </div>
+                              <p><strong>Use Case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an <span for="pop:actor" v-b-popover.hover.top.html="popoverGenerator"
+                                  v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:actor'].show()" class="trigger">actor</span>.[ 📖 : <span effect="fade" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator"
+                                  class="trigger">uml-user-guide<span data-mb-html-for="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span>
+                                </span>]</p>
+                              <span id="pop:actor" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span>
+                              </span>
+                              <div data-mb-html-for="content">
+                                <div>
+                                  <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
                                 </div>
-                              </popover>
+                              </div>
+                              </span>
                             </div>
                           </box>
                           <p><strong>A use case describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</strong></p>
                           <box>
-                            <panel header="<md>:fas-cube:</md> Example 1: 'transfer money' use case for an online banking system" type="seamless" expanded>
+                            <panel type="seamless" expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example 1: 'transfer money' use case for an online banking system</p></template>
                               <pre>
 System: Online Banking System (OBS)
 Use case: UC23 - Transfer Money
@@ -395,7 +392,7 @@ Extensions:
       Use case ends.
 </pre>
                             </panel>
-                            <panel header="%%<md>:fas-cube:</md> Example 2: 'upload file' use case of an LMS%%" type="seamless" class="algolia-no-index">
+                            <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example 2: 'upload file' use case of an LMS</span></p></template>
                               <div class="text-monospace">
                                 <ul>
                                   <li>System: A Learning Management System (LMS)</li>
@@ -414,16 +411,16 @@ Extensions:
                           </box>
                           <box background-color="white" border-color="white">
                             <img class="float-right ml-5" src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
-                            <p><strong><trigger for="modal:uml" trigger="click">UML</trigger> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use
-                              cases of a system.</p>
+                            <p><strong><span for="modal:uml" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:uml'].show()" class="trigger-click">UML</span> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>,
+                              providing a visual ‘table of contents’ of the use cases of a system.</p>
                             <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-                            <modal title="**Unified Modeling Language (UML)**" id="modal:uml" class="algolia-no-index">
+                            <b-modal id="modal:uml" hide-footer size modal-class="mb-zoom" ref="modal:uml"><template slot="modal-title"><strong>Unified Modeling Language (UML)</strong></template>
                               <div>
                                 <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists
                                   James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence,
                                   the term ‘Unified’ in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
                               </div>
-                            </modal>
+                            </b-modal>
                           </box>
                           <p><strong>Use cases capture the <em>functional requirements</em> of a system.</strong></p>
                         </div>
@@ -431,9 +428,8 @@ Extensions:
                       </div>
                     </div>
                   </div>
-                </modal>
-                <modal large title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-nfr" class="algolia-no-index">
-
+                </b-modal>
+                <b-modal id="modal:v10-nfr" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-nfr"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -455,14 +451,13 @@ Extensions:
                           <box>
                             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of non-functional requirement categories:</p>
                             <ul>
-                              <li>Data requirements e.g. size,
-                                <tooltip content="how often do data change">volatility</tooltip>,
-                                <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
+                              <li>Data requirements e.g. size, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">how often do data change</span>volatility</span>,
+                                <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">saving data permanenetly</span>persistency</span> etc.,</li>
                               <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
                               <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time,
                                 Robustness, Scalability, Security, Stability, Testability, and more ...</li>
                             </ul>
-                            <panel type="seamless" header="<md>:fas-cube:</md> Some concrete examples of NFRs" expanded>
+                            <panel type="seamless" expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some concrete examples of NFRs</p></template>
                               <ul>
                                 <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
                                 <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not
@@ -485,9 +480,9 @@ Extensions:
                         </div>
                         <div>
                           <div>
-                            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                               <div>
-                                <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: TEAMMATES NFRs" class="algolia-no-index">
+                                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> TEAMMATES NFRs</p></template>
                                   <question>
                                     <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
                                     <ul class="task-list">
@@ -513,9 +508,8 @@ Extensions:
                       </div>
                     </div>
                   </div>
-                </modal>
-                <modal title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-glossary" class="algolia-no-index">
-
+                </b-modal>
+                <b-modal id="modal:v10-glossary" hide-footer size modal-class="mb-zoom" ref="modal:v10-glossary"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -546,9 +540,8 @@ Extensions:
                       </div>
                     </div>
                   </div>
-                </modal>
-                <modal title="Textbook <md>:glyphicon-log-in:</md>" id="modal:v10-prodsurveys" class="algolia-no-index">
-
+                </b-modal>
+                <b-modal id="modal:v10-prodsurveys" hide-footer size modal-class="mb-zoom" ref="modal:v10-prodsurveys"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                   <div>
                     <div></div>
                     <p></p>
@@ -573,7 +566,7 @@ Extensions:
                       </div>
                     </div>
                   </div>
-                </modal>
+                </b-modal>
               </div>
               <p></p>
               <h4 id="4-wrap-up-v1-1"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Wrap up v1.1</span><a class="fa fa-anchor" href="#4-wrap-up-v1-1"></a></h4>
@@ -591,11 +584,7 @@ Extensions:
                   </li>
                   <li>
                     <p><span><span aria-hidden="true" class="fas fa-user"></span></span> <strong>Divide each of those features into two increments</strong>, to be released at v1.2, v1.3 (v1.4 omitted deliberately as a buffer). <mark>Each increment should deliver a end-user visible enhancement.</mark></p>
-                    <pre><code class="hljs">* Jake Woo: Profile photo feature
-  * v1.2: show a place holder for photo, showing a generic default image
-  * v1.3: can specify photo location if it is in local hard disk,
-          show photo from local hard disk
-</code></pre>
+                    <pre><code class="hljs"><span>* Jake Woo: Profile photo feature</span><span>  * v1.2: show a place holder for photo, showing a generic default image</span><span>  * v1.3: can specify photo location if it is in local hard disk,</span><span>          show photo from local hard disk</span></code></pre>
                   </li>
                   <li>
                     <p><span><span aria-hidden="true" class="fas fa-user"></span></span> <strong>Reflect the above plan in the issue tracker</strong> by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding
@@ -635,6 +624,10 @@ Extensions:
         &#x200E;</a>
                 <a class="nav-link py-1" href="#2-update-the-ug">2  Update the UG&#x200E;</a>
                 <a class="nav-link py-1" href="#3-update-the-dg-user-stories-glossary-nfrs-use-cases">3  Update the DG: user stories, glossary, NFRs, use cases&#x200E;</a>
+                <a class="nav-link py-1" href="#introduction">Introduction&#x200E;</a>
+                <a class="nav-link py-1" href="#non-functional-requirements">Non-Functional Requirements&#x200E;</a>
+                <a class="nav-link py-1" href="#what">What&#x200E;</a>
+                <a class="nav-link py-1" href="#product-surveys">Product Surveys&#x200E;</a>
                 <a class="nav-link py-1" href="#4-wrap-up-v1-1">4  Wrap up v1.1&#x200E;</a>
                 <a class="nav-link py-1" href="#5-draft-a-rough-project-plan">5  Draft a rough project plan&#x200E;</a>
                 <a class="nav-link py-1" href="#6-start-implementing-a-minimal-version-of-your-enhancement">6  start implementing a minimal version of your enhancement&#x200E;</a>
@@ -647,7 +640,7 @@ Extensions:
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

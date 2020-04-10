@@ -5,13 +5,14 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Admin: CS2103/T Software Engineering</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../markbind/css/octicons.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -29,7 +30,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +49,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -204,7 +205,10 @@
           <div id="main">
             <p><big><p class="lead text-secondary">A balanced, iterative, and brown-field introduction to Software Engineering...</p></big></p>
             <img src="/website/images/growingPlant.png" width="700">
-            <p class="lead"><span>CS2103/T is an introductory Software Engineering module. It has <strong>a 50-50 balance of basic SE theory knowledge and practical skills</strong> that you need to gain before industry internships or <tooltip content="e.g., CS3203, CS3216/7, CS3281&2, etc.">higher-level project modules</tooltip>. The module follows an <tooltip content="going through SE topics several times while increasing depth, as opposed to going through topics sequentially"><strong>iterative approach</strong></tooltip> to covering topics. It is also one of the rare SE modules that includes a <tooltip content="i.e., working in an existing project"><strong>brown-field</strong> project</tooltip>, in addition to a <tooltip content="i.e., a project that is started from scratch"><strong>green-field</strong> project</tooltip>.</span></p>
+            <p class="lead"><span>CS2103/T is an introductory Software Engineering module. It has <strong>a 50-50 balance of basic SE theory knowledge and practical skills</strong> that you need to gain before industry internships or <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., CS3203, CS3216/7, CS3281&amp;2, etc.</span>higher-level
+              project modules</span>. The module follows an <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">going through SE topics several times while increasing depth, as opposed to going through topics sequentially</span><strong>iterative approach</strong></span>
+              to covering topics. It is also one of the rare SE modules that includes a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., working in an existing project</span><strong>brown-field</strong>              project</span>, in addition to a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., a project that is started from scratch</span><strong>green-field</strong>              project</span>.</span>
+            </p>
             <ul>
               <li>
                 <p><strong>On the theory side,</strong> this module is supported by a customized online textbook <a href="/website/se-book-adapted/index.html"><em>Software Engineering for Self-Directed Learners</em></a>, integrated into this module website.</p>
@@ -235,30 +239,29 @@
                   </tr>
                   <tr>
                     <td>OOP</td>
-                    <td>Used in a non-trivial project,
-                      <tooltip content="e.g., Single Responsibility Principle, Open-Closed Principle">intermediate OOP principles</tooltip>
+                    <td>Used in a non-trivial project, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., Single Responsibility Principle, Open-Closed Principle</span>intermediate
+                      OOP principles</span>
                     </td>
                     <td>basics <span class="dimmed">(reason: expected prerequisite knowledge)</span></td>
                   </tr>
                   <tr>
                     <td>SE tools/practices</td>
-                    <td>
-                      <tooltip content="e.g., revision control, continuous integration, practices, test automation, code reviews, pull requests">those typically used in a mature, high-rigor SE project</tooltip>
+                    <td><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., revision control, continuous integration, practices, test automation, code reviews, pull requests</span>those
+                      typically used in a mature, high-rigor SE project</span>
                     </td>
                     <td>those specific to start-ups</td>
                   </tr>
                   <tr>
                     <td>Modeling</td>
-                    <td>
-                      <tooltip content="e.g., class diagrams, sequence diagrams, activity diagrams">Some UML notations</tooltip> (sufficient to be able to describe SE artifacts using models, such as seen in <a href="https://se-edu.github.io/addressbook-level3/DeveloperGuide.html#design">this Developer Guide of AB3</a>)</td>
-                    <td>intensive
-                      <tooltip content="creating detailed UML models before strating to code">upfront design modeling</tooltip>
+                    <td><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., class diagrams, sequence diagrams, activity diagrams</span>Some UML notations</span>
+                      (sufficient to be able to describe SE artifacts using models, such as seen in <a href="https://se-edu.github.io/addressbook-level3/DeveloperGuide.html#design">this Developer Guide of AB3</a>)</td>
+                    <td>intensive <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">creating detailed UML models before strating to code</span>upfront design modeling</span>
                     </td>
                   </tr>
                   <tr>
                     <td>Requirements</td>
-                    <td>
-                      <tooltip content="e.g., user stories, use cases">Some lightweight techniques</tooltip> to gather and document project requirements</td>
+                    <td><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., user stories, use cases</span>Some lightweight techniques</span> to gather and document
+                      project requirements</td>
                     <td>rapid prototyping, heavy UI design, designing a product from scratch</td>
                   </tr>
                   <tr>
@@ -273,12 +276,12 @@
                   </tr>
                   <tr>
                     <td>Testing</td>
-                    <td>
-                      <tooltip content="e.g., automated unit/integration/system testing">basic developer testing</tooltip> and
-                      <tooltip content="e.g., acceptance testing">user testing</tooltip>
+                    <td><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., automated unit/integration/system testing</span>basic developer testing</span> and
+                      <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., acceptance testing</span>user testing</span>
                     </td>
-                    <td>
-                      <tooltip content="e.g., security testing, performance testing, usability testing">testing for non-functional aspects</tooltip>
+                    <td><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., security testing, performance testing, usability testing</span>testing for non-functional
+                      aspects
+                      </span>
                     </td>
                   </tr>
                   <tr>
@@ -290,7 +293,7 @@
               </table>
             </div><br>
             <p>
-              <panel src="/website/admin/appendixC-faq._include_.html#admin-faq-tVsNonT" header="Admin <md>:glyphicon-log-in:</md> **FAQ: What are the differences between CS2103 and CS2103T?**" class="embedding algolia-no-index" minimized fragment="admin-faq-tVsNonT"></panel>
+              <panel src="/website/admin/appendixC-faq._include_.html#admin-faq-tVsNonT" class="embedding algolia-no-index" minimized fragment="admin-faq-tVsNonT"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>FAQ: What are the differences between CS2103 and CS2103T?</strong></p></template></panel>
             </p>
           </div>
           <br>
@@ -314,7 +317,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

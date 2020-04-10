@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../markbind/css/octicons.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -31,53 +29,25 @@
           <li>
             <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br> The <code>//@@author</code> tag should indicates the beginning of the code you wrote. The code up to the next <code>//@@author</code> tag
               or the end of the file (whichever comes first) will be considered as was written by that author. Here is a sample code file:</p>
-            <pre><code class="hljs">//@@author johndoe
-method 1 ...
-method 2 ...
-//@@author sarahkhoo
-method 3 ...
-//@@author johndoe
-method 4 ...
-</code></pre>
+            <pre><code class="hljs"><span>//@@author johndoe</span><span>method 1 ...</span><span>method 2 ...</span><span>//@@author sarahkhoo</span><span>method 3 ...</span><span>//@@author johndoe</span><span>method 4 ...</span></code></pre>
           </li>
           <li>
             <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the
               GitHub username to the empty tag later. Here is a sample code with an empty <code>author</code> tag:</p>
-            <pre><code class="hljs">method 0 ...
-//@@author johndoe
-method 1 ...
-method 2 ...
-//@@author
-method 3 ...
-method 4 ...
-</code></pre>
+            <pre><code class="hljs"><span>method 0 ...</span><span>//@@author johndoe</span><span>method 1 ...</span><span>method 2 ...</span><span>//@@author</span><span>method 3 ...</span><span>method 4 ...</span></code></pre>
           </li>
           <li>
             <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br> Here is an example code from an xml/fxml file.</p>
-            <pre><code class="hljs">&lt;!-- @@author sereneWong --&gt;
-&lt;textbox&gt;
-  &lt;label&gt;...&lt;/label&gt;
-  &lt;input&gt;...&lt;/input&gt;
-&lt;/textbox&gt;
-...
-</code></pre>
+            <pre><code class="hljs"><span>&lt;!-- @@author sereneWong --&gt;</span><span>&lt;textbox&gt;</span><span>  &lt;label&gt;...&lt;/label&gt;</span><span>  &lt;input&gt;...&lt;/input&gt;</span><span>&lt;/textbox&gt;</span><span>...</span></code></pre>
           </li>
           <li>
             <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong>.<br> 👎
               <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
             </p>
-            <pre><code class="hljs">/**
-  * Returns true if ...
-  * @@author johndoe
-  */
-</code></pre>
+            <pre><code class="hljs"><span>/**</span><span>  * Returns true if ...</span><span>  * @@author johndoe</span><span>  */</span></code></pre>
             <p>👍<span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
             </p>
-            <pre><code class="hljs">//@@author johndoe
-/**
-  * Returns true if ...
-  */
-</code></pre>
+            <pre><code class="hljs"><span>//@@author johndoe</span><span>/**</span><span>  * Returns true if ...</span><span>  */</span></code></pre>
           </li>
         </ul>
         <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate<a class="fa fa-anchor" href="#what-to-and-what-not-to-annotate"></a></h4>
@@ -107,19 +77,13 @@ method 4 ...
               <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>) e.g.
               </li>
             </ul>
-            <pre><code class="hljs">//@@author johndoe-unused
-method 1 ...
-method 2 ...
-</code></pre>
+            <pre><code class="hljs"><span>//@@author johndoe-unused</span><span>method 1 ...</span><span>method 2 ...</span></code></pre>
             <p>Please put a comment in the code to explain why it was not used.</p>
           </li>
           <li>
             <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>) e.g.
             </p>
-            <pre><code class="hljs">//@@author johndoe-reused
-method 1 ...
-method 2 ...
-</code></pre>
+            <pre><code class="hljs"><span>//@@author johndoe-reused</span><span>method 1 ...</span><span>method 2 ...</span></code></pre>
           </li>
           <li>
             <p><strong>You can use empty <code>@@author</code> tags to mark code as not yours when RepoSense attribute the to you incorrectly.</strong></p>

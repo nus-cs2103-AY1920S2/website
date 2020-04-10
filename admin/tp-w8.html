@@ -5,13 +5,14 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Admin: tP: mid-v1.2 [week 8]</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../markbind/css/octicons.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -29,7 +30,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +49,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -237,18 +238,15 @@
                   <li>If you haven't done so already, make sure you know individual and team expectations of the tP</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-expectations._include_.html#functionalityExpectations" header="Admin <md>:glyphicon-log-in:</md> tP: Functionality Expectations  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="functionalityExpectations"></panel>
+                  <panel type src="/website/admin/tp-expectations._include_.html#functionalityExpectations" class="embedding algolia-no-index" minimized fragment="functionalityExpectations"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP: Functionality Expectations  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-expectations._include_.html#individualExpectations" header="Admin <md>:glyphicon-log-in:</md> tP: Individual Expectations  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="individualExpectations"></panel>
+                  <panel type src="/website/admin/tp-expectations._include_.html#individualExpectations" class="embedding algolia-no-index" minimized fragment="individualExpectations"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP: Individual Expectations  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-expectations._include_.html#teamExpectations" header="Admin <md>:glyphicon-log-in:</md> tP: Team Expectations  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="teamExpectations"></panel>
+                  <panel type src="/website/admin/tp-expectations._include_.html#teamExpectations" class="embedding algolia-no-index" minimized fragment="teamExpectations"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP: Team Expectations  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -259,8 +257,7 @@
                   <li><strong>Adjust process rigor to suit your team's pace</strong>, as explained in the panel below.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/appendixE-gitHub._include_.html#workflow-after-v11" header="Admin <md>:glyphicon-log-in:</md> Appendix E(extract): **Workflow (after v1.1)**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>"
-                    class="embedding algolia-no-index" minimized fragment="workflow-after-v11"></panel>
+                  <panel type src="/website/admin/appendixE-gitHub._include_.html#workflow-after-v11" class="embedding algolia-no-index" minimized fragment="workflow-after-v11"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Workflow (after v1.1)</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <box type="tip">
@@ -276,16 +273,14 @@
                   <li><strong>Set up the issue tracker</strong> as described in the panel below, if you haven't done so already.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/appendixE-gitHub._include_.html#issue-tracker-setup" header="Admin <md>:glyphicon-log-in:</md> Appendix E(extract): **Setting up the issue tracker**  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized
-                    fragment="issue-tracker-setup"></panel>
+                  <panel type src="/website/admin/appendixE-gitHub._include_.html#issue-tracker-setup" class="embedding algolia-no-index" minimized fragment="issue-tracker-setup"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Setting up the issue tracker</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <ul>
                   <li><strong>Start proper schedule tracking and milestone management</strong> as explained in the panel below.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/appendixE-gitHub._include_.html#tp-schedule-tracking" header="Admin <md>:glyphicon-log-in:</md> Appendix E(extract): **Project schedule tracking**  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized
-                    fragment="tp-schedule-tracking"></panel>
+                  <panel type src="/website/admin/appendixE-gitHub._include_.html#tp-schedule-tracking" class="embedding algolia-no-index" minimized fragment="tp-schedule-tracking"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix E(extract): <strong>Project schedule tracking</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented">
@@ -302,8 +297,8 @@
                   </li>
                   <li>
                     <p>
-                      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>From v1.2 onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="v1.3, v1.4"> milestone</tooltip>, preferably each week; only merged code is considered as contributions</strong>                      <span class="dimmed"><popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover></span>.
-                      <br> If an enhancement is too big to complete in one milestone, try to deliver it in smaller incremental steps e.g. deliver a basic version of the enhancement first.</p>
+                      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>From v1.2 onwards each member is expected to contribute <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">the amount of code does not matter; even small contributions are acceptable</span>some</span> code to each <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">v1.3, v1.4</span> milestone</span>, preferably each week; only merged code is considered as contributions</strong>                      <span class="dimmed"><span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the <em>visibility</em> of your work.</span>(Reason)</span>
+                      </span>. <br> If an enhancement is too big to complete in one milestone, try to deliver it in smaller incremental steps e.g. deliver a basic version of the enhancement first.</p>
                   </li>
                 </ul>
               </div>
@@ -341,7 +336,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

@@ -5,13 +5,14 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Textbook Chapter : Quality Assurance</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -210,11 +211,11 @@
               <h1 id="quality-assurance"><span>Quality Assurance</span><a class="fa fa-anchor" href="#quality-assurance"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="introduction">
             <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
         </div>
         </span>
-        <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+        <panel type="seamless" expanded id="what"><template slot="_header"><h4 id="what">What<a class="fa fa-anchor" href="#what"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -234,7 +235,7 @@
             <div></div>
           </div>
         </panel>
-        <panel type="seamless" header="#### Validation vs Verification<a class='fa fa-anchor' href='#validation-vs-verification'></a>" expanded>
+        <panel type="seamless" expanded id="validation-vs-verification"><template slot="_header"><h4 id="validation-vs-verification">Validation vs Verification<a class="fa fa-anchor" href="#validation-vs-verification"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -258,9 +259,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: statements about validation and verification." class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about validation and verification.</p></template>
                       <question>
                         <p>Choose the correct statements about validation and verification.</p>
                         <ul class="task-list">
@@ -288,11 +289,11 @@
           </div>
         </panel>
         </panel>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="code-reviews">
           <span slot="header" class="card-title"><div><h2 id="code-reviews"><span>Code Reviews</span><a class="fa fa-anchor" href="#code-reviews"></a></h2>
       </div>
       </span>
-      <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+      <panel type="seamless" expanded id="what-2"><template slot="_header"><h4 id="what-2">What<a class="fa fa-anchor" href="#what-2"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -316,13 +317,13 @@
                 </ul>
               </li>
               <li>
-                <p><strong>In <trigger trigger="click" for="modal:codeReview-pairProgramming">pair programming</trigger></strong></p>
+                <p><strong>In <span trigger="click" for="modal:codeReview-pairProgramming" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:codeReview-pairProgramming'].show()" class="trigger-click">pair programming</span></strong></p>
                 <ul>
                   <li>As pair programming involves two programmers working on the same code at the same time, there is an implicit review of the code by the other member of the pair.</li>
                 </ul>
               </li>
             </ul>
-            <modal large title="Pair Programming" id="modal:codeReview-pairProgramming" class="algolia-no-index">
+            <b-modal id="modal:codeReview-pairProgramming" hide-footer size="lg" modal-class="mb-zoom" ref="modal:codeReview-pairProgramming"><template slot="modal-title">Pair Programming</template>
               <box type="definition">
                 <div>
                   <p><strong>Pair Programming</strong>:</p>
@@ -336,7 +337,7 @@
                 <sub>[<a href="https://en.wikipedia.org/wiki/Pair_programming">image credit: Wikipedia</a>]</sub></p>
               <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> A good introduction to pair programming:</p>
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ET3Q6zNK3Io" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-            </modal>
+            </b-modal>
             <ul>
               <li>
                 <p><strong>Formal inspections</strong></p>
@@ -366,7 +367,7 @@
           </div>
           <div>
             <div>
-              <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+              <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                 <ul>
                   <li><a href="https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/"><strong>10 tips for reviewing code you don’t like</strong></a> - a blog post by David Lloyd (a Red Hat developer).</li>
                 </ul>
@@ -376,11 +377,11 @@
         </div>
       </panel>
       </panel>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="static-analysis">
         <span slot="header" class="card-title"><div><h2 id="static-analysis"><span>Static Analysis</span><a class="fa fa-anchor" href="#static-analysis"></a></h2>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-3"><template slot="_header"><h4 id="what-3">What<a class="fa fa-anchor" href="#what-3"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -411,11 +412,11 @@
       </div>
     </panel>
     </panel>
-    <panel type="seamless" expanded>
+    <panel type="seamless" expanded id="formal-verification">
       <span slot="header" class="card-title"><div><h2 id="formal-verification"><span>Formal Verification</span><a class="fa fa-anchor" href="#formal-verification"></a></h2>
   </div>
   </span>
-  <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+  <panel type="seamless" expanded id="what-4"><template slot="_header"><h4 id="what-4">What<a class="fa fa-anchor" href="#what-4"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -430,7 +431,7 @@
       <p></p>
       <div>
         <p><strong>Formal verification uses mathematical techniques to prove the correctness of a program.</strong></p>
-        <panel type="seamless" header="<md>:glyphicon-facetime-video:</md> An introduction to Formal Methods" class="non-printable algolia-no-index">
+        <panel type="seamless" class="non-printable algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> An introduction to Formal Methods</p></template>
           <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
           <p>by <a href="http://www.cs.utoronto.ca/~hehner/">Eric Hehner</a></p>
           <p></p>
@@ -448,9 +449,9 @@
       </div>
       <div>
         <div>
-          <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+          <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
             <div>
-              <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Absence of errors" class="algolia-no-index">
+              <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Absence of errors</p></template>
                 <question>
                   <p>Testing cannot prove the absence of errors. It can only prove the presence of errors. However, formal methods can prove the absence of errors.</p>
                   <ul radio-group="cefed" class="radio-list">
@@ -485,8 +486,17 @@
             <a class="nav-link py-1" href="#validation-vs-verification">Validation vs Verification&#x200E;</a>
           </nav>
           <a class="nav-link py-1" href="#code-reviews">Code Reviews&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-2">What&#x200E;</a>
+          </nav>
           <a class="nav-link py-1" href="#static-analysis">Static Analysis&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-3">What&#x200E;</a>
+          </nav>
           <a class="nav-link py-1" href="#formal-verification">Formal Verification&#x200E;</a>
+          <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#what-4">What&#x200E;</a>
+          </nav>
         </nav>
 
       </nav>
@@ -495,7 +505,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
   </footer>
   </div>
 </body>

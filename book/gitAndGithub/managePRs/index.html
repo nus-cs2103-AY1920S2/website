@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Git and Github: Manage PRs</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,9 +37,9 @@
             <div>
               <div>
                 <p>
-                  <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Branching%%" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"></panel>
-                  <panel src="/website/book/gitAndGithub/createPRs/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Create PRs%%" popup-url="/website/book/gitAndGithub/createPRs" class="algolia-no-index"></panel>
-                  <panel src="/website/book/gitAndGithub/mergeConflicts/unit-inElsewhere-asFlat._include_.html" header="<md>:glyphicon-education:</md> %%Tools → Git & GitHub → Merge Conflicts%%" popup-url="/website/book/gitAndGithub/mergeConflicts" class="algolia-no-index"></panel>
+                  <panel src="/website/book/gitAndGithub/branch/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/branch" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Branching</span></p></template></panel>
+                  <panel src="/website/book/gitAndGithub/createPRs/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/createPRs" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Create PRs</span></p></template></panel>
+                  <panel src="/website/book/gitAndGithub/mergeConflicts/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/gitAndGithub/mergeConflicts" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Tools → Git &amp; GitHub → Merge Conflicts</span></p></template></panel>
                 </p>
               </div>
               <p></p>
@@ -55,28 +53,22 @@
                 </div>
                 <div id="main">
                   <div>
-                    <p><strong>1. Go to the GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in [
-                      <trigger trigger="click" for="modal:managePrs-createPrs">Tools → Git &amp; GitHub → Create PRs</trigger>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
-                    <modal large title="Tools → Git & GitHub → Create PRs" id="modal:managePrs-createPrs" class="algolia-no-index">
+                    <p><strong>1. Go to the GitHub page of your fork and review the <code>add-intro</code> PR</strong> you created previously in [<span trigger="click" for="modal:managePrs-createPrs" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+                        v-on:click="$refs['modal:managePrs-createPrs'].show()" class="trigger-click">Tools → Git &amp; GitHub → Create PRs</span>] to simulate the PR being reviewed by another developer, as explained below. <span class="dimmed">Note that some features available to PR reviewers will be unavailable to you because you are also the author of the PR.</span></p>
+                    <b-modal id="modal:managePrs-createPrs" hide-footer size="lg" modal-class="mb-zoom" ref="modal:managePrs-createPrs"><template slot="modal-title">Tools → Git &amp; GitHub → Create PRs</template>
                       <div>
                         <div>
                           <p><strong>1. Fork the <a href="https://github.com/se-edu/samplerepo-pr-practice">samplerepo-pr-practice</a> onto your GitHub account. Clone it onto your computer.</strong></p>
                           <p><strong>2. Create a branch named <code>add-intro</code> in your clone. Add a couple of commits</strong> which adds/modifies an <em>Introduction</em> section to the <code>README.md</code>. Example:</p>
-                          <pre><code class="hljs md">
-<span class="hljs-section"># Introduction</span>
-Creating Pull Requests (PRs) is needed when using RCS in a multi-person projects.
-This repo can be used to practice creating PRs.
-
-</code></pre>
+                          <pre><code class="hljs md"><span>&#x200B;</span><span><span class="hljs-section"># Introduction</span></span><span>Creating Pull Requsts (PRs) is needed when using RCS in a multi-person projects.</span><span>This repo can be used to practice creating PRs.</span><span>&#x200B;</span></code></pre>
                           <p><strong>3. Push the <code>add-intro</code> branch to your fork.</strong></p>
                           <tabs>
-                            <tab header="SourceTree">
+                            <tab><template slot="_header">SourceTree</template>
                               <img src="/website/book/gitAndGithub/createPRs/images/pushBranchToFork.png" height="300">
                               <p></p>
                             </tab>
-                            <tab header="CLI" class="algolia-no-index">
-                              <pre><code class="hljs">git push origin add-intro
-</code></pre>
+                            <tab class="algolia-no-index"><template slot="_header">CLI</template>
+                              <pre><code class="hljs"><span>git push origin add-intro</span></code></pre>
                             </tab>
                           </tabs>
                           <p><strong>4. Create a Pull Request from the <code>add-intro</code> branch in your fork to the <code>master</code> branch of the same fork</strong> (i.e. <code>your-user-name/samplerepo-pr-practice</code>, not <code>se-edu/samplerepo-pr-practice</code>),
@@ -113,7 +105,7 @@ This repo can be used to practice creating PRs.
                           <img src="/website/book/gitAndGithub/createPRs/images/addSummaryBranch.png" width="400">
                           <p></p>
                           <p><strong>7. Push the <code>add-summary</code> to your fork and create a new PR</strong> similar to before.</p>
-                          <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+                          <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
                             <ul>
                               <li><a href="https://help.github.com/articles/creating-a-pull-request/">GitHub's own documentation on creating a PR</a></li>
                             </ul>
@@ -121,7 +113,7 @@ This repo can be used to practice creating PRs.
                         </div>
                         <div></div>
                       </div>
-                    </modal>
+                    </b-modal>
                     <p>1a. Go to the respective PR page and click on the <code>Files changed</code> tab. Hover over the line you want to comment on and click on the <span style="color:#0066ff"><span aria-hidden="true" class="fas fa-plus-square"></span></span>
                       icon that appears on the left margin. That should create a text box for you to enter your comment.</p>
                     <img src="/website/book/gitAndGithub/managePRs/images/startReview.png" width="800">
@@ -140,12 +132,10 @@ This repo can be used to practice creating PRs.
                     <p></p>
                     <p><strong>4. Sync the local repo with the remote repo.</strong> Because of the merge you did on the GitHub, the <code>master</code> branch of your fork is now ahead of your local repo by one commit. To sync the local repo with the remote
                       repo, pull the <code>master</code> branch to the local repo.</p>
-                    <pre><code class="hljs">git checkout master
-git pull origin master
-</code></pre>
+                    <pre><code class="hljs"><span>git checkout master</span><span>git pull origin master</span></code></pre>
                     <p>Observe how the <code>add-intro</code> branch is now merged to the <code>master</code> branch in your local repo as well.</p>
-                    <p><strong>5. De-conflict the <code>add-summary</code> PR</strong>
-                      <trigger trigger="click" for="modal:managePrs-createPrs">that you created earlier</trigger>. Note that GitHub page for the <code>add-summary</code> PR is now showing a conflict <span class="dimmed">(when you scroll to the bottom of that page, you should see a message <code>This branch has conflicts that must be resolved</code>)</span>.
+                    <p><strong>5. De-conflict the <code>add-summary</code> PR</strong> <span trigger="click" for="modal:managePrs-createPrs" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:managePrs-createPrs'].show()"
+                        class="trigger-click">that you created earlier</span>. Note that GitHub page for the <code>add-summary</code> PR is now showing a conflict <span class="dimmed">(when you scroll to the bottom of that page, you should see a message <code>This branch has conflicts that must be resolved</code>)</span>.
                       You can resolve it locally and update the PR accordingly, as explained below.</p>
                     <p>5a. Switch to the <code>add-summary</code> branch. To make that branch up-to-date with the <code>master</code> branch, merge the <code>master</code> branch to it, which will surface the merge conflict. Resolve it and complete the merge.</p>
                     <p>5b. Push the updated <code>add-summary</code> branch to the fork. That will remove the 'merge conflicts' warning in the GitHub page of the PR.</p>

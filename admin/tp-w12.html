@@ -5,13 +5,14 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Admin: tP: mid-v1.4 [week 12]</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../markbind/css/octicons.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -29,7 +30,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +49,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -226,7 +227,7 @@
                 <box background-color="white" border-color="red">
                   <p><strong>Remind yourself of the project grading criteria:</strong></p>
                   <p>
-                    <panel type="seamless" src="/website/admin/tp-grading._include_.html#main" header="%%Admin <md>:glyphicon-log-in:</md> tP → Grading%%" class="embedding algolia-no-index" fragment="main"></panel>
+                    <panel type="seamless" src="/website/admin/tp-grading._include_.html#main" class="embedding algolia-no-index" fragment="main"><template slot="_header"><p><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Grading</span></p></template></panel>
                   </p>
                 </box>
               </div>
@@ -236,8 +237,7 @@
                   <li>Learn the procedure for dealing with PED bugs you received:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables-ped._include_.html#after-ped" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → **After the PED**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="after-ped"></panel>
+                  <panel type src="/website/admin/tp-deliverables-ped._include_.html#after-ped" class="embedding algolia-no-index" minimized fragment="after-ped"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → <strong>After the PED</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <ul>
@@ -247,16 +247,14 @@
                   <li><strong>Consider increasing test coverage</strong> by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-expectations._include_.html#testing-expectations" header="Admin <md>:glyphicon-log-in:</md> tP → Grading → Expectation on testing  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="testing-expectations"></panel>
+                  <panel type src="/website/admin/tp-expectations._include_.html#testing-expectations" class="embedding algolia-no-index" minimized fragment="testing-expectations"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Grading → Expectation on testing  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <ul>
                   <li><strong>After you have sufficient code coverage, fix remaining code quality problems</strong> and bring up the quality to your target level.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-grading._include_.html#projectGrading-codeQuality-criteria" header="Admin <md>:glyphicon-log-in:</md> tP → Grading → Code Quality Tips  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="projectGrading-codeQuality-criteria"></panel>
+                  <panel type src="/website/admin/tp-grading._include_.html#projectGrading-codeQuality-criteria" class="embedding algolia-no-index" minimized fragment="projectGrading-codeQuality-criteria"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Grading → Code Quality Tips  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -268,8 +266,7 @@
                     it is <mark>too risky to leave it to the last week of the project</mark>.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-ppp" header="Admin <md>:glyphicon-log-in:</md> tP → Deliverables → Project Portfolio Page  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="tp-deliverables-ppp"></panel>
+                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-ppp" class="embedding algolia-no-index" minimized fragment="tp-deliverables-ppp"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Project Portfolio Page  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -286,8 +283,7 @@
                   </li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-demo" header="Admin <md>:glyphicon-log-in:</md> tP → Final Demo (extract)  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index"
-                    minimized fragment="tp-deliverables-demo"></panel>
+                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-demo" class="embedding algolia-no-index" minimized fragment="tp-deliverables-demo"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Final Demo (extract)  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -299,8 +295,7 @@
                     <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Once again, double-check to ensure the code attributed to you by RepoSense is correct.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-tasks._include_.html#midV13-repoSenseCompatible" header="Admin <md>:glyphicon-log-in:</md> tP → mid-v1.3 → Making the Code RepoSense-Compatible  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized
-                    fragment="midV13-repoSenseCompatible"></panel>
+                  <panel type src="/website/admin/tp-tasks._include_.html#midV13-repoSenseCompatible" class="embedding algolia-no-index" minimized fragment="midV13-repoSenseCompatible"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → mid-v1.3 → Making the Code RepoSense-Compatible  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -337,7 +332,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

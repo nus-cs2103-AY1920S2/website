@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Test Case Design: Equivalence Partitions: Basic</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -51,21 +49,21 @@
                   <div>
                     <p><strong>Equivalence partitions (EPs) are usually derived from the specifications of the SUT.</strong></p>
                     <box>
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> These could be EPs for the
-                        <trigger for="pop:epBasic-isValidMonth">isValidMonth</trigger> example:</p>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> These could be EPs for the <span for="pop:epBasic-isValidMonth" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:epBasic-isValidMonth'].show()"
+                          class="trigger">isValidMonth</span> example:</p>
                       <ul>
                         <li>[MIN_INT ... 0] : <strong>below</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
                         <li>[1 … 12] : the range that produces <code>true</code></li>
                         <li>[13 … MAX_INT] : <strong>above</strong> the range that produces <code>true</code> (produces <code>false</code>)</li>
                       </ul>
                     </box>
-                    <popover id="pop:epBasic-isValidMonth" title="`isValidMonth`" placement="top">
-                      <div slot="content" class="algolia-no-index">
-                        <div>
-                          <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
-                        </div>
+                    <span id="pop:epBasic-isValidMonth" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><code>isValidMonth</code></span>
+                    <div data-mb-html-for="content">
+                      <div>
+                        <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
                       </div>
-                    </popover>
+                    </div>
+                    </span>
                     <p>When the SUT has multiple inputs, you should identify EPs for each input.</p>
                     <box>
                       <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider the method <code>duplicate(String s, int n): String</code> which returns a <code>String</code> that contains <code>s</code> repeated <code>n</code> times.</p>
@@ -132,9 +130,9 @@
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: EPs for `isValidName` method" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> EPs for <code>isValidName</code> method</p></template>
                             <question>
                               <p>Consider this SUT:</p>
                               <box>

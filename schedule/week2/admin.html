@@ -5,18 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 2 - Admin Info</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -29,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -123,8 +123,7 @@
                   <li>Follow the 'Preparation' instructions of the following panel, to get connected with the module forum.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#communication" header="Admin <md>:glyphicon-log-in:</md> **Tools - Communication**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized
-                    fragment="communication"></panel>
+                  <panel type src="/website/admin/tools._include_.html#communication" class="embedding algolia-no-index" minimized fragment="communication"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools - Communication</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -201,8 +200,7 @@
                       <p>If you <strong>used a third party library</strong>:</p>
                       <ul>
                         <li>iP/tP: Mention in the <code>README</code> file (under the <em>Acknowledgements</em> section)</li>
-                        <li>tP: Mention in the
-                          <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented</li>
+                        <li>tP: Mention in the <span trigger="click" for="modal:reusePolicy-ppp" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-ppp'].show()" class="trigger-click">Project Portfolio Page</span>                          if the library has a significant relevance to the features you implemented</li>
                       </ul>
                       <p>If you <strong>reused code snippets found on the Internet</strong> <span class="dimmed">e.g. from StackOverflow answers</span> or<br>
                         <strong>referred code in another software</strong> or<br>
@@ -210,89 +208,40 @@
                       <ul>
                         <li>If you read the code to understand the approach and implemented it yourself, mention it as a comment<br>
                           <span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:
-                          <pre><code class="hljs java"><span class="hljs-comment">//Solution below adapted from https://stackoverflow.com/a/16252290</span>
-{Your implmentation of the reused solution here ...}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-comment">//Solution below adapted from https://stackoverflow.com/a/16252290</span></span><span>{Your implmentation of the reused solution here ...}</span></code></pre>
                         </li>
-                        <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed">renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using
-                          <trigger trigger="click" for="modal:reusePolicy-authorTags"><code>@@author</code> tags</trigger>)<br> Format:
-                          <pre><code class="hljs java"><span class="hljs-comment">//@@author {yourGithubUsername}-reused</span>
-<span class="hljs-comment">//{Info about the source...}</span>
-
-{<span class="hljs-function">Reused <span class="hljs-title">code</span> <span class="hljs-params">(possibly with minor modifications)</span> here ...}
-
-<span class="hljs-comment">//@@author</span>
-</span></code></pre>
-                          <span><span aria-hidden="true" class="fas fa-cube"></span></span> Example of reusing a code snippet (with minor modifications):
-                          <pre><code class="hljs java">persons = getList()
-<span class="hljs-comment">//@@author johndoe-reused</span>
-<span class="hljs-comment">//Reused from https://stackoverflow.com/a/34646172 with minor modifications</span>
-Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;CustomData&gt;() {
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(CustomData lhs, CustomData rhs)</span> </span>{
-        <span class="hljs-keyword">return</span> lhs.customInt &gt; rhs.customInt ? -<span class="hljs-number">1</span> : <span class="hljs-number">0</span>;
-    }
-});
-<span class="hljs-comment">//@@author</span>
-<span class="hljs-keyword">return</span> persons;
-</code></pre>
+                        <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed">renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using <span trigger="click"
+                            for="modal:reusePolicy-authorTags" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:reusePolicy-authorTags'].show()" class="trigger-click"><code>@@author</code> tags</span>)<br>                          Format:
+                          <pre><code class="hljs java"><span><span class="hljs-comment">//@@author {yourGithubUsername}-reused</span></span><span><span class="hljs-comment">//{Info about the source...}</span></span><span>&#x200B;</span><span>{<span class="hljs-function">Reused <span class="hljs-title">code</span> <span class="hljs-params">(possibly with minor modifications)</span> here ...}</span></span><span><span class="hljs-function"></span></span><span><span class="hljs-function"><span class="hljs-comment">//@@author</span></span></span></code></pre><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example of reusing a code snippet (with minor modifications):
+                          <pre><code class="hljs java"><span>persons = getList()</span><span><span class="hljs-comment">//@@author johndoe-reused</span></span><span><span class="hljs-comment">//Reused from https://stackoverflow.com/a/34646172 with minor modifications</span></span><span>Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;CustomData&gt;() {</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(CustomData lhs, CustomData rhs)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> lhs.customInt &gt; rhs.customInt ? -<span class="hljs-number">1</span> : <span class="hljs-number">0</span>;</span><span>    }</span><span>});</span><span><span class="hljs-comment">//@@author</span></span><span><span class="hljs-keyword">return</span> persons;</span></code></pre>
                         </li>
                       </ul>
                     </box>
-                    <modal large title="Admin <md>:glyphicon-log-in:</md> Project mid-v1.3 (extract) →" id="modal:reusePolicy-authorTags" class="algolia-no-index">
-
+                    <b-modal id="modal:reusePolicy-authorTags" hide-footer size="lg" modal-class="mb-zoom" ref="modal:reusePolicy-authorTags"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project mid-v1.3 (extract) →</template>
                       <div>
                         <h4 id="adding-author-tags-indicate-authorship">Adding <code>@@author</code> tags indicate authorship<a class="fa fa-anchor" href="#adding-author-tags-indicate-authorship"></a></h4>
                         <ul>
                           <li>
                             <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br> The <code>//@@author</code> tag should indicates the beginning of the code you wrote. The code up to the next <code>//@@author</code>                              tag or the end of the file (whichever comes first) will be considered as was written by that author. Here is a sample code file:</p>
-                            <pre><code class="hljs">//@@author johndoe
-method 1 ...
-method 2 ...
-//@@author sarahkhoo
-method 3 ...
-//@@author johndoe
-method 4 ...
-</code></pre>
+                            <pre><code class="hljs"><span>//@@author johndoe</span><span>method 1 ...</span><span>method 2 ...</span><span>//@@author sarahkhoo</span><span>method 3 ...</span><span>//@@author johndoe</span><span>method 4 ...</span></code></pre>
                           </li>
                           <li>
                             <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours
                               can add the GitHub username to the empty tag later. Here is a sample code with an empty <code>author</code> tag:</p>
-                            <pre><code class="hljs">method 0 ...
-//@@author johndoe
-method 1 ...
-method 2 ...
-//@@author
-method 3 ...
-method 4 ...
-</code></pre>
+                            <pre><code class="hljs"><span>method 0 ...</span><span>//@@author johndoe</span><span>method 1 ...</span><span>method 2 ...</span><span>//@@author</span><span>method 3 ...</span><span>method 4 ...</span></code></pre>
                           </li>
                           <li>
                             <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br> Here is an example code from an xml/fxml file.</p>
-                            <pre><code class="hljs">&lt;!-- @@author sereneWong --&gt;
-&lt;textbox&gt;
-  &lt;label&gt;...&lt;/label&gt;
-  &lt;input&gt;...&lt;/input&gt;
-&lt;/textbox&gt;
-...
-</code></pre>
+                            <pre><code class="hljs"><span>&lt;!-- @@author sereneWong --&gt;</span><span>&lt;textbox&gt;</span><span>  &lt;label&gt;...&lt;/label&gt;</span><span>  &lt;input&gt;...&lt;/input&gt;</span><span>&lt;/textbox&gt;</span><span>...</span></code></pre>
                           </li>
                           <li>
                             <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong>.<br> 👎
                               <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                             </p>
-                            <pre><code class="hljs">/**
-  * Returns true if ...
-  * @@author johndoe
-  */
-</code></pre>
+                            <pre><code class="hljs"><span>/**</span><span>  * Returns true if ...</span><span>  * @@author johndoe</span><span>  */</span></code></pre>
                             <p>👍<span><span aria-hidden="true" class="fas fa-arrow-down"></span></span>
                             </p>
-                            <pre><code class="hljs">//@@author johndoe
-/**
-  * Returns true if ...
-  */
-</code></pre>
+                            <pre><code class="hljs"><span>//@@author johndoe</span><span>/**</span><span>  * Returns true if ...</span><span>  */</span></code></pre>
                           </li>
                         </ul>
                         <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate<a class="fa fa-anchor" href="#what-to-and-what-not-to-annotate"></a></h4>
@@ -323,19 +272,13 @@ method 4 ...
                               <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>) e.g.
                               </li>
                             </ul>
-                            <pre><code class="hljs">//@@author johndoe-unused
-method 1 ...
-method 2 ...
-</code></pre>
+                            <pre><code class="hljs"><span>//@@author johndoe-unused</span><span>method 1 ...</span><span>method 2 ...</span></code></pre>
                             <p>Please put a comment in the code to explain why it was not used.</p>
                           </li>
                           <li>
                             <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>) e.g.
                             </p>
-                            <pre><code class="hljs">//@@author johndoe-reused
-method 1 ...
-method 2 ...
-</code></pre>
+                            <pre><code class="hljs"><span>//@@author johndoe-reused</span><span>method 1 ...</span><span>method 2 ...</span></code></pre>
                           </li>
                           <li>
                             <p><strong>You can use empty <code>@@author</code> tags to mark code as not yours when RepoSense attribute the to you incorrectly.</strong></p>
@@ -352,9 +295,8 @@ method 2 ...
                           </li>
                         </ul>
                       </div>
-                    </modal>
-                    <modal large title="Admin <md>:glyphicon-log-in:</md> Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp" class="algolia-no-index">
-
+                    </b-modal>
+                    <b-modal id="modal:reusePolicy-ppp" hide-footer size="lg" modal-class="mb-zoom" ref="modal:reusePolicy-ppp"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project → Deliverables → Project Portfolio Page</template>
                       <div>
                         <div>
                           <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
@@ -373,7 +315,7 @@ method 2 ...
                                 <li><strong>Enhancements implemented:</strong> A summary of the enhancements you implemented.</li>
                                 <li><strong>Contributions to documentation:</strong> Which sections did you contribute to the UG?</li>
                                 <li><strong>Contributions to the DG:</strong> Which sections did you contribute to the DG? Which UML diagrams did you add/updated?</li>
-                                <li><strong>Contributions to <trigger trigger="click" for="modal:deliverablesPPP-teamTasks">team-based tasks </trigger>:</strong></li>
+                                <li><strong>Contributions to <span trigger="click" for="modal:deliverablesPPP-teamTasks" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:deliverablesPPP-teamTasks'].show()" class="trigger-click">team-based tasks </span>:</strong></li>
                                 <li><strong>Review/mentoring contributions:</strong> Links to PRs reviewed, instances of helping team members in other ways</li>
                                 <li><strong>Contributions beyond the project team:</strong>
                                   <ul>
@@ -384,11 +326,11 @@ method 2 ...
                               </ul>
                             </li>
                           </ul>
-                          <modal large title="Team-Based Tasks" id="modal:deliverablesPPP-teamTasks" class="algolia-no-index">
+                          <b-modal id="modal:deliverablesPPP-teamTasks" hide-footer size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks"><template slot="modal-title">Team-Based Tasks</template>
                             <div>
                               <box>
                                 <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.</p>
-                                <panel type="seamless" header="<md>:fas-cube:</md> Examples of team-tasks" class="algolia-no-index">
+                                <panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples of team-tasks</p></template>
                                   <span id="example-team-tasks">
 <p>Here is a non-exhaustive list of team-tasks:</p>
 <ol>
@@ -408,7 +350,7 @@ method 2 ...
                                 <p></p>
                               </box>
                             </div>
-                          </modal>
+                          </b-modal>
                           <div class="indented-level2">
                             <box border-left-color="darkcyan">
                               <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Keep in mind that evaluators will use the PPP to estimate your project effort. We recommend that you mention things
@@ -478,7 +420,7 @@ method 2 ...
                           </ul>
                         </div>
                       </div>
-                    </modal>
+                    </b-modal>
                   </div>
                 </div>
               </div>
@@ -539,7 +481,7 @@ method 2 ...
                     </p>
                     <p><strong>We encourage you to give tech help to each other</strong>, but do it in a way that the other person learns from it.</p>
                     <p><span class="flat"><span class="dimmed">Related: [<a href="#admin-appendixD-help-anchor">Admin: Appendix D: Getting Help</a>]</span></span>
-                      <panel src="/website/admin/appendixD-help._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> Appendix D: How to get Help in CS2103/T" class="embedding algolia-no-index" minimized fragment="main"></panel>
+                      <panel src="/website/admin/appendixD-help._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix D: How to get Help in CS2103/T</p></template></panel>
                     </p>
                   </div>
                 </div>
@@ -726,7 +668,7 @@ method 2 ...
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Object Oriented Programming: Classes: Class-Level Members</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -60,20 +58,20 @@
                     </box>
                     <p>Similarly, when a normal method is being called, a message is being sent to the receiving object and the result may depend on the receiving object.</p>
                     <box>
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Sending the <code>getName()</code> message to the <code>Adam</code> object results in the response <code>&quot;Adam&quot;</code> while sending the same message to
-                        the <code>Beth</code> object results in the response <code>&quot;Beth&quot;</code>.</p>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Sending the <code>getName()</code> message to <code>Adam</code> object results in the response <code>&quot;Adam&quot;</code> while sending the same message to the
+                        <code>Beth</code> object gets the response <code>&quot;Beth&quot;</code>.</p>
                     </box>
                     <p>However, there can be methods related to a specific class but not suitable for sending message to a specific object of that class. Such <strong>methods that are called using the class instead of a specific instance are called <mark><em>class-level methods</em></mark></strong>.</p>
                     <box>
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The method <code>getTotalPersons()</code> is not suitable to send to a specific <code>Person</code> object <span class="dimmed">because a specific object of the <code>Person</code> class should not have to know about the total number of <code>Person</code> objects</span>.</p>
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The method <code>getTotalPersons()</code> is not suitable to send to a specific <code>Person</code> object <span class="dimmed">because a specific object of the <code>Person</code> class should not know about the total number of <code>Person</code> objects</span>.</p>
                     </box>
                     <p><strong>Class-level attributes and methods are collectively called <mark><em>class-level members</em></mark></strong> (also called <em>static members</em> sometimes because some programming languages use the keyword <code>static</code>                      to identify class-level members). <strong>They are to be accessed using the class name rather than an instance of the class</strong>.</p>
                   </div>
                   <div>
                     <div>
-                      <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                         <div>
-                          <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Suitable as a class-level variables" class="algolia-no-index">
+                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Suitable as a class-level variables</p></template>
                             <question>
                               <p>Which of these are suitable as class-level variables?</p>
                               <ul class="task-list">

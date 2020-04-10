@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Integration: Approaches: Late-and-One-Time vs Early-and-Frequent</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,7 +37,7 @@
             <div>
               <div>
                 <p>
-                  <panel src="/website/book/integration/introduction/what/unit-inElsewhere-asFlat._include_.html" header="%%<md>:glyphicon-education:</md> Implementation → Integration → Introduction → What%%" popup-url="/website/book/integration/introduction/what" class="algolia-no-index"></panel>
+                  <panel src="/website/book/integration/introduction/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/integration/introduction/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Implementation → Integration → Introduction → What</span></p></template></panel>
                 </p>
               </div>
               <p></p>
@@ -60,7 +58,7 @@
                     </box>
                     <p><strong><em>Early and frequent</em>: integrate early and evolve each part in parallel, in small steps, re-integrating frequently.</strong></p>
                     <box>
-                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <em><tooltip content="it has all the main components in their minimal form, compiles, and runs but does not produce any useful output">walking skeleton</tooltip></em>                        can be written first. This can be done by one developer, possibly the one in charge of integration. After that, all developers can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply
+                      <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> A <em><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">it has all the main components in their minimal form, compiles, and runs but does not produce any useful output</span>walking skeleton</span></em>                        can be written first. This can be done by one developer, possibly the one in charge of integration. After that, all developers can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply
                         integrate the new code to the main system.</p>
                     </box>
                     <div v-closeable alt="slideshow: comparison" class="non-printable">

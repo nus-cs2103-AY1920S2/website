@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Requirements: Quality of Requirements</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -49,8 +47,8 @@
                 </div>
                 <div id="main">
                   <div>
-                    <p>Here are some characteristics of well-defined requirements
-                      <trigger for="pop:zielczynski"><sup>[📖 zielczynski]</sup></trigger>:</p>
+                    <p>Here are some characteristics of well-defined requirements <span for="pop:zielczynski" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:zielczynski'].show()"
+                        class="trigger"><sup>[📖 zielczynski]</sup></span>:</p>
                     <ul>
                       <li>Unambiguous</li>
                       <li>Testable (verifiable)</li>
@@ -59,8 +57,7 @@
                       <li>Understandable</li>
                       <li>Feasible (realistic, possible)</li>
                       <li>Independent</li>
-                      <li>
-                        <tooltip content="Not divisible any further">Atomic</tooltip>
+                      <li><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Not divisible any further</span>Atomic</span>
                       </li>
                       <li>Necessary</li>
                       <li>Implementation-free (i.e. abstract)</li>
@@ -71,14 +68,10 @@
                       <li>Non-redundant</li>
                       <li>Complete</li>
                     </ul>
-                    <popover id="pop:zielczynski">
-                      <div slot="content" class="algolia-no-index">
-                        <div>
-                          <p>Peter Zielczynski, <em><strong>Requirements Management Using IBM Rational RequisitePro</strong></em>, IBM Press, 2008</p>
-                        </div>
-                      </div>
-                    </popover>
-                  </div>
+                    <span id="pop:zielczynski" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger">
+  <div data-mb-html-for="content">
+    <div>
+<p>Peter Zielczynski, <em><strong>Requirements Management Using IBM Rational RequisitePro</strong></em>, IBM Press, 2008</p></div></div></span></div>
                   <div></div>
                 </div>
               </div>

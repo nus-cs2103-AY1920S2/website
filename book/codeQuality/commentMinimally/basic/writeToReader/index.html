@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Coding Best Practices: [Practice] Write to the Reader</title>
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -59,21 +57,13 @@
                             <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                               </span>
                             </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                          <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
-    ....
-}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{</span><span>    ....</span><span>}</span></code></pre>
                           <p>
                             <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
-    ....
-}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span></span><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{</span><span>    ....</span><span>}</span></code></pre>
                         </div>
                       </div>
                       <div class="alt-python">
@@ -82,19 +72,13 @@
                             <font color="red"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-down"></span></span> Bad</strong>
                               </span>
                             </font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span></p>
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
-<span class="hljs-string">"""a quick trim function used to fix bug I detected overnight"""</span>
-    ...
-</code></pre>
+                          <pre><code class="hljs python"><span><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span></span><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span></span><span>    ...</span></code></pre>
                           <p>
                             <font color="green"><span><strong><span><span aria-hidden="true" class="fas fa-thumbs-up"></span></span> Good</strong>
                               </span>
                             </font>
                           </p>
-                          <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
-<span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
-    ...
-</code></pre>
+                          <pre><code class="hljs python"><span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span></span><span><span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span></span><span>    ...</span></code></pre>
                         </div>
                       </div>
                     </box>

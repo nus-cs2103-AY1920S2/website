@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Object Oriented Programming: Inheritance: Interfaces</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -49,9 +47,10 @@
                 </div>
                 <div id="main">
                   <div>
-                    <p><strong>An <em>interface</em> is a behavior specification</strong> i.e. a collection of
-                      <tooltip content="Just the method signature without any implementation">method specifications</tooltip>. If a class
-                      <tooltip content="implements all methods specified in an interface">implements the interface</tooltip>, it means the class is able to support the behaviors specified by the said interface.</p>
+                    <p><strong>An <em>interface</em> is a behavior specification</strong> i.e. a collection of <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Just the method signature without any implementation</span>method
+                      specifications
+                      </span>. If a class <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">implements all methods specified in an interface</span>implements
+                      the interface</span>, it means the class is able to support the behaviors specified by the said interface.</p>
                     <blockquote>
                       <p>There are a number of situations in software engineering when it is important for disparate groups of programmers to agree to a &quot;contract&quot; that spells out how their software interacts. Each group should be able to write
                         their code without any knowledge of how the other group's code is written. Generally speaking, interfaces are such contracts. <sub>--<a href="https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html">Oracle Docs on Java</a><sub></sub></sub>

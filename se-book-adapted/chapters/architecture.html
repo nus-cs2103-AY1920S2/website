@@ -5,13 +5,14 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Textbook Chapter : Software Architecture</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
@@ -28,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -47,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -210,11 +211,11 @@
               <h1 id="software-architecture"><span>Software Architecture</span><a class="fa fa-anchor" href="#software-architecture"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded>
+          <panel type="seamless" expanded id="introduction">
             <span slot="header" class="card-title"><div><h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
         </div>
         </span>
-        <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+        <panel type="seamless" expanded id="what"><template slot="_header"><h4 id="what">What<a class="fa fa-anchor" href="#what"></a></h4></template>
           <div class="indented">
             <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -258,9 +259,9 @@
             </div>
             <div>
               <div>
-                <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                   <div>
-                    <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Statements about architecture" class="algolia-no-index">
+                    <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about architecture</p></template>
                       <question>
                         <p>Choose the correct statement</p>
                         <ul class="task-list">
@@ -286,11 +287,11 @@
           </div>
         </panel>
         </panel>
-        <panel type="seamless" expanded>
+        <panel type="seamless" expanded id="architecture-diagrams">
           <span slot="header" class="card-title"><div><h2 id="architecture-diagrams"><span>Architecture Diagrams</span><a class="fa fa-anchor" href="#architecture-diagrams"></a></h2>
       </div>
       </span>
-      <panel type="seamless" header="#### Reading<a class='fa fa-anchor' href='#reading'></a>" expanded>
+      <panel type="seamless" expanded id="reading"><template slot="_header"><h4 id="reading">Reading<a class="fa fa-anchor" href="#reading"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -309,21 +310,21 @@
               <box>
                 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some example architecture diagrams:</p>
                 <tabs>
-                  <tab header="TEAMMATES">
+                  <tab><template slot="_header">TEAMMATES</template>
                     <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
                   </tab>
-                  <tab header="se-edu/addressbook-level3" class="algolia-no-index">
+                  <tab class="algolia-no-index"><template slot="_header">se-edu/addressbook-level3</template>
                     <p><img src="https://se-education.org/addressbook-level3/images/ArchitectureDiagram.png" width="300"><br></p>
                   </tab>
-                  <tab header="Example 1" class="algolia-no-index">
+                  <tab class="algolia-no-index"><template slot="_header">Example 1</template>
                     <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
                       <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
                   </tab>
-                  <tab header="Example 2" class="algolia-no-index">
+                  <tab class="algolia-no-index"><template slot="_header">Example 2</template>
                     <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
                       <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
                   </tab>
-                  <tab header="Example 3" class="algolia-no-index">
+                  <tab class="algolia-no-index"><template slot="_header">Example 3</template>
                     <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
                       <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
                   </tab>
@@ -334,7 +335,7 @@
           <div></div>
         </div>
       </panel>
-      <panel type="seamless" header="#### Drawing<a class='fa fa-anchor' href='#drawing'></a>" expanded>
+      <panel type="seamless" expanded id="drawing"><template slot="_header"><h4 id="drawing">Drawing<a class="fa fa-anchor" href="#drawing"></a></h4></template>
         <div class="indented">
           <span class="badge badge-light">
   <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -368,15 +369,15 @@
         </div>
       </panel>
       </panel>
-      <panel type="seamless" expanded>
+      <panel type="seamless" expanded id="architectural-styles">
         <span slot="header" class="card-title"><div><h2 id="architectural-styles"><span>Architectural Styles</span><a class="fa fa-anchor" href="#architectural-styles"></a></h2>
     </div>
     </span>
-    <panel type="seamless" expanded>
-      <span slot="header" class="card-title"><div><h3 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h3>
+    <panel type="seamless" expanded id="introduction-2">
+      <span slot="header" class="card-title"><div><h3 id="introduction-2"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-2"></a></h3>
   </div>
   </span>
-  <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+  <panel type="seamless" expanded id="what-2"><template slot="_header"><h4 id="what-2">What<a class="fa fa-anchor" href="#what-2"></a></h4></template>
     <div class="indented">
       <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -390,25 +391,25 @@
       </span>
       <p></p>
       <div>
-        <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like
-          <trigger trigger="click" for="modal:archiStyles-buildingArchitectures">building architectures follow various architecture styles</trigger>.</p>
+        <p><strong>Software architectures follow various high-level styles (aka <em>architectural patterns</em>)</strong>, just like <span trigger="click" for="modal:archiStyles-buildingArchitectures" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter"
+            v-on:click="$refs['modal:archiStyles-buildingArchitectures'].show()" class="trigger-click">building architectures follow various architecture styles</span>.</p>
         <box>
           <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker style, ...</p>
         </box>
-        <modal large title="Building Architecture Styles" id="modal:archiStyles-buildingArchitectures" class="algolia-no-index">
+        <b-modal id="modal:archiStyles-buildingArchitectures" hide-footer size="lg" modal-class="mb-zoom" ref="modal:archiStyles-buildingArchitectures"><template slot="modal-title">Building Architecture Styles</template>
           <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg" width="600"><br>
             <sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
-        </modal>
+        </b-modal>
       </div>
       <div></div>
     </div>
   </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="n-tier-architectural-style">
     <span slot="header" class="card-title"><div><h3 id="n-tier-architectural-style"><span>N-tier Architectural Style</span><a class="fa fa-anchor" href="#n-tier-architectural-style"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-3"><template slot="_header"><h4 id="what-3">What<a class="fa fa-anchor" href="#what-3"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -434,11 +435,11 @@
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="client-server-architectural-style">
     <span slot="header" class="card-title"><div><h3 id="client-server-architectural-style"><span>Client-server Architectural Style</span><a class="fa fa-anchor" href="#client-server-architectural-style"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-4"><template slot="_header"><h4 id="what-4">What<a class="fa fa-anchor" href="#what-4"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -463,11 +464,11 @@
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="transaction-processing-architectural-style">
     <span slot="header" class="card-title"><div><h3 id="transaction-processing-architectural-style"><span>Transaction Processing Architectural Style</span><a class="fa fa-anchor" href="#transaction-processing-architectural-style"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-5"><template slot="_header"><h4 id="what-5">What<a class="fa fa-anchor" href="#what-5"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -485,19 +486,20 @@
             ordering, undo etc. are handled by the dispatcher.</p>
           <img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessing.png" height="120">
           <box>
-            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example from a Banking system, transactions are generated by the terminals used by
-              <tooltip content="employees of a bank who deals directly with customers">tellers</tooltip> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units to execute.</p>
+            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this example from a Banking system, transactions are generated by the terminals used by <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter"
+                class="trigger"><span data-mb-html-for="_content">employees of a bank who deals directly with customers</span>tellers</span> which are then sent to a central dispatching unit which in turn dispatches the transactions to various other units
+              to execute.</p>
             <img src="/website/book/architecture/architecturalStyles/transactionProcessing/what/images/transactionProcessingExamples.png" height="120"></box>
         </div>
         <div></div>
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="service-oriented-architectural-style">
     <span slot="header" class="card-title"><div><h3 id="service-oriented-architectural-style"><span>Service-oriented Architectural Style</span><a class="fa fa-anchor" href="#service-oriented-architectural-style"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-6"><template slot="_header"><h4 id="what-6">What<a class="fa fa-anchor" href="#what-6"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -526,11 +528,11 @@
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="event-driven-architectural-style">
     <span slot="header" class="card-title"><div><h3 id="event-driven-architectural-style"><span>Event-driven Architectural Style</span><a class="fa fa-anchor" href="#event-driven-architectural-style"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### What<a class='fa fa-anchor' href='#what'></a>" expanded>
+    <panel type="seamless" expanded id="what-7"><template slot="_header"><h4 id="what-7">What<a class="fa fa-anchor" href="#what-7"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
@@ -544,7 +546,7 @@
         </span>
         <p></p>
         <div>
-          <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>            This architectural style is often used in GUIs.</p>
+          <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.</span>events</span> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>            This architectural style is often used in GUIs.</p>
           <img src="/website/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" width="450">
           <box>
             <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> When the ‘button clicked’ event occurs in a GUI, that event can be transmitted to components that are interested in reacting to that event. Similarly, events detected at a Printer
@@ -555,11 +557,11 @@
       </div>
     </panel>
   </panel>
-  <panel type="seamless" expanded>
+  <panel type="seamless" expanded id="more">
     <span slot="header" class="card-title"><div><h3 id="more"><span>More</span><a class="fa fa-anchor" href="#more"></a></h3>
     </div>
     </span>
-    <panel type="seamless" header="#### More Styles<a class='fa fa-anchor' href='#more-styles'></a>" expanded>
+    <panel type="seamless" expanded id="more-styles"><template slot="_header"><h4 id="more-styles">More Styles<a class="fa fa-anchor" href="#more-styles"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
@@ -578,7 +580,7 @@
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-paperclip:</md> Resources" expanded>
+            <panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
               <ul>
                 <li>
                   <p><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters"><strong>Pipes and Filters pattern</strong></a> -- an article from Microsoft about the pipes and filters architectural style</p>
@@ -598,7 +600,7 @@
         </div>
       </div>
     </panel>
-    <panel type="seamless" header="#### Using Styles<a class='fa fa-anchor' href='#using-styles'></a>" expanded>
+    <panel type="seamless" expanded id="using-styles"><template slot="_header"><h4 id="using-styles">Using Styles<a class="fa fa-anchor" href="#using-styles"></a></h4></template>
       <div class="indented">
         <span class="badge badge-light">
   <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
@@ -619,9 +621,9 @@
         </div>
         <div>
           <div>
-            <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+            <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
               <div>
-                <panel header="Q: Comment on how to use architecture styles in Minesweeper." class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p>Q: Comment on how to use architecture styles in Minesweeper.</p></template>
                   <question has-input="true">
                     <p>Assume you are designing a multiplayer version of the Minesweeper game where any number of players can play the same Minefield. Players use their own PCs to play the game. A player scores by deducing a cell correctly before any of
                       the other players do. Once a cell is correctly deduced, it appears as either marked or cleared for all players.</p>
@@ -664,8 +666,6 @@
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
             <a class="nav-link py-1" href="#what">What&#x200E;</a>
           </nav>
-        </nav>
-        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
           <a class="nav-link py-1" href="#architecture-diagrams">Architecture Diagrams&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
             <a class="nav-link py-1" href="#reading">Reading&#x200E;</a>
@@ -673,11 +673,30 @@
           </nav>
           <a class="nav-link py-1" href="#architectural-styles">Architectural Styles&#x200E;</a>
           <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+            <a class="nav-link py-1" href="#introduction-2">Introduction&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-2">What&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#n-tier-architectural-style">N-tier Architectural Style&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-3">What&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#client-server-architectural-style">Client-server Architectural Style&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-4">What&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#transaction-processing-architectural-style">Transaction Processing Architectural Style&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-5">What&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#service-oriented-architectural-style">Service-oriented Architectural Style&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-6">What&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#event-driven-architectural-style">Event-driven Architectural Style&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#what-7">What&#x200E;</a>
+            </nav>
             <a class="nav-link py-1" href="#more">More&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#more-styles">More Styles&#x200E;</a>
@@ -692,7 +711,7 @@
   </div>
   <footer>
     <div class="text-center">
-      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+      <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
   </footer>
   </div>
 </body>

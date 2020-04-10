@@ -10,8 +10,7 @@
     <div>
       <h1 id="ip-individual-project-overview">iP (Individual Project): Overview <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
           aria-hidden="true"></span></span>
-        </span>
-      </h1>
+        </span><a class="fa fa-anchor" href="#ip-individual-project-overview"></a></h1>
     </div>
   </p>
   <div id="main">
@@ -28,97 +27,42 @@
       <p>All skills you will learn in the iP will be useful in the team project (tP). Furthermore, some of the code you will write in iP can be adapted for the tP.</p>
       <p>The iP is based on the generic project called <a href="/website/se-book-adapted/projectDuke/index.html"><em>Project Duke</em></a>, the overview of which is given below.</p>
       <div>
-        <div data-included-from="D:\Teaching\CS2103-AY1920S2\website\admin\dukeFragment.md">
-          <div class="indented">
-            <div class="indented border">
-              <panel type="seamless">
-                <div></div>
-                <div slot="header"><span><span class="dimmed"><strong>Duke - Overview</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
+        <div class="indented">
+          <div class="indented border">
+            <panel type="seamless" class="algolia-no-index">
+              <div></div>
+              <div slot="header"><span><span class="dimmed"><strong>Duke - Overview</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
+              </div>
+              <div></div>
+              <div>
+                <h1 id="project-duke">Project Duke<a class="fa fa-anchor" href="#project-duke"></a></h1>
+                <div class="lead">
+                  <pic add-class="float-left border mr-2 mt-2 p1 bg-white" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Duke_%28Java_mascot%29_waving.svg/226px-Duke_%28Java_mascot%29_waving.svg.png" width="60">
+                    <p><small><small><strong>Duke</strong>, the Java Mascot<br>[<a href="https://en.wikipedia.org/wiki/File:Duke_(Java_mascot)_waving.svg">credit: Wikipedia</a>]</small></small>
+                    </p>
+                  </pic>
+                  <p><strong>Project Duke is a educational software project designed to take you through the steps of building a small software <em>incrementally</em></strong>, while applying as many Java and SE techniques as possible along the way.</p>
                 </div>
-                <div></div>
-                <div>
-                  <div data-included-from="D:\Teaching\CS2103-AY1920S2\website\book\projectDuke\text.md">
-                    <h1 id="project-duke">Project Duke</h1>
-                    <div class="lead">
-                      <pic add-class="float-left border mr-2 mt-2 p1 bg-white" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Duke_%28Java_mascot%29_waving.svg/226px-Duke_%28Java_mascot%29_waving.svg.png" width="60">
-                        <p><small><small><strong>Duke</strong>, the Java Mascot<br>[<a href="https://en.wikipedia.org/wiki/File:Duke_(Java_mascot)_waving.svg">credit: Wikipedia</a>]</small></small>
-                        </p>
-                      </pic>
-                      <p><strong>Project Duke is a educational software project designed to take you through the steps of building a small software <em>incrementally</em></strong>, while applying as many Java and SE techniques as possible along the way.</p>
-                    </div>
-                    <p><strong>The project aims to build a product named <em>Duke</em>, a Personal Assistant Chatbot that helps a person to keep track of various things.</strong> <span class="dimmed">The name <em>Duke</em> was chosen as a placeholder name, in honor of <a href="https://www.oracle.com/java/duke.html">Duke, the Java Mascot</a>.</span>                      <strong>You may give it any other name and personality you wish.</strong></p>
-                    <p>Here is a sample interaction with Duke:</p>
-                    <pre><code class="hljs">    ____________________________________________________________
-      ____        _        
-     |  _ \ _   _| | _____ 
-     | | | | | | | |/ / _ \
-     | |_| | |_| |   &lt;  __/
-     |____/ \__,_|_|\_\___|
-
-     Hello! I'm Duke
-     What can I do for you?
-    ____________________________________________________________
-
-list
-    ____________________________________________________________
-     Here are the tasks in your list:
-     1.[T][✓] read book
-     2.[D][✗] return book (by: June 6th)
-     3.[E][✗] project meeting (at: Aug 6th 2-4pm)
-     4.[T][✓] join sports club
-    ____________________________________________________________
-
-todo borrow book
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [T][✗] borrow book
-     Now you have 5 tasks in the list.
-    ____________________________________________________________
-
-
-deadline return book /by Sunday
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [D][✗] return book (by: Sunday)
-     Now you have 6 tasks in the list.
-    ____________________________________________________________
-
-done 2
-    ____________________________________________________________
-     Nice! I've marked this task as done: 
-       [D][✓] return book (by: June 6th)
-    ____________________________________________________________
-
-blah
-    ____________________________________________________________
-     ☹ OOPS!!! I'm sorry, but I don't know what that means :-(
-    ____________________________________________________________
-
-bye
-    ____________________________________________________________
-     Bye. Hope to see you again soon!
-    ____________________________________________________________
-
-</code></pre>
-                    <div id="increments_summary">
-                      <p>The project consists of the following <em>increments</em>:</p>
+                <p><strong>The project aims to build a product named <em>Duke</em>, a Personal Assistant Chatbot that helps a person to keep track of various things.</strong> <span class="dimmed">The name <em>Duke</em> was chosen as a placeholder name, in honor of <a href="https://www.oracle.com/java/duke.html">Duke, the Java Mascot</a>.</span>                  <strong>You may give it any other name and personality you wish.</strong></p>
+                <p>Here is a sample interaction with Duke:</p>
+                <pre><code class="hljs"><span>    ____________________________________________________________</span><span>      ____        _        </span><span>     |  _ \ _   _| | _____ </span><span>     | | | | | | | |/ / _ \</span><span>     | |_| | |_| |   &lt;  __/</span><span>     |____/ \__,_|_|\_\___|</span><span>&#x200B;</span><span>     Hello! I'm Duke</span><span>     What can I do for you?</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>list</span><span>    ____________________________________________________________</span><span>     Here are the tasks in your list:</span><span>     1.[T][✓] read book</span><span>     2.[D][✗] return book (by: June 6th)</span><span>     3.[E][✗] project meeting (at: Aug 6th 2-4pm)</span><span>     4.[T][✓] join sports club</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>todo borrow book</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [T][✗] borrow book</span><span>     Now you have 5 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>&#x200B;</span><span>deadline return book /by Sunday</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [D][✗] return book (by: Sunday)</span><span>     Now you have 6 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>done 2</span><span>    ____________________________________________________________</span><span>     Nice! I've marked this task as done: </span><span>       [D][✓] return book (by: June 6th)</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>blah</span><span>    ____________________________________________________________</span><span>     ☹ OOPS!!! I'm sorry, but I don't know what that means :-(</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>bye</span><span>    ____________________________________________________________</span><span>     Bye. Hope to see you again soon!</span><span>    ____________________________________________________________</span><span>&#x200B;</span></code></pre>
+                <div id="increments_summary">
+                  <p>The project consists of the following <em>increments</em>:</p>
+                  <ul>
+                    <li><strong>Levels</strong>: A series of features, meant to be added to Duke in the given order, although some can be skipped. These have been named <code>Level 1</code> to <code>Level 10</code> to indicate how the features make the product
+                      progressively &quot;level up&quot;.</li>
+                    <li><strong>Extensions:</strong>
                       <ul>
-                        <li><strong>Levels</strong>: A series of features, meant to be added to Duke in the given order, although some can be skipped. These have been named <code>Level 1</code> to <code>Level 10</code> to indicate how the features make the
-                          product progressively &quot;level up&quot;.</li>
-                        <li><strong>Extensions:</strong>
-                          <ul>
-                            <li><big><span class="badge badge-pill badge-primary">Category A</span></big> These are internal/feature enhancements meant to help you practice a specific Java or an SE technique.</li>
-                            <li><big><span class="badge badge-pill badge-info">Category B</span></big> These are enhancements related to task tracking.</li>
-                            <li><big><span class="badge badge-pill badge-success">Category C</span></big> These are enhancements, not specifically related to task tracking.</li>
-                            <li><big><span class="badge badge-pill badge-danger">Category D</span></big> Each of these adds the ability to track another type of entities.</li>
-                          </ul>
-                        </li>
+                        <li><big><span class="badge badge-pill badge-primary">Category A</span></big> These are internal/feature enhancements meant to help you practice a specific Java or an SE technique.</li>
+                        <li><big><span class="badge badge-pill badge-info">Category B</span></big> These are enhancements related to task tracking.</li>
+                        <li><big><span class="badge badge-pill badge-success">Category C</span></big> These are enhancements, not specifically related to task tracking.</li>
+                        <li><big><span class="badge badge-pill badge-danger">Category D</span></big> Each of these adds the ability to track another type of entities.</li>
                       </ul>
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
                 </div>
-              </panel>
-            </div>
+              </div>
+            </panel>
           </div>
         </div>
       </div>

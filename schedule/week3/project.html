@@ -5,18 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 3 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -29,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -167,19 +167,12 @@
                         <h3 id="level-7-save">Level 7. Save<a class="fa fa-anchor" href="#level-7-save"></a></h3>
                         <p>Save the tasks in the hard disk automatically whenever the task list changes. Load the data from the hard disk when Duke starts up. You may hard-code the file name and location <span class="dimmed">e.g., <code>[project_root]/data/duke.txt</code></span></p>
                         <p>The format of the file is up to you. Example:</p>
-                        <pre><code class="hljs">T | 1 | read book
-D | 0 | return book | June 6th
-E | 0 | project meeting | Aug 6th 2-4pm
-T | 1 | join sports club
-</code></pre>
+                        <pre><code class="hljs"><span>T | 1 | read book</span><span>D | 0 | return book | June 6th</span><span>E | 0 | project meeting | Aug 6th 2-4pm</span><span>T | 1 | join sports club</span></code></pre>
                         <p><strong><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you use file paths in your code,</strong></p>
                         <ul>
                           <li>remember to use relative paths rather than absolute paths such as <code>C:\data</code>. If not, your app can cause unpredictable results when used in another computer.</li>
                           <li>remember to <a href="https://www.sghill.net/how-do-i-make-cross-platform-file-paths-in-java.html">specify file paths in an OS-independent way</a>. If not, your app might not work when used on a different OS.</li>
                         </ul>
-                        <p>
-                          <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Your code must handle the case where the file doesn't exist at the start. Reason: when someone else takes your Duke and runs it for
-                          the first time, the required file might not exist in their computer. Similarly, if you expect the data file to be in as specific folder (e.g., <code>./data/</code>), you must also handle the 'folder does not exist yet' case.</p>
                       </div>
                     </panel>
                   </div>
@@ -202,39 +195,12 @@ T | 1 | join sports club
                           it simply as a String.</p>
                         <ul>
                           <li><strong>Minimal</strong>: Store deadline dates as a <code>java.time.LocalDate</code> in your task objects. Accept dates in a format such as <code>yyyy-mm-dd</code> format (e.g., <code>2019-10-15</code>) and print in a different
-                            format such as <code>MMM dd yyyy</code> e.g., (<code>Oct 15 2019</code>).</li>
+                            format such as <code>MMM d yyyy</code> e.g., (<code>Oct 15 2019</code>).</li>
                           <li><strong>Stretch goal</strong>: Use dates and times in more meaningful ways. e.g., add a command to print deadlines/events occurring on a specific date.</li>
                         </ul>
-                        <panel header="Using dates/times in Java" minimized class="algolia-no-index">
+                        <panel minimized class="algolia-no-index"><template slot="_header"><p>Using dates/times in Java</p></template>
                           <p>A code snippet using the <code>LocalDate</code> class:</p>
-                          <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.time.LocalDate;
-<span class="hljs-keyword">import</span> java.time.format.DateTimeFormatter;
-<span class="hljs-keyword">import</span> java.time.temporal.ChronoUnit;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        <span class="hljs-comment">//create dates from strings</span>
-        LocalDate d1 = LocalDate.parse(<span class="hljs-string">"2019-12-01"</span>);
-        LocalDate d2 = LocalDate.parse(<span class="hljs-string">"2019-12-02"</span>);
-        LocalDate d3 = LocalDate.parse(<span class="hljs-string">"2019-12-02"</span>);
-        
-        <span class="hljs-comment">//compare dates</span>
-        System.out.println(d1.isBefore(d2)); <span class="hljs-comment">// -&gt; true</span>
-        System.out.println(d1.isAfter(d2)); <span class="hljs-comment">// -&gt; false</span>
-        System.out.println(d2.equals(d3)); <span class="hljs-comment">// -&gt; true</span>
-        
-        <span class="hljs-comment">//work with dates</span>
-        System.out.println(d1.getDayOfWeek()); <span class="hljs-comment">// -&gt; SUNDAY</span>
-        System.out.println(d1.getMonth()); <span class="hljs-comment">// -&gt; DECEMBER</span>
-        System.out.println(d1.plus(<span class="hljs-number">1</span>, ChronoUnit.YEARS));  <span class="hljs-comment">// -&gt; 2020-12-01</span>
-        
-        <span class="hljs-comment">// get today's date and print it in a specific format</span>
-        LocalDate d4 = LocalDate.now();
-        System.out.println(d4); <span class="hljs-comment">// -&gt; 2019-10-15</span>
-        System.out.println(d4.format(DateTimeFormatter.ofPattern(<span class="hljs-string">"MMM d yyyy"</span>))); <span class="hljs-comment">// -&gt; Oct 15 2019</span>
-    }
-}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.time.LocalDate;</span><span><span class="hljs-keyword">import</span> java.time.format.DateTimeFormatter;</span><span><span class="hljs-keyword">import</span> java.time.temporal.ChronoUnit;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        <span class="hljs-comment">//create dates from strings</span></span><span>        LocalDate d1 = LocalDate.parse(<span class="hljs-string">"2019-12-01"</span>);</span><span>        LocalDate d2 = LocalDate.parse(<span class="hljs-string">"2019-12-02"</span>);</span><span>        LocalDate d3 = LocalDate.parse(<span class="hljs-string">"2019-12-02"</span>);</span><span>        </span><span>        <span class="hljs-comment">//compare dates</span></span><span>        System.out.println(d1.isBefore(d2)); <span class="hljs-comment">// -&gt; true</span></span><span>        System.out.println(d1.isAfter(d2)); <span class="hljs-comment">// -&gt; false</span></span><span>        System.out.println(d2.equals(d3)); <span class="hljs-comment">// -&gt; true</span></span><span>        </span><span>        <span class="hljs-comment">//work with dates</span></span><span>        System.out.println(d1.getDayOfWeek()); <span class="hljs-comment">// -&gt; SUNDAY</span></span><span>        System.out.println(d1.getMonth()); <span class="hljs-comment">// -&gt; DECEMBER</span></span><span>        System.out.println(d1.plus(<span class="hljs-number">1</span>, ChronoUnit.YEARS));  <span class="hljs-comment">// -&gt; 2020-12-01</span></span><span>        </span><span>        <span class="hljs-comment">// get today's date and print it in a specific format</span></span><span>        LocalDate d4 = LocalDate.now();</span><span>        System.out.println(d4); <span class="hljs-comment">// -&gt; 2019-10-15</span></span><span>        System.out.println(d4.format(DateTimeFormatter.ofPattern(<span class="hljs-string">"MMM d yyyy"</span>))); <span class="hljs-comment">// -&gt; Oct 15 2019</span></span><span>    }</span><span>}</span></code></pre>
                           <ul>
                             <li><a href="https://www.baeldung.com/java-8-date-time-intro">A tutorial from https://www.baeldung.com/</a></li>
                           </ul>
@@ -278,54 +244,11 @@ T | 1 | join sports club
                         </ul>
                         <div class="indented-level2">
                           <p>For example, the code of the main class could look like this:</p>
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Duke</span> </span>{
-
-    <span class="hljs-keyword">private</span> Storage storage;
-    <span class="hljs-keyword">private</span> TaskList tasks;
-    <span class="hljs-keyword">private</span> Ui ui;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Duke</span><span class="hljs-params">(String filePath)</span> </span>{
-        ui = <span class="hljs-keyword">new</span> Ui();
-        storage = <span class="hljs-keyword">new</span> Storage(filePath);
-        <span class="hljs-keyword">try</span> {
-            tasks = <span class="hljs-keyword">new</span> TaskList(storage.load());
-        } <span class="hljs-keyword">catch</span> (DukeException e) {
-            ui.showLoadingError();
-            tasks = <span class="hljs-keyword">new</span> TaskList();
-        }
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">//...</span>
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        <span class="hljs-keyword">new</span> Duke(<span class="hljs-string">"data/tasks.txt"</span>).run();
-    }
-}
-</code></pre>
+                          <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Duke</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-keyword">private</span> Storage storage;</span><span>    <span class="hljs-keyword">private</span> TaskList tasks;</span><span>    <span class="hljs-keyword">private</span> Ui ui;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Duke</span><span class="hljs-params">(String filePath)</span> </span>{</span><span>        ui = <span class="hljs-keyword">new</span> Ui();</span><span>        storage = <span class="hljs-keyword">new</span> Storage(filePath);</span><span>        <span class="hljs-keyword">try</span> {</span><span>            tasks = <span class="hljs-keyword">new</span> TaskList(storage.load());</span><span>        } <span class="hljs-keyword">catch</span> (DukeException e) {</span><span>            ui.showLoadingError();</span><span>            tasks = <span class="hljs-keyword">new</span> TaskList();</span><span>        }</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        <span class="hljs-keyword">new</span> Duke(<span class="hljs-string">"data/tasks.txt"</span>).run();</span><span>    }</span><span>}</span></code></pre>
                         </div>
                         <ul>
                           <li><strong>Stretch Goal</strong>: Consider extracting more classes. e.g., <code>*Command</code> classes (i.e., <code>AddCommand</code>, <code>DeleteCommand</code>, <code>ExitCommand</code> etc.) that inherits from an abstract <code>Command</code>                            class, so that you can write the main logic of the App as follows:
-                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
-    ui.showWelcome();
-    <span class="hljs-keyword">boolean</span> isExit = <span class="hljs-keyword">false</span>;
-    <span class="hljs-keyword">while</span> (!isExit) {
-        <span class="hljs-keyword">try</span> {
-            String fullCommand = ui.readCommand();
-            ui.showLine(); <span class="hljs-comment">// show the divider line ("_______")</span>
-            Command c = Parser.parse(fullCommand);
-            c.execute(tasks, ui, storage);
-            isExit = c.isExit();
-        } <span class="hljs-keyword">catch</span> (DukeException e) {
-            ui.showError(e.getMessage());
-        } <span class="hljs-keyword">finally</span> {
-            ui.showLine();
-        }
-    }
-}
-</code></pre>
-                            <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can get some inspiration from how the code of the <a href="https://github.com/se-edu/addressbook-level2">addressbook-level2</a>                            is organized.</li>
+                            <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{</span><span>    ui.showWelcome();</span><span>    <span class="hljs-keyword">boolean</span> isExit = <span class="hljs-keyword">false</span>;</span><span>    <span class="hljs-keyword">while</span> (!isExit) {</span><span>        <span class="hljs-keyword">try</span> {</span><span>            String fullCommand = ui.readCommand();</span><span>            ui.showLine(); <span class="hljs-comment">// show the divider line ("_______")</span></span><span>            Command c = Parser.parse(fullCommand);</span><span>            c.execute(tasks, ui, storage);</span><span>            isExit = c.isExit();</span><span>        } <span class="hljs-keyword">catch</span> (DukeException e) {</span><span>            ui.showError(e.getMessage());</span><span>        } <span class="hljs-keyword">finally</span> {</span><span>            ui.showLine();</span><span>        }</span><span>    }</span><span>}</span></code></pre><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can get some inspiration from how the code of the <a href="https://github.com/se-edu/addressbook-level2">addressbook-level2</a>                            is organized.</li>
                         </ul>
                       </div>
                     </panel>
@@ -388,7 +311,7 @@ T | 1 | join sports club
                         </ul>
                         <p><strong>Adding JUnit support to your project:</strong> As JUnit is a third-party library, you need to add support to it specifically in your project.</p>
                         <tabs>
-                          <tab header="In Intellij, without Gradle">
+                          <tab><template slot="_header">In Intellij, without Gradle</template>
                             <ol>
                               <li>Add a folder named <code>[project root]\src\test\java\</code> (you may have to do this outside of Intellij)</li>
                               <li>Go to Intellij and add a new module to the project as follows.
@@ -402,27 +325,14 @@ T | 1 | join sports club
                               <li>In the <code>Project</code> panel of Intellij, expand the newly-created <code>test</code> module, right-click on the <code>java</code> folder inside it, and choose <code>Mark Directory as</code> → <code>Test Source Root</code>                                (that will make the folder turn to green color).</li>
                               <li>Now, create a class inside the <code>java</code> folder and type <code>@Test</code> inside it. A code example given below.<br>
                                 <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Note: If you are using packages, create this class in a matching package (to test <code>duke.Duke</code> class, create a <code>duke.DukeTest</code>                                i.e., in <code>src\test\java\duke\DukeTest.java</code>).
-                                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DukeTest</span> </span>{
-    <span class="hljs-meta">@Test</span>
-}
-</code></pre>
+                                <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DukeTest</span> </span>{</span><span>    <span class="hljs-meta">@Test</span></span><span>}</span></code></pre>
                               </li>
                               <li>Note how the <code>@Test</code> turn to red because Intellij (not having JUnit support yet) does not understand it. But it will pop up a hint, asking if you want to add support for JUnit. Select <code>Add JUnit 5.* to classpath</code>.</li>
                               <li>In the dialog that pops up, you can optionally tick the <code>Sources</code>, <code>JavaDocs</code> and <code>Annotations</code> boxes. After that, click <code>OK</code> to add the JUnit 5 to the project dependencies.</li>
                               <li>To check if JUnit integration is working as expected,
                                 <ol>
                                   <li>Add a dummy test method to the class e.g.,
-                                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
-
-<span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.jupiter.api.Assertions.assertEquals;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DukeTest</span> </span>{
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dummyTest</span><span class="hljs-params">()</span></span>{
-        assertEquals(<span class="hljs-number">2</span>, <span class="hljs-number">2</span>);
-    }
-}
-</code></pre>
+                                    <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;</span><span>&#x200B;</span><span><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.jupiter.api.Assertions.assertEquals;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DukeTest</span> </span>{</span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dummyTest</span><span class="hljs-params">()</span></span>{</span><span>        assertEquals(<span class="hljs-number">2</span>, <span class="hljs-number">2</span>);</span><span>    }</span><span>}</span></code></pre>
                                   </li>
                                   <li>Run the test (right-click on the class and choose <code>Run DukeTest</code>.</li>
                                 </ol>
@@ -436,12 +346,12 @@ T | 1 | join sports club
                               </li>
                             </ol>
                           </tab>
-                          <tab header="With Gradle" class="algolia-no-index">
+                          <tab class="algolia-no-index"><template slot="_header">With Gradle</template>
 
 
 
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Refer to the Gradle tutorial at the Duke repo (i.e., the repo you forked from) to find how to use JUnit via Gradle.</p>
-                            <panel header="**Extension `A-Gradle`**" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension <code>A-Gradle</code></strong></p></template>
                               <div>
                                 <div>
                                   <div></div>
@@ -478,12 +388,6 @@ T | 1 | join sports club
                           <p>     <big>↳</big> <strong>Package the App as a JAR file</strong></p>
                         </div>
                         <p>Package the app as an executable JAR file so that it can be distributed easily.</p>
-                        <p>You can assume <strong>the user will run the jar file in the following way only</strong>:</p>
-                        <ul>
-                          <li>Copy the jar file into an empty folder</li>
-                          <li>Open a command window in that folder</li>
-                          <li>Run the command <code>java -jar {filename}.jar</code> e.g., <code>java -jar Duke.jar</code> (i.e., run the command in the same folder as the jar file)</li>
-                        </ul>
                         <p><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> Do not commit the JAR file created. Instead, you can make the JAR file available in the following manner.</p>
                         <ul>
                           <li>Go to your fork on GitHub and <a href="https://help.github.com/en/articles/creating-releases">create a new <em>release</em></a>.</li>
@@ -496,7 +400,7 @@ T | 1 | join sports club
                         </ul>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Gradle for your project, refer to the Gradle tutorial at the Duke repo (i.e., the repo you forked from)
                           to find how to create a jar file using Gradle.</p>
-                        <panel header="**Extension `A-Gradle`**" class="algolia-no-index">
+                        <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension <code>A-Gradle</code></strong></p></template>
                           <div>
                             <div>
                               <div></div>
@@ -585,13 +489,7 @@ T | 1 | join sports club
                           <br>
                           <br></p>
                         <p>Example:</p>
-                        <pre><code class="hljs">find book
-    ____________________________________________________________
-     Here are the matching tasks in your list:
-     1.[T][✓] read book
-     2.[D][✓] return book (by: June 6th)
-    ____________________________________________________________
-</code></pre>
+                        <pre><code class="hljs"><span>find book</span><span>    ____________________________________________________________</span><span>     Here are the matching tasks in your list:</span><span>     1.[T][✓] read book</span><span>     2.[D][✓] return book (by: June 6th)</span><span>    ____________________________________________________________</span></code></pre>
                       </div>
                     </panel>
                   </div>
@@ -616,7 +514,7 @@ T | 1 | join sports club
                   <li>After forming teams, <strong>set up a weekly project meeting time/venue (and communication channels) with your team members</strong>:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-teams._include_.html#teamCommunication" header="Admin <md>:glyphicon-log-in:</md> **Teams → Communication**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="teamCommunication"></panel>
+                  <panel type src="/website/admin/tp-teams._include_.html#teamCommunication" class="embedding algolia-no-index" minimized fragment="teamCommunication"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Teams → Communication</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -653,7 +551,7 @@ T | 1 | join sports club
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

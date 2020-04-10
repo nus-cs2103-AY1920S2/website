@@ -5,18 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 2 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -29,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -125,8 +125,9 @@
                 <div>
                   <box>
                     <p>
-                      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> We discourage you from doing project tasks allocated to future weeks. Reasons: In order to help you gain
-                      <tooltip content="the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time"><em>fluency</em></tooltip> (and also to better simulate real projects), <strong>we want the project work to be <tooltip content="done at multiple times with time gaps in between"><em>spaced</em></tooltip> and spread over a longer period</strong>,
+                      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> We discourage you from doing project tasks allocated to future weeks. Reasons: In order to help you gain <span data-mb-component-type="tooltip"
+                        v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time</span><em>fluency</em></span>
+                      (and also to better simulate real projects), <strong>we want the project work to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">done at multiple times with time gaps in between</span><em>spaced</em></span> and spread over a longer period</strong>,
                       rather than to be done as a short burst. Reminder: as per iP grading criteria, <em>some</em> increments need to to be done in each week for you to get full marks.
                     </p>
                   </box>
@@ -138,11 +139,11 @@
                   <li><strong>Read the following two sections</strong>, if you haven't done so already:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/ip-overview._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **iP - Overview**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
+                  <panel type src="/website/admin/ip-overview._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>iP - Overview</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/ip-grading._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **iP - Grading**  <md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
+                  <panel type src="/website/admin/ip-grading._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>iP - Grading</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -153,19 +154,19 @@
                   <li><strong>Ensure you have followed the <span class="pr-1 pl-1" style="color:purple; border: 0.5px solid lightgrey"><span aria-hidden="true" class="fas fa-hard-hat"></span> Preparation</span> sections of the following module tools:</strong></li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/programmingLanguages._include_.html#main" header="Admin <md>:glyphicon-log-in:</md> **Programming Language**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="main"></panel>
+                  <panel type src="/website/admin/programmingLanguages._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Programming Language</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#rcs" header="Admin <md>:glyphicon-log-in:</md> **Tools → Git**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="rcs"></panel>
+                  <panel type src="/website/admin/tools._include_.html#rcs" class="embedding algolia-no-index" minimized fragment="rcs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools → Git</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#github" header="Admin <md>:glyphicon-log-in:</md> Tools → **GitHub**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="github"></panel>
+                  <panel type src="/website/admin/tools._include_.html#github" class="embedding algolia-no-index" minimized fragment="github"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → <strong>GitHub</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#ide" header="Admin <md>:glyphicon-log-in:</md> Tools → **Intellij IDEA**  <md>:glyphicon-star:</md><md>:glyphicon-star:</md>" class="embedding algolia-no-index" minimized fragment="ide"></panel>
+                  <panel type src="/website/admin/tools._include_.html#ide" class="embedding algolia-no-index" minimized fragment="ide"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → <strong>Intellij IDEA</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
                 </div>
                 <p></p>
               </div>
@@ -190,8 +191,8 @@
               <div>
                 <div>
                   <ul>
-                    <li>Implement the following
-                      <tooltip content="in this context, an _increment_ is a Duke _level_ or a Duke _extension_">increments</tooltip> <mark>in the given order</mark>.</li>
+                    <li>Implement the following <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">in this context, an <em>increment</em> is a Duke <em>level</em> or a Duke <em>extension</em></span>increments</span>
+                      <mark>in the given order</mark>.</li>
                   </ul>
                 </div>
                 <div>
@@ -223,30 +224,10 @@
                           </span>
                         </p>
                         <h3 id="level-1-greet-echo-exit">Level 1. Greet, Echo, Exit<a class="fa fa-anchor" href="#level-1-greet-echo-exit"></a></h3>
-                        <p>Implement a <em>skeletal</em> version of Duke that starts by greeting the user, simply echos commands entered by the user, and exits when the user types <code>bye</code>.
+                        <p>In this initial <em>skeletal</em> version of Duke, it starts by greeting the user, simply echos commands entered by the user, and exits when the user types <code>bye</code>.
                           <br> Example:
                         </p>
-                        <pre><code class="hljs">    ____________________________________________________________
-     Hello! I'm Duke
-     What can I do for you?
-    ____________________________________________________________
-
-list
-    ____________________________________________________________
-     list
-    ____________________________________________________________
-
-blah
-    ____________________________________________________________
-     blah
-    ____________________________________________________________
-
-bye
-    ____________________________________________________________
-     Bye. Hope to see you again soon!
-    ____________________________________________________________
-
-</code></pre>
+                        <pre><code class="hljs"><span>    ____________________________________________________________</span><span>     Hello! I'm Duke</span><span>     What can I do for you?</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>list</span><span>    ____________________________________________________________</span><span>     list</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>blah</span><span>    ____________________________________________________________</span><span>     blah</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>bye</span><span>    ____________________________________________________________</span><span>     Bye. Hope to see you again soon!</span><span>    ____________________________________________________________</span><span>&#x200B;</span></code></pre>
                         <ul>
                           <li>The indentation and horizontal lines are optional.</li>
                         </ul>
@@ -274,32 +255,7 @@ bye
                         <h3 id="level-2-add-list">Level 2. Add, List<a class="fa fa-anchor" href="#level-2-add-list"></a></h3>
                         <p>Add the ability to store whatever text entered by the user and display them back to the user when requested.</p>
                         <p>Example:</p>
-                        <pre><code class="hljs">    ____________________________________________________________
-     Hello! I'm Duke
-     What can I do for you?
-    ____________________________________________________________
-
-read book
-    ____________________________________________________________
-     added: read book
-    ____________________________________________________________
-
-return book
-    ____________________________________________________________
-     added: return book
-    ____________________________________________________________
-
-list
-    ____________________________________________________________
-     1. read book
-     2. return book
-    ____________________________________________________________
-bye
-    ____________________________________________________________
-     Bye. Hope to see you again soon!
-    ____________________________________________________________
-
-</code></pre>
+                        <pre><code class="hljs"><span>    ____________________________________________________________</span><span>     Hello! I'm Duke</span><span>     What can I do for you?</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>read book</span><span>    ____________________________________________________________</span><span>     added: read book</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>return book</span><span>    ____________________________________________________________</span><span>     added: return book</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>list</span><span>    ____________________________________________________________</span><span>     1. read book</span><span>     2. return book</span><span>    ____________________________________________________________</span><span>bye</span><span>    ____________________________________________________________</span><span>     Bye. Hope to see you again soon!</span><span>    ____________________________________________________________</span><span>&#x200B;</span></code></pre>
                         <ul>
                           <li>There is no need to save the data to the hard disk.</li>
                           <li>Assume there will be no more than 100 tasks. If you wish, you may use a fixed size array (e.g., <code>String[100]</code>) to store the items.</li>
@@ -323,52 +279,23 @@ bye
                         </p>
                         <h3 id="level-3-mark-as-done">Level 3. Mark as Done<a class="fa fa-anchor" href="#level-3-mark-as-done"></a></h3>
                         <p>Add the ability to mark tasks as <em>done</em>.<br><br></p>
-                        <pre><code class="hljs">list
-    ____________________________________________________________
-     Here are the tasks in your list:
-     1.[✓] read book
-     2.[✗] return book
-     3.[✗] buy bread
-    ____________________________________________________________
-
-done 2
-    ____________________________________________________________
-     Nice! I've marked this task as done: 
-       [✓] return book
-    ____________________________________________________________
-</code></pre>
+                        <pre><code class="hljs"><span>list</span><span>    ____________________________________________________________</span><span>     Here are the tasks in your list:</span><span>     1.[✓] read book</span><span>     2.[✗] return book</span><span>     3.[✗] buy bread</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>done 2</span><span>    ____________________________________________________________</span><span>     Nice! I've marked this task as done: </span><span>       [✓] return book</span><span>    ____________________________________________________________</span></code></pre>
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
-                            <panel header="**Extension: `A-Classes`**" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Classes</code></strong></p></template>
                               <div>
                                 <div>
                                   <div></div>
                                   <h3 id="a-classes"><span class="badge badge-pill badge-primary">A-Classes</span><a class="fa fa-anchor" href="#a-classes"></a></h3>
                                   <p>     <big>↳</big> <strong>Use a class to represent tasks</strong></p>
                                 </div>
-                                <p>While it is possible to represent a task list as a multi-dimensional array containing
-                                  <tooltip content="`String`, `int`, `boolean` etc.">primitive values</tooltip>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
-                                <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
-    <span class="hljs-keyword">protected</span> String description;
-    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String description)</span> </span>{
-        <span class="hljs-keyword">this</span>.description = description;
-        <span class="hljs-keyword">this</span>.isDone = <span class="hljs-keyword">false</span>;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getStatusIcon</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> (isDone ? <span class="hljs-string">"\u2713"</span> : <span class="hljs-string">"\u2718"</span>); <span class="hljs-comment">//return tick or X symbols</span>
-    }
-
-    <span class="hljs-comment">//...</span>
-}
-</code></pre>
-                                  <pre><code class="hljs java">Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);
-t.markAsDone()
-</code></pre>
+                                <p>While it is possible to represent a task list as a multi-dimensional array containing <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><code>String</code>, <code>int</code>, <code>boolean</code> etc.</span>primitive
+                                  values
+                                  </span>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
+                                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
+                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{</span><span>    <span class="hljs-keyword">protected</span> String description;</span><span>    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String description)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.description = description;</span><span>        <span class="hljs-keyword">this</span>.isDone = <span class="hljs-keyword">false</span>;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getStatusIcon</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">return</span> (isDone ? <span class="hljs-string">"\u2713"</span> : <span class="hljs-string">"\u2718"</span>); <span class="hljs-comment">//return tick or X symbols</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-comment">//...</span></span><span>}</span></code></pre>
+                                  <pre><code class="hljs java"><span>Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);</span><span>t.markAsDone()</span></code></pre>
                                 </panel>
                               </div>
                             </panel>
@@ -401,51 +328,14 @@ t.markAsDone()
                           <li><strong>Events</strong>: tasks that start at a specific time and ends at a specific time <span class="dimmed">e.g., <em>team project meeting on 2/10/2019 2-4pm</em></span></li>
                         </ol>
                         <p>Example:</p>
-                        <pre><code class="hljs">todo borrow book
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [T][✗] borrow book
-     Now you have 5 tasks in the list.
-    ____________________________________________________________
-
-list
-    ____________________________________________________________
-     Here are the tasks in your list:
-     1.[T][✓] read book
-     2.[D][✗] return book (by: June 6th)
-     3.[E][✗] project meeting (at: Aug 6th 2-4pm)
-     4.[T][✓] join sports club
-     5.[T][✗] borrow book
-    ____________________________________________________________
-
-deadline return book /by Sunday
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [D][✗] return book (by: Sunday)
-     Now you have 6 tasks in the list.
-    ____________________________________________________________
-
-event project meeting /at Mon 2-4pm
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [E][✗] project meeting (at: Mon 2-4pm)
-     Now you have 7 tasks in the list.
-    ____________________________________________________________
-</code></pre>
+                        <pre><code class="hljs"><span>todo borrow book</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [T][✗] borrow book</span><span>     Now you have 5 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>list</span><span>    ____________________________________________________________</span><span>     Here are the tasks in your list:</span><span>     1.[T][✓] read book</span><span>     2.[D][✗] return book (by: June 6th)</span><span>     3.[E][✗] project meeting (at: Aug 6th 2-4pm)</span><span>     4.[T][✓] join sports club</span><span>     5.[T][✗] borrow book</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>deadline return book /by Sunday</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [D][✗] return book (by: Sunday)</span><span>     Now you have 6 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>event project meeting /at Mon 2-4pm</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [E][✗] project meeting (at: Mon 2-4pm)</span><span>     Now you have 7 tasks in the list.</span><span>    ____________________________________________________________</span></code></pre>
                         <p>At this point, dates/times can be treated as strings; there is no need to convert them to actual dates/times.</p>
                         <p>Example:</p>
-                        <pre><code class="hljs">
-deadline do homework /by no idea :-p
-    ____________________________________________________________
-     Got it. I've added this task: 
-       [D][✗] do homework (by: no idea :-p)
-     Now you have 6 tasks in the list.
-    ____________________________________________________________
-</code></pre>
+                        <pre><code class="hljs"><span>&#x200B;</span><span>deadline do homework /by no idea :-p</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [D][✗] do homework (by: no idea :-p)</span><span>     Now you have 6 tasks in the list.</span><span>    ____________________________________________________________</span></code></pre>
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
-                            <panel header="**Extension: `A-Inheritance`**" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Inheritance</code></strong></p></template>
                               <div>
                                 <div>
                                   <div></div>
@@ -454,25 +344,9 @@ deadline do homework /by no idea :-p
                                 </div>
                                 <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
                                 <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
-                                <panel type="seamless" header="Partial solution" minimized class="algolia-no-index">
-                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{
-
-    <span class="hljs-keyword">protected</span> String by;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Deadline</span><span class="hljs-params">(String description, String by)</span> </span>{
-        <span class="hljs-keyword">super</span>(description);
-        <span class="hljs-keyword">this</span>.by = by;
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"[D]"</span> + <span class="hljs-keyword">super</span>.toString() + <span class="hljs-string">" (by: "</span> + by + <span class="hljs-string">")"</span>;
-    }
-}
-</code></pre>
-                                  <pre><code class="hljs java">Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];
-task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Deadline(<span class="hljs-string">"return book"</span>, <span class="hljs-string">"Monday"</span>);
-</code></pre>
+                                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
+                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-keyword">protected</span> String by;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Deadline</span><span class="hljs-params">(String description, String by)</span> </span>{</span><span>        <span class="hljs-keyword">super</span>(description);</span><span>        <span class="hljs-keyword">this</span>.by = by;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"[D]"</span> + <span class="hljs-keyword">super</span>.toString() + <span class="hljs-string">" (by: "</span> + by + <span class="hljs-string">")"</span>;</span><span>    }</span><span>}</span></code></pre>
+                                  <pre><code class="hljs java"><span>Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];</span><span>task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Deadline(<span class="hljs-string">"return book"</span>, <span class="hljs-string">"Monday"</span>);</span></code></pre>
                                 </panel>
                               </div>
                             </panel>
@@ -521,20 +395,11 @@ task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span>
                           <br>
                           <br></p>
                         <p>Example:</p>
-                        <pre><code class="hljs">todo
-    ____________________________________________________________
-     ☹ OOPS!!! The description of a todo cannot be empty.
-    ____________________________________________________________
-
-blah
-    ____________________________________________________________
-     ☹ OOPS!!! I'm sorry, but I don't know what that means :-(
-    ____________________________________________________________
-</code></pre>
+                        <pre><code class="hljs"><span>todo</span><span>    ____________________________________________________________</span><span>     ☹ OOPS!!! The description of a todo cannot be empty.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>blah</span><span>    ____________________________________________________________</span><span>     ☹ OOPS!!! I'm sorry, but I don't know what that means :-(</span><span>    ____________________________________________________________</span></code></pre>
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
-                            <panel header="**Extension: `A-Exceptions`**" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Exceptions</code></strong></p></template>
                               <div>
                                 <div>
                                   <div></div>
@@ -572,27 +437,11 @@ blah
                           <br>
                           <br></p>
                         <p>Example:</p>
-                        <pre><code class="hljs">list
-    ____________________________________________________________
-     Here are the tasks in your list:
-     1.[T][✓] read book
-     2.[D][✓] return book (by: June 6th)
-     3.[E][✗] project meeting (at: Aug 6th 2-4pm)
-     4.[T][✓] join sports club
-     5.[T][✗] borrow book
-    ____________________________________________________________
-
-delete 3
-    ____________________________________________________________
-     Noted. I've removed this task: 
-       [E][✗] project meeting (at: Aug 6th 2-4pm)
-     Now you have 4 tasks in the list.
-    ____________________________________________________________
-</code></pre>
+                        <pre><code class="hljs"><span>list</span><span>    ____________________________________________________________</span><span>     Here are the tasks in your list:</span><span>     1.[T][✓] read book</span><span>     2.[D][✓] return book (by: June 6th)</span><span>     3.[E][✗] project meeting (at: Aug 6th 2-4pm)</span><span>     4.[T][✓] join sports club</span><span>     5.[T][✗] borrow book</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>delete 3</span><span>    ____________________________________________________________</span><span>     Noted. I've removed this task: </span><span>       [E][✗] project meeting (at: Aug 6th 2-4pm)</span><span>     Now you have 4 tasks in the list.</span><span>    ____________________________________________________________</span></code></pre>
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
-                            <panel header="**Extension: `A-Collections`**" class="algolia-no-index">
+                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Collections</code></strong></p></template>
                               <div>
                                 <div>
                                   <div></div>
@@ -657,7 +506,7 @@ delete 3
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

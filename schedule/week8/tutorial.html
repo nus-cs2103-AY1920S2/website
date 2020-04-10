@@ -5,18 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 8 - Tutorial</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
   <link rel="stylesheet" href="/website/css/schedule.css">
@@ -29,7 +29,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
-        <dropdown text="Schedule" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Schedule</template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 13] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 20] </span></a></li>
@@ -48,7 +48,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
-        <dropdown text="Links" class="nav-link temp-dropdown algolia-no-index">
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header">Links</template>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-cs2103-AY1920S2/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
@@ -107,74 +107,19 @@
             </ul>
             <div class="indented-level2">
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md> Draw a Class Diagram for the code (`StokItem`, `Inventory`, `Review` etc.)" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Class Diagram for the code (<code>StokItem</code>, <code>Inventory</code>, <code>Review</code> etc.)</p></template>
                   <question>
                     <p>Consider the code below:</p>
                     <div class="row">
                       <div class="col-sm-6">
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;
-}
-</code></pre>
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>
-         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;
-}
-</code></pre>
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{
-    <span class="hljs-keyword">private</span> Review review;
-    <span class="hljs-keyword">private</span> String name;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(
-        String name, Rating rating)</span></span>{
-
-        <span class="hljs-keyword">this</span>.name = name;
-        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">//...</span>
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">//...</span>
-    }
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;</span><span>}</span></code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span></span><span><span class="hljs-class">         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;</span><span>}</span></code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{</span><span>    <span class="hljs-keyword">private</span> Review review;</span><span>    <span class="hljs-keyword">private</span> String name;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(</span></span></span><span><span class="hljs-function"><span class="hljs-params">        String name, Rating rating)</span></span>{</span><span>&#x200B;</span><span>        <span class="hljs-keyword">this</span>.name = name;</span><span>        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>}</span></code></pre>
                       </div>
                       <div class="col-sm-6">
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {
-    GOOD, OK, POOR
-}
-</code></pre>
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{
-        <span class="hljs-keyword">this</span>.rating = rating;
-    }
-}
-</code></pre>
-                        <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{
-    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-keyword">return</span> items.size();
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span></span>{
-        <span class="hljs-comment">// ...</span>
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Item s)</span> </span>{
-        items.add(s);
-    }
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {</span><span>    GOOD, OK, POOR</span><span>}</span></code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.rating = rating;</span><span>    }</span><span>}</span></code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.List;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{</span><span>    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span></span>{</span><span>        <span class="hljs-keyword">return</span> items.size();</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span></span>{</span><span>        <span class="hljs-comment">// ...</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Item s)</span> </span>{</span><span>        items.add(s);</span><span>    }</span><span>}</span></code></pre>
                       </div>
                     </div>
                     <p>(a) Draw a class diagram to represent the code. Show all attributes, methods, associations, navigabilities, visibilities, known multiplicities, and association roles. Show associations as lines.<br> (b) Draw an object diagram to represent
@@ -198,44 +143,19 @@
             </ul>
             <div class="indented-level2">
               <div>
-                <panel header="<md>:glyphicon-question-sign:</md> Draw a Sequence Diagram for the code (`PersonList`, `Person`, `Tag`)" class="algolia-no-index">
+                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Sequence Diagram for the code (<code>PersonList</code>, <code>Person</code>, <code>Tag</code>)</p></template>
                   <question>
                     <p>Consider the code below:</p>
                     <div class="row">
                       <div class="col-sm-7">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
-    Tag tag;
-    String name;
-
-    Person(String personName, String tagName){
-        name = personName;
-        tag = <span class="hljs-keyword">new</span> Tag(tagName);
-    }
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{</span><span>    Tag tag;</span><span>    String name;</span><span>&#x200B;</span><span>    Person(String personName, String tagName){</span><span>        name = personName;</span><span>        tag = <span class="hljs-keyword">new</span> Tag(tagName);</span><span>    }</span><span>}</span></code></pre>
                       </div>
                       <div class="col-sm-5">
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
-    Tag(String value){
-        <span class="hljs-comment">//...</span>
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-}
-</code></pre>
+                        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{</span><span>    Tag(String value){</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>}</span></code></pre>
                       </div>
                     </div>
                     <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                    <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
-<span class="hljs-keyword">while</span> (hasRoom){
-    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
-    personList.addPerson(p);
-}
-</code></pre>
+                    <pre><code class="hljs java"><span>PersonList personList = <span class="hljs-keyword">new</span> PersonList();</span><span><span class="hljs-keyword">while</span> (hasRoom){</span><span>    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);</span><span>    personList.addPerson(p);</span><span>}</span></code></pre>
                   </question>
                 </panel>
               </div>
@@ -243,16 +163,7 @@
             <p></p>
             <ul>
               <li><strong>How would you update the diagram</strong> if the <code>PersonList</code> class was updated as follows?
-                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{
-        add(p);
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Person p)</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-}
-</code></pre>
+                <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{</span><span>        add(p);</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Person p)</span></span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>}</span></code></pre>
               </li>
             </ul>
           </div>
@@ -274,7 +185,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.9.1</a> at Mon, 06 Apr 2020 15:06:58 GMT</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Fri, Apr 10, 2020, 3:02:05 AM UTC</small></div>
     </footer>
   </div>
 </body>

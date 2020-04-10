@@ -5,20 +5,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.13.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Object Oriented Programming: More</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
   <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
-
-
-
   <link rel="icon" href="/website/favicon.ico">
 </head>
 
@@ -39,7 +37,7 @@
             <div id="main">
               <div>
                 <div>
-                  <panel type="seamless" expanded>
+                  <panel type="seamless" expanded id="miscellaneous">
                     <span slot="header" class="card-title"><div><h4 id="miscellaneous"><span>Miscellaneous</span><a class="fa fa-anchor" href="#miscellaneous"></a></h4>
                 </div>
                 </span>
@@ -68,7 +66,7 @@
                 </panel>
               </div>
               <div>
-                <panel type="seamless" expanded>
+                <panel type="seamless" expanded id="review">
                   <span slot="header" class="card-title"><div><h4 id="review"><span>Review</span><a class="fa fa-anchor" href="#review"></a></h4>
               </div>
               </span>
@@ -86,12 +84,12 @@
                 </div>
                 <div>
                   <div>
-                    <panel header="<md>:fas-dumbbell:</md> Exercises" expandable class="algolia-no-index">
+                    <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: In the context of OOP, what is the relationship between abstraction and encapsulation?" class="algolia-no-index">
-                          <panel header="%%Prerequisites%%" expandable expanded>
-                            <panel src="/website/book/oop/objects/encapsulation/unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Encapsulation" class="algolia-no-index"></panel>
-                            <panel src="/website/book/oop/objects/abstraction/unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Abstraction" class="algolia-no-index"></panel>
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> In the context of OOP, what is the relationship between abstraction and encapsulation?</p></template>
+                          <panel expandable expanded><template slot="_header"><p><span class="dimmed">Prerequisites</span></p></template>
+                            <panel src="/website/book/oop/objects/encapsulation/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Objects: Encapsulation</p></template></panel>
+                            <panel src="/website/book/oop/objects/abstraction/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Objects: Abstraction</p></template></panel>
                           </panel>
                           <p></p>
                           <question>
@@ -114,13 +112,13 @@
                         </panel>
                       </div>
                       <div>
-                        <panel header="<md>:glyphicon-question-sign:</md>:glyphicon-ok-sign: Which of these do not belong to four main OO principles?" class="algolia-no-index">
-                          <panel header="%%Prerequisites%%" expandable expanded>
-                            <panel src="/website/book/oop/objects/abstraction/unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Abstraction" class="algolia-no-index"></panel>
-                            <panel src="/website/book/oop/objects/encapsulation/unit-inElsewhere-asFlat._include_.html" header="OOP: Objects: Encapsulation" class="algolia-no-index"></panel>
-                            <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" header="OOP: Inheritance: Basic" class="algolia-no-index"></panel>
-                            <panel src="/website/book/oop/inheritance/substitutability/unit-inElsewhere-asFlat._include_.html" header="OOP: Inheritance: Substitutability" class="algolia-no-index"></panel>
-                            <panel src="/website/book/oop/polymorphism/what/unit-inElsewhere-asFlat._include_.html" header="OOP: Polymorphism: Introduction" class="algolia-no-index"></panel>
+                        <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which of these do not belong to four main OO principles?</p></template>
+                          <panel expandable expanded><template slot="_header"><p><span class="dimmed">Prerequisites</span></p></template>
+                            <panel src="/website/book/oop/objects/abstraction/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Objects: Abstraction</p></template></panel>
+                            <panel src="/website/book/oop/objects/encapsulation/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Objects: Encapsulation</p></template></panel>
+                            <panel src="/website/book/oop/inheritance/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Inheritance: Basic</p></template></panel>
+                            <panel src="/website/book/oop/inheritance/substitutability/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Inheritance: Substitutability</p></template></panel>
+                            <panel src="/website/book/oop/polymorphism/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p>OOP: Polymorphism: Introduction</p></template></panel>
                           </panel>
                           <p></p>
                           <question>
