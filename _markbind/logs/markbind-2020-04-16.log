@@ -49,3 +49,147 @@
 2020-04-16T02:23:05.462Z - info: Site data built
 2020-04-16T02:26:12.416Z - info: Website generation started at 10:26:02 AM
 2020-04-16T02:26:20.740Z - info: Building assets...
+2020-04-16T02:26:25.644Z - info: Assets built
+2020-04-16T02:26:25.645Z - info: Generating pages...
+2020-04-16T02:30:47.474Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.475Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.476Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.476Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.477Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.477Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.553Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.554Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.554Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.555Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.555Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.556Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.558Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.558Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.559Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.559Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:47.559Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T02:30:54.439Z - debug:  
+2020-04-16T02:30:54.439Z - debug:  
+2020-04-16T02:30:57.550Z - debug:  
+2020-04-16T02:30:58.085Z - debug:  
+2020-04-16T02:31:05.002Z - debug:  
+2020-04-16T02:31:05.002Z - debug:  
+2020-04-16T02:31:09.583Z - info: Pages built
+2020-04-16T02:31:58.540Z - info: Website generation complete! Total build time: 356.477s
+2020-04-16T02:31:58.541Z - info: Build success!
+2020-04-16T02:31:58.547Z - info: Site data built
+2020-04-16T02:33:07.357Z - info: Deployed!
+2020-04-16T08:51:31.630Z - info: Website generation (lazy) started at 4:51:25 PM
+2020-04-16T08:51:36.385Z - info: Building assets...
+2020-04-16T08:51:41.004Z - info: Assets built
+2020-04-16T08:51:41.006Z - info: Generating landing page...
+2020-04-16T08:51:41.144Z - warn:  Error: admin/tp-deliverables-pe.mbdf is not specified in the site configuration.
+    at Site.generateLandingPage (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:995:29)
+    at Promise (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:642:12)
+    at Promise._execute (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\debuggability.js:384:9)
+    at Promise._resolveFromExecutor (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:518:18)
+    at new Promise (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:103:10)
+    at Site.lazyBuildSourceFiles (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:640:12)
+    at readSiteConfig.then.then.then.then.then.then.then (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:581:46)
+    at tryCatcher (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+2020-04-16T08:51:42.263Z - warn:  Error: admin/tp-deliverables-pe.mbdf is not specified in the site configuration.
+    at Site.generateLandingPage (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:995:29)
+    at Promise (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:642:12)
+    at Promise._execute (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\debuggability.js:384:9)
+    at Promise._resolveFromExecutor (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:518:18)
+    at new Promise (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:103:10)
+    at Site.lazyBuildSourceFiles (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:640:12)
+    at readSiteConfig.then.then.then.then.then.then.then (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\Site.js:581:46)
+    at tryCatcher (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\bluebird\js\release\async.js:15:14)
+2020-04-16T08:51:42.267Z - error: admin/tp-deliverables-pe.mbdf is not specified in the site configuration.
+2020-04-16T08:52:11.719Z - info: Website generation started at 4:52:11 PM
+2020-04-16T08:52:15.144Z - info: Building assets...
+2020-04-16T08:52:17.546Z - info: Assets built
+2020-04-16T08:52:17.547Z - info: Generating pages...
+2020-04-16T08:54:47.659Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.716Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.718Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.718Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.719Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.721Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.722Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.723Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.724Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.724Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.725Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.725Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.727Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.727Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.728Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.728Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:47.804Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T08:54:57.105Z - debug:  
+2020-04-16T08:54:57.105Z - debug:  
+2020-04-16T08:54:58.427Z - debug:  
+2020-04-16T08:54:58.427Z - debug:  
+2020-04-16T08:55:02.804Z - debug:  
+2020-04-16T08:55:02.805Z - debug:  
+2020-04-16T08:55:05.127Z - info: Pages built
+2020-04-16T08:55:34.566Z - info: Website generation complete! Total build time: 202.855s
+2020-04-16T08:55:35.436Z - info: Serving "D:\Teaching\CS2103\AY1920S2\website\_site" at http://127.0.0.1:8080
+2020-04-16T08:55:35.436Z - info: Press CTRL+C to stop ...
+2020-04-16T08:55:35.535Z - info: Site data built
+2020-04-16T09:08:39.725Z - info: [5:08:39 PM] Reload for file change: D:\Teaching\CS2103\AY1920S2\website\admin\tp-deliverables-pe.mbdf
+2020-04-16T09:08:40.728Z - info: Rebuilding affected source files
+2020-04-16T09:08:40.732Z - info: Rebuilding 8 pages
+2020-04-16T09:08:48.216Z - debug:  
+2020-04-16T09:08:49.383Z - info: Pages rebuilt
+2020-04-16T09:08:49.383Z - info: Website regeneration complete! Total build time: 8.655s
+2020-04-16T09:08:49.397Z - info: Site data built
+2020-04-16T09:17:59.813Z - info: Website generation started at 5:17:54 PM
+2020-04-16T09:18:03.341Z - info: Building assets...
