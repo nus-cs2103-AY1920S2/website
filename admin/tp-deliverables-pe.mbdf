@@ -35,6 +35,15 @@
 
 #### <span class="badge badge-success">PE</span> <span class="text-success">Phase 1: Bug Reporting</span>
 
+<box type="important" light icon=":fas-exclamation-circle:" icon-size="2x">
+
+**PE Phase 1 is an 'exam', to be done under exam conditions:**
+* You are not allowed to communicate with others (except the invigilators).
+* You are not allowed to share your work with others.
+* Violators will be reported to the university for disciplinary action.
+
+</box>
+
 * **When, where**: Week 13 lecture
 
 ##### <span class="badge badge-success">PE Phase 1 - Part I</span> <span class="text-success">Product Testing [60 minutes]</span>
@@ -45,7 +54,7 @@
 <include src="tp-deliverables-ped.mbdf#tp-deliverables-pe-testing-intructions" />
 </div>
 
-##### <span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [20 minutes]</span>
+##### <span class="badge badge-success">PE Phase 1 - Part II</span> <span class="text-success">Evaluating Documents [30 minutes]</span>
 
 * **This slot is for reporting documentation bugs only**. You may report bugs related to UG and DG.
 * **For each bug reported, cite evidence and justify.** For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.
