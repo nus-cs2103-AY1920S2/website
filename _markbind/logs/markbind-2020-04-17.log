@@ -1,0 +1,69 @@
+2020-04-16T23:22:37.116Z - info: Website generation started at 7:22:31 AM
+2020-04-16T23:22:40.854Z - info: Building assets...
+2020-04-16T23:22:43.508Z - info: Assets built
+2020-04-16T23:22:43.509Z - info: Generating pages...
+2020-04-16T23:25:03.441Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.442Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.442Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.442Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.443Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.443Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.443Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.443Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.444Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.444Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.444Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.444Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.445Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.445Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.482Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.482Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:03.578Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:25:10.984Z - debug:  
+2020-04-16T23:25:10.985Z - debug:  
+2020-04-16T23:25:10.985Z - debug:  
+2020-04-16T23:25:10.985Z - debug:  
+2020-04-16T23:25:15.935Z - debug:  
+2020-04-16T23:25:15.935Z - debug:  
+2020-04-16T23:25:17.963Z - info: Pages built
+2020-04-16T23:25:43.126Z - info: Website generation complete! Total build time: 191.201s
+2020-04-16T23:25:43.674Z - info: Serving "D:\Teaching\CS2103\AY1920S2\website\_site" at http://127.0.0.1:8080
+2020-04-16T23:25:43.675Z - info: Press CTRL+C to stop ...
+2020-04-16T23:25:43.739Z - info: Site data built
+2020-04-16T23:26:40.103Z - info: [7:26:40 AM] Reload for file change: D:\Teaching\CS2103\AY1920S2\website\admin\exams.md
+2020-04-16T23:26:41.109Z - info: Rebuilding affected source files
+2020-04-16T23:26:41.114Z - info: Rebuilding 4 pages
+2020-04-16T23:26:43.736Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:26:46.963Z - info: Pages rebuilt
+2020-04-16T23:26:46.969Z - info: Website regeneration complete! Total build time: 5.858s
+2020-04-16T23:26:46.982Z - debug:  
+2020-04-16T23:26:47.045Z - info: Site data built
+2020-04-16T23:26:53.455Z - info: [7:26:53 AM] Reload for file change: D:\Teaching\CS2103\AY1920S2\website\admin\exams.md
+2020-04-16T23:26:54.459Z - info: Rebuilding affected source files
+2020-04-16T23:26:54.462Z - info: Rebuilding 4 pages
+2020-04-16T23:26:55.693Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-16T23:26:58.302Z - info: Pages rebuilt
+2020-04-16T23:26:58.302Z - info: Website regeneration complete! Total build time: 3.842s
+2020-04-16T23:26:58.308Z - debug:  
+2020-04-16T23:26:58.333Z - info: Site data built
+2020-04-16T23:27:44.281Z - info: Website generation started at 7:27:38 AM
+2020-04-16T23:27:49.060Z - info: Building assets...
