@@ -116,3 +116,130 @@
 2020-04-16T23:32:06.458Z - info: Deployed!
 2020-04-17T08:18:19.394Z - info: Website generation started at 4:18:06 PM
 2020-04-17T08:18:27.743Z - info: Building assets...
+2020-04-17T08:18:33.993Z - info: Assets built
+2020-04-17T08:18:33.995Z - info: Generating pages...
+2020-04-17T08:23:36.034Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.035Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.037Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.037Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.038Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.038Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.039Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.039Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.085Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.086Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.086Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.086Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.087Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.089Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.089Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.090Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:36.188Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T08:23:37.990Z - debug:  
+2020-04-17T08:23:47.619Z - debug:  
+2020-04-17T08:23:47.620Z - debug:  
+2020-04-17T08:23:47.620Z - debug:  
+2020-04-17T08:23:55.629Z - debug:  
+2020-04-17T08:23:55.629Z - debug:  
+2020-04-17T08:23:59.745Z - info: Pages built
+2020-04-17T08:24:49.639Z - info: Website generation complete! Total build time: 402.922s
+2020-04-17T08:24:49.640Z - info: Build success!
+2020-04-17T08:24:49.652Z - info: Site data built
+2020-04-17T08:25:55.455Z - info: Deployed!
+2020-04-17T14:14:16.504Z - info: Website generation started at 10:14:11 PM
+2020-04-17T14:14:20.288Z - info: Building assets...
+2020-04-17T14:14:22.791Z - info: Assets built
+2020-04-17T14:14:22.792Z - info: Generating pages...
+2020-04-17T14:14:26.601Z - error:  Error: No such segment 'warning-use-catcher' in file: D:\Teaching\CS2103\AY1920S2\website\admin\tp-deliverables-pe.mbdf
+Missing reference in D:\Teaching\CS2103\AY1920S2\website\admin\tp-deliverables-pe.mbdf
+    at _preprocessInclude (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:313:21)
+    at preProcessComponent (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:390:12)
+    at element.children.element.children.map.e (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52)
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at element.children.element.children.map.e (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52)
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at element.children.element.children.map.e (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52)
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at element.children.element.children.map.e (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52)
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:43)
+    at element.children.element.children.map.e (C:\Users\anarayan\AppData\Roaming\npm\node_modules\markbind-cli\src\lib\markbind\src\preprocessors\componentPreprocessor.js:397:52)
+    at Array.map (<anonymous>)
+2020-04-17T14:17:47.935Z - info: Website generation started at 10:17:46 PM
+2020-04-17T14:17:51.294Z - info: Building assets...
+2020-04-17T14:17:53.571Z - info: Assets built
+2020-04-17T14:17:53.571Z - info: Generating pages...
+2020-04-17T14:20:19.460Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.536Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.537Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.537Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.538Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.539Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.539Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.540Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.541Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.541Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.542Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.542Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.543Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.545Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.546Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.546Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:19.547Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-04-17T14:20:33.249Z - debug:  
+2020-04-17T14:20:33.250Z - debug:  
+2020-04-17T14:20:34.075Z - debug:  
+2020-04-17T14:20:34.076Z - debug:  
+2020-04-17T14:20:38.566Z - debug:  
+2020-04-17T14:20:38.566Z - debug:  
+2020-04-17T14:20:40.567Z - info: Pages built
+2020-04-17T14:21:05.764Z - info: Website generation complete! Total build time: 199.354s
+2020-04-17T14:21:06.356Z - info: Serving "D:\Teaching\CS2103\AY1920S2\website\_site" at http://127.0.0.1:8080
+2020-04-17T14:21:06.356Z - info: Press CTRL+C to stop ...
+2020-04-17T14:21:06.462Z - info: Site data built
+2020-04-17T14:26:16.372Z - info: [10:26:16 PM] Reload for file change: D:\Teaching\CS2103\AY1920S2\website\admin\tp-deliverables-pe.mbdf
+2020-04-17T14:26:17.378Z - info: Rebuilding affected source files
+2020-04-17T14:26:17.384Z - info: Rebuilding 8 pages
+2020-04-17T14:26:25.187Z - debug:  
+2020-04-17T14:26:26.402Z - info: Pages rebuilt
+2020-04-17T14:26:26.402Z - info: Website regeneration complete! Total build time: 9.023s
+2020-04-17T14:26:26.412Z - info: Site data built
+2020-04-17T14:31:31.499Z - info: Website generation started at 10:31:26 PM
+2020-04-17T14:31:35.101Z - info: Building assets...
