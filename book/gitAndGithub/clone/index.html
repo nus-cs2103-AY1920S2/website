@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.15.2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Git and Github: Clone</title>
   <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
   <link rel="icon" href="/website/favicon.ico">
 </head>
@@ -27,45 +28,43 @@
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
           <div class="website-content">
-            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can clone a remote repo</span>
-              </span>
-              </span>
-              </span>
-            </p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can clone a remote repo</span></span></span></span></p>
+            <p></p>
             <p></p>
             <p></p>
             <div>
               <div>
                 <p>
-                  <panel src="/website/book/revisionControl/remoteRepositories/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/remoteRepositories" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Remote Respositories</span></p></template></panel>
+                  <panel src="/website/book/revisionControl/remoteRepositories/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/remoteRepositories" class="algolia-no-index"><template slot="_header">
+                      <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Remote Respositories</span></p>
+                    </template></panel>
                 </p>
               </div>
               <p></p>
               <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
-</span></strong>
-                </span>
-              </p>
+                    </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="clone"><span>Clone</span><a class="fa fa-anchor" href="#clone"></a></h4>
+                  <h4 id="clone"><span>Clone</span><a class="fa fa-anchor" href="#clone" onclick="event.stopPropagation()"></a></h4>
                 </div>
                 <div id="main">
                   <div>
                     <p>Clone the sample repo <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a> to your computer.</p>
                     <box type="error">
-                      <p>Note that the URL of the Github project is different form the URL you need to clone a repo in that Github project. e.g.
-                      </p>
-                      <p>Github project URL: <code>https://github.com/se-edu/samplerepo-things</code> <br> Git repo URL: <code>https://github.com/se-edu/samplerepo-things.git</code> (note the <code>.git</code> at the end)</p>
+                      <p>Note that the URL of the Github project is different form the URL you need to clone a repo in that Github project.
+                        e.g.</p>
+                      <p>Github project URL: <code v-pre>https://github.com/se-edu/samplerepo-things</code> <br>
+                        Git repo URL: <code v-pre>https://github.com/se-edu/samplerepo-things.git</code> (note the <code v-pre>.git</code> at the end)</p>
                     </box>
                     <tabs>
                       <tab><template slot="_header">SourceTree</template>
                         <div>
-                          <p><code>File</code> → <code>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
+                          <p><code v-pre>File</code> → <code v-pre>Clone / New…</code> and provide the URL of the repo and the destination directory.</p>
                         </div>
                       </tab>
                       <tab class="algolia-no-index"><template slot="_header">CLI</template>
                         <div>
-                          <p>You can use the <code>clone</code> command to clone a repo.</p>
+                          <p>You can use the <code v-pre>clone</code> command to clone a repo.</p>
                           <p>Follow instructions given <a href="https://help.github.com/articles/cloning-a-repository/">here</a>.</p>
                         </div>
                       </tab>
@@ -82,7 +81,7 @@
   </div>
 </body>
 <script src="../../../markbind/js/vue.min.js"></script>
-<script src="../../../markbind/js/vue-strap.min.js"></script>
+<script src="../../../markbind/js/components.min.js"></script>
 <script src="../../../markbind/js/bootstrap-utility.min.js"></script>
 <script src="../../../markbind/js/polyfill.min.js"></script>
 <script src="../../../markbind/js/bootstrap-vue.min.js"></script>

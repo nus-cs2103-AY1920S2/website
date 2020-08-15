@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.15.2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 13 - Tutorial</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
@@ -26,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2103">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
@@ -43,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -80,6 +82,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -96,19 +99,22 @@
             </ul>
           </nav>
           <p></p>
-          <h1 id="week-13-apr-13-tutorial">Week 13 <small><small><span class="dimmed">[Apr 13]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-13-apr-13-tutorial"></a></h1>
+          <h1 id="week-13-apr-13-tutorial">Week 13 <small><small><span class="dimmed">[Apr 13]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-13-apr-13-tutorial" onclick="event.stopPropagation()"></a></h1>
           <div>
             <box type="info">
               <p>This tutorial is used for tP project demos. Demo instructions are repeated below for your easy reference.
               </p>
             </box>
+            <p></p>
             <div>
               <div class="indented-level2">
                 <p><img src="/website/admin/images/v05demo.png" style="width: 250px"></p>
                 <p></p>
                 <p></p>
                 <p>
-                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-demo" class="embedding algolia-no-index" minimized fragment="tp-deliverables-demo"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Demo  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-demo" class="embedding algolia-no-index" minimized fragment="tp-deliverables-demo"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Demo <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </p>
                 <p></p>
               </div>
@@ -116,7 +122,7 @@
                 <li><strong>Venue:</strong> Same as the tutorial venue unless informed otherwise. You'll be using the TV at your regular tutorial table (not the projector) for the demo.</li>
                 <li><strong>Schedule:</strong> Your demo timing is same as your tutorial time in week 13.
                   <ul>
-                    <li>Teams <code>1</code> and <code>3</code> will start at 05-minutes mark (e.g., 11.05 am), and teams <code>2</code> and <code>4</code> start at 30-minutes mark (e.g., 11.30 am).</li>
+                    <li>Teams <code v-pre>1</code> and <code v-pre>3</code> will start at 05-minutes mark (e.g., 11.05 am), and teams <code v-pre>2</code> and <code v-pre>4</code> start at 30-minutes mark (e.g., 11.30 am).</li>
                     <li>Please <mark>arrive <em>before</em> time</mark> and remain outside the venue until called in. Late arrival or absence is liable to a penalty.</li>
                     <li>Any delay in starting the presentation is deducted out of your time allotment <span class="dimmed">e.g., if you are scheduled to demo at 11.05-11.23 am (i.e., 18 minutes), you'll have to stop at 11.23 am even if you start at 11.10 am.</span></li>
                   </ul>
@@ -127,6 +133,7 @@
           </div>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -139,12 +146,12 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Sat, May 16, 2020, 8:16:01 AM UTC</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.15.2</a> at Sat, Aug 15, 2020, 3:14:39 AM UTC</small></div>
     </footer>
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
-<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
 <script src="../../markbind/js/polyfill.min.js"></script>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>

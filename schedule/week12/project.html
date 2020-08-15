@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.15.2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 12 - Project</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
@@ -26,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2103">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
@@ -43,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -80,6 +82,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -96,78 +99,85 @@
             </ul>
           </nav>
           <p></p>
-          <h1 id="week-12-apr-6-project">Week 12 <small><small><span class="dimmed">[Apr 6]</span> - Project</small></small><a class="fa fa-anchor" href="#week-12-apr-6-project"></a></h1>
+          <h1 id="week-12-apr-6-project">Week 12 <small><small><span class="dimmed">[Apr 6]</span> - Project</small></small><a class="fa fa-anchor" href="#week-12-apr-6-project" onclick="event.stopPropagation()"></a></h1>
           <div>
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3 pl-2" style="color: purple;">
               <p><strong>tP:</strong></p>
               <div>
                 <ol>
-                  <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Tweak the product as per peer-testing results</span>
-                  </li>
-                  <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Draft the PPP</span>
-                  </li>
-                  <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Prepare for the demo rehearsal</span>
-                  </li>
-                  <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Double-check RepoSense compatibility</span>
-                  </li>
+                  <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Tweak the product as per peer-testing results</span></li>
+                  <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Draft the PPP</span></li>
+                  <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Prepare for the demo rehearsal</span></li>
+                  <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Double-check RepoSense compatibility</span></li>
                 </ol>
               </div>
             </div>
-            <h2 id="tp-mid-v1-4">tP: mid-v1.4<a class="fa fa-anchor" href="#tp-mid-v1-4"></a></h2>
+            <h2 id="tp-mid-v1-4">tP: mid-v1.4<a class="fa fa-anchor" href="#tp-mid-v1-4" onclick="event.stopPropagation()"></a></h2>
             <div>
               <div>
                 <box dismissible>
-                  <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> when setting the v1.4 deadline in GitHub milestones, remember that the v1.4 submission deadline is Week 13 Monday for <em>everyone</em>                    (does not vary by tutorial day). Set your own deadline accordingly, or else the bot will flag it as an 'unsuitable' deadline.
+                  <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> when setting the v1.4 deadline in GitHub milestones, remember that the v1.4 submission deadline is Week 13 Monday for <em>everyone</em> (does not vary by tutorial day). Set your own deadline accordingly, or else the bot will flag it as an 'unsuitable' deadline.
                   </p>
                 </box>
+                <p></p>
                 <box background-color="white" border-color="red">
                   <p><strong>Remind yourself of the project grading criteria:</strong></p>
                   <p>
-                    <panel type="seamless" src="/website/admin/tp-grading._include_.html#main" class="embedding algolia-no-index" fragment="main"><template slot="_header"><p><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Grading</span></p></template></panel>
+                    <panel type="seamless" src="/website/admin/tp-grading._include_.html#main" class="embedding algolia-no-index" fragment="main"><template slot="_header">
+                        <p><span class="dimmed">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Grading</span></p>
+                      </template></panel>
                   </p>
                 </box>
+                <p></p>
               </div>
-              <h4 id="1-tweak-the-product-as-per-peer-testing-results"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Tweak the product as per peer-testing results</span><a class="fa fa-anchor" href="#1-tweak-the-product-as-per-peer-testing-results"></a></h4>
+              <h4 id="1-tweak-the-product-as-per-peer-testing-results"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Tweak the product as per peer-testing results</span><a class="fa fa-anchor" href="#1-tweak-the-product-as-per-peer-testing-results" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
                   <li>Learn the procedure for dealing with PED bugs you received:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables-ped._include_.html#after-ped" class="embedding algolia-no-index" minimized fragment="after-ped"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → <strong>After the PED</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/tp-deliverables-ped._include_.html#after-ped" class="embedding algolia-no-index" minimized fragment="after-ped"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → <strong>After the PED</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
                 <ul>
-                  <li><strong>Freeze features</strong> around this time. Ensure the current product have all the features you intend to release at v1.4. Adding major changes after this point is risky. The remaining time is better spent fixing problems discovered
-                    late or on fine-tuning the product.</li>
+                  <li><strong>Freeze features</strong> around this time. Ensure the current product have all the features you intend to release at v1.4. Adding major changes after this point is risky. The remaining time is better spent fixing problems discovered late or on fine-tuning the product.</li>
                   <li><strong>Update documentation</strong> to match the product.</li>
                   <li><strong>Consider increasing test coverage</strong> by adding more tests if it is lower than the level you would like it to be. Take note of our expectation on test code (given in the panel below).</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-expectations._include_.html#testing-expectations" class="embedding algolia-no-index" minimized fragment="testing-expectations"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Grading → Expectation on testing  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/tp-expectations._include_.html#testing-expectations" class="embedding algolia-no-index" minimized fragment="testing-expectations"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Grading → Expectation on testing <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
                 <ul>
                   <li><strong>After you have sufficient code coverage, fix remaining code quality problems</strong> and bring up the quality to your target level.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-grading._include_.html#projectGrading-codeQuality-criteria" class="embedding algolia-no-index" minimized fragment="projectGrading-codeQuality-criteria"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Grading → Code Quality Tips  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/tp-grading._include_.html#projectGrading-codeQuality-criteria" class="embedding algolia-no-index" minimized fragment="projectGrading-codeQuality-criteria"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Grading → Code Quality Tips <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
               </div>
               <p></p>
-              <h4 id="2-draft-the-ppp"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Draft the PPP</span><a class="fa fa-anchor" href="#2-draft-the-ppp"></a></h4>
+              <h4 id="2-draft-the-ppp"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Draft the PPP</span><a class="fa fa-anchor" href="#2-draft-the-ppp" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
-                  <li><strong>Create the first version of your <em>Project Portfolio Page (PPP)</em></strong>.<br> Reason: <mark>Each member needs to create a PPP</mark> to describe your contribution to the project. Creating a PPP takes a significant effort;
-                    it is <mark>too risky to leave it to the last week of the project</mark>.</li>
+                  <li><strong>Create the first version of your <em>Project Portfolio Page (PPP)</em></strong>.<br>
+                    Reason: <mark>Each member needs to create a PPP</mark> to describe your contribution to the project. Creating a PPP takes a significant effort; it is <mark>too risky to leave it to the last week of the project</mark>.</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-ppp" class="embedding algolia-no-index" minimized fragment="tp-deliverables-ppp"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Project Portfolio Page  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-ppp" class="embedding algolia-no-index" minimized fragment="tp-deliverables-ppp"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Deliverables → Project Portfolio Page <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
               </div>
               <p></p>
-              <h4 id="3-prepare-for-the-demo-rehearsal"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Prepare for the demo rehearsal</span><a class="fa fa-anchor" href="#3-prepare-for-the-demo-rehearsal"></a></h4>
+              <h4 id="3-prepare-for-the-demo-rehearsal"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Prepare for the demo rehearsal</span><a class="fa fa-anchor" href="#3-prepare-for-the-demo-rehearsal" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
                   <li>You will do a product demo during the tutorial to serve as a rehearsal for the final project demo at v1.4
@@ -179,19 +189,24 @@
                   </li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-demo" class="embedding algolia-no-index" minimized fragment="tp-deliverables-demo"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Final Demo (extract)  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/tp-deliverables._include_.html#tp-deliverables-demo" class="embedding algolia-no-index" minimized fragment="tp-deliverables-demo"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Final Demo (extract) <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
               </div>
               <p></p>
-              <h4 id="4-double-check-reposense-compatibility"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Double-check RepoSense compatibility</span><a class="fa fa-anchor" href="#4-double-check-reposense-compatibility"></a></h4>
+              <h4 id="4-double-check-reposense-compatibility"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Double-check RepoSense compatibility</span><a class="fa fa-anchor" href="#4-double-check-reposense-compatibility" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
                   <li>
-                    <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Once again, double-check to ensure the code attributed to you by RepoSense is correct.</li>
+                    <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Once again, double-check to ensure the code attributed to you by RepoSense is correct.
+                  </li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-tasks._include_.html#midV13-repoSenseCompatible" class="embedding algolia-no-index" minimized fragment="midV13-repoSenseCompatible"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → mid-v1.3 → Making the Code RepoSense-Compatible  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/tp-tasks._include_.html#midV13-repoSenseCompatible" class="embedding algolia-no-index" minimized fragment="midV13-repoSenseCompatible"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → mid-v1.3 → Making the Code RepoSense-Compatible <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
               </div>
@@ -200,6 +215,7 @@
           </div>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -208,10 +224,10 @@
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#tp-mid-v1-4">tP: mid-v1.4&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-                <a class="nav-link py-1" href="#1-tweak-the-product-as-per-peer-testing-results">1  Tweak the product as per peer-testing results&#x200E;</a>
-                <a class="nav-link py-1" href="#2-draft-the-ppp">2  Draft the PPP&#x200E;</a>
-                <a class="nav-link py-1" href="#3-prepare-for-the-demo-rehearsal">3  Prepare for the demo rehearsal&#x200E;</a>
-                <a class="nav-link py-1" href="#4-double-check-reposense-compatibility">4  Double-check RepoSense compatibility&#x200E;</a>
+                <a class="nav-link py-1" href="#1-tweak-the-product-as-per-peer-testing-results">1 Tweak the product as per peer-testing results&#x200E;</a>
+                <a class="nav-link py-1" href="#2-draft-the-ppp">2 Draft the PPP&#x200E;</a>
+                <a class="nav-link py-1" href="#3-prepare-for-the-demo-rehearsal">3 Prepare for the demo rehearsal&#x200E;</a>
+                <a class="nav-link py-1" href="#4-double-check-reposense-compatibility">4 Double-check RepoSense compatibility&#x200E;</a>
               </nav>
             </nav>
 
@@ -221,12 +237,12 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Sat, May 16, 2020, 8:16:01 AM UTC</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.15.2</a> at Sat, Aug 15, 2020, 3:14:39 AM UTC</small></div>
     </footer>
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
-<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
 <script src="../../markbind/js/polyfill.min.js"></script>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>

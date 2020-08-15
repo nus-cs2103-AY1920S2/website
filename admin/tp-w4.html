@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.15.2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Admin: tP: Inception [week 4]</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../markbind/css/page-nav.css">
@@ -27,6 +28,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2103">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
@@ -44,7 +46,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -83,175 +85,165 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/website/admin/moduleOverview.html" class="site-nav__a">CS2103/T Software Engineering</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+          <ul class="site-nav-list site-nav-list-root">
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/moduleOverview.html">CS2103/T Software Engineering</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/usingThisWebsite.html" class="site-nav__a"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/usingThisWebsite.html"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/moduleExpectations.html" class="site-nav__a">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/moduleExpectations.html">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Module Structure 
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/weeklySchedule.html" class="site-nav__a">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/lectures.html" class="site-nav__a">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tutorials.html" class="site-nav__a">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Module Structure
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/weeklySchedule.html">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/lectures.html">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tutorials.html">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+              </ul>
             </li>
-            <li class="mt-2"><a href="/website/admin/instructors.html" class="site-nav__a">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/instructors.html">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/textbooks.html" class="site-nav__a">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/textbooks.html">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/programmingLanguages.html" class="site-nav__a">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/programmingLanguages.html">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn">Individual Project (iP)
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/ip-overview.html" class="site-nav__a">iP (Individual Project): Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w2.html" class="site-nav__a">iP: Week 2</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w3.html" class="site-nav__a">iP: Week 3</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w4.html" class="site-nav__a">iP: Week 4</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w5.html" class="site-nav__a">iP: Week 5</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w6.html" class="site-nav__a">iP: Week 6</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w7.html" class="site-nav__a">iP: Week 7</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w8.html" class="site-nav__a">iP: Week 8</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-grading.html" class="site-nav__a">iP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Individual Project (iP)
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-overview.html">iP (Individual Project): Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w2.html">iP: Week 2</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w3.html">iP: Week 3</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w4.html">iP: Week 4</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w5.html">iP: Week 5</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w6.html">iP: Week 6</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w7.html">iP: Week 7</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w8.html">iP: Week 8</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-grading.html">iP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Team Project (tP)
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/tp-expectations.html" class="site-nav__a">tP (team project): Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-constraints.html" class="site-nav__a">tP: Constraints</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-teams.html" class="site-nav__a">tP: Forming Teams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w3.html" class="site-nav__a">tP: Kickoff [week 3]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w4.html" class="site-nav__a current">tP: Inception [week 4]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w5.html" class="site-nav__a">tP: v1.0 [week 5]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w6.html" class="site-nav__a">tP: mid-v1.1 [week 6]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w7.html" class="site-nav__a">tP: v1.1 [week 7]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w8.html" class="site-nav__a">tP: mid-v1.2 [week 8]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w9.html" class="site-nav__a">tP: v1.2 [week 9]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w10.html" class="site-nav__a">tP: mid-v1.3 [week 10]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w11.html" class="site-nav__a">tP: v1.3 [week 11]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w12.html" class="site-nav__a">tP: mid-v1.4 [week 12]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w13.html" class="site-nav__a">tP: v1.4 [week 13]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-deliverables.html" class="site-nav__a">tP: Deliverables</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-grading.html" class="site-nav__a">tP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-supervision.html" class="site-nav__a">tP: Supervision</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Team Project (tP)
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-expectations.html">tP (team project): Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-constraints.html">tP: Constraints</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-teams.html">tP: Forming Teams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w3.html">tP: Kickoff [week 3]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w4.html" class="current">tP: Inception [week 4]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w5.html">tP: v1.0 [week 5]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w6.html">tP: mid-v1.1 [week 6]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w7.html">tP: v1.1 [week 7]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w8.html">tP: mid-v1.2 [week 8]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w9.html">tP: v1.2 [week 9]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w10.html">tP: mid-v1.3 [week 10]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w11.html">tP: v1.3 [week 11]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w12.html">tP: mid-v1.4 [week 12]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w13.html">tP: v1.4 [week 13]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-deliverables.html">tP: Deliverables</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-grading.html">tP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-supervision.html">tP: Supervision</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+              </ul>
             </li>
-            <li class="mt-2"><a href="/website/admin/peerEvaluations.html" class="site-nav__a">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/peerEvaluations.html">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/tools.html" class="site-nav__a">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/tools.html">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/exams.html" class="site-nav__a">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/exams.html">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/participation.html" class="site-nav__a">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/participation.html">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/gradeBreakdown.html" class="site-nav__a">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/gradeBreakdown.html">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Appendices 
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/appendixA-principles.html" class="site-nav__a">Apdx A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixB-policies.html" class="site-nav__a">Apdx B: Module Policies</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixC-faq.html" class="site-nav__a">Apdx C: FAQ</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixD-help.html" class="site-nav__a">Apdx D: Getting Help</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixE-gitHub.html" class="site-nav__a">Apdx E: Using GitHub</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixF-teamworkIssues.html" class="site-nav__a">Apdx F: Handling Team Issues</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Appendices
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixA-principles.html">Apdx A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixB-policies.html">Apdx B: Module Policies</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixC-faq.html">Apdx C: FAQ</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixD-help.html">Apdx D: Getting Help</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixE-gitHub.html">Apdx E: Using GitHub</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixF-teamworkIssues.html">Apdx F: Handling Team Issues</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+              </ul>
             </li>
           </ul>
         </div>
       </nav>
+
       <div id="content-wrapper">
         <div class="website-content">
-          <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/tp-w3.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: Kickoff [week 3]</span>
-            </b-btn>
-            </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/tp-w5.html"><span>tP: v1.0 [week 5] <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-            </b-btn>
-            </span>
-          </p>
+          <p><span class="float-left algolia-no-index">
+              <b-btn variant="light" href="/website/admin/tp-w3.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: Kickoff [week 3]</span></b-btn>
+            </span><span class="float-right algolia-no-index">
+              <b-btn variant="light" href="/website/admin/tp-w5.html"><span>tP: v1.0 [week 5] <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+            </span></p>
           <br>
           <p>
-            <div>
-              <h1 id="tp-inception-week-4">tP: Inception [week 4] <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-                  aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                </span>
-                </span><a class="fa fa-anchor" href="#tp-inception-week-4"></a></h1>
-            </div>
+          <div>
+            <h1 id="tp-inception-week-4">tP: Inception [week 4] <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span><a class="fa fa-anchor" href="#tp-inception-week-4" onclick="event.stopPropagation()"></a></h1>
+          </div>
           </p>
           <div id="main">
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple">
               <ol>
-                <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Start weekly project meetings</span>
-                </li>
-                <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Decide on an overall project direction <span class="dimmed">(user profile, problem addressed)</span></span>
-                </li>
-                <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Start a collaborative doc to take project notes</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span>                  before the tutorial</span>
-                  </span>
-                </li>
+                <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Start weekly project meetings</span></li>
+                <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Decide on an overall project direction <span class="dimmed">(user profile, problem addressed)</span></span></li>
+                <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Start a collaborative doc to take project notes</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the tutorial</span></span></li>
               </ol>
             </div>
             <div id="body">
               <div>
                 <p>Given below are some guidance on the recommended progress at this point of the project</p>
               </div>
-              <h4 id="1-start-weekly-project-meetings"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Start weekly project meetings</span><a class="fa fa-anchor" href="#1-start-weekly-project-meetings"></a></h4>
+              <h4 id="1-start-weekly-project-meetings"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Start weekly project meetings</span><a class="fa fa-anchor" href="#1-start-weekly-project-meetings" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
-                  <li>We recommend you start weekly project meetings now. You can use the meeting to do tP tasks, but also help each other do iP tasks. On a related note, <mark>it is also acceptable to discuss weekly post-lecture quiz (if any) together with team members as you do the quiz</mark>                    i.e., discuss and decide the answer collectively, but you should not give away your answers to someone who was not part of that discussion.</li>
+                  <li>We recommend you start weekly project meetings now. You can use the meeting to do tP tasks, but also help each other do iP tasks. On a related note, <mark>it is also acceptable to discuss weekly post-lecture quiz (if any) together with team members as you do the quiz</mark> i.e., discuss and decide the answer collectively, but you should not give away your answers to someone who was not part of that discussion.</li>
                 </ul>
               </div>
               <p></p>
-              <h4 id="2-decide-on-an-overall-project-direction-user-profile-problem-addressed"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Decide on an overall project direction <span class="dimmed">(user profile, problem addressed)</span></span>
-                <a class="fa fa-anchor" href="#2-decide-on-an-overall-project-direction-user-profile-problem-addressed"></a>
-              </h4>
+              <h4 id="2-decide-on-an-overall-project-direction-user-profile-problem-addressed"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Decide on an overall project direction <span class="dimmed">(user profile, problem addressed)</span></span><a class="fa fa-anchor" href="#2-decide-on-an-overall-project-direction-user-profile-problem-addressed" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
-                  <li><strong>Decide project direction, target user profile, and problem addressed</strong>: Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition
-                    of the product, as described in the panels below:</li>
+                  <li><strong>Decide project direction, target user profile, and problem addressed</strong>: Use your first project meeting to discuss with your team members and decide your project direction, target user profile, and the value proposition of the product, as described in the panels below:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-expectations._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Expectations</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/tp-expectations._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Expectations</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-constraints._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Constraints</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/tp-constraints._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Constraints</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tp-grading._include_.html#criteria-productDesign" class="embedding algolia-no-index" minimized fragment="criteria-productDesign"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Grading → <mark>Criteria Used for Grading the Product Design</mark></strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/tp-grading._include_.html#criteria-productDesign" class="embedding algolia-no-index" minimized fragment="criteria-productDesign"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Grading → <mark>Criteria Used for Grading the Product Design</mark></strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
               </div>
               <p></p>
-              <h4 id="3-start-a-collaborative-doc-to-take-project-notes-before-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Start a collaborative doc to take project notes</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span>                before the tutorial</span>
-                </span><a class="fa fa-anchor" href="#3-start-a-collaborative-doc-to-take-project-notes-before-the-tutorial"></a></h4>
+              <h4 id="3-start-a-collaborative-doc-to-take-project-notes-before-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Start a collaborative doc to take project notes</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the tutorial</span></span><a class="fa fa-anchor" href="#3-start-a-collaborative-doc-to-take-project-notes-before-the-tutorial" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
                   <li>Keep project notes in easy-to-use collaborative docs such as GoogleDocs/sheets. Document the decisions taken above in one of those docs. <mark>This document will be checked by the tutor at the next tutorial.</mark></li>
@@ -261,29 +253,23 @@
             </div>
           </div>
           <br>
-          <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/tp-w3.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: Kickoff [week 3]</span>
-            </b-btn>
-            </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/tp-w5.html"><span>tP: v1.0 [week 5] <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-            </b-btn>
-            </span>
-          </p>
+          <p><span class="float-left algolia-no-index">
+              <b-btn variant="light" href="/website/admin/tp-w3.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: Kickoff [week 3]</span></b-btn>
+            </span><span class="float-right algolia-no-index">
+              <b-btn variant="light" href="/website/admin/tp-w5.html"><span>tP: v1.0 [week 5] <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+            </span></p>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#tp-inception-week-4">tP: Inception [week 4] 
-          
-          
-          &#x200E;</a>
+            <a class="nav-link py-1" href="#tp-inception-week-4">tP: Inception [week 4] &#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#1-start-weekly-project-meetings">1  Start weekly project meetings&#x200E;</a>
-              <a class="nav-link py-1" href="#2-decide-on-an-overall-project-direction-user-profile-problem-addressed">2  Decide on an overall project direction (user profile, problem addressed)
-          
-        &#x200E;</a>
-              <a class="nav-link py-1" href="#3-start-a-collaborative-doc-to-take-project-notes-before-the-tutorial">3  Start a collaborative doc to take project notes           before the tutorial
-          &#x200E;</a>
+              <a class="nav-link py-1" href="#1-start-weekly-project-meetings">1 Start weekly project meetings&#x200E;</a>
+              <a class="nav-link py-1" href="#2-decide-on-an-overall-project-direction-user-profile-problem-addressed">2 Decide on an overall project direction (user profile, problem addressed)&#x200E;</a>
+              <a class="nav-link py-1" href="#3-start-a-collaborative-doc-to-take-project-notes-before-the-tutorial">3 Start a collaborative doc to take project notes before the tutorial&#x200E;</a>
             </nav>
 
           </nav>
@@ -292,12 +278,12 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Sat, May 16, 2020, 8:16:01 AM UTC</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.15.2</a> at Sat, Aug 15, 2020, 3:14:39 AM UTC</small></div>
     </footer>
   </div>
 </body>
 <script src="../markbind/js/vue.min.js"></script>
-<script src="../markbind/js/vue-strap.min.js"></script>
+<script src="../markbind/js/components.min.js"></script>
 <script src="../markbind/js/bootstrap-utility.min.js"></script>
 <script src="../markbind/js/polyfill.min.js"></script>
 <script src="../markbind/js/bootstrap-vue.min.js"></script>

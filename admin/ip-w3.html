@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.15.2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Admin: iP: Week 3</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../markbind/css/page-nav.css">
@@ -27,6 +28,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2103">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
@@ -44,7 +46,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -83,162 +85,158 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/website/admin/moduleOverview.html" class="site-nav__a">CS2103/T Software Engineering</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+          <ul class="site-nav-list site-nav-list-root">
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/moduleOverview.html">CS2103/T Software Engineering</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/usingThisWebsite.html" class="site-nav__a"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/usingThisWebsite.html"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/moduleExpectations.html" class="site-nav__a">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/moduleExpectations.html">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Module Structure 
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/weeklySchedule.html" class="site-nav__a">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/lectures.html" class="site-nav__a">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tutorials.html" class="site-nav__a">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Module Structure
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/weeklySchedule.html">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/lectures.html">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tutorials.html">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+              </ul>
             </li>
-            <li class="mt-2"><a href="/website/admin/instructors.html" class="site-nav__a">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/instructors.html">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/textbooks.html" class="site-nav__a">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/textbooks.html">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/programmingLanguages.html" class="site-nav__a">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/programmingLanguages.html">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Individual Project (iP)
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/ip-overview.html" class="site-nav__a">iP (Individual Project): Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w2.html" class="site-nav__a">iP: Week 2</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w3.html" class="site-nav__a current">iP: Week 3</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w4.html" class="site-nav__a">iP: Week 4</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w5.html" class="site-nav__a">iP: Week 5</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w6.html" class="site-nav__a">iP: Week 6</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w7.html" class="site-nav__a">iP: Week 7</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w8.html" class="site-nav__a">iP: Week 8</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-grading.html" class="site-nav__a">iP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Individual Project (iP)
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-overview.html">iP (Individual Project): Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w2.html">iP: Week 2</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w3.html" class="current">iP: Week 3</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w4.html">iP: Week 4</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w5.html">iP: Week 5</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w6.html">iP: Week 6</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w7.html">iP: Week 7</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w8.html">iP: Week 8</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-grading.html">iP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn">Team Project (tP)
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/tp-expectations.html" class="site-nav__a">tP (team project): Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-constraints.html" class="site-nav__a">tP: Constraints</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-teams.html" class="site-nav__a">tP: Forming Teams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w3.html" class="site-nav__a">tP: Kickoff [week 3]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w4.html" class="site-nav__a">tP: Inception [week 4]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w5.html" class="site-nav__a">tP: v1.0 [week 5]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w6.html" class="site-nav__a">tP: mid-v1.1 [week 6]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w7.html" class="site-nav__a">tP: v1.1 [week 7]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w8.html" class="site-nav__a">tP: mid-v1.2 [week 8]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w9.html" class="site-nav__a">tP: v1.2 [week 9]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w10.html" class="site-nav__a">tP: mid-v1.3 [week 10]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w11.html" class="site-nav__a">tP: v1.3 [week 11]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w12.html" class="site-nav__a">tP: mid-v1.4 [week 12]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w13.html" class="site-nav__a">tP: v1.4 [week 13]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-deliverables.html" class="site-nav__a">tP: Deliverables</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-grading.html" class="site-nav__a">tP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-supervision.html" class="site-nav__a">tP: Supervision</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Team Project (tP)
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-expectations.html">tP (team project): Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-constraints.html">tP: Constraints</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-teams.html">tP: Forming Teams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w3.html">tP: Kickoff [week 3]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w4.html">tP: Inception [week 4]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w5.html">tP: v1.0 [week 5]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w6.html">tP: mid-v1.1 [week 6]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w7.html">tP: v1.1 [week 7]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w8.html">tP: mid-v1.2 [week 8]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w9.html">tP: v1.2 [week 9]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w10.html">tP: mid-v1.3 [week 10]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w11.html">tP: v1.3 [week 11]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w12.html">tP: mid-v1.4 [week 12]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w13.html">tP: v1.4 [week 13]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-deliverables.html">tP: Deliverables</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-grading.html">tP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-supervision.html">tP: Supervision</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+              </ul>
             </li>
-            <li class="mt-2"><a href="/website/admin/peerEvaluations.html" class="site-nav__a">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/peerEvaluations.html">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/tools.html" class="site-nav__a">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/tools.html">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/exams.html" class="site-nav__a">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/exams.html">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/participation.html" class="site-nav__a">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/participation.html">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/gradeBreakdown.html" class="site-nav__a">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/gradeBreakdown.html">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Appendices 
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/appendixA-principles.html" class="site-nav__a">Apdx A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixB-policies.html" class="site-nav__a">Apdx B: Module Policies</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixC-faq.html" class="site-nav__a">Apdx C: FAQ</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixD-help.html" class="site-nav__a">Apdx D: Getting Help</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixE-gitHub.html" class="site-nav__a">Apdx E: Using GitHub</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixF-teamworkIssues.html" class="site-nav__a">Apdx F: Handling Team Issues</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Appendices
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixA-principles.html">Apdx A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixB-policies.html">Apdx B: Module Policies</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixC-faq.html">Apdx C: FAQ</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixD-help.html">Apdx D: Getting Help</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixE-gitHub.html">Apdx E: Using GitHub</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixF-teamworkIssues.html">Apdx F: Handling Team Issues</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+              </ul>
             </li>
           </ul>
         </div>
       </nav>
+
       <div id="content-wrapper">
         <div class="website-content">
-          <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w2.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP: Week 2</span>
-            </b-btn>
-            </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w4.html"><span>iP: Week 4 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-            </b-btn>
-            </span>
-          </p>
+          <p><span class="float-left algolia-no-index">
+              <b-btn variant="light" href="/website/admin/ip-w2.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP: Week 2</span></b-btn>
+            </span><span class="float-right algolia-no-index">
+              <b-btn variant="light" href="/website/admin/ip-w4.html"><span>iP: Week 4 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+            </span></p>
           <br>
           <p>
-            <div>
-              <h1 id="ip-week-3">iP: Week 3 <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                </span><a class="fa fa-anchor" href="#ip-week-3"></a></h1>
-            </div>
+          <div>
+            <h1 id="ip-week-3">iP: Week 3 <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span><a class="fa fa-anchor" href="#ip-week-3" onclick="event.stopPropagation()"></a></h1>
+          </div>
           </p>
           <div id="main">
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple">
               <ol>
                 <li><span>Do any leftover iP tasks from the previous week</span></li>
                 <li><span>Create a PR to the upstream repo</span></li>
-                <li>Add Increments as parallel branches: <code>Level-7</code>, <code>Level-8</code></li>
-                <li>Add Increments: <code>A-MoreOOP</code>, <code>A-Packages</code>, <code>A-JUnit</code>, <code>A-Jar</code></li>
-                <li>Add Increments as parallel branches: <code>A-JavaDoc</code>, <code>A-CodingStandard</code>, <code>Level-9</code></li>
+                <li>Add Increments as parallel branches: <code v-pre>Level-7</code>, <code v-pre>Level-8</code></li>
+                <li>Add Increments: <code v-pre>A-MoreOOP</code>, <code v-pre>A-Packages</code>, <code v-pre>A-JUnit</code>, <code v-pre>A-Jar</code></li>
+                <li>Add Increments as parallel branches: <code v-pre>A-JavaDoc</code>, <code v-pre>A-CodingStandard</code>, <code v-pre>Level-9</code></li>
               </ol>
             </div>
             <div id="body">
               <div></div>
-              <h4 id="1-do-any-leftover-ip-tasks-from-the-previous-week"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span>Do any leftover iP tasks from the previous week</span><a class="fa fa-anchor" href="#1-do-any-leftover-ip-tasks-from-the-previous-week"></a></h4>
+              <h4 id="1-do-any-leftover-ip-tasks-from-the-previous-week"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span>Do any leftover iP tasks from the previous week</span><a class="fa fa-anchor" href="#1-do-any-leftover-ip-tasks-from-the-previous-week" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
                   <li>Remember to do any leftover increments from the past weeks before starting on the current week's increments. This guideline applies to future weeks too.</li>
                 </ul>
               </div>
               <p></p>
-              <h4 id="2-create-a-pr-to-the-upstream-repo"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span>Create a PR to the upstream repo</span><a class="fa fa-anchor" href="#2-create-a-pr-to-the-upstream-repo"></a></h4>
+              <h4 id="2-create-a-pr-to-the-upstream-repo"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span>Create a PR to the upstream repo</span><a class="fa fa-anchor" href="#2-create-a-pr-to-the-upstream-repo" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
-                  <li>Create a pull request (PR) from the <code>master</code> branch of your fork to the upstream repo.
+                  <li>Create a pull request (PR) from the <code v-pre>master</code> branch of your fork to the upstream repo.
                     <ul>
-                      <li>PR name: <code>[{Your name}] Duke Increments</code> e.g., <code>[John Doe] Duke Increments</code> <span class="dimmed">If you are reluctant to give full name, you may give the first half of your name only</span></li>
+                      <li>PR name: <code v-pre>[{Your name}] Duke Increments</code> e.g., <code v-pre>[John Doe] Duke Increments</code> <span class="dimmed">If you are reluctant to give full name, you may give the first half of your name only</span></li>
                     </ul>
                   </li>
                 </ul>
               </div>
               <p></p>
-              <h4 id="3-add-increments-as-parallel-branches-level-7-level-8"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Add Increments as parallel branches: <code>Level-7</code>, <code>Level-8</code><a class="fa fa-anchor" href="#3-add-increments-as-parallel-branches-level-7-level-8"></a></h4>
+              <h4 id="3-add-increments-as-parallel-branches-level-7-level-8"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> Add Increments as parallel branches: <code v-pre>Level-7</code>, <code v-pre>Level-8</code><a class="fa fa-anchor" href="#3-add-increments-as-parallel-branches-level-7-level-8" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
-                  <li>Do Level 7 in a branch named <code>branch-Level-7</code>. Without merging that branch, go back to the <code>master</code> branch and implement Level 8 in a separate branch named <code>branch-Level-8</code>. Now, go back to the <code>master</code>                    branch and merge the two branches one after the other. As before, tag the commit (in the <code>master</code> branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
+                  <li>Do Level 7 in a branch named <code v-pre>branch-Level-7</code>. Without merging that branch, go back to the <code v-pre>master</code> branch and implement Level 8 in a separate branch named <code v-pre>branch-Level-8</code>. Now, go back to the <code v-pre>master</code> branch and merge the two branches one after the other. As before, tag the commit (in the <code v-pre>master</code> branch, after merging) that achieves the respective deliverable, and push to your fork.<br>
                     <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Remember to push the branches to your fork so that the bot can detect them.<br>
                     <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Advanced git users: do not delete the branch after merging.<br>
-                    <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Merge without a <em>fast-forward</em> so that git creates a separate commit for the merge.</li>
+                    <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Merge without a <em>fast-forward</em> so that git creates a separate commit for the merge.
+                  </li>
                 </ul>
               </div>
               <div>
@@ -246,20 +244,19 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>Level-7</code>: Save</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>Level-7</code>: Save</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
-                        <p><span><thumbnail text=":fas-save:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-save"></span></thumbnail>
-                          </span>
-                        </p>
-                        <h3 id="level-7-save">Level 7. Save<a class="fa fa-anchor" href="#level-7-save"></a></h3>
-                        <p>Save the tasks in the hard disk automatically whenever the task list changes. Load the data from the hard disk when Duke starts up. You may hard-code the file name and location <span class="dimmed">e.g., <code>[project_root]/data/duke.txt</code></span></p>
+                        <p><span>
+                            <thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-save"></span></thumbnail>
+                          </span></p>
+                        <h3 id="level-7-save">Level 7. Save<a class="fa fa-anchor" href="#level-7-save" onclick="event.stopPropagation()"></a></h3>
+                        <p>Save the tasks in the hard disk automatically whenever the task list changes. Load the data from the hard disk when Duke starts up. You may hard-code the file name and location <span class="dimmed">e.g., <code v-pre>[project_root]/data/duke.txt</code></span></p>
                         <p>The format of the file is up to you. Example:</p>
-                        <pre><code class="hljs"><span>T | 1 | read book</span><span>D | 0 | return book | June 6th</span><span>E | 0 | project meeting | Aug 6th 2-4pm</span><span>T | 1 | join sports club</span></code></pre>
+                        <pre><code class="hljs" v-pre><span>T | 1 | read book<br></span><span>D | 0 | return book | June 6th<br></span><span>E | 0 | project meeting | Aug 6th 2-4pm<br></span><span>T | 1 | join sports club<br></span></code></pre>
                         <p><strong><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you use file paths in your code,</strong></p>
                         <ul>
-                          <li>remember to use relative paths rather than absolute paths such as <code>C:\data</code>. If not, your app can cause unpredictable results when used in another computer.</li>
+                          <li>remember to use relative paths rather than absolute paths such as <code v-pre>C:\data</code>. If not, your app can cause unpredictable results when used in another computer.</li>
                           <li>remember to <a href="https://www.sghill.net/how-do-i-make-cross-platform-file-paths-in-java.html">specify file paths in an OS-independent way</a>. If not, your app might not work when used on a different OS.</li>
                         </ul>
                       </div>
@@ -272,24 +269,23 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>Level-8</code>: Dates and Times</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>Level-8</code>: Dates and Times</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
-                        <p><span><thumbnail text=":fas-clock:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-clock"></span></thumbnail>
-                          </span>
-                        </p>
-                        <h3 id="level-8-dates-and-times">Level 8. Dates and Times<a class="fa fa-anchor" href="#level-8-dates-and-times"></a></h3>
-                        <p>Teach Duke to understand dates and times. For example, if the command is <code>deadline return book /by 2/12/2019 1800</code>, Duke understands <code>2/12/2019 1800</code> as <em>2nd of December 2019, 6pm</em>, instead of storing
-                          it simply as a String.</p>
+                        <p><span>
+                            <thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-clock"></span></thumbnail>
+                          </span></p>
+                        <h3 id="level-8-dates-and-times">Level 8. Dates and Times<a class="fa fa-anchor" href="#level-8-dates-and-times" onclick="event.stopPropagation()"></a></h3>
+                        <p>Teach Duke to understand dates and times. For example, if the command is <code v-pre>deadline return book /by 2/12/2019 1800</code>, Duke understands <code v-pre>2/12/2019 1800</code> as <em>2nd of December 2019, 6pm</em>, instead of storing it simply as a String.</p>
                         <ul>
-                          <li><strong>Minimal</strong>: Store deadline dates as a <code>java.time.LocalDate</code> in your task objects. Accept dates in a format such as <code>yyyy-mm-dd</code> format (e.g., <code>2019-10-15</code>) and print in a different
-                            format such as <code>MMM d yyyy</code> e.g., (<code>Oct 15 2019</code>).</li>
+                          <li><strong>Minimal</strong>: Store deadline dates as a <code v-pre>java.time.LocalDate</code> in your task objects. Accept dates in a format such as <code v-pre>yyyy-mm-dd</code> format (e.g., <code v-pre>2019-10-15</code>) and print in a different format such as <code v-pre>MMM d yyyy</code> e.g., (<code v-pre>Oct 15 2019</code>).</li>
                           <li><strong>Stretch goal</strong>: Use dates and times in more meaningful ways. e.g., add a command to print deadlines/events occurring on a specific date.</li>
                         </ul>
-                        <panel minimized class="algolia-no-index"><template slot="_header"><p>Using dates/times in Java</p></template>
-                          <p>A code snippet using the <code>LocalDate</code> class:</p>
-                          <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.time.LocalDate;</span><span><span class="hljs-keyword">import</span> java.time.format.DateTimeFormatter;</span><span><span class="hljs-keyword">import</span> java.time.temporal.ChronoUnit;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        <span class="hljs-comment">//create dates from strings</span></span><span>        LocalDate d1 = LocalDate.parse(<span class="hljs-string">"2019-12-01"</span>);</span><span>        LocalDate d2 = LocalDate.parse(<span class="hljs-string">"2019-12-02"</span>);</span><span>        LocalDate d3 = LocalDate.parse(<span class="hljs-string">"2019-12-02"</span>);</span><span>        </span><span>        <span class="hljs-comment">//compare dates</span></span><span>        System.out.println(d1.isBefore(d2)); <span class="hljs-comment">// -&gt; true</span></span><span>        System.out.println(d1.isAfter(d2)); <span class="hljs-comment">// -&gt; false</span></span><span>        System.out.println(d2.equals(d3)); <span class="hljs-comment">// -&gt; true</span></span><span>        </span><span>        <span class="hljs-comment">//work with dates</span></span><span>        System.out.println(d1.getDayOfWeek()); <span class="hljs-comment">// -&gt; SUNDAY</span></span><span>        System.out.println(d1.getMonth()); <span class="hljs-comment">// -&gt; DECEMBER</span></span><span>        System.out.println(d1.plus(<span class="hljs-number">1</span>, ChronoUnit.YEARS));  <span class="hljs-comment">// -&gt; 2020-12-01</span></span><span>        </span><span>        <span class="hljs-comment">// get today's date and print it in a specific format</span></span><span>        LocalDate d4 = LocalDate.now();</span><span>        System.out.println(d4); <span class="hljs-comment">// -&gt; 2019-10-15</span></span><span>        System.out.println(d4.format(DateTimeFormatter.ofPattern(<span class="hljs-string">"MMM d yyyy"</span>))); <span class="hljs-comment">// -&gt; Oct 15 2019</span></span><span>    }</span><span>}</span></code></pre>
+                        <panel minimized class="algolia-no-index"><template slot="_header">
+                            <p>Using dates/times in Java</p>
+                          </template>
+                          <p>A code snippet using the <code v-pre>LocalDate</code> class:</p>
+                          <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.time.LocalDate;<br></span><span><span class="hljs-keyword">import</span> java.time.format.DateTimeFormatter;<br></span><span><span class="hljs-keyword">import</span> java.time.temporal.ChronoUnit;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        <span class="hljs-comment">//create dates from strings</span><br></span><span>        LocalDate d1 = LocalDate.parse(<span class="hljs-string">"2019-12-01"</span>);<br></span><span>        LocalDate d2 = LocalDate.parse(<span class="hljs-string">"2019-12-02"</span>);<br></span><span>        LocalDate d3 = LocalDate.parse(<span class="hljs-string">"2019-12-02"</span>);<br></span><span>        <br></span><span>        <span class="hljs-comment">//compare dates</span><br></span><span>        System.out.println(d1.isBefore(d2)); <span class="hljs-comment">// -&gt; true</span><br></span><span>        System.out.println(d1.isAfter(d2)); <span class="hljs-comment">// -&gt; false</span><br></span><span>        System.out.println(d2.equals(d3)); <span class="hljs-comment">// -&gt; true</span><br></span><span>        <br></span><span>        <span class="hljs-comment">//work with dates</span><br></span><span>        System.out.println(d1.getDayOfWeek()); <span class="hljs-comment">// -&gt; SUNDAY</span><br></span><span>        System.out.println(d1.getMonth()); <span class="hljs-comment">// -&gt; DECEMBER</span><br></span><span>        System.out.println(d1.plus(<span class="hljs-number">1</span>, ChronoUnit.YEARS));  <span class="hljs-comment">// -&gt; 2020-12-01</span><br></span><span>        <br></span><span>        <span class="hljs-comment">// get today's date and print it in a specific format</span><br></span><span>        LocalDate d4 = LocalDate.now();<br></span><span>        System.out.println(d4); <span class="hljs-comment">// -&gt; 2019-10-15</span><br></span><span>        System.out.println(d4.format(DateTimeFormatter.ofPattern(<span class="hljs-string">"MMM d yyyy"</span>))); <span class="hljs-comment">// -&gt; Oct 15 2019</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
                           <ul>
                             <li><a href="https://www.baeldung.com/java-8-date-time-intro">A tutorial from https://www.baeldung.com/</a></li>
                           </ul>
@@ -300,10 +296,10 @@
                 </div>
               </div>
               <p></p>
-              <h4 id="4-add-increments-a-moreoop-a-packages-a-junit-a-jar"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> Add Increments: <code>A-MoreOOP</code>, <code>A-Packages</code>, <code>A-JUnit</code>, <code>A-Jar</code><a class="fa fa-anchor" href="#4-add-increments-a-moreoop-a-packages-a-junit-a-jar"></a></h4>
+              <h4 id="4-add-increments-a-moreoop-a-packages-a-junit-a-jar"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> Add Increments: <code v-pre>A-MoreOOP</code>, <code v-pre>A-Packages</code>, <code v-pre>A-JUnit</code>, <code v-pre>A-Jar</code><a class="fa fa-anchor" href="#4-add-increments-a-moreoop-a-packages-a-junit-a-jar" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
-                  <li>As in the previous week, commit, tag, and push, as you do the following increments in the <code>master</code> branch (no need to use separate branches).</li>
+                  <li>As in the previous week, commit, tag, and push, as you do the following increments in the <code v-pre>master</code> branch (no need to use separate branches).</li>
                 </ul>
               </div>
               <div>
@@ -311,33 +307,32 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>A-MoreOOP</code>: Use More OOP</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>A-MoreOOP</code>: Use More OOP</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
                         <div>
                           <div></div>
-                          <h3 id="a-moreoop"><span class="badge badge-pill badge-primary">A-MoreOOP</span><a class="fa fa-anchor" href="#a-moreoop"></a></h3>
+                          <h3 id="a-moreoop"><span class="badge badge-pill badge-primary">A-MoreOOP</span><a class="fa fa-anchor" href="#a-moreoop" onclick="event.stopPropagation()"></a></h3>
                           <p>     <big>↳</big> <strong>Make the code more OOP</strong></p>
                         </div>
                         <p>Refactor the code to extract out closely related code as classes.</p>
                         <ul>
                           <li><strong>Minimal</strong>: Extract the following classes:
                             <ul>
-                              <li><code>Ui</code>: deals with interactions with the user</li>
-                              <li><code>Storage</code>: deals with loading tasks from the file and saving tasks in the file</li>
-                              <li><code>Parser</code>: deals with making sense of the user command</li>
-                              <li><code>TaskList</code>: contains the task list <span class="dimmed">e.g., it has operations to add/delete tasks in the list</span></li>
+                              <li><code v-pre>Ui</code>: deals with interactions with the user</li>
+                              <li><code v-pre>Storage</code>: deals with loading tasks from the file and saving tasks in the file</li>
+                              <li><code v-pre>Parser</code>: deals with making sense of the user command</li>
+                              <li><code v-pre>TaskList</code>: contains the task list <span class="dimmed">e.g., it has operations to add/delete tasks in the list</span></li>
                             </ul>
                           </li>
                         </ul>
                         <div class="indented-level2">
                           <p>For example, the code of the main class could look like this:</p>
-                          <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Duke</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-keyword">private</span> Storage storage;</span><span>    <span class="hljs-keyword">private</span> TaskList tasks;</span><span>    <span class="hljs-keyword">private</span> Ui ui;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Duke</span><span class="hljs-params">(String filePath)</span> </span>{</span><span>        ui = <span class="hljs-keyword">new</span> Ui();</span><span>        storage = <span class="hljs-keyword">new</span> Storage(filePath);</span><span>        <span class="hljs-keyword">try</span> {</span><span>            tasks = <span class="hljs-keyword">new</span> TaskList(storage.load());</span><span>        } <span class="hljs-keyword">catch</span> (DukeException e) {</span><span>            ui.showLoadingError();</span><span>            tasks = <span class="hljs-keyword">new</span> TaskList();</span><span>        }</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-comment">//...</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        <span class="hljs-keyword">new</span> Duke(<span class="hljs-string">"data/tasks.txt"</span>).run();</span><span>    }</span><span>}</span></code></pre>
+                          <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Duke</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">private</span> Storage storage;<br></span><span>    <span class="hljs-keyword">private</span> TaskList tasks;<br></span><span>    <span class="hljs-keyword">private</span> Ui ui;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Duke</span><span class="hljs-params">(String filePath)</span> </span>{<br></span><span>        ui = <span class="hljs-keyword">new</span> Ui();<br></span><span>        storage = <span class="hljs-keyword">new</span> Storage(filePath);<br></span><span>        <span class="hljs-keyword">try</span> {<br></span><span>            tasks = <span class="hljs-keyword">new</span> TaskList(storage.load());<br></span><span>        } <span class="hljs-keyword">catch</span> (DukeException e) {<br></span><span>            ui.showLoadingError();<br></span><span>            tasks = <span class="hljs-keyword">new</span> TaskList();<br></span><span>        }<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        <span class="hljs-keyword">new</span> Duke(<span class="hljs-string">"data/tasks.txt"</span>).run();<br></span><span>    }<br></span><span>}<br></span></code></pre>
                         </div>
                         <ul>
-                          <li><strong>Stretch Goal</strong>: Consider extracting more classes. e.g., <code>*Command</code> classes (i.e., <code>AddCommand</code>, <code>DeleteCommand</code>, <code>ExitCommand</code> etc.) that inherits from an abstract <code>Command</code>                            class, so that you can write the main logic of the App as follows:
-                            <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{</span><span>    ui.showWelcome();</span><span>    <span class="hljs-keyword">boolean</span> isExit = <span class="hljs-keyword">false</span>;</span><span>    <span class="hljs-keyword">while</span> (!isExit) {</span><span>        <span class="hljs-keyword">try</span> {</span><span>            String fullCommand = ui.readCommand();</span><span>            ui.showLine(); <span class="hljs-comment">// show the divider line ("_______")</span></span><span>            Command c = Parser.parse(fullCommand);</span><span>            c.execute(tasks, ui, storage);</span><span>            isExit = c.isExit();</span><span>        } <span class="hljs-keyword">catch</span> (DukeException e) {</span><span>            ui.showError(e.getMessage());</span><span>        } <span class="hljs-keyword">finally</span> {</span><span>            ui.showLine();</span><span>        }</span><span>    }</span><span>}</span></code></pre><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can get some inspiration from how the code of the <a href="https://github.com/se-edu/addressbook-level2">addressbook-level2</a>                            is organized.</li>
+                          <li><strong>Stretch Goal</strong>: Consider extracting more classes. e.g., <code v-pre>*Command</code> classes (i.e., <code v-pre>AddCommand</code>, <code v-pre>DeleteCommand</code>, <code v-pre>ExitCommand</code> etc.) that inherits from an abstract <code v-pre>Command</code> class, so that you can write the main logic of the App as follows:
+                            <pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{<br></span><span>    ui.showWelcome();<br></span><span>    <span class="hljs-keyword">boolean</span> isExit = <span class="hljs-keyword">false</span>;<br></span><span>    <span class="hljs-keyword">while</span> (!isExit) {<br></span><span>        <span class="hljs-keyword">try</span> {<br></span><span>            String fullCommand = ui.readCommand();<br></span><span>            ui.showLine(); <span class="hljs-comment">// show the divider line ("_______")</span><br></span><span>            Command c = Parser.parse(fullCommand);<br></span><span>            c.execute(tasks, ui, storage);<br></span><span>            isExit = c.isExit();<br></span><span>        } <span class="hljs-keyword">catch</span> (DukeException e) {<br></span><span>            ui.showError(e.getMessage());<br></span><span>        } <span class="hljs-keyword">finally</span> {<br></span><span>            ui.showLine();<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> You can get some inspiration from how the code of the <a href="https://github.com/se-edu/addressbook-level2">addressbook-level2</a> is organized.</li>
                         </ul>
                       </div>
                     </panel>
@@ -349,19 +344,18 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>A-Packages</code>: Organize into Packages</strong></span> <span class="badge badge-pill badge-secondary">optional</span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>A-Packages</code>: Organize into Packages</strong></span> <span class="badge badge-pill badge-secondary">optional</span></span></div>
                       <div></div>
                       <div>
                         <div>
                           <div></div>
-                          <h3 id="a-packages"><span class="badge badge-pill badge-primary">A-Packages</span><a class="fa fa-anchor" href="#a-packages"></a></h3>
+                          <h3 id="a-packages"><span class="badge badge-pill badge-primary">A-Packages</span><a class="fa fa-anchor" href="#a-packages" onclick="event.stopPropagation()"></a></h3>
                           <p>     <big>↳</big> <strong>Divide classes into packages</strong></p>
                         </div>
                         <p>Organize the classes into suitable java packages.</p>
                         <ul>
-                          <li><strong>Minimal</strong>: put all classes in one package e.g., <code>duke</code></li>
-                          <li><strong>Stretch goal</strong>: divide into multiple packages as the number of classes increase e.g., <code>duke.task</code>, <code>duke.command</code></li>
+                          <li><strong>Minimal</strong>: put all classes in one package e.g., <code v-pre>duke</code></li>
+                          <li><strong>Stretch goal</strong>: divide into multiple packages as the number of classes increase e.g., <code v-pre>duke.task</code>, <code v-pre>duke.command</code></li>
                         </ul>
                       </div>
                     </panel>
@@ -373,23 +367,22 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>A-JUnit</code>: Add JUnit Tess</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>A-JUnit</code>: Add JUnit Tess</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
                         <div>
                           <div></div>
-                          <h3 id="a-junit"><span class="badge badge-pill badge-primary">A-JUnit</span><a class="fa fa-anchor" href="#a-junit"></a></h3>
+                          <h3 id="a-junit"><span class="badge badge-pill badge-primary">A-JUnit</span><a class="fa fa-anchor" href="#a-junit" onclick="event.stopPropagation()"></a></h3>
                           <p>     <big>↳</big> <strong>Add JUnit tests</strong></p>
                         </div>
                         <p>Add JUnit tests to test the behavior of the code.</p>
                         <p><strong>Conventions to follow</strong>:</p>
                         <ul>
-                          <li>Add test code in a folder named <code>[project root]\src\test\java\</code> folder (reason: to follow the convention followed by the project structure so far).</li>
-                          <li>Name the test class to match the class being tested (<code>Todo.java</code> can be tested by <code>TodoTest.java</code>), and put it in a package to match. For example,
+                          <li>Add test code in a folder named <code v-pre>[project root]\src\test\java\</code> folder (reason: to follow the convention followed by the project structure so far).</li>
+                          <li>Name the test class to match the class being tested (<code v-pre>Todo.java</code> can be tested by <code v-pre>TodoTest.java</code>), and put it in a package to match. For example,
                             <ul>
-                              <li>Class being tested <code>seedu.duke.Todo</code>: <code>src\main\java\seedu\duke\Todo.java</code></li>
-                              <li>Test class <code>seedu.duke.TodoTest</code>: <code>src\test\java\seedu\duke\TodoTest.java</code></li>
+                              <li>Class being tested <code v-pre>seedu.duke.Todo</code>: <code v-pre>src\main\java\seedu\duke\Todo.java</code></li>
+                              <li>Test class <code v-pre>seedu.duke.TodoTest</code>: <code v-pre>src\test\java\seedu\duke\TodoTest.java</code></li>
                             </ul>
                           </li>
                         </ul>
@@ -402,33 +395,33 @@
                         <tabs>
                           <tab><template slot="_header">In Intellij, without Gradle</template>
                             <ol>
-                              <li>Add a folder named <code>[project root]\src\test\java\</code> (you may have to do this outside of Intellij)</li>
+                              <li>Add a folder named <code v-pre>[project root]\src\test\java\</code> (you may have to do this outside of Intellij)</li>
                               <li>Go to Intellij and add a new module to the project as follows.
                                 <ol>
-                                  <li><code>File</code> → <code>New</code> → <code>Module From Existing Sources ...</code></li>
-                                  <li>Choose the <code>[project root]\src\test\</code> (not the <code>java</code>) folder.</li>
-                                  <li>In the next screen, select <code>Create module from existing sources</code></li>
-                                  <li>Keep clicking <code>Next</code> until the process is complete</li>
+                                  <li><code v-pre>File</code> → <code v-pre>New</code> → <code v-pre>Module From Existing Sources ...</code></li>
+                                  <li>Choose the <code v-pre>[project root]\src\test\</code> (not the <code v-pre>java</code>) folder.</li>
+                                  <li>In the next screen, select <code v-pre>Create module from existing sources</code></li>
+                                  <li>Keep clicking <code v-pre>Next</code> until the process is complete</li>
                                 </ol>
                               </li>
-                              <li>In the <code>Project</code> panel of Intellij, expand the newly-created <code>test</code> module, right-click on the <code>java</code> folder inside it, and choose <code>Mark Directory as</code> → <code>Test Source Root</code>                                (that will make the folder turn to green color).</li>
-                              <li>Now, create a class inside the <code>java</code> folder and type <code>@Test</code> inside it. A code example given below.<br>
-                                <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Note: If you are using packages, create this class in a matching package (to test <code>duke.Duke</code> class, create a <code>duke.DukeTest</code>                                i.e., in <code>src\test\java\duke\DukeTest.java</code>).
-                                <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DukeTest</span> </span>{</span><span>    <span class="hljs-meta">@Test</span></span><span>}</span></code></pre>
+                              <li>In the <code v-pre>Project</code> panel of Intellij, expand the newly-created <code v-pre>test</code> module, right-click on the <code v-pre>java</code> folder inside it, and choose <code v-pre>Mark Directory as</code> → <code v-pre>Test Source Root</code> (that will make the folder turn to green color).</li>
+                              <li>Now, create a class inside the <code v-pre>java</code> folder and type <code v-pre>@Test</code> inside it. A code example given below.<br>
+                                <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Note: If you are using packages, create this class in a matching package (to test <code v-pre>duke.Duke</code> class, create a <code v-pre>duke.DukeTest</code> i.e., in <code v-pre>src\test\java\duke\DukeTest.java</code>).
+                                <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DukeTest</span> </span>{<br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>}<br></span></code></pre>
                               </li>
-                              <li>Note how the <code>@Test</code> turn to red because Intellij (not having JUnit support yet) does not understand it. But it will pop up a hint, asking if you want to add support for JUnit. Select <code>Add JUnit 5.* to classpath</code>.</li>
-                              <li>In the dialog that pops up, you can optionally tick the <code>Sources</code>, <code>JavaDocs</code> and <code>Annotations</code> boxes. After that, click <code>OK</code> to add the JUnit 5 to the project dependencies.</li>
+                              <li>Note how the <code v-pre>@Test</code> turn to red because Intellij (not having JUnit support yet) does not understand it. But it will pop up a hint, asking if you want to add support for JUnit. Select <code v-pre>Add JUnit 5.* to classpath</code>.</li>
+                              <li>In the dialog that pops up, you can optionally tick the <code v-pre>Sources</code>, <code v-pre>JavaDocs</code> and <code v-pre>Annotations</code> boxes. After that, click <code v-pre>OK</code> to add the JUnit 5 to the project dependencies.</li>
                               <li>To check if JUnit integration is working as expected,
                                 <ol>
                                   <li>Add a dummy test method to the class e.g.,
-                                    <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;</span><span>&#x200B;</span><span><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.jupiter.api.Assertions.assertEquals;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DukeTest</span> </span>{</span><span>    <span class="hljs-meta">@Test</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dummyTest</span><span class="hljs-params">()</span></span>{</span><span>        assertEquals(<span class="hljs-number">2</span>, <span class="hljs-number">2</span>);</span><span>    }</span><span>}</span></code></pre>
+                                    <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;<br></span><span><br></span><span><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> org.junit.jupiter.api.Assertions.assertEquals;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DukeTest</span> </span>{<br></span><span>    <span class="hljs-meta">@Test</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dummyTest</span><span class="hljs-params">()</span></span>{<br></span><span>        assertEquals(<span class="hljs-number">2</span>, <span class="hljs-number">2</span>);<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   </li>
-                                  <li>Run the test (right-click on the class and choose <code>Run DukeTest</code>.</li>
+                                  <li>Run the test (right-click on the class and choose <code v-pre>Run DukeTest</code>.</li>
                                 </ol>
                               </li>
-                              <li>To be able to refer to <code>Duke</code> from <code>DukeTest</code> class, you need to add <code>main</code> module as a dependency of the <code>test</code> module you just created.
+                              <li>To be able to refer to <code v-pre>Duke</code> from <code v-pre>DukeTest</code> class, you need to add <code v-pre>main</code> module as a dependency of the <code v-pre>test</code> module you just created.
                                 <ul>
-                                  <li>Option 1: When you add a reference to the <code>Duke</code> inside the <code>DukeTest</code>, Intellij will flag it as an error and will give you an option (i.e., in the bulb icon that pops up) to add the <code>main</code>                                    module as a dependency.</li>
+                                  <li>Option 1: When you add a reference to the <code v-pre>Duke</code> inside the <code v-pre>DukeTest</code>, Intellij will flag it as an error and will give you an option (i.e., in the bulb icon that pops up) to add the <code v-pre>main</code> module as a dependency.</li>
                                   <li>Option 2: Follow the info <a href="https://www.jetbrains.com/help/idea/working-with-module-dependencies.html">here</a> to add the dependency yourself.
                                   </li>
                                 </ul>
@@ -440,11 +433,13 @@
 
 
                             <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Refer to the Gradle tutorial at the Duke repo (i.e., the repo you forked from) to find how to use JUnit via Gradle.</p>
-                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension <code>A-Gradle</code></strong></p></template>
+                            <panel class="algolia-no-index"><template slot="_header">
+                                <p><strong>Extension <code v-pre>A-Gradle</code></strong></p>
+                              </template>
                               <div>
                                 <div>
                                   <div></div>
-                                  <h3 id="a-gradle"><span class="badge badge-pill badge-primary">A-Gradle</span><a class="fa fa-anchor" href="#a-gradle"></a></h3>
+                                  <h3 id="a-gradle"><span class="badge badge-pill badge-primary">A-Gradle</span><a class="fa fa-anchor" href="#a-gradle" onclick="event.stopPropagation()"></a></h3>
                                   <p>     <big>↳</big> <strong>Automate project builds using Gradle</strong></p>
                                 </div>
                                 <p>Use Gradle to automate some of the build tasks of the project. Refer to the Gradle tutorial at the Duke repo (i.e., the repo you forked from) to find how to set up Gradle for your project.</p>
@@ -467,13 +462,12 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>A-Jar</code>: Create a JAR File</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>A-Jar</code>: Create a JAR File</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
                         <div>
                           <div></div>
-                          <h3 id="a-jar"><span class="badge badge-pill badge-primary">A-Jar</span><a class="fa fa-anchor" href="#a-jar"></a></h3>
+                          <h3 id="a-jar"><span class="badge badge-pill badge-primary">A-Jar</span><a class="fa fa-anchor" href="#a-jar" onclick="event.stopPropagation()"></a></h3>
                           <p>     <big>↳</big> <strong>Package the App as a JAR file</strong></p>
                         </div>
                         <p>Package the app as an executable JAR file so that it can be distributed easily.</p>
@@ -482,18 +476,19 @@
                           <li>Go to your fork on GitHub and <a href="https://help.github.com/en/articles/creating-releases">create a new <em>release</em></a>.</li>
                           <li>In the page where you fill the details of th release,
                             <ul>
-                              <li>give an appropriate version number e.g., <code>v0.1</code></li>
-                              <li>attach the JAR file where it says <code>Attach binaries by dropping them ...</code>.</li>
+                              <li>give an appropriate version number e.g., <code v-pre>v0.1</code></li>
+                              <li>attach the JAR file where it says <code v-pre>Attach binaries by dropping them ...</code>.</li>
                             </ul>
                           </li>
                         </ul>
-                        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Gradle for your project, refer to the Gradle tutorial at the Duke repo (i.e., the repo you forked from)
-                          to find how to create a jar file using Gradle.</p>
-                        <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension <code>A-Gradle</code></strong></p></template>
+                        <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are using Gradle for your project, refer to the Gradle tutorial at the Duke repo (i.e., the repo you forked from) to find how to create a jar file using Gradle.</p>
+                        <panel class="algolia-no-index"><template slot="_header">
+                            <p><strong>Extension <code v-pre>A-Gradle</code></strong></p>
+                          </template>
                           <div>
                             <div>
                               <div></div>
-                              <h3 id="a-gradle-2"><span class="badge badge-pill badge-primary">A-Gradle</span><a class="fa fa-anchor" href="#a-gradle-2"></a></h3>
+                              <h3 id="a-gradle-2"><span class="badge badge-pill badge-primary">A-Gradle</span><a class="fa fa-anchor" href="#a-gradle-2" onclick="event.stopPropagation()"></a></h3>
                               <p>     <big>↳</big> <strong>Automate project builds using Gradle</strong></p>
                             </div>
                             <p>Use Gradle to automate some of the build tasks of the project. Refer to the Gradle tutorial at the Duke repo (i.e., the repo you forked from) to find how to set up Gradle for your project.</p>
@@ -510,11 +505,10 @@
                 </div>
               </div>
               <p></p>
-              <h4 id="5-add-increments-as-parallel-branches-a-javadoc-a-codingstandard-level-9"><span class="badge badge-pill badge-dark p-2"><big><big>5</big></big></span> Add Increments as parallel branches: <code>A-JavaDoc</code>, <code>A-CodingStandard</code>, <code>Level-9</code><a class="fa fa-anchor" href="#5-add-increments-as-parallel-branches-a-javadoc-a-codingstandard-level-9"></a></h4>
+              <h4 id="5-add-increments-as-parallel-branches-a-javadoc-a-codingstandard-level-9"><span class="badge badge-pill badge-dark p-2"><big><big>5</big></big></span> Add Increments as parallel branches: <code v-pre>A-JavaDoc</code>, <code v-pre>A-CodingStandard</code>, <code v-pre>Level-9</code><a class="fa fa-anchor" href="#5-add-increments-as-parallel-branches-a-javadoc-a-codingstandard-level-9" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
-                  <li>As in the step 1 above, implement these three increments as three parallel branches first (branch names: <code>branch-A-JavaDoc</code>, <code>branch-A-CodingStandard</code>, <code>branch-Level-9</code>), and then merge them one-by-one.
-                    Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.</li>
+                  <li>As in the step 1 above, implement these three increments as three parallel branches first (branch names: <code v-pre>branch-A-JavaDoc</code>, <code v-pre>branch-A-CodingStandard</code>, <code v-pre>branch-Level-9</code>), and then merge them one-by-one. Hopefully, you will encounter some merge conflicts so that you get to practice de-conflicting branches.</li>
                 </ul>
               </div>
               <div>
@@ -522,13 +516,12 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>A-JavaDoc</code>: JavaDoc</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>A-JavaDoc</code>: JavaDoc</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
                         <div>
                           <div></div>
-                          <h3 id="a-javadoc"><span class="badge badge-pill badge-primary">A-JavaDoc</span><a class="fa fa-anchor" href="#a-javadoc"></a></h3>
+                          <h3 id="a-javadoc"><span class="badge badge-pill badge-primary">A-JavaDoc</span><a class="fa fa-anchor" href="#a-javadoc" onclick="event.stopPropagation()"></a></h3>
                           <p>     <big>↳</big> <strong>Add JavaDoc comments</strong></p>
                         </div>
                         <p>Add JavaDoc comments to the code.</p>
@@ -546,13 +539,12 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>A-CodingStandard</code>: Follow the Coding Standard</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>A-CodingStandard</code>: Follow the Coding Standard</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
                         <div>
                           <div></div>
-                          <h3 id="a-codingstandard"><span class="badge badge-pill badge-primary">A-CodingStandard</span><a class="fa fa-anchor" href="#a-codingstandard"></a></h3>
+                          <h3 id="a-codingstandard"><span class="badge badge-pill badge-primary">A-CodingStandard</span><a class="fa fa-anchor" href="#a-codingstandard" onclick="event.stopPropagation()"></a></h3>
                           <p>     <big>↳</big> <strong>Tweak the code to comply with a coding standard</strong></p>
                         </div>
                         <p>Tweak the code to comply with a chosen coding standard. From this point onward, ensure any new code added are compliant with the coding standard.</p>
@@ -566,19 +558,18 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>Level-9</code>: Find</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>Level-9</code>: Find</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
-                        <p><span><thumbnail text=":fas-search:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-search"></span></thumbnail>
-                          </span>
-                        </p>
-                        <h3 id="level-9-find">Level 9. Find<a class="fa fa-anchor" href="#level-9-find"></a></h3>
+                        <p><span>
+                            <thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-search"></span></thumbnail>
+                          </span></p>
+                        <h3 id="level-9-find">Level 9. Find<a class="fa fa-anchor" href="#level-9-find" onclick="event.stopPropagation()"></a></h3>
                         <p>Give users a way to find a task by searching for a keyword.
                           <br>
                           <br></p>
                         <p>Example:</p>
-                        <pre><code class="hljs"><span>find book</span><span>    ____________________________________________________________</span><span>     Here are the matching tasks in your list:</span><span>     1.[T][✓] read book</span><span>     2.[D][✓] return book (by: June 6th)</span><span>    ____________________________________________________________</span></code></pre>
+                        <pre><code class="hljs" v-pre><span>find book<br></span><span>    ____________________________________________________________<br></span><span>     Here are the matching tasks in your list:<br></span><span>     1.[T][✓] read book<br></span><span>     2.[D][✓] return book (by: June 6th)<br></span><span>    ____________________________________________________________<br></span></code></pre>
                       </div>
                     </panel>
                   </div>
@@ -588,20 +579,19 @@
             </div>
           </div>
           <br>
-          <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w2.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP: Week 2</span>
-            </b-btn>
-            </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w4.html"><span>iP: Week 4 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-            </b-btn>
-            </span>
-          </p>
+          <p><span class="float-left algolia-no-index">
+              <b-btn variant="light" href="/website/admin/ip-w2.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP: Week 2</span></b-btn>
+            </span><span class="float-right algolia-no-index">
+              <b-btn variant="light" href="/website/admin/ip-w4.html"><span>iP: Week 4 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+            </span></p>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#ip-week-3">iP: Week 3 
-          &#x200E;</a>
+            <a class="nav-link py-1" href="#ip-week-3">iP: Week 3 &#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#1-do-any-leftover-ip-tasks-from-the-previous-week">1 Do any leftover iP tasks from the previous week&#x200E;</a>
               <a class="nav-link py-1" href="#2-create-a-pr-to-the-upstream-repo">2 Create a PR to the upstream repo&#x200E;</a>
@@ -616,12 +606,12 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Sat, May 16, 2020, 8:16:01 AM UTC</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.15.2</a> at Sat, Aug 15, 2020, 3:14:39 AM UTC</small></div>
     </footer>
   </div>
 </body>
 <script src="../markbind/js/vue.min.js"></script>
-<script src="../markbind/js/vue-strap.min.js"></script>
+<script src="../markbind/js/components.min.js"></script>
 <script src="../markbind/js/bootstrap-utility.min.js"></script>
 <script src="../markbind/js/polyfill.min.js"></script>
 <script src="../markbind/js/bootstrap-vue.min.js"></script>

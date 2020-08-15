@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.15.2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 6 - Tutorial</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
@@ -26,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2103">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
@@ -43,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -80,6 +82,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -96,14 +99,14 @@
             </ul>
           </nav>
           <p></p>
-          <h1 id="week-6-feb-17-tutorial">Week 6 <small><small><span class="dimmed">[Feb 17]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-6-feb-17-tutorial"></a></h1>
+          <h1 id="week-6-feb-17-tutorial">Week 6 <small><small><span class="dimmed">[Feb 17]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-6-feb-17-tutorial" onclick="event.stopPropagation()"></a></h1>
           <div>
-            <h4 id="1-discuss-ip-progress"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <strong>Discuss iP progress</strong><a class="fa fa-anchor" href="#1-discuss-ip-progress"></a></h4>
+            <h4 id="1-discuss-ip-progress"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <strong>Discuss iP progress</strong><a class="fa fa-anchor" href="#1-discuss-ip-progress" onclick="event.stopPropagation()"></a></h4>
             <ul>
               <li>Show your product website to the tutor.</li>
               <li>Get someone else to download your jar file and give it a test drive, preferably, on a different OS than the one on which it was developed.</li>
             </ul>
-            <h4 id="2-discuss-tp-progress"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <strong>Discuss tP progress</strong><a class="fa fa-anchor" href="#2-discuss-tp-progress"></a></h4>
+            <h4 id="2-discuss-tp-progress"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <strong>Discuss tP progress</strong><a class="fa fa-anchor" href="#2-discuss-tp-progress" onclick="event.stopPropagation()"></a></h4>
             <ul>
               <li>Show your UG draft <span class="dimmed">(i.e., a copy of the PDF file you uploaded to LumiNUS)</span>.</li>
               <li>Go through some product usage scenarios to illustrate how the product will be used. Some examples:
@@ -115,40 +118,45 @@
               <li>Discuss any difficulties you encountered while doing AB3 tutorials.</li>
               <li>Discuss any difficulties understanding AB3 developer documentation, UML diagrams in particular.</li>
             </ul>
-            <h4 id="3-discuss-weekly-topics"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <strong>Discuss weekly topics</strong><a class="fa fa-anchor" href="#3-discuss-weekly-topics"></a></h4>
+            <h4 id="3-discuss-weekly-topics"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <strong>Discuss weekly topics</strong><a class="fa fa-anchor" href="#3-discuss-weekly-topics" onclick="event.stopPropagation()"></a></h4>
             <ul>
               <li>If you have any doubts about the weekly topics, share them with others and get their inputs. You can use the following exercises in your discussion.</li>
             </ul>
             <div class="indented-level2">
               <div>
-                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram about Machine</p></template>
+                <panel class="algolia-no-index"><template slot="_header">
+                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram about Machine</p>
+                  </template>
                   <question>
                     <p>Explain in your own words the interactions illustrated by this Sequence Diagram:</p>
-                    <img src="/website/book/uml/sequenceDiagrams/introduction/images/Machine.png" width="500"></question>
+                    <img src="/website/book/uml/sequenceDiagrams/introduction/images/Machine.png" width="500">
+                  </question>
                 </panel>
               </div>
               <div>
-                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram (<code>ParserFactory</code>)</p></template>
+                <panel class="algolia-no-index"><template slot="_header">
+                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Explain Sequence Diagram (<code v-pre>ParserFactory</code>)</p>
+                  </template>
                   <question>
                     <p>Explain the interactions depicted in this sequence diagram.</p>
                     <img src="/website/book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/images/parserFactory.png" height="300">
                     <p></p>
                     <div slot="hint" class="algolia-no-index">
-                      <p>First, the <code>createParser()</code> method of an existing <code>ParserFactory</code> object is called. Then, ...</p>
+                      <p>First, the <code v-pre>createParser()</code> method of an existing <code v-pre>ParserFactory</code> object is called. Then, ...</p>
                     </div>
                   </question>
                 </panel>
               </div>
               <p></p>
             </div>
-            <h4 id="4-share-ide-tips-extra"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> <strong>Share IDE tips</strong> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
-              </span><a class="fa fa-anchor" href="#4-share-ide-tips-extra"></a></h4>
+            <h4 id="4-share-ide-tips-extra"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> <strong>Share IDE tips</strong> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span></span><a class="fa fa-anchor" href="#4-share-ide-tips-extra" onclick="event.stopPropagation()"></a></h4>
             <ul>
               <li>Share with others any cool IDE tips/tricks you've found</li>
             </ul>
           </div>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -158,8 +166,7 @@
               <a class="nav-link py-1" href="#1-discuss-ip-progress">1 Discuss iP progress&#x200E;</a>
               <a class="nav-link py-1" href="#2-discuss-tp-progress">2 Discuss tP progress&#x200E;</a>
               <a class="nav-link py-1" href="#3-discuss-weekly-topics">3 Discuss weekly topics&#x200E;</a>
-              <a class="nav-link py-1" href="#4-share-ide-tips-extra">4 Share IDE tips  extra
-        &#x200E;</a>
+              <a class="nav-link py-1" href="#4-share-ide-tips-extra">4 Share IDE tips extra&#x200E;</a>
             </nav>
 
           </nav>
@@ -168,12 +175,12 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Sat, May 16, 2020, 8:16:01 AM UTC</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.15.2</a> at Sat, Aug 15, 2020, 3:14:39 AM UTC</small></div>
     </footer>
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
-<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
 <script src="../../markbind/js/polyfill.min.js"></script>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>

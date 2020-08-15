@@ -1,16 +1,14 @@
 <div class="website-content">
-  <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/exams.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> Exams</span>
-    </b-btn>
-    </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/gradeBreakdown.html"><span>Grade Breakdown <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-    </b-btn>
-    </span>
-  </p>
+  <p><span class="float-left algolia-no-index">
+      <b-btn variant="light" href="/website/admin/exams.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> Exams</span></b-btn>
+    </span><span class="float-right algolia-no-index">
+      <b-btn variant="light" href="/website/admin/gradeBreakdown.html"><span>Grade Breakdown <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+    </span></p>
   <br>
   <p>
-    <div>
-      <h1 id="participation-marks">Participation Marks <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-        </span><a class="fa fa-anchor" href="#participation-marks"></a></h1>
-    </div>
+  <div>
+    <h1 id="participation-marks">Participation Marks <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span><a class="fa fa-anchor" href="#participation-marks" onclick="event.stopPropagation()"></a></h1>
+  </div>
   </p>
   <div id="main">
     <p><strong>To receive full 5 marks allocated for participation, meet the criteria <span class="badge badge-pill badge-info p-2"><big><big>A</big></big></span>, <span class="badge badge-pill badge-info p-2"><big><big>B</big></big></span>, and <span class="badge badge-pill badge-info p-2"><big><big>C</big></big></span>.</strong></p>
@@ -32,15 +30,19 @@
       <li>Missing compulsory administrative requirements <span class="dimmed">e.g., forgot to submit peer evaluations</span>: -2 for each miss</li>
     </ul>
     <div class="indented">
-      <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> As the lecture on Week <code>N</code> covers topics for Week <code>N+1</code>, the Lecture <code>N</code>'s in-lecture and post-lecture quiz points are counted for Week <code>N+1</code></p>
+      <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> As the lecture on Week <code v-pre>N</code> covers topics for Week <code v-pre>N+1</code>, the Lecture <code v-pre>N</code>'s in-lecture and post-lecture quiz points are counted for Week <code v-pre>N+1</code></p>
     </div>
     <p><strong><span class="badge badge-pill badge-info p-2"><big><big>B</big></big></span> Received good peer evaluations</strong></p>
     <div class="indented">
       <p>
-        <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-conduct" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-conduct"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Conduct)  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+        <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-conduct" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-conduct"><template slot="_header">
+            <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Conduct) <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+          </template></panel>
       </p>
       <p>
-        <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-competency" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-competency"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Competency)  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+        <panel type src="/website/admin/peerEvaluations-midterm._include_.html#teamMemberEvaluation-competency" class="embedding algolia-no-index" minimized fragment="teamMemberEvaluation-competency"><template slot="_header">
+            <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Criteria (Competency) <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+          </template></panel>
       </p>
       <ul>
         <li>-1 for each <em>professional conduct</em> criterion in which you score below average (based on the average of ratings received).</li>
@@ -58,17 +60,15 @@
     </div>
     <p><span class="badge badge-pill badge-secondary p-2"><big><big>Examples:</big></big></span></p>
     <ul>
-      <li>Alicia earned 1/2, 3/5, <ins>2/5</ins>, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 4/5, 5/5 in the first 12 weeks. As she received at least half of the points in 11 of the weeks, she gets 5 participation marks. Bonus marks are not applicable as she has
-        full marks already.</li>
+      <li>Alicia earned 1/2, 3/5, <ins>2/5</ins>, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 5/5, 4/5, 5/5 in the first 12 weeks. As she received at least half of the points in 11 of the weeks, she gets 5 participation marks. Bonus marks are not applicable as she has full marks already.</li>
       <li>Benjamin managed to get at least half of the participation points in 9 weeks only, which gives him 5-1 = 4 participation marks. But he received good peer ratings for all criteria, and hence get a bonus mark to make it 5/5.</li>
       <li>Chun Ming met the participation points bar in 8 weeks only, giving him 5-2 = 3 marks. He lost 2 more marks because he received multiple negative ratings for two criteria, giving him 1/5 participation marks.</li>
     </ul>
   </div>
   <br>
-  <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/exams.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> Exams</span>
-    </b-btn>
-    </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/gradeBreakdown.html"><span>Grade Breakdown <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-    </b-btn>
-    </span>
-  </p>
+  <p><span class="float-left algolia-no-index">
+      <b-btn variant="light" href="/website/admin/exams.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> Exams</span></b-btn>
+    </span><span class="float-right algolia-no-index">
+      <b-btn variant="light" href="/website/admin/gradeBreakdown.html"><span>Grade Breakdown <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+    </span></p>
 </div>

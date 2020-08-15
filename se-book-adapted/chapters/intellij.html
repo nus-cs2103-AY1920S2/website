@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.15.2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Textbook Chapter : Intellij IDEA</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -26,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2103">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
@@ -43,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -82,150 +84,204 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/website/se-book-adapted/index.html" class="site-nav__a">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Software Engineering</strong>
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/softwareEngineering.html" class="site-nav__a">Software Engineering</a></li>
-                </ul>
-              </div>
+          <ul class="site-nav-list site-nav-list-root">
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/index.html">Home <span aria-hidden="true" class="glyphicon glyphicon-home"></span>, printable versions <span><span aria-hidden="true" class="glyphicon glyphicon-print"></span></span></a></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Programming Paradigms</strong>
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/oop.html" class="site-nav__a">Object-Oriented Programming</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Software Engineering</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Requirements</strong>
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/requirements.html" class="site-nav__a">Requirements</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/gatheringRequirements.html" class="site-nav__a">Gathering Requirements</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/specifyingRequirements.html" class="site-nav__a">Specifying Requirements</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Programming Paradigms</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Design</strong>
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/design.html" class="site-nav__a">Software Design</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designFundamentals.html" class="site-nav__a">Design Fundamentals</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/modeling.html" class="site-nav__a">Modeling</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/architecture.html" class="site-nav__a">Software Architecture</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designPatterns.html" class="site-nav__a">Software Design Patterns</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/designApproaches.html" class="site-nav__a">Design Approaches</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Requirements</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/requirements.html">Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Implementation</strong>
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/ides.html" class="site-nav__a">IDEs</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/codeQuality.html" class="site-nav__a">Code Quality</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/refactoring.html" class="site-nav__a">Refactoring</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/documentation.html" class="site-nav__a">Documentation</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/errorHandling.html" class="site-nav__a">Error Handling</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/integration.html" class="site-nav__a">Integration</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/reuse.html" class="site-nav__a">Reuse</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Design</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/design.html">Software Design</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/modeling.html">Modeling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/architecture.html">Software Architecture</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Quality Assurance</strong>
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/qualityAssurance.html" class="site-nav__a">Quality Assurance</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/testing.html" class="site-nav__a">Testing</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/testCaseDesign.html" class="site-nav__a">Test Case Design</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Implementation</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/ides.html">IDEs</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/codeQuality.html">Code Quality</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/refactoring.html">Refactoring</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/documentation.html">Documentation</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/errorHandling.html">Error Handling</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/integration.html">Integration</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/reuse.html">Reuse</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Project Management</strong>
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/revisionControl.html" class="site-nav__a">Revision Control</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/projectPlanning.html" class="site-nav__a">Project Planning</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/teamwork.html" class="site-nav__a">Teamwork</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/processModels.html" class="site-nav__a">SDLC Process Models</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Quality Assurance</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/testing.html">Testing</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn"><strong>Principles</strong>
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/principles.html" class="site-nav__a">Principles</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Project Management</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/revisionControl.html">Revision Control</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/teamwork.html">Teamwork</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open"><strong>Tools</strong>
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/uml.html" class="site-nav__a">UML</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/intellij.html" class="site-nav__a current">Intellij IDEA</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/gitAndGithub.html" class="site-nav__a">Git and Github</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Principles</strong>
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/principles.html">Principles</a></div>
+                </li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn">Supplementary
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><a href="/website/se-book-adapted/chapters/cppToJava.html" class="site-nav__a">C++ to Java</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/projectDuke/index.html" class="site-nav__a">Project Duke</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/common/exercises.html" class="site-nav__a">Combined Exercises</a></li>
-                  <li class="mt-2"><a href="/website/se-book-adapted/common/definitions.html" class="site-nav__a">List of Definitions</a></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Tools</strong>
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/uml.html">UML</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/intellij.html" class="current">Intellij IDEA</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Supplementary
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/chapters/cppToJava.html">C++ to Java</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/projectDuke/index.html">Project Duke</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/common/exercises.html">Combined Exercises</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/se-book-adapted/common/definitions.html">List of Definitions</a></div>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
       </nav>
+
       <div id="content-wrapper">
         <link rel="stylesheet" href="/website/book/css/textbook.css">
         <div class="website-content">
-          <p><span class="dimmed"><strong><span></span></strong>
-            </span>
-          </p>
+          <p><span class="dimmed"><strong><span></span></strong></span></p>
           <div id="title">
             <div>
-              <h1 id="intellij-idea"><span>Intellij IDEA</span><a class="fa fa-anchor" href="#intellij-idea"></a></h1>
+              <h1 id="intellij-idea"><span>Intellij IDEA</span><a class="fa fa-anchor" href="#intellij-idea" onclick="event.stopPropagation()"></a></h1>
             </div>
           </div>
-          <panel type="seamless" expanded id="project-setup"><template slot="_header"><h4 id="project-setup">Project Setup<a class="fa fa-anchor" href="#project-setup"></a></h4></template>
+          <panel type="seamless" expanded id="project-setup"><template slot="_header">
+              <h4 id="project-setup">Project Setup<a class="fa fa-anchor" href="#project-setup" onclick="event.stopPropagation()"></a></h4>
+            </template>
             <div class="indented">
               <span class="badge badge-light">
-  <span><span class="dimmed"><font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-              <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can setup a project in an IDE</span>
-              </span>
-              </span>
-              </span>
+                <span><span class="dimmed">
+                    <font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can setup a project in an IDE</span></span></span></span>
               <p></p>
               <div>
-                <h5 id="running-intellij-idea-for-the-first-time">Running Intellij IDEA for the First Time<a class="fa fa-anchor" href="#running-intellij-idea-for-the-first-time"></a></h5>
+                <h5 id="running-intellij-idea-for-the-first-time">Running Intellij IDEA for the First Time<a class="fa fa-anchor" href="#running-intellij-idea-for-the-first-time" onclick="event.stopPropagation()"></a></h5>
                 <tabs>
                   <tab><template slot="_header"><span><span aria-hidden="true" class="far fa-file-alt"></span></span></template>
                     <ul>
@@ -243,24 +299,21 @@
                   </tab>
                 </tabs>
                 <br>
-                <h5 id="importing-a-project-to-intellij-idea">Importing a Project to Intellij IDEA<a class="fa fa-anchor" href="#importing-a-project-to-intellij-idea"></a></h5>
+                <h5 id="importing-a-project-to-intellij-idea">Importing a Project to Intellij IDEA<a class="fa fa-anchor" href="#importing-a-project-to-intellij-idea" onclick="event.stopPropagation()"></a></h5>
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/WIYTktB1bT4" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
               </div>
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" expanded id="code-navigation"><template slot="_header"><h4 id="code-navigation">Code Navigation<a class="fa fa-anchor" href="#code-navigation"></a></h4></template>
+          <panel type="seamless" expanded id="code-navigation"><template slot="_header">
+              <h4 id="code-navigation">Code Navigation<a class="fa fa-anchor" href="#code-navigation" onclick="event.stopPropagation()"></a></h4>
+            </template>
             <div class="indented">
               <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-              <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can navigate code effectively using IDE features</span>
-              </span>
-              </span>
-              </span>
+                <span><span class="dimmed">
+                    <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can navigate code effectively using IDE features</span></span></span></span>
               <p></p>
               <div>
                 <p>Some useful navigation shortcuts:</p>
@@ -271,26 +324,24 @@
                   <li>View the documentation of a method from where the method is being used, without navigating to the method itself.</li>
                   <li>Find where a method/field is being used.</li>
                 </ol>
-                <panel expanded><template slot="_header"><p>Intellij IDEA Code Navigation</p></template>
+                <panel expanded><template slot="_header">
+                    <p>Intellij IDEA Code Navigation</p>
+                  </template>
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1UHsJyCq1SU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                 </panel>
               </div>
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" expanded id="productivity-shortcuts"><template slot="_header"><h4 id="productivity-shortcuts">Productivity Shortcuts<a class="fa fa-anchor" href="#productivity-shortcuts"></a></h4></template>
+          <panel type="seamless" expanded id="productivity-shortcuts"><template slot="_header">
+              <h4 id="productivity-shortcuts">Productivity Shortcuts<a class="fa fa-anchor" href="#productivity-shortcuts" onclick="event.stopPropagation()"></a></h4>
+            </template>
             <div class="indented">
               <span class="badge badge-light">
-  <span><span class="dimmed"><font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span>
-              <span aria-hidden="true" class="glyphicon glyphicon-star"></span>
-              </font>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use some useful IDE productivity shortcuts</span>
-              </span>
-              </span>
-              </span>
+                <span><span class="dimmed">
+                    <font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use some useful IDE productivity shortcuts</span></span></span></span>
               <p></p>
               <div>
                 <div v-closeable alt="video: Intellij shortcuts">
@@ -301,18 +352,15 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" expanded id="debugging-basic"><template slot="_header"><h4 id="debugging-basic">Debugging: Basic<a class="fa fa-anchor" href="#debugging-basic"></a></h4></template>
+          <panel type="seamless" expanded id="debugging-basic"><template slot="_header">
+              <h4 id="debugging-basic">Debugging: Basic<a class="fa fa-anchor" href="#debugging-basic" onclick="event.stopPropagation()"></a></h4>
+            </template>
             <div class="indented">
               <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
-              <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can step through a program using a debugger</span>
-              </span>
-              </span>
-              </span>
+                <span><span class="dimmed">
+                    <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can step through a program using a debugger</span></span></span></span>
               <p></p>
               <div>
                 <div v-closeable alt="video: debugging in Intellij">
@@ -326,22 +374,19 @@
               <div></div>
             </div>
           </panel>
-          <panel type="seamless" expanded id="refactoring"><template slot="_header"><h4 id="refactoring">Refactoring<a class="fa fa-anchor" href="#refactoring"></a></h4></template>
+          <panel type="seamless" expanded id="refactoring"><template slot="_header">
+              <h4 id="refactoring">Refactoring<a class="fa fa-anchor" href="#refactoring" onclick="event.stopPropagation()"></a></h4>
+            </template>
             <div class="indented">
               <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-              <span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-              </span>
-              </span>
-              </span>
-              <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use automated refactoring features of the IDE</span>
-              </span>
-              </span>
-              </span>
+                <span><span class="dimmed">
+                    <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                  </span></span></span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use automated refactoring features of the IDE</span></span></span></span>
               <p></p>
               <div>
                 <div v-closeable alt="Videos: Automated refactoring using IDE">
-                  <p>This video explains how to automate the 'Extract parameter' refactoring using Intellij IDEA. Most other refactorings available works similarly. i.e. <code>select the code to refactor</code> → <code>find the refactoring in the context menu</code>                    or <code>use the keyboard shortcut</code>.</p>
+                  <p>This video explains how to automate the 'Extract parameter' refactoring using Intellij IDEA. Most other refactorings available works similarly. i.e. <code v-pre>select the code to refactor</code> → <code v-pre>find the refactoring in the context menu</code> or <code v-pre>use the keyboard shortcut</code>.</p>
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/fg3Q5pt4E80" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                   <p>Here's another video explaining how to change a method signature as part of refactoring.</p>
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/p6Tsw_3cXow" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
@@ -356,6 +401,7 @@
           </panel>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -375,12 +421,12 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Sat, May 16, 2020, 8:16:01 AM UTC</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.15.2</a> at Sat, Aug 15, 2020, 3:14:39 AM UTC</small></div>
     </footer>
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
-<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
 <script src="../../markbind/js/polyfill.min.js"></script>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>

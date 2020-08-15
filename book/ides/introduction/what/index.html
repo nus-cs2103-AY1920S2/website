@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.15.2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - IDEs: Introduction: What</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="icon" href="/website/favicon.ico">
 </head>
@@ -27,23 +28,18 @@
         <div>
           <link rel="stylesheet" href="/website/book/css/textbook.css">
           <div class="website-content">
-            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain IDEs</span>
-              </span>
-              </span>
-              </span>
-            </p>
+            <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain IDEs</span></span></span></span></p>
+            <p></p>
             <p></p>
             <p></p>
             <div>
               <div></div>
               <p></p>
               <p><span class="dimmed"><strong><span>Implementation → IDEs →
-</span></strong>
-                </span>
-              </p>
+                    </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
+                  <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -67,22 +63,26 @@
                   </div>
                   <div>
                     <div>
-                      <panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+                      <panel expandable class="algolia-no-index"><template slot="_header">
+                          <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
+                        </template>
                         <div>
-                          <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which of these are features available in IDEs?</p></template>
+                          <panel class="algolia-no-index"><template slot="_header">
+                              <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which of these are features available in IDEs?</p>
+                            </template>
                             <question>
-                              <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Compiling</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Syntax error highlighting</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Debugging</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Code navigation <span class="dimmed">e.g., to navigate from a method call to the method implementation</span></li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Simulation <span class="dimmed">e.g., run a mobile app in a simulator</span></li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. Code analysis <span class="dimmed">e.g. to find unreachable code</span></li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. Reverse engineering design/documentation <span class="dimmed">e.g. generate diagrams from code</span></li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> h. Visual programming <span class="dimmed">e.g. Write programs using ‘drag and drop’ actions instead of typing code</span></li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. Syntax assistance <span class="dimmed">e.g., show hints as you type</span></li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> j. Code generation <span class="dimmed">e.g., to generate the code required by simply specifying which component/structure you want to implement</span></li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> k. Extension <span class="dimmed">i.e., ability add more functionality to the IDE using plugins</span></li>
+                              <ul class="contains-task-list">
+                                <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. Compiling</li>
+                                <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. Syntax error highlighting</li>
+                                <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. Debugging</li>
+                                <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> d. Code navigation <span class="dimmed">e.g., to navigate from a method call to the method implementation</span></li>
+                                <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> e. Simulation <span class="dimmed">e.g., run a mobile app in a simulator</span></li>
+                                <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> f. Code analysis <span class="dimmed">e.g. to find unreachable code</span></li>
+                                <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> g. Reverse engineering design/documentation <span class="dimmed">e.g. generate diagrams from code</span></li>
+                                <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> h. Visual programming <span class="dimmed">e.g. Write programs using ‘drag and drop’ actions instead of typing code</span></li>
+                                <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> i. Syntax assistance <span class="dimmed">e.g., show hints as you type</span></li>
+                                <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> j. Code generation <span class="dimmed">e.g., to generate the code required by simply specifying which component/structure you want to implement</span></li>
+                                <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> k. Extension <span class="dimmed">i.e., ability add more functionality to the IDE using plugins</span></li>
                               </ul>
                               <div slot="answer" class="algolia-no-index">
                                 <p>All.</p>
@@ -104,7 +104,7 @@
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
-<script src="../../../../markbind/js/vue-strap.min.js"></script>
+<script src="../../../../markbind/js/components.min.js"></script>
 <script src="../../../../markbind/js/bootstrap-utility.min.js"></script>
 <script src="../../../../markbind/js/polyfill.min.js"></script>
 <script src="../../../../markbind/js/bootstrap-vue.min.js"></script>

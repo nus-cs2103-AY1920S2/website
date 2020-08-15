@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.15.2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Admin: iP: Week 2</title>
   <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../markbind/css/site-nav.css">
   <link rel="stylesheet" href="../markbind/css/page-nav.css">
@@ -27,6 +28,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2103">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
@@ -44,7 +46,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -83,124 +85,119 @@
     <div id="flex-body">
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/website/admin/moduleOverview.html" class="site-nav__a">CS2103/T Software Engineering</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+          <ul class="site-nav-list site-nav-list-root">
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/moduleOverview.html">CS2103/T Software Engineering</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/usingThisWebsite.html" class="site-nav__a"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/usingThisWebsite.html"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/moduleExpectations.html" class="site-nav__a">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/moduleExpectations.html">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Module Structure 
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/weeklySchedule.html" class="site-nav__a">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/lectures.html" class="site-nav__a">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tutorials.html" class="site-nav__a">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Module Structure
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/weeklySchedule.html">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/lectures.html">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tutorials.html">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+              </ul>
             </li>
-            <li class="mt-2"><a href="/website/admin/instructors.html" class="site-nav__a">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/instructors.html">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/textbooks.html" class="site-nav__a">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/textbooks.html">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/programmingLanguages.html" class="site-nav__a">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/programmingLanguages.html">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Individual Project (iP)
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/ip-overview.html" class="site-nav__a">iP (Individual Project): Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w2.html" class="site-nav__a current">iP: Week 2</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w3.html" class="site-nav__a">iP: Week 3</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w4.html" class="site-nav__a">iP: Week 4</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w5.html" class="site-nav__a">iP: Week 5</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w6.html" class="site-nav__a">iP: Week 6</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w7.html" class="site-nav__a">iP: Week 7</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-w8.html" class="site-nav__a">iP: Week 8</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/ip-grading.html" class="site-nav__a">iP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Individual Project (iP)
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-overview.html">iP (Individual Project): Overview</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w2.html" class="current">iP: Week 2</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w3.html">iP: Week 3</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w4.html">iP: Week 4</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w5.html">iP: Week 5</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w6.html">iP: Week 6</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w7.html">iP: Week 7</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-w8.html">iP: Week 8</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/ip-grading.html">iP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+              </ul>
             </li>
-            <li class="mt-2"><button class="dropdown-btn">Team Project (tP)
- <i class="dropdown-btn-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/tp-expectations.html" class="site-nav__a">tP (team project): Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-constraints.html" class="site-nav__a">tP: Constraints</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-teams.html" class="site-nav__a">tP: Forming Teams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w3.html" class="site-nav__a">tP: Kickoff [week 3]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w4.html" class="site-nav__a">tP: Inception [week 4]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w5.html" class="site-nav__a">tP: v1.0 [week 5]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w6.html" class="site-nav__a">tP: mid-v1.1 [week 6]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w7.html" class="site-nav__a">tP: v1.1 [week 7]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w8.html" class="site-nav__a">tP: mid-v1.2 [week 8]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w9.html" class="site-nav__a">tP: v1.2 [week 9]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w10.html" class="site-nav__a">tP: mid-v1.3 [week 10]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w11.html" class="site-nav__a">tP: v1.3 [week 11]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w12.html" class="site-nav__a">tP: mid-v1.4 [week 12]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-w13.html" class="site-nav__a">tP: v1.4 [week 13]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-deliverables.html" class="site-nav__a">tP: Deliverables</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-grading.html" class="site-nav__a">tP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/tp-supervision.html" class="site-nav__a">tP: Supervision</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Team Project (tP)
+                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-list">
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-expectations.html">tP (team project): Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-constraints.html">tP: Constraints</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-teams.html">tP: Forming Teams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w3.html">tP: Kickoff [week 3]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w4.html">tP: Inception [week 4]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w5.html">tP: v1.0 [week 5]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w6.html">tP: mid-v1.1 [week 6]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w7.html">tP: v1.1 [week 7]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w8.html">tP: mid-v1.2 [week 8]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w9.html">tP: v1.2 [week 9]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w10.html">tP: mid-v1.3 [week 10]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w11.html">tP: v1.3 [week 11]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w12.html">tP: mid-v1.4 [week 12]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-w13.html">tP: v1.4 [week 13]</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-deliverables.html">tP: Deliverables</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-grading.html">tP: Grading</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/tp-supervision.html">tP: Supervision</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+              </ul>
             </li>
-            <li class="mt-2"><a href="/website/admin/peerEvaluations.html" class="site-nav__a">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/peerEvaluations.html">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/tools.html" class="site-nav__a">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/tools.html">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/exams.html" class="site-nav__a">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/exams.html">Exams</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/participation.html" class="site-nav__a">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/participation.html">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><a href="/website/admin/gradeBreakdown.html" class="site-nav__a">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span>
-              </span>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/gradeBreakdown.html">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
             </li>
-            <li class="mt-2"><button class="dropdown-btn dropdown-btn-open">Appendices 
- <i class="dropdown-btn-icon rotate-icon">
-<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-              <div class="dropdown-container dropdown-container-open">
-                <ul class="pl-3 site-nav-list">
-                  <li class="mt-2"><small><a href="/website/admin/appendixA-principles.html" class="site-nav__a">Apdx A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixB-policies.html" class="site-nav__a">Apdx B: Module Policies</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixC-faq.html" class="site-nav__a">Apdx C: FAQ</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixD-help.html" class="site-nav__a">Apdx D: Getting Help</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixE-gitHub.html" class="site-nav__a">Apdx E: Using GitHub</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                  <li class="mt-2"><small><a href="/website/admin/appendixF-teamworkIssues.html" class="site-nav__a">Apdx F: Handling Team Issues</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
-                </ul>
-              </div>
+            <li>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Appendices
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixA-principles.html">Apdx A: Module Principles</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixB-policies.html">Apdx B: Module Policies</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixC-faq.html">Apdx C: FAQ</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixD-help.html">Apdx D: Getting Help</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixE-gitHub.html">Apdx E: Using GitHub</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+                <li class="site-nav-custom-list-item site-nav-list-item-1"><small><a href="/website/admin/appendixF-teamworkIssues.html">Apdx F: Handling Team Issues</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></small></li>
+              </ul>
             </li>
           </ul>
         </div>
       </nav>
+
       <div id="content-wrapper">
         <div class="website-content">
-          <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/ip-overview.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP (Individual Project): Overview</span>
-            </b-btn>
-            </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w3.html"><span>iP: Week 3 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-            </b-btn>
-            </span>
-          </p>
+          <p><span class="float-left algolia-no-index">
+              <b-btn variant="light" href="/website/admin/ip-overview.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP (Individual Project): Overview</span></b-btn>
+            </span><span class="float-right algolia-no-index">
+              <b-btn variant="light" href="/website/admin/ip-w3.html"><span>iP: Week 3 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+            </span></p>
           <br>
           <p>
-            <div>
-              <h1 id="ip-week-2">iP: Week 2 <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                </span><a class="fa fa-anchor" href="#ip-week-2"></a></h1>
-            </div>
+          <div>
+            <h1 id="ip-week-2">iP: Week 2 <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span><a class="fa fa-anchor" href="#ip-week-2" onclick="event.stopPropagation()"></a></h1>
+          </div>
           </p>
           <div id="main">
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple">
@@ -208,90 +205,94 @@
                 <li><span>Learn about the project</span></li>
                 <li><span>Set up prerequisites</span></li>
                 <li><span>Set up the project in your computer</span></li>
-                <li>Add Increments while committing frequently: <code>Level-1</code>, <code>Level-2</code>, <code>Level-3</code>, <code>Level-4</code>, <code>A-TextUiTesting</code>, <code>Level-5</code>, <code>Level-6</code>, <code>A-Enums</code> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span>                  by Thursday 2359</span>
-                  </span>
-                </li>
+                <li>Add Increments while committing frequently: <code v-pre>Level-1</code>, <code v-pre>Level-2</code>, <code v-pre>Level-3</code>, <code v-pre>Level-4</code>, <code v-pre>A-TextUiTesting</code>, <code v-pre>Level-5</code>, <code v-pre>Level-6</code>, <code v-pre>A-Enums</code> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Thursday 2359</span></span></li>
               </ol>
             </div>
             <div id="body">
               <div>
                 <div>
                   <box type="info">
-                    <p>The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the <a href="https://github.com/nus-cs2103-AY1920S2/forum/issues">forum</a>                      so that we can take necessary actions.
+                    <p>The iP (and the tP) undergoes changes after each semester. As such, teething issues are a possibility. If you encounter any problem while doing the iP/tP, please post in the <a href="https://github.com/nus-cs2103-AY1920S2/forum/issues">forum</a> so that we can take necessary actions.
                     </p>
                   </box>
+                  <p></p>
                 </div>
                 <div>
                   <box>
                     <p>
-                      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> We discourage you from doing project tasks allocated to future weeks. Reasons: In order to help you gain <span data-mb-component-type="tooltip"
-                        v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time</span><em>fluency</em></span>
-                      (and also to better simulate real projects), <strong>we want the project work to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">done at multiple times with time gaps in between</span><em>spaced</em></span> and spread over a longer period</strong>,
-                      rather than to be done as a short burst. Reminder: as per iP grading criteria, <em>some</em> increments need to to be done in each week for you to get full marks.
+                      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> We discourage you from doing project tasks allocated to future weeks. Reasons: In order to help you gain <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">the ability to apply knowledge or do tasks effortlessly as if you have been doing them for a long time</span><em>fluency</em></span> (and also to better simulate real projects), <strong>we want the project work to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">done at multiple times with time gaps in between</span><em>spaced</em></span> and spread over a longer period</strong>, rather than to be done as a short burst. Reminder: as per iP grading criteria, <em>some</em> increments need to to be done in each week for you to get full marks.
                     </p>
                   </box>
+                  <p></p>
                 </div>
               </div>
-              <h4 id="1-learn-about-the-project"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span>Learn about the project</span><a class="fa fa-anchor" href="#1-learn-about-the-project"></a></h4>
+              <h4 id="1-learn-about-the-project"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span>Learn about the project</span><a class="fa fa-anchor" href="#1-learn-about-the-project" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
                   <li><strong>Read the following two sections</strong>, if you haven't done so already:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/ip-overview._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>iP - Overview</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/ip-overview._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>iP - Overview</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/ip-grading._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>iP - Grading</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/ip-grading._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>iP - Grading</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
               </div>
               <p></p>
-              <h4 id="2-set-up-prerequisites"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span>Set up prerequisites</span><a class="fa fa-anchor" href="#2-set-up-prerequisites"></a></h4>
+              <h4 id="2-set-up-prerequisites"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span>Set up prerequisites</span><a class="fa fa-anchor" href="#2-set-up-prerequisites" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ul>
                   <li><strong>Ensure you have followed the <span class="pr-1 pl-1" style="color:purple; border: 0.5px solid lightgrey"><span aria-hidden="true" class="fas fa-hard-hat"></span> Preparation</span> sections of the following module tools:</strong></li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/programmingLanguages._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Programming Language</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/programmingLanguages._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Programming Language</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#rcs" class="embedding algolia-no-index" minimized fragment="rcs"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools → Git</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/tools._include_.html#rcs" class="embedding algolia-no-index" minimized fragment="rcs"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Tools → Git</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#github" class="embedding algolia-no-index" minimized fragment="github"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → <strong>GitHub</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/tools._include_.html#github" class="embedding algolia-no-index" minimized fragment="github"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → <strong>GitHub</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
                 <div class="indented-level2">
-                  <panel type src="/website/admin/tools._include_.html#ide" class="embedding algolia-no-index" minimized fragment="ide"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → <strong>Intellij IDEA</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+                  <panel type src="/website/admin/tools._include_.html#ide" class="embedding algolia-no-index" minimized fragment="ide"><template slot="_header">
+                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → <strong>Intellij IDEA</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template></panel>
                 </div>
                 <p></p>
               </div>
               <p></p>
-              <h4 id="3-set-up-the-project-in-your-computer"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span>Set up the project in your computer</span><a class="fa fa-anchor" href="#3-set-up-the-project-in-your-computer"></a></h4>
+              <h4 id="3-set-up-the-project-in-your-computer"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span>Set up the project in your computer</span><a class="fa fa-anchor" href="#3-set-up-the-project-in-your-computer" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <ol>
                   <li>Fork <a href="https://github.com/nus-cs2103-AY1920S2/duke">https://github.com/nus-cs2103-AY1920S2/duke</a>.</li>
-                  <li><mark>Enable the issue tracker of your fork</mark> (Go to <code>Settings</code> of your fork, scroll to the <code>Features</code> section, and tick the <code>Issues</code> checkbox). <span class="dimmed">Reason: our bots will be posting your weekly progress reports on the issue tracker of your fork.</span><br>
-                    <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If the issue tracker is enabled, you should be able to visit the following URL <code>https://github.com/{your_user_name}/duke/issues</code>                    e.g., <code>https://github.com/johnDoe/duke/issues</code></li>
+                  <li><mark>Enable the issue tracker of your fork</mark> (Go to <code v-pre>Settings</code> of your fork, scroll to the <code v-pre>Features</code> section, and tick the <code v-pre>Issues</code> checkbox). <span class="dimmed">Reason: our bots will be posting your weekly progress reports on the issue tracker of your fork.</span><br>
+                    <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If the issue tracker is enabled, you should be able to visit the following URL <code v-pre>https://github.com/{your_user_name}/duke/issues</code> e.g., <code v-pre>https://github.com/johnDoe/duke/issues</code></li>
                   <li>Clone the fork onto your computer.</li>
                   <li>Set up the project in your IDE as explained in <a href="https://github.com/nus-cs2103-AY1920S2/duke/blob/master/README.md">the README file</a>.<br>
-                    <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are somewhat familiar with build tools such as Gradle, you are free to go ahead and start using Gradle from the beginning
-                    by following <a href="https://github.com/nus-cs2103-AY1920S2/duke/blob/master/tutorials/gradleTutorial.md">the Gradle tutorial</a>.</li>
+                    <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you are somewhat familiar with build tools such as Gradle, you are free to go ahead and start using Gradle from the beginning by following <a href="https://github.com/nus-cs2103-AY1920S2/duke/blob/master/tutorials/gradleTutorial.md">the Gradle tutorial</a>.</li>
                 </ol>
               </div>
               <p></p>
-              <h4 id="4-add-increments-while-committing-frequently-level-1-level-2-level-3-level-4-a-textuitesting-level-5-level-6-a-enums-by-thursday-2359"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> Add Increments while committing frequently: <code>Level-1</code>, <code>Level-2</code>, <code>Level-3</code>, <code>Level-4</code>, <code>A-TextUiTesting</code>,
-                <code>Level-5</code>,
-                <code>Level-6</code>, <code>A-Enums</code> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Thursday 2359</span>
-                </span><a class="fa fa-anchor" href="#4-add-increments-while-committing-frequently-level-1-level-2-level-3-level-4-a-textuitesting-level-5-level-6-a-enums-by-thursday-2359"></a></h4>
+              <h4 id="4-add-increments-while-committing-frequently-level-1-level-2-level-3-level-4-a-textuitesting-level-5-level-6-a-enums-by-thursday-2359"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> Add Increments while committing frequently: <code v-pre>Level-1</code>, <code v-pre>Level-2</code>, <code v-pre>Level-3</code>, <code v-pre>Level-4</code>, <code v-pre>A-TextUiTesting</code>, <code v-pre>Level-5</code>, <code v-pre>Level-6</code>, <code v-pre>A-Enums</code> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> by Thursday 2359</span></span><a class="fa fa-anchor" href="#4-add-increments-while-committing-frequently-level-1-level-2-level-3-level-4-a-textuitesting-level-5-level-6-a-enums-by-thursday-2359" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <div>
                   <ul>
-                    <li>Implement the following <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">in this context, an <em>increment</em> is a Duke <em>level</em> or a Duke <em>extension</em></span>increments</span>
-                      <mark>in the given order</mark>.</li>
+                    <li>Implement the following <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">in this context, an <em>increment</em> is a Duke <em>level</em> or a Duke <em>extension</em></span>increments</span> <mark>in the given order</mark>.</li>
                   </ul>
                 </div>
                 <div>
@@ -303,8 +304,8 @@
                   <ul>
                     <li>From this point onward, after completing each increment,
                       <ul>
-                        <li><strong><code>git tag</code></strong> the commit with the exact increment ID e.g., <code>Level-2</code>, <code>A-TextUiTesting</code></li>
-                        <li><strong><code>git push</code></strong> the code to your fork (<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> git doesn't push tags unless you specifically ask it to)</li>
+                        <li><strong><code v-pre>git tag</code></strong> the commit with the exact increment ID e.g., <code v-pre>Level-2</code>, <code v-pre>A-TextUiTesting</code></li>
+                        <li><strong><code v-pre>git push</code></strong> the code to your fork (<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> git doesn't push tags unless you specifically ask it to)</li>
                       </ul>
                     </li>
                   </ul>
@@ -315,18 +316,17 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>Level-1</code>: Greet, Echo, Exit</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>Level-1</code>: Greet, Echo, Exit</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
-                        <p><span><thumbnail text=":fas-comments:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-comments"></span></thumbnail>
-                          </span>
-                        </p>
-                        <h3 id="level-1-greet-echo-exit">Level 1. Greet, Echo, Exit<a class="fa fa-anchor" href="#level-1-greet-echo-exit"></a></h3>
-                        <p>In this initial <em>skeletal</em> version of Duke, it starts by greeting the user, simply echos commands entered by the user, and exits when the user types <code>bye</code>.
-                          <br> Example:
-                        </p>
-                        <pre><code class="hljs"><span>    ____________________________________________________________</span><span>     Hello! I'm Duke</span><span>     What can I do for you?</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>list</span><span>    ____________________________________________________________</span><span>     list</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>blah</span><span>    ____________________________________________________________</span><span>     blah</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>bye</span><span>    ____________________________________________________________</span><span>     Bye. Hope to see you again soon!</span><span>    ____________________________________________________________</span><span>&#x200B;</span></code></pre>
+                        <p><span>
+                            <thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-comments"></span></thumbnail>
+                          </span></p>
+                        <h3 id="level-1-greet-echo-exit">Level 1. Greet, Echo, Exit<a class="fa fa-anchor" href="#level-1-greet-echo-exit" onclick="event.stopPropagation()"></a></h3>
+                        <p>In this initial <em>skeletal</em> version of Duke, it starts by greeting the user, simply echos commands entered by the user, and exits when the user types <code v-pre>bye</code>.
+                          <br>
+                          Example:</p>
+                        <pre><code class="hljs" v-pre><span>    ____________________________________________________________<br></span><span>     Hello! I'm Duke<br></span><span>     What can I do for you?<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>list<br></span><span>    ____________________________________________________________<br></span><span>     list<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>blah<br></span><span>    ____________________________________________________________<br></span><span>     blah<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>bye<br></span><span>    ____________________________________________________________<br></span><span>     Bye. Hope to see you again soon!<br></span><span>    ____________________________________________________________<br></span><span><br></span></code></pre>
                         <ul>
                           <li>The indentation and horizontal lines are optional.</li>
                         </ul>
@@ -334,6 +334,7 @@
                           <p><strong>You are strongly encouraged to customize the chatbot</strong> name, command/display formats, and even the personality of the chatbot to make your chatbot unique.
                           </p>
                         </box>
+                        <p></p>
                       </div>
                     </panel>
                   </div>
@@ -344,20 +345,19 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>Level-2</code>: Add, List</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>Level-2</code>: Add, List</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
-                        <p><span><thumbnail text=":fas-list:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-list"></span></thumbnail>
-                          </span>
-                        </p>
-                        <h3 id="level-2-add-list">Level 2. Add, List<a class="fa fa-anchor" href="#level-2-add-list"></a></h3>
+                        <p><span>
+                            <thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-list"></span></thumbnail>
+                          </span></p>
+                        <h3 id="level-2-add-list">Level 2. Add, List<a class="fa fa-anchor" href="#level-2-add-list" onclick="event.stopPropagation()"></a></h3>
                         <p>Add the ability to store whatever text entered by the user and display them back to the user when requested.</p>
                         <p>Example:</p>
-                        <pre><code class="hljs"><span>    ____________________________________________________________</span><span>     Hello! I'm Duke</span><span>     What can I do for you?</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>read book</span><span>    ____________________________________________________________</span><span>     added: read book</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>return book</span><span>    ____________________________________________________________</span><span>     added: return book</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>list</span><span>    ____________________________________________________________</span><span>     1. read book</span><span>     2. return book</span><span>    ____________________________________________________________</span><span>bye</span><span>    ____________________________________________________________</span><span>     Bye. Hope to see you again soon!</span><span>    ____________________________________________________________</span><span>&#x200B;</span></code></pre>
+                        <pre><code class="hljs" v-pre><span>    ____________________________________________________________<br></span><span>     Hello! I'm Duke<br></span><span>     What can I do for you?<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>read book<br></span><span>    ____________________________________________________________<br></span><span>     added: read book<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>return book<br></span><span>    ____________________________________________________________<br></span><span>     added: return book<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>list<br></span><span>    ____________________________________________________________<br></span><span>     1. read book<br></span><span>     2. return book<br></span><span>    ____________________________________________________________<br></span><span>bye<br></span><span>    ____________________________________________________________<br></span><span>     Bye. Hope to see you again soon!<br></span><span>    ____________________________________________________________<br></span><span><br></span></code></pre>
                         <ul>
                           <li>There is no need to save the data to the hard disk.</li>
-                          <li>Assume there will be no more than 100 tasks. If you wish, you may use a fixed size array (e.g., <code>String[100]</code>) to store the items.</li>
+                          <li>Assume there will be no more than 100 tasks. If you wish, you may use a fixed size array (e.g., <code v-pre>String[100]</code>) to store the items.</li>
                         </ul>
                       </div>
                     </panel>
@@ -369,32 +369,33 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>Level-3</code>: Mark as Done</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>Level-3</code>: Mark as Done</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
-                        <p><span><thumbnail text=":fas-check:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-check"></span></thumbnail>
-                          </span>
-                        </p>
-                        <h3 id="level-3-mark-as-done">Level 3. Mark as Done<a class="fa fa-anchor" href="#level-3-mark-as-done"></a></h3>
+                        <p><span>
+                            <thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-check"></span></thumbnail>
+                          </span></p>
+                        <h3 id="level-3-mark-as-done">Level 3. Mark as Done<a class="fa fa-anchor" href="#level-3-mark-as-done" onclick="event.stopPropagation()"></a></h3>
                         <p>Add the ability to mark tasks as <em>done</em>.<br><br></p>
-                        <pre><code class="hljs"><span>list</span><span>    ____________________________________________________________</span><span>     Here are the tasks in your list:</span><span>     1.[✓] read book</span><span>     2.[✗] return book</span><span>     3.[✗] buy bread</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>done 2</span><span>    ____________________________________________________________</span><span>     Nice! I've marked this task as done: </span><span>       [✓] return book</span><span>    ____________________________________________________________</span></code></pre>
+                        <pre><code class="hljs" v-pre><span>list<br></span><span>    ____________________________________________________________<br></span><span>     Here are the tasks in your list:<br></span><span>     1.[✓] read book<br></span><span>     2.[✗] return book<br></span><span>     3.[✗] buy bread<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>done 2<br></span><span>    ____________________________________________________________<br></span><span>     Nice! I've marked this task as done: <br></span><span>       [✓] return book<br></span><span>    ____________________________________________________________<br></span></code></pre>
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
-                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Classes</code></strong></p></template>
+                            <panel class="algolia-no-index"><template slot="_header">
+                                <p><strong>Extension: <code v-pre>A-Classes</code></strong></p>
+                              </template>
                               <div>
                                 <div>
                                   <div></div>
-                                  <h3 id="a-classes"><span class="badge badge-pill badge-primary">A-Classes</span><a class="fa fa-anchor" href="#a-classes"></a></h3>
+                                  <h3 id="a-classes"><span class="badge badge-pill badge-primary">A-Classes</span><a class="fa fa-anchor" href="#a-classes" onclick="event.stopPropagation()"></a></h3>
                                   <p>     <big>↳</big> <strong>Use a class to represent tasks</strong></p>
                                 </div>
-                                <p>While it is possible to represent a task list as a multi-dimensional array containing <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><code>String</code>, <code>int</code>, <code>boolean</code> etc.</span>primitive
-                                  values
-                                  </span>, the more natural approach is to use a <code>Task</code> class to represent tasks.</p>
-                                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
-                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{</span><span>    <span class="hljs-keyword">protected</span> String description;</span><span>    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String description)</span> </span>{</span><span>        <span class="hljs-keyword">this</span>.description = description;</span><span>        <span class="hljs-keyword">this</span>.isDone = <span class="hljs-keyword">false</span>;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getStatusIcon</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">return</span> (isDone ? <span class="hljs-string">"\u2713"</span> : <span class="hljs-string">"\u2718"</span>); <span class="hljs-comment">//return tick or X symbols</span></span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-comment">//...</span></span><span>}</span></code></pre>
-                                  <pre><code class="hljs java"><span>Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);</span><span>t.markAsDone()</span></code></pre>
+                                <p>While it is possible to represent a task list as a multi-dimensional array containing <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content"><code v-pre>String</code>, <code v-pre>int</code>, <code v-pre>boolean</code> etc.</span>primitive values</span>, the more natural approach is to use a <code v-pre>Task</code> class to represent tasks.</p>
+                                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header">
+                                    <p>Partial solution</p>
+                                  </template>
+                                  <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{<br></span><span>    <span class="hljs-keyword">protected</span> String description;<br></span><span>    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> isDone;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String description)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.description = description;<br></span><span>        <span class="hljs-keyword">this</span>.isDone = <span class="hljs-keyword">false</span>;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getStatusIcon</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> (isDone ? <span class="hljs-string">"\u2713"</span> : <span class="hljs-string">"\u2718"</span>); <span class="hljs-comment">//return tick or X symbols</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-comment">//...</span><br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre><span>Task t = <span class="hljs-keyword">new</span> Taks(<span class="hljs-string">"read book"</span>);<br></span><span>t.markAsDone()<br></span></code></pre>
                                 </panel>
                               </div>
                             </panel>
@@ -410,14 +411,13 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>Level-4</code>: ToDo, Event, Deadline</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>Level-4</code>: ToDo, Event, Deadline</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
-                        <p><span><thumbnail text=":fas-business-time:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-business-time"></span></thumbnail>
-                          </span>
-                        </p>
-                        <h3 id="level-4-todos-events-deadlines">Level 4. ToDos, Events, Deadlines<a class="fa fa-anchor" href="#level-4-todos-events-deadlines"></a></h3>
+                        <p><span>
+                            <thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-business-time"></span></thumbnail>
+                          </span></p>
+                        <h3 id="level-4-todos-events-deadlines">Level 4. ToDos, Events, Deadlines<a class="fa fa-anchor" href="#level-4-todos-events-deadlines" onclick="event.stopPropagation()"></a></h3>
                         <p>Add support for tracking three types of tasks:
                           <br>
                           <br></p>
@@ -427,25 +427,29 @@
                           <li><strong>Events</strong>: tasks that start at a specific time and ends at a specific time <span class="dimmed">e.g., <em>team project meeting on 2/10/2019 2-4pm</em></span></li>
                         </ol>
                         <p>Example:</p>
-                        <pre><code class="hljs"><span>todo borrow book</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [T][✗] borrow book</span><span>     Now you have 5 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>list</span><span>    ____________________________________________________________</span><span>     Here are the tasks in your list:</span><span>     1.[T][✓] read book</span><span>     2.[D][✗] return book (by: June 6th)</span><span>     3.[E][✗] project meeting (at: Aug 6th 2-4pm)</span><span>     4.[T][✓] join sports club</span><span>     5.[T][✗] borrow book</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>deadline return book /by Sunday</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [D][✗] return book (by: Sunday)</span><span>     Now you have 6 tasks in the list.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>event project meeting /at Mon 2-4pm</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [E][✗] project meeting (at: Mon 2-4pm)</span><span>     Now you have 7 tasks in the list.</span><span>    ____________________________________________________________</span></code></pre>
+                        <pre><code class="hljs" v-pre><span>todo borrow book<br></span><span>    ____________________________________________________________<br></span><span>     Got it. I've added this task: <br></span><span>       [T][✗] borrow book<br></span><span>     Now you have 5 tasks in the list.<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>list<br></span><span>    ____________________________________________________________<br></span><span>     Here are the tasks in your list:<br></span><span>     1.[T][✓] read book<br></span><span>     2.[D][✗] return book (by: June 6th)<br></span><span>     3.[E][✗] project meeting (at: Aug 6th 2-4pm)<br></span><span>     4.[T][✓] join sports club<br></span><span>     5.[T][✗] borrow book<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>deadline return book /by Sunday<br></span><span>    ____________________________________________________________<br></span><span>     Got it. I've added this task: <br></span><span>       [D][✗] return book (by: Sunday)<br></span><span>     Now you have 6 tasks in the list.<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>event project meeting /at Mon 2-4pm<br></span><span>    ____________________________________________________________<br></span><span>     Got it. I've added this task: <br></span><span>       [E][✗] project meeting (at: Mon 2-4pm)<br></span><span>     Now you have 7 tasks in the list.<br></span><span>    ____________________________________________________________<br></span></code></pre>
                         <p>At this point, dates/times can be treated as strings; there is no need to convert them to actual dates/times.</p>
                         <p>Example:</p>
-                        <pre><code class="hljs"><span>&#x200B;</span><span>deadline do homework /by no idea :-p</span><span>    ____________________________________________________________</span><span>     Got it. I've added this task: </span><span>       [D][✗] do homework (by: no idea :-p)</span><span>     Now you have 6 tasks in the list.</span><span>    ____________________________________________________________</span></code></pre>
+                        <pre><code class="hljs" v-pre><span><br></span><span>deadline do homework /by no idea :-p<br></span><span>    ____________________________________________________________<br></span><span>     Got it. I've added this task: <br></span><span>       [D][✗] do homework (by: no idea :-p)<br></span><span>     Now you have 6 tasks in the list.<br></span><span>    ____________________________________________________________<br></span></code></pre>
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
-                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Inheritance</code></strong></p></template>
+                            <panel class="algolia-no-index"><template slot="_header">
+                                <p><strong>Extension: <code v-pre>A-Inheritance</code></strong></p>
+                              </template>
                               <div>
                                 <div>
                                   <div></div>
-                                  <h3 id="a-inheritance"><span class="badge badge-pill badge-primary">A-Inheritance</span><a class="fa fa-anchor" href="#a-inheritance"></a></h3>
+                                  <h3 id="a-inheritance"><span class="badge badge-pill badge-primary">A-Inheritance</span><a class="fa fa-anchor" href="#a-inheritance" onclick="event.stopPropagation()"></a></h3>
                                   <p>     <big>↳</big> <strong>Use Inheritance to support multiple task types</strong></p>
                                 </div>
-                                <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code>Todo</code>, <code>Deadline</code> and <code>Event</code> classes to inherit from a <code>Task</code> class.</p>
-                                <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code>Task</code> objects e.g., <code>Task[100]</code>.</p>
-                                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header"><p>Partial solution</p></template>
-                                  <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-keyword">protected</span> String by;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Deadline</span><span class="hljs-params">(String description, String by)</span> </span>{</span><span>        <span class="hljs-keyword">super</span>(description);</span><span>        <span class="hljs-keyword">this</span>.by = by;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"[D]"</span> + <span class="hljs-keyword">super</span>.toString() + <span class="hljs-string">" (by: "</span> + by + <span class="hljs-string">")"</span>;</span><span>    }</span><span>}</span></code></pre>
-                                  <pre><code class="hljs java"><span>Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];</span><span>task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Deadline(<span class="hljs-string">"return book"</span>, <span class="hljs-string">"Monday"</span>);</span></code></pre>
+                                <p>As there are multiple types of tasks that have some similarity between them, you can implement classes <code v-pre>Todo</code>, <code v-pre>Deadline</code> and <code v-pre>Event</code> classes to inherit from a <code v-pre>Task</code> class.</p>
+                                <p>Furthermore, use polymorphism to store all tasks in a data structure containing <code v-pre>Task</code> objects e.g., <code v-pre>Task[100]</code>.</p>
+                                <panel type="seamless" minimized class="algolia-no-index"><template slot="_header">
+                                    <p>Partial solution</p>
+                                  </template>
+                                  <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deadline</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">protected</span> String by;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Deadline</span><span class="hljs-params">(String description, String by)</span> </span>{<br></span><span>        <span class="hljs-keyword">super</span>(description);<br></span><span>        <span class="hljs-keyword">this</span>.by = by;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"[D]"</span> + <span class="hljs-keyword">super</span>.toString() + <span class="hljs-string">" (by: "</span> + by + <span class="hljs-string">")"</span>;<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                                  <pre><code class="hljs java" v-pre><span>Task[] tasks = <span class="hljs-keyword">new</span> Task[<span class="hljs-number">100</span>];<br></span><span>task[<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Deadline(<span class="hljs-string">"return book"</span>, <span class="hljs-string">"Monday"</span>);<br></span></code></pre>
                                 </panel>
                               </div>
                             </panel>
@@ -461,13 +465,12 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>A-TextUiTesting</code>: Automated Text UI Testing</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>A-TextUiTesting</code>: Automated Text UI Testing</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
                         <div>
                           <div></div>
-                          <h3 id="a-textuitesting"><span class="badge badge-pill badge-primary">A-TextUiTesting</span><a class="fa fa-anchor" href="#a-textuitesting"></a></h3>
+                          <h3 id="a-textuitesting"><span class="badge badge-pill badge-primary">A-TextUiTesting</span><a class="fa fa-anchor" href="#a-textuitesting" onclick="event.stopPropagation()"></a></h3>
                           <p>     <big>↳</big> <strong>Test using the I/O redirection technique</strong></p>
                         </div>
                         <p>Use the input/output redirection technique to semi-automate the testing of Duke.</p>
@@ -482,30 +485,31 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>Level-5</code>: Handle Errors</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>Level-5</code>: Handle Errors</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
-                        <p><span><thumbnail text=":fas-exclamation-triangle:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-exclamation-triangle"></span></thumbnail>
-                          </span>
-                        </p>
-                        <h3 id="level-5-handle-errors">Level 5. Handle Errors<a class="fa fa-anchor" href="#level-5-handle-errors"></a></h3>
+                        <p><span>
+                            <thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-exclamation-triangle"></span></thumbnail>
+                          </span></p>
+                        <h3 id="level-5-handle-errors">Level 5. Handle Errors<a class="fa fa-anchor" href="#level-5-handle-errors" onclick="event.stopPropagation()"></a></h3>
                         <p>Teach Duke to deal with errors such as incorrect inputs entered by the user.
                           <br>
                           <br></p>
                         <p>Example:</p>
-                        <pre><code class="hljs"><span>todo</span><span>    ____________________________________________________________</span><span>     ☹ OOPS!!! The description of a todo cannot be empty.</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>blah</span><span>    ____________________________________________________________</span><span>     ☹ OOPS!!! I'm sorry, but I don't know what that means :-(</span><span>    ____________________________________________________________</span></code></pre>
+                        <pre><code class="hljs" v-pre><span>todo<br></span><span>    ____________________________________________________________<br></span><span>     ☹ OOPS!!! The description of a todo cannot be empty.<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>blah<br></span><span>    ____________________________________________________________<br></span><span>     ☹ OOPS!!! I'm sorry, but I don't know what that means :-(<br></span><span>    ____________________________________________________________<br></span></code></pre>
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
-                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Exceptions</code></strong></p></template>
+                            <panel class="algolia-no-index"><template slot="_header">
+                                <p><strong>Extension: <code v-pre>A-Exceptions</code></strong></p>
+                              </template>
                               <div>
                                 <div>
                                   <div></div>
-                                  <h3 id="a-exceptions"><span class="badge badge-pill badge-primary">A-Exceptions</span><a class="fa fa-anchor" href="#a-exceptions"></a></h3>
+                                  <h3 id="a-exceptions"><span class="badge badge-pill badge-primary">A-Exceptions</span><a class="fa fa-anchor" href="#a-exceptions" onclick="event.stopPropagation()"></a></h3>
                                   <p>     <big>↳</big> <strong>Use Exceptions to handle errors</strong></p>
                                 </div>
-                                <p>Use exceptions to handle errors. For example, define a class <code>DukeException</code> to represent exceptions specific to Duke.</p>
+                                <p>Use exceptions to handle errors. For example, define a class <code v-pre>DukeException</code> to represent exceptions specific to Duke.</p>
                               </div>
                             </panel>
                           </div>
@@ -524,30 +528,31 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>Level-6</code>: Delete</strong></span> <span class="badge badge-pill badge-secondary"></span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>Level-6</code>: Delete</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
                       <div></div>
                       <div>
-                        <p><span><thumbnail text=":fas-trash-alt:" font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-trash-alt"></span></thumbnail>
-                          </span>
-                        </p>
-                        <h3 id="level-6-delete">Level 6. Delete<a class="fa fa-anchor" href="#level-6-delete"></a></h3>
+                        <p><span>
+                            <thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-trash-alt"></span></thumbnail>
+                          </span></p>
+                        <h3 id="level-6-delete">Level 6. Delete<a class="fa fa-anchor" href="#level-6-delete" onclick="event.stopPropagation()"></a></h3>
                         <p>Add support for deleting tasks from the list.
                           <br>
                           <br></p>
                         <p>Example:</p>
-                        <pre><code class="hljs"><span>list</span><span>    ____________________________________________________________</span><span>     Here are the tasks in your list:</span><span>     1.[T][✓] read book</span><span>     2.[D][✓] return book (by: June 6th)</span><span>     3.[E][✗] project meeting (at: Aug 6th 2-4pm)</span><span>     4.[T][✓] join sports club</span><span>     5.[T][✗] borrow book</span><span>    ____________________________________________________________</span><span>&#x200B;</span><span>delete 3</span><span>    ____________________________________________________________</span><span>     Noted. I've removed this task: </span><span>       [E][✗] project meeting (at: Aug 6th 2-4pm)</span><span>     Now you have 4 tasks in the list.</span><span>    ____________________________________________________________</span></code></pre>
+                        <pre><code class="hljs" v-pre><span>list<br></span><span>    ____________________________________________________________<br></span><span>     Here are the tasks in your list:<br></span><span>     1.[T][✓] read book<br></span><span>     2.[D][✓] return book (by: June 6th)<br></span><span>     3.[E][✗] project meeting (at: Aug 6th 2-4pm)<br></span><span>     4.[T][✓] join sports club<br></span><span>     5.[T][✗] borrow book<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>delete 3<br></span><span>    ____________________________________________________________<br></span><span>     Noted. I've removed this task: <br></span><span>       [E][✗] project meeting (at: Aug 6th 2-4pm)<br></span><span>     Now you have 4 tasks in the list.<br></span><span>    ____________________________________________________________<br></span></code></pre>
                         <div>
                           <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
                           <div class="indented">
-                            <panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code>A-Collections</code></strong></p></template>
+                            <panel class="algolia-no-index"><template slot="_header">
+                                <p><strong>Extension: <code v-pre>A-Collections</code></strong></p>
+                              </template>
                               <div>
                                 <div>
                                   <div></div>
-                                  <h3 id="a-collections"><span class="badge badge-pill badge-primary">A-Collections</span><a class="fa fa-anchor" href="#a-collections"></a></h3>
+                                  <h3 id="a-collections"><span class="badge badge-pill badge-primary">A-Collections</span><a class="fa fa-anchor" href="#a-collections" onclick="event.stopPropagation()"></a></h3>
                                   <p>     <big>↳</big> <strong>Use Java Collections classes</strong></p>
                                 </div>
-                                <p>Use Java Collections classes for storing data. For example, you can use an <code>ArrayList&lt;Task&gt;</code> to store the tasks.</p>
+                                <p>Use Java Collections classes for storing data. For example, you can use an <code v-pre>ArrayList&lt;Task&gt;</code> to store the tasks.</p>
                               </div>
                             </panel>
                           </div>
@@ -562,16 +567,15 @@
                   <div class="indented border">
                     <panel type="seamless" class="algolia-no-index">
                       <div></div>
-                      <div slot="header"><span><span class="dimmed"><strong><code>A-Enums</code>: Use Enums</strong></span> <span class="badge badge-pill badge-secondary">if-applicable</span></span>
-                      </div>
+                      <div slot="header"><span><span class="dimmed"><strong><code v-pre>A-Enums</code>: Use Enums</strong></span> <span class="badge badge-pill badge-secondary">if-applicable</span></span></div>
                       <div></div>
                       <div>
                         <div>
                           <div></div>
-                          <h3 id="a-enums"><span class="badge badge-pill badge-primary">A-Enums</span><a class="fa fa-anchor" href="#a-enums"></a></h3>
+                          <h3 id="a-enums"><span class="badge badge-pill badge-primary">A-Enums</span><a class="fa fa-anchor" href="#a-enums" onclick="event.stopPropagation()"></a></h3>
                           <p>     <big>↳</big> <strong>Use Enumerations</strong></p>
                         </div>
-                        <p>Use Java <code>enum</code>s, if applicable.</p>
+                        <p>Use Java <code v-pre>enum</code>s, if applicable.</p>
                       </div>
                     </panel>
                   </div>
@@ -581,27 +585,24 @@
             </div>
           </div>
           <br>
-          <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/ip-overview.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP (Individual Project): Overview</span>
-            </b-btn>
-            </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w3.html"><span>iP: Week 3 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-            </b-btn>
-            </span>
-          </p>
+          <p><span class="float-left algolia-no-index">
+              <b-btn variant="light" href="/website/admin/ip-overview.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP (Individual Project): Overview</span></b-btn>
+            </span><span class="float-right algolia-no-index">
+              <b-btn variant="light" href="/website/admin/ip-w3.html"><span>iP: Week 3 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+            </span></p>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#ip-week-2">iP: Week 2 
-          &#x200E;</a>
+            <a class="nav-link py-1" href="#ip-week-2">iP: Week 2 &#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#1-learn-about-the-project">1 Learn about the project&#x200E;</a>
               <a class="nav-link py-1" href="#2-set-up-prerequisites">2 Set up prerequisites&#x200E;</a>
               <a class="nav-link py-1" href="#3-set-up-the-project-in-your-computer">3 Set up the project in your computer&#x200E;</a>
-              <a class="nav-link py-1" href="#4-add-increments-while-committing-frequently-level-1-level-2-level-3-level-4-a-textuitesting-level-5-level-6-a-enums-by-thursday-2359">4 Add Increments while committing frequently: Level-1, Level-2, Level-3, Level-4, A-TextUiTesting, Level-5,
-          Level-6, A-Enums  by Thursday 2359
-          &#x200E;</a>
+              <a class="nav-link py-1" href="#4-add-increments-while-committing-frequently-level-1-level-2-level-3-level-4-a-textuitesting-level-5-level-6-a-enums-by-thursday-2359">4 Add Increments while committing frequently: Level-1, Level-2, Level-3, Level-4, A-TextUiTesting, Level-5, Level-6, A-Enums by Thursday 2359&#x200E;</a>
             </nav>
 
           </nav>
@@ -610,12 +611,12 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Sat, May 16, 2020, 8:16:01 AM UTC</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.15.2</a> at Sat, Aug 15, 2020, 3:14:39 AM UTC</small></div>
     </footer>
   </div>
 </body>
 <script src="../markbind/js/vue.min.js"></script>
-<script src="../markbind/js/vue-strap.min.js"></script>
+<script src="../markbind/js/components.min.js"></script>
 <script src="../markbind/js/bootstrap-utility.min.js"></script>
 <script src="../markbind/js/polyfill.min.js"></script>
 <script src="../markbind/js/bootstrap-vue.min.js"></script>

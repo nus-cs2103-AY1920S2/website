@@ -1,32 +1,29 @@
 <div class="website-content">
-  <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/tp-constraints.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: Constraints</span>
-    </b-btn>
-    </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/tp-w3.html"><span>tP: Kickoff [week 3] <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-    </b-btn>
-    </span>
-  </p>
+  <p><span class="float-left algolia-no-index">
+      <b-btn variant="light" href="/website/admin/tp-constraints.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: Constraints</span></b-btn>
+    </span><span class="float-right algolia-no-index">
+      <b-btn variant="light" href="/website/admin/tp-w3.html"><span>tP: Kickoff [week 3] <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+    </span></p>
   <br>
   <p>
-    <div>
-      <h1 id="tp-forming-teams">tP: Forming Teams <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-        </span><a class="fa fa-anchor" href="#tp-forming-teams"></a></h1>
-    </div>
+  <div>
+    <h1 id="tp-forming-teams">tP: Forming Teams <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span><a class="fa fa-anchor" href="#tp-forming-teams" onclick="event.stopPropagation()"></a></h1>
+  </div>
   </p>
   <div id="main">
     <p><img src="/website/admin/images/team.png" width="300px"><br>
       <small><span class="dimmed">[Picture: The team that was at the top of early Google]</span></small></p>
     <p></p>
-    <h4 id="when-to-form-teams">When to form teams<a class="fa fa-anchor" href="#when-to-form-teams"></a></h4>
+    <h4 id="when-to-form-teams">When to form teams<a class="fa fa-anchor" href="#when-to-form-teams" onclick="event.stopPropagation()"></a></h4>
     <ul>
       <li>CS2103T: Your team will be formed by the CS2101 side.</li>
-      <li>CS2103: Your team will be formed at the <em>start</em> of the week 3 tutorial. Please try to arrive on time for that tutorial; if you are not there at the team forming time and others in the class are unaware which team you wanted to be in, we'll
-        have to put you into a team randomly.</li>
+      <li>CS2103: Your team will be formed at the <em>start</em> of the week 3 tutorial. Please try to arrive on time for that tutorial; if you are not there at the team forming time and others in the class are unaware which team you wanted to be in, we'll have to put you into a team randomly.</li>
     </ul>
-    <h4 id="team-size">Team size<a class="fa fa-anchor" href="#team-size"></a></h4>
+    <h4 id="team-size">Team size<a class="fa fa-anchor" href="#team-size" onclick="event.stopPropagation()"></a></h4>
     <ul>
       <li>The default <mark>team size is five</mark>.</li>
     </ul>
-    <h4 id="team-composition">Team composition<a class="fa fa-anchor" href="#team-composition"></a></h4>
+    <h4 id="team-composition">Team composition<a class="fa fa-anchor" href="#team-composition" onclick="event.stopPropagation()"></a></h4>
     <ul>
       <li>We allow some freedom in choosing team members, subject to these constraints:
         <ul>
@@ -40,34 +37,32 @@
     </ul>
   </div>
   <div id="teamIdFormat">
-    <h4 id="team-id">Team ID<a class="fa fa-anchor" href="#team-id"></a></h4>
+    <h4 id="team-id">Team ID<a class="fa fa-anchor" href="#team-id" onclick="event.stopPropagation()"></a></h4>
     <ul>
       <li><strong>To be given to you after forming teams.</strong></li>
-      <li><strong>Has the form <code>TUTORIAL_ID-TEAM_NUMBER</code></strong> e.g, <code>CS2103-W14-2</code> means you are in tutorial <code>CS2103-W14</code> (i.e., in module <code>CS2103</code>, on <code>Wednesday</code>, at <code>1400-1500</code>), team
-        <code>2</code>.</li>
+      <li><strong>Has the form <code v-pre>TUTORIAL_ID-TEAM_NUMBER</code></strong> e.g, <code v-pre>CS2103-W14-2</code> means you are in tutorial <code v-pre>CS2103-W14</code> (i.e., in module <code v-pre>CS2103</code>, on <code v-pre>Wednesday</code>, at <code v-pre>1400-1500</code>), team <code v-pre>2</code>.</li>
     </ul>
     <div class="indented-level2">
       <p>
-        <panel type src="/website/admin/tutorials._include_.html#tutorialTimetable" class="embedding algolia-no-index" minimized fragment="tutorialTimetable"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tutorials → Tutorial IDs  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+        <panel type src="/website/admin/tutorials._include_.html#tutorialTimetable" class="embedding algolia-no-index" minimized fragment="tutorialTimetable"><template slot="_header">
+            <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tutorials → Tutorial IDs <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+          </template></panel>
       </p>
     </div>
   </div>
   <div id="teamCommunication">
-    <h4 id="team-communications">Team Communications<a class="fa fa-anchor" href="#team-communications"></a></h4>
+    <h4 id="team-communications">Team Communications<a class="fa fa-anchor" href="#team-communications" onclick="event.stopPropagation()"></a></h4>
     <ul>
       <li><strong>Use English</strong> for all team communications, both spoken and written.</li>
-      <li><strong>We recommend at least one 1-2 hour <mark>face-to-face</mark> project meeting per week</strong>, in addition to any online meetings. <span class="dimmed">Reason: you need to know how to run both types of project meetings</span>. The project
-        meeting time can be used to discuss project related things, but also, can be used as a time for team members to work on the project tasks individually (having all members in the same place will facilitate easier collaboration and more peer-learning).</li>
-      <li><strong>Fix a weekly 1-2 hour time slot and a venue for project meetings</strong> after the team has been finalized (latest by week 3 tutorial). <mark>All members are expected to attend weekly project meetings</mark> (not doing so could lower the
-        peer evaluation ratings you receive, which in turn will be factored into your grade).<br>
+      <li><strong>We recommend at least one 1-2 hour <mark>face-to-face</mark> project meeting per week</strong>, in addition to any online meetings. <span class="dimmed">Reason: you need to know how to run both types of project meetings</span>. The project meeting time can be used to discuss project related things, but also, can be used as a time for team members to work on the project tasks individually (having all members in the same place will facilitate easier collaboration and more peer-learning).</li>
+      <li><strong>Fix a weekly 1-2 hour time slot and a venue for project meetings</strong> after the team has been finalized (latest by week 3 tutorial). <mark>All members are expected to attend weekly project meetings</mark> (not doing so could lower the peer evaluation ratings you receive, which in turn will be factored into your grade).<br>
         <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The best time to have the weekly project meeting is, after the previous week's lecture but before the deadline for weekly tasks.</li>
     </ul>
   </div>
   <br>
-  <p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/tp-constraints.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: Constraints</span>
-    </b-btn>
-    </span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/tp-w3.html"><span>tP: Kickoff [week 3] <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span>
-    </b-btn>
-    </span>
-  </p>
+  <p><span class="float-left algolia-no-index">
+      <b-btn variant="light" href="/website/admin/tp-constraints.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> tP: Constraints</span></b-btn>
+    </span><span class="float-right algolia-no-index">
+      <b-btn variant="light" href="/website/admin/tp-w3.html"><span>tP: Kickoff [week 3] <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
+    </span></p>
 </div>

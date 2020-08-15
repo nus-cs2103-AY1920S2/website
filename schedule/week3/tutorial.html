@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.15.2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2103/T Website - Week 3 - Tutorial</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
   <link rel="stylesheet" href="/website/css/main.css">
@@ -26,6 +27,7 @@
 <body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
     <header>
+      <div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~cs2103">here</a> when the new semester starts.</strong></span></div>
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-success">CS2103/T <small>2020 Jan-Apr</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">Schedule</div>
@@ -43,7 +45,7 @@
           <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 23] </span></a></li>
           <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Mar 30] </span></a></li>
           <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 6] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13]  <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
+          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 13] <span aria-hidden="true" class="fas fa-arrow-circle-left"></span></span></a></li>
         </dropdown>
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
@@ -80,6 +82,7 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <div class="website-content">
           <nav>
@@ -96,56 +99,61 @@
             </ul>
           </nav>
           <p></p>
-          <h1 id="week-3-jan-27-tutorial">Week 3 <small><small><span class="dimmed">[Jan 27]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-3-jan-27-tutorial"></a></h1>
+          <h1 id="week-3-jan-27-tutorial">Week 3 <small><small><span class="dimmed">[Jan 27]</span> - Tutorial</small></small><a class="fa fa-anchor" href="#week-3-jan-27-tutorial" onclick="event.stopPropagation()"></a></h1>
           <div>
-            <h4 id="0-cs2103-students-only-form-teams"><span class="badge badge-pill badge-dark p-2"><big><big>0</big></big></span> <strong>[CS2103 students only] Form teams</strong><a class="fa fa-anchor" href="#0-cs2103-students-only-form-teams"></a></h4>
+            <h4 id="0-cs2103-students-only-form-teams"><span class="badge badge-pill badge-dark p-2"><big><big>0</big></big></span> <strong>[CS2103 students only] Form teams</strong><a class="fa fa-anchor" href="#0-cs2103-students-only-form-teams" onclick="event.stopPropagation()"></a></h4>
             <ul>
               <li>Form teams, under the guidance of the tutor. See the panel below for <em>team forming constrains</em> and other related info.<br></li>
             </ul>
             <div class="indented-level2">
-              <panel type src="/website/admin/tp-teams._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Teams → Team Forming Constraints</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+              <panel type src="/website/admin/tp-teams._include_.html#main" class="embedding algolia-no-index" minimized fragment="main"><template slot="_header">
+                  <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Teams → Team Forming Constraints</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                </template></panel>
             </div>
             <p></p>
-            <h4 id="1-register-the-team-before-leaving-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <strong>Register the team</strong> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before leaving
-              the tutorial</span>
-              </span><a class="fa fa-anchor" href="#1-register-the-team-before-leaving-the-tutorial"></a></h4>
+            <h4 id="1-register-the-team-before-leaving-the-tutorial"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <strong>Register the team</strong> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before leaving the tutorial</span></span><a class="fa fa-anchor" href="#1-register-the-team-before-leaving-the-tutorial" onclick="event.stopPropagation()"></a></h4>
             <ul>
-              <li>Get your team ID from the tutor. <mark>Each student must submit your team ID</mark> via the LumiNUS <code>Class Groups</code> page -- for us to know which team you joined. Note the team ID follows a specific format.</li>
+              <li>Get your team ID from the tutor. <mark>Each student must submit your team ID</mark> via the LumiNUS <code v-pre>Class Groups</code> page -- for us to know which team you joined. Note the team ID follows a specific format.</li>
             </ul>
             <div class="indented-level2">
-              <panel type src="/website/admin/tp-teams._include_.html#teamIdFormat" class="embedding algolia-no-index" minimized fragment="teamIdFormat"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Teams → Team ID Format</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+              <panel type src="/website/admin/tp-teams._include_.html#teamIdFormat" class="embedding algolia-no-index" minimized fragment="teamIdFormat"><template slot="_header">
+                  <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Teams → Team ID Format</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                </template></panel>
             </div>
             <p></p>
-            <h4 id="2-introduce-yourselves"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <strong>Introduce yourselves</strong><a class="fa fa-anchor" href="#2-introduce-yourselves"></a></h4>
+            <h4 id="2-introduce-yourselves"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <strong>Introduce yourselves</strong><a class="fa fa-anchor" href="#2-introduce-yourselves" onclick="event.stopPropagation()"></a></h4>
             <ul>
               <li>Introduce yourself to the tutor and the members of your team and the <em>partner</em> team (i.e., the other team under your tutor)</li>
             </ul>
-            <h4 id="3-fix-a-weekly-project-meeting-time"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <strong>Fix a weekly project meeting time</strong><a class="fa fa-anchor" href="#3-fix-a-weekly-project-meeting-time"></a></h4>
+            <h4 id="3-fix-a-weekly-project-meeting-time"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <strong>Fix a weekly project meeting time</strong><a class="fa fa-anchor" href="#3-fix-a-weekly-project-meeting-time" onclick="event.stopPropagation()"></a></h4>
             <ul>
               <li>If you haven't done so already, set up a weekly project meeting time/venue (and communication channels) with your team members.</li>
             </ul>
             <div class="indented-level2">
-              <panel type src="/website/admin/tp-teams._include_.html#teamCommunication" class="embedding algolia-no-index" minimized fragment="teamCommunication"><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Teams → Communication</strong>  <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template></panel>
+              <panel type src="/website/admin/tp-teams._include_.html#teamCommunication" class="embedding algolia-no-index" minimized fragment="teamCommunication"><template slot="_header">
+                  <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Teams → Communication</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                </template></panel>
             </div>
             <p></p>
-            <h4 id="4-find-coding-standard-violations-extra"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> <strong>Find coding standard violations</strong> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span>
-              </span><a class="fa fa-anchor" href="#4-find-coding-standard-violations-extra"></a></h4>
+            <h4 id="4-find-coding-standard-violations-extra"><span class="badge badge-pill badge-dark p-2"><big><big>4</big></big></span> <strong>Find coding standard violations</strong> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="fas fa-plus"></span> extra</span></span><a class="fa fa-anchor" href="#4-find-coding-standard-violations-extra" onclick="event.stopPropagation()"></a></h4>
             <ul>
               <li>Do the following exercise, if you have time.</li>
             </ul>
             <div class="indented-level2">
               <div>
-                <panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Find basic coding standard violations</p></template>
+                <panel class="algolia-no-index"><template slot="_header">
+                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Find basic coding standard violations</p>
+                  </template>
                   <question>
                     <p>Consider the code given below:</p>
-                    <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.*;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{</span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String descriptionPrefix = <span class="hljs-string">"description: "</span>;</span><span>    <span class="hljs-keyword">private</span> String description;</span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> important;</span><span>    List&lt;String&gt; pastDescription = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(); <span class="hljs-comment">// a list of past descriptions</span></span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String d)</span> </span>{</span><span>      <span class="hljs-keyword">this</span>.description = d;</span><span>      <span class="hljs-keyword">if</span> (!d.isEmpty())</span><span>          <span class="hljs-keyword">this</span>.important = <span class="hljs-keyword">true</span>;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getAsXML</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;task&gt;"</span>+description+<span class="hljs-string">"&lt;/task&gt;"</span>; }</span><span>&#x200B;</span><span>    <span class="hljs-comment">/**</span></span><span><span class="hljs-comment">     * Print the description as a string.</span></span><span><span class="hljs-comment">     */</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printingDescription</span><span class="hljs-params">()</span></span>{ System.out.println(<span class="hljs-keyword">this</span>); }</span><span>&#x200B;</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> descriptionPrefix + description; }</span><span>}</span></code></pre>
+                    <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.util.*;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{<br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String descriptionPrefix = <span class="hljs-string">"description: "</span>;<br></span><span>    <span class="hljs-keyword">private</span> String description;<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> important;<br></span><span>    List&lt;String&gt; pastDescription = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(); <span class="hljs-comment">// a list of past descriptions</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String d)</span> </span>{<br></span><span>      <span class="hljs-keyword">this</span>.description = d;<br></span><span>      <span class="hljs-keyword">if</span> (!d.isEmpty())<br></span><span>          <span class="hljs-keyword">this</span>.important = <span class="hljs-keyword">true</span>;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getAsXML</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;task&gt;"</span>+description+<span class="hljs-string">"&lt;/task&gt;"</span>; }<br></span><span><br></span><span>    <span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment">     * Print the description as a string.</span><br></span><span><span class="hljs-comment">     */</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printingDescription</span><span class="hljs-params">()</span></span>{ System.out.println(<span class="hljs-keyword">this</span>); }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> descriptionPrefix + description; }<br></span><span>}<br></span></code></pre>
                     <p>In what ways the code violate the coding standard you are expected to follow?</p>
                     <div slot="hint" class="algolia-no-index">
                       <p>Here are three:</p>
                       <ul>
-                        <li><code>descriptionPrefix</code> is a constant and should be named <code>DESCRIPTION_PREFIX</code></li>
-                        <li>method name <code>printingDescription()</code> should be named as <code>printDescription()</code></li>
-                        <li>boolean variable <code>important</code> should be named to sound boolean e.g., <code>isImportant</code></li>
+                        <li><code v-pre>descriptionPrefix</code> is a constant and should be named <code v-pre>DESCRIPTION_PREFIX</code></li>
+                        <li>method name <code v-pre>printingDescription()</code> should be named as <code v-pre>printDescription()</code></li>
+                        <li>boolean variable <code v-pre>important</code> should be named to sound boolean e.g., <code v-pre>isImportant</code></li>
                       </ul>
                       <p>There are many more.</p>
                     </div>
@@ -156,6 +164,7 @@
           </div>
         </div>
       </div>
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -163,12 +172,10 @@
             <a class="nav-link py-1" href="#week-3-jan-27-tutorial">Week 3 [Jan 27] - Tutorial&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#0-cs2103-students-only-form-teams">0 [CS2103 students only] Form teams&#x200E;</a>
-              <a class="nav-link py-1" href="#1-register-the-team-before-leaving-the-tutorial">1 Register the team  before leaving the tutorial
-        &#x200E;</a>
+              <a class="nav-link py-1" href="#1-register-the-team-before-leaving-the-tutorial">1 Register the team before leaving the tutorial&#x200E;</a>
               <a class="nav-link py-1" href="#2-introduce-yourselves">2 Introduce yourselves&#x200E;</a>
               <a class="nav-link py-1" href="#3-fix-a-weekly-project-meeting-time">3 Fix a weekly project meeting time&#x200E;</a>
-              <a class="nav-link py-1" href="#4-find-coding-standard-violations-extra">4 Find coding standard violations  extra
-        &#x200E;</a>
+              <a class="nav-link py-1" href="#4-find-coding-standard-violations-extra">4 Find coding standard violations extra&#x200E;</a>
             </nav>
 
           </nav>
@@ -177,12 +184,12 @@
     </div>
     <footer>
       <div class="text-center">
-        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.13.1</a> at Sat, May 16, 2020, 8:16:01 AM UTC</small></div>
+        <small>This site was built with <a href="https://markbind.org/">MarkBind 2.15.2</a> at Sat, Aug 15, 2020, 3:14:39 AM UTC</small></div>
     </footer>
   </div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
-<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
 <script src="../../markbind/js/polyfill.min.js"></script>
 <script src="../../markbind/js/bootstrap-vue.min.js"></script>
